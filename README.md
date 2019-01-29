@@ -26,7 +26,7 @@ This is the list of the game languages:
         
         
         
-##Description of the codes:**
+## Description of the codes:
 - ***O* - official translation**
 - ***U* - unofficial translation (e.g. made by fans)**
 - ***No* - Nothing, no translation**
