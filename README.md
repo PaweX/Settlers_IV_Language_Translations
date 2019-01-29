@@ -1,5 +1,5 @@
 # Settlers IV Language translations
-Collection of language translations for The Settlers IV (Siedler IV)
+Collection of language translations for The Settlers IV (Die Siedler IV)
 
 If you made some corrections to one of the language trasnaltions for The Settlers IV, please share it here. **Especially if you made a completely new game trasnlation.**
 
