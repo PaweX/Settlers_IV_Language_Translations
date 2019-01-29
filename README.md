@@ -40,3 +40,6 @@ This is the list of the game languages:
 - *SE* - Second Expansions
 - - *NeW* -  Die Neue Welt (The New World))
 - - *MP2* - Community Pack
+
+
+Future translations can be added to the game after number '18', however they can use only standard ANSI.
