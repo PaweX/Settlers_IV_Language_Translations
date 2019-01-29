@@ -1,7 +1,7 @@
 # Settlers IV Language translations
 Collection of language translations for The Settlers IV (Siedler IV)
 
-If you made some corrections to one of the language trasnaltions for The Settlers IV, please share it here. *Especially if you made a completely new trasnlation.*
+If you made some corrections to one of the language trasnaltions for The Settlers IV, please share it here. **Especially if you made a completely new trasnlation.
 
 This is the list of the game languages:
 
