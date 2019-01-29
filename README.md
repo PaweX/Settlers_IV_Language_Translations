@@ -30,7 +30,6 @@ This is the list of the game languages:
 - ***O* - official translation**
 - ***U* - unofficial translation (e.g. made by fans)**
 - ***No* - Nothing, no translation**
-<><><><><><><><><><><><><><>
 - *All* - All translations
 - *?* - Unknown: probably *GE* or *Bas*
 - *GE* - Gold Edition
