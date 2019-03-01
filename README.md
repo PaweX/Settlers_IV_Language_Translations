@@ -1,9 +1,8 @@
 # Settlers IV Language translations
 Collection of language translations for The Settlers IV (Die Siedler IV)
 
-**txt** folder - Settlers IV language files ready for the game.
-
-**projects** - folder with project files for S4 Game Translation Tool - the project files can be edited in any text editor.
+- **txt** folder - Settlers IV language files ready for the game.
+- **projects** - folder with project files for S4 Game Translation Tool - the project files can be edited in any text editor.
 
 If you made some corrections to one of the language trasnaltions for The Settlers IV, please share it here. **Especially if you made a completely new game trasnlation.**
 
