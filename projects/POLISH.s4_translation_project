@@ -1,4 +1,4 @@
-**** Settlers IV Game Translation Tool Project File ** Version 0.91 beta ****
+**** Settlers IV Game Translation Tool Project File ** Version 0.96 beta ****
 **** Language: POLISH ** @15 0 0 0@ ****
 ## Text 1 ##
 ???
@@ -142,7 +142,7 @@ Kampania dodatkowa
 ???
 ####
 ## Text 48 ##
-Dodatek
+Trojanie
 ####
 ## Text 49 ##
 Kampania Majów
@@ -1388,7 +1388,7 @@ Ci Trojanie! Nawet nie podejrzewają zasadzki… Bladym świtem odkryli naszego 
 Miej na uwadze niewielkie rozmiary twojej wyspy, i od czasu do czasu wyburzaj jakiś niepotrzebny budynek.
 ####
 ## Text 437 ##
-Działaj metodycznie - krok po kroku. Możliwie wcześnie zabezpiecz się przed  atakami wroga...
+Działaj metodycznie - krok po kroku. Możliwie wcześnie zabezpiecz się przed atakami wroga...
 ####
 ## Text 438 ##
 By zabezpieczyć wysokogórską przełęcz użyj małych wież. Obsadź je maksymalną liczbą żołnierzy!
@@ -8103,82 +8103,87 @@ Rudobrodzi
 Dwóch na jednego...
 ####
 ## Text 2582 ##
-
+Nowy Świat
 ####
 ## Text 2583 ##
-
+Kampania Majów
 ####
 ## Text 2584 ##
-
+Cuda świata są nasze!
 ####
 ## Text 2585 ##
-
+Nowy Świat
 ####
 ## Text 2586 ##
-
+Nowy Świat
 ####
 ## Text 2587 ##
-
+Nowy Świat!
 ####
 ## Text 2588 ##
-
+Kampania Rzymian
 ####
 ## Text 2589 ##
-
+Świat jest u naszych stóp!
 ####
 ## Text 2590 ##
-
+Kampania Trojan
 ####
 ## Text 2591 ##
-
+Niezbadany kraj
 ####
 ## Text 2592 ##
-
+Kampania Wikingów
 ####
 ## Text 2593 ##
-
+Pragniemy świętować festiwale
 ####
 ## Text 2594 ##
-
+Mamy posąg, teraz wszystko, co musimy zrobić, to wrócić bezpiecznie!
 ####
 ## Text 2595 ##
-
+Sekwencje 3D
 ####
 ## Text 2596 ##
-
+Opowieść
 ####
 ## Text 2597 ##
-
+Andreas Suika
 ####
 ## Text 2598 ##
 
 ####
 ## Text 2599 ##
-
+Thorsten Mutschall
 ####
 ## Text 2600 ##
-
+Blue Byte Game Channel
 ####
 ## Text 2601 ##
-
+Michael Dreher
+Stefan Guennemann
+Patrick Melchior
+Ralf Roehn
+Thomas Wiesinger
 ####
 ## Text 2602 ##
 
 ####
 ## Text 2603 ##
-
+Bernd Resing
 ####
 ## Text 2604 ##
 
 ####
 ## Text 2605 ##
-
+Stefan Günnemann
+Dogan Cinar
 ####
 ## Text 2606 ##
 
 ####
 ## Text 2607 ##
-
+Serge Hascoet
 ####
 ## Text 2608 ##
 
@@ -8187,7 +8192,7 @@ Dwóch na jednego...
 
 ####
 ## Text 2610 ##
-
+Andreas Suika
 ####
 ## Text 2611 ##
 
@@ -8196,19 +8201,23 @@ Dwóch na jednego...
 
 ####
 ## Text 2613 ##
-
+Michael Dreher
+Florian Becker
+Daniela Brinkschulte
+Marko Giertolla
+Joachim Walther
 ####
 ## Text 2614 ##
 
 ####
 ## Text 2615 ##
-
+Lionel Gaget
 ####
 ## Text 2616 ##
 
 ####
 ## Text 2617 ##
-
+Sylvain Brunet
 ####
 ## Text 2618 ##
 
@@ -8217,37 +8226,50 @@ Dwóch na jednego...
 
 ####
 ## Text 2620 ##
-
+Andreas Hildebrand
+Peter Reincke
 ####
 ## Text 2621 ##
-
+Projektowanie Map
 ####
 ## Text 2622 ##
-
+Andreas Suika
+Jan Brockmann
+G.A.R. de Jong
+Ulrich Rees
+Ralf Spang
+Markus Segeth
+Thomas Dumrauf
+Nurlaili Legimin
+Joachim Schiedt
+Robert Schauer
+Ralph Bethke
+Marco Haake
+Marc Bethke
 ####
 ## Text 2623 ##
 
 ####
 ## Text 2624 ##
-
+Adam Markus Zaczek
 ####
 ## Text 2625 ##
 
 ####
 ## Text 2626 ##
-
+Odile Limpach
 ####
 ## Text 2627 ##
 
 ####
 ## Text 2628 ##
-
+Adam Markus Zaczek
 ####
 ## Text 2629 ##
 
 ####
 ## Text 2630 ##
-
+Andreas Suika
 ####
 ## Text 2631 ##
 
@@ -8256,10 +8278,10 @@ Dwóch na jednego...
 
 ####
 ## Text 2633 ##
-
+Prezydent
 ####
 ## Text 2634 ##
-
+Yves Guillemot
 ####
 ## Text 2635 ##
 
@@ -8277,7 +8299,7 @@ Dwóch na jednego...
 
 ####
 ## Text 2640 ##
-
+Menadżer Projektu
 ####
 ## Text 2641 ##
 
@@ -11346,7 +11368,7 @@ Wybierz typ specjalisty, którego zamierzasz powołać a następnie podaj liczb�
 pusty
 ####
 ## Text 3617 ##
-xxx
+Nie tylko jednostki wojskowe, ale także specjaliści mogą zostać zaatakowani przez żołnierzy wroga. Upewnij się, że twój złodziej unika tego niebezpieczeństwa.
 ####
 ## Text 3618 ##
 Powołaj dziesięciu Rycerzy trzeciego poziomu.
