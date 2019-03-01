@@ -17,7 +17,7 @@ This is the list of the game languages:
         4 ITALIAN                                                        (O-?)
         5 POLISH                                                         (O-GE)
         6 KOREAN                                                         (O-?)
-        7 CHINESE (but I don't know which one - probably traditional)    (No)
+        7 CHINESE (but I don't know which one)                           (No)
         8 SWEDISH                                                        (O-?)
         9 DANISH                                                         (O-?)
         10 NORWEGIAN                                                     (O-?)
