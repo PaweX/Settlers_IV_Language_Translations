@@ -8,25 +8,25 @@ Collection of language translations for The Settlers IV (Die Siedler IV)
 
 If you made some corrections to one of the language trasnaltions for The Settlers IV, please share it here. **Especially if you made a completely new game trasnlation.**
 
-This is the list of the game languages:
+This is the list of the game languages and their translation status:
 
         0 ENGLISH                                                        (O-GE)
         1 GERMAN                                                         (O-All)
-        2 FRENCH                                                         (O-?)
-        3 SPANISH                                                        (O-?)
-        4 ITALIAN                                                        (O-?)
+        2 FRENCH                                                         (O-GE)
+        3 SPANISH                                                        (O-Bas)
+        4 ITALIAN                                                        (O-Bas)
         5 POLISH                                                         (O-GE)
-        6 KOREAN                                                         (O-?)
-        7 CHINESE (but I don't know which one)                           (No)
-        8 SWEDISH                                                        (O-?)
-        9 DANISH                                                         (O-?)
-        10 NORWEGIAN                                                     (O-?)
-        11 HUNGARIAN                                                     (O-?)
+        6 KOREAN                                                         (O-Bas)
+        7 CHINESE (don't know which one, probably both can be made)      (O-No)
+        8 SWEDISH                                                        (O-Bas)
+        9 DANISH                                                         (O-Bas)
+        10 NORWEGIAN                                                     (O-Bas)
+        11 HUNGARIAN                                                     (O-GE)
         12 HEBREW                                                        (O-Bas)
-        13 CZECH                                                         (O-?)
-        14 FINNISH                                                       (No)
-        16 RUSSIAN                                                       (U-All)
-        17 THAI                                                          (No)
+        13 CZECH                                                         (O-GE)
+        14 FINNISH                                                       (O-No)
+        16 RUSSIAN                                                       (O-No + U-GE)
+        17 THAI                                                          (O-No)
         18 JAPANESE                                                      (O-Bas)
         
         
