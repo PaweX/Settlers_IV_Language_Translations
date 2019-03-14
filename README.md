@@ -44,11 +44,11 @@ This is the list of the game languages and their translation status:
 - *No* - Nothing, no translation
 - *All* - All translations
 - *?* - Unknown: probably *GE* or *Bas*
-- *GE* - Gold Edition
+- *GE* - Gold Edition translation
 - - *Bas* - the basis of the game
 - - *MP1* - Mission CD 1
 - - *Tro* - The Trojans and the Elixir of Power
-- *SE* - Second Expansions
+- *SE* - Second Expansions translation
 - - *NeW* -  Die Neue Welt (The New World))
 - - *MP2* - Community Pack
 
