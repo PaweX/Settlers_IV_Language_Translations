@@ -10,6 +10,8 @@ If you made some corrections to one of the language trasnaltions for The Settler
 
 This is the list of the game languages and their translation status:
 
+**Classic Settlers IV:*
+
         0 ENGLISH                                                        (O-GE)
         1 GERMAN                                                         (O-All)
         2 FRENCH                                                         (O-GE)
@@ -28,6 +30,11 @@ This is the list of the game languages and their translation status:
         16 RUSSIAN                                                       (O-No + U-GE)
         17 THAI                                                          (O-No)
         18 JAPANESE                                                      (O-Bas)
+        
+  
+**Settlers IV History Edition:*
+
+*No information right now*
         
         
         
