@@ -1,5 +1,5 @@
-**** Settlers IV Game Translation Tool Project File ** Version 0.96 beta ****
-**** Language: ENGLISH ** @15 0 0 0@ ****
+**** Settlers IV Game Translation Tool Project File ** Version 0.97 beta ****
+**** Language: ENGLISH ** @21 0 0 0@ ****
 ## Text 1 ##
 ???
 ####
@@ -947,7 +947,7 @@ Oil Presser
 This is the oil presser. This hard-working Trojan never tires of using his oil press to process the sunflowers people bring him into the finest sunflower oil. He fills the sunflower oil into oil containers.
 ####
 ## Text 291 ##
-
+???
 ####
 ## Text 292 ##
 Coal
@@ -1418,7 +1418,7 @@ Infiltration
 ???
 ####
 ## Text 446 ##
-It has been 30 minutes since the game was saved!
+It has been 15 minutes since the game was saved!
 ####
 ## Text 447 ##
 Manufacture 200 swords, 220 bows, 160 meat units and 255 fish units, 150 bread units and 250 gold units, and transport them to the planned sites!
@@ -1826,10 +1826,10 @@ We have been initiated into the highest levels of magic, and we now know how the
 ???
 ####
 ## Text 578 ##
-???
+The Romans are welcoming us! They are sending us weapons and sulphur to build war machines.
 ####
 ## Text 579 ##
-???
+The heart of a great Warrior beats within you. We will stand by you bravely in this fight!
 ####
 ## Text 580 ##
 ???
@@ -1992,7 +1992,7 @@ Liberate the meeting point from the Dark People! Assemble a fighting force of th
 ???
 ####
 ## Text 629 ##
-???
+Now bring the selected Soldiers into the marked circle.
 ####
 ## Text 630 ##
 ???
@@ -8118,10 +8118,10 @@ Double Trouble
 The New World
 ####
 ## Text 2583 ##
-Mayan campaign
+The Mayan Campaign
 ####
 ## Text 2584 ##
-The wonders of the world are ours!
+The Wonders of the World are ours!
 ####
 ## Text 2585 ##
 The New World
@@ -8133,970 +8133,1022 @@ The New World
 New World!
 ####
 ## Text 2588 ##
-
+The Roman Campaign
 ####
 ## Text 2589 ##
-
+We have the world at our feet!
 ####
 ## Text 2590 ##
-
+The Trojan Campaign
 ####
 ## Text 2591 ##
-
+The Uncharted Land
 ####
 ## Text 2592 ##
-
+The Viking Campaign
 ####
 ## Text 2593 ##
-
+We want to celebrate with feasts!
 ####
 ## Text 2594 ##
-
+We have the statue, now all we have to do is return safely!
 ####
 ## Text 2595 ##
-
+3D Sequences
 ####
 ## Text 2596 ##
-
+Story
 ####
 ## Text 2597 ##
-
+Andreas Suika
 ####
 ## Text 2598 ##
-
+Lead Artist
 ####
 ## Text 2599 ##
-
+Thorsten Mutschall
 ####
 ## Text 2600 ##
-
+Blue Byte Game Channel
 ####
 ## Text 2601 ##
-
+Michael Dreher
+Stefan Guennemann
+Patrick Melchior
+Ralf Roehn
+Thomas Wiesinger
 ####
 ## Text 2602 ##
-
+Customer Support Assistant
 ####
 ## Text 2603 ##
-
+Bernd Resing
 ####
 ## Text 2604 ##
-
+Data Management
 ####
 ## Text 2605 ##
-
+Stefan Günnemann
+Dogan Cinar
 ####
 ## Text 2606 ##
-
+Editor
 ####
 ## Text 2607 ##
-
+Serge Hascoet
 ####
 ## Text 2608 ##
-
+Game Design
 ####
 ## Text 2609 ##
-
+Lead Game Designer
 ####
 ## Text 2610 ##
-
+Andreas Suika
 ####
 ## Text 2611 ##
-
+Blue Byte Studio
 ####
 ## Text 2612 ##
-
+Graphics
 ####
 ## Text 2613 ##
-
+Michael Dreher
+Florian Becker
+Daniela Brinkschulte
+Marko Giertolla
+Joachim Walther
 ####
 ## Text 2614 ##
-
+Artist
 ####
 ## Text 2615 ##
-
+Lionel Gaget
 ####
 ## Text 2616 ##
-
+Audio Production Manager
 ####
 ## Text 2617 ##
-
+Sylvain Brunet
 ####
 ## Text 2618 ##
-
+In-game Music Production Trojans
 ####
 ## Text 2619 ##
-
+Blue Byte Technology
 ####
 ## Text 2620 ##
-
+Andreas Hildebrand
+Peter Reincke
 ####
 ## Text 2621 ##
-
+Level Design
 ####
 ## Text 2622 ##
-
+Andreas Suika
+Jan Brockmann
+G.A.R. de Jong
+Ulrich Rees
+Ralf Spang
+Markus Segeth
+Thomas Dumrauf
+Nurlaili Legimin
+Joachim Schiedt
+Robert Schauer
+Ralph Bethke
+Marco Haake
+Marc Bethke
 ####
 ## Text 2623 ##
-
+Localisation Manager
 ####
 ## Text 2624 ##
-
+Adam Markus Zaczek
 ####
 ## Text 2625 ##
-
+CEO
 ####
 ## Text 2626 ##
-
+Odile Limpach
 ####
 ## Text 2627 ##
-
+Localisation Manager, Manual and Text
 ####
 ## Text 2628 ##
-
+Adam Markus Zaczek
 ####
 ## Text 2629 ##
-
+Map Design
 ####
 ## Text 2630 ##
-
+Andreas Suika
 ####
 ## Text 2631 ##
-
+Marketing Director Germany
 ####
 ## Text 2632 ##
-
+Benedikt Schüler
 ####
 ## Text 2633 ##
-
+President
 ####
 ## Text 2634 ##
-
+Yves Guillemot
 ####
 ## Text 2635 ##
-
+Programming
 ####
 ## Text 2636 ##
-
+Programming
 ####
 ## Text 2637 ##
-
+Lead Programmer
 ####
 ## Text 2638 ##
-
+Dietmar Meschede
 ####
 ## Text 2639 ##
-
+Jan Henning Wiese
+Daniel Wilke
 ####
 ## Text 2640 ##
-
+Project Manager
 ####
 ## Text 2641 ##
-
+Dirk Metzenthin
 ####
 ## Text 2642 ##
-
+PR Manager
 ####
 ## Text 2643 ##
-
+Karsten Lehmann
 ####
 ## Text 2644 ##
-
+In-house Beta Test Team
 ####
 ## Text 2645 ##
-
+Community Manager
 ####
 ## Text 2646 ##
-
+Waldemar Lindemann
 ####
 ## Text 2647 ##
-
+Quality Assurance
 ####
 ## Text 2648 ##
-
+Manager
 ####
 ## Text 2649 ##
-
+Hotline Team
 ####
 ## Text 2650 ##
-
+Jonas "BB Zodiak" Asboe
+Jan Philipp "BB LostSoul" Blessing
+Robin "BB Erzkanzler" Chowdhury
+Jan "BB Napf" Euman
+Katrin "BB Khim" Eppinger
+Thomas "BB Thommy" Geistert
+Tobias "BB Raven" Grimm
+Stephan "BB Tantus" Illmer
+Juri "BB Jo-" Kuprat
+Benjamin "BB Dr_B" Reckmann
+Michael "BB Vexator" Sichma
+Jam "BB Legos" Westendorf
 ####
 ## Text 2651 ##
-
+Testers
 ####
 ## Text 2652 ##
-
+Blue Byte
+Till Boos
+Christian Johrden
 ####
 ## Text 2653 ##
-
+Oliver Blanck
 ####
 ## Text 2654 ##
-
+Oliver Blanck
+Support:
+Bernd Resing
 ####
 ## Text 2655 ##
-
+Scripts
 ####
 ## Text 2656 ##
-
+Marc Bethke
 ####
 ## Text 2657 ##
-
+Special Guest
 ####
 ## Text 2658 ##
-
+MA.MA
 ####
 ## Text 2659 ##
-
+Special thanks to:
 ####
 ## Text 2660 ##
-
+Andreas Schürmann and MA.MA for their guest role in "The New World".
+All the families, friends and acquaintances of the Blue Byte Team, who contributed so much to our project through their support and understanding.
 ####
 ## Text 2661 ##
-
+THE SETTLERS IV MISSION CD 2
 ####
 ## Text 2662 ##
-
+THE SETTLERS IV
 ####
 ## Text 2663 ##
-
+Credits Mission CD 2 Blue Byte
 ####
 ## Text 2664 ##
-
+UbiSoft Marketing
 ####
 ## Text 2665 ##
-
+Marketing Manager EMEA
 ####
 ## Text 2666 ##
-
+Laurence Buisson-Nollent
 ####
 ## Text 2667 ##
-
+Management Product Group EMEA
 ####
 ## Text 2668 ##
-
+Axelle Verny
 ####
 ## Text 2669 ##
-
+Product Management EMEA
 ####
 ## Text 2670 ##
-
+Product Management Germany
 ####
 ## Text 2671 ##
-
+Andreas Balfanz
 ####
 ## Text 2672 ##
-
+Vincent Munoz
 ####
 ## Text 2673 ##
-
+Production Department
 ####
 ## Text 2674 ##
-
+Alexandre Bolchert
+Emanuelle Brunot
+Pierre Escaich
 ####
 ## Text 2675 ##
-
+Protect the new arrivals on the way to your settlement and organise a big feast for them! Bring 25 fish, 25 loaves of bread, 25 units of meat and 25 units of Tequila into the relevant camp before the Vikings reach your fortress.
 ####
 ## Text 2676 ##
-
+Take all the Towers of the hostile Vikings. Maybe a secret will reveal itself to you.
 ####
 ## Text 2677 ##
-
+In Olympia, sacrifice 16 bows, 16 swords, 16 blowguns and 16 gold bars to get manna to steal the Wonders of the World. Each spell costs 250 manna.
 ####
 ## Text 2678 ##
-
+Your Priests must not die, because they still have the Wonders of the World in their pockets! Pick up your Level 3 Warriors at the Canaries, and don't leave your 3 squad leaders behind! Take the Priests and your Warriors by ship all the way to the southwest of the map.
 ####
 ## Text 2679 ##
-
+Capture the castle and the sacred places occupied by hostile forces to obtain the Wonders of the World. Your Priests must not die, and 1 Priest must travel to each of these locations. Occupy the healing spring, build 1 Small Temple there. You need 300 manna to place a curse on the Wonders of the World...
 ####
 ## Text 2680 ##
-
+The Gods be praised! We've taken the fortress. Now we must send the Priests to the sacred grounds for the Wonders of the World when we've captured these too!
 ####
 ## Text 2681 ##
-
+The Priest has placed one of the Wonders of the World, and has immediately put a curse on it!
 ####
 ## Text 2682 ##
-
+???
 ####
 ## Text 2683 ##
-
+???
 ####
 ## Text 2684 ##
-
+???
 ####
 ## Text 2685 ##
-
+The passage is blocked by enemy warships! We can't get through here...
 ####
 ## Text 2686 ##
-
+A ferry is waiting for us off the coast of Portugal. We must hurry!
 ####
 ## Text 2687 ##
-
+The Priests have been killed. We have lost the Wonders of the World...
 ####
 ## Text 2688 ##
-
+???
 ####
 ## Text 2689 ##
-
+???
 ####
 ## Text 2690 ##
-
+A Viking Ambassador is on his way to us. We should organise a feast to welcome him!
 ####
 ## Text 2691 ##
-
+Oh no! The Ambassador's ferry was sunk by hostile Mayans! This could mean war...
 ####
 ## Text 2692 ##
-
+The Vikings are sending another Ambassador. Nothing must go wrong this time, otherwise war will be inevitable!
 ####
 ## Text 2693 ##
-
+We've failed! Even this ferry has been sunk. This heralds our downfall!
 ####
 ## Text 2694 ##
-
+The feast has not been prepared. The Ambassador is furious!
 ####
 ## Text 2695 ##
-
+The feast has been prepared. We will receive the Ambassador royally!
 ####
 ## Text 2696 ##
-
+Thank you for your offerings! As a reward, Aristobal, the benevolent god, is giving you enough manna for your purpose. Do not misuse it...
 ####
 ## Text 2697 ##
-
+Yippee! One of our Priests has conjured up a pocket-sized version of the Colossus of Rhodes.
 ####
 ## Text 2698 ##
-
+Hooray! One of our Priests has conjured up a pocket-sized version of the Lighthouse of Alexandria.
 ####
 ## Text 2699 ##
-
+???
 ####
 ## Text 2700 ##
-
+???
 ####
 ## Text 2701 ##
-
+A Trojan ferry is on its way to help us.
 ####
 ## Text 2702 ##
-
+The ferry has been destroyed by the Mage!
 ####
 ## Text 2703 ##
-
+The Mage's camouflage has been removed! We should go to him and ask what he desires.
 ####
 ## Text 2704 ##
-
+The Trojans are building on a sacred ground and this is why I wanted to drive them out. But there is free, fertile land in the west. Help me to green up the cramped Dark Land in the east and I will help the Trojans to resettle.
 ####
 ## Text 2705 ##
-
+The Mage has relocated the entire village in the area of the sacred site to the west.
 ####
 ## Text 2706 ##
-
+The Mage seems to be weakened! He was unable to hold back the ship.
 ####
 ## Text 2707 ##
-
+Thanks be to him! The Mage has moved all the buildings around the sacred place to neutral land.
 ####
 ## Text 2708 ##
-
+The Gods, yes, the Gods... Our prayers have been answered: the Gods have come to us, they are the giants from whose heads horns of mighty bulls grow. We will prepare a feast for them, because they don't trust us earthbound beings, and must show them all the respect and honour that befits them, those who lift us worms from the soil.
+But not all Mayans have such good intentions. The ungodly leader Gran Guerrero commands an army of inhuman savages who will slaughter anyone, really anyone, who comes too close to them. This time we must lead the Gods safely into battle and with all our courage. May the Gods bless us in the name of the holy cause...
 ####
 ## Text 2709 ##
-
+The holidays at last! We have been brazen and God-fearing. The false Gods turned out to be friendly, travelling Vikings, tired of fighting and seeking some joy in their lives. All fear aside, we'll go to Europe. We want to marvel at nothing less than the Wonders of the World which have been much praised by the Vikings.
+But we have received a desperate cry for help: A small Trojan settlement is the constant target of a Viking Mage called Barbarus Torgus. The peace he cannot find in his world he begrudges everyone else! He knows no mercy, even for these humble farmers...
 ####
 ## Text 2710 ##
-
+They rise up in front of us: The Colossus of Rhodes and the Lighthouse of Alexandria! We are speechless as we gaze upon these monuments. Magnificent and sublime, they soar up in this part of the world and ennoble the people. But if we have no Gods, those who mock us should not be able to admire their Wonders of the World. Besides, they would look nice in our front garden. So, get to work: The Wonders of the World are ours! Glory be! They'll never get us...
 ####
 ## Text 2711 ##
-
+Oh dear, oh dear! We must get away from here! We're being hunted like rabbits because now all the people know who has seized their Wonders of the World. They won't be nice to us... But we can't leave if our Priests aren't here. A natural barrier of reefs makes it impossible to sail to them. Let us pray for ourselves and for our Priests, so the Gods may be indulgent towards our brazen actions and enclose us in their protective embrace...
 ####
 ## Text 2712 ##
-
+How could that happen? We were so dazzled by the Wonders of the World we didn't realise how difficult it would be to put these massive structures in a suitable location. Now we're here being pursued, hunted, harassed, we must search for a place where we can rid ourselves of these monuments.
+The villains are getting closer. Strong Roman allies are said to have landed nearby and the only possible refuge is occupied by the Mayans, who hate us. It won't be easy to place a curse on the Wonders of the World among all this mayhem... If we do succeed, we promise never to steal the Wonders of the World or anything like that again!
 ####
 ## Text 2713 ##
-
+Explore the area to discover the Ambassador's route...
 ####
 ## Text 2714 ##
-
+Obtain some bread quickly, stones are hidden... Don't be too hasty to attack, help will come from the west. Watch out for their Geologists: they're not built for fighting!
 ####
 ## Text 2715 ##
-
+Spread out to the south, because you'll find some space there!
 ####
 ## Text 2716 ##
-
+Speed prevails over the use of violence... Don't forget to pick up your 5 Level 3 swordsmen, your 5 Level 3 bowmen and your 3 squad leaders at the Canaries!
 ####
 ## Text 2717 ##
-
+Beware the offensive Roman troops!
 ####
 ## Text 2718 ##
-
+A Feast for the Gods
 ####
 ## Text 2719 ##
-
+Holidays
 ####
 ## Text 2720 ##
-
+We came, we saw, we stole!
 ####
 ## Text 2721 ##
-
+The Pursuit
 ####
 ## Text 2722 ##
-
+Where shall we put them?
 ####
 ## Text 2723 ##
-
+Massada@Become the lord of the castle in the middle of the map! You only have one hour left...@
 ####
 ## Text 2724 ##
-
+Become the lord of the castle in the middle of the map! You only have one hour left.
 ####
 ## Text 2725 ##
-
+Remember: You only have one hour left!
 ####
 ## Text 2726 ##
-
+Marathon@You must get a squad leader to the sacred place in the crater in the middle of the map before anyone else! The scant starting resources and the cunning Trojans must not stop you...@
 ####
 ## Text 2727 ##
-
+You must get a squad leader to the sacred place in the crater in the middle of the map before anyone else! The scant starting resources and the cunning Trojans must not stop you...
 ####
 ## Text 2728 ##
-
+Send a squad leader to the sacred place!
 ####
 ## Text 2729 ##
-
+Battle of Issus@Break through the enemy lines and, with your ally, be the first to reach the enemy cross in the ruins!@
 ####
 ## Text 2730 ##
-
+Break through the enemy lines and, with your ally, be the first to reach the enemy cross in the ruins!
 ####
 ## Text 2731 ##
-
+You must reach the cross before your enemies!
 ####
 ## Text 2732 ##
-
+Please insert THE SETTLERS IV MISSION CD 2!
 ####
 ## Text 2733 ##
-
+Build a large fleet! It should contain 3 warships and 4 ferries, fully equipped with Soldiers, the branch of armed services and level are not specified.
 ####
 ## Text 2734 ##
-
+Sabotage the Viking and Trojan ferries and inflict 50% damage! Use the catapults! The objective is infiltration, not destruction. 1 Thief must be near the ships to sneak on board. If you're spotted three times by the watchtowers you have failed! You have one hour...
 ####
 ## Text 2735 ##
-
+Buy gold from the Guardian of the Water for permission to get water. He lives in a hidden castle. Your fleet must not be smaller. And you have to obtain 100 units of water...
 ####
 ## Text 2736 ##
-
+At least 1 thief must reach your settlement to report from the fleet in the harbour. Then return a unit to the harbour to steal the fleet. Create your army and ferries at the starting tower. You need 30 loaves of bread, 30 units of meat, fish and water for the onward journey.
 ####
 ## Text 2737 ##
-
+Bring the Wonders of the World back! To do this, destroy all the Towers that have been built around the Wonders of the World to ward off the curse and send the Wonders of the World back to their original locations. Capture the ruling Mayan castle!
 ####
 ## Text 2738 ##
-
+Oh no! Our Mage incanted the spell incorrectly and has destroyed the Lighthouse! The Lighthouse guards are now attacking us!
 ####
 ## Text 2739 ##
-
+Now the Temple has been built, our Soldiers can be healed in the circle indicated.
 ####
 ## Text 2740 ##
-
+???
 ####
 ## Text 2741 ##
-
+???
 ####
 ## Text 2742 ##
-
+???
 ####
 ## Text 2743 ##
-
+None of the thieves has reached the settlement. You have lost.
 ####
 ## Text 2744 ##
-
+A thief is reporting a fleet in the Mayans' port. It will be easy prey for us, and a unit will be enough for us to take it! We can use the fleet to continue on our journey...
 ####
 ## Text 2745 ##
-
+We have conquered the fleet! We will now be able to pick our stranded army up from the island.
 ####
 ## Text 2746 ##
-
+???
 ####
 ## Text 2747 ##
-
+???
 ####
 ## Text 2748 ##
-
+Hurrah! Everything is now ready for a boat race: Our fleet is ready to enter the competition!
 ####
 ## Text 2749 ##
-
+We failed to...
 ####
 ## Text 2750 ##
-
+???
 ####
 ## Text 2751 ##
-
+???
 ####
 ## Text 2752 ##
-
+???
 ####
 ## Text 2753 ##
-
+We have met the Guardian of the Water. He is demanding 128 gold bars to draw water on this island. For this, he will grant us a plot of land near the rivers. We should take the gold to the two transfer areas.
 ####
 ## Text 2754 ##
-
+The Guardian of the Water has noticed that the water level has gone down and is very angry. We should pay him more... We must own 4 ferries and 3 warships at the end of the mission so we can continue our journey!
 ####
 ## Text 2755 ##
-
+The Guardian of the Water is granting us a plot of land.
 ####
 ## Text 2756 ##
-
+???
 ####
 ## Text 2757 ##
-
+???
 ####
 ## Text 2758 ##
-
+The route is now free. We should be vigilant from now on, they must not detect our presence.
 ####
 ## Text 2759 ##
-
+The guards are suspicious. We should be even more careful!
 ####
 ## Text 2760 ##
-
+Our presence has been detected. We have failed.
 ####
 ## Text 2761 ##
-
+The sabotage of the Trojan ferry was a resounding success. We can now bring a thief aboard.
 ####
 ## Text 2762 ##
-
+A thief was slipped onto the ferry unnoticed!
 ####
 ## Text 2763 ##
-
+The Viking ferry was successfully sabotaged. We can now bring a thief aboard.
 ####
 ## Text 2764 ##
-
+A thief was sneaked aboard the Viking ferry.
 ####
 ## Text 2765 ##
-
+The sabotage of the Mayan ferry was successful. We can now bring a thief aboard.
 ####
 ## Text 2766 ##
-
+A thief was sneaked aboard the Mayan ferry.
 ####
 ## Text 2767 ##
-
+Caesar's legions are on the march! Now our Emperor has decided he won't rule anything less than the world, we won't be able to stop the last belligerent Trojans. Only we shall emerge victorious from this battle!
+But under no circumstances should we lose sight of our real objective: Under Erik the Red, the Vikings are back from America. They have found a Caribbean island kingdom in the west, near the so-called Gulf of Mexico, wherever that may be! The fleet we built in haste will win this race and we, the Romans, will claim this new land for Caesar and plant our SPQR standard firmly in the ground!
 ####
 ## Text 2768 ##
-
+Allies! Why do we Romans need allies? We are the mightiest power in this struggle between the peoples. Caesar will reward us richly for the new land in the Caribbean. We don't care how we achieve victory in the boat race, even if it means we have to eliminate our allies in the most uncivil of ways. But what do we care? We want to win! Warning: we must not be discovered! That's why this time we won't announce we're on the warpath...
 ####
 ## Text 2769 ##
-
+This is the revenge of the Gods for the sabotage we committed! Lost in an unknown island area, we are suffering from a severe water shortage. There is unrest among the legionnaires, and a mutiny may be brewing. There is gold in the mountains, we know that, but gold will not quench our thirst! Without a source of drinking water this will surely be the end for us...
 ####
 ## Text 2770 ##
-
+Oh, Gods! Why do you insist on punishing us? A violent storm blew up and our fleet has been destroyed! Our people are scattered to a thousand winds... Now let us reflect on our virtues: discipline and strength. We will build a new settlement, our economy will become a role model. But how can we compensate for the loss of the fleet? We must win the race! A small reconnaissance patrol has discovered a fleet in an enemy bay. This is an excellent opportunity to obtain the ships we need...
 ####
 ## Text 2771 ##
-
+These stupid Maya! We can't believe what our Scout has reported to us. They've stolen no less than two of the Wonders of the World! Should our European culture be destroyed by these feathered savages? We'll know how to prevent that and will stand in the way of anyone who opposes us. We're facing the challenge of the battle once again, but we must focus all our attention: A healing spring makes our enemies strong, so let's make it unusable by destroying the temple. We will obtain the spring with one of our Temples at this place, because only without the spring the Mayans can be defeated, and only then will their mighty castle fall like a straw in the storm...
 ####
 ## Text 2772 ##
-
+More than one site is suitable for a port... But watch out: All these areas are in enemy hands!
 ####
 ## Text 2773 ##
-
+Stay away from the Towers! An invincible fleet has secured the harbour. You have to must sneak over the island from behind. An attack would alert your fellow combatants immediately, but under no circumstances should you destroy the ferries!
 ####
 ## Text 2774 ##
-
+Your sailors are easily confused... Just take them close to a port. Explore the islands thoroughly before selecting the location for a settlement.
 ####
 ## Text 2775 ##
-
+Beware the Mayan patrols! Monitor your resources closely.
 ####
 ## Text 2776 ##
-
+Use catapults to destroy the Big Towers right by the Wonders of the World! But beware: The Mayans have a healing spring, but with your own Small Temple at this location your Soldiers can draw power from the spring.
 ####
 ## Text 2777 ##
-
+The Battle for Troy
 ####
 ## Text 2778 ##
-
+Sabotage
 ####
 ## Text 2779 ##
-
+Water Shortage
 ####
 ## Text 2780 ##
-
+Navigation Problems
 ####
 ## Text 2781 ##
-
+Discovery of a New World
 ####
 ## Text 2782 ##
-
+Score
 ####
 ## Text 2783 ##
-
+The Master Thief@Enter the sanctuary and steal the holy statue!@Even if it means turning your own men against you: You must possess the holy statue! Your small tribe is suffering from an unknown plague, Odin seems to have abandoned you... The Old Ones tell us that the statue has magic powers that alone are able to heal your people.
+This mission is unlike any you have seen before, and will not be won with the mighty power of the Vikings; Thor's Hammer must be at peace! Only with cunning and treachery can this sanctuary be taken intact. Prove yourself and protect the weak from certain death!
 ####
 ## Text 2784 ##
-
+Lose neither thief nor ferry! Proceed with caution on his mission; speed will not be rewarded...
 ####
 ## Text 2785 ##
-
+The Village of the Eleven Sacred Towers@Hear the words of the Priest and fulfil the missions you are ready to attempt. Protect the Eleven Sacred Towers in our settlement, not a single one may be destroyed.@Greetings stranger! The village where we live was once the favourite place of the Gods! Odin, his wife Frigg and his sons Thor, Vidar, Vali, Hödr, and Hermodr are said to have spoken to our ancestors here before retiring to the realms of heaven, Hlidskjalf. They created eleven high towers which were aligned with the stars. For us, these towers are the most sacred things we possess. This is what the inhabitants of the western "Island of Guardians" say...
+Some time ago, a friendly Roman tribe settled in the north of our island. Since then, we have been engaged in extensive trade with our new friends, who have no beards. Thanks to Odin, our humble people can flourish in peace. Our women are happy and bear us many sons, of whom we are very proud...
+Only Olec, whom they call the "Cruel", is a cause for concern; he has always been a reclusive loner who has withdrawn to his castle in the east. But now we have not heard from him for a long time. However, a new people seems to have settled in the southwest. We will soon send a Scout to inform us of the new arrivals. An envoy of the "Keepers of the Towers" awaits you in the south. Listen carefully to what he has to report...
 ####
 ## Text 2786 ##
-
+Your own Soldiers are the best! Never rely on any others...
 ####
 ## Text 2787 ##
-
+Ruler! Hear what I have to report! Evil princes have spread. Show your mettle and cross the line when you are ready to rise to the challenge!
 ####
 ## Text 2788 ##
-
+Bold and brave my king! Help the Romans in the north by supplying weapons until help arrives in 2 hours. Your glory will be great!
 ####
 ## Text 2789 ##
-
+Do you have even more faith in yourself? Then cross the next line, and manna will be released all over the island and the magic power of all Priests will be increased!
 ####
 ## Text 2790 ##
-
+But remember: The spell also makes your enemies stronger!
 ####
 ## Text 2791 ##
-
+You appear to have supreme self-confidence, great ruler! Destroy Olec the Cruel, who enslaved a Mayan people to protect himself.
 ####
 ## Text 2792 ##
-
+If you dare to pass through the flames, you get 40 weapons... If you survive! Your chances are 1:1, so think carefully!
 ####
 ## Text 2793 ##
-
+What good luck! If you believe that you can defeat even Hermes the Coward, then cross this line too. There will also be a surprise for you.
 ####
 ## Text 2794 ##
-
+Luck is not on your side this time! My surprise magic has no effect. Unfortunately both Hermes and Olec received 40 Warriors!
 ####
 ## Text 2795 ##
-
+But maybe you'll have more luck with the next line! Carry on and see what happens...
 ####
 ## Text 2796 ##
-
+Well! How about that!? Look through the eyes of the donkeys to observe the Mayans, Olec's slaves.
 ####
 ## Text 2797 ##
-
+Now return to your people. Help the Romans survive by supplying weapons and destroy Olec the Cruel and Hermes the Coward!
 ####
 ## Text 2798 ##
-
+Coward, you do not deserve to lead a people! Get away from me and be cursed for the next 10 years!
 ####
 ## Text 2799 ##
-
+Well! You have decided not to proceed further! Good luck with your mission...
 ####
 ## Text 2800 ##
-
+Supply weapons to the Romans to help them to survive for two hours!
 ####
 ## Text 2801 ##
-
+Your weapons deliveries will ensure the survival of the Romans. Kill Olec the Cruel in the northwest!
 ####
 ## Text 2802 ##
-
+You will help the Romans to survive by supplying weapons. Kill Olec the Cruel and Hermes the Coward!
 ####
 ## Text 2803 ##
-
+One more thing, my wise lord: If your stone deposits run low, you will find a good supply of stone here.
 ####
 ## Text 2804 ##
-
+I await your answer, my lord!
 ####
 ## Text 2805 ##
-
+Coward! You are indecisive and unable to lead a people!
 ####
 ## Text 2806 ##
-
+The fleet has been sighted, rescue is close at hand!
 ####
 ## Text 2807 ##
-
+The enemy is preparing to attack! Muster your troops and help our Roman ally!
 ####
 ## Text 2808 ##
-
+It appears that the arrival of the Roman fleet has been delayed. Continue to protect your friends in the way you have pledged to do so!
 ####
 ## Text 2809 ##
-
+One of the Eleven Sacred Towers of our settlement has been destroyed! The Gods will take revenge on us miserable failures...
 ####
 ## Text 2810 ##
-
+A thousand thanks, great Warrior. You have saved the Romans from destruction!
 ####
 ## Text 2811 ##
-
+A thousand thanks, great Warrior. You have saved this island from Olec the Cruel!
 ####
 ## Text 2812 ##
-
+A thousand thanks, great Warrior. You have saved this island from Olec the Cruel and Hermes the Coward.
 ####
 ## Text 2813 ##
-
+Reach the ships waiting in the harbour with your unit of troops. The fighting force must be at least 1 foundation cart, 10 Soldiers and 5 thieves. The units automatically move in as they reach the harbour. Monitor the time. The boats are running on time!
 ####
 ## Text 2814 ##
-
+Build a new fleet consisting of 3 ferries and 3 warships and 10 Level 3 Soldiers for each branch of the armed services and 3 carts.
 ####
 ## Text 2815 ##
-
+Collect 150 stones to construct the sacred heads. The locals will thank you with food! But the stones must be handed over within the next 1 1/2 hours, so that the stone heads will be ready on time for the feast of the Mayan Gods!
 ####
 ## Text 2816 ##
-
+Find the second gateway on the map! But only a Priest can activate the magic gateway. Roman guards will stand in your way, but you don't have to destroy them to achieve your objective!
 ####
 ## Text 2817 ##
-
+There is another gateway on this island! Find and activate it! It will lead you into a new world. A squad leader must be sent to this Mayan. Solve the riddle of the guards. The Romans won't take kindly to the fact you're looking for it...
 ####
 ## Text 2818 ##
-
+We will only negotiate with a squad leader!
 ####
 ## Text 2819 ##
-
+We'll help you if you pass a test. You have to bring 10 Soldiers to the two small islands northwest and southeast of our position!
 ####
 ## Text 2820 ##
-
+You have passed the test. We will help you.
 ####
 ## Text 2821 ##
-
+We must build 12 Eyecatchers in the designated places to make the gateway appear.
 ####
 ## Text 2822 ##
-
+We found a gateway that transported our units to another location. But beware: This is still not the magic portal we are seeking!
 ####
 ## Text 2823 ##
-
+This is a nice place to start a settlement!
 ####
 ## Text 2824 ##
-
+Our Tower has been spotted. Help is on the way!
 ####
 ## Text 2825 ##
-
+Now we just need to take a squad leader to the gateway!
 ####
 ## Text 2826 ##
-
+???
 ####
 ## Text 2827 ##
-
+???
 ####
 ## Text 2828 ##
-
+We’re ready to go!
 ####
 ## Text 2829 ##
-
+Minutes for more survivors.
 ####
 ## Text 2830 ##
-
+We do not have enough units left to enable us to escape. We are lost!
 ####
 ## Text 2831 ##
-
+We're too late! The ships have left without us!
 ####
 ## Text 2832 ##
-
+We can wait no longer. We're setting sail.
 ####
 ## Text 2833 ##
-
+Roman saboteurs had hidden on board and are now attacking our mines!
 ####
 ## Text 2834 ##
-
+One of the saboteurs told us about a gateway that leads us directly to the New World. We should look for it when we're ready to depart.
 ####
 ## Text 2835 ##
-
+Hurrah! We did it just in time. The stone heads will be ready for the feast of the Gods. The goods we were promised have arrived. We can continue on our journey!
 ####
 ## Text 2836 ##
-
+???
 ####
 ## Text 2837 ##
-
+???
 ####
 ## Text 2838 ##
-
+Our ferry has conveyed the request for help. Let's now just wait for help to arrive!
 ####
 ## Text 2839 ##
-
+A Viking ferry is on its way to help us.
 ####
 ## Text 2840 ##
-
+At last! We have our fleet back after all our hard work. Everything is ready for the onward journey.
 ####
 ## Text 2841 ##
-
+No, oh no! We have failed...
 ####
 ## Text 2842 ##
-
+???
 ####
 ## Text 2843 ##
-
+Oh, Gods! Why do you allow us to suffer? Our homeland Troy, the cradle of our culture, is in ruins. You have allowed the Romans to storm this once mighty stronghold...
+Flight is the only way left open to us. But this flight shall not be our end, it offers us the unique opportunity to deploy our scientific superiority to finally emerge victorious! The foolhardy Vikings have challenged all the nations to a boat race, with an uncharted Caribbean island kingdom in the west as the reward for the winner. But we'll make much faster progress to our destination because we know the Earth is round! He who laughs last...
 ####
 ## Text 2844 ##
-
+Oh, these Roman dogs! We were able to escape the storm they unleashed in their attack on Troy, but not their intrigues! Sabotage is the only way the Romans can win the race. And we had made good progress travelling west to America...
+But now we're stranded on an uncharted island without a single ship. How are we supposed to build a new fleet out of this miserable refuge? But our collapsed economy doesn't appear to be the only evil we have to fight: this island is eerie. Strange figures flit through the night and we hear terrible noises. What awaits us here? Is this the end?
 ####
 ## Text 2845 ##
-
+The new fleet is now built and full of confidence, we're back in the race to the unexplored land in the west! An island world unfolds before us, unknown and exotic, populated by a people that built elaborate stone heads in honour of the gods.
+Perhaps this will give us the opportunity to replenish our food supplies... The construction of these huge stone heads uses vast amounts of stone, and the stone deposits of the island people are dwindling. This is the precisely the right moment to trade with the Mayans: We are experts in mining, we can mine stone for hundreds of these stone monuments, while the Mayans prosper and want to thank the Gods. The Maya's thanksgiving ritual is approaching, so let's go, Trojans, let's hit some rocks!
 ####
 ## Text 2846 ##
-
+A gateway! We need a gateway! Not just any one... We received a clue about a magic portal that could enable us to gain some ground in this boat race between peoples, because it's meant to get the brave souls who have dared to venture thus far one step closer to America!
+But we have to find the magic place on this unexplored island to enable us to take advantage of this in the game. A first outpost has been built, and all we have to do now is to wait for our main ship which will transport the raw materials we need urgently. However, we must proceed with caution because, as we know already, the portal is guarded by strong Roman units...
 ####
 ## Text 2847 ##
-
+The brave shall be rewarded! Our step through the magic gateway has paved the way to a new world. Pure magic has given us wings and victory in the race is within our grasp. We are now faced with another test, and must find the second magic portal. It is said to be hidden in the mighty peaks towering above us and guarded by wild Mayan tribes. Not everyone is welcome, and we will need to select our negotiator very carefully, because the Mayans will show the appropriate respect to a skilled and highly decorated Warrior from our ranks...
 ####
 ## Text 2848 ##
-
+Follow your carts! They know the area. Use the natural bridges and walkways to board the ships which you were able to see in the beginning...
 ####
 ## Text 2849 ##
-
+Take a ship to the east! Help could come from there...
 ####
 ## Text 2850 ##
-
+Build as many Stone Mines as you can...
 ####
 ## Text 2851 ##
-
+Recruit a powerful army!
 ####
 ## Text 2852 ##
-
+Take your courage in both hands! Send your squad leader through the gateway, the wages of fear are beckoning you! Behind it could be concealed the greatest of all treasures...
 ####
 ## Text 2853 ##
-
+Escape from Troy
 ####
 ## Text 2854 ##
-
+The End?
 ####
 ## Text 2855 ##
-
+Food Shortage
 ####
 ## Text 2856 ##
-
+The Gateway
 ####
 ## Text 2857 ##
-
+Another World
 ####
 ## Text 2858 ##
-
+Reach the native port in the southeast with at least one ship and pass all the tests. Warning: You will be crossing some dangerous areas! You don't have to build a settlement in this mission.
 ####
 ## Text 2859 ##
-
+The choice is yours. Either you produce 50 loaves of bread, 50 fish, 50 units of meat and 50 units of water, or you deliver 190 units of mead to the Mage on the southern island, who will then provide you with everything you need. Watch out for people who may be jealous...
 ####
 ## Text 2860 ##
-
+In total, 15 Pioneers, 15 Geologists, 15 Gardeners and 15 level three Swordsmen must be deployed after the economy falters following the effects of the alcohol. These should leave the map on the ships bound for the west...
 ####
 ## Text 2861 ##
-
+Store 64 units each of fish, meat and bread within the hour of the summer solstice! Make sure you store only one food type on each of your three islands.
 ####
 ## Text 2862 ##
-
+Find out if women really live on this island... Destroy 5 of 8 Temples. Reach the middle of the crater.
 ####
 ## Text 2863 ##
-
+The Temple seems to be the origin of the magic barrier. We must destroy it!
 ####
 ## Text 2864 ##
-
+The barrier is now lifted.
 ####
 ## Text 2865 ##
-
+A terrible barrier of fire is surrounding the valley!
 ####
 ## Text 2866 ##
-
+Hooray! We have found MA.MA!
 ####
 ## Text 2867 ##
-
+We have not found MA.MA...
 ####
 ## Text 2868 ##
-
+Oh, no! We have failed...
 ####
 ## Text 2869 ##
-
+???
 ####
 ## Text 2870 ##
-
+???
 ####
 ## Text 2871 ##
-
+???
 ####
 ## Text 2872 ##
-
+???
 ####
 ## Text 2873 ##
-
+???
 ####
 ## Text 2874 ##
-
+Please help me to build a farm here so I can settle down. In return, I will remove the reefs that are hampering your onward journey.
 ####
 ## Text 2875 ##
-
+Many thanks for your help. I have now flooded the reefs.
 ####
 ## Text 2876 ##
-
+We are being oppressed by enemy Maya in the northeast. Their Mages are also blocking our route here.
 ####
 ## Text 2877 ##
-
+The magic barrier has been lifted. Thank you for your help, and we wish you well on your journey!
 ####
 ## Text 2878 ##
-
+To deactivate this barrier, you must take at least 10 Soldiers to the sacred circle in the east.
 ####
 ## Text 2879 ##
-
+Defeat the mocking enemies on this island and retrieve my amulet from the scarecrow! I will then free you from the reefs...
 ####
 ## Text 2880 ##
-
+How can I ever thank you! You can now pass over the reefs unhindered.
 ####
 ## Text 2881 ##
-
+We were held up at the robbers' reefs and robbed! Please take some Pioneers and occupy our camp to the west of this southern island. The Mayans will destroy the barrier once they are defeated...
 ####
 ## Text 2882 ##
-
+Thank you! We have our goods back! The reefs are gone and you can continue on your journey.
 ####
 ## Text 2883 ##
-
+The Soldiers that were sent out were successful and have entered the sacred circle in the east in sufficient numbers. The reef barrier has disappeared!
 ####
 ## Text 2884 ##
-
+???
 ####
 ## Text 2885 ##
-
+???
 ####
 ## Text 2886 ##
-
+???
 ####
 ## Text 2887 ##
-
+???
 ####
 ## Text 2888 ##
-
+???
 ####
 ## Text 2889 ##
-
+???
 ####
 ## Text 2890 ##
-
+???
 ####
 ## Text 2891 ##
-
+???
 ####
 ## Text 2892 ##
-
+???
 ####
 ## Text 2893 ##
-
+???
 ####
 ## Text 2894 ##
-
+We failed...
 ####
 ## Text 2895 ##
-
+Erik the Red knows exactly how to keep us happy! We haven't become get fat and lazy - the fighting blood in our veins is too fiery. But a little change after all the conquests and battles will do no harm. It is important that we enjoy ourselves and have fun to keep boredom at bay! But this work of the devil Erik has challenged all the nations to a boat race, and the prize for the winner is the undiscovered land in the Caribbean. Summer, sun, sand, all our own barren and cold land cannot offer. The lure is fabulous! But first we have to reach our home and regain our strength. The exploration of America was exhausting. So, you old seadogs, we're entering the race and will defy every challenge... Danger is our middle name!
 ####
 ## Text 2896 ##
-
+By Odin! Not only have we become fat and lazy, but we are now ruled by stupidity. Nobody seems able to think properly anymore, the entire crossing was one continuous drinking binge. And we have precisely the right thing for this excess: tons of mead. We were able to defy the tides of the sea. But not a single crust of bread can be found on this floating tavern. That doesn't help: We must sober up and find food. We've heard rumours that a Mage in these lands can turn mead into food. If we don't want to produce fish, bread and meat ourselves, we could try to bring our mead to the wise man, because we have plenty of it... If we don't pull ourselves together we'll perish in this godless place!
 ####
 ## Text 2897 ##
-
+What a party! We really pushed the boat out. There's no stone left standing. Our new enemy is now called a headache, and even the old miracle remedies of our Mayan friends have no affect... But this Mayan festival had its benefits as far as we're concerned, because now our enemies have been unmasked in their own ranks: thieves of Roman origin were going to sabotage our fun boat race at every opportunity! But the rogues were quickly identified at this feast. They have already fallen flat on their faces after just one barrel of mead! This is unworthy of a true Norseman...
 ####
 ## Text 2898 ##
-
+These Maya really make us laugh. Not only did they take us for Gods in their god delusion, they have now sacrificed the last remnants of their minds to alcohol, and we seized the chance to steal a treasure map. We simply couldn't resist the temptation! Because the treasure map indicates a secret island on which only women live in a fabled place. The women are very beautiful, and a Warrior's heart knows immediately that this is precisely where it is needed. Let the other ignorant idiots make fools of themselves in the boat race, while we'll trim our beards and embark on a journey into paradise...
 ####
 ## Text 2899 ##
-
+The mysterious island actually exists, but we haven't seen any women yet. It will be impossible to explore the entire island. In front of us a mighty wall of fire has appeared, that does not seem to be of this world. The way to the interior of the island is therefore barred. How can we penetrate this firewall? Well, we don't know yet, but the idea of flocks of fragrant, beautiful women is a very, very good incentive to stimulate the grey matter!
 ####
 ## Text 2900 ##
-
+Hostile Maya are found all over the islands. Never leave your settlers alone! Your allies live in the East, but you don't have to visit them - just travel direct to the destination port in the green circle. And remember: you don't need to settle on this map!
 ####
 ## Text 2901 ##
-
+Don't feel too safe on your island...
 ####
 ## Text 2902 ##
-
+Fish in the river and never forget that you could be attacked at any time...
 ####
 ## Text 2903 ##
-
+Take a careful note of what is available on which island!
 ####
 ## Text 2904 ##
-
+Exercise caution when expanding your settlement!
 ####
 ## Text 2905 ##
-
+Return from America
 ####
 ## Text 2906 ##
-
+Wrong Shopping List
 ####
 ## Text 2907 ##
-
+A Big Party
 ####
 ## Text 2908 ##
-
+Treasure Hunt
 ####
 ## Text 2909 ##
-
+The Women
 ####
 ## Text 2910 ##
 Finish all the subtasks!
@@ -9250,7 +9302,7 @@ Clouds are obscuring our sun!
 2nd Mayan Mission
 ####
 ## Text 2960 ##
-2rd Mayan Mission
+3rd Mayan Mission
 ####
 ## Text 2961 ##
 3rd Mayan Mission
@@ -11781,4 +11833,347 @@ Wolf on the Prowl
 ####
 ## Text 3754 ##
 Unholy Alliance
+####
+## Text 3755 ##
+Great Campaigns
+####
+## Text 3756 ##
+Drive the Mayans from the sacred springs of the Huastecs!
+
+Destroy their large fortifications (castles)!
+####
+## Text 3757 ##
+Destroy the fort of Alonso Alvárez Pinedo!
+####
+## Text 3758 ##
+Destroy 700 Spanish Soldiers and increase your fighting force to 150!
+
+Be careful not to lose too many of your own Soldiers, because you'll then have to destroy more than 700 Spaniards!
+####
+## Text 3759 ##
+Destroy the port of Cortés and steal back the sacred gold statue of Ehecatl-Quetzalcoatl!
+####
+## Text 3760 ##
+Well done! You have just destroyed the 100th enemy, I will therefore grant you the help you were promised.
+####
+## Text 3761 ##
+Well done! You have just destroyed the 200th enemy, I will therefore grant you the help you were promised.
+####
+## Text 3762 ##
+Well done! You have destroyed the 300th enemy, I will therefore grant you the help you were promised.
+####
+## Text 3763 ##
+Well done! You have destroyed the 400th enemy, I will therefore grant you the help you were promised.
+####
+## Text 3764 ##
+Well done! You have destroyed the 500th enemy, I will therefore grant you the help you were promised.
+####
+## Text 3765 ##
+Well done! You have destroyed the 600th enemy, I will therefore grant you the help you were promised.
+####
+## Text 3766 ##
+Well done! You have destroyed the 750th enemy, I will therefore grant you the help you were promised.
+####
+## Text 3767 ##
+Well done! You have destroyed the 1000th enemy, I will therefore grant you the help you were promised.
+####
+## Text 3768 ##
+Well done! You have destroyed the 1250th enemy, I will therefore grant you the help you were promised.
+####
+## Text 3769 ##
+You have just lost your 200th Soldier, so you must now destroy 200 more enemies.
+####
+## Text 3770 ##
+You have just lost your 300th Soldier, so you must now destroy 300 more enemies.
+####
+## Text 3771 ##
+You have just lost your 400th Soldier, so you must now destroy 400 more enemies.
+####
+## Text 3772 ##
+You have just lost your 500th Soldier, so you must now destroy 500 more enemies.
+####
+## Text 3773 ##
+You have just lost your 600th Soldier, so you must now destroy 600 more enemies.
+####
+## Text 3774 ##
+Cortés, the Spanish conqueror, has crushed the Maya, leaving only a small group of Mayans led by the Mayan prince Itzamná to escape. They have settled in the large wetland area claimed by the Huastecs.
+
+The Huastecs aren't very pleased, because this wetland is a sacred place for them. The king of the Huastecs has asked you to rid the sacred ground of the Huastecs from the sacrilegious.
+####
+## Text 3775 ##
+A first expedition to the Pánuco River led by Alonso Alvárez Pinedo approached the settlement area of the Huastecs. His troops control the Pánuco River, and Captain Pinedo has built a strong fort to serve as a base for a further advance to penetrate the territory of the Huastecs.
+
+The Huastecs have built a small settlement on a nearby plateau. You must now organise the resistance against the Spaniards from this settlement and crush them utterly.
+
+However, there is a small problem: the gold and fish resources in our settlement are almost depleted.
+
+The Huastecs pray to their god, Ehecatl-Quetzalcoatl, to help them. He speaks to you, "If you sacrifice the enemies to me, I will occasionally replenish your gold and fish resources."
+####
+## Text 3776 ##
+The Huastecs are crushing the Spaniards led by Alonso Alvárez Pinedo, who is surprised by the lack of reports from the Pinedo expedition, and has sent out Scouts who find the scalps and facial skins of the human sacrifices in the temples of the Huastecs.
+
+Cortés is angry, and sends two companies to take revenge on the Huastecs. The two troops enclose a Huastec settlement.
+
+Hang in there and destroy 700 Spaniards. Watch out for your own troops: If you lose 200 of your Soldiers, you must destroy 800 enemy Soldiers, you lose 300 Soldiers, you must destroy 900 opponents. However, you will have to destroy a maximum of 1,300 Spaniards.
+####
+## Text 3777 ##
+The Huastecs have always been successful in resisting the troops of Cortés, but Captain Martas Azevedo's troops have managed to conquer one of the sacred places with a magnificent gold statue in honour of the god Ehecatl-Quetzalcoatl for the Spanish crown.
+
+Cortés has his port base not far from the sacred place, and the stolen gold will be shipped to Spain from here.
+
+Capture a harbour to prevent this and destroy the harbour buildings.
+####
+## Text 3778 ##
+Beware the Mayan conquering army.
+
+Only the 6 castles must be captured.
+####
+## Text 3779 ##
+Favour extensive manna production and use your Priests' spells.
+
+Produce enough bread and therefore supply your Gold Mines.
+####
+## Text 3780 ##
+Beware of trying to defeat your opponents on the ground, the losses would be too great. 
+
+Build good defences and rely on your Bowmen.
+####
+## Text 3781 ##
+Follow the routes.
+
+Attend to your defences and build a strong army.
+
+Simply capture the colossus and destroy the harbour buildings.
+####
+## Text 3782 ##
+Invaders
+####
+## Text 3783 ##
+Slaughter on the Pánuco River
+####
+## Text 3784 ##
+The Revenge of the Spaniards
+####
+## Text 3785 ##
+The Expulsion of the Spaniards
+####
+## Text 3786 ##
+???
+####
+## Text 3787 ##
+Push Hiero back from Messina's borders and destroy him utterly! Warning: The city of Messina must not fall!
+####
+## Text 3788 ##
+Build a fleet of 20 ferries and 10 warships!
+
+Equip the ferries with Warriors and sail your fleet southwest to your spies!
+####
+## Text 3789 ##
+Conquer one of the three enemy Carthaginian settlements!
+####
+## Text 3790 ##
+Capture the whole island!
+####
+## Text 3791 ##
+The city of Messina is being attacked by Syracuse, so it is appealing for help from the Carthaginians and the Romans. While Carthage is quick to react, Rome hesitates.
+
+Only after Syracuse had retreated did Rome send troops to Sicily, Carthage views this as a provocation. Rome seizes this opportunity to claim Sicily as its own.
+
+There are not enough Roman troops to conquer the whole of Sicily; only the east of the island should be conquered initially.
+####
+## Text 3792 ##
+As the Romans are not experts in naval warfare, they decide to attack the Carthaginian mainland.
+
+A large fleet is required to transport the troops which must be protected. This was a massive undertaking, because many Soldiers had to be promoted.
+
+Shipbuilding is repeatedly disturbed by the Carthaginians with attacks along the coast.
+####
+## Text 3793 ##
+The Romans have landed on the Carthaginian mainland with a mighty fleet, leaving behind the unpopular maritime war and bringing their favoured ground warfare to their enemies' homeland.
+
+Now it's time to make your way inland. The Romans are met with strong resistance.
+####
+## Text 3794 ##
+After the Romans are successful and well advanced in their attack on Carthage, Carthage extends a truce offer to them, but the Romans forfeit this option by imposing conditions that cannot be fulfilled. Meanwhile, Carthage succeeds in raising a mercenary army to drive the invaders from the Carthaginian mainland. Once again, the Romans have Sicily in their sights.
+
+There are only a few Carthaginians in Sicily, apart from the cities of Lilybaeum and Drepanum. They must be defeated quickly!
+####
+## Text 3795 ##
+Under no circumstances must you allow the city of Messina to be defeated.
+
+You do not have to defeat the other enemies.
+####
+## Text 3796 ##
+Search the entire map for resources.
+
+Concentrate on this task alone, do not attack the Carthaginians.
+####
+## Text 3797 ##
+There are strong and weak settlements: choose wisely!
+####
+## Text 3798 ##
+You can attack many of the enemy Towers from the sea.
+####
+## Text 3799 ##
+Messina
+####
+## Text 3800 ##
+Construction of the Fleet
+####
+## Text 3801 ##
+Landing in Carthage
+####
+## Text 3802 ##
+Conquer Sicily
+####
+## Text 3803 ##
+Defeat the troops of Darius III!
+####
+## Text 3804 ##
+Defeat the bodyguards of Darius III - you may even find Darius himself in their midst!
+####
+## Text 3805 ##
+Capture the city of Tyros!
+####
+## Text 3806 ##
+Isolate the bodyguards of Darius III and eliminate them!
+####
+## Text 3807 ##
+Darius has positioned his troops along the Granicus River, they are very numerous!
+
+The river itself is too deep to cross in most places, but the Scouts report several flat locations along the course of the river that are suitable for a crossing point. But you will be taking an enormous risk: Even the enemy knows these locations, and may be guarding them accordingly.
+
+The major task is to find the right places in which to cross the river and then launch the attack...
+####
+## Text 3808 ##
+Darius has fled the battle on the Granicus and has assembled a new and vast army.
+
+Alexander and Darius meet again at Issus. This time, Alexander wants to eliminate the king himself to break the resistance of the enemies.
+
+King Darius, protected by his bodyguards, is in the middle of his army. Beat a path to the king as quickly as possible before he has a chance to escape.
+####
+## Text 3809 ##
+Alexander sets out to secure the surrounding areas, and major cities such as Aradus, Byblos and Sidon surrender without resistance.
+
+However, negotiations with the city governors of the well-fortified town of Tyros fail. This infuriates Alexander, and he decides to besiege the city. The siege is long and arduous, but the time of a decisive attack finally arrives...
+####
+## Text 3810 ##
+Alexander continues to move east and crosses the Tigris towards Babylon. Darius again faces him at Gaugamela with a powerful army.
+
+The superior strength of the enemy troops is enormous; it appears impossible to defeat the army. Alexander therefore focuses on hunting down Darius himself, who is in the centre of the enemy ranks with his guards.
+
+The battle will finally be won if he manages to confront him in battle again or causes him to flee.
+####
+## Text 3811 ##
+Some points at which the river can be crossed are poorly defended.
+####
+## Text 3812 ##
+Only the bodyguards have to be defeated!
+
+Look for a weaker point where you can attack the bodyguards.
+####
+## Text 3813 ##
+The heavily fortified city walls are composed of a myriad of Towers: Siege weapons are useful here!
+####
+## Text 3814 ##
+Remember you only have to defeat one enemy.
+####
+## Text 3815 ##
+Granicus
+####
+## Text 3816 ##
+Issus
+####
+## Text 3817 ##
+Tyros
+####
+## Text 3818 ##
+Gaugamela
+####
+## Text 3819 ##
+Historic Battles
+####
+## Text 3820 ##
+Conquer Ethel's harbour and the Sulphur Mountain and produce 200 loaves of bread 200 units of meat!
+####
+## Text 3821 ##
+Capture the headquarters of Edmund Ironside and destroy his castles!
+####
+## Text 3822 ##
+Destroy the catapult workshops of Godwinson's 2nd troop and the barracks of the 1st troop!
+####
+## Text 3823 ##
+Capture Harold Godwinson's castle!
+####
+## Text 3824 ##
+The warships are destroyed, the civilian fleet can now enter the harbour.
+####
+## Text 3825 ##
+In the year 1009 Danish armies are fighting in England in the name of the Danish king Sweyn Forkbeard.
+
+Eric Leifgard receives the order from his king Sweyn Forkbeard to build a bridgehead in England so the Danish king can land there with his troops.
+
+Eric Leifgard is sent out with a fleet of warships, and decides to capture the port town of Portland and build the bridgehead there.
+
+However, the enemy warships guarding the harbour must first be destroyed before the civilian supply fleet can enter the harbour.
+####
+## Text 3826 ##
+In 1013, Sweyn himself lands in England with a massive fighting force and is recognised as the ruler of the Danelaw in the same year after Ethelred's flight to France via England. But when Sweyn dies the following year, Ethelred returns to wage war against the Danes, which is continued by his son, Edmund Ironside two years later. The war is initially successful and Edmund manages to drive the Vikings back, who are now led by Sweyn Forkbeard's son, Canute.
+
+The forces now assemble in the settlement of Ashingdon to fight for the sovereignty of England.
+
+The main forces of Edmund Ironside are camped in the northeast where he has his headquarters, and another troop fighting for Edmund is camped in the northwest, commanded by Edgar the Warrior.
+
+If Edmund Ironside and his headquarters fall then Canute, leader of the Vikings, becomes ruler of England.
+
+Lead the Vikings into the battle for England!
+####
+## Text 3827 ##
+In the late summer of 1066, the Norwegian king Harald lands at Riccall on the Ouse with around 200 ships, which are soon met by roughly 100 of his allies. He quickly defeats any resistance he encounters and takes hostages in York to quash any resistance. He sets up camp with his troops at Stamford Bridge to start of the planned march south.
+
+But Harold Godwinson, surprised by the ambush, sets off within a few days with all his available forces to meet Harald. On 26th September he engages with Harald's army, who is totally unaware of his arrival. Negotiations are unsuccessful, and thus begins the battle of Stamford Bridge, which lasts the whole day.
+
+Destroy the catapult workshops of Godwinson's 2nd troop and the barracks of the 1st troop!
+####
+## Text 3828 ##
+When William the Conqueror learns that Harold Godwinson has been crowned king of England, he is enraged, and immediately issues orders to prepare an invasion.
+
+The fleet of William the Conqueror's fleet sets sail on 27th September. After landing in England with his troops, he immediately musters his troops to prepare for the arrival of the English army, which arrives several days later after a forced march. The soldiers are still exhausted from the previous battle and the hardships they have endured along the way.
+
+On 14th October the armies of Harold Godwinson and William meet a few miles outside Hastings.
+
+As William, capture Harold Godwinson's castle, and become the ruler of England. Warning: The castle is defended by two of Harold Godwinson's armies (the west and east army)!
+####
+## Text 3829 ##
+Damaged warships can be repaired at the enemy shipyard.
+
+Some of the warships can also be destroyed with bowmen.
+####
+## Text 3830 ##
+It will be enough to destroy Edmund Ironside's castles, you don't have to defeat Edgar the Warrior.
+####
+## Text 3831 ##
+Decimate the 1st troop before you destroy the catapult workshops of the 2nd troop.
+####
+## Text 3832 ##
+Take the direct route to the headquarters!
+Use the power of magic!
+####
+## Text 3833 ##
+Bridgehead
+####
+## Text 3834 ##
+The Battle of Ashingdon
+####
+## Text 3835 ##
+The Battle of Stamford Bridge
+####
+## Text 3836 ##
+Sibling Rivalry
+####
+## Text 3837 ##
+Private
+####
+## Text 3838 ##
+This Fisherman's Hut can no longer find any fish in the working area
 ####

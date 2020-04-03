@@ -1,5 +1,5 @@
-**** Settlers IV Game Translation Tool Project File ** Version 0.96 beta ****
-**** Language: GERMAN ** @15 0 0 0@ ****
+**** Settlers IV Game Translation Tool Project File ** Version 0.97 beta ****
+**** Language: GERMAN ** @21 0 0 0@ ****
 ## Text 1 ##
 ???
 ####
@@ -1419,7 +1419,7 @@ Infiltration
 ???
 ####
 ## Text 446 ##
-Das Spiel wurde seit 30 Minuten nicht gespeichert!
+Das Spiel wurde seit 15 Minuten nicht gespeichert!
 ####
 ## Text 447 ##
 Produzieren Sie 200 Schwerter, 220 Bögen, 160 Fleisch sowie 255 Fisch, 150 Brot und 250 Gold und transportieren Sie es zu den vorgesehenen Lagern!
@@ -8579,31 +8579,31 @@ Die Verfolgung
 Wohin damit?
 ####
 ## Text 2723 ##
-Massada@Machen Sie sich zum Herren der Burg in der Mitte der Karte! Ihnen bleibt nur eine Stunde...@xxx
+Massada@Machen Sie sich zum Herren der Burg in der Mitte der Karte! Ihnen bleibt nur eine Stunde...@
 ####
 ## Text 2724 ##
 Machen Sie sich zum Herren der Burg in der Mitte der Karte! Ihnen bleibt nur eine Stunde...
 ####
 ## Text 2725 ##
-mp1tips
+Denken Sie daran: Ihnen bleibt 1 Stunde!
 ####
 ## Text 2726 ##
-Marathon@Ihnen muss es gelingen, vor allen anderen einen Hauptmann in die Mitte der Karte zur Heiligen Stätte im Krater zu bringen! Die wenigen Startressourcen und die listigen Trojaner dürfen Sie nicht daran hindern...@xxx
+Marathon@Ihnen muss es gelingen, vor allen anderen einen Hauptmann in die Mitte der Karte zur Heiligen Stätte im Krater zu bringen! Die wenigen Startressourcen und die listigen Trojaner dürfen Sie nicht daran hindern...@
 ####
 ## Text 2727 ##
 Ihnen muss es gelingen, vor allen anderen einen Hauptmann in die Mitte der Karte zur Heiligen Stätte im Krater zu bringen! Die wenigen Startressourcen und die listigen Trojaner dürfen Sie nicht daran hindern...
 ####
 ## Text 2728 ##
-mp2tips
+Bringen Sie einen Hauptmann zur heiligen Stätte!
 ####
 ## Text 2729 ##
-Issos Keilerei@Brechen Sie durch die feindlichen Linien und erreichen Sie gemeinsam mit Ihrem Verbündeten als erster das gegnerische Kreuz in den Ruinen!@xxx
+Issos Keilerei@Brechen Sie durch die feindlichen Linien und erreichen Sie gemeinsam mit Ihrem Verbündeten als erster das gegnerische Kreuz in den Ruinen!@
 ####
 ## Text 2730 ##
 Brechen Sie durch die feindlichen Linien und erreichen Sie gemeinsam mit Ihrem Verbündeten als erster das gegnerische Kreuz in den Ruinen!
 ####
 ## Text 2731 ##
-mp3tips
+Sie müssen vor Ihren Gegnern das Kreuz erreichen!
 ####
 ## Text 2732 ##
 Bitte legen Sie die SIEDLER IV MISSION CD 2 ein!
@@ -11841,4 +11841,347 @@ Zeit der Wölfin
 ####
 ## Text 3754 ##
 Allianz der Ehrlosen
+####
+## Text 3755 ##
+Große Feldzüge
+####
+## Text 3756 ##
+Vertreiben Sie die Mayas von den heiligen Quellen der Huaxteken!
+
+Vernichten Sie deren große Festungsanlagen (Burgen)!
+####
+## Text 3757 ##
+Vernichten Sie das Fort von Alonso Alvárez Pinedo!
+####
+## Text 3758 ##
+Vernichten Sie 700 spanische Soldaten und erhöhen Ihre Kampfkraft auf 150!
+
+Achten Sie darauf nicht zu viele eigene Soldaten zu verlieren, denn dann müssen Sie mehr als 700 Spanier vernichten!
+####
+## Text 3759 ##
+Zerstören Sie den Hafen von Cortés und erobern Sie die heilige Goldstatue von Ehecatl-Quetzalcoatl zurück!
+####
+## Text 3760 ##
+Super! Sie haben gerade den 100. Gegner vernichtet, dafür gewähre ich Ihnen die versprochene Hilfe.
+####
+## Text 3761 ##
+Super! Sie haben gerade den 200. Gegner vernichtet, dafür gewähre ich Ihnen die versprochene Hilfe.
+####
+## Text 3762 ##
+Super! Sie haben den 300. Gegner vernichtet, dafür gewähre ich Ihnen die versprochene Hilfe.
+####
+## Text 3763 ##
+Super! Sie haben den 400. Gegner vernichtet, dafür gewähre ich Ihnen die versprochene Hilfe.
+####
+## Text 3764 ##
+Super! Sie haben den 500. Gegner vernichtet, dafür gewähre ich Ihnen die versprochene Hilfe.
+####
+## Text 3765 ##
+Super! Sie haben den 600. Gegner vernichtet, dafür gewähre ich Ihnen die versprochene Hilfe.
+####
+## Text 3766 ##
+Super! Sie haben den 750. Gegner vernichtet, dafür gewähre ich Ihnen die versprochene Hilfe.
+####
+## Text 3767 ##
+Super! Sie haben den 1000. Gegner vernichtet, dafür gewähre ich Ihnen die versprochene Hilfe.
+####
+## Text 3768 ##
+Super! Sie haben den 1250. Gegner vernichtet, dafür gewähre ich Ihnen die versprochene Hilfe.
+####
+## Text 3769 ##
+Sie haben gerade Ihren 200. Soldaten verloren, nun müssen Sie 200 Gegner mehr vernichten.
+####
+## Text 3770 ##
+Sie haben gerade Ihren 300. Soldaten verloren, nun müssen Sie 300 Gegner mehr vernichten.
+####
+## Text 3771 ##
+Sie haben gerade Ihren 400. Soldaten verloren, nun müssen Sie 400 Gegner mehr vernichten.
+####
+## Text 3772 ##
+Sie haben gerade Ihren 500. Soldaten verloren, nun müssen Sie 500 Gegner mehr vernichten.
+####
+## Text 3773 ##
+Sie haben gerade Ihren 600. Soldaten verloren, nun müssen Sie 600 Gegner mehr vernichten.
+####
+## Text 3774 ##
+Cortés, der spanische Eroberer, hat die Mayas vernichtend geschlagen. Nur einer kleinen Gruppe von Mayas unter der Führung des Mayaprinzen Itzamná gelingt es zu fliehen. Sie lassen sich in dem großen Feuchtgebiet, das die Huaxteken für sich beanspruchten, nieder.
+
+Die Huaxteken sind nicht begeistert, da dieses Feuchtgebiet für sie ein heiliger Ort ist. Der König der Huaxteken beauftragt Dich den heiligen Boden der Huaxtheken von den Frevlern zu befreien.
+####
+## Text 3775 ##
+Eine erste Expedition an den Pánuco-Fluß unter Führung von Alonso Alvárez Pinedo hat sich dem Siedlungsgebiet der Huaxteken genähert. Seine Truppen haben den Pánuco-Fluß unter Kontrolle. Hauptmann Pinedo hat eine starkes Fort aufgebaut um sich dadurch eine Basis für ein weiteres Vordringen in das Gebiet der Huaxteken zu schaffen.
+
+Auf einem nahe gelegenen Plateau haben die Huaxteken eine kleine Siedlung aufgebaut. Von dieser Siedlung aus musst Du nun den Widerstand gegen die Spanier organisieren und sie vernichtend schlagen.
+
+Es gibt jedoch ein kleines Problem: Die Gold- und die Fischressourcen sind in unserer Siedlung fast erschöpft.
+
+Die Huaxteken flehen Ihren Gott Ehecatl-Quetzalcoatl an ihnen zu helfen. Er spricht zu Ihnen: "Wenn Ihr mir die Feinde opfert, werde ich von Zeit zu Zeit Eure Gold und Fischressourcen auffrischen."
+####
+## Text 3776 ##
+Die Huaxteken schlagen die Spanier unter Führung von Alonso Alvárez Pinedo vernichtend. Cortés der sich über die ausbleibenden Berichte der Pinedo-Expedition wundert, schickt Späher aus. Diese finden die Skalpe und Gesichtshäute der Geopferten in den Tempeln der Huaxteken.
+
+Cortés ist wütend und schickt zwei Kompanien los um sich an den Huaxteken zu rächen. Die beiden Truppen kesseln eine Siedlung der Huaxteken ein. 
+
+Halten Sie durch und vernichten Sie 700 Spanier. Passen Sie dabei auf Ihre eigenen Truppen auf: Verlieren Sie 200 Ihrer Soldaten, müssen Sie 800 gegnerische Soldaten vernichten, verlieren Sie 300 Ihrer Soldaten, müssen Sie 900 Gegner vernichten. Maximal werden Sie jedoch 1300 Spanier vernichten müssen.
+####
+## Text 3777 ##
+Die Huaxteken konnten den Truppen von Cortés bisher immer erfolgreich Widerstand leisten. Den Truppen von Hauptmann Martas Azevedo gelang es jedoch, eine der heiligen Stätten mit einer prächtigen Goldstatue zu Ehren des Gottes Ehecatl-Quetzalcoatl für die spanische Krone zu erobern.
+
+Nicht unweit von der heiligen Stätte hat Cortés seinen Hafenstützpunkt, von hier aus wird das geraubte Gold nach Spanien verschifft.
+
+Um das zu verhindern, muss ein Hafen erobert werden. Vernichten Sie dazu die Hafengebäude.
+####
+## Text 3778 ##
+Hüten Sie sich vor den Eroberungstrupps der Mayas.
+
+Es müssen nur die 6 Burgen erobert werden.
+####
+## Text 3779 ##
+Legen Sie Wert auf eine große Manaproduktion und nutzen Sie die Zaubersprüche Ihrer Priester.
+
+Produzieren Sie reichlich Brot und beliefern Sie damit auch Ihre Goldminen.
+####
+## Text 3780 ##
+Hüten Sie sich davor Ihre Gegner auf deren Boden besiegen zu wollen, die Verluste wären zu groß. 
+
+Bauen Sie eine gute Verteidigung auf und setzen Sie dabei auf Bogenschützen.
+####
+## Text 3781 ##
+Folgen Sie den Wegen.
+
+Seien Sie wehrhaft und bauen Sie eine starke Armee auf.
+
+Es gilt nur den Koloss zu erobern und die Hafengebäude zu zerstören.
+####
+## Text 3782 ##
+Eindringlinge
+####
+## Text 3783 ##
+Das Gemetzel am Pánuco-Fluss
+####
+## Text 3784 ##
+Die Rache der Spanier
+####
+## Text 3785 ##
+Die Vertreibung der Spanier
+####
+## Text 3786 ##
+Bitte legen Sie DIE SIEDLER IV MISSION CD 3 ein!
+####
+## Text 3787 ##
+Drängen Sie Hieron von den Grenzen Messinas zurück und vernichten Sie ihn vollständig! Achtung: Die Stadt Messina darf nicht fallen.
+####
+## Text 3788 ##
+Bauen Sie eine Flotte aus 20 Fähren und 10 Kriegsschiffen!
+
+Besetzen Sie die Fähren jeweils mit Kriegern, fahren Sie dann mit der Flotte nach Südwesten zu Ihren Spionen!
+####
+## Text 3789 ##
+Erobern Sie eine der drei feindlichen karthagischen Siedlungen vollständig!
+####
+## Text 3790 ##
+Erobern Sie die gesamte Insel!
+####
+## Text 3791 ##
+Die Stadt Messina wird von Syrakus angegriffen. Sie ersucht daher um Hilfe bei den Karthagern und bei den Römern. Während Karthago sofort reagiert, zögert Rom.
+
+Erst nachdem Syrakus schon wieder abgezogen ist entsendet Rom Truppen nach Sizilien. Dies sieht Karthago als Provokation an. Rom erkennt darin einen willkommenen Vorwand sich Sizilien zu eigen zu machen.
+
+Um ganz Sizilien einzunehmen sind die römischen Truppen nicht zahlreich genug. Zunächst soll nur der Osten der Insel erobert werden.
+####
+## Text 3792 ##
+Da der Krieg zur See nicht das Metier der Römer ist, entschließen sie sich zu einem Angriff auf das karthagische Festland.
+
+Um die Truppen dorthin zu transportieren wird eine große Flotte benötigt, die auch beschützt werden muss. Das war eine große Aufgabe, denn viele Soldaten mussten befördert werden.
+
+Der Schiffsbau wird von den Karthagern immer wieder mit Angriffen entlang der Küste gestört.
+####
+## Text 3793 ##
+Die Römer sind mit einer gewaltigen Flotte auf dem karthagischen Festland gelandet. Sie können den ungeliebten Krieg zur See hinter sich lassen und den von ihnen bevorzugten Bodenkrieg in das Heimatland der Feinde tragen.
+
+Nun geht es daran sich ins Landesinnere vorzuarbeiten. Die Römer stoßen dabei auf heftigen Widerstand.
+####
+## Text 3794 ##
+Nachdem die Römer bei ihrem Angriff auf Karthago zunächst erfolgreich sind und gut vorangekommen sind, unterbreitet ihnen Karthago ein Friedensangebot. Die Römer verspielen diese Möglichkeit jedoch durch unerfüllbare Bedingungen. In der Zwischenzeit gelingt Karthago, ein Söldnerheer zu verpflichten. Mit dessen Hilfe werden die Invasoren wieder vom karthagischen Festland vertrieben. Erneut gelangte Sizilien in den Blickpunkt der Römer. 
+
+Neben den Städten Lilybaeum und Drepanum sind nur noch wenige Karthager auf Sizilien. Diese müssen schnell besiegt werden!
+####
+## Text 3795 ##
+Achten Sie darauf, dass die Stadt Messina auf keinen Fall besiegt wird.
+
+Die anderen Gegner müssen nicht besiegt werden.
+####
+## Text 3796 ##
+Suchen Sie die ganze Karte nach Rohstoffen ab.
+
+Konzentrieren Sie sich nur auf Ihre Aufgabe greifen Sie nicht die Karthager an.
+####
+## Text 3797 ##
+Es gibt starke und schwache Siedlungen: Wählen Sie gut aus!
+####
+## Text 3798 ##
+Viele Türme der Gegner lassen sich von See aus bekämpfen.
+####
+## Text 3799 ##
+Messina
+####
+## Text 3800 ##
+Aufbau der Flotte
+####
+## Text 3801 ##
+Landung in Karthago
+####
+## Text 3802 ##
+Eroberung Siziliens
+####
+## Text 3803 ##
+Besiegen sie die Truppen Dareios' des III !
+####
+## Text 3804 ##
+Besiegen Sie die Leibgarde von Dareios dem III. - vielleicht findet sich Dareios selbst in deren Mitte!
+####
+## Text 3805 ##
+Erobern Sie die Stadt Tyros!
+####
+## Text 3806 ##
+Isolieren Sie die Leibgarde Dareios des III. und vernichten sie diese!
+####
+## Text 3807 ##
+Dareios hat seine Truppen entlang des Flusses Granikos in Stellung gebracht; sie sind sehr zahlreich.
+
+Der Fluss selbst ist an den meisten Stellen zu tief um ihn zu überqueren, doch die Aufklärer melden mehrere flache Stellen entlang des Flusslaufes, die sich für eine Überquerung eignen. Diese zu benutzen birgt ein nicht kalkulierbares Risiko: Auch der Feind kennt diese Stellen und kann sie entsprechend bewachen. 
+
+Die große Aufgabe ist, die richtigen Stellen zur Überquerung des Flusses und somit zur Durchführung des Angriffes zu finden ...
+####
+## Text 3808 ##
+Dareios ist vom Schlachtfeld am Granikos entkommen und hat ein neues großes Heer um sich versammelt. 
+
+Bei Issos treffen Alexander und Dareios erneut aufeinander. Diesmal will Alexander den König selbst ausschalten um den Widerstand der Gegner zu brechen.
+
+König Dareios befindet sich, geschützt von seiner Leibgarde, inmitten seines Heeres. Bahnen Sie möglichst schnell einen Weg zum König, bevor er flüchten kann.
+####
+## Text 3809 ##
+Alexander macht sich daran die umliegenden Gebiete zu sichern. Bedeutende Städte wie Arados, Byblos und Sidon ergeben sich ohne Widerstand zu leisten. 
+
+Die Verhandlungen mit den Stadthaltern der gut befestigten Stadt Tyros scheitern jedoch. Dies erweckt Alexanders Zorn und er entschließt sich die Stadt zu belagern. Die Belagerungszeit dauert sehr lange, doch endlich  kommt es zum entscheidenden Angriff ...
+####
+## Text 3810 ##
+Alexander zieht weiter gen Osten und überschreitet den Tigris in Richtung Babylon. Bei Gaugamela stellt sich ihm erneut Dareios mit einem mächtigen Heer in den Weg.
+
+Die Übermacht der feindlichen Truppen ist enorm; es scheint unmöglich zu sein, das Heer zu besiegen. Alexander konzentriert sich daher auf die Verfolgung von Dareios' selbst, der sich mit seiner Garde im Zentrum der feindlichen Reihen befindet.
+
+Schafft er es, ihn zu stellen oder erneut zur Flucht zu bringen, ist die Schlacht endgültig gewonnen.
+####
+## Text 3811 ##
+Einige Stellen, an denen der Fluss passiert werden kann, sind schlecht bewacht.
+####
+## Text 3812 ##
+Nur die Leibgarde muss besiegt werden!
+
+Suchen Sie eine schwächere Stelle um zur Leibgarde vorzustoßen.
+####
+## Text 3813 ##
+Die stark befestigten Mauern der Stadt bestehen aus einer Unzahl an Türmen: Belagerungswaffen sind hilfreich.
+####
+## Text 3814 ##
+Bedenken Sie, dass nur ein Gegner besiegt werden muss.
+####
+## Text 3815 ##
+Granikos
+####
+## Text 3816 ##
+Issos
+####
+## Text 3817 ##
+Tyros
+####
+## Text 3818 ##
+Gaugamela
+####
+## Text 3819 ##
+Historische Schlachten
+####
+## Text 3820 ##
+Erobern Sie den Hafen und den Schwefelberg von Ethel und produzieren je 200 Brote und 200 Fleischkeulen!
+####
+## Text 3821 ##
+Erobern Sie das Hauptquartier von Edmund Eisenseite und zerstören Sie seine Burgen!
+####
+## Text 3822 ##
+Zerstören Sie die Katapultwerkstätten der 2. Truppe und die Kasernen der 1. Truppe Godewins!
+####
+## Text 3823 ##
+Erobern Sie das Schloss des Harold Godewin!
+####
+## Text 3824 ##
+Die Kriegschiffe sind zerstört, die zivile Flotte kann nun in den Hafen einlaufen.
+####
+## Text 3825 ##
+Anno 1009 kämpfen dänische Heere im Auftrag des dänischen Königs Sven Gabelbarts in England.
+
+Eric Leifgard bekommt von seinem König Sven Gabelbarts den Auftrag einen Brückenkopf in England zu bilden, damit der dänische König dort mit seinen Truppen landen kann.
+
+Eric Leifgard wird mit einer Flotte von Kriegschiffen losgeschickt. Er entscheidet sich die Hafenstadt Porthsland zu erobern und hier den Brückenkopf aufzubauen.
+
+Damit die zivile Versorgungsflotte in den Hafen einlaufen kann, müssen jedoch zuerst die gegnerischen Kriegsschiffe, die den Hafen bewachen, zerstört werden.
+####
+## Text 3826 ##
+1013 landet Sven selbst mit einer riesigen Streitmacht in England. Noch im gleichen Jahr wird er als Herrscher über das Danelag anerkannt, nach Ethelreds Flucht nach Frankreich sogar über ganz England. Doch als Sven im darauffolgenden Jahr stirbt, kehrt Ethelred zurück und beginnt einen Krieg gegen die Dänen, der von seinem Sohn, Edmund Eisenseite, zwei Jahre später fortgesetzt wird. Dieser hat zunächst auch Erfolg und kann die Wikinger, die jetzt von Sven Gabelbarts Sohn Knut geführt werden, zurückdrängen.
+
+Es kommt nun um die Siedlung Ashingdon zum Kampf über die Herrschaft in England.
+
+Die Hauptstreitkräfte von Edmund Eisenseite lagern im Nordosten, hier hat er auch sein Hauptquartier, im Nordwesten lagert eine weitere Truppe die für Edmund Eisenseite kämpft, sie steht unter dem Befehl von Edgar dem Kämpfer.
+
+Sollte Edmund Eisenseite und sein Hauptquartier fallen, so wird Knut, der Führer der Wikinger, Herrscher über England.
+
+Führen Sie die Wikinger in die Schlacht um England!
+####
+## Text 3827 ##
+Im Spätsommer des Jahres 1066 landet der Norwegerkönig Harald mit etwa 200 Schiffen, zu denen bald noch etwa 100 seiner Verbündeten stoßen, bei Riccall an der Ouse. Die dortige Gegenwehr besiegt er schnell, nimmt Geiseln in York um Widerstand von dort vorzubeugen, und lässt seine Truppen zu Beginn des geplanten Marsches nach Süden bei Stamford Bridge lagern.
+
+Doch Harold Godewin, der von dem Überfall vollkommen überrascht ist, hat inzwischen innerhalb weniger Tage mit allen verfügbaren Streitkräften den Weg dorthin zurückgelegt. Am 26. September stellt er Haralds Armee, die nichts von seiner Ankunft ahnt, zum Kampf. Verhandlungen bleiben erfolglos, daher begann die den gesamten Tag andauernde Schlacht von Stamford Bridge
+
+Zerstören Sie die Katapultwerkstätten der 2. Truppe und die Kasernen der 1. Truppe Godewins!
+####
+## Text 3828 ##
+Als Wilhelm der Eroberer erfährt, dass sich Harold Godewin zum König über England gekrönt hat, wird er sehr wütend und gibt sofort Anweisungen zur Vorbereitung einer Invasion.
+
+Am 27. September läuft die Flotte Wilhelm des Eroberes aus. Nachdem er mit seinen Truppen in England gelandet ist, lässt er sofort Vorbereitungen für die Ankunft des englischen Heeres treffen. Dieses kommt nach einem Gewaltmarsch wenige Tage später an. Die Soldaten sind noch von der vorherigen Schlacht und den Strapazen des Weges erschöpft.
+
+Am 14. Oktober treffen die Heere des Harold Godewin und Wilhelms einige Kilometer von Hastings entfernt aufeinander.
+
+Erobern Sie als Willhelm Harold Godewins Schloß und damit die Herrschaft über England. Vorsicht: Das Schloss wird von zwei Heeren des Harold Godewin beschützt (West- und Ostheer)!
+####
+## Text 3829 ##
+Beschädigte Kriegschiffe können Sie bei der gegnerischen Werft reparieren lassen.
+
+Einige der Kriegschiffe lassen sich auch mit Bogenschützen zerstören.
+####
+## Text 3830 ##
+Es reicht aus die Burgen von Edmund Eisenseite zu zerstören, Edgar der Kämpfer muß nicht besiegt werden.
+####
+## Text 3831 ##
+Dezimieren Sie die 1.Truppe, bevor Sie die Katapultwerkstätten der 2.Truppe zerstören!
+####
+## Text 3832 ##
+Nehmen Sie nicht den direkten Weg zum Hauptquartier!
+Nutzen Sie die Macht der Magie!
+####
+## Text 3833 ##
+Brückenkopf
+####
+## Text 3834 ##
+Die Schlacht von Ashingdon
+####
+## Text 3835 ##
+Schlacht von Stamford Bridge
+####
+## Text 3836 ##
+Bruderkampf
+####
+## Text 3837 ##
+Privat
+####
+## Text 3838 ##
+Diese Fischerhütte findet in seinem jetzigen Arbeitsbereich keine Fischer mehr
 ####

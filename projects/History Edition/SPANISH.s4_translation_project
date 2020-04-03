@@ -1,5 +1,5 @@
-**** Settlers IV Game Translation Tool Project File ** Version 0.96 beta ****
-**** Language: SPANISH ** @15 0 0 0@ ****
+**** Settlers IV Game Translation Tool Project File ** Version 0.97 beta ****
+**** Language: SPANISH ** @21 0 0 0@ ****
 ## Text 1 ##
 
 ####
@@ -2094,7 +2094,7 @@ VCC Hamburg
 Equipo de Blue Byte Game Channel
 ####
 ## Text 694 ##
-Diseńo
+Diseño
 ####
 ## Text 695 ##
 Richard Lyle
@@ -2113,7 +2113,7 @@ Jan Sebald
 Melanie Voit
 ####
 ## Text 698 ##
-Diseńo de la web
+Diseño de la web
 ####
 ## Text 699 ##
 Michael Dreher
@@ -2140,7 +2140,7 @@ Supervisor de la comunidad
 Waldemar "BB Contact'' Lindemann
 ####
 ## Text 704 ##
-Diseńo del juego
+Diseño del juego
 ####
 ## Text 705 ##
 Hans-Jürgen Brändle
@@ -2258,7 +2258,7 @@ Supervisor de localización
 Oliver Silski
 ####
 ## Text 727 ##
-Diseńo del mapa
+Diseño del mapa
 ####
 ## Text 728 ##
 Thomas "Eye" Dumrauf
@@ -2440,7 +2440,7 @@ Armin Strobl
 Andreas Suika
 ####
 ## Text 775 ##
-Embalaje, formato, diseńo y producción
+Embalaje, formato, diseño y producción
 ####
 ## Text 776 ##
 Sabina Becker
@@ -2466,19 +2466,19 @@ Incluso más allá de las nevadas cumbres, no hay rastro de la Tribu Oscura. Per
 Por desgracia, has fallado al completar la misión en el tiempo permitido.
 ####
 ## Text 781 ##
-(c)1993-2001 Blue Byte Software. Todos los derechos reservados. Ninguna parte de esta publicación podrá ser reproducida de ningún modo, red de datos, transferida o traducida sin el permiso de Blue Byte Software. El alquiler de este software está prohibido. "The Settlers and Blue Byte" son marcas registradas de Blue Byte Software. El logo de Blue Byte y el logo de Blue Byte Game Channel son marcas registradas de  Blue Byte Software. El resto de nombres usados en este producto son marcas registradas de sus respectivas compańías..
+(c)1993-2001 Blue Byte Software. Todos los derechos reservados. Ninguna parte de esta publicación podrá ser reproducida de ningún modo, red de datos, transferida o traducida sin el permiso de Blue Byte Software. El alquiler de este software está prohibido. "The Settlers and Blue Byte" son marcas registradas de Blue Byte Software. El logo de Blue Byte y el logo de Blue Byte Game Channel son marcas registradas de  Blue Byte Software. El resto de nombres usados en este producto son marcas registradas de sus respectivas compañías..
 ####
 ## Text 782 ##
 Centro de construcción
 ####
 ## Text 783 ##
-ˇLos vikingos están encantados de que los honres con una visita y te envían una remesa de armas!
+¡Los vikingos están encantados de que los honres con una visita y te envían una remesa de armas!
 ####
 ## Text 784 ##
-Los Vikingos están siendo atacados por algúna extrańo tipo de guerrero y te han llamado para ayudar.
+Los Vikingos están siendo atacados por algúna extraño tipo de guerrero y te han llamado para ayudar.
 ####
 ## Text 785 ##
-ˇLo conseguiste!
+¡Lo conseguiste!
 ####
 ## Text 786 ##
 Se acabó el tiempo. Has perdido.
@@ -2487,7 +2487,7 @@ Se acabó el tiempo. Has perdido.
 No hay rastro de la Tribu Oscura en estas islas. Pero la búsqueda continúa...
 ####
 ## Text 788 ##
-ˇHas perdido!
+¡Has perdido!
 ####
 ## Text 789 ##
 La ninfa acuática está encantada con las columnas de agua construidas en su honor. Regala a tu raza algunas mercancías útiles.
@@ -2508,10 +2508,10 @@ Misión 1
 Misión 2
 ####
 ## Text 795 ##
-Por desgracia, eres incapaz de localizar el Templo, ˇpero la búsqueda continúa!
+Por desgracia, eres incapaz de localizar el Templo, ¡pero la búsqueda continúa!
 ####
 ## Text 796 ##
-ˇHas perdido!
+¡Has perdido!
 ####
 ## Text 797 ##
 Misión 3
@@ -2526,75 +2526,75 @@ Misión 5
 Misión 6
 ####
 ## Text 801 ##
-Los Mayas quieren utilizar su ventaja para atacarte. ˇDerrota a estos deshonrosos salvajes!
+Los Mayas quieren utilizar su ventaja para atacarte. ¡Derrota a estos deshonrosos salvajes!
 ####
 ## Text 802 ##
 simulado
 ####
 ## Text 803 ##
-En el aire se respira un extrańo desasosiego. Se habla de tierras cercanas ennegrecidas, con árboles y arbustos marchitos y retorcidos. żPuede ser obra de aquel grupo de mayas con su terrible máquina de guerra que escupía fuego? Los informes de las partidas de reconocimiento que incluyen estas descripciones son extrańamente similares a los sueńos relatados por nuestros sacerdotes. żSon los mayas los que arrodillarán a la loba romana? Nuestros sacerdotes siguen hablando de seńales en sus sueńos, de que un jardinero será la clave para devolver la salud a la loba. żUn simple jardinero?
+En el aire se respira un extraño desasosiego. Se habla de tierras cercanas ennegrecidas, con árboles y arbustos marchitos y retorcidos. ¿Puede ser obra de aquel grupo de mayas con su terrible máquina de guerra que escupía fuego? Los informes de las partidas de reconocimiento que incluyen estas descripciones son extrañamente similares a los sueños relatados por nuestros sacerdotes. ¿Son los mayas los que arrodillarán a la loba romana? Nuestros sacerdotes siguen hablando de señales en sus sueños, de que un jardinero será la clave para devolver la salud a la loba. ¿Un simple jardinero?
 El pueblo cobrizo vuelve a estar cerca construyendo un nuevo poblado. Ahora tenemos más experiencia con los mayas. Sabemos de sobra que no podemos permitir que aumenten su poder libremente.
 ####
 ## Text 804 ##
-Conseguimos diezmar el poblado maya. Aunque la presencia de su poblado era preocupante, lo fueron aún más las Tierras Oscuras que encontramos. Sabemos de boca de prisioneros mayas que ellos no fueron los causantes, y a juzgar por su reacción y por la magnitud de las tierras afectadas, no hay razón para dudar de ello. Los mayas parecen igualmente preocupados por estas Tierras Oscuras, y han propuesto que unamos fuerzas ante esta siniestra amenaza. No está claro si una alianza así sirve de algo. Hemos sabido que nuestros jardineros pueden recuperar estas regiones estériles, y que, como predecían los sueńos, pueden curar la tierra. Sin embargo, tal vez sea inteligente colaborar con los mayas hasta que sepamos más acerca de las Tierras Oscuras.
+Conseguimos diezmar el poblado maya. Aunque la presencia de su poblado era preocupante, lo fueron aún más las Tierras Oscuras que encontramos. Sabemos de boca de prisioneros mayas que ellos no fueron los causantes, y a juzgar por su reacción y por la magnitud de las tierras afectadas, no hay razón para dudar de ello. Los mayas parecen igualmente preocupados por estas Tierras Oscuras, y han propuesto que unamos fuerzas ante esta siniestra amenaza. No está claro si una alianza así sirve de algo. Hemos sabido que nuestros jardineros pueden recuperar estas regiones estériles, y que, como predecían los sueños, pueden curar la tierra. Sin embargo, tal vez sea inteligente colaborar con los mayas hasta que sepamos más acerca de las Tierras Oscuras.
 ####
 ## Text 805 ##
-Tenemos los corazones tristes y los ceńos fruncidos por la perplejidad. Nuestros bosques están ennegrecidos, sus imponentes árboles retorcidos y arqueados. Los cementerios sagrados, el lugar de descanso de los seguidores de Rolf, están rodeados de muerte y podredumbre. żQué tenebrosa bestia se atreve a perturbar este lugar de paz?
-Nuestros espías han regresado con informes de que los romanos y los mayas emplean jardineros para liberar la tierra de su podredumbre tiznada. Rezamos para que nuestros jardineros puedan reparar este dańo antinatural.
+Tenemos los corazones tristes y los ceños fruncidos por la perplejidad. Nuestros bosques están ennegrecidos, sus imponentes árboles retorcidos y arqueados. Los cementerios sagrados, el lugar de descanso de los seguidores de Rolf, están rodeados de muerte y podredumbre. ¿Qué tenebrosa bestia se atreve a perturbar este lugar de paz?
+Nuestros espías han regresado con informes de que los romanos y los mayas emplean jardineros para liberar la tierra de su podredumbre tiznada. Rezamos para que nuestros jardineros puedan reparar este daño antinatural.
 ####
 ## Text 806 ##
-Conseguimos recuperar los cementerios de nuestros ancestros. Podemos alegrarnos por ello, pero el júbilo va mezclado con pesar. Muchos de nuestros guerreros cayeron cuando fuimos sorprendidos por una amenaza inesperada, los guerreros oscuros que viven en estas tierras ennegrecidas. Los ojos de estos guerreros oscuros estaban vacíos, pero sus manos empuńaban espadas con puntas impregnadas en la fiebre de la muerte. Hicimos retroceder a los guerreros oscuros, pero no pudimos acabar con ellos porque surgió otra amenaza. Los mayas han vuelto, y aunque no parece haber romanos acompańándolos, éste es un motivo suficiente para preocuparse. No contamos con todas nuestras fuerzas y no está claro lo que planean los mayas. Debemos seguir rechazando a la amenaza oscura, a la vez que vigilamos a los mayas.
+Conseguimos recuperar los cementerios de nuestros ancestros. Podemos alegrarnos por ello, pero el júbilo va mezclado con pesar. Muchos de nuestros guerreros cayeron cuando fuimos sorprendidos por una amenaza inesperada, los guerreros oscuros que viven en estas tierras ennegrecidas. Los ojos de estos guerreros oscuros estaban vacíos, pero sus manos empuñaban espadas con puntas impregnadas en la fiebre de la muerte. Hicimos retroceder a los guerreros oscuros, pero no pudimos acabar con ellos porque surgió otra amenaza. Los mayas han vuelto, y aunque no parece haber romanos acompañándolos, éste es un motivo suficiente para preocuparse. No contamos con todas nuestras fuerzas y no está claro lo que planean los mayas. Debemos seguir rechazando a la amenaza oscura, a la vez que vigilamos a los mayas.
 ####
 ## Text 807 ##
 Creíamos que nos habíamos librado de la amenaza oscura, pero vuelve a hacernos frente con un rostro aún más feo. La Tribu Oscura ha esclavizado a algunos de nuestros ciudadanos, y los tiene trabajando en granjas. Se dice que también han capturado vikingos. Los mayas tal vez se arrepientan de haber puesto fin tan rápidamente a la paz firmada con nosotros. A menos, por supuesto, que estén conchabados con esta tribu siniestra.
 Las visiones oníricas han vuelto a nuestros sacerdotes. Ven al lobo romano pisoteando los hongos oscuros de las tierras negras. Todos nuestros sacerdotes coinciden en que nuestra misión es destruir esas granjas, para así poder liberar a nuestros ciudadanos de su horrible destino.
 ####
 ## Text 808 ##
-Hemos descubierto nuevos poblados romanos y vikingos, y si tenemos que recurrir a la experiencia, hemos de asumir que volverán a unir sus fuerzas. Nuestros sacerdotes han vuelto a sońar que el lobo y el oso avanzan juntos. Los sacerdotes han visto esto con claridad, pero había algo más, posiblemente un tercer animal, moviéndose frenéticamente pero envuelto a lo lejos en la bruma, en los márgenes del paisaje onírico. Debemos actuar antes de que cobre fuerza esta alianza, o estaremos perdidos.
+Hemos descubierto nuevos poblados romanos y vikingos, y si tenemos que recurrir a la experiencia, hemos de asumir que volverán a unir sus fuerzas. Nuestros sacerdotes han vuelto a soñar que el lobo y el oso avanzan juntos. Los sacerdotes han visto esto con claridad, pero había algo más, posiblemente un tercer animal, moviéndose frenéticamente pero envuelto a lo lejos en la bruma, en los márgenes del paisaje onírico. Debemos actuar antes de que cobre fuerza esta alianza, o estaremos perdidos.
 ####
 ## Text 809 ##
-Hemos destruido el poblado romano y el vikingo, aunque eran más poderosos de lo que habíamos pensado. Curiosamente, no encontramos indicios de que hubieran estado conspirando para organizar un ataque contra nosotros. Parecían estar preocupados por otras cuestiones. Ahora nos queda claro cuáles eran esas cuestiones: las tierras oscuras y su tribu. La Tribu Oscura nos ha rodeado, y no somos más que una isla cercada por la oscuridad, no por el mar. El significado de los sueńos previos se ha aclarado a posteriori. El tercer animal era el jaguar, y la niebla del sueńo procedía de las tierras oscuras.
+Hemos destruido el poblado romano y el vikingo, aunque eran más poderosos de lo que habíamos pensado. Curiosamente, no encontramos indicios de que hubieran estado conspirando para organizar un ataque contra nosotros. Parecían estar preocupados por otras cuestiones. Ahora nos queda claro cuáles eran esas cuestiones: las tierras oscuras y su tribu. La Tribu Oscura nos ha rodeado, y no somos más que una isla cercada por la oscuridad, no por el mar. El significado de los sueños previos se ha aclarado a posteriori. El tercer animal era el jaguar, y la niebla del sueño procedía de las tierras oscuras.
 ####
 ## Text 810 ##
-Junto a los vikingos pudimos evitar que los mayas fueran aplastados a manos de la Tribu Oscura. Lo que nos impulsó a ayudarlos no fue el gran amor que sentimos hacia los mayas, pues hemos sufrido graves dańos por su causa, pero la alternativa era aún peor. La Tribu Oscura esclaviza a todos los colonos que captura, y al hacerlo se refuerza a nuestra costa. Esto no puede suceder, o todo está perdido.
-Los sueńos de nuestros sacerdotes continúan, y crece la importancia de su correcta interpretación. La loba emprende un largo viaje, y llega tras un tiempo a una larga cordillera. Busca un paso para cruzar las montańas, y no lo encuentra. Pero durante su búsqueda, se detiene y presta atención a los sonidos graves y siniestros que llegan con el aire a través de las frías y oscuras grietas.
-Tanto los guerreros como los sacerdotes coinciden en que debemos emprender un viaje y que tendremos que cruzar una montańa para enfrentarnos a la oscura bestia rastrera en su guarida.
+Junto a los vikingos pudimos evitar que los mayas fueran aplastados a manos de la Tribu Oscura. Lo que nos impulsó a ayudarlos no fue el gran amor que sentimos hacia los mayas, pues hemos sufrido graves daños por su causa, pero la alternativa era aún peor. La Tribu Oscura esclaviza a todos los colonos que captura, y al hacerlo se refuerza a nuestra costa. Esto no puede suceder, o todo está perdido.
+Los sueños de nuestros sacerdotes continúan, y crece la importancia de su correcta interpretación. La loba emprende un largo viaje, y llega tras un tiempo a una larga cordillera. Busca un paso para cruzar las montañas, y no lo encuentra. Pero durante su búsqueda, se detiene y presta atención a los sonidos graves y siniestros que llegan con el aire a través de las frías y oscuras grietas.
+Tanto los guerreros como los sacerdotes coinciden en que debemos emprender un viaje y que tendremos que cruzar una montaña para enfrentarnos a la oscura bestia rastrera en su guarida.
 ####
 ## Text 811 ##
 Ha sido una época de reevaluaciones. Considerábamos que los romanos y los vikingos eran nuestros principales adversarios, y que esta misteriosa Tribu Oscura era una irritante distracción. Ahora sabemos que no se debe subestimar el peligro planteado por este reino siniestro. No sólo destruye las tierras que abarca, sino que también transforma a nuestras gentes en esbirros sin voluntad. Sólo gracias a la ayuda de los romanos y los vikingos pudimos huir de un destino que nos ha causado un escalofrío de repulsión.
-Después del rescate, nuestros sacerdotes tuvieron un nuevo sueńo en el que el jaguar cruza el mar y llega a un atolón. Allí entabla una lucha terrible con otro jaguar. Aún no está claro cómo encaja esto en la búsqueda de los dominios oscuros. Los sacerdotes se han reunido y están convencidos de que los dominios oscuros están más allá del atolón. Lo sabremos enseguida. Zarparemos lo antes posible.
+Después del rescate, nuestros sacerdotes tuvieron un nuevo sueño en el que el jaguar cruza el mar y llega a un atolón. Allí entabla una lucha terrible con otro jaguar. Aún no está claro cómo encaja esto en la búsqueda de los dominios oscuros. Los sacerdotes se han reunido y están convencidos de que los dominios oscuros están más allá del atolón. Lo sabremos enseguida. Zarparemos lo antes posible.
 ####
 ## Text 812 ##
 No fue fácil llegar hasta los mayas, pero por fin pudimos unir la tierra que recuperamos con la de los romanos y los mayas. Los constructores tardaron en reconocer lo precario de su situación y la magnitud de la amenaza planteada por los Oscuros.
-Nuestros sacerdotes siguen sońando. En sus sueńos, el oso llega a un lugar donde se encuentra un objeto especular entre varias torres. Se lanza repetidas veces contra este espejo, y en él se puede ver al lobo, al oso y al jaguar, aunque sólo de manera tenue y distorsionada. Para nuestros sacerdotes está claro que nos encontraremos con resistencia de algún tipo, pero no están seguros de lo que significa el espejo. No hay duda que esto se aclarará cuando lleguemos a aquella región. Los sacerdotes creen que allí se encuentra la oscuridad que queremos encontrar y desterrar para siempre. Basta de palabras; es hora de actuar.
+Nuestros sacerdotes siguen soñando. En sus sueños, el oso llega a un lugar donde se encuentra un objeto especular entre varias torres. Se lanza repetidas veces contra este espejo, y en él se puede ver al lobo, al oso y al jaguar, aunque sólo de manera tenue y distorsionada. Para nuestros sacerdotes está claro que nos encontraremos con resistencia de algún tipo, pero no están seguros de lo que significa el espejo. No hay duda que esto se aclarará cuando lleguemos a aquella región. Los sacerdotes creen que allí se encuentra la oscuridad que queremos encontrar y desterrar para siempre. Basta de palabras; es hora de actuar.
 ####
 ## Text 813 ##
-Los esbirros oscuros se propagan como la peste. Parecen estar al mismo tiempo en todas partes. Los romanos y los mayas ya deberían haber llegado, pero no hay seńal de ellos. No podemos permitirnos esperarlos. Si no actuamos pronto, la Tribu Oscura será demasiado poderosa para todos nosotros. Hay un resquicio de esperanza. Nuestros espías creen haber localizado el principal templo oscuro, y podría ser el centro de este dominio siniestro. Si conseguimos destruirlo, tal vez podamos librarnos de ellos de una vez por todas.
+Los esbirros oscuros se propagan como la peste. Parecen estar al mismo tiempo en todas partes. Los romanos y los mayas ya deberían haber llegado, pero no hay señal de ellos. No podemos permitirnos esperarlos. Si no actuamos pronto, la Tribu Oscura será demasiado poderosa para todos nosotros. Hay un resquicio de esperanza. Nuestros espías creen haber localizado el principal templo oscuro, y podría ser el centro de este dominio siniestro. Si conseguimos destruirlo, tal vez podamos librarnos de ellos de una vez por todas.
 ####
 ## Text 814 ##
 Logramos vencer a los piratas mayas que infestaban el atolón frente al continente. Su pericia como constructores de barcos y su espíritu marinero eran mucho más impresionantes y amenazadores de lo que podíamos haber imaginado. Tras derrotarlos, estábamos seguros de que encontraríamos a la Tribu Oscura en el continente frente al atolón, pero no fue el caso. Poco después de llegar a tierra firme, estalló una fuerte tormenta, imposibilitando todo movimiento durante algunos días. Tuvimos suerte de no perder todos nuestros barcos.
 Hemos sabido que los vikingos tuvieron más suerte, si esa es la palabra adecuada, en localizar al Espíritu Oscuro. Si nuestros informes son exactos, pudieron tomar el Templo Oscuro, aunque no lograron exterminar a la Tribu. Debemos zarpar hacia la región donde se supone que están los vikingos. Si la misma noticia ha llegado a los romanos, seguramente hagan lo mismo. Se acerca la batalla final, y sin duda hará que la reciente tormenta parezca inofensiva. Nos jugaremos el todo por el todo.
 ####
 ## Text 815 ##
-Uno de nuestros sacerdotes regresó del lago montańoso del norte con un extrańo relato: la ninfa acuática que habita en el lago estará bien dispuesta hacia cualquier raza que construya doce de los lugares de interés llenos de agua en su homenaje cerca del lago.
+Uno de nuestros sacerdotes regresó del lago montañoso del norte con un extraño relato: la ninfa acuática que habita en el lago estará bien dispuesta hacia cualquier raza que construya doce de los lugares de interés llenos de agua en su homenaje cerca del lago.
 ####
 ## Text 816 ##
 Somos afortunados al contar con abundancia de reservas en nuestra base. Sin duda, debe haber suficiente para reclutar a un buen contingente de jardineros y arqueros.
 ####
 ## Text 817 ##
-Sería imprudente tratar de capturar el templo de la Tribu Oscura ahora. Debemos centrarnos en formar un ejército poderoso; la montańa del sudeste podría albergar tesoros muy útiles. Nuestras tropas serán necesarias para proteger a los jardineros mientras trabajan.
+Sería imprudente tratar de capturar el templo de la Tribu Oscura ahora. Debemos centrarnos en formar un ejército poderoso; la montaña del sudeste podría albergar tesoros muy útiles. Nuestras tropas serán necesarias para proteger a los jardineros mientras trabajan.
 ####
 ## Text 818 ##
-El tiempo es esencial. Debemos empezar a producir las herramientas y armas que necesitamos para cumplir nuestra misión lo antes posible. Tenemos que mantener la vigilancia contra los ataques mayas, y debemos concentrar nuestras defensas en una pequeńa cantidad de torres.
+El tiempo es esencial. Debemos empezar a producir las herramientas y armas que necesitamos para cumplir nuestra misión lo antes posible. Tenemos que mantener la vigilancia contra los ataques mayas, y debemos concentrar nuestras defensas en una pequeña cantidad de torres.
 ####
 ## Text 819 ##
 Creemos que nuestros aliados, los vikingos, acogerían con agrado la visita de uno de nuestros sacerdotes. Quizá así disfrutemos de recompensas tangibles. Nuestros pioneros nos ayudarán a obtener los recursos necesarios para esta misión diplomática de las colinas del sur.
 ####
 ## Text 820 ##
-Debemos recibir con los brazos abiertos cualquier ayuda. żNo dijeron nuestros espías algo acerca de un barco pirata en la costa este? Sería interesante saber si sobrevivió a la tormenta.
+Debemos recibir con los brazos abiertos cualquier ayuda. ¿No dijeron nuestros espías algo acerca de un barco pirata en la costa este? Sería interesante saber si sobrevivió a la tormenta.
 ####
 ## Text 821 ##
-Se presiente el peligro. Debemos pensar con cuidado cómo preservar a nuestros pioneros y jardineros, y quizá hacer uso de sus capacidades de transformación. Sería inteligente concentrar las defensas en una torre para empezar y, posteriormente, situar a nuestros arqueros al nordeste de la montańa.
+Se presiente el peligro. Debemos pensar con cuidado cómo preservar a nuestros pioneros y jardineros, y quizá hacer uso de sus capacidades de transformación. Sería inteligente concentrar las defensas en una torre para empezar y, posteriormente, situar a nuestros arqueros al nordeste de la montaña.
 ####
 ## Text 822 ##
 Debemos tener cuidado con nuestras reservas de piedra hasta que podamos acceder a los depósitos del oeste. En vez de fabricar armas, centraremos la atención en el mar para poder ajustar cuentas con los piratas que campan a sus anchas en las aguas. Quizás podamos apoderarnos de alguno de sus tesoros...
@@ -2603,19 +2603,19 @@ Debemos tener cuidado con nuestras reservas de piedra hasta que podamos acceder 
 Examina toda la isla en busca de las materias primas necesarias.
 ####
 ## Text 824 ##
-ˇEl tiempo se acaba y carecemos de aquello que más necesitamos: hachas y sierras! Y de veras necesitamos reforzar nuestras defensas para poder contener las oleadas de ataques que sin duda llegarán. Nuestra única esperanza es disponer las defensas de la manera adecuada...
+¡El tiempo se acaba y carecemos de aquello que más necesitamos: hachas y sierras! Y de veras necesitamos reforzar nuestras defensas para poder contener las oleadas de ataques que sin duda llegarán. Nuestra única esperanza es disponer las defensas de la manera adecuada...
 ####
 ## Text 825 ##
 En tu isla inicial estás a salvo de la Tribu Oscura. No tardes demasiado en atacar, pues la Tribu Oscura no pierde el tiempo en volverse más fuerte.
 ####
 ## Text 826 ##
-No olvides las armas y los recursos de piedra de la isla del suroeste. Intenta que el enfrentamiento no dure demasiado. ˇGuárdate de los chamanes!
+No olvides las armas y los recursos de piedra de la isla del suroeste. Intenta que el enfrentamiento no dure demasiado. ¡Guárdate de los chamanes!
 ####
 ## Text 827 ##
 Conquista la colonia maya que hay al oeste.
 ####
 ## Text 828 ##
-Destruye las plantaciones de hongos de la Tribu Oscura. Los mayas parecen tener buena disposición hacia ti, pero żquién sabe lo que pretenden en realidad?
+Destruye las plantaciones de hongos de la Tribu Oscura. Los mayas parecen tener buena disposición hacia ti, pero ¿quién sabe lo que pretenden en realidad?
 ####
 ## Text 829 ##
 Devuelve los cementerios sagrados que hay en medio de la tierra oscura a su anterior fertilidad.
@@ -2645,13 +2645,13 @@ Tu búsqueda de la raíz del siniestro mal se ve obstaculizada por renegados de 
 Derrota a la Tribu Oscura y conquista todo el paisaje.
 ####
 ## Text 838 ##
-Tu objetivo está perfectamente claro: ˇdebes aniquilar la Fortaleza Oscura!
+Tu objetivo está perfectamente claro: ¡debes aniquilar la Fortaleza Oscura!
 ####
 ## Text 839 ##
 Las Semillas de las Tinieblas
 ####
 ## Text 840 ##
-Puńalada Trapera
+Puñalada Trapera
 ####
 ## Text 841 ##
 La Profanación del Cuerno de Rolf
@@ -2723,7 +2723,7 @@ T.Partida
 Juego interrumpido
 ####
 ## Text 864 ##
-ˇDerrota!
+¡Derrota!
 ####
 ## Text 865 ##
 Nombre mapa
@@ -2762,7 +2762,7 @@ Equipo
 Estadísticas finales
 ####
 ## Text 877 ##
-ˇVictoria!
+¡Victoria!
 ####
 ## Text 878 ##
 1024 x 768
@@ -2777,7 +2777,7 @@ Estadísticas finales
 Informe
 ####
 ## Text 882 ##
-Esto pondrá fin a la partida. żEstás seguro?
+Esto pondrá fin a la partida. ¿Estás seguro?
 ####
 ## Text 883 ##
 Burro
@@ -2927,7 +2927,7 @@ Volumen de voz
 Plantación de pita
 ####
 ## Text 932 ##
-Esto es una plantación de pita. Aquí se cultivan las pitas necesarias para la elaboración de tequila. El tequila se ofrenda en los templos pequeńos.
+Esto es una plantación de pita. Aquí se cultivan las pitas necesarias para la elaboración de tequila. El tequila se ofrenda en los templos pequeños.
 ####
 ## Text 933 ##
 Taller del fabricante de municiones
@@ -2948,17 +2948,17 @@ Cuartel
 Esto es un cuartel. Aquí es donde puedes reclutar soldados, suponiendo que dispongas de las armas necesarias, por supuesto. Para reclutar a soldados de nivel superior para tu ejército, también necesitarás lingotes de oro: 1 para el nivel 2, 2 para el nivel 3 y 3 para un jefe de escuadrón.
 ####
 ## Text 939 ##
-Cabańa apicultor
+Cabaña apicultor
 ####
 ## Text 940 ##
-Esto es la cabańa del apicultor. Aquí se elabora la miel necesaria para hacer aguamiel. Si sitúas la colmena en el bosque, se obtiene más miel (ˇatento a las flores!).
+Esto es la cabaña del apicultor. Aquí se elabora la miel necesaria para hacer aguamiel. Si sitúas la colmena en el bosque, se obtiene más miel (¡atento a las flores!).
 ####
 ## Text 941 ##
 Matadero
 ####
 ## Text 942 ##
 Esto es el matadero. Aquí, el carnicero proporciona carne para los mineros. La carne es el alimento preferido de tus mineros de las minas de hierro y azufre.
-ˇUn carnicero necesita un hacha!
+¡Un carnicero necesita un hacha!
 ####
 ## Text 943 ##
 Castillo
@@ -2967,10 +2967,10 @@ Castillo
 Esto es un castillo. Similares a las torres, los castillos se usan para extender y proteger tu territorio. Pueden albergar a un gran número de soldados. Por lo tanto, son los edificios más difíciles de conquistar.
 ####
 ## Text 945 ##
-Cabańa carbonero
+Cabaña carbonero
 ####
 ## Text 946 ##
-Esto es la cabańa del carbonero. El carbonero hace carbón a partir de tablones de madera. Resulta útil si tus minas de carbón no generan suficiente mineral.
+Esto es la cabaña del carbonero. El carbonero hace carbón a partir de tablones de madera. Resulta útil si tus minas de carbón no generan suficiente mineral.
 ####
 ## Text 947 ##
 Mina de carbón
@@ -2978,7 +2978,7 @@ Mina de carbón
 ## Text 948 ##
 Esto es la mina de carbón. El carbón es necesario para las fundiciones y las herrerías.
 
-ˇUn minero necesita un pico!
+¡Un minero necesita un pico!
 ####
 ## Text 949 ##
 Granja de burros
@@ -3008,7 +3008,7 @@ Tus colonos se quedarán pasmados ante esta imponente cabeza de piedra.
 Estatua de guerrero
 ####
 ## Text 958 ##
-Sin duda, este guerrero de aspecto fiero sería un imponente ańadido a tu imperio.
+Sin duda, este guerrero de aspecto fiero sería un imponente añadido a tu imperio.
 ####
 ## Text 959 ##
 Estatua de guardia
@@ -3020,13 +3020,13 @@ Piensa en el temor que infundiría tu colonia con una de estas...
 Ramo
 ####
 ## Text 962 ##
-żQué otra cosa podría ser más atractiva a la vista que este encantador ramo?
+¿Qué otra cosa podría ser más atractiva a la vista que este encantador ramo?
 ####
 ## Text 963 ##
 Obelisco
 ####
 ## Text 964 ##
-ˇSin duda, este imponente obelisco llamará la atención!
+¡Sin duda, este imponente obelisco llamará la atención!
 ####
 ## Text 965 ##
 Monumento
@@ -3038,7 +3038,7 @@ Observa la artesanía de este magnífico monumento maya.
 Poste totémico
 ####
 ## Text 968 ##
-Este poste totémico sería un ańadido magnífico a tu pequeńo imperio.
+Este poste totémico sería un añadido magnífico a tu pequeño imperio.
 ####
 ## Text 969 ##
 Cáliz de oro
@@ -3062,7 +3062,7 @@ Este ornamentado anillo de piedra ofrece un asombroso ejemplo de lo que pueden h
 Jarrones
 ####
 ## Text 976 ##
-żQué ańadido para una colonia puede ser de mejor gusto que estos dos jarrones?
+¿Qué añadido para una colonia puede ser de mejor gusto que estos dos jarrones?
 ####
 ## Text 977 ##
 Busto
@@ -3074,7 +3074,7 @@ Da a tus colonos algo de lo que sentirse orgullosos y haz que se construya uno d
 Monumento
 ####
 ## Text 980 ##
-żNo sería aún más hermoso tu colonia con uno de estos monumentos?
+¿No sería aún más hermoso tu colonia con uno de estos monumentos?
 ####
 ## Text 981 ##
 Estandarte
@@ -3086,7 +3086,7 @@ Sin duda, un soberbio estandarte como éste impresiona.
 Obelisco
 ####
 ## Text 984 ##
-Este obelisco sería un magnífico ańadido a tu pequeńo imperio.
+Este obelisco sería un magnífico añadido a tu pequeño imperio.
 ####
 ## Text 985 ##
 Banco
@@ -3116,13 +3116,13 @@ Construye una de estas sepulturas como muestra de respeto a los soldados romanos
 Placa de piedra
 ####
 ## Text 994 ##
-Ańade ese elemento de distinción a tu colonia con esta ornamentada placa de piedra.
+Añade ese elemento de distinción a tu colonia con esta ornamentada placa de piedra.
 ####
 ## Text 995 ##
 Jarrón
 ####
 ## Text 996 ##
-żQué podría ser de mejor gusto que uno de estos jarrones en un lugar adecuado?
+¿Qué podría ser de mejor gusto que uno de estos jarrones en un lugar adecuado?
 ####
 ## Text 997 ##
 Caballero
@@ -3134,13 +3134,13 @@ Sin duda, este valiente caballero de reluciente armadura va a servir de inspirac
 Flor
 ####
 ## Text 1000 ##
-Esta flor quedaría preciosa en tu colonia, żno crees?
+Esta flor quedaría preciosa en tu colonia, ¿no crees?
 ####
 ## Text 1001 ##
 Banco circular
 ####
 ## Text 1002 ##
-Acicala tu pequeńo imperio con uno de estos bonitos bancos circulares.
+Acicala tu pequeño imperio con uno de estos bonitos bancos circulares.
 ####
 ## Text 1003 ##
 Escudo de armas
@@ -3161,10 +3161,10 @@ Cesta de flores
 Tus colonos se quedarán sin habla de admiración ante esta hermosa cesta de flores.
 ####
 ## Text 1009 ##
-Jardín pequeńo
+Jardín pequeño
 ####
 ## Text 1010 ##
-Este pequeńo jardín ofrecerá un refugio tranquilo en medio de todo el bullicio.
+Este pequeño jardín ofrecerá un refugio tranquilo en medio de todo el bullicio.
 ####
 ## Text 1011 ##
 Escultura sagrada
@@ -3176,7 +3176,7 @@ Esta escultura sagrada es lo que necesitas para arreglar un poco el ambiente.
 Tronco sagrado
 ####
 ## Text 1014 ##
-Un Tronco Divino: Un ańadido celestial a cualquier colonia.
+Un Tronco Divino: Un añadido celestial a cualquier colonia.
 ####
 ## Text 1015 ##
 Gran guerrero
@@ -3188,7 +3188,7 @@ Tu ejército se inspirará al ver a este intrépido guerrero.
 Gran granjero
 ####
 ## Text 1018 ##
-ˇPiensa en lo que va a impresionar esta estatua a tus colonos!
+¡Piensa en lo que va a impresionar esta estatua a tus colonos!
 ####
 ## Text 1019 ##
 Parque de la Paz
@@ -3209,17 +3209,17 @@ Fuente
 Tu colonia no está completa sin una de estas bellas fuentes.
 ####
 ## Text 1025 ##
-Cabańa pescador
+Cabaña pescador
 ####
 ## Text 1026 ##
-Esto es la cabańa del pescador. Se asegura de que siempre haya pescado fresco, para los mineros de la mina de oro. Asegúrate de que tus cabańas de pescador estén cerca del agua (ˇatento a los peces!).
-ˇUn pescador necesita una cańa de pescar!
+Esto es la cabaña del pescador. Se asegura de que siempre haya pescado fresco, para los mineros de la mina de oro. Asegúrate de que tus cabañas de pescador estén cerca del agua (¡atento a los peces!).
+¡Un pescador necesita una caña de pescar!
 ####
 ## Text 1027 ##
-Cabańa G.bosques
+Cabaña G.bosques
 ####
 ## Text 1028 ##
-Esto es la cabańa del guardabosques. En su área de trabajo, el guardabosques se asegura de que haya suficientes árboles para los leńadores.
+Esto es la cabaña del guardabosques. En su área de trabajo, el guardabosques se asegura de que haya suficientes árboles para los leñadores.
 ####
 ## Text 1029 ##
 Granja de cabras
@@ -3233,7 +3233,7 @@ Mina de oro
 ## Text 1032 ##
 Esto es la mina de oro. El oro se convierte en lingotes en la fundición de oro. Esos lingotes son necesarios para construir templos.
 
-ˇUn minero necesita un pico!
+¡Un minero necesita un pico!
 ####
 ## Text 1033 ##
 Fundición de oro
@@ -3245,7 +3245,7 @@ Esto es la fundición de oro, donde el mineral procedente de las minas se convie
 Plantación cereal
 ####
 ## Text 1036 ##
-Esta es la plantación de cereales. Los cereales cosechados sirven de alimento en las granjas de animales y se emplean en los molinos para hacer harina. Asegúrate de que hay cerca sitio suficiente para un campo. ˇUn cultivador de cereales necesita una guadańa!
+Esta es la plantación de cereales. Los cereales cosechados sirven de alimento en las granjas de animales y se emplean en los molinos para hacer harina. Asegúrate de que hay cerca sitio suficiente para un campo. ¡Un cultivador de cereales necesita una guadaña!
 ####
 ## Text 1037 ##
 Fabricante pólvora
@@ -3266,12 +3266,12 @@ Hospital
 Esto es el hospital. Aquí, el sanador atiende a tus soldados heridos.
 ####
 ## Text 1043 ##
-Cabańa cazador
+Cabaña cazador
 ####
 ## Text 1044 ##
-Esto es la cabańa del cazador. El cazador proporciona algo más de comida a tu colonia.
+Esto es la cabaña del cazador. El cazador proporciona algo más de comida a tu colonia.
 
-ˇUn cazador necesita un arco!
+¡Un cazador necesita un arco!
 ####
 ## Text 1045 ##
 Mina de hierro
@@ -3279,7 +3279,7 @@ Mina de hierro
 ## Text 1046 ##
 Esto es la mina de hierro. El mineral extraído se convierte en hierro en la fundición de hierro. El hierro es necesario para fabricar armas y herramientas.
 
-ˇUn minero necesita un pico!
+¡Un minero necesita un pico!
 ####
 ## Text 1047 ##
 Fundición de hierro
@@ -3288,7 +3288,7 @@ Fundición de hierro
 Esto es la fundición de hierro. Usando carbón, el hierro se convierte en lingotes de hierro, que son necesarios para fabricar armas y herramientas.
 ####
 ## Text 1049 ##
-Cabańa diseńador exteriores
+Cabaña diseñador exteriores
 ####
 ## Text 1050 ##
 xxx
@@ -3309,7 +3309,7 @@ Esto es el mercado. Desde aquí salen todas las caravanas.
 Fábrica aguamiel
 ####
 ## Text 1056 ##
-Esto es la cabańa del fabricante de aguamiel. Aquí se produce aguamiel a partir de miel. El aguamiel puede ofrendarse a los dioses en los templos pequeńos.
+Esto es la cabaña del fabricante de aguamiel. Aquí se produce aguamiel a partir de miel. El aguamiel puede ofrendarse a los dioses en los templos pequeños.
 ####
 ## Text 1057 ##
 Granja de cerdos
@@ -3330,10 +3330,10 @@ Residencia mediana
 Esto es una residencia mediana. Proporciona alojamiento para 20 colonos. Construye nuevas residencias para obtener más colonos.
 ####
 ## Text 1063 ##
-Residencia pequeńa
+Residencia pequeña
 ####
 ## Text 1064 ##
-Esto es una residencia pequeńa. Proporciona alojamiento para 10 colonos. Construye nuevas residencias para obtener más colonos.
+Esto es una residencia pequeña. Proporciona alojamiento para 10 colonos. Construye nuevas residencias para obtener más colonos.
 ####
 ## Text 1065 ##
 Aserradero
@@ -3341,7 +3341,7 @@ Aserradero
 ## Text 1066 ##
 Esto es el aserradero. Aquí se convierten los troncos en tablones. Los tablones son necesarios para construir toda clase de edificios.
 
-ˇUn aserrador necesita una sierra!
+¡Un aserrador necesita una sierra!
 ####
 ## Text 1067 ##
 Granja de ovejas
@@ -3355,14 +3355,14 @@ Astillero
 ## Text 1070 ##
 Esto es un astillero. Aquí se construyen todo tipo de barcos, permitiendo a tus colonos gobernar las olas.
 
-ˇUn carpintero de navíos necesita un martillo!
+¡Un carpintero de navíos necesita un martillo!
 ####
 ## Text 1071 ##
-Cabańa cantero
+Cabaña cantero
 ####
 ## Text 1072 ##
-Esto es la cabańa del cantero. Él pica las rocas grandes para obtener piedras pequeńas. Las piedras pequeńas son necesarias para toda clase de edificios.
-ˇUn cantero necesita un pico!
+Esto es la cabaña del cantero. Él pica las rocas grandes para obtener piedras pequeñas. Las piedras pequeñas son necesarias para toda clase de edificios.
+¡Un cantero necesita un pico!
 ####
 ## Text 1073 ##
 Cantera
@@ -3370,7 +3370,7 @@ Cantera
 ## Text 1074 ##
 Esto es una cantera. Las piedras obtenidas aquí son necesarias para toda clase de edificios.
 
-ˇUn minero necesita un pico!
+¡Un minero necesita un pico!
 ####
 ## Text 1075 ##
 Zona de almacenaje
@@ -3384,7 +3384,7 @@ Mina de azufre
 ## Text 1078 ##
 Esto es la mina de azufre. El azufre lo necesitan los mayas para fabricar pólvora, y las otras razas pueden producirlo con propósitos comerciales.
 
-ˇUn minero necesita un pico!
+¡Un minero necesita un pico!
 ####
 ## Text 1079 ##
 Templo grande
@@ -3393,16 +3393,16 @@ Templo grande
 Esto es el templo grande. Aquí se instruye a los sacerdotes, que pueden realizar milagros con la ayuda de los dioses.
 ####
 ## Text 1081 ##
-Templo pequeńo
+Templo pequeño
 ####
 ## Text 1082 ##
-Esto es el templo pequeńo. Aquí puedes ofrendar alcohol a los dioses. A cambio, ellos te ayudarán a realizar milagros otorgando maná a tu colonia.
+Esto es el templo pequeño. Aquí puedes ofrendar alcohol a los dioses. A cambio, ellos te ayudarán a realizar milagros otorgando maná a tu colonia.
 ####
 ## Text 1083 ##
 Destilería de tequila
 ####
 ## Text 1084 ##
-Esto es la destilería de tequila. El tequila puede ofrendarse a los dioses en los templos pequeńos y, a cambio, ellos te ayudarán a realizar milagros.
+Esto es la destilería de tequila. El tequila puede ofrendarse a los dioses en los templos pequeños y, a cambio, ellos te ayudarán a realizar milagros.
 ####
 ## Text 1085 ##
 Herrería
@@ -3415,7 +3415,7 @@ Un herrero necesita un martillo.
 Torre grande
 ####
 ## Text 1088 ##
-Esto es una torre grande. Las torres son necesarias para extender y proteger tu territorio. Las torres grandes tienen la ventaja de alojar a más soldados que las pequeńas, haciéndolas mucho más difícil de conquistar.
+Esto es una torre grande. Las torres son necesarias para extender y proteger tu territorio. Las torres grandes tienen la ventaja de alojar a más soldados que las pequeñas, haciéndolas mucho más difícil de conquistar.
 ####
 ## Text 1089 ##
 Torre de vigilancia
@@ -3424,10 +3424,10 @@ Torre de vigilancia
 Esto es una torre de vigilancia. Aumentando el alcance de tu visibilidad, puedes descubrir enemigos desde una distancia mayor. Las torres de vigilancia no protegen tu territorio.
 ####
 ## Text 1091 ##
-Torre pequeńa
+Torre pequeña
 ####
 ## Text 1092 ##
-Esto es una torre pequeńa. Las torres son necesarias para extender y proteger tu territorio. Tienes que ocupar torres al menos con un espadachín o arquero.
+Esto es una torre pequeña. Las torres son necesarias para extender y proteger tu territorio. Tienes que ocupar torres al menos con un espadachín o arquero.
 ####
 ## Text 1093 ##
 Taller de vehículos
@@ -3435,13 +3435,13 @@ Taller de vehículos
 ## Text 1094 ##
 Esto es el taller de vehículos. Aquí se construye todo tipo de vehículos.
 
-ˇUn fabricante de vehículos necesita un martillo y una sierra!
+¡Un fabricante de vehículos necesita un martillo y una sierra!
 ####
 ## Text 1095 ##
-Cabańa aguador
+Cabaña aguador
 ####
 ## Text 1096 ##
-Esto es la cabańa del aguador. El aguador se asegura de que la panadería y las granjas de animales tengan suficiente agua. Recuerda que este edificio tiene que ubicarse cerca de un río.
+Esto es la cabaña del aguador. El aguador se asegura de que la panadería y las granjas de animales tengan suficiente agua. Recuerda que este edificio tiene que ubicarse cerca de un río.
 ####
 ## Text 1097 ##
 Armería
@@ -3458,18 +3458,18 @@ Molino
 Esto es el molino. Es necesario para obtener harina de los cereales. El panadero necesita harina para hacer pan.
 ####
 ## Text 1101 ##
-Vińedo
+Viñedo
 ####
 ## Text 1102 ##
-Esto es un vińedo. El vinatero elabora y embotella vino. El vino puede ofrendarse a los dioses en los templos pequeńos. El mejor lugar para un vińedo es la ladera soleada de una colina.
+Esto es un viñedo. El vinatero elabora y embotella vino. El vino puede ofrendarse a los dioses en los templos pequeños. El mejor lugar para un viñedo es la ladera soleada de una colina.
 ####
 ## Text 1103 ##
-Cabańa leńador
+Cabaña leñador
 ####
 ## Text 1104 ##
-Esto es la cabańa del leńador. No dejará de talar árboles mientras queden en su área de trabajo.
+Esto es la cabaña del leñador. No dejará de talar árboles mientras queden en su área de trabajo.
 
-ˇEl leńador necesita un hacha!
+¡El leñador necesita un hacha!
 ####
 ## Text 1105 ##
 Camas: Iniciales/Extras
@@ -3655,7 +3655,7 @@ Por defecto
 Distribución de mercancías
 ####
 ## Text 1166 ##
-Pequeńo
+Pequeño
 ####
 ## Text 1167 ##
 Muchos
@@ -3712,7 +3712,7 @@ Nombre:
 Confirmación:
 ####
 ## Text 1185 ##
-Contraseńa:
+Contraseña:
 ####
 ## Text 1186 ##
 Jugador
@@ -3736,7 +3736,7 @@ Preferencias del equipo
 Tiempo
 ####
 ## Text 1193 ##
-żQuién eres?
+¿Quién eres?
 ####
 ## Text 1194 ##
 2 contra 2
@@ -3754,10 +3754,10 @@ Tiempo
 Alianzas libres
 ####
 ## Text 1199 ##
-Campańa: fácil
+Campaña: fácil
 ####
 ## Text 1200 ##
-Campańa: normal
+Campaña: normal
 ####
 ## Text 1201 ##
 Preferencias por defecto para el mapa
@@ -3817,13 +3817,13 @@ Tipo de mapa:
 T.mundo:
 ####
 ## Text 1220 ##
-I. Campańa maya
+I. Campaña maya
 ####
 ## Text 1221 ##
-I. Campańa romana
+I. Campaña romana
 ####
 ## Text 1222 ##
-I. Campańa vikinga
+I. Campaña vikinga
 ####
 ## Text 1223 ##
 Créditos
@@ -3844,7 +3844,7 @@ N. partida
 Partida
 ####
 ## Text 1229 ##
-Contraseńa
+Contraseña
 ####
 ## Text 1230 ##
 Descripción
@@ -3853,7 +3853,7 @@ Descripción
 Nombre grupo
 ####
 ## Text 1232 ##
-Contraseńa
+Contraseña
 ####
 ## Text 1233 ##
 Cargar partida
@@ -3868,7 +3868,7 @@ Partida multijugador: Red local
 Salir de la partida
 ####
 ## Text 1237 ##
-Partida de un jugador: Campańa
+Partida de un jugador: Campaña
 ####
 ## Text 1238 ##
 Un jugador: Escenario
@@ -4144,19 +4144,19 @@ Esto es un guerrero con hacha de nivel 3. Los guerreros con hacha son unidades q
 Guerrero con cerbatana de Nivel 1
 ####
 ## Text 1329 ##
-Esto es un guerrero con cerbatana de nivel 1. Estos guerreros no pueden causar demasiado dańo, pero su capacidad para paralizar contrincantes hace que el enemigo sea presa fácil de los espadachines y arqueros mayas.
+Esto es un guerrero con cerbatana de nivel 1. Estos guerreros no pueden causar demasiado daño, pero su capacidad para paralizar contrincantes hace que el enemigo sea presa fácil de los espadachines y arqueros mayas.
 ####
 ## Text 1330 ##
 Guerrero con cerbatana de Nivel 2
 ####
 ## Text 1331 ##
-Esto es un guerrero con cerbatana de nivel 2. Estos guerreros no pueden causar demasiado dańo, pero su capacidad para paralizar contrincantes hace que el enemigo sea presa fácil de los espadachines y arqueros mayas. Para reclutar a esta unidad necesitarás un lingote de oro.
+Esto es un guerrero con cerbatana de nivel 2. Estos guerreros no pueden causar demasiado daño, pero su capacidad para paralizar contrincantes hace que el enemigo sea presa fácil de los espadachines y arqueros mayas. Para reclutar a esta unidad necesitarás un lingote de oro.
 ####
 ## Text 1332 ##
 Guerrero con cerbatana de Nivel 3
 ####
 ## Text 1333 ##
-Esto es un guerrero con cerbatana de nivel 3. Estos guerreros no pueden causar demasiado dańo, pero su capacidad para paralizar contrincantes hace que el enemigo sea presa fácil de los espadachines y arqueros mayas. Para reclutar a esta unidad necesitarás dos lingotes de oro.
+Esto es un guerrero con cerbatana de nivel 3. Estos guerreros no pueden causar demasiado daño, pero su capacidad para paralizar contrincantes hace que el enemigo sea presa fácil de los espadachines y arqueros mayas. Para reclutar a esta unidad necesitarás dos lingotes de oro.
 ####
 ## Text 1334 ##
 Arquero de Nivel 1
@@ -4273,10 +4273,10 @@ Hacha
 Al hacer clic sobre este botón, se selecciona el hacha.
 ####
 ## Text 1372 ##
-Cańa de pescar
+Caña de pescar
 ####
 ## Text 1373 ##
-Al hacer clic sobre este botón, se selecciona la cańa de pescar
+Al hacer clic sobre este botón, se selecciona la caña de pescar
 ####
 ## Text 1374 ##
 Martillo
@@ -4309,10 +4309,10 @@ Sierra
 Al hacer clic sobre este botón, se selecciona la sierra.
 ####
 ## Text 1384 ##
-Guadańa
+Guadaña
 ####
 ## Text 1385 ##
-Al hacer clic sobre este botón, se selecciona la guadańa.
+Al hacer clic sobre este botón, se selecciona la guadaña.
 ####
 ## Text 1386 ##
 Abrir/cerrar menú de la barra lateral
@@ -4402,7 +4402,7 @@ Utiliza este botón para detener la fabricación de armas del tipo seleccionado.
 Elementos básicos.
 ####
 ## Text 1415 ##
-Selecciona la pestańa de elementos básicos.
+Selecciona la pestaña de elementos básicos.
 ####
 ## Text 1416 ##
 Detener la construcción.
@@ -4444,7 +4444,7 @@ Utiliza este botón para proporcionar una escolta a un barco/vehículo.
 Alimentos
 ####
 ## Text 1429 ##
-Selecciona la pestańa de alimentos.
+Selecciona la pestaña de alimentos.
 ####
 ## Text 1430 ##
 Llenar
@@ -4561,7 +4561,7 @@ Conjura este hechizo, y tus plantas de maíz y pita crecerán más rápidamente.
 Atajo
 ####
 ## Text 1468 ##
-La nieve en una cordillera montańosa impenetrable se fundirá ante tus ojos, permitiéndote cruzar la montańa.
+La nieve en una cordillera montañosa impenetrable se fundirá ante tus ojos, permitiéndote cruzar la montaña.
 ####
 ## Text 1469 ##
 Desterrar enemigos
@@ -4585,7 +4585,7 @@ Tus soldados o aliados dentro del radio del hechizo ascenderán un nivel. Este h
 Maldición de las piedras
 ####
 ## Text 1476 ##
-ˇAleluya! ˇLlueven piedras!
+¡Aleluya! ¡Llueven piedras!
 ####
 ## Text 1477 ##
 Don divino
@@ -4603,13 +4603,13 @@ Parte de tus reservas de pescado se convertirán en piedra.
 Torrente de peces
 ####
 ## Text 1482 ##
-ˇEs un milagro! Los mares rebosan de peces.
+¡Es un milagro! Los mares rebosan de peces.
 ####
 ## Text 1483 ##
 Atajo
 ####
 ## Text 1484 ##
-La nieve en una cordillera montańosa impenetrable se fundirá ante tus ojos, permitiéndote cruzar la montańa.
+La nieve en una cordillera montañosa impenetrable se fundirá ante tus ojos, permitiéndote cruzar la montaña.
 ####
 ## Text 1485 ##
 Escudo protector
@@ -4657,7 +4657,7 @@ Haz feliz a tu cazador proporcionándole más presas.
 Atajo
 ####
 ## Text 1500 ##
-La nieve en una cordillera montańosa impenetrable se fundirá ante tus ojos, permitiéndote cruzar la montańa.
+La nieve en una cordillera montañosa impenetrable se fundirá ante tus ojos, permitiéndote cruzar la montaña.
 ####
 ## Text 1501 ##
 Congelar enemigos
@@ -4681,7 +4681,7 @@ Provoca un estallido de pánico entre los soldados enemigos y mira cómo huyen p
 Martillo de Thor
 ####
 ## Text 1508 ##
-żTe apetece destruir un edificio enemigo de un solo golpe? El Martillo de Thor es exactamente lo que receta el doctor para ello.
+¿Te apetece destruir un edificio enemigo de un solo golpe? El Martillo de Thor es exactamente lo que receta el doctor para ello.
 ####
 ## Text 1509 ##
 Mantener la posición
@@ -4717,7 +4717,7 @@ Haz clic en este botón para fijar el destino de la ruta comercial.
 Herramientas
 ####
 ## Text 1520 ##
-Selecciona la pestańa de herramientas.
+Selecciona la pestaña de herramientas.
 ####
 ## Text 1521 ##
 Barra lateral de comercio
@@ -4735,7 +4735,7 @@ Utiliza este botón para descargar el barco/vehículo.
 Armas
 ####
 ## Text 1526 ##
-Selecciona la pestańa de armas.
+Selecciona la pestaña de armas.
 ####
 ## Text 1527 ##
 Establecer área de trabajo
@@ -5011,7 +5011,7 @@ Armadura: Necesaria para reclutar a un jefe de escuadrón.
 Hacha
 ####
 ## Text 1618 ##
-Hacha: Necesaria para los leńadores y los carniceros.
+Hacha: Necesaria para los leñadores y los carniceros.
 ####
 ## Text 1619 ##
 Hacha de combate
@@ -5050,10 +5050,10 @@ xxx
 xxxx
 ####
 ## Text 1631 ##
-Cańa de pescar
+Caña de pescar
 ####
 ## Text 1632 ##
-Cańas de pescar: Las necesitan los pescadores.
+Cañas de pescar: Las necesitan los pescadores.
 ####
 ## Text 1633 ##
 Pescado
@@ -5095,13 +5095,13 @@ Cereales: Usados como alimento en las granjas de animales o para producir harina
 Martillo
 ####
 ## Text 1646 ##
-Martillo: Necesario para albańiles, geólogos, constructores navales, herreros  y fabricantes de vehículos.
+Martillo: Necesario para albañiles, geólogos, constructores navales, herreros  y fabricantes de vehículos.
 ####
 ## Text 1647 ##
 Miel
 ####
 ## Text 1648 ##
-Miel (vikingos): Usada para elaborar aguamiel en la cabańa del fabricante de aguamiel.
+Miel (vikingos): Usada para elaborar aguamiel en la cabaña del fabricante de aguamiel.
 ####
 ## Text 1649 ##
 Mineral de hierro
@@ -5125,7 +5125,7 @@ Troncos: Necesarios para obtener tablones en el aserradero.
 Aguamiel
 ####
 ## Text 1656 ##
-Aguamiel (vikingos): Usada para hacer ofrendas en los templos pequeńos con el fin de obtener maná para realizar milagros.
+Aguamiel (vikingos): Usada para hacer ofrendas en los templos pequeños con el fin de obtener maná para realizar milagros.
 ####
 ## Text 1657 ##
 Carne
@@ -5164,10 +5164,10 @@ Sierra
 Sierra: Necesaria para los aserradores.
 ####
 ## Text 1669 ##
-Guadańa
+Guadaña
 ####
 ## Text 1670 ##
-Guadańa: Necesaria para los agricultores de cereales.
+Guadaña: Necesaria para los agricultores de cereales.
 ####
 ## Text 1671 ##
 Oveja
@@ -5203,7 +5203,7 @@ Espadas: Necesarias para reclutar espadachines y médicos romanos.
 Tequila
 ####
 ## Text 1682 ##
-Tequila (mayas): Se usa para hacer ofrendas en los templos pequeńos con el fin de obtener maná para realizar milagros.
+Tequila (mayas): Se usa para hacer ofrendas en los templos pequeños con el fin de obtener maná para realizar milagros.
 ####
 ## Text 1683 ##
 Agua
@@ -5215,7 +5215,7 @@ Agua: Necesaria en las panaderías y en las granjas de animales. Los mayas tambi
 Vino
 ####
 ## Text 1686 ##
-Vino(romanos): Usado para hacer ofrendas en los templos pequeńos con el fin de obtener maná para realizar milagros.
+Vino(romanos): Usado para hacer ofrendas en los templos pequeños con el fin de obtener maná para realizar milagros.
 ####
 ## Text 1687 ##
 Activado/desactivado
@@ -5359,10 +5359,10 @@ Haz clic aquí para restar 5 al número de colonos cualificados en el trabajo se
 Haz clic aquí para sumar 5 al número de colonos cualificados en el trabajo seleccionado.
 ####
 ## Text 1734 ##
-Albańiles
+Albañiles
 ####
 ## Text 1735 ##
-Haz click aquí para seleccionar al albańil. Utiliza los botones de flecha para especificar cuántos colonos libres quieres que se conviertan en albańiles.
+Haz click aquí para seleccionar al albañil. Utiliza los botones de flecha para especificar cuántos colonos libres quieres que se conviertan en albañiles.
 ####
 ## Text 1736 ##
 Transportistas
@@ -5386,7 +5386,7 @@ Pon a cero el número de colonos a ser instruidos.
 Cultivador de pitas
 ####
 ## Text 1743 ##
-El cultivador de pitas obtiene pitas en su plantación. Las pitas son necesarias para elaborar tequila, que después se ofrenda a los dioses en un templo pequeńo.
+El cultivador de pitas obtiene pitas en su plantación. Las pitas son necesarias para elaborar tequila, que después se ofrenda a los dioses en un templo pequeño.
 Herramienta/Arma: No se necesita ninguna.
 ####
 ## Text 1744 ##
@@ -5436,10 +5436,10 @@ Los arqueros combaten al enemigo desde lejos. También pueden ocupar castillos y
 Herramienta/Arma: Arco.
 ####
 ## Text 1756 ##
-Albańil
+Albañil
 ####
 ## Text 1757 ##
-Los albańiles construyen todas las casas de tu colonia con madera y piedra.
+Los albañiles construyen todas las casas de tu colonia con madera y piedra.
 
 Herramienta/Arma: Martillo.
 ####
@@ -5487,13 +5487,13 @@ Pescador
 ## Text 1769 ##
 El pescador provee a tu colonia de pescado fresco, que gusta mucho a los mineros de tus minas de oro.
 
-Herramienta/Arma: Cańa de pescar.
+Herramienta/Arma: Caña de pescar.
 ####
 ## Text 1770 ##
 Guardabosques
 ####
 ## Text 1771 ##
-El guardabosques se asegura de que haya suficientes árboles para los leńadores. Recuerda que la madera es un elemento básico en todos los edificios de tu colonia.
+El guardabosques se asegura de que haya suficientes árboles para los leñadores. Recuerda que la madera es un elemento básico en todos los edificios de tu colonia.
 Herramienta/Arma: No se necesita ninguna.
 ####
 ## Text 1772 ##
@@ -5537,7 +5537,7 @@ Cultivador de cereales
 ####
 ## Text 1783 ##
 El cultivador de cereales proporciona grano, que es necesario para proporcionar alimento para los animales de tus granjas o para hacer pan para los mineros.
-Herramienta/Arma: Guadańa.
+Herramienta/Arma: Guadaña.
 ####
 ## Text 1784 ##
 Sanador
@@ -5559,7 +5559,7 @@ Herramienta/Arma: Arco.
 Fábrica aguamiel
 ####
 ## Text 1789 ##
-El fabricante de aguamiel transforma la miel obtenida por el apicultor en aguamiel. El aguamiel puede ofrendarse en los templos pequeńos.
+El fabricante de aguamiel transforma la miel obtenida por el apicultor en aguamiel. El aguamiel puede ofrendarse en los templos pequeños.
 
 Herramienta/Arma: No se necesita ninguna.
 ####
@@ -5700,7 +5700,7 @@ Herramienta/Arma: Espada.
 Sirviente del templo
 ####
 ## Text 1825 ##
-El sirviente del templo ofrenda el alcohol en los templos pequeńos.
+El sirviente del templo ofrenda el alcohol en los templos pequeños.
 
 Herramienta/Arma: No se necesita ninguna.
 ####
@@ -5708,7 +5708,7 @@ Herramienta/Arma: No se necesita ninguna.
 Destilador de tequila
 ####
 ## Text 1827 ##
-El destilador de tequila usa plantas de pita para producir tequila. El tequila puede ofrendarse a los dioses en los templos pequeńos.
+El destilador de tequila usa plantas de pita para producir tequila. El tequila puede ofrendarse a los dioses en los templos pequeños.
 
 Herramienta/Arma: No se necesita ninguna.
 ####
@@ -5740,20 +5740,20 @@ Herramienta/Arma: No se necesita ninguna.
 Vinatero
 ####
 ## Text 1835 ##
-Esto es un vinatero. Hace vino que puede ofrendarse en los templos pequeńos.
+Esto es un vinatero. Hace vino que puede ofrendarse en los templos pequeños.
 
 Herramienta/Arma: No se necesita ninguna.
 ####
 ## Text 1836 ##
-Leńador
+Leñador
 ####
 ## Text 1837 ##
-El leńador corta árboles con un hacha. En el aserradero se hacen tablones a partir de los árboles, destinados a la industria de la construcción.
+El leñador corta árboles con un hacha. En el aserradero se hacen tablones a partir de los árboles, destinados a la industria de la construcción.
 
 Herramienta/Arma: Hacha
 ####
 ## Text 1838 ##
-żCuántos colonos?
+¿Cuántos colonos?
 ####
 ## Text 1839 ##
 Al hacer clic sobre este botón, se muestra el número de colonos que tiene un jugador concreto. Ten en cuenta que esta cifra excluye a las unidades militares, que se muestran por separado en el menú de estadísticas de guerreros.
@@ -5765,7 +5765,7 @@ Porcentaje de territorio
 Haz clic sobre este botón para mostrar el porcentaje de todo el mapa que controla un jugador. Ten en cuenta que esta cifra no incluye el territorio cubierto por las aguas.
 ####
 ## Text 1842 ##
-żRecursos utilizados?
+¿Recursos utilizados?
 ####
 ## Text 1843 ##
 Haz clic sobre este botón para mostrar el número total de unidades de materias primas utilizadas hasta el momento en la construcción de edificios en la colonia de un jugador.
@@ -5981,7 +5981,7 @@ La fabricación de una catapulta ha finalizado
 Has capturado un edificio.
 ####
 ## Text 1914 ##
-En las campańas, el nivel de dificultad 'Fácil' permite que los principiantes conozcan el mundo de Settlers de modo más sencillo. El contrincante del ordenador se comporta de manera menos agresiva que en el nivel de dificultad 'Normal'.
+En las campañas, el nivel de dificultad 'Fácil' permite que los principiantes conozcan el mundo de Settlers de modo más sencillo. El contrincante del ordenador se comporta de manera menos agresiva que en el nivel de dificultad 'Normal'.
 ####
 ## Text 1915 ##
 Mensajes económicos
@@ -6020,13 +6020,13 @@ Se ha acabado la fabricación de un escupefuego.
 Se ha acabado la fabricación de un barco mercante.
 ####
 ## Text 1927 ##
-En las campańas, el nivel de dificultad 'Difícil' sólo es para jugadores expertos. El contrincante del ordenador se comporta de manera muy agresiva.
+En las campañas, el nivel de dificultad 'Difícil' sólo es para jugadores expertos. El contrincante del ordenador se comporta de manera muy agresiva.
 ####
 ## Text 1928 ##
 Iniciada la comunicación de jugador a jugador. Entrando en el modo de reposo del servidor...
 ####
 ## Text 1929 ##
-El jugador está seńalado en la sala de chat como miembro de un clan.
+El jugador está señalado en la sala de chat como miembro de un clan.
 ####
 ## Text 1930 ##
 Iniciando comunicación de jugador a jugador...
@@ -6044,7 +6044,7 @@ Status: Conectándose al servidor...
 El estado de la partida se guardó en el servidor.
 ####
 ## Text 1935 ##
-ˇHas perdido!
+¡Has perdido!
 ####
 ## Text 1936 ##
 Éste sería un buen lugar para una mina de carbón.
@@ -6092,10 +6092,10 @@ Status: Iniciando partida...
 Recién comenzada...
 ####
 ## Text 1951 ##
-Status: Comprobando nombre y contraseńa...
+Status: Comprobando nombre y contraseña...
 ####
 ## Text 1952 ##
-En las campańas, el nivel de dificultad 'Normal' es para jugadores diestros que ya se saben manejar en el mundo de Settlers. El contrincante del ordenador se comporta de manera más agresiva que en el nivel de dificultad 'Fácil'.
+En las campañas, el nivel de dificultad 'Normal' es para jugadores diestros que ya se saben manejar en el mundo de Settlers. El contrincante del ordenador se comporta de manera más agresiva que en el nivel de dificultad 'Fácil'.
 ####
 ## Text 1953 ##
 Mostrar/ocultar mensajes
@@ -6134,7 +6134,7 @@ La fabricación de un martillo de Thor ha terminado.
 La fabricación de un buque de guerra ha terminado.
 ####
 ## Text 1965 ##
-ˇHas ganado!
+¡Has ganado!
 ####
 ## Text 1966 ##
 Música
@@ -6146,16 +6146,16 @@ Puntos y edificios
 Escoge una nueva área de trabajo.
 ####
 ## Text 1969 ##
-ˇEste grupo de chat está protegido mediante contraseńa! Por favor, introduzca la contraseńa para este grupo.
+¡Este grupo de chat está protegido mediante contraseña! Por favor, introduzca la contraseña para este grupo.
 ####
 ## Text 1970 ##
 Por favor, introduzca el CD de "Settlers IV"
 ####
 ## Text 1971 ##
-ˇSelecciona primero un tema de la lista anterior!
+¡Selecciona primero un tema de la lista anterior!
 ####
 ## Text 1972 ##
-żSeguro que quieres derribar este edificio?
+¿Seguro que quieres derribar este edificio?
 ####
 ## Text 1973 ##
 Pulsa Esc para volver al Editor de Niveles de SETTLERS IV.
@@ -6164,7 +6164,7 @@ Pulsa Esc para volver al Editor de Niveles de SETTLERS IV.
 Por favor, indica cuánto quieres que dure la Guerra Económica (entre 15 y 120 minutos).
 ####
 ## Text 1975 ##
-żSeguro que quieres expulsar a este jugador de la partida?
+¿Seguro que quieres expulsar a este jugador de la partida?
 ####
 ## Text 1976 ##
 Mayas
@@ -6191,16 +6191,16 @@ Por favor, introduce un nombre para tu partida.
 Tipo de red.
 ####
 ## Text 1984 ##
-Esto finalizará la partida. żEstás seguro?
+Esto finalizará la partida. ¿Estás seguro?
 ####
 ## Text 1985 ##
 Por favor, introduce el número de serie de "The Settlers IV".
 ####
 ## Text 1986 ##
-żCuánto tiempo quieres esperar a tus compańeros de juego antes de que sean sustituidos por jugadores del ordenador a causa de problemas en la red?
+¿Cuánto tiempo quieres esperar a tus compañeros de juego antes de que sean sustituidos por jugadores del ordenador a causa de problemas en la red?
 ####
 ## Text 1987 ##
-La conexión con el servidor requiere actualización. żQuieres descargarla?
+La conexión con el servidor requiere actualización. ¿Quieres descargarla?
 ####
 ## Text 1988 ##
 Fija el primer punto de paso
@@ -6263,7 +6263,7 @@ La Raíz del Problema
 Las Semillas de las Tinieblas
 ####
 ## Text 2008 ##
-Puńalada Trapera
+Puñalada Trapera
 ####
 ## Text 2009 ##
 La Profanación del Cuerno de Rolf
@@ -6383,10 +6383,10 @@ Partidas según clasificación
 Grande
 ####
 ## Text 2048 ##
-Nş max. de jugadores
+Nº max. de jugadores
 ####
 ## Text 2049 ##
-Nş max. de equipos
+Nº max. de equipos
 ####
 ## Text 2050 ##
 Medio
@@ -6395,7 +6395,7 @@ Medio
 Modalidad
 ####
 ## Text 2052 ##
-Contraseńa
+Contraseña
 ####
 ## Text 2053 ##
 Vista previa del mapa
@@ -6410,7 +6410,7 @@ Modalidad de fiesta colonial
 Configuración
 ####
 ## Text 2057 ##
-Pequeńo
+Pequeño
 ####
 ## Text 2058 ##
 Multijugador
@@ -6422,7 +6422,7 @@ Número máximo de jugadores
 Número máximo de equipos
 ####
 ## Text 2061 ##
-Contraseńa
+Contraseña
 ####
 ## Text 2062 ##
 Ping
@@ -6467,7 +6467,7 @@ Equipos
 Equipo
 ####
 ## Text 2076 ##
-La Campańa de las Tres Razas
+La Campaña de las Tres Razas
 ####
 ## Text 2077 ##
 Consejos
@@ -6476,7 +6476,7 @@ Consejos
 Esta misión te proporciona información acerca de lo que mueve a los vikingos.
 ####
 ## Text 2079 ##
-ˇEs hora de practicar un poco antes de adentrarte en solitario en el mundo de Settlers! Esta misión te dará la oportunidad de demostrar lo que has aprendido hasta ahora.
+¡Es hora de practicar un poco antes de adentrarte en solitario en el mundo de Settlers! Esta misión te dará la oportunidad de demostrar lo que has aprendido hasta ahora.
 ####
 ## Text 2080 ##
 Por desagradable que pueda ser, ha llegado el momento de echar un vistazo al lóbrego mundo de la Tribu Oscura.
@@ -6494,13 +6494,13 @@ Este tutorial te ayudará a asegurarte de que tus mineros no pasen hambre. Averi
 Este tutorial te presenta las industrias clave del procesamiento de metales y de la minería.
 ####
 ## Text 2085 ##
-żSe te queda pequeńo el espacio? Esta misión te indica cómo ampliar tus horizontes usando pioneros y torres. También verás cómo esos asombrosos lugares de interés pueden aumentar la moral de tus tropas.
+¿Se te queda pequeño el espacio? Esta misión te indica cómo ampliar tus horizontes usando pioneros y torres. También verás cómo esos asombrosos lugares de interés pueden aumentar la moral de tus tropas.
 ####
 ## Text 2086 ##
 Esta misión comienza mostrándote cómo almacenar mercancías para asegurar la máxima eficacia, antes de explicar cómo puedes fundar tu primera colonia.
 ####
 ## Text 2087 ##
-Este tutorial te presenta el maravilloso mundo de los sacerdotes: ˇprepárate para un poco de magia!
+Este tutorial te presenta el maravilloso mundo de los sacerdotes: ¡prepárate para un poco de magia!
 ####
 ## Text 2088 ##
 Este tutorial se centra en organizar y dirigir unidades militares y entablar combate en conflicto armado.
@@ -6749,7 +6749,7 @@ Pulsa este botón para abrir el menú de mercancías. Este menú te proporciona 
 Ocupaciones básicas
 ####
 ## Text 2170 ##
-Al hacer clic sobre este botón, se abre el menú de ocupaciones básicas, que es donde puedes asignar colonos adicionales a las ocupaciones básicas de tu colonia (como transportistas, excavadores y albańiles).
+Al hacer clic sobre este botón, se abre el menú de ocupaciones básicas, que es donde puedes asignar colonos adicionales a las ocupaciones básicas de tu colonia (como transportistas, excavadores y albañiles).
 ####
 ## Text 2171 ##
 Edificios básicos
@@ -6785,7 +6785,7 @@ xxx
 Config.juego
 ####
 ## Text 2182 ##
-Al hacer clic sobre este botón, se abre un menú que te permite activar o desactivar los letreros de ayuda ampliados. ˇLo que estás leyendo en este momento es un ejemplo de un letrero de ayuda ampliado!
+Al hacer clic sobre este botón, se abre un menú que te permite activar o desactivar los letreros de ayuda ampliados. ¡Lo que estás leyendo en este momento es un ejemplo de un letrero de ayuda ampliado!
 ####
 ## Text 2183 ##
 Localizar colono
@@ -6899,7 +6899,7 @@ El menú de estadísticas de tierras te proporciona información acerca de cuán
 Estadísticas de guerreros
 ####
 ## Text 2220 ##
-En el menú de estadísticas de guerreros puedes obtener información del número de unidades militares y del número de bajas de los jugadores. También puedes hacerte una idea del dańo infligido al enemigo.
+En el menú de estadísticas de guerreros puedes obtener información del número de unidades militares y del número de bajas de los jugadores. También puedes hacerte una idea del daño infligido al enemigo.
 ####
 ## Text 2221 ##
 Edificios poblado
@@ -7001,28 +7001,28 @@ Utiliza este botón para dejar de fabricar barcos/vehículos del tipo selecciona
 No se pudieron establecer en tu sistema las opciones gráficas elegidas.
 ####
 ## Text 2254 ##
-ˇSe está iniciando la partida!
+¡Se está iniciando la partida!
 ####
 ## Text 2255 ##
-ˇHas perdido!
+¡Has perdido!
 ####
 ## Text 2256 ##
-ˇHas ganado!
+¡Has ganado!
 ####
 ## Text 2257 ##
-ˇEl jugador %s se ha conectado!
+¡El jugador %s se ha conectado!
 ####
 ## Text 2258 ##
 El jugador %s ha sido vencido.
 ####
 ## Text 2259 ##
-ˇEl jugador %s ha abandonado la partida!
+¡El jugador %s ha abandonado la partida!
 ####
 ## Text 2260 ##
-ˇEsperando al jugador %s!
+¡Esperando al jugador %s!
 ####
 ## Text 2261 ##
-ˇEl jugador %s ha ganado!
+¡El jugador %s ha ganado!
 ####
 ## Text 2262 ##
 Esperando al jugador %s...
@@ -7100,22 +7100,22 @@ Equipo
 N. partida
 ####
 ## Text 2287 ##
-Jugadores participantes/Nş máximo
+Jugadores participantes/Nº máximo
 ####
 ## Text 2288 ##
-żMapa preparado?
+¿Mapa preparado?
 ####
 ## Text 2289 ##
 Mapa
 ####
 ## Text 2290 ##
-żContraseńa protegida?
+¿Contraseña protegida?
 ####
 ## Text 2291 ##
 Ping
 ####
 ## Text 2292 ##
-La campańa de la Tribu Oscura
+La campaña de la Tribu Oscura
 ####
 ## Text 2293 ##
 Mapas para red local
@@ -7124,7 +7124,7 @@ Mapas para red local
 Mapas libres
 ####
 ## Text 2295 ##
-La Campańa de las Tres Razas
+La Campaña de las Tres Razas
 ####
 ## Text 2296 ##
 Ordenar por  modalidad de conflicto
@@ -7154,7 +7154,7 @@ Ordenar por partidas según clasificación
 Ordenar por modalidad de fiesta colonial
 ####
 ## Text 2305 ##
-Ordenar por tamańo del mapa
+Ordenar por tamaño del mapa
 ####
 ## Text 2306 ##
 Modalidad de conflicto
@@ -7400,7 +7400,7 @@ Utiliza este botón para situar la mercancía seleccionada arriba, en la parte s
 Militar
 ####
 ## Text 2387 ##
-ˇError de representación de archivo!
+¡Error de representación de archivo!
 ####
 ## Text 2388 ##
 Prioridad superior
@@ -7409,16 +7409,16 @@ Prioridad superior
 Utiliza este botón para situar la mercancía seleccionada arriba en una posición superior de la lista de prioridades.
 ####
 ## Text 2390 ##
-Torres pequeńas
+Torres pequeñas
 ####
 ## Text 2391 ##
-ˇMemoria disponible insuficiente!
+¡Memoria disponible insuficiente!
 ####
 ## Text 2392 ##
 Edificios militares
 ####
 ## Text 2393 ##
-ˇNo se encuentra el archivo!
+¡No se encuentra el archivo!
 ####
 ## Text 2394 ##
 Torres grandes
@@ -7472,19 +7472,19 @@ El anfitrión no responde. Por favor, inténtalo de nuevo.
 Espadachines
 ####
 ## Text 2411 ##
-ˇLa partida está completa!
+¡La partida está completa!
 ####
 ## Text 2412 ##
 Nivel 1
 ####
 ## Text 2413 ##
-ˇLa versión del anfitrión es incompatible!
+¡La versión del anfitrión es incompatible!
 ####
 ## Text 2414 ##
 Nivel 2
 ####
 ## Text 2415 ##
-ˇEl mapa del anfitrión es diferente!
+¡El mapa del anfitrión es diferente!
 ####
 ## Text 2416 ##
 Nivel 3
@@ -7496,13 +7496,13 @@ Puede que el mapa no se haya cargado del anfitrión.
 Guerreros oscuros
 ####
 ## Text 2419 ##
-ˇPerdida la conexión con el anfitrión!
+¡Perdida la conexión con el anfitrión!
 ####
 ## Text 2420 ##
 Arqueros
 ####
 ## Text 2421 ##
-Esto es tequila. Lo necesitas para ofrendárselo a los dioses en los templos pequeńos y así obtener maná para realizar milagros.
+Esto es tequila. Lo necesitas para ofrendárselo a los dioses en los templos pequeños y así obtener maná para realizar milagros.
 ####
 ## Text 2422 ##
 Lanzaácidos
@@ -7514,7 +7514,7 @@ Esto es agua. Necesitas agua para las granjas de animales y la panadería.
 Guerreros con hacha
 ####
 ## Text 2425 ##
-Esto es vino. Lo necesitas para ofrendárselo a los dioses en los templos pequeńos y así obtener maná para realizar milagros.
+Esto es vino. Lo necesitas para ofrendárselo a los dioses en los templos pequeños y así obtener maná para realizar milagros.
 ####
 ## Text 2426 ##
 Letreros de ayuda ampliados activados/desactivados
@@ -7556,10 +7556,10 @@ El jugador %s ha perdido la partida.
 Esperando al jugador %s...
 ####
 ## Text 2439 ##
-ˇLa partida no se ha guardado desde hace %u minutos!
+¡La partida no se ha guardado desde hace %u minutos!
 ####
 ## Text 2440 ##
-> %u%% Albańiles
+> %u%% Albañiles
 ####
 ## Text 2441 ##
 > %u %% Transportistas
@@ -7586,16 +7586,16 @@ Haz clic aquí para establecer una nueva colonia.
 Chat de voz
 ####
 ## Text 2449 ##
-ˇUno de tus edificios está siendo atacado!
+¡Uno de tus edificios está siendo atacado!
 ####
 ## Text 2450 ##
-ˇUno de tus burros ha sido atacado!
+¡Uno de tus burros ha sido atacado!
 ####
 ## Text 2451 ##
-ˇTe están atacando!
+¡Te están atacando!
 ####
 ## Text 2452 ##
-ˇUno de tus barcos está siendo atacado!
+¡Uno de tus barcos está siendo atacado!
 ####
 ## Text 2453 ##
 Debido a tu comportamiento inaceptable, has sido expulsado del servidor durante algún tiempo. Si quieres más información, por favor, consulta al servicio técnico.
@@ -7610,13 +7610,13 @@ Necesitas un martillo para ocupar este edificio.
 Necesitas un pico para ocupar este edificio.
 ####
 ## Text 2457 ##
-Necesitas una cańa de pescar para ocupar este edificio.
+Necesitas una caña de pescar para ocupar este edificio.
 ####
 ## Text 2458 ##
 Necesitas una sierra para ocupar este edificio.
 ####
 ## Text 2459 ##
-Necesitas una guadańa para ocupar este edificio.
+Necesitas una guadaña para ocupar este edificio.
 ####
 ## Text 2460 ##
 No hay colonos libres para ocupar este edificio. Comprueba tu porcentaje de transportistas, construye otra residencia o haz ambas cosas.
@@ -7628,7 +7628,7 @@ Necesitas una pala para ocupar este edificio.
 Para poder guarnecer este edificio, necesitas que haya un soldado en las inmediaciones.
 ####
 ## Text 2463 ##
-ˇEl enemigo ha capturado uno de tus edificios!
+¡El enemigo ha capturado uno de tus edificios!
 ####
 ## Text 2464 ##
 No tienes suficientes transportistas para construir el carro de fundación.
@@ -7646,163 +7646,163 @@ No tienes suficientes tablones para construir el carro de fundación.
 No tienes suficientes piedras para construir el carro de fundación.
 ####
 ## Text 2469 ##
-ˇEste grupo está completo!
+¡Este grupo está completo!
 ####
 ## Text 2470 ##
-ˇNo hay más mensajes!
+¡No hay más mensajes!
 ####
 ## Text 2471 ##
-ˇEl enemigo ha destruido uno de tus edificios!
+¡El enemigo ha destruido uno de tus edificios!
 ####
 ## Text 2472 ##
-ˇHas perdido un barco!
+¡Has perdido un barco!
 ####
 ## Text 2473 ##
-ˇLa partida ha perdido el sincronismo! Por favor, comienza de nuevo.
+¡La partida ha perdido el sincronismo! Por favor, comienza de nuevo.
 ####
 ## Text 2474 ##
-ˇLa conexión de FTP se ha reiniciado!
+¡La conexión de FTP se ha reiniciado!
 ####
 ## Text 2475 ##
 Error de FTP:
 ####
 ## Text 2476 ##
-ˇEl servidor de FTP rechaza el nombre de usuario o la contraseńa!
+¡El servidor de FTP rechaza el nombre de usuario o la contraseña!
 ####
 ## Text 2477 ##
-ˇEl servidor de FTP rechaza la conexión!
+¡El servidor de FTP rechaza la conexión!
 ####
 ## Text 2478 ##
-ˇTiempo de espera agotado durante la transferencia FTP!
+¡Tiempo de espera agotado durante la transferencia FTP!
 ####
 ## Text 2479 ##
-ˇEl número que has introducido no se encuentra entre 15 y 120 minutos! Se utilizará la duración por defecto de 60 minutos.
+¡El número que has introducido no se encuentra entre 15 y 120 minutos! Se utilizará la duración por defecto de 60 minutos.
 ####
 ## Text 2480 ##
-ˇLa partida está completa! Si es una partida de escala entre clanes, es posible que ya estén representados dos clanes diferentes. Si quieres más información acerca de los clanes y las partidas entre clanes, ve a http://www.settlers4.com
+¡La partida está completa! Si es una partida de escala entre clanes, es posible que ya estén representados dos clanes diferentes. Si quieres más información acerca de los clanes y las partidas entre clanes, ve a http://www.settlers4.com
 ####
 ## Text 2481 ##
-ˇEl servidor no puede cambiar los equipos!
+¡El servidor no puede cambiar los equipos!
 ####
 ## Text 2482 ##
-ˇNo se pudo abrir la partida guardada!
+¡No se pudo abrir la partida guardada!
 ####
 ## Text 2483 ##
-ˇNo se ha introducido el nombre de la partida!
+¡No se ha introducido el nombre de la partida!
 ####
 ## Text 2484 ##
-ˇNo hay partidas abiertas disponibles!
+¡No hay partidas abiertas disponibles!
 ####
 ## Text 2485 ##
-ˇNo todos los jugadores están sincronizados!
+¡No todos los jugadores están sincronizados!
 ####
 ## Text 2486 ##
-ˇNo todos los jugadores están listos!
+¡No todos los jugadores están listos!
 ####
 ## Text 2487 ##
-ˇDemasiados jugadores!
+¡Demasiados jugadores!
 ####
 ## Text 2488 ##
 El juego que has elegido es un escenario predefinido. No se permite cambiar la raza del jugador del ordenador.
 ####
 ## Text 2489 ##
-ˇNo se ha podido abrir la partida guardada! Posibles motivos: la partida guardada no está disponible, o tiene una fecha de grabación incorrecta, o está corrupta.
+¡No se ha podido abrir la partida guardada! Posibles motivos: la partida guardada no está disponible, o tiene una fecha de grabación incorrecta, o está corrupta.
 ####
 ## Text 2490 ##
-ˇPrimero tienes que seleccionar una partida!
+¡Primero tienes que seleccionar una partida!
 ####
 ## Text 2491 ##
-ˇPara comenzar la partida, espera a que se llenen todos los espacios o ciérralos!
+¡Para comenzar la partida, espera a que se llenen todos los espacios o ciérralos!
 ####
 ## Text 2492 ##
-ˇEn este campo no están permitidos personajes especiales!
+¡En este campo no están permitidos personajes especiales!
 ####
 ## Text 2493 ##
-ˇPartida ya iniciada!
+¡Partida ya iniciada!
 ####
 ## Text 2494 ##
-ˇDebes introducir un nombre para el grupo!
+¡Debes introducir un nombre para el grupo!
 ####
 ## Text 2495 ##
-ˇEl anfitrión te ha expulsado de la partida!
+¡El anfitrión te ha expulsado de la partida!
 ####
 ## Text 2496 ##
-ˇEl anfitrión ha abandonado la partida!
+¡El anfitrión ha abandonado la partida!
 ####
 ## Text 2497 ##
 El anfitrión tiene una versión diferente del juego. No es posible que juguéis juntos.
 ####
 ## Text 2498 ##
-ˇNo se ha detectado la conexión a Internet! No está disponible el acceso al servidor.
+¡No se ha detectado la conexión a Internet! No está disponible el acceso al servidor.
 ####
 ## Text 2499 ##
-ˇEl anfitrión te ha expulsado de la partida!
+¡El anfitrión te ha expulsado de la partida!
 ####
 ## Text 2500 ##
-ˇPor favor, para retirarte de la partida, utiliza el botón "Atrás"!
+¡Por favor, para retirarte de la partida, utiliza el botón "Atrás"!
 ####
 ## Text 2501 ##
-ˇNo se permiten contrincantes del ordenador en la modalidad Económica!
+¡No se permiten contrincantes del ordenador en la modalidad Económica!
 ####
 ## Text 2502 ##
-ˇGuerra Económica no está disponible para las partidas en escala!
+¡Guerra Económica no está disponible para las partidas en escala!
 ####
 ## Text 2503 ##
-ˇPreferencias incorrectas para la modalidad Económica! Sólo son posibles las partidas con 2 equipos y sin contrincantes del ordenador.
+¡Preferencias incorrectas para la modalidad Económica! Sólo son posibles las partidas con 2 equipos y sin contrincantes del ordenador.
 ####
 ## Text 2504 ##
-ˇSe ha producido un error al tratar de conectarse al servidor!
+¡Se ha producido un error al tratar de conectarse al servidor!
 ####
 ## Text 2505 ##
-ˇTienes que introducir un nombre!
+¡Tienes que introducir un nombre!
 ####
 ## Text 2506 ##
-ˇEl servidor rechaza la combinación de nombre de usuario y contraseńa!
+¡El servidor rechaza la combinación de nombre de usuario y contraseña!
 ####
 ## Text 2507 ##
 No se ha encontrado el servidor por problemas en la red (DNS). Por favor, comprueba la configuración de red.
 ####
 ## Text 2508 ##
-ˇFalló la confirmación de la contraseńa!
+¡Falló la confirmación de la contraseña!
 ####
 ## Text 2509 ##
-ˇTienes que introducir una contraseńa!
+¡Tienes que introducir una contraseña!
 ####
 ## Text 2510 ##
-ˇSe ha perdido la conexión con el servidor!
+¡Se ha perdido la conexión con el servidor!
 ####
 ## Text 2511 ##
-ˇNo se encuentra el servidor! Por favor, inténtalo de nuevo.
+¡No se encuentra el servidor! Por favor, inténtalo de nuevo.
 ####
 ## Text 2512 ##
-ˇAgotado tiempo de espera al tratar de conectarse!
+¡Agotado tiempo de espera al tratar de conectarse!
 ####
 ## Text 2513 ##
-ˇEl sistema del servidor no reconoce tu versión de "The Settlers IV" ! No puedes actualizar tu copia ni conectarte al servidor.
+¡El sistema del servidor no reconoce tu versión de "The Settlers IV" ! No puedes actualizar tu copia ni conectarte al servidor.
 ####
 ## Text 2514 ##
 No eres miembro de ningún clan. Si quieres obtener información acerca de los clanes y de la pertenencia a ellos, ve a http://www.settlers4.com.
 ####
 ## Text 2515 ##
-ˇEl mapa escogido no puede usarse en partidas en escala!
+¡El mapa escogido no puede usarse en partidas en escala!
 ####
 ## Text 2516 ##
 En partidas en escala, no se permite cerrar espacios o rellenarlos con jugadores del ordenador.
 ####
 ## Text 2517 ##
-ˇNo se permiten jugadores del ordenador en las partidas en escala!
+¡No se permiten jugadores del ordenador en las partidas en escala!
 ####
 ## Text 2518 ##
-ˇEn las partidas en escala ambos equipos han de tener el mismo número de jugadores!
+¡En las partidas en escala ambos equipos han de tener el mismo número de jugadores!
 ####
 ## Text 2519 ##
-ˇSólo se permiten dos jugadores en las partidas en escala!
+¡Sólo se permiten dos jugadores en las partidas en escala!
 ####
 ## Text 2520 ##
-ˇNo se pudo abrir el mapa!
+¡No se pudo abrir el mapa!
 ####
 ## Text 2521 ##
-ˇNo hay configuraciones por defecto de los equipos en el mapa!
+¡No hay configuraciones por defecto de los equipos en el mapa!
 ####
 ## Text 2522 ##
 Para reclutar a esta unidad debes disponer de un hacha de combate.
@@ -7823,88 +7823,88 @@ Para reclutar a esta unidad debes disponer de una espada.
 La mina se ha quedado sin mineral.
 ####
 ## Text 2528 ##
-ˇDatos de la red corruptos! Por favor, comprueba la red.
+¡Datos de la red corruptos! Por favor, comprueba la red.
 ####
 ## Text 2529 ##
 Necesitas un burro para cada carro que construyas
 ####
 ## Text 2530 ##
-ˇYa hay un jugador con este nombre! Por favor, escoge otro diferente.
+¡Ya hay un jugador con este nombre! Por favor, escoge otro diferente.
 ####
 ## Text 2531 ##
-ˇAntes de conectarte, debes seleccionar un proveedor!
+¡Antes de conectarte, debes seleccionar un proveedor!
 ####
 ## Text 2532 ##
 Tu tarjeta gráfica no cumple los requisitos para la renderización del hardware.
 ####
 ## Text 2533 ##
-ˇError al guardar!
+¡Error al guardar!
 ####
 ## Text 2534 ##
-ˇNo se pueden guardar las partidas en escala!
+¡No se pueden guardar las partidas en escala!
 ####
 ## Text 2535 ##
-ˇLa partida ya se ha guardado hace menos de un minuto!
+¡La partida ya se ha guardado hace menos de un minuto!
 ####
 ## Text 2536 ##
-ˇNo se pudo guardar la partida en tu ordenador!
+¡No se pudo guardar la partida en tu ordenador!
 ####
 ## Text 2537 ##
-ˇUno de los otros jugadores no pudo guardar la partida!
+¡Uno de los otros jugadores no pudo guardar la partida!
 ####
 ## Text 2538 ##
-ˇEl nombre de jugador escogido no es válido! Sólo se permiten letras de la A a la Z (mayúsculas y minúsculas) y espacios (pero no dos espacios consecutivos).
+¡El nombre de jugador escogido no es válido! Sólo se permiten letras de la A a la Z (mayúsculas y minúsculas) y espacios (pero no dos espacios consecutivos).
 ####
 ## Text 2539 ##
-ˇYa ha iniciado sesión otro jugador con este nombre o número de serie! Si "The Settlers IV" no se detuvo normalmente, espera un par de minutos antes de intentar iniciar de nuevo la sesión.
+¡Ya ha iniciado sesión otro jugador con este nombre o número de serie! Si "The Settlers IV" no se detuvo normalmente, espera un par de minutos antes de intentar iniciar de nuevo la sesión.
 ####
 ## Text 2540 ##
-ˇSe ha alcanzado el número máximo de usuarios para este servidor! Por favor, vuelve a intentarlo más tarde.
+¡Se ha alcanzado el número máximo de usuarios para este servidor! Por favor, vuelve a intentarlo más tarde.
 ####
 ## Text 2541 ##
-ˇUn aliado te ha arrebatado terreno!
+¡Un aliado te ha arrebatado terreno!
 ####
 ## Text 2542 ##
-ˇEl enemigo te ha arrebatado terreno!
+¡El enemigo te ha arrebatado terreno!
 ####
 ## Text 2543 ##
-ˇNo puedes robar mercancías a un aliado!
+¡No puedes robar mercancías a un aliado!
 ####
 ## Text 2544 ##
 Este cantero ya no puede encontrar piedras en su área de trabajo.
 ####
 ## Text 2545 ##
-ˇNo puedes cambiar de equipo después de haber guardado la partida!
+¡No puedes cambiar de equipo después de haber guardado la partida!
 ####
 ## Text 2546 ##
-ˇNo es posible cambiar de equipo en una partida en escala!
+¡No es posible cambiar de equipo en una partida en escala!
 ####
 ## Text 2547 ##
-ˇDiscrepancias en el estado de la partida! La partida no es válida como partida en escala.
+¡Discrepancias en el estado de la partida! La partida no es válida como partida en escala.
 ####
 ## Text 2548 ##
-ˇSe ha perdido la conexión con el servidor!
+¡Se ha perdido la conexión con el servidor!
 ####
 ## Text 2549 ##
-ˇPartida inválida para que sea una partida en escala!
+¡Partida inválida para que sea una partida en escala!
 ####
 ## Text 2550 ##
 T.muerto agotado
 ####
 ## Text 2551 ##
-ˇÉsta es tu última torre! ˇSi aplastas esta torre, perderás la partida! żDe verdad quieres hacerlo?
+¡Ésta es tu última torre! ¡Si aplastas esta torre, perderás la partida! ¿De verdad quieres hacerlo?
 ####
 ## Text 2552 ##
-ˇEsta torre no puede ser derribada en este momento!
+¡Esta torre no puede ser derribada en este momento!
 ####
 ## Text 2553 ##
-ˇNo pudo reproducirse el vídeo!
+¡No pudo reproducirse el vídeo!
 ####
 ## Text 2554 ##
-ˇNo pudo encontrarse el archivo de sistema wininet.dll! Este archivo es necesario para descargar actualizaciones automáticamente. Por favor, instala este archivo o carga e instala manualmente la actualización.
+¡No pudo encontrarse el archivo de sistema wininet.dll! Este archivo es necesario para descargar actualizaciones automáticamente. Por favor, instala este archivo o carga e instala manualmente la actualización.
 ####
 ## Text 2555 ##
-Este leńador ya no puede encontrar árboles en su área de trabajo.
+Este leñador ya no puede encontrar árboles en su área de trabajo.
 ####
 ## Text 2556 ##
 Edificios destruidos
@@ -7946,7 +7946,7 @@ simulado
 simulado
 ####
 ## Text 2569 ##
-ˇLos sacerdotes tenían razón!
+¡Los sacerdotes tenían razón!
 ####
 ## Text 2570 ##
 simulado
@@ -7958,16 +7958,16 @@ simulado
 simulado
 ####
 ## Text 2573 ##
-Hemos construido nuestra noble civilización piedra a piedra. Nuestros campos de maíz se extienden hasta donde alcanza la vista. Durante generaciones no hemos tolerado obstáculos en la búsqueda de nuestra herencia. Pero los hombres del pico de águila, los que se llaman a sí mismos romanos, han desembarcado en nuestras costas y se propagan como una enfermedad por nuestros territorios. Nos arrebatan la piedra y la madera para sus extrańas moradas. Aún peor es su codicia desenfrenada por nuestro oro. Debemos rechazarlos.
+Hemos construido nuestra noble civilización piedra a piedra. Nuestros campos de maíz se extienden hasta donde alcanza la vista. Durante generaciones no hemos tolerado obstáculos en la búsqueda de nuestra herencia. Pero los hombres del pico de águila, los que se llaman a sí mismos romanos, han desembarcado en nuestras costas y se propagan como una enfermedad por nuestros territorios. Nos arrebatan la piedra y la madera para sus extrañas moradas. Aún peor es su codicia desenfrenada por nuestro oro. Debemos rechazarlos.
 El jaguar también está entre nosotros. Se presentó en las visiones de nuestros sacerdotes, bufando con las orejas gachas. Sin duda esta visión es una advertencia, no sólo dirigida a los sacerdotes, sino a todos los descendientes de nuestros ancestros. Debemos prepararnos para los romanos. Que la sangre de nuestros antepasados nos corra por las venas. Que exijamos un alto precio por la sangre que derramemos.
 ####
 ## Text 2574 ##
-Los romanos han sido vencidos, pero ha surgido una nueva amenaza: una tribu de gigantes con barbas rojizas. Se precipitan a la batalla con serpientes y reptiles adornando las empuńaduras de sus bruńidas espadas, sin importarles lo que el destino les depare. Uno de ellos, armado con un hacha, hirió a muchos de nuestros guerreros. Si queremos imponernos, debemos ser inteligentes. 
-En la selva los ojos del jaguar refulgen como piedras preciosas. En los sueńos de nuestros sacerdotes, el destello de sus ojos carece de brillo. Estos ojos no buscan una presa, más bien quieren escapar de algo terrible. żQué significa todo esto? En primer lugar tenemos que prestar atención a los barbarrojas, que se llaman a sí mismo vikingos. Dejemos que nuestra sangre se mezcle con la del jaguar para que reanude la caza, y nosotros emprendamos la cacería de los gigantes barbudos.
+Los romanos han sido vencidos, pero ha surgido una nueva amenaza: una tribu de gigantes con barbas rojizas. Se precipitan a la batalla con serpientes y reptiles adornando las empuñaduras de sus bruñidas espadas, sin importarles lo que el destino les depare. Uno de ellos, armado con un hacha, hirió a muchos de nuestros guerreros. Si queremos imponernos, debemos ser inteligentes. 
+En la selva los ojos del jaguar refulgen como piedras preciosas. En los sueños de nuestros sacerdotes, el destello de sus ojos carece de brillo. Estos ojos no buscan una presa, más bien quieren escapar de algo terrible. ¿Qué significa todo esto? En primer lugar tenemos que prestar atención a los barbarrojas, que se llaman a sí mismo vikingos. Dejemos que nuestra sangre se mezcle con la del jaguar para que reanude la caza, y nosotros emprendamos la cacería de los gigantes barbudos.
 ####
 ## Text 2575 ##
 No fue fácil derrotar a los gigantes del norte, pero ya han retrocedido, igual que los romanos antes que ellos. Nuestros espías nos han traído informes de reuniones entre los vikingos y los romanos. Debemos suponer que tienen intención de unir sus fuerzas. Las únicas ventajas que conservamos es que combatimos en nuestro terreno y, por supuesto, nuestra astucia. 
-Los sacerdotes siguen hablando del jaguar con nerviosismo. En el sueńo, sus andares ya no son tan elegantes como cuando se acerca sigilosamente a su presa. Su pelaje leonado ha perdido su lustre. A pesar de la angustia que esto provoca en nuestros sacerdotes, debemos estar atentos a la amenaza doble que nos hace frente.
+Los sacerdotes siguen hablando del jaguar con nerviosismo. En el sueño, sus andares ya no son tan elegantes como cuando se acerca sigilosamente a su presa. Su pelaje leonado ha perdido su lustre. A pesar de la angustia que esto provoca en nuestros sacerdotes, debemos estar atentos a la amenaza doble que nos hace frente.
 ####
 ## Text 2576 ##
 Por desgracia, las materias primas de la base de nuestra colonia escasean. Pero no debemos ignorar la isla que hay al sudeste: alberga grandes cantidades de todos los minerales importantes.
@@ -10337,7 +10337,7 @@ Un Problema por Duplicado
 Conquista toda la colonia vikinga que hay al oeste de la isla.
 ####
 ## Text 3365 ##
-Demuestra tu poder destruyendo el templo pequeńo rodeado por estatuas en la costa sudeste del territorio maya.
+Demuestra tu poder destruyendo el templo pequeño rodeado por estatuas en la costa sudeste del territorio maya.
 ####
 ## Text 3366 ##
 Aprópiate de las tierras sagradas de los vikingos y los mayas. Puedes distinguir el lugar sagrado de los vikingos por la entrada cristalina a una cueva con una estatua de un guerrero haciendo guardia. El lugar sagrado de los mayas está vigilado por una gran cabeza de piedra ornamentada.
@@ -10349,10 +10349,10 @@ simulado
 simulado
 ####
 ## Text 3369 ##
-ˇHas ganado!
+¡Has ganado!
 ####
 ## Text 3370 ##
-ˇHas perdido!
+¡Has perdido!
 ####
 ## Text 3371 ##
 simulado
@@ -10362,15 +10362,15 @@ simulado
 ####
 ## Text 3373 ##
 Nos hemos acomodado en exceso. Nuestra disciplina se ha disipado ante la ausencia de rivales dignos. Esto no puede seguir, ni seguirá, así. Nuestros espías han averiguado que los vikingos han fundado una colonia en la isla. Son una tribu salvaje y orgullosa. Por lo visto se han aplicado, pues han desarrollado florecientes explotaciones mineras y prósperas granjas. Tendremos que realizar más reconocimientos. Debemos conocer sus flaquezas, no sólo sus virtudes. 
-Nuestros sacerdotes están inquietos. Hablan preocupados de un sueńo compartido por varios de ellos, un sueńo idéntico. Aparece la loba del Tíber, gruńendo con la cabeza gacha. Aún no está claro lo que presagia. Pero antes debemos prepararnos para afrontar la amenaza de los vikingos.
+Nuestros sacerdotes están inquietos. Hablan preocupados de un sueño compartido por varios de ellos, un sueño idéntico. Aparece la loba del Tíber, gruñendo con la cabeza gacha. Aún no está claro lo que presagia. Pero antes debemos prepararnos para afrontar la amenaza de los vikingos.
 ####
 ## Text 3374 ##
 Hemos conseguido someter a la depredadora tribu del norte. Muchos de nuestros reclutas más jóvenes mancharon sus espadas y escudos con sangre por primera vez. El júbilo y la fatiga se van turnando. No tenemos tiempo para recuperar nuestras fuerzas. En el sur ha aparecido otra tribu, un pueblo cobrizo. Algunos de nuestros ladrones se vieron desagradablemente sorprendidos por su sigilo. Que Júpiter nos arme de fuerza y resolución para vencer esta nueva amenaza.
-Extrańamente, los sueńos de nuestros sacerdotes continúan. En ellos la loba corre de un lado a otro sin encontrar el momento de hacerse un ovillo y tumbarse. Nuestros sacerdotes siguen asediados por estas visiones.
+Extrañamente, los sueños de nuestros sacerdotes continúan. En ellos la loba corre de un lado a otro sin encontrar el momento de hacerse un ovillo y tumbarse. Nuestros sacerdotes siguen asediados por estas visiones.
 ####
 ## Text 3375 ##
-Hemos logrado hacer retroceder primero a los vikingos y después a los mayas, pero żqué hemos conseguido a cambio de nuestros esfuerzos? Ahora las dos tribus se han aliado con la esperanza de conseguir juntas aquello que no pudieron lograr por separado. Con dos batallas a sus espaldas, nuestros soldados son más fuertes y avezados, pero la victoria sólo puede ser nuestra si la planificación y la coordinación son impecables y nos sonríe la Fortuna.
-La loba está nerviosa. Los sacerdotes dicen que no para quieta, y sus ijares sarnosos hieden a podredumbre. Sin duda, este sueńo es un mal augurio. Debemos prepararnos para lo peor.
+Hemos logrado hacer retroceder primero a los vikingos y después a los mayas, pero ¿qué hemos conseguido a cambio de nuestros esfuerzos? Ahora las dos tribus se han aliado con la esperanza de conseguir juntas aquello que no pudieron lograr por separado. Con dos batallas a sus espaldas, nuestros soldados son más fuertes y avezados, pero la victoria sólo puede ser nuestra si la planificación y la coordinación son impecables y nos sonríe la Fortuna.
+La loba está nerviosa. Los sacerdotes dicen que no para quieta, y sus ijares sarnosos hieden a podredumbre. Sin duda, este sueño es un mal augurio. Debemos prepararnos para lo peor.
 ####
 ## Text 3376 ##
 Tenemos un barco a nuestra disposición desde el principio. No vendría mal vigilar un poco el oeste...
@@ -10418,13 +10418,13 @@ Para finalizar adecuadamente el tutorial, asegúrate de leer con atención los t
 Si quieres abandonar una misión, pulsa la tecla "Esc" y, a continuación, confirma tu decisión cuando aparezca la pregunta. También puedes uilizar la tecla F12 durante las misiones del tutorial: te permitirá saltar hacia delante un minuto.
 ####
 ## Text 3391 ##
-Ahora, mueve la cámara hacia el muńeco de nieve al oeste de tu colonia.
+Ahora, mueve la cámara hacia el muñeco de nieve al oeste de tu colonia.
 ####
 ## Text 3392 ##
 En primer lugar, vamos a echar un vistazo a cómo movemos la cámara. Comienza pulsando el botón derecho del ratón. A continuación, mueve el ratón sin soltar el botón.
 ####
 ## Text 3393 ##
-ˇBien! Pero puedes hacer algo más que mover la cámara por el área de juego: también puedes acercar y alejar la vista. Para probar, mueve el ratón hacia atrás y hacia adelante mientras mantienes pulsados ambos botones.
+¡Bien! Pero puedes hacer algo más que mover la cámara por el área de juego: también puedes acercar y alejar la vista. Para probar, mueve el ratón hacia atrás y hacia adelante mientras mantienes pulsados ambos botones.
 ####
 ## Text 3394 ##
 Si tu ratón tiene rueda, también puedes acercar la vista de la cámara girando la rueda. Dedícale unos instantes a practicar el uso de estos controles.
@@ -10436,13 +10436,13 @@ En la izquierda de la pantalla puedes ver el centro de mando. Contiene varios me
 Echa un vistazo a la parte izquierda de la pantalla. Bajo el mapa general de arriba, verás cuatro botones dorados (Edificios, Colonos, Producción y Estadísticas). Estas son las cuatro divisiones básicas del Centro de Mando.
 ####
 ## Text 3397 ##
-Ahora, haz clic con el botón izquierdo sobre la cabańa del leńador en el centro de mando.
+Ahora, haz clic con el botón izquierdo sobre la cabaña del leñador en el centro de mando.
 ####
 ## Text 3398 ##
-Ahora es el momento de construir tu primer edificio. Cogeremos la cabańa del leńador, pues proporciona madera para tu colonia. Sin esta materia prima vital, no tienes ninguna posibilidad de construir una colonia.
+Ahora es el momento de construir tu primer edificio. Cogeremos la cabaña del leñador, pues proporciona madera para tu colonia. Sin esta materia prima vital, no tienes ninguna posibilidad de construir una colonia.
 ####
 ## Text 3399 ##
-Construye una cabańa de leńador en el lugar indicado en la pantalla.
+Construye una cabaña de leñador en el lugar indicado en la pantalla.
 ####
 ## Text 3400 ##
 Ahora verás una serie de puntos sobre el área de juego que te informan de si el suelo es apto para la edificación. Cuanto más verdes sean los puntos, menos trabajo tendrán tus excavadores en nivelar el terreno y prepararlo para construir.
@@ -10451,28 +10451,28 @@ Ahora verás una serie de puntos sobre el área de juego que te informan de si e
 Ahora, descansa y observa cómo el edificio va cobrando forma.
 ####
 ## Text 3402 ##
-Observa cómo progresa la construcción. En primer lugar, tus excavadores nivelan la ubicación del edificio, después llegan los transportistas con los materiales, para que más tarde los albańiles puedan proceder con la construcción.
+Observa cómo progresa la construcción. En primer lugar, tus excavadores nivelan la ubicación del edificio, después llegan los transportistas con los materiales, para que más tarde los albañiles puedan proceder con la construcción.
 ####
 ## Text 3403 ##
-ˇTodo listo! Ahora, observa cómo uno de tus colonos coge un hacha y se mete en el edificio. Gracias a la bandera roja de lo alto de la cabańa puedes ver que se ha instalado un laborioso leńador.
+¡Todo listo! Ahora, observa cómo uno de tus colonos coge un hacha y se mete en el edificio. Gracias a la bandera roja de lo alto de la cabaña puedes ver que se ha instalado un laborioso leñador.
 ####
 ## Text 3404 ##
 Ahora, haz clic sobre el aserradero con el botón izquierdo.
 ####
 ## Text 3405 ##
-Un leńador proporciona troncos a tu colonia. Pero antes de poder construir edificios, estos troncos se tienen que convertir en tablones. Y aquí es donde entra en juego el aserradero de tu colonia.
+Un leñador proporciona troncos a tu colonia. Pero antes de poder construir edificios, estos troncos se tienen que convertir en tablones. Y aquí es donde entra en juego el aserradero de tu colonia.
 ####
 ## Text 3406 ##
 Ahora, haz que tus colonos construyan un aserradero en el lugar marcado del área de juego.
 ####
 ## Text 3407 ##
-Para mantener al mínimo las distancias de transporte, deberías intentar construir los aserraderos lo más cerca posible de las cabańas de los leńadores. Si no tienes en cuenta este factor, verás que tardas mucho más en construir tu colonia.
+Para mantener al mínimo las distancias de transporte, deberías intentar construir los aserraderos lo más cerca posible de las cabañas de los leñadores. Si no tienes en cuenta este factor, verás que tardas mucho más en construir tu colonia.
 ####
 ## Text 3408 ##
-Ahora, construye una cabańa de cantero en el lugar marcado.
+Ahora, construye una cabaña de cantero en el lugar marcado.
 ####
 ## Text 3409 ##
-Por ahora va bien. No obstante, no se puede construir una colonia únicamente con madera; la piedra es el otro elemento básico de la industria de la construcción. Tendrás que construir una cabańa de cantero cerca de una zona rocosa.
+Por ahora va bien. No obstante, no se puede construir una colonia únicamente con madera; la piedra es el otro elemento básico de la industria de la construcción. Tendrás que construir una cabaña de cantero cerca de una zona rocosa.
 ####
 ## Text 3410 ##
 Tómate un respiro y observa cómo tus colonos se ponen manos a la obra.
@@ -10481,7 +10481,7 @@ Tómate un respiro y observa cómo tus colonos se ponen manos a la obra.
 Tu colonia se ha convertido en un hervidero de actividad. Por cierto, también puedes obtener piedra de las canteras. Pero explicaremos la industria minera en otro tutorial.
 ####
 ## Text 3412 ##
-ˇMuy bien! ˇYa has establecido los cimientos de una próspera colonia! Usando las materias primas disponibles, puedes hacer que el resto de los procesos de producción comiencen.
+¡Muy bien! ¡Ya has establecido los cimientos de una próspera colonia! Usando las materias primas disponibles, puedes hacer que el resto de los procesos de producción comiencen.
 ####
 ## Text 3413 ##
 sin texto
@@ -10493,13 +10493,13 @@ Haz clic en este texto o pulsa la barra espaciadora.
 En la primera misión vimos cómo obtener materias primas (piedra y madera). Sin embargo, las materias primas por sí solas no bastan para expandir tu colonia, y pronto necesitarás más colonos.
 ####
 ## Text 3416 ##
-Por favor, ahora construye una cabańa de guardabosques.
+Por favor, ahora construye una cabaña de guardabosques.
 ####
 ## Text 3417 ##
 Para asegurarte de que no te quedas sin madera, deberías tener siempre un guardabosque en tu colonia. El guardabosque planta nuevos árboles y, de este modo, asegura un suministro constante de madera.
 ####
 ## Text 3418 ##
-ˇMuy bien! Observa como el guardabosque se dedica gustosamente a su trabajo, proporcionando más árboles a tu colonia. A su vez, éstos darán la madera necesaria para una nueva Residencia.
+¡Muy bien! Observa como el guardabosque se dedica gustosamente a su trabajo, proporcionando más árboles a tu colonia. A su vez, éstos darán la madera necesaria para una nueva Residencia.
 ####
 ## Text 3419 ##
 Para construir una residencia para nuevos colonos, necesitarás piedra y madera. Para asegurarte de que hay reservas suficientes de piedra, ahora vamos a construir una cantera.
@@ -10508,13 +10508,13 @@ Para construir una residencia para nuevos colonos, necesitarás piedra y madera.
 Construye una cantera en el lugar marcado en el mapa.
 ####
 ## Text 3421 ##
-La montańa que hay al oeste es un buen lugar para una cantera. El tutorial 4 ofrecerá más información sobre cómo aprovechar a un geólogo, que te ayudará a encontrar los tesoros naturales de tu colonia.
+La montaña que hay al oeste es un buen lugar para una cantera. El tutorial 4 ofrecerá más información sobre cómo aprovechar a un geólogo, que te ayudará a encontrar los tesoros naturales de tu colonia.
 ####
 ## Text 3422 ##
 Ahora, observa cómo uno de tus colonos coge un pico y se dirige a trabajar en la mina.
 ####
 ## Text 3423 ##
-Ahora, construye una residencia pequeńa en el lugar indicado.
+Ahora, construye una residencia pequeña en el lugar indicado.
 ####
 ## Text 3424 ##
 Ahora que se ha garantizado el suministro continuo de materias primas, debes incrementar la población de tu colonia.
@@ -10532,7 +10532,7 @@ Al sur de tu colonia encontrarás a un sacerdote y su escolta.
 Ahora, centra la vista de la partida sobre el círculo de piedra.
 ####
 ## Text 3429 ##
-ˇBien! Este grupito tiene que dirigirse hacia el círculo de piedra que encontrarás al sudoeste de tu colonia.
+¡Bien! Este grupito tiene que dirigirse hacia el círculo de piedra que encontrarás al sudoeste de tu colonia.
 ####
 ## Text 3430 ##
 Arrastra el rectángulo alrededor de todo el grupo y después suelta el botón del ratón.
@@ -10553,28 +10553,28 @@ Mantén la cámara centrada en el grupo mientras se abre camino hacia el destino
 Tu grupo ya debería dirigirse hacia el círculo de piedra. Si has enviado al grupo en la dirección incorrecta, todo lo que tienes que hacer es volver a seleccionarlo y enviar de nuevo tus órdenes.
 ####
 ## Text 3436 ##
-ˇBravo! El sacerdote ha llegado sano y salvo a su destino. En este lugar sagrado puede implorar a los dioses que concedan dones a tu colonia. Felicidades por finalizar con éxito la segunda misión del tutorial.
+¡Bravo! El sacerdote ha llegado sano y salvo a su destino. En este lugar sagrado puede implorar a los dioses que concedan dones a tu colonia. Felicidades por finalizar con éxito la segunda misión del tutorial.
 ####
 ## Text 3437 ##
 Bienvenido a la tercera misión del tutorial, en la que hablaremos del suministro de alimentos. Vamos a proporcionar alimentos a las minas que ya tenemos para que los mineros puedan trabajar obteniendo materias primas para ti.
 ####
 ## Text 3438 ##
-Ahora, construye una cabańa de cazador en el lugar indicado.
+Ahora, construye una cabaña de cazador en el lugar indicado.
 ####
 ## Text 3439 ##
-En lo que respecta a la producción de carne, tienes dos opciones. Una es construir una cabańa de cazador. Un cazador centrará sus esfuerzos en los animales silvestres y, de este modo, proporcionará carne a tu colonia.
+En lo que respecta a la producción de carne, tienes dos opciones. Una es construir una cabaña de cazador. Un cazador centrará sus esfuerzos en los animales silvestres y, de este modo, proporcionará carne a tu colonia.
 ####
 ## Text 3440 ##
-Construye una cabańa de pescador al este de tu colonia.
+Construye una cabaña de pescador al este de tu colonia.
 ####
 ## Text 3441 ##
-El pescador proporciona pescado fresco a tu colonia. Las cabańas de pescador siempre deben estar cerca de la costa o de un río. Merece la pena buscar peces saltarines a la hora de escoger un lugar adecuado.
+El pescador proporciona pescado fresco a tu colonia. Las cabañas de pescador siempre deben estar cerca de la costa o de un río. Merece la pena buscar peces saltarines a la hora de escoger un lugar adecuado.
 ####
 ## Text 3442 ##
 Ahora, observa cómo tus minas son provistas de alimentos.
 ####
 ## Text 3443 ##
-En cuanto se hayan terminado las cabańas, puedes ver cómo dos colonos cogen una cańa de pescar y un arco y se dirigen hacia el edificio adecuado.
+En cuanto se hayan terminado las cabañas, puedes ver cómo dos colonos cogen una caña de pescar y un arco y se dirigen hacia el edificio adecuado.
 ####
 ## Text 3444 ##
 Otra manera de proporcionar carne a tu colonia es construir una granja de ovejas y un matadero.
@@ -10586,16 +10586,16 @@ Construye una plantación de cereales en el lugar indicado.
 Como es comprensible, hay que alimentar y abrevar a las ovejas. La plantación de cereales proporciona el alimento para los animales. A la hora de construir una plantación de cereales, ten en cuenta que también necesitas espacio suficiente para un campo.
 ####
 ## Text 3447 ##
-Construye una cabańa de aguador en el lugar indicado.
+Construye una cabaña de aguador en el lugar indicado.
 ####
 ## Text 3448 ##
-Mientras se construye la granja, da las instrucciones precisas para que se construya una cabańa de aguador.
+Mientras se construye la granja, da las instrucciones precisas para que se construya una cabaña de aguador.
 ####
 ## Text 3449 ##
 Construye una granja de ovejas.
 ####
 ## Text 3450 ##
-Ahora que has asegurado el suministro de alimentos para las ovejas, puedes construir la granja de ovejas. Para mantener al mínimo las distancias, debes construir la granja entre la cabańa del aguador y la plantación de cereales.
+Ahora que has asegurado el suministro de alimentos para las ovejas, puedes construir la granja de ovejas. Para mantener al mínimo las distancias, debes construir la granja entre la cabaña del aguador y la plantación de cereales.
 ####
 ## Text 3451 ##
 Construye un matadero cerca de la granja de ovejas.
@@ -10619,22 +10619,22 @@ Tu colonia no puede sobrevivir únicamente con carne y pescado, también necesit
 Ahora, construye una panadería y, después, podrás disfrutar con la visión de las minas provistas de pan.
 ####
 ## Text 3458 ##
-ˇMuy bien! Ahora todo lo que necesita tu colonia para comenzar la producción de pan es una panadería.
+¡Muy bien! Ahora todo lo que necesita tu colonia para comenzar la producción de pan es una panadería.
 ####
 ## Text 3459 ##
-ˇExcelente! Ya has terminado todos los edificios necesarios para asegurar un suministro regular de alimentos a tu colonia. Incluso ha sobrado para una fiesta...
+¡Excelente! Ya has terminado todos los edificios necesarios para asegurar un suministro regular de alimentos a tu colonia. Incluso ha sobrado para una fiesta...
 ####
 ## Text 3460 ##
 Construye un molino en el lugar especificado.
 ####
 ## Text 3461 ##
-ˇTe damos la más cordial bienvenida al cuarto tutorial! Esta misión te contará todo lo que necesitas saber acerca de la minería y el procesamiento de metales en el mundo de SETTLERS.
+¡Te damos la más cordial bienvenida al cuarto tutorial! Esta misión te contará todo lo que necesitas saber acerca de la minería y el procesamiento de metales en el mundo de SETTLERS.
 ####
 ## Text 3462 ##
 Hay ciertos materiales que sólo pueden extraerse de las minas, como el mineral de hierro y el carbón. Como estos recursos están bajo la superficie, antes tienes que descubrirlos.
 ####
 ## Text 3463 ##
-Para descubrir vetas de materias primas, necesitas geólogos. Estos tipos son expertos en detectar los tesoros de la tierra, y colocan seńales indicando qué materiales se han encontrado.
+Para descubrir vetas de materias primas, necesitas geólogos. Estos tipos son expertos en detectar los tesoros de la tierra, y colocan señales indicando qué materiales se han encontrado.
 ####
 ## Text 3464 ##
 Ahora, recluta a 10 geólogos.
@@ -10643,37 +10643,37 @@ Ahora, recluta a 10 geólogos.
 Instruyes geólogos seleccionando a este especialista en el centro de mando y, a continuación, indicando la cantidad que necesitas usando las teclas de las flechas del centro de mando.
 ####
 ## Text 3466 ##
-Envía a tus geólogos a la zona montańosa que hay al oeste haciendo clic allí con el botón derecho.
+Envía a tus geólogos a la zona montañosa que hay al oeste haciendo clic allí con el botón derecho.
 ####
 ## Text 3467 ##
-Como las minas sólo pueden construirse en las montańas, haz que tus geólogos exploren la larga cordillera que hay al oeste de tu colonia. Selecciona el grupo de geólogos.
+Como las minas sólo pueden construirse en las montañas, haz que tus geólogos exploren la larga cordillera que hay al oeste de tu colonia. Selecciona el grupo de geólogos.
 ####
 ## Text 3468 ##
-Esto es lo que indican los símbolos de las seńales: barras de plata: hierro, triángulos negros: carbón, barras de oro: oro, rectángulos blancos: piedra, triángulos amarillos: azufre.
+Esto es lo que indican los símbolos de las señales: barras de plata: hierro, triángulos negros: carbón, barras de oro: oro, rectángulos blancos: piedra, triángulos amarillos: azufre.
 ####
 ## Text 3469 ##
 Mira al geólogo por un momento y observa como realiza su trabajo.
 ####
 ## Text 3470 ##
-Las seńales informan sobre la cantidad de materia prima que hay y su clase. Cuanto mayor sea la cantidad de símbolos (de 1 a 3), más mineral hay disponible. Puedes saltar un minuto hacia delante pulsando F12.
+Las señales informan sobre la cantidad de materia prima que hay y su clase. Cuanto mayor sea la cantidad de símbolos (de 1 a 3), más mineral hay disponible. Puedes saltar un minuto hacia delante pulsando F12.
 ####
 ## Text 3471 ##
 Construye una mina de hierro en el emplazamiento indicado.
 ####
 ## Text 3472 ##
-Presta atención a las seńales, ya que valdrá la pena cuando tu colonia necesite un mineral en concreto. Deberías poder ver varias seńales que indiquen la presencia de depósitos de mineral de hierro.
+Presta atención a las señales, ya que valdrá la pena cuando tu colonia necesite un mineral en concreto. Deberías poder ver varias señales que indiquen la presencia de depósitos de mineral de hierro.
 ####
 ## Text 3473 ##
 Construye una mina de carbón en el lugar indicado.
 ####
 ## Text 3474 ##
-También deberías ver varias seńales que indiquen la presencia de carbón.
+También deberías ver varias señales que indiquen la presencia de carbón.
 ####
 ## Text 3475 ##
 Ahora, construye una mina de oro en el lugar indicado.
 ####
 ## Text 3476 ##
-Ahora, observa con atención las seńales que indican depósitos de oro.
+Ahora, observa con atención las señales que indican depósitos de oro.
 ####
 ## Text 3477 ##
 En cuanto se hayan terminado las minas, un colono por mina se pondrá a picar la materia prima. Tu colonia ya tiene los edificios necesarios para proporcionar alimentos a tus mineros.
@@ -10691,13 +10691,13 @@ Observa cómo se agotan tus minas.
 En realidad, el azufre no se necesita para los propósitos de producción en la economía romana, pero puede utilizarse para comerciar con otras razas. Por ello, trataremos el tema del azufre en un tutorial posterior.
 ####
 ## Text 3482 ##
-Ahora, construye una fundición de hierro cerca de la montańa.
+Ahora, construye una fundición de hierro cerca de la montaña.
 ####
 ## Text 3483 ##
 Tus mineros ya deberían estar trabajando. Algunas de las materias primas extraídas tienen que procesarse antes de poder usarse. El mineral de hierro, por ejemplo, tiene que convertirse en hierro.
 ####
 ## Text 3484 ##
-Ahora, construye una fundición de oro cerca de la montańa.
+Ahora, construye una fundición de oro cerca de la montaña.
 ####
 ## Text 3485 ##
 El oro también se obtiene de las minas sin refinar, y tiene que fundirse antes de poder ser usado en tu colonia para otros propósitos.
@@ -10751,20 +10751,20 @@ Tu armero ha producido dos espadas y dos arcos.
 También puedes producir una cantidad exacta de armas de una clase en concreto.
 ####
 ## Text 3502 ##
-ˇMuy bien! Ya has fabricado tus primeros artículos de metal, lo que significa que hemos llegado al final de nuestra presentación de la industria del metal en el juego.
+¡Muy bien! Ya has fabricado tus primeros artículos de metal, lo que significa que hemos llegado al final de nuestra presentación de la industria del metal en el juego.
 ####
 ## Text 3503 ##
-ˇBienvenido al quinto tutorial!
+¡Bienvenido al quinto tutorial!
 En esta misión vamos a ver cómo puedes expandir el territorio de tu colonia.
 ####
 ## Text 3504 ##
 Tienes dos opciones para expandir tu territorio: construyendo torres y castillos o desplegando pioneros.
 ####
 ## Text 3505 ##
-Si echas un vistazo a tu cabańa de cantero, verás que una gran parte de las rocas que a tu cantero le gustaría partir se encuentran más allá de las fronteras de tu colonia.
+Si echas un vistazo a tu cabaña de cantero, verás que una gran parte de las rocas que a tu cantero le gustaría partir se encuentran más allá de las fronteras de tu colonia.
 ####
 ## Text 3506 ##
-Ahora, construye una torre pequeńa en el lugar indicado.
+Ahora, construye una torre pequeña en el lugar indicado.
 ####
 ## Text 3507 ##
 Para permitir que tu cantero se ponga manos a la obra con estas rocas, tendrás que llevar más allá tus fronteras. Para hacerlo, construye una torre y ocúpala con uno de tus soldados.
@@ -10773,7 +10773,7 @@ Para permitir que tu cantero se ponga manos a la obra con estas rocas, tendrás 
 Ahora, mira como crece tu colonia ante tus ojos en cuando el soldado ocupa la torre.
 ####
 ## Text 3509 ##
-ˇMuy bien! En cuanto un soldado haya ocupado una torre o un castillo, tu colonia se expandirá a su alrededor.
+¡Muy bien! En cuanto un soldado haya ocupado una torre o un castillo, tu colonia se expandirá a su alrededor.
 ####
 ## Text 3510 ##
 Has hecho que tu cantero sea un hombre feliz; ahora puede picar aquellas rocas y seguir suministrando piedra a la industria de la construcción de tu colonia.
@@ -10818,16 +10818,16 @@ Ahora, observa a tus pioneros en acción.
 Exacto, es la primera etapa del trayecto. Ahora, selecciona de nuevo a los pioneros y forma con ellos un grupo para que puedan tomar el control de la tierra costera.
 ####
 ## Text 3524 ##
-Ahora, construye una torre pequeńa en el lugar indicado y ocúpala con un soldado.
+Ahora, construye una torre pequeña en el lugar indicado y ocúpala con un soldado.
 ####
 ## Text 3525 ##
-Tus pioneros han alcanzado de nuevo tierra firme. Ahora, construye una torre para proteger la tierra que han conquistado tus hombres. ˇNo olvides enviar un soldado a la torre!
+Tus pioneros han alcanzado de nuevo tierra firme. Ahora, construye una torre para proteger la tierra que han conquistado tus hombres. ¡No olvides enviar un soldado a la torre!
 ####
 ## Text 3526 ##
 Ahora, construye una torre de vigilancia en el lugar sugerido.
 ####
 ## Text 3527 ##
-Ahora, debes arriesgarte a echar un vistazo al otro lado de las aguas. żQuién sabe qué peligros acechan al otro lado? Debes construir una torre de vigilancia para poder ver un poco más allá.
+Ahora, debes arriesgarte a echar un vistazo al otro lado de las aguas. ¿Quién sabe qué peligros acechan al otro lado? Debes construir una torre de vigilancia para poder ver un poco más allá.
 ####
 ## Text 3528 ##
 En cuanto se haya finalizado la torre de vigilancia, uno de tus colonos libres se alojará allí y comenzará a suministrarte información valiosa.
@@ -10849,7 +10849,7 @@ Acaba de llegar un mensajero de otra colonia para tender una mano amiga hacia tu
 Has terminado con éxito el quinto tutorial.
 ####
 ## Text 3534 ##
-ˇBienvenido al sexto tutorial!
+¡Bienvenido al sexto tutorial!
 En esta misión vamos a ver cómo se usan las zonas de almacenaje, cómo se funda una nueva colonia y cómo se transportan mercancías hasta ella.
 ####
 ## Text 3535 ##
@@ -10907,7 +10907,7 @@ Ahora que tienes juntos todos los materiales necesarios, puedes enviar el carro 
 Ahora, disfruta viendo cómo tus pioneros conquistan para ti el nuevo país.
 ####
 ## Text 3553 ##
-Este es un buen lugar para una colonia, żno crees? Descarga el carro y comienza a construir tu nuevo poblado. Para hacerlo, haz clic sobre el botón que está marcado. Puedes adelantar la partida un minuto pulsando la tecla F12.
+Este es un buen lugar para una colonia, ¿no crees? Descarga el carro y comienza a construir tu nuevo poblado. Para hacerlo, haz clic sobre el botón que está marcado. Puedes adelantar la partida un minuto pulsando la tecla F12.
 ####
 ## Text 3554 ##
 Ahora, convierte de nuevo a tus pioneros en transportistas.
@@ -10931,7 +10931,7 @@ Para entregar mercancías, necesitarás establecer una ruta de transporte. Selec
 Ahora, fija el nuevo mercado como destino.
 ####
 ## Text 3561 ##
-Ahora debes fijar el mercado de tu colonia como destino para la ruta de transporte. Bueno, quieres que las mercancías lleguen al lugar correcto, żno?
+Ahora debes fijar el mercado de tu colonia como destino para la ruta de transporte. Bueno, quieres que las mercancías lleguen al lugar correcto, ¿no?
 ####
 ## Text 3562 ##
 Reparte piedras en otro mercado
@@ -10940,10 +10940,10 @@ Reparte piedras en otro mercado
 Los mercados ya han sido conectados. El siguiente paso es introducir las mercancías que te gustaría trasladar entre los dos lugares.
 ####
 ## Text 3564 ##
-Ahora, construye una torre pequeńa en el lugar indicado.
+Ahora, construye una torre pequeña en el lugar indicado.
 ####
 ## Text 3565 ##
-Las mercancías serán transportadas a tu nuevo ecosector. ˇNo permitas que tu tierra recién conquistada esté desprotegida! Construye una Torre para vigilar tu nueva colonia.
+Las mercancías serán transportadas a tu nuevo ecosector. ¡No permitas que tu tierra recién conquistada esté desprotegida! Construye una Torre para vigilar tu nueva colonia.
 ####
 ## Text 3566 ##
 Por favor, envía un soldado a ocupar la torre.
@@ -10952,7 +10952,7 @@ Por favor, envía un soldado a ocupar la torre.
 Como ya hemos visto, una torre no sirve de mucho sin un soldado que la proteja.
 ####
 ## Text 3568 ##
-ˇMuy bien! Has fundado tu primera colonia y, por tanto, has completado con éxito la sexta misión del tutorial.
+¡Muy bien! Has fundado tu primera colonia y, por tanto, has completado con éxito la sexta misión del tutorial.
 ####
 ## Text 3569 ##
 Sigue adelante y recluta 2 excavadores y constructores
@@ -10961,26 +10961,26 @@ Sigue adelante y recluta 2 excavadores y constructores
 En tu nueva colonia, necesitarás constructores y excavadores. Para reclutarlos, la cámara debera estar encima de tu nuevo ecosector.
 ####
 ## Text 3571 ##
-ˇBienvenido al tutorial número 7!
+¡Bienvenido al tutorial número 7!
 Esta misión te presentará el mundo mágico de los sacerdotes y de los hechizos que lanzan.
 ####
 ## Text 3572 ##
-Construye un templo pequeńo en el lugar indicado.
+Construye un templo pequeño en el lugar indicado.
 ####
 ## Text 3573 ##
-Antes de ponerte a lanzar hechizos, necesitas maná. Esta preciosa sustancia se consigue ofrendando bebidas alcohólicas a los dioses en los templos pequeńos.
+Antes de ponerte a lanzar hechizos, necesitas maná. Esta preciosa sustancia se consigue ofrendando bebidas alcohólicas a los dioses en los templos pequeños.
 ####
 ## Text 3574 ##
-Ve y construye un vińedo en los lugares indicados.
+Ve y construye un viñedo en los lugares indicados.
 ####
 ## Text 3575 ##
-Los romanos practican la antigua tradición de ofrendar vino a los dioses. Eso quiere decir que tienes que organizar la producción de este bien valioso. La sed de los dioses es legendaria, así que debes establecer más de un vińedo.
+Los romanos practican la antigua tradición de ofrendar vino a los dioses. Eso quiere decir que tienes que organizar la producción de este bien valioso. La sed de los dioses es legendaria, así que debes establecer más de un viñedo.
 ####
 ## Text 3576 ##
-Establece el área de trabajo para el vińedo en el lugar indicado.
+Establece el área de trabajo para el viñedo en el lugar indicado.
 ####
 ## Text 3577 ##
-Tienes que establecer el área de trabajo para cada vińedo que organices. Verás que las vińas plantadas en la ladera soleada de una colina dan los mejores rendimientos.
+Tienes que establecer el área de trabajo para cada viñedo que organices. Verás que las viñas plantadas en la ladera soleada de una colina dan los mejores rendimientos.
 ####
 ## Text 3578 ##
 Construye un templo grande en el lugar indicado.
@@ -11010,7 +11010,7 @@ Ahora, haz clic con el botón izquierdo en el icono del hechizo "Don Divino". De
 Ya has lanzado con éxito tu primer hechizo. Aunque los demás hechizos tienen una gran variedad de efectos, todos se conjuran del mismo modo.
 ####
 ## Text 3587 ##
-ˇFelicidades! Ya has finalizado con éxito el tutorial 7. Permíteme un pequeńo consejo: todo hechizo te cuesta maná. ˇCuantas más veces lances un hechizo, más maná te costará!
+¡Felicidades! Ya has finalizado con éxito el tutorial 7. Permíteme un pequeño consejo: todo hechizo te cuesta maná. ¡Cuantas más veces lances un hechizo, más maná te costará!
 ####
 ## Text 3588 ##
 xxx
@@ -11022,23 +11022,23 @@ xxx
 xxx
 ####
 ## Text 3591 ##
-ˇBienvenido al octavo tutorial!
+¡Bienvenido al octavo tutorial!
 Esta misión consiste en entablar combate usando tus unidades militares.
 ####
 ## Text 3592 ##
 Construye una torre grande en el lugar indicado.
 ####
 ## Text 3593 ##
-Para ampliar y proteger tu territorio, debes construir torres y ocuparlas con unidades militares. Los edificios que te permitirán ampliar tu dominio son el castillo y las torres, en los dos tamańos disponibles.
+Para ampliar y proteger tu territorio, debes construir torres y ocuparlas con unidades militares. Los edificios que te permitirán ampliar tu dominio son el castillo y las torres, en los dos tamaños disponibles.
 ####
 ## Text 3594 ##
-ˇAhora selecciona la torre grande!
+¡Ahora selecciona la torre grande!
 ####
 ## Text 3595 ##
 Para "armar" una torre, tienes que ocuparla al menos con un espadachín. Evidentemente, si estacionas más soldados en la torre, se vuelve más difícil de capturar.
 ####
 ## Text 3596 ##
-Ahora puedes ver el menú contextual de la torre en el centro de mando. Verás dos botones (castillos pequeńos con flechas) en este menú que te permitirán ocupar el edificio con el contingente mínimo o máximo de soldados.
+Ahora puedes ver el menú contextual de la torre en el centro de mando. Verás dos botones (castillos pequeños con flechas) en este menú que te permitirán ocupar el edificio con el contingente mínimo o máximo de soldados.
 ####
 ## Text 3597 ##
 Ocupa esta Torre con el mayor número posible de soldados.
@@ -11080,7 +11080,7 @@ Cuando sitúes arqueros en una torre, reforzarán las defensas de tu colonia dis
 Ahora, recluta a cuatro espadachines de nivel 2 para tu ejército.
 ####
 ## Text 3610 ##
-ˇMuy bien! La captura de esta torre ahora debe ser muy difícil para las tropas enemigas. Para asegurarte, sin embargo, debes adiestrar a unos cuantos espadachines para que proporcionen apoyo moral a tus arqueros.
+¡Muy bien! La captura de esta torre ahora debe ser muy difícil para las tropas enemigas. Para asegurarte, sin embargo, debes adiestrar a unos cuantos espadachines para que proporcionen apoyo moral a tus arqueros.
 ####
 ## Text 3611 ##
 Ve y envía a tus espadachines a la frontera meridional de tu colonia.
@@ -11107,7 +11107,7 @@ Los soldados enemigos no sólo representan una amenaza para tus unidades militar
 Ahora, recluta 10 espadachines de nivel 3.
 ####
 ## Text 3619 ##
-ˇAjá! ˇTu ladrón acaba de localizar un castillo enemigo! Harías bien en reclutar diez soldados más y después capturar el castillo.
+¡Ajá! ¡Tu ladrón acaba de localizar un castillo enemigo! Harías bien en reclutar diez soldados más y después capturar el castillo.
 ####
 ## Text 3620 ##
 xxx
@@ -11131,7 +11131,7 @@ Antes de atacar el castillo, probablemente fuese buena idea unir a tus soldados 
 Ahora, construye un hospital en el lugar marcado.
 ####
 ## Text 3627 ##
-Puede que algunos de tus soldados tengan algunos cortes y magulladuras después del combate. Construye un hospital de campańa para curarlos.
+Puede que algunos de tus soldados tengan algunos cortes y magulladuras después del combate. Construye un hospital de campaña para curarlos.
 ####
 ## Text 3628 ##
 Mira cómo el sanador atiende a tus heridos.
@@ -11140,7 +11140,7 @@ Mira cómo el sanador atiende a tus heridos.
 Envía a tus soldados al hospital para que sean curados.
 ####
 ## Text 3630 ##
-ˇFelicidades!
+¡Felicidades!
 Has finalizado el octavo tutorial.
 ####
 ## Text 3631 ##
@@ -11156,14 +11156,14 @@ Ahora, encuentra a tu ladrón y envíalo al sur.
 Para empezar, tienes que localizar a tu ladrón. Para hacerlo, puedes abrir el menú de localización de colono (bajo el menú "Colonos") y, a continuación, seleccionar al ladrón. Si después pulsas uno de los botones de abajo, tu ladrón quedará marcado.
 ####
 ## Text 3635 ##
-ˇBienvenido al tutorial número 9!
+¡Bienvenido al tutorial número 9!
 Esta misión te presenta las características especiales de los mayas.
 ####
 ## Text 3636 ##
 Ahora, recluta a 10 guerreros con cerbatana de nivel 1.
 ####
 ## Text 3637 ##
-La unidad especial de los mayas es el guerrero con cerbatana. De acuerdo, hemos de admitir que este guerrero en concreto no hace mucho dańo con sus ataques, pero sus flechas envenenadas paralizan a sus enemigos.
+La unidad especial de los mayas es el guerrero con cerbatana. De acuerdo, hemos de admitir que este guerrero en concreto no hace mucho daño con sus ataques, pero sus flechas envenenadas paralizan a sus enemigos.
 ####
 ## Text 3638 ##
 Por favor, construye un escupefuego en el taller de vehículos.
@@ -11202,22 +11202,22 @@ Los escupefuegos pueden cargarse de munición de dos maneras: automáticamente, 
 Ve y ataca la torre con tu escupefuego.
 ####
 ## Text 3650 ##
-Uno de tus sacerdotes permanece prisionero en la torre enemiga. Ésta parece una misión para tu escupefuego, żno crees? Los guerreros con cerbatana proporcionan una escolta adecuada para la máquina de guerra.
+Uno de tus sacerdotes permanece prisionero en la torre enemiga. Ésta parece una misión para tu escupefuego, ¿no crees? Los guerreros con cerbatana proporcionan una escolta adecuada para la máquina de guerra.
 ####
 ## Text 3651 ##
 Ahora, usa el hechizo "Castigar Arqueros" contra los arqueros enemigos.
 ####
 ## Text 3652 ##
-ˇMuy bien! El recién liberado sacerdote tiene el poder de obrar maravillas. Tiene unos cuantos trucos bajo la manga, incluido el hechizo "Castigar Arqueros", que convierte a los arqueros enemigos en mariposas.
+¡Muy bien! El recién liberado sacerdote tiene el poder de obrar maravillas. Tiene unos cuantos trucos bajo la manga, incluido el hechizo "Castigar Arqueros", que convierte a los arqueros enemigos en mariposas.
 ####
 ## Text 3653 ##
-ˇBien hecho! Has finalizado con éxito el tutorial número 9.
+¡Bien hecho! Has finalizado con éxito el tutorial número 9.
 ####
 ## Text 3654 ##
 Envía a tus geólogos al lugar marcado en el mapa.
 ####
 ## Text 3655 ##
-Para obtener azufre, recurso natural con un enorme valor para los Mayas, necesitarás llevar a los geólogos a las montańas.
+Para obtener azufre, recurso natural con un enorme valor para los Mayas, necesitarás llevar a los geólogos a las montañas.
 ####
 ## Text 3656 ##
 Para empezar, unas cuantas palabras acerca de la producción de alcohol. Como ya puedes ver en el mapa, los mayas producen tequila. En primer lugar, plantan pitas, que después se convierte en esa bebida fuerte en la destilería de tequila.
@@ -11226,10 +11226,10 @@ Para empezar, unas cuantas palabras acerca de la producción de alcohol. Como ya
 Sin texto
 ####
 ## Text 3658 ##
-ˇBienvenido al décimo tutorial! Esta misión pretende que te familiarices con algunas de las características especiales de esos fuertes vikingos.
+¡Bienvenido al décimo tutorial! Esta misión pretende que te familiarices con algunas de las características especiales de esos fuertes vikingos.
 ####
 ## Text 3659 ##
-ˇPor favor, construye un astillero!
+¡Por favor, construye un astillero!
 ####
 ## Text 3660 ##
 Los vikingos tienen la merecida fama de ser una raza marinera. Pero, al igual que los mayas y los romanos, no pueden zarpar hacia las costas extranjeras sin una industria naviera. Los barcos se construyen en los astilleros.
@@ -11274,7 +11274,7 @@ Pronto vas a necesitar algunas hachas de combate para una misión especial. Por 
 Ordena a tu taller de armero que fabrique por los menos 10 hachas de combate.
 ####
 ## Text 3674 ##
-ˇMagnífico! Tus armerías ya tienen los recursos necesarios para ponerse manos a la obra con aquellas hachas de combate que mencionamos anteriormente.
+¡Magnífico! Tus armerías ya tienen los recursos necesarios para ponerse manos a la obra con aquellas hachas de combate que mencionamos anteriormente.
 ####
 ## Text 3675 ##
 Ve y recluta a 10 guerreros con hacha.
@@ -11283,16 +11283,16 @@ Ve y recluta a 10 guerreros con hacha.
 Para reclutar a la unidad militar especial de los vikingos, el guerrero con hacha, son necesarias hachas de combate. Los guerreros con hacha suelen descuidar su defensa, pero su potencial ofensivo hace que puedan destruir edificios militares.
 ####
 ## Text 3677 ##
-Destruye todas las torres pequeńas del enemigo.
+Destruye todas las torres pequeñas del enemigo.
 ####
 ## Text 3678 ##
 Hay varios edificios romanos a los que tus guerreros con hacha les encantará hincar el diente (y también sus hachas).
 ####
 ## Text 3679 ##
-ˇLo conseguiste!
+¡Lo conseguiste!
 ####
 ## Text 3680 ##
-ˇFelicidades por completar con éxito el décimo tutorial!
+¡Felicidades por completar con éxito el décimo tutorial!
 ####
 ## Text 3681 ##
 Detén la producción en la armería, por favor.
@@ -11382,7 +11382,7 @@ Al norte de tu colonia encontrarás una franja de terreno yerma. No es sino la T
 Ahora, recluta a 10 jardineros.
 ####
 ## Text 3710 ##
-Tu leńador ya no puede talar más árboles porque está rodeado por la Tierra Oscura. Para hacer que la tierra vuelva a ser verde y fértil, tendrás que hacer que los jardineros trabajen en ella.
+Tu leñador ya no puede talar más árboles porque está rodeado por la Tierra Oscura. Para hacer que la tierra vuelva a ser verde y fértil, tendrás que hacer que los jardineros trabajen en ella.
 ####
 ## Text 3711 ##
 Ordena a los jardineros que regeneren la tierra.
@@ -11397,7 +11397,7 @@ Sientate y observa cómo realizan su importante misión medioambiental.
 Como puedes ver, tus jardineros convierten de nuevo la Tierra Oscura en una tierra verde y fértil.
 ####
 ## Text 3715 ##
-Es el momento de que los leńadores vuelvan al trabajo. żno estás de acuerdo?
+Es el momento de que los leñadores vuelvan al trabajo. ¿no estás de acuerdo?
 ####
 ## Text 3716 ##
 Las habilidades de tu jardinero tienen implicaciones de gran alcance en tu economía, al igual que los árboles y las minas de piedra  también son devueltas a su antigua gloria.
@@ -11415,17 +11415,17 @@ Permite trabajar a tus jardineros hasta que tu colonia haya sido completamente l
 Ahora que has completado satisfactoriamente los 12 tutoriales. Es momento de  proteger tu reino de la maligna Tribu Oscura. Estamos seguros que conseguirás tu objetivo.
 ####
 ## Text 3721 ##
-ˇBienvenido al undécimo tutorial!
+¡Bienvenido al undécimo tutorial!
 Aquí tendrás la oportunidad de poner en práctica todo lo que has aprendido.
 ####
 ## Text 3722 ##
-Cabańa del leńador, Aserradero, Cabańa del guardabosques, Cabańa del cantero
+Cabaña del leñador, Aserradero, Cabaña del guardabosques, Cabaña del cantero
 ####
 ## Text 3723 ##
 Establece una industria de la construcción.
 ####
 ## Text 3724 ##
-Granja , Cabańa del aguador, Rancho de ovejas, Molino, Panadería, Matadero, Cabańa del pescador
+Granja , Cabaña del aguador, Rancho de ovejas, Molino, Panadería, Matadero, Cabaña del pescador
 ####
 ## Text 3725 ##
 Ahora, construye una industria de producción de alimentos.  Y no olvides que necesitarás más colonos para hacerlo todo.
@@ -11437,7 +11437,7 @@ Minas de hierro, carbón y oro, y Fundiciones de hierro y oro
 Ahora, busca materias primas y construye las minas y fundiciones adecuadas para obtener y procesar los minerales de metal.
 ####
 ## Text 3728 ##
-Cuarteles, Talleres del Herrero y del Armero, Vińedo, Templo pequeńo
+Cuarteles, Talleres del Herrero y del Armero, Viñedo, Templo pequeño
 ####
 ## Text 3729 ##
 Ha llegado el momento de construir los edificios necesarios para reclutar soldados. También deberías asegurarte de que la producción de maná de tu colonia coge el ritmo.
@@ -11458,7 +11458,7 @@ Ahora, lanza un ataque sobre el enemigo y destruye todas las torres de tu oponen
 Felicidades por finalizar airoso el undécimo tutorial.
 ####
 ## Text 3735 ##
-ˇFin!
+¡Fin!
 ####
 ## Text 3736 ##
 Haz clic aquí para avanzar.
@@ -11492,21 +11492,21 @@ Misión 12
 ####
 ## Text 3746 ##
 Estos bosques llevan mucho tiempo siendo el hogar de guerreros intrépidos. En combate hemos reído y cantado, llegando al límite y más allá. Una tribu está talando nuestros imponentes abetos para hacer sitio a sus edificios de piedra. Pronto aprenderán el peligro de nuestra risa y la ferocidad de nuestras canciones.
-No hay sonrisas en los rostros de nuestros hermanos barbados, los sacerdotes. Se han reunido en consejo, discutiendo los significados de los extrańos presagios que han presenciado. El gran oso ha aparecido en sus sueńos, totalmente erguido y gruńendo con dolor. No está claro qué puede significar. Sin embargo, está clarísimo que debemos librar a nuestros bosques de estos constructores.
+No hay sonrisas en los rostros de nuestros hermanos barbados, los sacerdotes. Se han reunido en consejo, discutiendo los significados de los extraños presagios que han presenciado. El gran oso ha aparecido en sus sueños, totalmente erguido y gruñendo con dolor. No está claro qué puede significar. Sin embargo, está clarísimo que debemos librar a nuestros bosques de estos constructores.
 ####
 ## Text 3747 ##
-Hemos propinado un fuerte golpe a los mayas, la horda de constructores, y se han marchado corriendo a su lugar de origen, por lo menos los que aún podían correr. Son guerreros inteligentes en combate, y causaron más dańo del que habíamos previsto. Sin embargo, debemos curar rápidamente las heridas y volver a afilar las espadas, pues nos hemos enterado de que hay romanos en los alrededores. No tardarán mucho en advertir nuestra presencia.
-Nuestros sacerdotes siguen sońando con el gran oso. En sus sueńos, el oso deambula por el bosque como si buscara refugio del asedio de una tormenta terrible. Nuestros sacerdotes no han sentido jamás tanta angustia, ni han tenido tan poco que revelar mediante sus maravillosas artes. No podemos permitirnos distracción alguna: el lobo romano está al acecho.
+Hemos propinado un fuerte golpe a los mayas, la horda de constructores, y se han marchado corriendo a su lugar de origen, por lo menos los que aún podían correr. Son guerreros inteligentes en combate, y causaron más daño del que habíamos previsto. Sin embargo, debemos curar rápidamente las heridas y volver a afilar las espadas, pues nos hemos enterado de que hay romanos en los alrededores. No tardarán mucho en advertir nuestra presencia.
+Nuestros sacerdotes siguen soñando con el gran oso. En sus sueños, el oso deambula por el bosque como si buscara refugio del asedio de una tormenta terrible. Nuestros sacerdotes no han sentido jamás tanta angustia, ni han tenido tan poco que revelar mediante sus maravillosas artes. No podemos permitirnos distracción alguna: el lobo romano está al acecho.
 ####
 ## Text 3748 ##
 Los romanos combatieron con la fiereza que esperábamos. En ambos bandos se profirieron gritos atronadores por las terribles pérdidas. Nuestros salones de altas vigas pronto se llenarán de cánticos y aguamiel. Se ha combinado inteligencia y disciplina, y nuestros cascos astados apuntarán a la alianza impía entre romanos y mayas. Si queremos triunfar, nuestros golpes necesitarán el poder del trueno.
-En los sueńos de nuestros sacerdotes, el gran oso ahora cojea sobre la nieve ennegrecida. Ha abandonado su orgullosa postura, y su voluntad aparentemente ha cedido. En ninguno de los cuentos de antańo ha habido tanta tristeza en el aliento del bardo. Pero es hora de que se reúnan nuestros guerreros; la unión de nuestros enemigos será formidable.
+En los sueños de nuestros sacerdotes, el gran oso ahora cojea sobre la nieve ennegrecida. Ha abandonado su orgullosa postura, y su voluntad aparentemente ha cedido. En ninguno de los cuentos de antaño ha habido tanta tristeza en el aliento del bardo. Pero es hora de que se reúnan nuestros guerreros; la unión de nuestros enemigos será formidable.
 ####
 ## Text 3749 ##
 Cerca de nuestra principal colonia están desembarcando oleadas y oleadas de refuerzos mayas. Si no reforzamos las defensas, nuestros enemigos pronto tendrán ventaja. También merece la pena explorar al este, pues puede reportar beneficios.
 ####
 ## Text 3750 ##
-żQuién dijo que no era necesaria una cabańa de carbonero?
+¿Quién dijo que no era necesaria una cabaña de carbonero?
 ####
 ## Text 3751 ##
 Puede merecer la pena explorar el cráter del sudeste...
@@ -11519,4 +11519,250 @@ Un Lobo al Acecho
 ####
 ## Text 3754 ##
 Alianza Impía
+####
+## Text 3755 ##
+
+####
+## Text 3756 ##
+
+####
+## Text 3757 ##
+
+####
+## Text 3758 ##
+
+####
+## Text 3759 ##
+
+####
+## Text 3760 ##
+
+####
+## Text 3761 ##
+
+####
+## Text 3762 ##
+
+####
+## Text 3763 ##
+
+####
+## Text 3764 ##
+
+####
+## Text 3765 ##
+
+####
+## Text 3766 ##
+
+####
+## Text 3767 ##
+
+####
+## Text 3768 ##
+
+####
+## Text 3769 ##
+
+####
+## Text 3770 ##
+
+####
+## Text 3771 ##
+
+####
+## Text 3772 ##
+
+####
+## Text 3773 ##
+
+####
+## Text 3774 ##
+
+####
+## Text 3775 ##
+
+####
+## Text 3776 ##
+
+####
+## Text 3777 ##
+
+####
+## Text 3778 ##
+
+####
+## Text 3779 ##
+
+####
+## Text 3780 ##
+
+####
+## Text 3781 ##
+
+####
+## Text 3782 ##
+
+####
+## Text 3783 ##
+
+####
+## Text 3784 ##
+
+####
+## Text 3785 ##
+
+####
+## Text 3786 ##
+
+####
+## Text 3787 ##
+
+####
+## Text 3788 ##
+
+####
+## Text 3789 ##
+
+####
+## Text 3790 ##
+
+####
+## Text 3791 ##
+
+####
+## Text 3792 ##
+
+####
+## Text 3793 ##
+
+####
+## Text 3794 ##
+
+####
+## Text 3795 ##
+
+####
+## Text 3796 ##
+
+####
+## Text 3797 ##
+
+####
+## Text 3798 ##
+
+####
+## Text 3799 ##
+
+####
+## Text 3800 ##
+
+####
+## Text 3801 ##
+
+####
+## Text 3802 ##
+
+####
+## Text 3803 ##
+
+####
+## Text 3804 ##
+
+####
+## Text 3805 ##
+
+####
+## Text 3806 ##
+
+####
+## Text 3807 ##
+
+####
+## Text 3808 ##
+
+####
+## Text 3809 ##
+
+####
+## Text 3810 ##
+
+####
+## Text 3811 ##
+
+####
+## Text 3812 ##
+
+####
+## Text 3813 ##
+
+####
+## Text 3814 ##
+
+####
+## Text 3815 ##
+
+####
+## Text 3816 ##
+
+####
+## Text 3817 ##
+
+####
+## Text 3818 ##
+
+####
+## Text 3819 ##
+
+####
+## Text 3820 ##
+
+####
+## Text 3821 ##
+
+####
+## Text 3822 ##
+
+####
+## Text 3823 ##
+
+####
+## Text 3824 ##
+
+####
+## Text 3825 ##
+
+####
+## Text 3826 ##
+
+####
+## Text 3827 ##
+
+####
+## Text 3828 ##
+
+####
+## Text 3829 ##
+
+####
+## Text 3830 ##
+
+####
+## Text 3831 ##
+
+####
+## Text 3832 ##
+
+####
+## Text 3833 ##
+
+####
+## Text 3834 ##
+
+####
+## Text 3835 ##
+
+####
+## Text 3836 ##
+
 ####
