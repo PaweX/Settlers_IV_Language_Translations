@@ -142,7 +142,7 @@ Kampania dodatkowa
 ???
 ####
 ## Text 48 ##
-Dodatek
+Dodatek Trojanie
 ####
 ## Text 49 ##
 Kampania Majów
@@ -349,7 +349,7 @@ Kampania Majów
 Poszukiwacze Skarbu
 ####
 ## Text 117 ##
-Dodatek
+Dodatek Trojanie
 ####
 ## Text 118 ##
 ???
@@ -848,7 +848,7 @@ Dzięki temu zaklęciu siarka może być przemieniana w sztaby żelaza.
 Smakołyki
 ####
 ## Text 259 ##
-Wszyskie okoliczne kopalnie otrzymają zapas ulubionej żywności.
+Wszystkie okoliczne kopalnie otrzymają zapas ulubionej żywności.
 ####
 ## Text 260 ##
 Skrót
@@ -899,7 +899,7 @@ Hodowla gęsi
 Gęsi
 ####
 ## Text 276 ##
-Gęsi... chodowane wyłącznie przez Trojan. Dzięki nim zaopatrzysz swoje kopalnie w mięso. Mięso gęsi jest ulubionym pożywieniem górników w kopalniach siarki i żelaza.
+Gęsi... hodowane wyłącznie przez Trojan. Dzięki nim zaopatrzysz swoje kopalnie w mięso. Mięso gęsi jest ulubionym pożywieniem górników w kopalniach siarki i żelaza.
 ####
 ## Text 277 ##
 Olej
@@ -935,7 +935,7 @@ Oto hodowca gęsi. Zaopatruje on Trojan w mięso. Do hodowli gęsi potrzeba wody
 Hodowca słoneczników
 ####
 ## Text 288 ##
-Oto hodowca słoneczników. Po obsianiu i nawodnieniu pola słoneczników, hodowca czeka aż kwiaty dojrzeją, poczym zbiera je i zostawia przed swoją chatką.
+Oto hodowca słoneczników. Po obsianiu i nawodnieniu pola słoneczników, hodowca czeka aż kwiaty dojrzeją, po czym zbiera je i zostawia przed swoją chatką.
 ####
 ## Text 289 ##
 Wyciskacz oleju
@@ -944,7 +944,7 @@ Wyciskacz oleju
 Oto wyciskacz oleju. Ten zapracowany Trojanin pozyskuje olej z kwiatów słoneczników.
 ####
 ## Text 291 ##
-
+Balista została ukończona.
 ####
 ## Text 292 ##
 Węgiel
@@ -972,7 +972,7 @@ Włącz Trojan
 Balista
 ####
 ## Text 300 ##
-Oto balista - potężna machina oblężnicza Trojan, wystrzeliwująca eksplodujące strzały. Balsty wyposażone są w specjalny mechanizm umożliwiający szybkie zastępowanie wystrzelonych pocisków.
+Oto balista - potężna machina oblężnicza Trojan, wystrzeliwująca eksplodujące strzały. Balisty wyposażone są w specjalny mechanizm umożliwiający szybkie zastępowanie wystrzelonych pocisków.
 ####
 ## Text 301 ##
 Katapultier 1-go poziomu
@@ -1071,7 +1071,7 @@ Udało się nam! Skarb należy do nas!
 W ten sposób nigdy nie dotrzemy do skarbu!
 ####
 ## Text 333 ##
-W rzymiańskiej fortecy znaleźliśmy wskazówki do mapy skarbu. Gdy tylko zniszczymy osiedla Rzymian, wyruszymy na poszukiwania...
+W rzymskiej fortecy znaleźliśmy wskazówki do mapy skarbu. Gdy tylko zniszczymy osiedla Rzymian, wyruszymy na poszukiwania...
 ####
 ## Text 334 ##
 ???
@@ -1388,7 +1388,7 @@ Ci Trojanie! Nawet nie podejrzewają zasadzki… Bladym świtem odkryli naszego 
 Miej na uwadze niewielkie rozmiary twojej wyspy, i od czasu do czasu wyburzaj jakiś niepotrzebny budynek.
 ####
 ## Text 437 ##
-Działaj metodycznie - krok po kroku. Możliwie wcześnie zabezpiecz się przed  atakami wroga...
+Działaj metodycznie - krok po kroku. Możliwie wcześnie zabezpiecz się przed atakami wroga...
 ####
 ## Text 438 ##
 By zabezpieczyć wysokogórską przełęcz użyj małych wież. Obsadź je maksymalną liczbą żołnierzy!
@@ -1415,7 +1415,7 @@ Infiltracja
 ???
 ####
 ## Text 446 ##
-Od ostatniego zapisu gry upłynęło 30 minut!
+Od ostatniego zapisu gry upłynęło 15 minut!
 ####
 ## Text 447 ##
 Wyprodukuj 200 mieczy, 220 łuków, 160 jednostek mięsa, 255 ryb, 150 bochenków chleba i 250 jednostek złota. Następnie przetransportuj je na odpowiednie miejsca!
@@ -1531,7 +1531,7 @@ Jest jednak nikły promień nadziei! Osiedle pierzastych wojowników jest dobrze
 Poszukaj oręża w pobliskim osiedlu Majów!
 ####
 ## Text 484 ##
-Nietoperz@Pokonaj Nietoperza!@Twoja sytuacja nie jest łatwa, ale twój cel jest szlachetny. Pokonaj wojownicze ludy wschodu i zachodu. Wybuduj silne osiedle, które pozwoli ci oprzeć się atakom Mrocznego Plemienia. Wypędź Nietoperza na światło dnia i zdobąć skarby wysłanników zła...
+Nietoperz@Pokonaj Nietoperza!@Twoja sytuacja nie jest łatwa, ale twój cel jest szlachetny. Pokonaj wojownicze ludy wschodu i zachodu. Wybuduj silne osiedle, które pozwoli ci oprzeć się atakom Mrocznego Plemienia. Wypędź Nietoperza na światło dnia i zdobądź skarby wysłanników zła...
 ####
 ## Text 485 ##
 Przygotuj się dobrze do obrony osiedla! Musisz się liczyć ze zmasowanymi atakami nieprzyjaciół. Zadbaj o ekonomiczny rozwój osady. Wykorzystaj pobliskie łowiska i karczuj lasy pod przyszłe budowy. Znajdź legendarny skarb "Czoło Zła"...
@@ -1557,7 +1557,7 @@ Zniszcz wszystkie stocznie i przystanie Trojan!
 ####
 ## Text 492 ##
 Kartagina@Odbuduj Troję na ruinach Kartaginy!@Nie wszyscy Trojanie polegli! Dzięki Pileuszowi udało nam się ujść z życiem. Jednak po 40 dniach morskiej podróży natrafiliśmy na sztorm, któremu nasz okręt nie mógł sprostać...
-Szczęście nie opuściło nas jednak zupełnie i w miarę bezpiecznie wylądowaliśmy na brzegu. Tubylcy okazali się przyjaźni i wsparli nas w miarę możliwości. Powoli okrzepliśmy i odzyskaliśmy siły. Wtedy jednak wybuchły pogłoski o odkryciu bogatych złóż złota. Dotarły one także do uszu chciwego władcy Kartaginy - Midasa. Wdzięczni za ocalenie, obiecaliśmy tubylcom bronić ich przed zakusami kartagińczyka i innych państw ościennych. Była to również wspaniala okazja by odbudować Troję na ruinach Kartaginy...
+Szczęście nie opuściło nas jednak zupełnie i w miarę bezpiecznie wylądowaliśmy na brzegu. Tubylcy okazali się przyjaźni i wsparli nas w miarę możliwości. Powoli okrzepliśmy i odzyskaliśmy siły. Wtedy jednak wybuchły pogłoski o odkryciu bogatych złóż złota. Dotarły one także do uszu chciwego władcy Kartaginy - Midasa. Wdzięczni za ocalenie, obiecaliśmy tubylcom bronić ich przed zakusami Kartagińczyka i innych państw ościennych. Była to również wspaniała okazja by odbudować Troję na ruinach Kartaginy...
 ####
 ## Text 493 ##
 Chroń swoje zachodnie granice przed atakami pionierów!
@@ -1590,8 +1590,8 @@ Aby opłacić odpowiednio silną armię musisz wykraść złoto z gór nieprzyja
 Wyślij niewielkie ekipy zwiadowcze i rozejrzyj się na wyspie na wschodzie! Gdzieś między ośnieżonymi szczytami gór ukryte jest złoto!
 ####
 ## Text 502 ##
-Wakah Chan@Pomścij naszych przodków! Zajmij całą krainę!@Atlantyda zatonęła, ale my przetrwaliśmy! Naszym nowym domem stała się Południowa Ameryka. Chaka, książe Majów, łaskawie pozwolił nam objąć te ziemie w posiadanie. Zaczeliśmy patrzeć w przyszłość z nadzieją...
-Ale pokój to rzadki dar bogów! Książe Tezeusz z Atlanty zawarł przymierze z przywódcą Azteków imieniem Kuernawakam. Wspólnymi siłami zaatakowali Majów. Wobec tak miażdżącej przewagi pozostała nam tylko ucieczka... Chichen Itza, młody, porywczy książe Majów, wyruszył na czele doborowych oddziałów, by rozprawić się z najeźdźcami. Wylądowaliśmy w miejscu zwanym Spalonymi Ziemiami. Tutaj, według naszych przodków, miały się kryć niewyobrażalne skarby.
+Wakah Chan@Pomścij naszych przodków! Zajmij całą krainę!@Atlantyda zatonęła, ale my przetrwaliśmy! Naszym nowym domem stała się Południowa Ameryka. Chaka, książę Majów, łaskawie pozwolił nam objąć te ziemie w posiadanie. Zaczęliśmy patrzeć w przyszłość z nadzieją...
+Ale pokój to rzadki dar bogów! Książę Tezeusz z Atlanty zawarł przymierze z przywódcą Azteków imieniem Kuernawakam. Wspólnymi siłami zaatakowali Majów. Wobec tak miażdżącej przewagi pozostała nam tylko ucieczka... Chichen Itza, młody, porywczy książę Majów, wyruszył na czele doborowych oddziałów, by rozprawić się z najeźdźcami. Wylądowaliśmy w miejscu zwanym Spalonymi Ziemiami. Tutaj, według naszych przodków, miały się kryć niewyobrażalne skarby.
 ####
 ## Text 503 ##
 Mroczne Ziemie powstrzymują ekspansję terytorialną przeciwnika... Słowo, które topi śnieg na szczytach gór, przywróci zieleń spustoszonej ziemi!
@@ -1656,7 +1656,7 @@ Powołaj po 50 żołnierzy trzeciego poziomu z każdego rodzaju wojsk. Wybuduj d
 Wykorzystaj wszystkie dostępne środki by ostatecznie pokonać Mroczne Plemię!
 ####
 ## Text 523 ##
-Pomoc dotarła w samą porę. Jeszcze chwila, a uleglibyśmy nieprzyjacielowi. Rzymiański prom z medykami także jest już w drodze.
+Pomoc dotarła w samą porę. Jeszcze chwila, a uleglibyśmy nieprzyjacielowi. Rzymski prom z medykami także jest już w drodze.
 ####
 ## Text 524 ##
 Staniemy po twojej stronie w walce z Mrocznym Plemieniem!
@@ -1957,7 +1957,7 @@ Ostatnia bitwa
 Zniszcz osiedle Majów, które zagraża twoim nowym sprzymierzeńcom!
 ####
 ## Text 620 ##
-Doprować kapłana i czterech dowódców na miejsce spotkania!
+Doprowadź kapłana i czterech dowódców na miejsce spotkania!
 ####
 ## Text 621 ##
 Przez dwie godziny musisz chronić osiedla swoich sprzymierzeńców od zagłady z rąk Mrocznego Plemienia! Jeśli w którymś z osiedli liczba tragarzy spadnie poniżej dziesięciu - poniesiesz klęskę.
@@ -2052,7 +2052,7 @@ Nikt nie ma wątpliwości, że pokonanie tak groźnego przeciwnika wymaga wspól
 ####
 ## Text 651 ##
 My - urodzeni wojownicy - nigdy nie ustajemy w czujności. Ale nasi nowi sojusznicy zdają się zapominać, że Mroczne Plemię nie zostało jeszcze pokonane. Nasi przyjaciele budują na tych żyznych ziemiach nowe osiedle, a każdy z nich polega na pozostałych w kwestiach obronnych. Koniec końców - wszyscy najwyraźniej zapominają o zachowaniu ostrożności.
-Nagle wydarzyło się to, czego tak bardzo się obawialiśmy. Mroczne Plemię dostrzegło słabe punkty Przymierza. Atakuje wszystkie osiedla jednocześnie! Ci biedni głupcy nie mają szans w bezpośrednim starciu z hordą Mrocznych Wojowników. Ich opór będzie krótki… Tylko nasz lud jest w stanie odpowiednio szybko powołać silną armię. Nadszedł czas próby -musimy wziąć na siebie ciężar obrony całej krainy przed zakusami Mrocznego Plemienia. Niech moc Thora i Odina zmiotą naszych wrogów z powierzchni ziemi! Zadanie będzie trudne, ale Przymierze musi przetrwać…
+Nagle wydarzyło się to, czego tak bardzo się obawialiśmy. Mroczne Plemię dostrzegło słabe punkty Przymierza. Atakuje wszystkie osiedla jednocześnie! Ci biedni głupcy nie mają szans w bezpośrednim starciu z hordą Mrocznych Wojowników. Ich opór będzie krótki… Tylko nasz lud jest w stanie odpowiednio szybko powołać silną armię. Nadszedł czas próby -musimy wziąć na siebie ciężar obrony całej krainy przed zakusami Mrocznego Plemienia. Niech moc Thora i Odyna zmiotą naszych wrogów z powierzchni ziemi! Zadanie będzie trudne, ale Przymierze musi przetrwać…
 ####
 ## Text 652 ##
 Przygotowujemy się do decydującego ataku na twierdzę Mrocznego Plemienia! Znakomita sytuacja ekonomiczna i militarna naszego osiedla sprawiła, że to my wyznaczymy miejsce spotkania się wszystkich armii… Wkrótce cztery narody połączą swe siły!
@@ -2065,7 +2065,7 @@ Niestety, nasi zwiadowcy odkryli w tym miejscu obóz sił Morbusa! Musimy czym p
 Stwórz silną armię! Nie możesz liczyć na pomoc z żadnej strony...
 ####
 ## Text 655 ##
-Powołaj odpowiednią liczbę strażników, do pilnowania porządku podczas spotkania. Zapamiętaj trasy obierane przez manakoptery - rozmieść przy nich łuczników i rycerzy. Zostawiaj również garnizony w pobliżu bogatych złóź surowców.
+Powołaj odpowiednią liczbę strażników, do pilnowania porządku podczas spotkania. Zapamiętaj trasy obierane przez manakoptery - rozmieść przy nich łuczników i rycerzy. Zostawiaj również garnizony w pobliżu bogatych złóż surowców.
 ####
 ## Text 656 ##
 Pomóż swoim sprzymierzeńcom. Zabezpiecz granice przed atakami Mrocznego Plemienia.
@@ -2630,7 +2630,7 @@ Wykorzystując sytuację Majowie próbują Cię zaatakować. Daj im nauczkę!
 pusty
 ####
 ## Text 803 ##
-Coś niedobrego wisi w powietrzu. Coraz częściej można usłyszeć pogłoski o pobliskich krainach spowitych mrokiem, gdzie wszystko co żywe cierpi i zwolna obumiera. Może to robota Majów i tej ich straszliwej, plującej ogniem wojennej machiny? Sprawozdania naszych zwiadowców niepokojąco pokrywają się z ponurymi wizjami, o których mówią nasi mędrcy. Czy Wilczyca oprze się niezbadanym siłom ciemności? Czy jej lud ocaleje? Kapłani mówią o powtarzającym się w ich snach motywie ogrodnika, który uratuje świat. Lud z południa znów zakłada kolonie w pobliżu naszych osad. Widocznie poprzednia lekcja nie nauczyła ich rozumu. Wiemy o nich dużo więcej niż poprzednio i zdajemy sobie sprawę, czym grozi najmniejsza nieostrożność z naszej strony. Musimy być silni i przebiegli, jak nasza boska opiekunka.
+Coś niedobrego wisi w powietrzu. Coraz częściej można usłyszeć pogłoski o pobliskich krainach spowitych mrokiem, gdzie wszystko co żywe cierpi i z wolna obumiera. Może to robota Majów i tej ich straszliwej, plującej ogniem wojennej machiny? Sprawozdania naszych zwiadowców niepokojąco pokrywają się z ponurymi wizjami, o których mówią nasi mędrcy. Czy Wilczyca oprze się niezbadanym siłom ciemności? Czy jej lud ocaleje? Kapłani mówią o powtarzającym się w ich snach motywie ogrodnika, który uratuje świat. Lud z południa znów zakłada kolonie w pobliżu naszych osad. Widocznie poprzednia lekcja nie nauczyła ich rozumu. Wiemy o nich dużo więcej niż poprzednio i zdajemy sobie sprawę, czym grozi najmniejsza nieostrożność z naszej strony. Musimy być silni i przebiegli, jak nasza boska opiekunka.
 ####
 ## Text 804 ##
 Po osadzie Majów zostały tylko zgliszcza. Ale nasze kłopoty chyba dopiero się zaczynają. Połacie sczerniałej ziemi, które znaleźliśmy w pobliżu ich osiedla  niepokoją naszych mędrców. Schwytani Majowie zaklinają się, że to nie ich sprawka i sądząc po ich reakcji oraz ogromie wyrządzonych zniszczeń, jest to prawda. Majowie zdają się być równie przejęci Czarnymi Ziemiami jak my i zaproponowali tymczasowe zawieszenie broni. Nie wiemy jeszcze czy militarne przymierze z niedawnymi wrogami okaże się celowe. Okazało się jednak, że nasi ogrodnicy potrafią naprawiać część szkód wyrządzanych przez czarną plagę. Zgodnie ze słowami przepowiedni - leczą ziemię. Dopóki nie poznamy lepiej nowego zagrożenia, będziemy podtrzymywać współpracę z Majami.
@@ -2683,7 +2683,7 @@ Mamy ogromne szczęście, że w pobliżu osady znajduje się mnóstwo surowców 
 Zamiast od razu rzucać się na świątynię Mrocznego Plemienia, rozsądniej będzie zgromadzić najpierw silną armię. Góry na południowym zachodzie dostarczą nam cennych surowców. Jeśli tylko zapewnimy Ogrodnikom bezpieczeństwo, powinno się udać!
 ####
 ## Text 818 ##
-Czas to pieniądz. Jeśli mamy szybko uporać się z misją, musimy postarać się o sprawną produkcję narzędzi i oręża. Kluczem do zwyciestwa jest ruchliwość. Naszą linię obronną ograniczymy do minimalnej liczby wież.
+Czas to pieniądz. Jeśli mamy szybko uporać się z misją, musimy postarać się o sprawną produkcję narzędzi i oręża. Kluczem do zwycięstwa jest ruchliwość. Naszą linię obronną ograniczymy do minimalnej liczby wież.
 ####
 ## Text 819 ##
 Wygląda na to, że nasi sojusznicy - Wikingowie doceniliby wizytę naszych Kapłanów na ich targowisku. Może warto spróbować? Surowce potrzebne do pokrycia kosztów podróży powinniśmy znaleźć w górach na południu.
@@ -3408,7 +3408,7 @@ Targowisko
 Oto targowisko. Tutaj rozpoczynają się wszystkie szlaki handlowe.
 ####
 ## Text 1055 ##
-Rozlewnia miodu pitn.
+Rozlewnia miodu pitnego
 ####
 ## Text 1056 ##
 Oto rozlewnia miodu pitnego. Do jego produkcji niezbędny jest miód pszczeli. Miód pitny może być składany w ofierze w małych świątyniach.
@@ -3499,7 +3499,7 @@ Oto duża świątynia. Tutaj szkoleni są Kapłani, którzy z pomocą bogów mog
 Mała świątynia
 ####
 ## Text 1082 ##
-Oto mała świątynia. Tutaj Osadnicy składają bogom ofiary z alkoholu, otrzymując w zamian energię mana. Trojanie skladają w ofierze olej slonecznikowy.
+Oto mała świątynia. Tutaj Osadnicy składają bogom ofiary z alkoholu, otrzymując w zamian energię mana. Trojanie składają w ofierze olej słonecznikowy.
 ####
 ## Text 1083 ##
 Gorzelnia
@@ -5259,7 +5259,7 @@ Deski... niezbędne do budowy domów.
 Proch
 ####
 ## Text 1666 ##
-Proch strzelniczy... potrzebny do uzbrojenia okrętów i pojazów Majów.
+Proch strzelniczy... potrzebny do uzbrojenia okrętów i machin Majów.
 ####
 ## Text 1667 ##
 Piła
@@ -5343,7 +5343,7 @@ Kliknij tutaj by włączyć filtrowanie.
 Wybierz tryb
 ####
 ## Text 1694 ##
-Kliknij tutaj by włączyć tryb sprzętowego generowania terenu. Wybranie tej opcji znacznie przyspieszy szybkość wyświeltania obrazu.
+Kliknij tutaj by włączyć tryb sprzętowego generowania terenu. Wybranie tej opcji znacznie przyspieszy szybkość wyświetlania obrazu.
 ####
 ## Text 1695 ##
 Wybierz tryb
@@ -5355,7 +5355,7 @@ Kliknij tutaj by włączyć programowy tryb generowania terenu. Jakość tekstur
 Wybierz tryb
 ####
 ## Text 1698 ##
-Jeśli wybrałeś tryb sprzętowego generowania krajobrazu możesz również uruchomić sprzętowe wspieranie tworzenia obiektów, dodając do obrazu efekty kanału alpha.
+Jeśli wybrałeś tryb sprzętowego generowania krajobrazu możesz również uruchomić sprzętowe wspieranie tworzenia obiektów, dodając do obrazu efekty kanału alfa.
 ####
 ## Text 1699 ##
 Wybierz tryb
@@ -5554,7 +5554,7 @@ narzędzie/oręż: młotek
 Rzeźnik
 ####
 ## Text 1759 ##
-Reźnik oprawia mięso dla twoich górników.
+Rzeźnik oprawia mięso dla twoich górników.
 
 narzędzie/oręż: topór
 ####
@@ -6128,7 +6128,7 @@ Odkryto złoża kamienia.
 Odkryto złoża siarki.
 ####
 ## Text 1925 ##
-Ukończono budowę ogniomiota.
+Ukończono budowę ogniomiotu.
 ####
 ## Text 1926 ##
 Ukończono budowę statku handlowego.
@@ -6269,7 +6269,7 @@ Włóż płytę CD "Settlers IV".
 Najpierw wybierz temat z powyższej listy!
 ####
 ## Text 1972 ##
-Czy naprawdę chcesz znizczyć ten budynek?
+Czy na pewno chcesz zniszczyć ten budynek?
 ####
 ## Text 1973 ##
 Naciśnij Esc by powrócić od Edytora Poziomów SETTLERS IV.
@@ -6278,7 +6278,7 @@ Naciśnij Esc by powrócić od Edytora Poziomów SETTLERS IV.
 Określ jak długo trwać będzie Wojna Ekonomiczna (od 15 do 120 minut):
 ####
 ## Text 1975 ##
-Jesteś pewien, ze chcesz wyłączyć Gracza z dalszej gry?
+Jesteś pewien, że chcesz wyłączyć Gracza z dalszej gry?
 ####
 ## Text 1976 ##
 Majowie
@@ -6311,7 +6311,7 @@ Jesteś pewien, że chcesz zakończyć grę?
 Podaj numer seryjny twojej kopii "The Settlers IV"
 ####
 ## Text 1986 ##
-Jak długo bedziesz czekał na Graczy mających kłopoty z połączeniem, nim zastąpią ich gracze komputerowi?
+Jak długo będziesz czekał na Graczy mających kłopoty z połączeniem, nim zastąpią ich gracze komputerowi?
 ####
 ## Text 1987 ##
 Wejście do poczekalni wymaga pobrania uaktualnienia do gry. Czy chcesz to zrobić teraz?
@@ -6323,7 +6323,7 @@ Ustaw pierwszy punkt orientacyjny
 Ustaw drugi punkt orientacyjny
 ####
 ## Text 1990 ##
-Ustaw trzeci punkt orientacjny
+Ustaw trzeci punkt orientacyjny
 ####
 ## Text 1991 ##
 Ustaw punkt docelowy
@@ -7799,7 +7799,7 @@ Gra jest już obsadzona! Jeśli gra przeznaczona jest dla klanów, możliwe, że
 Gospodarz nie może zmienić drużyny!
 ####
 ## Text 2482 ##
-Zapisana gra nie mogła być odtworzona!
+Zapisana gra nie mogła zostać odczytana!
 ####
 ## Text 2483 ##
 Nie wprowadzono nazwy gry!
@@ -7817,7 +7817,7 @@ Nie wszyscy gracze są gotowi!
 Zbyt wielu Graczy!
 ####
 ## Text 2488 ##
-Gra, którą wybrałeś to zdefiniowany wsześniej scenariusz. Zmiana plemion poradzonych przez Gracza/komputer jest niemożliwa.
+Gra, którą wybrałeś to zdefiniowany wcześniej scenariusz. Zmiana rasy dla Gracza komputerowego jest niemożliwa.
 ####
 ## Text 2489 ##
 Stan gry nie mógł zostać odtworzony! Możliwe przyczyny: Plik jest niedostępny, uszkodzony lub ma złą datę zapisu!
@@ -8103,283 +8103,330 @@ Rudobrodzi
 Dwóch na jednego...
 ####
 ## Text 2582 ##
-
+Nowy Świat
 ####
 ## Text 2583 ##
-
+Kampania Majów
 ####
 ## Text 2584 ##
-
+Cuda świata są nasze!
 ####
 ## Text 2585 ##
-
+Nowy Świat
 ####
 ## Text 2586 ##
-
+Nowy Świat
 ####
 ## Text 2587 ##
-
+Nowy Świat!
 ####
 ## Text 2588 ##
-
+Kampania Rzymian
 ####
 ## Text 2589 ##
-
+Świat jest u naszych stóp!
 ####
 ## Text 2590 ##
-
+Kampania Trojan
 ####
 ## Text 2591 ##
-
+Niezbadany kraj
 ####
 ## Text 2592 ##
-
+Kampania Wikingów
 ####
 ## Text 2593 ##
-
+Pragniemy świętować festiwale
 ####
 ## Text 2594 ##
-
+Mamy posąg, teraz wszystko, co musimy zrobić, to wrócić bezpiecznie!
 ####
 ## Text 2595 ##
-
+Sekwencje 3D
 ####
 ## Text 2596 ##
-
+Opowieść
 ####
 ## Text 2597 ##
-
+Andreas Suika
 ####
 ## Text 2598 ##
-
+Główny Artysta
 ####
 ## Text 2599 ##
-
+Thorsten Mutschall
 ####
 ## Text 2600 ##
-
+Blue Byte Game Channel
 ####
 ## Text 2601 ##
-
+Michael Dreher
+Stefan Guennemann
+Patrick Melchior
+Ralf Roehn
+Thomas Wiesinger
 ####
 ## Text 2602 ##
-
+Asystent Obsługi Klienta
 ####
 ## Text 2603 ##
-
+Bernd Resing
 ####
 ## Text 2604 ##
-
+Zarządzanie Danymi
 ####
 ## Text 2605 ##
-
+Stefan Günnemann
+Dogan Cinar
 ####
 ## Text 2606 ##
-
+Wydawca
 ####
 ## Text 2607 ##
-
+Serge Hascoet
 ####
 ## Text 2608 ##
-
+Projekt Gry
 ####
 ## Text 2609 ##
-
+Główny Projektant Gry
 ####
 ## Text 2610 ##
-
+Andreas Suika
 ####
 ## Text 2611 ##
-
+Blue Byte Studio
 ####
 ## Text 2612 ##
-
+Grafika
 ####
 ## Text 2613 ##
-
+Michael Dreher
+Florian Becker
+Daniela Brinkschulte
+Marko Giertolla
+Joachim Walther
 ####
 ## Text 2614 ##
-
+Artysta
 ####
 ## Text 2615 ##
-
+Lionel Gaget
 ####
 ## Text 2616 ##
-
+Kierownik Produkcji Dźwięku
 ####
 ## Text 2617 ##
-
+Sylvain Brunet
 ####
 ## Text 2618 ##
-
+Produkcja Muzyki - Trojanie
 ####
 ## Text 2619 ##
-
+Blue Byte Technology
 ####
 ## Text 2620 ##
-
+Andreas Hildebrand
+Peter Reincke
 ####
 ## Text 2621 ##
-
+Projektowanie Map
 ####
 ## Text 2622 ##
-
+Andreas Suika
+Jan Brockmann
+G.A.R. de Jong
+Ulrich Rees
+Ralf Spang
+Markus Segeth
+Thomas Dumrauf
+Nurlaili Legimin
+Joachim Schiedt
+Robert Schauer
+Ralph Bethke
+Marco Haake
+Marc Bethke
 ####
 ## Text 2623 ##
-
+Menadżer Lokalizacji
 ####
 ## Text 2624 ##
-
+Adam Markus Zaczek
 ####
 ## Text 2625 ##
-
+CEO
 ####
 ## Text 2626 ##
-
+Odile Limpach
 ####
 ## Text 2627 ##
-
+Menadżer Lokalizacji, Instrukcja i Tekst
 ####
 ## Text 2628 ##
-
+Adam Markus Zaczek
 ####
 ## Text 2629 ##
-
+Projekt Map
 ####
 ## Text 2630 ##
-
+Andreas Suika
 ####
 ## Text 2631 ##
-
+Dyrektor Marketingu w Niemczech
 ####
 ## Text 2632 ##
-
+Benedikt Schüler
 ####
 ## Text 2633 ##
-
+Prezydent
 ####
 ## Text 2634 ##
-
+Yves Guillemot
 ####
 ## Text 2635 ##
-
+Programowanie
 ####
 ## Text 2636 ##
-
+Programowanie
 ####
 ## Text 2637 ##
-
+Główny Programista
 ####
 ## Text 2638 ##
-
+Dietmar Meschede
 ####
 ## Text 2639 ##
-
+Jan Henning Wiese
+Daniel Wilke
 ####
 ## Text 2640 ##
-
+Menadżer Projektu
 ####
 ## Text 2641 ##
-
+Dirk Metzenthin
 ####
 ## Text 2642 ##
-
+Menadżer PR
 ####
 ## Text 2643 ##
-
+Karsten Lehmann
 ####
 ## Text 2644 ##
-
+Wewnętrzny Zespół ds. Testów Beta
 ####
 ## Text 2645 ##
-
+Menadżer Społeczności
 ####
 ## Text 2646 ##
-
+Waldemar Lindemann
 ####
 ## Text 2647 ##
-
+Zapewnienie Jakości
 ####
 ## Text 2648 ##
-
+Menadżer
 ####
 ## Text 2649 ##
-
+Zespół Infolinii
 ####
 ## Text 2650 ##
-
+Jonas "BB Zodiak" Asboe
+Jan Philipp "BB LostSoul" Blessing
+Robin "BB Erzkanzler" Chowdhury
+Jan "BB Napf" Euman
+Katrin "BB Khim" Eppinger
+Thomas "BB Thommy" Geistert
+Tobias "BB Raven" Grimm
+Stephan "BB Tantus" Illmer
+Juri "BB Jo-" Kuprat
+Benjamin "BB Dr_B" Reckmann
+Michael "BB Vexator" Sichma
+Jam "BB Legos" Westendorf
 ####
 ## Text 2651 ##
-
+Testerzy
 ####
 ## Text 2652 ##
-
+Blue Byte
+Till Boos
+Christian Johrden
 ####
 ## Text 2653 ##
-
+Oliver Blanck
 ####
 ## Text 2654 ##
-
+Oliver Blanck
+Wsparcie:
+Bernd Resing
 ####
 ## Text 2655 ##
-
+Skrypty
 ####
 ## Text 2656 ##
-
+Marc Bethke
 ####
 ## Text 2657 ##
-
+Gość Specjalny
 ####
 ## Text 2658 ##
-
+MA.MA
 ####
 ## Text 2659 ##
-
+Specjalne podziękowania dla:
 ####
 ## Text 2660 ##
+Andreas Schürmann i MA.MA za ich gościnną rolę w "Nowy Świat".
+Wszystkich członków rodzin i przyjaciół zespołu Blue Byte, którzy wpierali nasz projekt swoją pomocą i zrozumieniem.
 
+
+
+
+Tłumaczenie Dodatków "Nowy Świat" i "Wielkie Wyprawy" na język polski, oraz poprawa błędów językowych w originalnej wersji:
+Paweł C. (PaweX3)
 ####
 ## Text 2661 ##
-
+THE SETTLERS IV MISSION CD 2
 ####
 ## Text 2662 ##
-
+THE SETTLERS IV
 ####
 ## Text 2663 ##
-
+Uznania - Mission CD 2 Blue Byte
 ####
 ## Text 2664 ##
-
+UbiSoft Marketing
 ####
 ## Text 2665 ##
-
+Menadżer Marketingu EMEA
 ####
 ## Text 2666 ##
-
+Laurence Buisson-Nollent
 ####
 ## Text 2667 ##
-
+Kierownik Grupy Produktów - Europa, Bliski Wschód, Azja
 ####
 ## Text 2668 ##
-
+Axelle Verny
 ####
 ## Text 2669 ##
-
+Zarządzanie Produktem - Europa, Bliski Wschód, Azja
 ####
 ## Text 2670 ##
-
+Zarządzanie Produktem - Niemcy
 ####
 ## Text 2671 ##
-
+Andreas Balfanz
 ####
 ## Text 2672 ##
-
+Vincent Munoz
 ####
 ## Text 2673 ##
-
+Dział Produkcji
 ####
 ## Text 2674 ##
-
+Alexandre Bolchert
+Emanuelle Brunot
+Pierre Escaich
 ####
 ## Text 2675 ##
 
@@ -8961,7 +9008,7 @@ Dwóch na jednego...
 
 ####
 ## Text 2868 ##
-
+O nie! Ponieśliśmy klęskę...
 ####
 ## Text 2869 ##
 
@@ -9039,58 +9086,58 @@ Dwóch na jednego...
 
 ####
 ## Text 2894 ##
-
+Ponieśliśmy klęskę...
 ####
 ## Text 2895 ##
-
+Eryk Czerwony doskonale wie, jak nas uszczęśliwić! Nie staliśmy się grubi i leniwi - waleczna krew w naszych żyłach jest zbyt płomienna. Ale niewielka zmiana po wszystkich podbojach i bitwach nie zaszkodzi. Ważne jest, abyśmy dobrze się bawili, aby trzymać nudę na dystans! Ale to diabelskie dzieło, Eryk zaprosił wszystkie narody na wyścig łodzi, a nagrodą dla zwycięzcy jest nieodkryta kraina na Karaibach. Lato, słońce, piasek, wszystko co nasze jałowe i zimne ziemie nie są w stanie zaoferować. Pokusa jest wielka. Ale najpierw musimy dotrzeć do domu i odzyskać siły. Eksploracja Ameryki była męcząca. A więc, wy stare psy morskie, wkraczamy do wyścigu, stawiając czoła każdemu wyzwaniu... Niebezpieczeństwo to nasze drugie imię!
 ####
 ## Text 2896 ##
-
+Na Odyna! Nie tylko staliśmy się grubi i leniwi, ale teraz jeszcze rządzeni głupotą. Wydaje się, że nikt już nie myśli poprawnie, cała nasza przeprawa była jedną, ciągłą pijatyką. I mamy dokładnie właściwą rzecz do tego nadmiaru: tony miodu pitnego. Byliśmy w stanie przeciwstawić się pływom morza. Ale w tej pływającej tawernie nie można znaleźć ani jednej skórki chleba. To nam nie pomaga; musimy wytrzeźwieć i znaleźć jedzenie. Słyszeliśmy pogłoski, że mag na tych ziemiach może zamienić miód pitny w jedzenie. Jeśli nie chcemy sami produkować ryb, chleba i mięsa, moglibyśmy spróbować przynieść nasz miód mędrcowi, ponieważ mamy go mnóstwo... Jeśli teraz nie zbierzemy się do kupy, zginiemy w tym bezbożnym miejscu!
 ####
 ## Text 2897 ##
-
+Co za przyjęcie! Świętowaliśmy na całego. Żaden kamień nie pozostał stojącym. Naszego nowego wroga nazywa się teraz bólem głowy, a nawet stare cudowne lekarstwa naszych przyjaciół Majów już nie pomagają... Ale ten festiwal, który dla nas zorganizowali Majowie, miał swoje cele. Ponieważ teraz nasi wrogowie zostali zdemaskowani w swoich szeregach: złodzieje pochodzenia rzymskiego zamierzyli przy każdej okazji sabotować nasz zabawny wyścig łodzi! Ale łotrzyków szybko zidentyfikowano na tej uczcie. Już padli na twarz po zaledwie jednej beczce miodu pitnego! To niegodne prawdziwego człowieka z północy...
 ####
 ## Text 2898 ##
-
+Ci Majowie naprawdę nas rozśmieszają. Nie tylko wzięli nas za bogów w ich złudzeniu, ale teraz także poświęcili ostatnie resztki swoich umysłów alkoholowi. A my wykorzystaliśmy tę szansę na kradzież mapy skarbów. Po prostu nie mogliśmy oprzeć się tej pokusie! Ponieważ mapa skarbów wskazuje na tajemną wyspę, na której mieszkają tylko kobiety w legendarnym miejscu. Kobiety są bardzo piękne, a serce wojownika natychmiast wie, że jest potrzebne właśnie tam. Niech inni ignoranci robią z siebie głupców w wyścigu łodzi, a my podstrzyżemy brody i wyruszymy w podróż do raju...
 ####
 ## Text 2899 ##
-
+Tajemnicza wyspa faktycznie istnieje, ale nie widzieliśmy jeszcze żadnych kobiet. Eksploracja całej wyspy jest niemożliwa. Przed nami pojawiła się potężna ściana ognia, która nie wydaje się być z tego świata. Wejście do wnętrza wyspy jest zablokowane. Jak możemy przeniknąć przez tę ścianę ogniową? Cóż, jeszcze nie wiemy, ale myśl o mnóstwie pachnących, pięknych kobiet jest bardzo, bardzo dobrą zachętą do uruchomienia szarej materii!
 ####
 ## Text 2900 ##
-
+Wrodzy Majowie znajdują się na wszystkich wyspach. Nigdy nie zostawiaj swoich osadników samych! Twoi sojusznicy mieszkają na wschodzie, ale nie musisz ich odwiedzać - wystarczy, że się udasz bezpośrednio do portu docelowego w zielonym kółku. I pamiętaj: nie musisz osiedlać się na tej mapie!
 ####
 ## Text 2901 ##
-
+Nie czuj się zbyt bezpiecznie na swojej wyspie...
 ####
 ## Text 2902 ##
-
+Łów w rzece i nigdy nie zapominaj, że możesz zostać zaatakowany w każdym momencie...
 ####
 ## Text 2903 ##
-
+Zwróć uwagę na to, co jest dostępne na poszczególnych wyspach!
 ####
 ## Text 2904 ##
-
+Zachowaj ostrożność przy poszerzaniu osady!
 ####
 ## Text 2905 ##
-
+Powrót z Ameryki
 ####
 ## Text 2906 ##
-
+Zła Lista Zakupów
 ####
 ## Text 2907 ##
-
+Duże Przyjęcie
 ####
 ## Text 2908 ##
-
+Poszukiwanie Skarbu
 ####
 ## Text 2909 ##
-
+Kobiety
 ####
 ## Text 2910 ##
 Wykonaj wszystkie zadania!
 ####
 ## Text 2911 ##
-Mędrcy powiedzieli nam o świętym miejscu. według legendy, bogowie będą zadowolemi jeżeli zbudujemy w tym miejscu hodowlę na ich cześć.
+Mędrcy powiedzieli nam o świętym miejscu. według legendy, bogowie będą zadowoleni jeżeli zbudujemy w tym miejscu hodowlę na ich cześć.
 ####
 ## Text 2912 ##
 Zmagazynuj 200 jednostek mięsa!
@@ -9121,7 +9168,7 @@ O nie! Nie możemy wykonać wszystkich zadań!
 ####
 ## Text 2921 ##
 Rzym już nas nie przyćmiewa! Mamy pełne ręce roboty, a nasza kolonia napawa nas dumą. Droga prowadzi na północne równiny. Tam znajduje się odpowiednie miejsce do założenia wydajnej hodowli świń. Nasi gorliwi robotnicy nigdy już nie zaznają głodu! Bogowie zaś z pewnością docenią składane tam ofiary.
-Tymczasem patrol zwiadowczy donosi o spotkaniu ze starym kapłanem - pustelnikiem imieniem Majus. Majus został zaatakowany przez hordy Torgusa. Ta banda Wikingów, która nie zna żadnych świętości, ukradła mu żródło jego mocy: drogocenny amulet. Barbarzyńcy zabrali amulet do swojej świątyni. Majus błaga nas o pomoc. Pokażmy, że jesteśmy ludźmi honoru i rozpocznijmy polowanie na Torgusa!
+Tymczasem patrol zwiadowczy donosi o spotkaniu ze starym kapłanem - pustelnikiem imieniem Majus. Majus został zaatakowany przez hordy Torgusa. Ta banda Wikingów, która nie zna żadnych świętości, ukradła mu źródło jego mocy: drogocenny amulet. Barbarzyńcy zabrali amulet do swojej świątyni. Majus błaga nas o pomoc. Pokażmy, że jesteśmy ludźmi honoru i rozpocznijmy polowanie na Torgusa!
 ####
 ## Text 2922 ##
 Podążaj drogą na północ. Aby ukończyć tę misję musisz wykonać wszystkie zadania. Pokonanie wszystkich przeciwników nie wystarczy!
@@ -9208,22 +9255,22 @@ Chmury przesłaniają nam słońce!
 5. Misja Rzymian
 ####
 ## Text 2950 ##
-1. Misja Osadmicza
+1. Misja Osadnicza
 ####
 ## Text 2951 ##
-1. Misja Osadmicza
+1. Misja Osadnicza
 ####
 ## Text 2952 ##
-2. Misja Osadmicza
+2. Misja Osadnicza
 ####
 ## Text 2953 ##
-2. Misja Osadmicza
+2. Misja Osadnicza
 ####
 ## Text 2954 ##
-3. Misja Osadmicza
+3. Misja Osadnicza
 ####
 ## Text 2955 ##
-3. Misja Osadmicza
+3. Misja Osadnicza
 ####
 ## Text 2956 ##
 1. Misja Majów
@@ -9289,10 +9336,10 @@ Kampania Majów
 Kampania Majów
 ####
 ## Text 2977 ##
-Dodatkowymi Misje
+Misje Dodatkowe
 ####
 ## Text 2978 ##
-Dodatkowe Misje
+Misje Dodatkowe
 ####
 ## Text 2979 ##
 Mapa Losowa
@@ -9316,7 +9363,7 @@ Kampania Rzymian
 Konflikt/Osadnictwo
 ####
 ## Text 2986 ##
-Kmania Konfliktowo - Osadnicza
+Kampania Konfliktowo - Osadnicza
 ####
 ## Text 2987 ##
 Kampania Majów
@@ -9325,10 +9372,10 @@ Kampania Majów
 Kampania Majów
 ####
 ## Text 2989 ##
-Dodatkowe Misje
+Misje Dodatkowe
 ####
 ## Text 2990 ##
-Dodatkowe Misje
+Misje Dodatkowe
 ####
 ## Text 2991 ##
 Ilość Lądu
@@ -9364,7 +9411,7 @@ Zdobądź Święte Drzewo na południowym zachodzie!
 Pokonaj świętokradców niszczących świątynie!
 ####
 ## Text 3002 ##
-Ci świętokradcy! Nasze świątynie zostały zniszcone przez zdrajców. Zemsta będzie słodka!
+Ci świętokradcy! Nasze świątynie zostały zniszczone przez zdrajców. Zemsta będzie słodka!
 ####
 ## Text 3003 ##
 Alarm Skryptu
@@ -9409,15 +9456,15 @@ Alarm Skryptu
 Alarm Skryptu
 ####
 ## Text 3017 ##
-Nasza kolonia wciąż się rozwija, a to musi pozostać naszym nadrzędnym celem. Musimy rosnać w siłę i dążyć do wielkości. Będziemy musieli zwyciężyć w wielkich bitwach przeciwko Wikingom i Majom. Lecz bez dobrej organizacji nie uda nam się ich pokonać!
+Nasza kolonia wciąż się rozwija, a to musi pozostać naszym nadrzędnym celem. Musimy rosnąć w siłę i dążyć do wielkości. Będziemy musieli zwyciężyć w wielkich bitwach przeciwko Wikingom i Majom. Lecz bez dobrej organizacji nie uda nam się ich pokonać!
 Ziemie na północy znajdują się we władaniu plemienia Wikingów. Zwiadowcy donoszą, że prowadzące tam przejście lądowe stoi przed nami otworem, więc zaatakujemy z lądu. Jednak nasi kapłani donoszą o istnieniu legendarnego plemienia Majów. W swoich wizjach kapłani widzą żyzne i bogate ziemie Majów leżące na zachodzie. Mogłyby tam powstać ku chwale Jupitera nowe, prężne osady, lecz na drodze leży wielki ocean. Nim rozpoczniemy kampanię przeciwko Majom, musimy wybudować flotę. Niech bogowie nagrodzą nas zwycięstwem!
 ####
 ## Text 3018 ##
-Nasi wrogowie - Rzymianie urośli w siłę. Dwie potężne osady zagrażają naszej wolności. Dotychczas powrócił tylko jeden z wysłanych przez nas zwiadowców. Doniósł on o osiedlu innego plemienia Majów na południowym wschodzie. Jednak nie są oni wobec nas przyjaźnie nastawieni. Zwiadowca na próżno próbował nawiązać z nimi pokojowy kontakt. Ocalił życie jedynie dzięki mężnej walce. Ci Majowie nie chcą dzielić Świetego Drzewa z nikim!
-Kapłani widzą Wielkiego Jaguara kroczącego niespokojnie w tę i z powrotem. Koniecznie trzeba go uspokoić. Musimy zdobyć Święte Drzewo znajdujące się na południwym wschodzie. Tylko to zapeni nam jego dalszą przychylność. Jedak wpierw musimy rzucić przymierze Rzymian na kolana - ich osady leżą niędzy nami a Świętym Drzewem. Do boju!
+Nasi wrogowie - Rzymianie urośli w siłę. Dwie potężne osady zagrażają naszej wolności. Dotychczas powrócił tylko jeden z wysłanych przez nas zwiadowców. Doniósł on o osiedlu innego plemienia Majów na południowym wschodzie. Jednak nie są oni wobec nas przyjaźnie nastawieni. Zwiadowca na próżno próbował nawiązać z nimi pokojowy kontakt. Ocalił życie jedynie dzięki mężnej walce. Ci Majowie nie chcą dzielić Świętego Drzewa z nikim!
+Kapłani widzą Wielkiego Jaguara kroczącego niespokojnie w tę i z powrotem. Koniecznie trzeba go uspokoić. Musimy zdobyć Święte Drzewo znajdujące się na południowym wschodzie. Tylko to zapewni nam jego dalszą przychylność. Jednak wpierw musimy rzucić mocne przymierza Rzymian na kolana - ich osady leżą między nami a Świętym Drzewem. Do boju!
 ####
 ## Text 3019 ##
-Bogom niech będą dzięki za syte lata. Kruki Odyna wskazały naszym kapłanom święte miejsce. Tam wznieśliśmy świątynie na cześć bogów mających nas w swojej opiece. Przez długi czs sądziliśmy, że to miejsce jest naszą największą tajemnicą. Jednak podstępny Gundall zdradził jego położenie naszym wrogom. Świętokradcy zniszczyli świątynie! Gunall krótko cieszył się swym niecnie zdobytym bogactwem - gniew Odyna zabrał go do krainy umarłych! Lecz świętokradcy jeszcze nie zgrzeszyli...
+Bogom niech będą dzięki za syte lata. Kruki Odyna wskazały naszym kapłanom święte miejsce. Tam wznieśliśmy świątynie na cześć bogów mających nas w swojej opiece. Przez długi czas sądziliśmy, że to miejsce jest naszą największą tajemnicą. Jednak podstępny Gundalf zdradził jego położenie naszym wrogom. Świętokradcy zniszczyli świątynie! Gundalf krótko cieszył się swym niecnie zdobytym bogactwem - gniew Odyna zabrał go do krainy umarłych! Lecz świętokradcy jeszcze nie zgrzeszyli...
 Nasz zwiad zlokalizował osiedla wrogów. To Rzymianie i Majowie. Ciężko będzie zdobyć ich osady. Naszych nieprzyjaciół chronią potężne góry. Przełęcze są wąskie i dobrze strzeżone. Jednak z pomocą Odyna, Młot Thora zmiażdży naszych wrogów, a nasi wojownicy wyjdą z tej bitwy zwycięsko!
 ####
 ## Text 3020 ##
@@ -9427,7 +9474,7 @@ W Afryce znajdują się bogate złoża złota. Uważaj na Wikingów na północy
 Szybko pobij wroga. Będziesz potrzebować surowców i przestrzeni do rozbudowy!
 ####
 ## Text 3022 ##
-Rozszeżaj kolonię na wschód i na północ! Wykorzystaj leżące wokół narzędzia!
+Poszerzaj kolonię na wschód i na północ! Wykorzystaj leżące wokół narzędzia!
 ####
 ## Text 3023 ##
 Kampania Rzymian
@@ -9502,7 +9549,7 @@ Alarm Skryptu
 Nasi sprzymierzeńcy zostali pokonani. Teraz nasze osiedle stanie się celem ataków...
 ####
 ## Text 3047 ##
-Razem przepędzimy Nordyków z naszgo terytorium!
+Razem przepędzimy Nordyków z naszego terytorium!
 ####
 ## Text 3048 ##
 Alarm Skryptu
@@ -9517,7 +9564,7 @@ Alarm Skryptu
 Udało nam się! Nasi przyjaciele przybywają...
 ####
 ## Text 3052 ##
-Niestety, nie mogliśmy stawic czoła ich przeważającym siłom. Światłej ciwilizacji Majów zagraża upadek...
+Niestety, nie mogliśmy stawić czoła ich przeważającym siłom. Światłej cywilizacji Majów zagraża upadek...
 ####
 ## Text 3053 ##
 Alarm Skryptu
@@ -9534,24 +9581,24 @@ Kapłani jednak śpiewają inną pieśń. Snują opowieści o żyznej krainie po
 ####
 ## Text 3057 ##
 Nasza flota jest w morzu i nareszcie odkrywamy nowe krainy. Wkrótce słońce południa rozgrzeje nasze dusze i napełni nas rządzą czynu. Kilka wysp wygląda zachęcająco.
-Przed nami leży legendarne królestwo Tłustej Ziemi. W oddali widać cztery wyspy. Która z nich powinna byc naszym pierszym celem? Napotkamy wrogów czy zyskamy nowych przyjaciół? Czy w słońcu południa znajdziemy nowy dom? Ruszajmy ku ziemi obiecanej!
+Przed nami leży legendarne królestwo Tłustej Ziemi. W oddali widać cztery wyspy. Która z nich powinna być naszym pierwszym celem? Napotkamy wrogów czy zyskamy nowych przyjaciół? Czy w słońcu południa znajdziemy nowy dom? Ruszajmy ku ziemi obiecanej!
 ####
 ## Text 3058 ##
-Ten piękny kraj bardzo nam się spodobał. Wydaje się, że znależliśmy nowy dom. Przed nami rozciąga się potężny łańcuch gór. Jesteśmy poszukiwaczami przygód; chcemy zbadać całą te krainę. Koniecznie musimy więc podbić te góry nim zbudujemy port po drugiej stronie wyspy. Nasi kapłani poprosili o radę Odyna, najwyższego z naszych bogów. W ich śnie, Odyn wysłał obydwa swoje kruki. Przynisły one wieści o dziwnej, dobrze bronionej osadzie. Odyn wydawał się zaniepokojony. Teraz kapłani wzywają legendarnego wojownika Beowulfa i proszą go, by napełnił swoją odwagą serca naszych wojowników. Walka wydaje się nieunikniona!
+Ten piękny kraj bardzo nam się spodobał. Wydaje się, że znaleźliśmy nowy dom. Przed nami rozciąga się potężny łańcuch gór. Jesteśmy poszukiwaczami przygód; chcemy zbadać całą te krainę. Koniecznie musimy więc podbić te góry nim zbudujemy port po drugiej stronie wyspy. Nasi kapłani poprosili o radę Odyna, najwyższego z naszych bogów. W ich śnie, Odyn wysłał obydwa swoje kruki. Przyniosły one wieści o dziwnej, dobrze bronionej osadzie. Odyn wydawał się zaniepokojony. Teraz kapłani wzywają legendarnego wojownika Beowulf'a i proszą go, by napełnił swoją odwagą serca naszych wojowników. Walka wydaje się nieunikniona!
 ####
 ## Text 3059 ##
 Nasze statki przyniosły nas na nową ziemię. Wyspa ta wydaje się być dobrym  miejscem do założenia osady. Zwiadowcy odkryli ostatnio pozostałości dziwnej, rozwiniętej cywilizacji. Nie wiemy jednak, czy noszący pióra lud wyruszył odkrywać nowe krainy, czy też został pokonany przez biegłych w sztuce wojennej Rzymian.
-Wizje kapłanów przynoszą złowieszcze proroctwa. Mówią, że nasz lud nie zazna pokoju na tej ziemi. Kruki Odyna zataczają na niebie gniewne kręgi. Nie uda nam się dłużej unikać walki z Rzymianami żyjącymi na jednej z tych wysp. Duch Beowulfa natchnął serca naszych wojowników. Musimy ruszyć na wojnę. Dopóki są tu Rzymianie, dopóty ogień bitwy będzie buchał potężnym żarem.
+Wizje kapłanów przynoszą złowieszcze proroctwa. Mówią, że nasz lud nie zazna pokoju na tej ziemi. Kruki Odyna zataczają na niebie gniewne kręgi. Nie uda nam się dłużej unikać walki z Rzymianami żyjącymi na jednej z tych wysp. Duch Beowulf'a natchnął serca naszych wojowników. Musimy ruszyć na wojnę. Dopóki są tu Rzymianie, dopóty ogień bitwy będzie buchał potężnym żarem.
 ####
 ## Text 3060 ##
 Dotarliśmy do dużej, urodzajnej wyspy. Wydaje się, że znaleźliśmy nowy dom. Nasza nowa kolonia będzie się tu mogła rozkwitnąć; chcemy by nasi przodkowie byli z nas dumni.
-Lecz nie jesteśmy jedynymi przybyszami w tym wspaniałym zakątku świata. Zwiadowcy donoszą, że wylądowały tu także grupy osadników z plemion Rzymian i Majów. Kapłani przekazali nam mądrą radę Odyna. W ich snach opowidał o potężnym zamku w sercu wyspy. Zbudujemy ten zamek, gdyż musimy pokonać naszych nieprzyjaciół. Tak więc Młot Thora znów się uniesie nim ta ziemia będzie należeć do nas!
+Lecz nie jesteśmy jedynymi przybyszami w tym wspaniałym zakątku świata. Zwiadowcy donoszą, że wylądowały tu także grupy osadników z plemion Rzymian i Majów. Kapłani przekazali nam mądrą radę Odyna. W ich snach opowiadał o potężnym zamku w sercu wyspy. Zbudujemy ten zamek, gdyż musimy pokonać naszych nieprzyjaciół. Tak więc Młot Thora znów się uniesie nim ta ziemia będzie należeć do nas!
 ####
 ## Text 3061 ##
 Fiordy na zachodzie to doskonałe miejsce do budowy stoczni. W pobliżu fiordów znajdziesz bogate złoża różnych surowców. Cokolwiek uczynisz, próbuj nie wdawać się w walkę.
 ####
 ## Text 3062 ##
-Na północy znajduje się opuszczona wyspa. Poszukaj tam odpowiedniego miejsca do założenia osdy. Użyj pionierów do zajęcia obszaru wystarczającego do budowy, a następnie wyślij ich na nową ziemię i przekształć ich w tragarzy, budowniczych i kopaczy.
+Na północy znajduje się opuszczona wyspa. Poszukaj tam odpowiedniego miejsca do założenia osady. Użyj pionierów do zajęcia obszaru wystarczającego do budowy, a następnie wyślij ich na nową ziemię i przekształć ich w tragarzy, budowniczych i kopaczy.
 ####
 ## Text 3063 ##
 Potężny łańcuch górski chroni naszych wrogów. Jeżeli uda ci się wyrąbać przejście, narazisz się na atak z ich strony!
@@ -9962,11 +10009,11 @@ Udało nam się! Majowie przyszli nam z pomocą. Pomimo ciężkich warunków za�
 O nie, zostaliśmy pokonani!
 ####
 ## Text 3178 ##
-Walka z Mrocznym Plemieniem kosztowała nas wiele wysiłku. Nasza kolonia została niemal doszczętnie zrujnowana. Jednak nie podupadamy na duchu, gdyż zmiana Morbiusa w kamień dała nam dość sił by patrzeć w przyszłość z nadzieją. Zwiadowcy przynieśli nam też dobre wieści o dużych złożach surowców w pobliżu. Nasza kolonia ponownie stanie się rozwiniętą cywilizacją.
-Jednakże pewnego dnia przybył do nas wędrowny handlarz ze strasznymi nowinami. Z ledwością udało mu się uciec przed ścigającymi go Mrocznymi Ludzmi. Podczas ucieczki stracił cały swój dobytek. Opowiedział nam też o rejonach Mroczej Krainy, które jeszcze nie zostały zasiedlone przez Mroczne Plemię. Teraz możemy być pewni, że na naszą przyszłość nie będzie się składać wyłącznie życie w pokoju. Pomimo petryfikacji Morrbiusa zagrożenie ze strony mroku nie zostało wyeliminowane. Jeżeli nie będziemy się bronić, Mrok spadnie na nasze ziemie niczym zaraza. Pomimo to jest nadzieja: w tej walce nie będziemy zdani wyłącznie na siebie. Nasi obserwatorzy zauwarzyli ostatnio małe osady Wikingów i Majów. Oni też wiedzą o zagrożeniu ze strony Sił Mroku, i chcą zotać naszymi sprzymierzeńcami w tej walce.
+Walka z Mrocznym Plemieniem kosztowała nas wiele wysiłku. Nasza kolonia została niemal doszczętnie zrujnowana. Jednak nie podupadamy na duchu, gdyż zmiana Morbusa w kamień dała nam dość sił by patrzeć w przyszłość z nadzieją. Zwiadowcy przynieśli nam też dobre wieści o dużych złożach surowców w pobliżu. Nasza kolonia ponownie stanie się rozwiniętą cywilizacją.
+Jednakże pewnego dnia przybył do nas wędrowny handlarz ze strasznymi nowinami. Z ledwością udało mu się uciec przed ścigającymi go Mrocznymi Ludźmi. Podczas ucieczki stracił cały swój dobytek. Opowiedział nam też o rejonach Mrocznej Krainy, które jeszcze nie zostały zasiedlone przez Mroczne Plemię. Teraz możemy być pewni, że na naszą przyszłość nie będzie się składać wyłącznie życie w pokoju. Pomimo petryfikacji Morbusa zagrożenie ze strony mroku nie zostało wyeliminowane. Jeżeli nie będziemy się bronić, Mrok spadnie na nasze ziemie niczym zaraza. Pomimo to jest nadzieja: w tej walce nie będziemy zdani wyłącznie na siebie. Nasi obserwatorzy zauważyli ostatnio małe osady Wikingów i Majów. Oni też wiedzą o zagrożeniu ze strony Sił Mroku, i chcą zostać naszymi sprzymierzeńcami w tej walce.
 ####
 ## Text 3179 ##
-Nasze wysiłki, by rozwinąć naszą kolonię i zwiększyć nasze siły przed następnym spotkaniem z Mrocznym Plemieniem doprowadziły jedynie do tego, że Mroczny Lud postrzega nas teraz jako łagomy kąsek wart zagarnięcia. Pomimo zawartych sojuszy, Mrok rośnie w siłę wokłół nas. Stopniowo tracimy coraz więcej ziemi i osadników. Jupiter chyba się od nas odwrócił; jak dotąd nasze modły nie zostały wysłuchane.
+Nasze wysiłki, by rozwinąć naszą kolonię i zwiększyć nasze siły przed następnym spotkaniem z Mrocznym Plemieniem doprowadziły jedynie do tego, że Mroczny Lud postrzega nas teraz jako łakomy kąsek wart zagarnięcia. Pomimo zawartych sojuszy, Mrok rośnie w siłę wokół nas. Stopniowo tracimy coraz więcej ziemi i osadników. Jupiter chyba się od nas odwrócił; jak dotąd nasze modły nie zostały wysłuchane.
 Sama Rzymska sztuka wojenna nie ochroni nas przed Mrocznym Ludem, który wciąż się rozrasta. Musimy zaryzykować odwrót. Zwiadowcy odkryli niewielki, urodzajny obszar, który mogą zająć. Raporty pozwalają nam mieć nadzieję, że założona tam kolonia będzie łatwa do obrony. Jednak odwrót będzie niebezpieczny. Będziemy musieli przejść przez pustynię. Mroczne Plemię nie spocznie, dopóki nie schwyta nas wszystkich. Modlimy się do bogów. Oby nasze błagania obudziły w nich litość. Oby nasi sojusznicy o nas nie zapomnieli.
 ####
 ## Text 3180 ##
@@ -9975,17 +10022,17 @@ Jednak ostatnie doniesienia zwiadowców wstrząsnęły nami do głębi. Czy kied
 ####
 ## Text 3181 ##
 Jesteśmy wybrańcami bogów. Ta mordercza walka nie poszła na marne. Uwolniliśmy się od groźby, jaką stanowił Mroczny Lud. Nasza kolonia jest silna.
-Walka z Mrocznym Ludem sprawiła, że staliśmy się czujni. Tymczasem nasi sojusznicy zapomnieli chyba o zagrożeniu. Rozwijające się osiedle nie może pozostać bez obrony. Lecz właśnie o tym donoszą ambasadorowie Wikingów. Jedno z ich osiedli padnie ofiarą sił Mroku jeśli nie pospieszymy im z pomocą. Jesteśmy gotowi. W końcu walka z naszym największym wrogiem jest ważna. Jednak wyprawa do Wikingów będzie bardzo nibezpieczna. Słyszeliśmy o silnych grupach Majów - piratów. Te czarcie pomioty zawarły sojusz z siłami Mroku i spadły na tę ziemię niczym szarańcza. Musimy spróbować się przez niech przebić. Oby bogowie nadal uważali nas za swoich wybrańców.
+Walka z Mrocznym Ludem sprawiła, że staliśmy się czujni. Tymczasem nasi sojusznicy zapomnieli chyba o zagrożeniu. Rozwijające się osiedle nie może pozostać bez obrony. Lecz właśnie o tym donoszą ambasadorowie Wikingów. Jedno z ich osiedli padnie ofiarą sił Mroku jeśli nie pospieszymy im z pomocą. Jesteśmy gotowi. W końcu walka z naszym największym wrogiem jest ważna. Jednak wyprawa do Wikingów będzie bardzo niebezpieczna. Słyszeliśmy o silnych grupach Majów - piratów. Te czarcie pomioty zawarły sojusz z siłami Mroku i spadły na tę ziemię niczym szarańcza. Musimy spróbować się przez niech przebić. Oby bogowie nadal uważali nas za swoich wybrańców.
 ####
 ## Text 3182 ##
 Podejrzenie przerodziło się w pewność. Nie będziemy żyć w pokoju dopóki niedobitki Mrocznego Ludu mogą się zebrać i założyć nowe osady. Nasi sprzymierzeńcy potwierdzają to, co nasi zwiadowcy odkryli już dawno: Mroczny Lud gromadzi się na bagnach lasów nocy. Tam, pod osłoną Mroku, kilka silnych osiedli już zostało założonych przez nielicznych ocalałych Ludzi Mroku.
-Mars wzywa nas, byśmy stanęli do tej decydującej bitwy! Jednak samo męstwo Rzymskich wojowników nie podoła temu zadaniu. Mroczne plemię stało się zbyt silne. Jedynie z pomocą sprzymierzonych Wikingów i Majów będziemy mogli zebrać armię mogącą pokonać siły Mroku. Wiemy, że ta walka będzie wymagała od nas największego poświęcenia. Będziemy musieli pokonać potężne Mroczne osady leżące na środku spowitych w mroku bagien lasów nocy. Zadmijcie w rogi! Niech wszyscy bogowie wojny zawiążą potężne przymieża z nami śmiertelnikami!
+Mars wzywa nas, byśmy stanęli do tej decydującej bitwy! Jednak samo męstwo Rzymskich wojowników nie podoła temu zadaniu. Mroczne plemię stało się zbyt silne. Jedynie z pomocą sprzymierzonych Wikingów i Majów będziemy mogli zebrać armię mogącą pokonać siły Mroku. Wiemy, że ta walka będzie wymagała od nas największego poświęcenia. Będziemy musieli pokonać potężne Mroczne osady leżące na środku spowitych w mroku bagien lasów nocy. Zadmijcie w rogi! Niech wszyscy bogowie wojny zawiążą potężne przymierza z nami śmiertelnikami!
 ####
 ## Text 3183 ##
 Połącz swoje terytoria tak szybko, jak to możliwe. Jak najszybciej rozpocznij poszukiwania surowców.
 ####
 ## Text 3184 ##
-W żadnym wypadku nie atakuj Mrocznego Ludu. Na północnym zachodzie znajduje się opowiednie miejsce na nową osadę. Z pomocą targu zdobędziesz nieco towarów.
+W żadnym wypadku nie atakuj Mrocznego Ludu. Na północnym zachodzie znajduje się odpowiednie miejsce na nową osadę. Z pomocą targu zdobędziesz nieco towarów.
 ####
 ## Text 3185 ##
 Strzeż swoich budynków przed Mrocznymi szamanami. Jeżeli "wyłączysz" jakieś budynki, osadnicy zostaną w środku i szamani nie będą mogli ich przemienić.
@@ -10018,13 +10065,13 @@ Odnajdź skarb przodków!
 Wikingowie są w niebezpieczeństwie! Jak najszybciej połącz z nimi swoje terytorium.
 ####
 ## Text 3195 ##
-Żłóż ofiarę dla Thora z okazji przsilenia! Ofiaruj sto toporów bitewnych, 150 bochenków chleba, 160 porcji mięsa, 255 ryb, 200 antałków miodu pitnego, 55 sztabek złota i 600 jednostek many! Zostało ci 150 minut!
+Złóż ofiarę dla Thora z okazji przesilenia! Ofiaruj sto toporów bitewnych, 150 bochenków chleba, 160 porcji mięsa, 255 ryb, 200 antałków miodu pitnego, 55 sztabek złota i 600 jednostek many! Zostało ci 150 minut!
 ####
 ## Text 3196 ##
 To byłoby zbyt łatwe, gdyby skarb znajdował się tutaj. Szukaj dalej...
 ####
 ## Text 3197 ##
-To był błąd! Nie powiniiśmy zaczepiać Mrocznego Ludu...
+To był błąd! Nie powinniśmy zaczepiać Mrocznego Ludu...
 ####
 ## Text 3198 ##
 Masz jeszcze trzydzieści minut!
@@ -10069,12 +10116,12 @@ Alarm Skryptu
 W naszym życiu zagościł pokój. Nasza osada nabiera życia, a my wciąż ją rozbudowujemy. Z pewnością Jupiter nam sprzyja! Powinniśmy złoży ofiarę na jego cześć. Chcemy, by był nam przychylny także w przyszłości. Od powstania osady krąży pewna legenda. Starsi opowiadają o legendarnym skarbie znajdującym się na południowym zachodzie, nieprzebranym bogactwie, z którego złota można by zbudować całe miasta! Musimy koniecznie odnaleźć ten skarb, aby zapewnić sobie opiekę Jupitera po wsze czasy.
 ####
 ## Text 3212 ##
-Bogowie nam sprzyjają. Wydaje się, że uspokoiliśmy wielkiego Jaguara. Kapłani twierdzą, że w swoich wizjach widzą, jak sopkojnie odpoczywa w dżungli. Chac, bóg deszczu, i Yumkaax, bóg zbóż, także są zadowoleni. Nasze pola dają obfite plony i nikt nie musi głodować. Możemy powiększyć naszą kolonię. Zaawansowana cywilizacja rośnie.
-Jednak nasi przyjaciele nie radzą sobie zbyt dobrze. Przybył do nas na wpół zagłodzony ambasador Wikingów z wieściami o straszliwej suszy, która wpędziła osadę Wikingów w poważne tarapaty. Prosi nas o pomoc. Mamy wyruszyć jak najszybciej z zapazami żywności i surowców by połączyć nasze ziemie z osadą Wikingów na północnym zachodzie. Podczas gdy zastanawialiśmy się czy im pomóc, przypomnieliśmy sobie pewną niemal zapomnianą legendę. Nasi przodkowie opowiadali o potężnym kapłanie Wikingów wiodącym żywot pustelnika na wyspie leżącej na południowym zachodzie. Ten, komu uda się go odnaleźć, zostanie nagrodzony ogromną ilością energii magicznej! Jednak droga prowadząca do jego wyspy jest trudna. Trzeba będzie pokonać niebezpieczne śniegi, lecz myśl o nagrodzie sprawia, że jesteśmy gotowi podjąć wyzwanie!
+Bogowie nam sprzyjają. Wydaje się, że uspokoiliśmy wielkiego Jaguara. Kapłani twierdzą, że w swoich wizjach widzą, jak spokojnie odpoczywa w dżungli. Chac, bóg deszczu, i Yumkaax, bóg zbóż, także są zadowoleni. Nasze pola dają obfite plony i nikt nie musi głodować. Możemy powiększyć naszą kolonię. Zaawansowana cywilizacja rośnie.
+Jednak nasi przyjaciele nie radzą sobie zbyt dobrze. Przybył do nas na wpół zagłodzony ambasador Wikingów z wieściami o straszliwej suszy, która wpędziła osadę Wikingów w poważne tarapaty. Prosi nas o pomoc. Mamy wyruszyć jak najszybciej z zapasami żywności i surowców by połączyć nasze ziemie z osadą Wikingów na północnym zachodzie. Podczas gdy zastanawialiśmy się czy im pomóc, przypomnieliśmy sobie pewną niemal zapomnianą legendę. Nasi przodkowie opowiadali o potężnym kapłanie Wikingów wiodącym żywot pustelnika na wyspie leżącej na południowym zachodzie. Ten, komu uda się go odnaleźć, zostanie nagrodzony ogromną ilością energii magicznej! Jednak droga prowadząca do jego wyspy jest trudna. Trzeba będzie pokonać niebezpieczne śniegi, lecz myśl o nagrodzie sprawia, że jesteśmy gotowi podjąć wyzwanie!
 ####
 ## Text 3213 ##
 Pomoc ze strony naszych przyjaciół Majów nadeszła w odpowiednim momencie, by odeprzeć katastrofę, którą groziła susza. Powoli odzyskujemy siły.
-Kapłani wiedzą, że ten cud mógł się wydarzyć jedynie z pomocą bogów. Zamierzają złożyć ofiarę na cześć Thora. Ceremonia odbędzie się podczas przesilenia, gdyż według kapłanów właśnie wtedy bogowie są najblizej nas.
+Kapłani wiedzą, że ten cud mógł się wydarzyć jedynie z pomocą bogów. Zamierzają złożyć ofiarę na cześć Thora. Ceremonia odbędzie się podczas przesilenia, gdyż według kapłanów właśnie wtedy bogowie są najbliżej nas.
 ####
 ## Text 3214 ##
 Zbadaj całą wyspę! Przy pomocy pionierów zajmij obszar wystarczający do budowy małej wieży. Następnie wyślij pionierów na nowe ziemie i przekształć ich w tragarzy, budowniczych i kopaczy. Teraz możesz zacząć stawiać budynki.
@@ -10083,7 +10130,7 @@ Zbadaj całą wyspę! Przy pomocy pionierów zajmij obszar wystarczający do bud
 Dopilnuj, by Rzymianie nie odcięli ci drogi! Jest kilka możliwości przedostania się na drugą stronę góry. Jedna z wysp jest dobrym miejscem do produkcji many.
 ####
 ## Text 3216 ##
-Jedna z wysp doskonale nadaje się na kopalnię złota. Niestety twoi pionerzy wylądowali na niewłaściwej wyspie.
+Jedna z wysp doskonale nadaje się na kopalnię złota. Niestety twoi pionierzy wylądowali na niewłaściwej wyspie.
 ####
 ## Text 3217 ##
 W Poszukiwaniu Skarbu
@@ -10192,7 +10239,7 @@ Alarm Skryptu
 Dziwne istoty wylądowały na południowo-zachodnim brzegu. To chyba bogowie pragnący odwiedzić nas w naszej wspaniałej krainie - Meksyku. Wyślemy kapłana na ich spotkanie i przyjmiemy ich z wszystkimi honorami.
 ####
 ## Text 3252 ##
-Mimo prób przepędzenia złodziei złota, ich inwazja dotarła aż do naszej stolicy. Teraz rozpoczęli oblężenie. Sami nie damy rady stawić im czoła, lecz pomoc jest już w drodze. Musimy wytrwać do czsu przybycia naszych przyjaciół.
+Mimo prób przepędzenia złodziei złota, ich inwazja dotarła aż do naszej stolicy. Teraz rozpoczęli oblężenie. Sami nie damy rady stawić im czoła, lecz pomoc jest już w drodze. Musimy wytrwać do czasu przybycia naszych przyjaciół.
 ####
 ## Text 3253 ##
 Dzięki połączeniu sił udało nam się odeprzeć inwazję. Jednak nasi dzielni przyjaciele pozostają celem ataków łupieżców. Jeżeli nie pospieszymy im z pomocą, wkrótce sami znajdziemy się w ich położeniu. Musimy przegnać Wikingów z naszego kraju!
@@ -10201,22 +10248,22 @@ Dzięki połączeniu sił udało nam się odeprzeć inwazję. Jednak nasi dzieln
 Zagrożenie ze strony Wikingów zostało wyeliminowane, lecz ziemie na południu pozostają we władaniu cudzoziemców, którzy nazywają siebie Rzymianami. Czas by nasi bracia i siostry zaznali pokoju w naszym imperium. Przepędzimy najeźdźców raz na zawsze!
 ####
 ## Text 3255 ##
-Hociaż nasza ojczyzna nie jest już w rękach cudzoziemców, wciąż pozostaje celem łupieżczych najazdów. Nie mamy wyboru - musimy wyruszyć do obcych ziem i zdobyć ich główne miasto. Dopiero wtedy przestaną kraść nasze złoto.
+Chociaż nasza ojczyzna nie jest już w rękach cudzoziemców, wciąż pozostaje celem łupieżczych najazdów. Nie mamy wyboru - musimy wyruszyć do obcych ziem i zdobyć ich główne miasto. Dopiero wtedy przestaną kraść nasze złoto.
 ####
 ## Text 3256 ##
-Niezwłocznie wyslij kapłana do Rzymian na południu. Daj mu eskortę!
+Niezwłocznie wyślij kapłana do Rzymian na południu. Daj mu eskortę!
 ####
 ## Text 3257 ##
 Zabezpiecz dostawy wody. Broń rzek na wschód od miasta.
 ####
 ## Text 3258 ##
-Rozszerzaj swoje terytorium tak szybko, jak to możliwe. Inaczej twoji sojusznicy zajmą teren, którego potrzebujesz pod budowę.
+Rozszerzaj swoje terytorium tak szybko, jak to możliwe. Inaczej twoi sojusznicy zajmą teren, którego potrzebujesz pod budowę.
 ####
 ## Text 3259 ##
 Twoi sojusznicy także potrzebują ziemi. Buduj na niewielkim obszarze.
 ####
 ## Text 3260 ##
-Pamiętaj, że jesteś w Europie - wiele dróg prowadzi do Rzymu! Błyskawiczny atak nie zpewni ci zwycięstwa!
+Pamiętaj, że jesteś w Europie - wiele dróg prowadzi do Rzymu! Błyskawiczny atak nie zapewni ci zwycięstwa!
 ####
 ## Text 3261 ##
 Przybycie Bogów
@@ -10312,7 +10359,7 @@ Krótsza Przekątna
 960x960
 ####
 ## Text 3292 ##
-Włoż płytę SETTLERS IV - DODATKOWE MISJE do napędu CD-ROM!
+Włóż płytę SETTLERS IV - DODATKOWE MISJE do napędu CD-ROM!
 ####
 ## Text 3293 ##
 ???
@@ -10432,8 +10479,8 @@ Mniej Drużyn
 Więcej Drużyn
 ####
 ## Text 3332 ##
-Przykra Niespodzianka@ Pokonaj obydwie grupy Wikingów i podbij święte miejsce Majów!@Byliśmy tak blislo zwycięstwa...
-Nasze katapulty były gotowe zadać decydujący cios fortwcom Majów. Lecz nagle niebo zasnuło się czernią i nad nami rozpętałą się straszliwa burza. Nasza armia została rozbita. Na szczęście katapulty nie zostały uszkodzone. Ale teraz stoimy przed białym murem nie do pokonania. Nie możemy posunąć się na przód. Do tego właśnie dotarły złe wieści: tajemnicza siła uwięziła naszych kopaczy i budowniczych w kraterze.
+Przykra Niespodzianka@ Pokonaj obydwie grupy Wikingów i podbij święte miejsce Majów!@Byliśmy tak blisko zwycięstwa...
+Nasze katapulty były gotowe zadać decydujący cios fortecom Majów. Lecz nagle niebo zasnuło się czernią i nad nami rozpętała się straszliwa burza. Nasza armia została rozbita. Na szczęście katapulty nie zostały uszkodzone. Ale teraz stoimy przed białym murem nie do pokonania. Nie możemy posunąć się na przód. Do tego właśnie dotarły złe wieści: tajemnicza siła uwięziła naszych kopaczy i budowniczych w kraterze.
 ####
 ## Text 3333 ##
 Wyślij zwiadowców we wszystkie strony aby odnaleźć wrak statku, który miał nam dostarczyć wino. Rekrutuj głównie żołnierzy 3 poziomu!
@@ -10441,38 +10488,38 @@ Wyślij zwiadowców we wszystkie strony aby odnaleźć wrak statku, który miał
 ## Text 3334 ##
 Bahlum-Kuk@Odzyskaj swoje złoto. Aby tego dokonać, musisz zniszczyć piramidy Majów i zdobyć kamienny krąg na Wyspie Umarłych!@Cieszący się złą sławą król Majów Bahlum-Kuk i jego dzikie hordy przypuścili szturm na nasze zachodnie prowincje. Złupił bogatą stolicę regionu, po czym zniknął tak szybko jak się pojawił, zabierając ze sobą prawie całą naszą rezerwę złota!
 
-Rybacy donieśli nam, że gdy Majowie odpływali ze swoim łupem, rozpętał się straszliwy sztorm. Później rybacy znaleźli deski, połamane maszty i kawałki żagli na plażach wielu wysepek. Wydaje się, że staki Majów padły ofiarą sztormu!
+Rybacy donieśli nam, że gdy Majowie odpływali ze swoim łupem, rozpętał się straszliwy sztorm. Później rybacy znaleźli deski, połamane maszty i kawałki żagli na plażach wielu wysepek. Wydaje się, że statki Majów padły ofiarą sztormu!
 
-Lecz czy nasze złoto zostało na zawsze stracone? Czy może niektórym z grabieżców udało się ocalić swoje życie oraz łup? Aby się o tego dowiedzieć, Cezar wysłał mnie z niewielkim oddziałem na terytorium Majów. Nieświadomi bliskosci ich osiedli, rozpoczęliśmy budowę obozu. Nagle odkryliśmy jednego z ich wojowników próbującego nas szpiegować! W obliczu naszych przeważających sił, zdradził miejsce ukrycia skarbu: łupieżcy złożyli dużą część złota w piramidach Majów! Reszta zaś znajduje się wciąż na wyspie, gdzie Majowie pochowali ofiary sztormu...
+Lecz czy nasze złoto zostało na zawsze stracone? Czy może niektórym z grabieżców udało się ocalić swoje życie oraz łup? Aby się o tego dowiedzieć, Cezar wysłał mnie z niewielkim oddziałem na terytorium Majów. Nieświadomi bliskości ich osiedli, rozpoczęliśmy budowę obozu. Nagle odkryliśmy jednego z ich wojowników próbującego nas szpiegować! W obliczu naszych przeważających sił, zdradził miejsce ukrycia skarbu: łupieżcy złożyli dużą część złota w piramidach Majów! Reszta zaś znajduje się wciąż na wyspie, gdzie Majowie pochowali ofiary sztormu...
 ####
 ## Text 3335 ##
-Rzymianie mają bardzo mało narzędzi i materiałów budowlanych. Zastanów się więc nad kolejnością, a jakiej będziesz stawiać budynki! Notabene, górnikom nie trzeba dostarczyć żywności natychmiest. Robią się głodni dopiero po pracy...
+Rzymianie mają bardzo mało narzędzi i materiałów budowlanych. Zastanów się więc nad kolejnością, a jakiej będziesz stawiać budynki! Notabene, górnikom nie trzeba dostarczyć żywności natychmiast. Robią się głodni dopiero po pracy...
 ####
 ## Text 3336 ##
 Camelot@Przepędź najeźdźców z Brytyjskiej ziemi!@Kilka tygodni temu, rycerze Okrągłego Stołu zwyciężyli w bitwie z wojskami Mordreda. Lecz cena zwycięstwa była wysoka: wkrótce po walce Król Artur zmarł na skutek odniesionych obrażeń.
-Przygotowaliśmy wspałe uroczystości pogrzebowe, lecz w dniu pochówku okazało się, że ciało króla zniknęło...
+Przygotowaliśmy wspaniałe uroczystości pogrzebowe, lecz w dniu pochówku okazało się, że ciało króla zniknęło...
 
 Eryk, książę Wikingów, próbuje teraz wykorzystać naszą sytuację. Sześć jego armii otoczyło Camelot. Wielu z naszych rycerzy poległo lub jeszcze nie wyleczyło odniesionych ran, dlatego postali walczyć tym zacieklej, aby potężny miecz Excalibur nie dostał się w ręce wroga.
 ####
 ## Text 3337 ##
-Wikingowie mają skłonności do niszczenia strażnic! Zabezpiecz ważne rejony wiżami strażniczymi. Dzięki temu będziesz dobrze przygotowany na ataki wroga!
+Wikingowie mają skłonności do niszczenia fortyfikacji! Zabezpiecz ważne rejony wieżami obserwacyjnymi. Dzięki temu będziesz dobrze przygotowany na ataki wroga!
 ####
 ## Text 3338 ##
-Spisek@Podbij całą mapę!@Przed nami leżał rzęsiście oświetlony obóz barbarzyńców. Dzikie śpiewy rozbrzemiewały w mroku nocy. Mieliśmy nadzieję, że obcy nie odkryli naszej obecności. Przy wilkim ognisku widzieliśmy członków trzech plemion. Wydawało się, że o czymś dyskutują i nie mogą dojść do porozumienia.
+Spisek@Podbij całą mapę!@Przed nami leżał rzęsiście oświetlony obóz barbarzyńców. Dzikie śpiewy rozbrzmiewały w mroku nocy. Mieliśmy nadzieję, że obcy nie odkryli naszej obecności. Przy wielkim ognisku widzieliśmy członków trzech plemion. Wydawało się, że o czymś dyskutują i nie mogą dojść do porozumienia.
 Dalej na północy nasi zwiadowcy odkryli kolejne obozowisko, lecz nie wiemy niczego o jego mieszkańcach. Czyżby ten czwarty obóz był powodem kłótni?
-Następnego dnia stwierdziliśmy, że nasza obecność nie pozostała niezuważona, ponieważ tylko jeden z naszych zwiadowców powrócił. Był poważnie ranny. Przygotowujemy się więc do czkających nas bitew...
+Następnego dnia stwierdziliśmy, że nasza obecność nie pozostała niezauważona, ponieważ tylko jeden z naszych zwiadowców powrócił. Był poważnie ranny. Przygotowujemy się więc do czkających nas bitew...
 ####
 ## Text 3339 ##
 Na półwyspie znajdują się złoża złota. Można tam dotrzeć przejściem pomiędzy pierwszymi kopalniami rudy. Aby obronić kopalnie, musisz zabezpieczyć je dużą wieżą!
 ####
 ## Text 3340 ##
-Mroczny Grom@Wydostań się z krateru i zdobądź osady należące do Cacau, Bahlum-Kuk i K'an Zu!@Żeglowaliśmy po morzu przy doskonałej pogodzie, gdy nagle, w południe niebo zasnuły nieprzeniknione ciemności. Wkrótce potem dopadł nas poężny sztorm. Całkowicie nas zaskoczył i zdezorientował; myśleliśmy tylko jak ujść z tego z życiem, podczs gdy rozszalały uragan pchał nas przed sobą. Smagał nas deszcz, a wicher zawodził niczym potępione dusze. Nikt nie umie powiedzieć jak długo sztorm bawił się nami ani czy nasza wola przetrwania załamała by się gdyby nie było z nami naszych kapłanów. Lecz nawet ich wsparcie nie zapobiegło uniesieniu naszych statków z wód oceanu. Gdy wznieśliśmy się w powietrze, straciliśmy przytomność...
+Mroczny Grom@Wydostań się z krateru i zdobądź osady należące do Cacau, Bahlum-Kuk i K'an Zu!@Żeglowaliśmy po morzu przy doskonałej pogodzie, gdy nagle, w południe niebo zasnuły nieprzeniknione ciemności. Wkrótce potem dopadł nas potężny sztorm. Całkowicie nas zaskoczył i zdezorientował; myśleliśmy tylko jak ujść z tego z życiem, podczas gdy rozszalały huragan pchał nas przed sobą. Smagał nas deszcz, a wicher zawodził niczym potępione dusze. Nikt nie umie powiedzieć jak długo sztorm bawił się nami ani czy nasza wola przetrwania załamała by się gdyby nie było z nami naszych kapłanów. Lecz nawet ich wsparcie nie zapobiegło uniesieniu naszych statków z wód oceanu. Gdy wznieśliśmy się w powietrze, straciliśmy przytomność...
 
 Kiedy się obudziliśmy, ból oznajmił nam, że wciąż jeszcze żyjemy. Lecz gdzie się znajdowaliśmy?
 Wokół nas wznosiły się ogromne góry. Nie było żywności ani wody, więc aby przeżyć musieliśmy znaleźć sposób na wydostanie się z tego krateru. Na dodatek, w okolicy znajdowali się wrogo nastawieni tubylcy. Zwiadowcy donoszą o ludziach o skórze koloru brązu noszących dziwne ozdoby z piór...
 ####
 ## Text 3341 ##
-Medycy są błogosławieństwem dla wojska! Wrogowie na północy strzegą ogromego skarbu!
+Medycy są błogosławieństwem dla wojska! Wrogowie na północy strzegą ogromnego skarbu!
 ####
 ## Text 3342 ##
 Przystań@Zniszcz stocznię wroga!@Na północnym wschodzie znajduje się dobrze broniona zatoka, w której wróg buduje swoją flotę. Jeżeli uda ci się zniszczyć te doki, produkcja statków zostanie wstrzymana. Wówczas nic nie będzie w stanie nas powstrzymać!
@@ -10481,23 +10528,23 @@ Przystań@Zniszcz stocznię wroga!@Na północnym wschodzie znajduje się dobrze
 Zbuduj promy i okręty wojenne. Dobrym miejscem do lądowania jest znajdująca się w rękach wroga wyspa na północnym zachodzie. Przeciwnik nie będzie się nas tam spodziewał!
 ####
 ## Text 3344 ##
-Lano Estacado@Zdobądź oazę w Lano Estacado! Odszukaj Kamienny Krzyż i zajmij cały atol! Zniszcz zamek Wikingów oraz Piramidy Majów!@Wieki temu rdzenni mieszkańcy, plemię Majów, zostało wyparte przez obcych żeglarzy. Nie byli przygotowani do odparcia niespodziewanej inwazjii hord Wikingów! Tylko jeden kapłan zdołał uciec łodzią w ostatniej chwili. Zakopał swój skarb na małym, ukrytym atolu otoczonym przez zdradzieckie rafy, i wzniósł w tym miejscu kamienny krzyż!
+Lano Estacado@Zdobądź oazę w Lano Estacado! Odszukaj Kamienny Krzyż i zajmij cały atol! Zniszcz zamek Wikingów oraz Piramidy Majów!@Wieki temu rdzenni mieszkańcy, plemię Majów, zostało wyparte przez obcych żeglarzy. Nie byli przygotowani do odparcia niespodziewanej inwazji hord Wikingów! Tylko jeden kapłan zdołał uciec łodzią w ostatniej chwili. Zakopał swój skarb na małym, ukrytym atolu otoczonym przez zdradzieckie rafy, i wzniósł w tym miejscu kamienny krzyż!
 
 Odkryliśmy ten sekret w starym zwoju. Pchani żądzą odnalezienia tego legendarnego skarbu, wyruszyliśmy na poszukiwanie atolu z kamiennym krzyżem...
 
 Po wielu miesiącach poszukiwań, trafiliśmy na wyspę. To musiała być właśnie ta, której szukaliśmy! W jej sercu trafiliśmy na wielką pustynię, która odpowiadała opisowi. Droga przez pustynię oznaczona była kamiennymi kolumnami, mającymi ustrzec podróżników przez zabłądzeniem. Stąd wzięła się nazwa okolicy - Lana Estacado!
 
-Po środku pustyni znajowała się cudownie piękna oaza. To tu mieliśmy odnaleźć wskazówki, które doprowadziłyby nas do właściwego celu naszej podróży: małego atolu, który był miejscem, gdzie spoczął ogromny skarb, oznaczony kaminnym krzyżem!
+Po środku pustyni znajdowała się cudownie piękna oaza. To tu mieliśmy odnaleźć wskazówki, które doprowadziłyby nas do właściwego celu naszej podróży: małego atolu, który był miejscem, gdzie spoczął ogromny skarb, oznaczony kamiennym krzyżem!
 
-Lecz Majowie i Wikingowie także dowiedzieli się o tym skarbie! Próbowali dostać się do oazy przed nami! Majowie mieszkali na południe od pustyni a Wikingowie wylądowali we wschodniej części wyspy. Siły Wikingów robuły wrażenie: wybudowali potężną fortecę na małym cyplu! Jednak byliśmy uzbrojeni i gotowi stoczyć poważną bitwę aby zdobyć te legendarne bogactwa!
+Lecz Majowie i Wikingowie także dowiedzieli się o tym skarbie! Próbowali dostać się do oazy przed nami! Majowie mieszkali na południe od pustyni a Wikingowie wylądowali we wschodniej części wyspy. Siły Wikingów robiły wrażenie: wybudowali potężną fortecę na małym cyplu! Jednak byliśmy uzbrojeni i gotowi stoczyć poważną bitwę aby zdobyć te legendarne bogactwa!
 ####
 ## Text 3345 ##
-Rozszeżaj swoje terytorium tak szybko, jak to będzie możliwe i zajmij północny półwysep! Złoto znajdziesz jedynie na północny zachód od wielkiej pustyni! Musisz zająć ten teren przed Majami!
+Rozszerzaj swoje terytorium tak szybko, jak to będzie możliwe i zajmij północny półwysep! Złoto znajdziesz jedynie na północny zachód od wielkiej pustyni! Musisz zająć ten teren przed Majami!
 ####
 ## Text 3346 ##
 Limes@Pokonaj Wikingów i Rzymian!@Wikingowie zaatakowali nas na naszym terytorium. Złupili nasze statki kupieckie, po czym je zatopili. Wycofali się nie wdając się z nami w walkę, ale udało nam się niezauważenie podążyć ich śladem. Wikingowie przybili do brzegu w dwóch miejscach. My wylądowaliśmy nieopodal i założyliśmy osadę. Natychmiast wysłaliśmy zwiadowców, którzy wrócili z wiadomościami o świętym cmentarzu. Zwyczajem Wikingów, w grobie każdego poległego wojownika znajdowała się jego broń. Teraz to miejsce uchodzi za przeklęte, a każdy przybysz, który postawi tam stopę ma tego gorzko żałować...
 
-Nasz zwiad odkrył linie obronne innego ludu za murem na północy. Nie byli w stanie wejść głębiej w ich terytorium nie narażając się na wykrycie. Przed fortyfikacjami leży jednak tajemniczy krater, który według tubylców ma strasliwą moc...
+Nasz zwiad odkrył linie obronne innego ludu za murem na północy. Nie byli w stanie wejść głębiej w ich terytorium nie narażając się na wykrycie. Przed fortyfikacjami leży jednak tajemniczy krater, który według tubylców ma straszliwą moc...
 ####
 ## Text 3347 ##
 Nie kradnij broni z cmentarza Wikingów! Otoczona ogniem głowa pośrodku obdarzy cię uzdrawiającym błogosławieństwem!
@@ -10512,10 +10559,10 @@ Produkuj manę! Przekonaj wrogów, by przeszli na twoją stronę! Zgromadź wyst
 ## Text 3350 ##
 Meteory@Pokonaj Wszystkich Wrogów!@Trzy legiony wylądowały na tej wyspie by odeprzeć wspólnego, odzianego w skóry wroga. Lecz po krótkim czasie z nieznanych powodów pomiędzy naszymi legionami pojawiło się napięcie.
 
-Nagle zostaliśmy zaatakowani przez naszych rodaków. Grupa zwiadowców doniosła o uderzeniach meteorytów na północny zachód od nas. Ponoć w pobliskich górach miał miejce upadek szczególnie dużego meteorytu, a wokoło złoto leży na ziemi. Lecz są tam bardzo dziwne kamienie, w pobliżu których ludzie stają się agresywni...
+Nagle zostaliśmy zaatakowani przez naszych rodaków. Grupa zwiadowców doniosła o uderzeniach meteorytów na północny zachód od nas. Ponoć w pobliskich górach miał miejsce upadek szczególnie dużego meteorytu, a wokoło złoto leży na ziemi. Lecz są tam bardzo dziwne kamienie, w pobliżu których ludzie stają się agresywni...
 Dalej na północ zwiadowcy odkryli ruiny miasta pośród pustkowi leżących za rozległymi bagnami. Jego mieszkańcy musieli walczyć ze sobą nawzajem, ponieważ miasto zostało doszczętnie zniszczone, a nie widać było żadnych śladów ataku z zewnątrz.
 
-Na wschód od tego miejsca widziano przynajmniej trzy plemiona Majów. W każdym znich było zdumiewająco wielu kapłanów. Wokół ich świątyń płonął wieczny ogień i wydaje się, że zebrali oni kamienie podobne do tych, które zaćmiły umysły naszych braci.
+Na wschód od tego miejsca widziano przynajmniej trzy plemiona Majów. W każdym z nich było zdumiewająco wielu kapłanów. Wokół ich świątyń płonął wieczny ogień i wydaje się, że zebrali oni kamienie podobne do tych, które zaćmiły umysły naszych braci.
 
 Musimy zdobyć te kamienie!
 ####
@@ -10523,7 +10570,7 @@ Musimy zdobyć te kamienie!
 Skoncentruj się przede wszystkim na produkcji many! Dobrze zaopatrzone magazyny pomogą ci przetrwać w czasie kryzysu. Uderz w przeciwnika Gniewem Jupitera!
 ####
 ## Text 3352 ##
-Wrzód@Odbij świętą wyspę i zniszcz świątynie Majów@Podczas wielkiej uczty z Omekami, ci plugawi zdrajcy nagle wyciągnęli broń i nas zaatakowali. Jednym zgubnym uderzeniem zdobyli naszą świętą wyspę. Cżęść moich ludzi zdołała umknąć do tego opuszczonego osiedla. Podczas ucieczki, przechodziliśmy blisko osiedla Rzymian i nierozważny młokos Teto zabił wartownika. Obawiam się, ze Rzymianie będą chcieli go pomścić. Zostaliliśmy za sobą mały oddział mający osłaniać naszą ucieczkę.
+Wrzód@Odbij świętą wyspę i zniszcz świątynie Majów@Podczas wielkiej uczty z Omekami, ci plugawi zdrajcy nagle wyciągnęli broń i nas zaatakowali. Jednym zgubnym uderzeniem zdobyli naszą świętą wyspę. Część moich ludzi zdołała umknąć do tego opuszczonego osiedla. Podczas ucieczki, przechodziliśmy blisko osiedla Rzymian i nierozważny młokos Teto zabił wartownika. Obawiam się, ze Rzymianie będą chcieli go pomścić. Zostawiliśmy za sobą mały oddział mający osłaniać naszą ucieczkę.
 
 Ledwie dotarliśmy do opuszczonej osady, a naszym budynkom zagrozili szpiedzy wroga. Nadchodzą po cichu i powodują, że nasze budynki się zawalają. Wykonują swoje niecne zadanie tak szybko, że mieszkańcom nie udaje się nawet uciec i ocalić życie.
 
@@ -10536,11 +10583,11 @@ Zwiadowca doniósł, że Omekowie połączyli swoje siły z Aztekami. Ukarzemy A
 Szybko połącz swoje ziemie z miejscem lądowania! Wykorzystując wieże nie zdobędziesz bogatych zasobów! Aztekowie zajęli znaczącą część pustyni. Rozbieranie budynków pozwoli ci zaoszczędzić materiały budowlane!
 ####
 ## Text 3354 ##
-W Poszukiwaniu Mjoelnira@Zajmij trzy święte miejsca i przepędź wrogie plemiona!@Podczas uczty Loki, przyrodni brat Thora, zaczrował Odyna przy pomocy magicznej substancji. Kiedy oczy wszystkich zwócone były ku sparaliżowanemu Ojcu Bogów, Lokiemu udało się wykaść Młot Thora. Odebrało to Thorowi jego moc i nie był on w stanie pomóc Odynowi.
+W Poszukiwaniu Mjoelnira@Zajmij trzy święte miejsca i przepędź wrogie plemiona!@Podczas uczty Loki, przyrodni brat Thora, zaczarował Odyna przy pomocy magicznej substancji. Kiedy oczy wszystkich zwrócone były ku sparaliżowanemu Ojcu Bogów, Lokiemu udało się wykraść Młot Thora. Odebrało to Thorowi jego moc i nie był on w stanie pomóc Odynowi.
 
 Jako że Loki nie był w stanie zapanować nad mocą Młota, ukrył go pod olbrzymim skalnym klifem. Lecz nawet tam niesamowita moc Młota Thora nie mogła zostać stłumiona. Chociaż Młot nie może sam powrócić do swego właściciela, daje wyraźne sygnały odnośnie swojego położenia!
 
-Gromowłady schronił się wśród nas i prosi ciebie, Espena z Sokolej Wyspy, o pomoc w odnalezieniu Młota. Thor powiedział nam też, że Loki ukrył również trzy sładniki antidotum w trzech miejscach nieopodal Młota.
+Gromowładny schronił się wśród nas i prosi ciebie, Espena z Sokolej Wyspy, o pomoc w odnalezieniu Młota. Thor powiedział nam też, że Loki ukrył również trzy składniki antidotum w trzech miejscach nieopodal Młota.
 Pamiętaj, że jedynie kapłani Odyna mogą wydobyć Młot z ukrycia. Zajmij górę ze złożami węgla zanim dotrą do niej Majowie.
 ####
 ## Text 3355 ##
@@ -10549,7 +10596,7 @@ Pamiętaj, że jedynie kapłani Odyna mogą wydobyć Młot z ukrycia! Zajmij gó
 ## Text 3356 ##
 Osiedlenie@Pokonaj Wikingów i Majów!@Wybrzeże jest nieprzyjazne, nie mogliśmy tam pozostać. Brakowało wody, nie było też ziem nadających się pod uprawę. Zwiadowcy odkryli nieckowatą dolinę, która powinna zapewnić nam lepsze warunki. Wyruszamy.
 
-Po drodze inny zwiadowca doniósł, że jego grupa została zaatakowana bez powodu. On sam zdążył się ukryć i tylko dzięki temu udało mu się uciec. Napastnicy nosili ozdoby z piór, a ich skóra miała ciemny odcień. Grupa zwiadowców natrafiła też na Wikingów, którzy byli do nas wyrażnie wrogo nastawieni.
+Po drodze inny zwiadowca doniósł, że jego grupa została zaatakowana bez powodu. On sam zdążył się ukryć i tylko dzięki temu udało mu się uciec. Napastnicy nosili ozdoby z piór, a ich skóra miała ciemny odcień. Grupa zwiadowców natrafiła też na Wikingów, którzy byli do nas wyraźnie wrogo nastawieni.
 
 Wygląda na to, że będziemy musieli pokonać dwóch wrogów.
 ####
@@ -10557,7 +10604,7 @@ Wygląda na to, że będziemy musieli pokonać dwóch wrogów.
 Ruda pobłyskuje na dnie długiej doliny! Pagórkowaty rejon na północy to dobre miejsce do założenia winnic!
 ####
 ## Text 3358 ##
-Las Sherwood@Znajdź i zdobądź kryjówkę Robin Hooda!@Poszukiwania Ribin Hooda zaprowadziły cię na to wybrzerze. Kapłan mówi ci, że nadszedł czas, by podjąć decyzję. Wybór należy do ciebie...
+Las Sherwood@Znajdź i zdobądź kryjówkę Robin Hooda!@Poszukiwania Robin Hooda zaprowadziły cię na to wybrzeże. Kapłan mówi ci, że nadszedł czas, by podjąć decyzję. Wybór należy do ciebie...
 Kilku zwiadowców, którym udało się powrócić z pierwszego rekonesansu zameldowało o potężnych, brodatych i wrogo nastawionych wojownikach. Oby nie zabrakło ci odwagi i determinacji by zakończyć poszukiwania sukcesem... i przeżyć!
 ####
 ## Text 3359 ##
@@ -10569,10 +10616,10 @@ Otoczeni@Pokonaj wszystkich przeciwników!@Sławny rzymski dowódca opiewany w w
 Pomimo heroicznej walki, lojalni Rzymianie zostali niemalże pokonani w wielkiej bitwie! Otoczeni przez cztery wrogie plemiona niedobitkowie czekają na ostateczny atak wroga! Czy znajdzie się jakieś wyjście z tej matni?
 ####
 ## Text 3361 ##
-Spróbuj pokonać patrole na pustyni atakując z zaskoczenia! Na północy znajdziesz bogatą w złoża górę! Zapwnij sobie dostęp do oceanu - w tej misji okręty będą bardzo pomocne...
+Spróbuj pokonać patrole na pustyni atakując z zaskoczenia! Na północy znajdziesz bogatą w złoża górę! Zapewnij sobie dostęp do oceanu - w tej misji okręty będą bardzo pomocne...
 ####
 ## Text 3362 ##
-Krzyż@Zdobądź Święty Krzyż Zachodu!Hańba! Nasi właśni bracia odmawiają nam dostępu do świątyń. Musimy rozszeżać swoje terytorium na zachód, aż krzyż znajdzie się w jego obrębie. Kiedy świątynia znajdzie się w naszych rękach, będziemy mogli zapewnić wiernym swobodny dostęp do miejsc kultu.
+Krzyż@Zdobądź Święty Krzyż Zachodu!Hańba! Nasi właśni bracia odmawiają nam dostępu do świątyń. Musimy rozszerzać swoje terytorium na zachód, aż krzyż znajdzie się w jego obrębie. Kiedy świątynia znajdzie się w naszych rękach, będziemy mogli zapewnić wiernym swobodny dostęp do miejsc kultu.
 ####
 ## Text 3363 ##
 Krajobraz jest wyjątkowo nieprzyjazny. Bardzo przydatni okażą się pionierzy! Miejsca pod budowę wybieraj ze szczególną rozwagą!
@@ -10584,7 +10631,7 @@ Podbij osiedle Wikingów na zachodzie wyspy.
 Zniszcz małą świątynię na południowo - wschodnim krańcu królestwa Majów.
 ####
 ## Text 3366 ##
-Zajmij świete ziemie Wikingów i Majów. Grobowców Wikingów strzeże posąg ogromnego wojownika. Nad cmentarzyskiem Majów czuwa wielka kamienna głowa.
+Zajmij święte ziemie Wikingów i Majów. Grobowców Wikingów strzeże posąg ogromnego wojownika. Nad cmentarzyskiem Majów czuwa wielka kamienna głowa.
 ####
 ## Text 3367 ##
 pusty
@@ -10620,7 +10667,7 @@ Wilczyca jest niezwykle pobudzona. Nasi kapłani dostrzegli błysk szaleństwa w
 Od samego początku dysponujemy statkiem. Odrobina zwiadu na zachodzie nie zaszkodzi, a może pomóc...
 ####
 ## Text 3377 ##
-Przemarsz przez całe królestwo Majów może być nieco ryzykowny. Ale może istnieje inna droga do światyni?
+Przemarsz przez całe królestwo Majów może być nieco ryzykowny. Ale może istnieje inna droga do świątyni?
 ####
 ## Text 3378 ##
 Zbuduj silną fortecę i wyburz pozostałe wieże.
@@ -11119,7 +11166,7 @@ Teraz przyspieszymy nieco rozwój twojego osiedla. Nauczysz się bowiem zakłada
 Wiesz już, że Tragarze zajmują się transportem wewnątrz osiedla. Żeby opuścić jego granice potrzebne będą osły.
 ####
 ## Text 3542 ##
-xxxxxx
+Zbuduj farmę osłów w wyznaczonym miejscu!
 ####
 ## Text 3543 ##
 Twoje osiedle ma już hodowlę osłów oraz odpowiednie zapasy ziarna i wody.
@@ -11152,7 +11199,7 @@ Po zgromadzeniu niezbędnych materiałów możesz już wysłać wóz w drogę.
 Obserwuj, jak Pionierzy zakładają nową kolonię.
 ####
 ## Text 3553 ##
-To chyba odpowiednie miejsce na nowe osiedle, nie sądzisz? Rozładuj wóz i zacznij budowę. Słuszy do tego podświetlony przycisk. Przeskocz o minutę do przodu naciskając F12.
+To chyba odpowiednie miejsce na nowe osiedle, nie sądzisz? Rozładuj wóz i zacznij budowę. Służy do tego podświetlony przycisk. Przeskocz o minutę do przodu naciskając F12.
 ####
 ## Text 3554 ##
 Korzystając z menu dla specjalistów zamień Pionierów w zwykłych Tragarzy.
@@ -11182,7 +11229,7 @@ Teraz wyślij karawanę do targowiska w nowym osiedlu.
 Dostarcz kamienie do drugiego targowiska.
 ####
 ## Text 3563 ##
-Obydwa targowiska połaczył szlak handlowy. Teraz sprecyzuj, jakie dobra będą między nimi wymieniane.
+Obydwa targowiska połączył szlak handlowy. Teraz sprecyzuj, jakie dobra będą między nimi wymieniane.
 ####
 ## Text 3564 ##
 Wybuduj w kolonii mała wieżę.
@@ -11207,7 +11254,7 @@ Nowa kolonia potrzebuje jeszcze odpowiednich rzemieślników. Na początek przyd
 ####
 ## Text 3571 ##
 Witaj w siódmej misji treningowej!
-Nadeszłą pora byś zgłębił tajniki magii kapłańskiej.
+Nadeszła pora byś zgłębił tajniki magii kapłańskiej.
 ####
 ## Text 3572 ##
 W wyznaczonym miejscu wybuduj małą świątynię.
@@ -11225,7 +11272,7 @@ Rzymianie szczycą się swymi winami. twoim zadaniem będzie ustanowienie sprawn
 Ustaw odpowiednio obszar roboczy winnicy.
 ####
 ## Text 3577 ##
-Każda winnica musi mieć swój obszar roboczy. Najlepiej, jeśli umjieścisz je po nasłonecznionej stronie wzgórz.
+Każda winnica musi mieć swój obszar roboczy. Najlepiej, jeśli umieścisz je po nasłonecznionej stronie wzgórz.
 ####
 ## Text 3578 ##
 Wybuduj teraz dużą świątynię.
@@ -11249,7 +11296,7 @@ W Centrum Dowodzenia zobaczysz menu kontekstowe Kapłana. Okrągły przycisk po 
 Rzuć zaklęcie "Dar od boga".
 ####
 ## Text 3585 ##
-Kliknij na ikonie zaklęcia "Dar od boga" potem rzuć zaklęcie klikajac w pobliżu Kapłana.
+Kliknij na ikonie zaklęcia "Dar od boga" potem rzuć zaklęcie klikając w pobliżu Kapłana.
 ####
 ## Text 3586 ##
 Właśnie rzuciłeś swoje pierwsze zaklęcie!
@@ -11280,7 +11327,7 @@ By rozszerzać i bronić swojego państwa musisz budować wieże i zamki a nast�
 Teraz zaznacz wieżę!
 ####
 ## Text 3595 ##
-Żeby wieża spełniała swoją funkcję musisz w niej umieścić co najmniej jednego Rycerza. Im wiecej żołnierzy tym trudniejsza do zdobycia będzie dana twierdza.
+Żeby wieża spełniała swoją funkcję musisz w niej umieścić co najmniej jednego Rycerza. Im więcej żołnierzy tym trudniejsza do zdobycia będzie dana twierdza.
 ####
 ## Text 3596 ##
 W Centrum Dowodzenia widzisz teraz menu kontekstowe dla wież. Dwa przyciski ze strzałkami pozwolą ci umieścić w budynku minimalny lub maksymalny garnizon.
@@ -11346,7 +11393,7 @@ Wybierz typ specjalisty, którego zamierzasz powołać a następnie podaj liczb�
 pusty
 ####
 ## Text 3617 ##
-xxx
+Nie tylko jednostki wojskowe, ale także specjaliści mogą zostać zaatakowani przez żołnierzy wroga. Upewnij się, że twój złodziej unika tego niebezpieczeństwa.
 ####
 ## Text 3618 ##
 Powołaj dziesięciu Rycerzy trzeciego poziomu.
@@ -11376,7 +11423,7 @@ Przed atakiem twoi żołnierze powinni utworzyć zwartą grupę.
 Wybuduj siedzibę Uzdrowiciela we wskazanym miejscu.
 ####
 ## Text 3627 ##
-Twoi posiniaczeni żołnierze będąpotrzebowali pomocy lekarza.
+Twoi posiniaczeni żołnierze będą potrzebowali pomocy lekarza.
 ####
 ## Text 3628 ##
 Obserwuj, jak Uzdrowiciel leczy rannych żołnierzy.
@@ -11385,7 +11432,7 @@ Obserwuj, jak Uzdrowiciel leczy rannych żołnierzy.
 Wyślij rannych żołnierzy do siedziby Uzdrowiciela.
 ####
 ## Text 3630 ##
-Gratualcje!
+Gratulacje!
 Ukończyłeś ósmą misję treningową.
 ####
 ## Text 3631 ##
@@ -11417,7 +11464,7 @@ Wybuduj ogniomiot w warsztacie.
 Ogniomiot to potężna machina wojenna Majów. Wystrzeliwuje ona wielkie kule ognia w kierunku wrogich budynków.
 ####
 ## Text 3640 ##
-Ogniomioty potrzebują do działąnia prochu strzelniczego, wytwarzanego przez Chemików z węgla i siarki.
+Ogniomioty potrzebują do działania prochu strzelniczego, wytwarzanego przez Chemików z węgla i siarki.
 ####
 ## Text 3641 ##
 Wybuduj kopalnię siarki w wyznaczonym miejscu.
@@ -11438,7 +11485,7 @@ Obserwuj proces produkcji prochu strzelniczego.
 Proch wytwarzany jest w pracowni Chemika. Upewnij się, że masz odpowiedni jego zapas. W przeciwnym wypadku twój ogniomiot będzie bezużyteczny.
 ####
 ## Text 3647 ##
-Przygotuj odpowiednią ilość amunicji dla ogniomiota.
+Przygotuj odpowiednią ilość amunicji dla ogniomiotu.
 ####
 ## Text 3648 ##
 Załadunek amunicji na ogniomioty może wyglądać dwojako: automatycznie - jeśli przesuniesz machinę w pobliże sterty amunicji, lub ręcznie - przy użyciu odpowiedniego przycisku.
@@ -11447,7 +11494,7 @@ Załadunek amunicji na ogniomioty może wyglądać dwojako: automatycznie - jeś
 Zaatakuj wieżę ogniomiotem.
 ####
 ## Text 3650 ##
-Jeden z twoich Kapłanów został uwięziony w wieży i musisz go uwolnić. To zadanie w sam raz dla ogniomiota. Jako eskortę wyślij wojowników z dmuchawkami.
+Jeden z twoich Kapłanów został uwięziony w wieży i musisz go uwolnić. To zadanie w sam raz dla ogniomiotu. Jako eskortę wyślij wojowników z dmuchawkami.
 ####
 ## Text 3651 ##
 Użyj zaklęcia "Złamany łuk" by wyłączyć z walki Łuczników wroga.
@@ -11510,7 +11557,7 @@ Powołaj 15 Złodziei.
 Złodzieje to niezwykle cenne jednostki. Mogą przeprowadzać zwiad na terytorium wroga i niejako przy okazji podkradać mu cenne zapasy.
 ####
 ## Text 3671 ##
-Wyslij Złodziei na terytorium wroga i ukradnij 10 sztabek żelaza.
+Wyślij Złodziei na terytorium wroga i ukradnij 10 sztabek żelaza.
 ####
 ## Text 3672 ##
 Do następnego zadania potrzebne ci będą topory bojowe. Niestety, twoim geologom nie udało się znaleźć złóż żelaza. Jego pozyskaniem muszą się zająć Złodzieje.
@@ -11691,7 +11738,7 @@ Zadbaj o odpowiednią ilość oręża i zacznij pozyskiwać energię magiczną -
 Atrakcje, duża świątynia, co najmniej 30 Rycerzy i 20 Łuczników.
 ####
 ## Text 3731 ##
-Najwyższa pora zacząć rekrutację żołnierzy. Żeby zapewnić im odpowiednią motywację i zadbać o morale wybuduj kilka Atrakcji. Najwyższy czas wybudować również duzą świątynię.
+Najwyższa pora zacząć rekrutację żołnierzy. Żeby zapewnić im odpowiednią motywację i zadbać o morale wybuduj kilka Atrakcji. Najwyższy czas wybudować również dużą świątynię.
 ####
 ## Text 3732 ##
 Wyślij Kapłanów do walki.
@@ -11766,250 +11813,341 @@ Wilczyca na łowach
 Diabelskie przymierze
 ####
 ## Text 3755 ##
-
+Wielkie Wyprawy
 ####
 ## Text 3756 ##
+Wypędź Majów ze świętych źródeł Huasteków!
 
+Zniszcz ich duże fortyfikacje (zamki)!
 ####
 ## Text 3757 ##
-
+Zniszcz fort Alonsa Alvárez Pinedo!
 ####
 ## Text 3758 ##
+Zniszcz 700-uset hiszpańskich żołnierzy i zwiększ siłę bojową do 150%!
 
+Uważaj, aby nie stracić zbyt wielu własnych żołnierzy, ponieważ będziesz musiał wtedy zniszczyć ponad 700-uset Hiszpanów!
 ####
 ## Text 3759 ##
-
+Zniszcz port Cortés'a i odzyskaj świętą złotą statuę Ehecatl'a-Quetzalcoatl'a!
 ####
 ## Text 3760 ##
-
+Dobra robota! Właśnie zniszczyłeś 100-tnego wroga, dlatego też udzielę ci pomocy, którą ci obiecano.
 ####
 ## Text 3761 ##
-
+Dobra robota! Właśnie zniszczyłeś 200-tnego wroga, dlatego też udzielę ci pomocy, którą ci obiecano.
 ####
 ## Text 3762 ##
-
+Dobra robota! Zniszczyłeś 300-tnego wroga, dlatego też udzielę ci pomocy, którą ci obiecano.
 ####
 ## Text 3763 ##
-
+Dobra robota! Zniszczyłeś 400-tnego wroga, dlatego też udzielę ci pomocy, którą ci obiecano.
 ####
 ## Text 3764 ##
-
+Dobra robota! Zniszczyłeś 500-tnego wroga, dlatego też udzielę ci pomocy, którą ci obiecano.
 ####
 ## Text 3765 ##
-
+Dobra robota! Zniszczyłeś 600-tnego wroga, dlatego też udzielę ci pomocy, którą ci obiecano.
 ####
 ## Text 3766 ##
-
+Dobra robota! Zniszczyłeś 750-tego wroga, dlatego też udzielę ci pomocy, którą ci obiecano.
 ####
 ## Text 3767 ##
-
+Dobra robota! Zniszczyłeś 1000-nego wroga, dlatego też udzielę ci pomocy, którą ci obiecano.
 ####
 ## Text 3768 ##
-
+Dobra robota! Zniszczyłeś 1250-tego wroga, dlatego też udzielę ci pomocy, którą ci obiecano.
 ####
 ## Text 3769 ##
-
+Właśnie straciłeś 200-tnego żołnierza, więc musisz teraz zniszczyć kolejnych 200-tu wrogów.
 ####
 ## Text 3770 ##
-
+Właśnie straciłeś 300-tnego żołnierza, więc musisz teraz zniszczyć kolejnych 300-tu wrogów.
 ####
 ## Text 3771 ##
-
+Właśnie straciłeś 400-tnego żołnierza, więc musisz teraz zniszczyć kolejnych 400-tu wrogów.
 ####
 ## Text 3772 ##
-
+Właśnie straciłeś 500-tnego żołnierza, więc musisz teraz zniszczyć kolejnych 500-uset wrogów.
 ####
 ## Text 3773 ##
-
+Właśnie straciłeś 600-tnego żołnierza, więc musisz teraz zniszczyć kolejnych 600-uset wrogów.
 ####
 ## Text 3774 ##
+Cortés, hiszpański zdobywca, zmiażdżył Majów. Tylko niewielkiej grupie Majów, dowodzonej przez księcia Majów Itzamná, udało się uciec. Osiedlili się oni na dużym obszarze podmokłym, należącym do Huasteków.
 
+Huastekowie nie są entuzjastyczni, ponieważ to podmokłe miejsce jest dla nich świętym miejscem. Król Huasteków poprosił cię, abyś uwolnił tę świętą ziemię od niegodziwych.
 ####
 ## Text 3775 ##
+Pierwsza wyprawa nad rzekę Pánuco, prowadzona przez Alonso Alváreza Pinedo, zbliżyła się do obszaru osadniczego Huasteków. Jego żołnierze kontrolują rzekę Pánuco, a kapitan Pinedo zbudował silny fort, który ma służyć jako baza do dalszego postępu na terytorium Huasteków.
 
+Huastekowie zbudowali małą osadę na pobliskim płaskowyżu. Musisz teraz zorganizować opór przeciwko Hiszpanom z tej osady i zmiażdżyć ich całkowicie.
+
+Istnieje jednak mały problem: zasoby złota i ryb w naszej osadzie są prawie wyczerpane.
+
+Huastekowie błagają swojego boga Ehecatl'a-Quetzalcoatl'a o pomoc. Mówi do ciebie: „Jeśli poświęcisz mi moich wrogów, od czasu do czasu uzupełnię twoje złoto i zasoby rybne”.
 ####
 ## Text 3776 ##
+Huastekowie miażdżą Hiszpanów przewodzonych przez Alonso Alváreza Pinedo. Cortés, który zastanawia się nad brakującymi raportami z wyprawy Pinedo, wysyła zwiadowców. Znajdują oni skóry z głowy i twarzy ofiar w świątyniach Huasteków.
 
+Cortés jest wściekły i wysyła dwie kompanie, by zemścić się na Huastekach. Oba wojska otaczają osadę Huasteków.
+
+Utrzymaj się i zniszcz 700-uset Hiszpanów. Uważaj na własne oddziały: jeśli stracisz 200-tu żołnierzy, musisz zniszczyć 800-uset żołnierzy wroga, jeśli stracisz 300-tu żołnierzy, musisz zniszczyć 900-uset przeciwników. Będziesz jednak musiał zniszczyć maksymalnie 1300-tu Hiszpanów.
 ####
 ## Text 3777 ##
+Huastekom zawsze udawało się opierać oddziałom Cortés'a, ale żołnierzom kapitana Martas'a Azevedo udało się podbić dla hiszpańskiej korony, jedno ze świętych miejsc z okazałą złotą statuą ku czci boga Ehecatl'a-Quetzalcoatl'a.
 
+Cortés ma swoją bazę portową niedaleko świętego miejsca, a skradzione złoto zostanie stamtąd wysłane do Hiszpanii.
+
+Przejmij port, aby temu zapobiec i zniszcz budynki portowe.
 ####
 ## Text 3778 ##
+Strzeż się podbijającej armii Majów.
 
+Tylko 6 zamków musi zostać zdobytych.
 ####
 ## Text 3779 ##
+Sprzyjaj dużej produkcji many i używaj zaklęć swoich kapłanów.
 
+Wyprodukuj dużo chleba i zaopatrz w go swoje kopalnie złota.
 ####
 ## Text 3780 ##
+Uważaj na chęć pokonania przeciwników na ich ziemi, straty byłyby zbyt duże.
 
+Zbuduj dobrą obronę, opierając się na łucznikach.
 ####
 ## Text 3781 ##
+Idź zgodnie ze szlakami.
 
+Zadbaj o swoją obronę i zbuduj silną armię.
+
+Musisz tylko zdobyć Kolosa i zniszczyć budynki portowe.
 ####
 ## Text 3782 ##
-
+Najeźdźcy
 ####
 ## Text 3783 ##
-
+Rzeź na rzece Pánuco
 ####
 ## Text 3784 ##
-
+Zemsta Hiszpanów
 ####
 ## Text 3785 ##
-
+Wygnanie Hiszpanów
 ####
 ## Text 3786 ##
-
+Proszę włożyć płytę SETTLERS IV MISSION CD 3!
 ####
 ## Text 3787 ##
-
+Wypchnij Hiero z powrotem z granic Mesyny i zniszcz go całkowicie! Ostrzeżenie: miasto Mesyna nie może upaść!
 ####
 ## Text 3788 ##
+Zbuduj flotę 20 promów i 10 okrętów wojennych!
 
+Wyposaż promy w Wojowników i popłyń flotą na południowy zachód do swoich szpiegów!
 ####
 ## Text 3789 ##
-
+Podbij jedną z trzech wrogich osad kartagińskich!
 ####
 ## Text 3790 ##
-
+Zdobądź całą wyspę!
 ####
 ## Text 3791 ##
+Miasto Mesyna jest atakowane przez Syrakuzę, więc woła o pomoc Kartagińczyków i Rzymian. Podczas gdy Kartagina reaguje natychmiast, Rzym waha się.
 
+Dopiero po wycofaniu się Syrakuzy, Rzym wysłał swoje wojska na Sycylię. Kartagina uważa to za prowokację. Rzym wykorzystuje tę okazję, by uznać Sycylię za własną.
+
+Rzymskie wojska nie są wystarczająco duże, aby podbić całą Sycylię. Początkowo ma zostać podbity tylko wschód wyspy.
 ####
 ## Text 3792 ##
+Ponieważ Rzymianie nie są ekspertami w wojnie morskiej, postanowili zaatakować Kartaginę.
 
+Duża flota jest wymagana do transportu żołnierzy, którzy muszą być chronieni. Było to ogromne przedsięwzięcie, ponieważ wielu żołnierzy musiało awansować.
+
+Kartagińczycy wielokrotnie zakłócają budowę statków atakami wzdłuż wybrzeża.
 ####
 ## Text 3793 ##
+Rzymianie wylądowali na kontynentalnej części Kartaginy z ogromną flotą. Pozostawiając przy tym za sobą niepopularną wojnę morską, a przechodząc w swoją ulubioną wojnę lądową, w ojczyźnie swoich wrogów.
 
+Teraz nadszedł czas, aby udać się w głąb lądu. Rzymianie spotykają się z silnym oporem.
 ####
 ## Text 3794 ##
+Po tym, jak Rzymianie początkowo odnieśli sukces w ataku na Kartaginę i osiągnęli znaczny postęp, Kartagina złożyła im ofertę pokoju. Rzymianie jednak rezygnują z tej opcji, nakładając warunki, których nie można spełnić. Tymczasem Kartaginie udaje się zebrać armię najemników, aby wypędzić najeźdźców z kontynentalnej części Kartaginy. Po raz kolejny Rzymianie mają Sycylię na celowniku.
 
+Na Sycylii jest tylko kilku Kartagińczyków, oprócz miast Lilibeum i Drepanum. Trzeba je szybko pokonać!
 ####
 ## Text 3795 ##
+W żadnym wypadku nie możesz dopuścić do pokonania miasta Mesyna.
 
+Pozostali przeciwnicy nie muszą być pokonani.
 ####
 ## Text 3796 ##
+Przeszukaj całą mapę w poszukiwaniu surowców.
 
+Skoncentruj się tylko na tym zadaniu, nie atakuj Kartagińczyków.
 ####
 ## Text 3797 ##
-
+Są silne i słabe osady: wybieraj mądrze!
 ####
 ## Text 3798 ##
-
+Wiele wrogich wież możesz zaatakować z morza.
 ####
 ## Text 3799 ##
-
+Mesyna
 ####
 ## Text 3800 ##
-
+Budowa Floty
 ####
 ## Text 3801 ##
-
+Lądowanie w Kartaginie
 ####
 ## Text 3802 ##
-
+Podbij Sycylię
 ####
 ## Text 3803 ##
-
+Pokonaj żołnierzy Dariusza III!
 ####
 ## Text 3804 ##
-
+Pokonaj straż przyboczną Dariusza III - możesz nawet znaleźć samego Dariusza pośród nich!
 ####
 ## Text 3805 ##
-
+Zdobądź miasto Tyros!
 ####
 ## Text 3806 ##
-
+Odizoluj straż przyboczną Dariusza III i wyeliminuj ją!
 ####
 ## Text 3807 ##
+Dariusz rozmieścił swoje wojska wzdłuż rzeki Granikos; są bardzo liczne.
 
+Sama rzeka jest zbyt głęboka w większości miejsc, aby się przez nią przeprawić, ale zwiadowcy zgłaszają kilka płytkich miejsc wzdłuż rzeki, które nadają się do przekroczenia. Korzystanie z nich stanowi nieobliczalne ryzyko: wróg zna te miejsca i może odpowiednio ich strzec.
+
+Głównym zadaniem jest znalezienie odpowiednich miejsc, w których można przejść przez rzekę, a następnie przeprowadzenia ataku...
 ####
 ## Text 3808 ##
+Dariusz uciekł z pola bitwy nad Granikiem i zgromadził nową, ogromną armię.
 
+Aleksander i Dariusz spotykają się ponownie w Issos. Tym razem Aleksander chce wyeliminować samego króla, aby przełamać opór wrogów.
+
+Król Dariusz, chroniony przez swoją osobistą straż, jest w środku swojej armii. Wywalcz ścieżkę do króla tak szybko, jak to możliwe, zanim będzie mógł uciec.
 ####
 ## Text 3809 ##
+Aleksander postanawia zabezpieczyć okoliczne obszary, a duże miasta, takie jak Aradus, Byblos i Sidon, poddają się bez oporu.
 
+Negocjacje z władzami miasta w dobrze ufortyfikowanym mieście Tyru zawodzą. Wzbudza to gniew Aleksandra i postanawia oblegać miasto. Oblężenie jest długie i uciążliwe, ale w końcu nadchodzi czas decydującego ataku...
 ####
 ## Text 3810 ##
+Aleksander kontynuuje swój ruch na wschód w kierunku Babilonu, przecinając rzekę Tygrys. Dariusz powtórnie stawia mu czoła, pod Gaugamelą, wraz z potężną armią.
 
+Oddziały wroga są przytłaczające; pokonanie armii wydaje się niemożliwe. Dlatego Aleksander koncentruje się na polowaniu na samego Dariusza, który jest w centrum szeregów wroga wraz ze swoimi strażnikami.
+
+Bitwa zostanie ostatecznie wygrana, jeśli uda mu się ponownie skonfrontować go w walce lub zmusić go do ucieczki.
 ####
 ## Text 3811 ##
-
+Niektóre punkty, w których można przeprawić się przez rzekę, są słabo bronione.
 ####
 ## Text 3812 ##
+Tylko straż przyboczna musi zostać pokonana!
 
+Poszukaj słabszego punktu, w którym możesz zaatakować straż przyboczną.
 ####
 ## Text 3813 ##
-
+Mocno ufortyfikowane mury miejskie składają się z niezliczonej ilości wież: przydatne będą tu bronie oblężnicze!
 ####
 ## Text 3814 ##
-
+Pamiętaj, że musisz pokonać tylko jednego wroga.
 ####
 ## Text 3815 ##
-
+Granikos
 ####
 ## Text 3816 ##
-
+Issos
 ####
 ## Text 3817 ##
-
+Tyr
 ####
 ## Text 3818 ##
-
+Gaugamela
 ####
 ## Text 3819 ##
-
+Historyczne Bitwy
 ####
 ## Text 3820 ##
-
+Podbij port i Górę Siarkową w Ethel. Wyprodukuj 200 bochenków chleba oraz 200 jednostek mięsa!
 ####
 ## Text 3821 ##
-
+Przejmij kwaterę główną Edmunda Ironside'a i zniszcz jego zamki!
 ####
 ## Text 3822 ##
-
+Zniszcz warsztaty katapultowe drugiego oddziału Godwinson'a, oraz koszary pierwszego oddziału!
 ####
 ## Text 3823 ##
-
+Zdobądź zamek Harolda Godwinson'a!
 ####
 ## Text 3824 ##
-
+Okręty wojenne zostały zniszczone, a flota cywilna może teraz wejść do portu.
 ####
 ## Text 3825 ##
+W roku 1009, duńskie armie walczą w Anglii w imieniu duńskiego króla Sweyn'a Forkbeard'a.
 
+Eric Leifgard otrzymuje od swojego króla Sweyn'a Forkbeard'a rozkaz zbudowania przyczółka w Anglii, aby król duński mógł tam wylądować ze swoimi żołnierzami.
+
+Eric Leifgard zostaje wysłany z flotą okrętów wojennych. Postanawia przejąć portowe miasto Portland, aby tam zbudować przyczółek.
+
+Jednak aby cywilna flota zaopatrzeniowa mogła dostać się do portu, wrogie okręty wojenne strzegące portu muszą najpierw zostać zniszczone.
 ####
 ## Text 3826 ##
+W 1013 roku, sam Sweyn ląduje w Anglii z ogromną siłą bojową. W tym samym roku zostaje uznany za władcę Danelaw, po ucieczce Ethelred'a do Francji przez Anglię. Ale kiedy Sweyn umiera w następnym roku, Ethelred wraca do wojny z Duńczykami, którą kontynuuje jego syn Edmund Ironside dwa lata później. Początkowo Edmund odnosi zwycięstwo i udaje mu się odepchnąć Wikingów, którymi teraz kieruje syn Sweyn'a Forkbeard'a, Canute.
 
+Siły zbierają się teraz w osadzie Ashingdon, aby walczyć o suwerenność Anglii.
+
+Główne siły Edmunda Ironside'a obozują na północnym wschodzie, gdzie ma swoją kwaterę główną. Inny oddział walczący dla Edmunda obozuje na północnym zachodzie, dowodzony przez Edgara Wojownika.
+
+Jeśli Edmund Ironside i jego kwatera główna upadną, Canute, przywódca Wikingów, zostanie władcą Anglii.
+
+Poprowadź Wikingów do bitwy o Anglię!
 ####
 ## Text 3827 ##
+Późnym latem 1066 roku norweski król Harald ląduje w Riccall nad Ouse z około 200 okrętami, do których wkrótce dołączy około 100 jego sojuszników. Szybko pokonuje napotkany opór i zabiera zakładników w York'u, aby stamtąd oprzeć opór. Jego żołnierze rozbili obóz na Stamford Bridge, aby rozpocząć planowany marsz na południe.
 
+Ale Harold Godwinson, zaskoczony zasadzką, wyrusza w ciągu kilku dni ze wszystkimi dostępnymi siłami, by spotkać się z Haraldem. 26 września napotyka armię Haralda, który jest całkowicie nieświadomy przybycia Godwinson'a. Negocjacje się nie powiodły i tym samym rozpoczyna się bitwa o Stamford Bridge, która trwa cały dzień.
+
+Zniszcz warsztaty katapultowe drugiego oddziału Godwinson'a, oraz koszary pierwszego oddziału!
 ####
 ## Text 3828 ##
+Kiedy Wilhelm Zdobywca dowiaduje się, że Harold Godwinson został koronowany na króla Anglii, jest wściekły i natychmiast wydaje rozkazy przygotowania inwazji.
 
+Flota Wilhelm'a Zdobywcy wypływa 27 września. Po wylądowaniu ze swoimi żołnierzami w Anglii, natychmiast zbiera żołnierzy, aby przygotować się na przybycie armii angielskiej, która przybywa kilka dni później po wymuszonym marszu. Żołnierze są nadal wyczerpani poprzednią bitwą i trudami, które znosili po drodze.
+
+14 października armie Harolda Godwinson'a i William'a spotykają się kilka kilometrów za Hastings.
+
+Jako William, zdobądź zamek Harolda Godwinson'a i zostań władcą Anglii. Ostrzeżenie: zamku bronią dwie armie Harolda Godwinson'a (armia zachodnia i wschodnia)!
 ####
 ## Text 3829 ##
+Uszkodzone okręty wojenne można naprawić we wrogiej stoczni.
 
+Niektóre okręty można również zniszczyć łucznikami.
 ####
 ## Text 3830 ##
-
+Wystarczy zniszczyć zamki Edmunda Ironside'a, nie musisz pokonać wojownika Edgara.
 ####
 ## Text 3831 ##
-
+Zdziesiątkuj pierwszy oddział, zanim zniszczysz warsztaty katapultowe drugiego oddziału!
 ####
 ## Text 3832 ##
-
+Nie jedź bezpośrednią drogą do siedziby głównej!
+Użyj mocy magii!
 ####
 ## Text 3833 ##
-
+Przyczółek
 ####
 ## Text 3834 ##
-
+Bitwa o Ashingdon
 ####
 ## Text 3835 ##
-
+Bitwa o most Stamford
 ####
 ## Text 3836 ##
-Braterska walka
+Braterska Walka
 ####
 ## Text 3837 ##
 Prywatny
