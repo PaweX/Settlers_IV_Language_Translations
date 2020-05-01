@@ -8,9 +8,12 @@ Collection of language translations for The Settlers IV (Die Siedler IV)
 
 If you made some corrections to one of the language trasnaltions for The Settlers IV, please share it here. **Especially if you made a completely new game trasnlation.**
 
-This is the list of the game languages and their translation status:
+## Discord Server - Settlers IV Modding
+https://discord.gg/qsetQRb
 
-## Classic Settlers IV:
+## This is the list of the game languages and their translation status:
+
+### Classic Settlers IV:
 
         0 ENGLISH                                                        (O-GE)
         1 GERMAN                                                         (O-All)
@@ -32,13 +35,13 @@ This is the list of the game languages and their translation status:
         18 JAPANESE                                                      (O-Bas)
         
   
-## Settlers IV History Edition:
+### Settlers IV History Edition:
 
 *No information right now*
         
         
         
-## Description of the codes:
+### Description of the codes:
 - ***O* - official translation**
 - ***U* - unofficial translation (e.g. made by fans)**
 - *No* - Nothing, no translation
