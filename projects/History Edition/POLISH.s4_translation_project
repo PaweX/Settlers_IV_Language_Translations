@@ -1,4 +1,4 @@
-**** Settlers IV Game Translation Tool Project File ** Version 0.98 beta ****
+**** Settlers IV Game Translation Tool Project File ** Version 0.97 beta ****
 **** Language: POLISH ** @21 0 0 0@ ****
 ## Text 1 ##
 ???
@@ -8549,7 +8549,7 @@ Nasi prześladowcy podążają za nami. Mówi się, że w pobliżu wylądowały 
 Zbadaj okolicę, aby odkryć trasę Ambasadora...
 ####
 ## Text 2714 ##
-Szybko zdobądź chleb, kamienie są ukryte... Nie spiesz się z atakiem, pomoc nadejdzie z zachodu. Uważaj na ich geologów: nie są stworzeni do walki!
+Zadbaj o chleb jak najszybciej. Kamienie są poukrywane... Nie spiesz się zbytnio z atakiem, pomoc nadejdzie z zachodu. Chroń swoich geologów: nie są stworzeni do walki! 
 ####
 ## Text 2715 ##
 Rozszerz się na południe, tam znajdziesz trochę miejsca!
@@ -8696,67 +8696,69 @@ Sabotaż promu Trojan okazał się wielkim sukcesem. Teraz możemy zabrać na po
 Złodziej niepostrzeżenie został przemycony na prom trojański!
 ####
 ## Text 2763 ##
-
+Prom Wikingów został pomyślnie sabotowany. Możemy teraz zabrać na pokład złodzieja.
 ####
 ## Text 2764 ##
-
+Złodziej niepostrzeżenie wkradł się na prom Wikingów!
 ####
 ## Text 2765 ##
-
+Sabotaż promu Majów zakończył się sukcesem. Możemy teraz zabrać na pokład złodzieja.
 ####
 ## Text 2766 ##
-
+Złodziej niepostrzeżenie wkradł się na prom Majów!
 ####
 ## Text 2767 ##
-
+Legiony Cezara maszerują! Teraz, gdy nasz cesarz zdecydował, że nie chce niczego innego, jak tylko rządzić światem, nawet ostatni z walecznych Trojan nie będą w stanie nas powstrzymać. Tylko my wyjdziemy zwycięsko z tej bitwy!
+Ale pod żadnym pozorem nie powinniśmy tracić z oczu naszego prawdziwego celu: pod rządami Eryka Rudego Wikingowie wrócili z Ameryki. Znaleźli karaibskie królestwo wyspiarskie na zachodzie, w pobliżu tak zwanej Zatoki Meksykańskiej, gdziekolwiek by to nie było! Flota, którą zbudowaliśmy w pośpiechu, wygra ten wyścig, a my, Rzymianie, przejmiemy tę nową ziemię dla Cezara i umieścimy nasz sztandar SPQR mocno w ziemi!
 ####
 ## Text 2768 ##
-
+Sojusznicy! Dlaczego my, Rzymianie, potrzebujemy sojuszników? Jesteśmy najsilniejszą siłą w tej rywalizacji narodów. Cezar hojnie nas wynagrodzi za nową ziemię na Karaibach. Nie obchodzi nas, która droga prowadzi do zwycięstwa w regatach. Nawet jeśli to oznacza, że ​​musimy wyeliminować naszych sojuszników w nieco paskudny sposób... Czy nas to obchodzi? Chcemy wygrać. Ale bądź ostrożny: nie możemy zostać odkryci! Czyli tym razem nie zaatakujemy...
 ####
 ## Text 2769 ##
-
+To zemsta Bogów za sabotaż, którego dokonaliśmy! Zagubieni na nieznanym obszarze wyspy, cierpimy na poważny niedobór wody. Wśród legionistów panuje niepokój i być może szykuje się bunt. W górach jest złoto, wiemy o tym, ale złoto nie zaspokoi naszego pragnienia! Bez źródła wody pitnej na pewno będzie to dla nas koniec...
 ####
 ## Text 2770 ##
-
+O bogowie! Dlaczego upieracie się nas karać? Wybuchła gwałtowna burza i nasza flota została zniszczona! Nasz lud jest rozproszony na tysiąc wiatrów... Zastanówmy się teraz nad naszymi zaletami: dyscypliną i siłą. Zbudujemy nową osadę, nasza gospodarka stanie się wzorem do naśladowania. Ale jak możemy zrekompensować utratę floty? Musimy wygrać wyścig! Mały patrol zwiadowczy odkrył flotę w zatoce wroga. To doskonała okazja do pozyskania potrzebnych nam statków...
 ####
 ## Text 2771 ##
-
+Ci głupi Majowie! Nie możemy uwierzyć w to, co zgłosił nam nasz zwiadowca. Ukradli nie mniej niż dwa z Cudów Świata! Czy nasza europejska kultura powinna zostać zniszczona przez tych pierzastych dzikusów? Będziemy wiedzieć, jak temu zapobiec. Staniemy na drodze każdemu, kto się nam sprzeciwi. Po raz kolejny stajemy przed wyzwaniem bitwy, ale musimy skupić całą naszą uwagę: pobliskie leczące źródło wzmacnia naszych wrogów, więc sprawmy, by stało się bezużyteczne, niszcząc obecną tam Świątynię. Ujarzmimy źródło jedną z naszych Małych Świątyń w tym miejscu. Majów można podbić tylko bez źródła. Dopiero wtedy ich potężny zamek upadnie jak łodyga podczas burzy...
 ####
 ## Text 2772 ##
-
+Więcej niż jedno miejsce nadaje się na port... Ale uważaj: wszystkie te obszary są w rękach wroga!
 ####
 ## Text 2773 ##
-
+Trzymaj się z dala od Wież! Niezwyciężona flota zabezpieczyła port. Musisz zakraść się na wyspę od tyłu. Jeśli spróbujesz zaatakować, natychmiast zostaniesz zauważony. Pod żadnym pozorem nie niszcz promów!
 ####
 ## Text 2774 ##
-
+Twoi marynarze łatwo się gubią... Po prostu zabierz ich w pobliże portu. Upewnij się, że dokładnie zbadałeś wyspy, zanim wybierzesz miejsce na osadę.
 ####
 ## Text 2775 ##
-
+Uważaj na patrole Majów! Uważaj na swoje zasoby.
 ####
 ## Text 2776 ##
-
+Użyj katapult, aby zniszczyć Wielkie Wieże tuż przy Cudach Świata! Ale uważaj: Majowie mają źródło lecznicze. Ale dzięki twojej własnej Małej Świątyni w tym miejscu, twoi żołnierze mogą czerpać siłę ze źródła.
 ####
 ## Text 2777 ##
-
+Bitwa o Troję
 ####
 ## Text 2778 ##
-
+Sabotaż
 ####
 ## Text 2779 ##
-
+Niedobór wody
 ####
 ## Text 2780 ##
-
+Problemy z nawigacją
 ####
 ## Text 2781 ##
-
+Podbijanie Nowego Świata
 ####
 ## Text 2782 ##
-
+Wynik
 ####
 ## Text 2783 ##
-
+Mistrz złodziei@Wejdź do sanktuarium i ukradnij święty posąg!@Nawet jeśli oznacza to zwrócenie przeciwko tobie własnych ludzi: święty posąg musi wejść w twoje posiadanie! Twoje małe plemię cierpi z powodu nieznanej plagi, wydaje się, że Odyn cię opuścił... Starszyzna mówi nam, że posąg ma magiczne moce, które jako jedyne są w stanie uleczyć twój lud.
+Ta misja jest inna niż wszystkie, które widziałeś wcześniej i nie zostanie wygrana dzięki potężnej mocy Wikingów; Młot Thora musi odpocząć! Tylko dzięki przebiegłości i zdradzie można utrzymać to sanktuarium w nienaruszonym stanie. Udowodnij kim jesteś i chroń słabych przed pewną śmiercią!
 ####
 ## Text 2784 ##
 
@@ -9092,7 +9094,7 @@ O nie! Ponieśliśmy klęskę...
 Ponieśliśmy klęskę...
 ####
 ## Text 2895 ##
-Eryk Czerwony doskonale wie, jak nas uszczęśliwić! Nie staliśmy się grubi i leniwi - waleczna krew w naszych żyłach jest zbyt płomienna. Ale niewielka zmiana po wszystkich podbojach i bitwach nie zaszkodzi. Ważne jest, abyśmy dobrze się bawili, aby trzymać nudę na dystans! Ale to diabelskie dzieło, Eryk zaprosił wszystkie narody na wyścig łodzi, a nagrodą dla zwycięzcy jest nieodkryta kraina na Karaibach. Lato, słońce, piasek, wszystko co nasze jałowe i zimne ziemie nie są w stanie zaoferować. Pokusa jest wielka. Ale najpierw musimy dotrzeć do domu i odzyskać siły. Eksploracja Ameryki była męcząca. A więc, wy stare psy morskie, wkraczamy do wyścigu, stawiając czoła każdemu wyzwaniu... Niebezpieczeństwo to nasze drugie imię!
+Eryk Rudy doskonale wie, jak nas uszczęśliwić! Nie staliśmy się grubi i leniwi - waleczna krew w naszych żyłach jest zbyt płomienna. Ale niewielka zmiana po wszystkich podbojach i bitwach nie zaszkodzi. Ważne jest, abyśmy dobrze się bawili, aby trzymać nudę na dystans! Ale to diabelskie dzieło, Eryk zaprosił wszystkie narody na wyścig łodzi, a nagrodą dla zwycięzcy jest nieodkryta kraina na Karaibach. Lato, słońce, piasek, wszystko co nasze jałowe i zimne ziemie nie są w stanie zaoferować. Pokusa jest wielka. Ale najpierw musimy dotrzeć do domu i odzyskać siły. Eksploracja Ameryki była męcząca. A więc, wy stare psy morskie, wkraczamy do wyścigu, stawiając czoła każdemu wyzwaniu... Niebezpieczeństwo to nasze drugie imię!
 ####
 ## Text 2896 ##
 Na Odyna! Nie tylko staliśmy się grubi i leniwi, ale teraz jeszcze rządzeni głupotą. Wydaje się, że nikt już nie myśli poprawnie, cała nasza przeprawa była jedną, ciągłą pijatyką. I mamy dokładnie właściwą rzecz do tego nadmiaru: tony miodu pitnego. Byliśmy w stanie przeciwstawić się pływom morza. Ale w tej pływającej tawernie nie można znaleźć ani jednej skórki chleba. To nam nie pomaga; musimy wytrzeźwieć i znaleźć jedzenie. Słyszeliśmy pogłoski, że mag na tych ziemiach może zamienić miód pitny w jedzenie. Jeśli nie chcemy sami produkować ryb, chleba i mięsa, moglibyśmy spróbować przynieść nasz miód mędrcowi, ponieważ mamy go mnóstwo... Jeśli teraz nie zbierzemy się do kupy, zginiemy w tym bezbożnym miejscu!
@@ -9125,13 +9127,13 @@ Zachowaj ostrożność przy poszerzaniu osady!
 Powrót z Ameryki
 ####
 ## Text 2906 ##
-Zła Lista Zakupów
+Zła lista zakupów
 ####
 ## Text 2907 ##
-Duże Przyjęcie
+Duże przyjęcie
 ####
 ## Text 2908 ##
-Poszukiwanie Skarbu
+Poszukiwanie skarbu
 ####
 ## Text 2909 ##
 Kobiety
