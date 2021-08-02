@@ -45,8 +45,8 @@ https://discord.gg/qsetQRb
 - ***O* - official translation**
 - ***U* - unofficial translation (e.g. made by fans)**
 - *No* - Nothing, no translation
-- *All_HE* - All translations with extra texts from the History Edition
-- *All* - All translations (old version, not History Edition)
+- *All_HE* - Full translation with extra texts from the History Edition
+- *All* - Full translation (old version, not History Edition)
 - *?* - Unknown: probably *GE* or *Bas*
 - *GE* - Gold Edition translation
 - - *Bas* - the basis of the game
