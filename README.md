@@ -15,9 +15,9 @@ https://discord.gg/qsetQRb
 
 ### Classic Settlers IV:
 
-        0 ENGLISH                                                        (O-GE)
-        1 GERMAN                                                         (O-All)
-        2 FRENCH                                                         (O-GE)
+        0 ENGLISH                                                        (O-All_HE)
+        1 GERMAN                                                         (O-All_HE)
+        2 FRENCH                                                         (O-All_HE)
         3 SPANISH                                                        (O-Bas)
         4 ITALIAN                                                        (O-Bas)
         5 POLISH                                                         (O-GE)
@@ -45,7 +45,8 @@ https://discord.gg/qsetQRb
 - ***O* - official translation**
 - ***U* - unofficial translation (e.g. made by fans)**
 - *No* - Nothing, no translation
-- *All* - All translations
+- *All_HE* - All translations with extra texts from the History Edition
+- *All* - All translations (old version, not History Edition)
 - *?* - Unknown: probably *GE* or *Bas*
 - *GE* - Gold Edition translation
 - - *Bas* - the basis of the game
