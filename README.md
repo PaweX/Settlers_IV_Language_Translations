@@ -22,7 +22,7 @@ https://discord.gg/qsetQRb
         4 ITALIAN                                                        (O-Bas)
         5 POLISH                                                         (O-GE)
         6 KOREAN                                                         (O-Bas)
-        7 CHINESE (don't know which one, probably both can be made)      (O-No)
+        7 CHINESE                                                        (O-No)
         8 SWEDISH                                                        (O-Bas)
         9 DANISH                                                         (O-Bas)
         10 NORWEGIAN                                                     (O-Bas)
