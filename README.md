@@ -54,5 +54,5 @@ Future translations can be added to the game after number '18', however they can
 
 
 ## Credits:
-- *All authors of the original translations*
+- **All authors of the original translations**
 - @PaweX (Pawel C. - PaweX3) - translation of the New World, Great Crusades, extra texts for History Edition and improvement of some original texts.
