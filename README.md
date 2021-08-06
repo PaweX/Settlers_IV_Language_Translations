@@ -15,7 +15,7 @@ https://discord.gg/qsetQRb
 
 ### Classic Settlers IV and History Edition:
 
-        0 ENGLISH                          (O-All_HE)
+        0 ENGLISH       (O-All_HE)
         1 GERMAN                           (O-All_HE)
         2 FRENCH                           (O-All_HE)
         3 SPANISH                          (O-Bas)
