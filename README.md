@@ -56,3 +56,6 @@ Future translations can be added to the game after number '18', however they can
 ## Credits:
 - **All authors of the original translations**
 - *@PaweX (Pawel C. - PaweX3)* - Polish translation of the New World, Great Crusades, extra texts for History Edition and improvement of some original texts.
+
+
+<script src="https://gist.github.com/nisrulz/11c0d63428b108f10c83.js"></script>
