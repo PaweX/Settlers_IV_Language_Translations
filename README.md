@@ -13,7 +13,7 @@ https://discord.gg/qsetQRb
 
 ## This is the list of the game languages and their translation status:
 
-### Classic Settlers IV:
+### Classic Settlers IV and History Edition:
 
         0 ENGLISH                                                        (O-All_HE)
         1 GERMAN                                                         (O-All_HE)
@@ -30,15 +30,9 @@ https://discord.gg/qsetQRb
         12 HEBREW                                                        (O-Bas)
         13 CZECH                                                         (O-GE)
         14 FINNISH                                                       (O-No)
-        16 RUSSIAN                                                       (O-No + U-GE)
+        16 RUSSIAN                                                       (O-GE)
         17 THAI                                                          (O-No)
         18 JAPANESE                                                      (O-Bas)
-        
-  
-### Settlers IV History Edition:
-
-*No information right now*
-        
         
         
 ### Description of the codes:
@@ -56,5 +50,9 @@ https://discord.gg/qsetQRb
 - - *NeW* -  Die Neue Welt (The New World))
 - - *MP2* - Community Pack
 
-
 Future translations can be added to the game after number '18', however they can use only standard ANSI.
+
+
+## Credits:
+- *All authors of the original translations*
+- @PaweX (Pawel C. - PaweX3) - translation of the New World, Great Crusades, extra texts for History Edition and improvement of some original texts.
