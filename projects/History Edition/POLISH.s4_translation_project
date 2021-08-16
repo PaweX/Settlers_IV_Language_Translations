@@ -8382,7 +8382,7 @@ Wszystkich członków rodzin i przyjaciół zespołu Blue Byte, którzy wpierali
 
 
 Tłumaczenie Dodatków "Nowy Świat" i "Wielkie Wyprawy" na język polski, oraz poprawa błędów językowych w oryginalnej wersji:
-Paweł C. (PaweX3) V1.05
+Paweł C. (PaweX3) V1.07
 ####
 ## Text 2661 ##
 THE SETTLERS IV MISSION CD 2
@@ -8693,7 +8693,7 @@ Nasza obecność została zauważona. Zawiedliśmy.
 Sabotaż promu Trojan okazał się wielkim sukcesem. Teraz możemy zabrać na pokład złodzieja.
 ####
 ## Text 2762 ##
-Złodziej niepostrzeżenie został przemycony na prom trojański!
+Złodziej niepostrzeżenie wkradł się na prom Trojan!
 ####
 ## Text 2763 ##
 Prom Wikingów został pomyślnie sabotowany. Możemy teraz zabrać na pokład złodzieja.
@@ -8745,10 +8745,10 @@ Bitwa o Troję
 Sabotaż
 ####
 ## Text 2779 ##
-Niedobór Wody
+Niedobór wody
 ####
 ## Text 2780 ##
-Problemy z Nawigacją
+Problemy z nawigacją
 ####
 ## Text 2781 ##
 Podbijanie Nowego Świata
@@ -8854,7 +8854,7 @@ Tysiące dzięki, Wielki Wojowniku. Uwolniłeś tę wyspę od Olec'a Okrutnego i
 Dotrzyj swoimi żołnierzami do oczekujących statków w porcie. Siła bojowa musi składać się z co najmniej 1 wozu fundacyjnego, 10 żołnierzy i 5 złodziei. Jednostki wchodzą na pokład automatycznie, gdy dotrą do portu. Zwróć uwagę na czas. Łodzie odpływają na czas!
 ####
 ## Text 2814 ##
-Zbuduj nową flotę składającą się z 3 promów i 3 okrętów wojennych z 10 żołnierzami poziomu 3-go dla każdej gałęzi sił zbrojnych, oraz z 3 wozami.
+Zbuduj nową flotę składającą się z 3 promów i 3 okrętów wojennych, z 10 żołnierzami 3-go poziomu dla każdej gałęzi sił zbrojnych, oraz z 3 wozami.
 ####
 ## Text 2815 ##
 Zbierz 150 kamieni, aby zbudować święte głowy. Miejscowi podziękują ci jedzeniem! Jednak kamienie muszą zostać przekazane w ciągu następnych 1 1/2 godziny, aby kamienne głowy były gotowe na czas święta bogów Majów!
@@ -8978,16 +8978,16 @@ Weź odwagę w obie ręce! Wyślij swojego dowódcę oddziału przez bramę, kus
 Ucieczka z Troi
 ####
 ## Text 2854 ##
-Koniec?
+Czy to koniec?
 ####
 ## Text 2855 ##
-Niedostatek Żywności
+Niedostatek żywności
 ####
 ## Text 2856 ##
 Brama
 ####
 ## Text 2857 ##
-Inny Świat
+Inny świat
 ####
 ## Text 2858 ##
 Dotrzyj do rodzimego portu na południowym wschodzie przynajmniej jednym statkiem, i zalicz wszystkie próby. Ostrzeżenie: będziesz przemierzał niebezpieczne obszary! W tej misji nie musisz budować osady.
@@ -9110,7 +9110,7 @@ Na Odyna! Nie tylko staliśmy się grubi i leniwi, ale teraz jeszcze rządzeni g
 Co za przyjęcie! Świętowaliśmy na całego. Żaden kamień nie pozostał stojącym. Naszego nowego wroga nazywa się teraz bólem głowy, a nawet stare cudowne lekarstwa naszych przyjaciół Majów już nie pomagają... Ale ten festiwal, który dla nas zorganizowali Majowie, miał swoje cele. Ponieważ teraz nasi wrogowie zostali zdemaskowani w swoich szeregach: złodzieje pochodzenia rzymskiego zamierzyli przy każdej okazji sabotować nasz zabawny wyścig łodzi! Ale łotrzyków szybko zidentyfikowano na tej uczcie. Już padli na twarz po zaledwie jednej beczce miodu pitnego! To niegodne prawdziwego człowieka z północy...
 ####
 ## Text 2898 ##
-Ci Majowie naprawdę nas rozśmieszają. Nie tylko wzięli nas za bogów w ich złudzeniu, ale teraz także poświęcili ostatnie resztki swoich umysłów alkoholowi. A my wykorzystaliśmy tę szansę na kradzież mapy skarbów. Po prostu nie mogliśmy oprzeć się tej pokusie! Ponieważ mapa skarbów wskazuje na tajemną wyspę, na której mieszkają tylko kobiety w legendarnym miejscu. Kobiety są bardzo piękne, a serce wojownika natychmiast wie, że jest potrzebne właśnie tam. Niech inni ignoranci robią z siebie głupców w wyścigu łodzi, a my podstrzyżemy brody i wyruszymy w podróż do raju...
+Ci Majowie naprawdę nas rozśmieszają. Nie tylko wzięli nas za bogów w ich złudzeniu, ale teraz także poświęcili ostatnie resztki swoich umysłów alkoholowi. A my wykorzystaliśmy tę szansę na kradzież mapy skarbów. Po prostu nie mogliśmy oprzeć się tej pokusie! Ponieważ mapa skarbów wskazuje na tajemną wyspę, na której w legendarnym miejscu, mieszkają tylko kobiety. Kobiety są bardzo piękne, a serce wojownika natychmiast wie, że jest potrzebne właśnie tam. Niech inni ignoranci robią z siebie głupców w wyścigu łodzi, a my podstrzyżemy brody i wyruszymy w podróż do raju...
 ####
 ## Text 2899 ##
 Tajemnicza wyspa faktycznie istnieje, ale nie widzieliśmy jeszcze żadnych kobiet. Eksploracja całej wyspy jest niemożliwa. Przed nami pojawiła się potężna ściana ognia, która nie wydaje się być z tego świata. Wejście do wnętrza wyspy jest zablokowane. Jak możemy przeniknąć przez tę ścianę ogniową? Cóż, jeszcze nie wiemy, ale myśl o mnóstwie pachnących, pięknych kobiet jest bardzo, bardzo dobrą zachętą do uruchomienia szarej materii!
@@ -9134,13 +9134,13 @@ Zachowaj ostrożność przy poszerzaniu osady!
 Powrót z Ameryki
 ####
 ## Text 2906 ##
-Zła Lista Zakupów
+Zła lista zakupów
 ####
 ## Text 2907 ##
-Duże Przyjęcie
+Duże przyjęcie
 ####
 ## Text 2908 ##
-Poszukiwanie Skarbu
+Poszukiwanie skarbu
 ####
 ## Text 2909 ##
 Kobiety
