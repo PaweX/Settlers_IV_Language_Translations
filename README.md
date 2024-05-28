@@ -52,6 +52,8 @@ https://discord.gg/qsetQRb
 
 Future translations can be added to the game after number '18', however they can use only standard ANSI.
 
+### Additional info/tips:
+- Chinese language uses Big5 encoding
 
 ## Credits:
 - **All authors of the original translations**
