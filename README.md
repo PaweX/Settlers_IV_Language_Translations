@@ -54,6 +54,7 @@ Future translations can be added to the game after number '18', however they can
 
 ### Additional info/tips:
 - Chinese language uses Big5 encoding
+- Thai seems to be broken in History Edition
 
 ## Credits:
 - **All authors of the original translations**
