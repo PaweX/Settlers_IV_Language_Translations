@@ -22,7 +22,7 @@ https://discord.gg/qsetQRb
         4 ITALIAN                          (O-Bas)
         5 POLISH                           (O-GE + U-All_HE)
         6 KOREAN                           (O-Bas)
-        7 CHINESE                          (O-No)
+        7 CHINESE (Taiwanese)              (O-Yes? No further info)
         8 SWEDISH                          (O-Bas)
         9 DANISH                           (O-Bas)
         10 NORWEGIAN                       (O-Bas)
