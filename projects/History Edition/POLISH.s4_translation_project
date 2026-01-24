@@ -1,4 +1,4 @@
-**** Settlers IV Game Translation Tool Project File ** Version 0.973 beta ****
+**** Settlers IV Game Translation Tool Project File ** Version 0.974 beta ****
 **** Language: POLISH ** @21 0 0 0@ ****
 ## Text 1 ##
 ???
@@ -2101,14 +2101,14 @@ Joachim Walther
 Wolfgang Walk
 ####
 ## Text 666 ##
-Kierownik
+Dyrektor artystyczny
 ####
 ## Text 667 ##
 Torsten Hess
 Thorsten Mutschall
 ####
 ## Text 668 ##
-Postaci
+Postacie
 ####
 ## Text 669 ##
 Marko Giertolla
@@ -2124,7 +2124,7 @@ Michael Filipowski
 Joachim Walther
 ####
 ## Text 672 ##
-Interfejs
+Interfejs graficzny
 ####
 ## Text 673 ##
 Joachim Walther
@@ -8382,7 +8382,7 @@ Wszystkich członków rodzin i przyjaciół zespołu Blue Byte, którzy wpierali
 
 
 Tłumaczenie Dodatków "Nowy Świat" i "Wielkie Wyprawy" na język polski, oraz poprawa błędów językowych w oryginalnej wersji:
-Paweł C. (PaweX3) V1.09
+Paweł C. (PaweX3) V1.1
 ####
 ## Text 2661 ##
 THE SETTLERS IV MISSION CD 2
