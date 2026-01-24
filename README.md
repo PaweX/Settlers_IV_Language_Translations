@@ -8,6 +8,19 @@ Collection of language translations for The Settlers IV (Die Siedler IV)
 
 If you made some corrections to one of the language trasnaltions for The Settlers IV, please share it here. **Especially if you made a completely new game trasnlation.**
 
+## How to set any language from the above list, in the History Edition:
+
+    Go to C:\Users\<your username>\Documents\TheSettlers4\Config and open the GameSettings.cfg file, e.g. with notepad.
+    Find the line Language = <number> and change the <number> to the number of language you want from the above list.
+    Save the file and run the game. Now the visible language in the game should be the language you have chosen.
+
+In the Gold Edition the GameSettings.cfg file is located in Config directory, in a location where the game is installed. Other steps remain the same.
+
+Bear in mind that History Edition is officially translated only to German, English and French. If you change the game language to any other of these three, you will have partial translation of the game - without the New World and the Great Crusades - unless somebody will translate them (check the below table).
+
+It may happen that after some Ubisoft update, you will have to repeat all of these above steps.
+In the History Edition, the menu texts: "New World" and "Great Crusades" are only visible in English, German or French, because someone hardcoded them that way in the game code. So for them, the game ignores the translation file of your language, and loads hardcoded signatures. This only happens in the History Edition.
+
 ## Discord Server - Settlers IV Modding
 https://discord.gg/qsetQRb
 
