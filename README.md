@@ -30,7 +30,7 @@ https://discord.gg/qsetQRb
         12 HEBREW                          (O-Bas)
         13 CZECH                           (O-GE)
         14 FINNISH                         (O-No)
-        16 RUSSIAN                         (O-GE)
+        16 RUSSIAN                         (O-GE + U-All_HE)
         17 THAI                            (O-No)
         18 JAPANESE                        (O-Bas)
         
