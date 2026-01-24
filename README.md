@@ -56,18 +56,34 @@ Future translations can be added to the game after number '18', however they can
 - Chinese language uses Big5 encoding
 - Thai seems to be broken in History Edition
 
-## How to set any language from the above list, in the History Edition:
+## How to set any language from the above list in the History Edition
 
-    Go to C:\Users\<your username>\Documents\TheSettlers4\Config and open the GameSettings.cfg file, e.g. with notepad.
-    Find the line Language = <number> and change the <number> to the number of language you want from the above list.
-    Save the file and run the game. Now the visible language in the game should be the language you have chosen.
+1. Go to the **Binaries/Txt** directory and download the corresponding file.  
+   The ending number of each file corresponds to a specific language (see the table above for language numbers):  
+   `s4_texts.dat<language_number>`
 
-In the Gold Edition the GameSettings.cfg file is located in Config directory, in a location where the game is installed. Other steps remain the same.
+   Examples:
+   - `s4_texts.dat0` → English  
+   - `s4_texts.dat5` → Polish
 
-Bear in mind that History Edition is officially translated only to German, English and French. If you change the game language to any other of these three, you will have partial translation of the game - without the New World and the Great Crusades - unless somebody will translate them (check the above table).
+2. Move the downloaded file to the **txt** folder located in the game installation directory.
 
-It may happen that after some Ubisoft update, you will have to repeat all of these above steps.
-In the History Edition, the menu texts: "New World" and "Great Crusades" are only visible in English, German or French, because someone hardcoded them that way in the game code. So for them, the game ignores the translation file of your language, and loads hardcoded signatures. This only happens in the History Edition.
+3. Change the game language in the game settings:  
+   Go to:  
+   `C:\Users\<your username>\Documents\TheSettlers4\Config`  
+   and open the **GameSettings.cfg** file (e.g., with Notepad).  
+   Find the line:  
+   `Language = <number>`  
+   Replace `<number>` with the language number you want to use (from the list above).  
+   Save the file and run the game. The in‑game language should now match your selection.
+
+In the **Gold Edition**, the *GameSettings.cfg* file is located in the **Config** directory inside the game installation folder. All other steps remain the same.
+
+Keep in mind that the **History Edition** is officially translated only into German, English, and French. If you select any other language, you will get only a partial translation — the *New World* and *Great Crusades* campaigns will remain untranslated unless someone provides translations (see the table above).
+
+After certain Ubisoft updates, you may need to repeat the steps described above.
+
+In the History Edition, the menu entries *“New World”* and *“Great Crusades”* are always displayed in English, German, or French. These strings are hardcoded in the game, so the game ignores the translation file for these specific menu items. This issue occurs only in the History Edition.
 
 ## Credits:
 - **All authors of the original translations**
