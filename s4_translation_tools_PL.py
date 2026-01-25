@@ -386,6 +386,191 @@ def option_import_s4(path_dat: Path, encoding_out='utf-8'):
     except Exception as e:
         print(f"Błąd zapisu pliku projektu: {e}")
 
+
+def option_export_proj_to_dat(path_proj: Path = None):
+    """
+    Eksportuje .s4_translation_project -> s4_texts.dat<langnum>
+    Format: 4 bajty nagłówka, potem powtarzane: 4 bajty długości (little-endian), dane tekstu (bajty).
+    Zapisuje wszystkie teksty od 1 do ostatniego numeru występującego w projekcie.
+    Sugestia numeru języka pochodzi z nazwy pliku projektu (np. 'CHINESE' -> 7).
+    """
+    # 1) ścieżka pliku projektu
+    if path_proj is None:
+        raw = input("Podaj ścieżkę do pliku .s4_translation_project: ").strip()
+        if not raw:
+            print("Brak ścieżki. Anulowano.")
+            return
+        try:
+            path_proj = sanitize_path(raw)
+        except Exception as e:
+            print(f"Nieprawidłowa ścieżka: {e}")
+            return
+    if not path_proj.exists():
+        print(f"Plik nie istnieje: {path_proj}")
+        return
+
+    # 2) wczytaj i sparsuj projekt
+    try:
+        text = read_file(path_proj, encoding='utf-8')
+    except Exception as e:
+        print(f"Błąd odczytu pliku projektu: {e}")
+        return
+
+    header_text, order, blocks_map = parse_blocks_linewise(text)
+
+    # 3) spróbuj wyciągnąć nagłówek 4 bajtów z nagłówka projektu (w formacie @n1 n2 n3 n4@)
+    import re
+    header_bytes = None
+    if header_text:
+        m = re.search(r'@\s*([\d\s]{1,})\s*@', header_text)
+        if m:
+            nums = m.group(1).strip().split()
+            if len(nums) >= 4:
+                try:
+                    hb = [int(x) & 0xFF for x in nums[:4]]
+                    if all(0 <= x <= 255 for x in hb):
+                        header_bytes = bytes(hb)
+                        print(f"Znaleziono nagłówek w pliku projektu: {hb}")
+                except Exception:
+                    header_bytes = None
+
+    # jeśli nie znaleziono, poproś użytkownika o podanie 4 liczb
+    if header_bytes is None:
+        print("Nie znaleziono nagłówka 4 bajtów w pliku projektu.")
+        while True:
+            raw_hdr = input("Podaj 4 liczby (0-255) oddzielone spacjami jako nagłówek (np. '1 2 3 4'): ").strip()
+            parts = raw_hdr.split()
+            if len(parts) != 4:
+                print("Podaj dokładnie 4 liczby.")
+                continue
+            try:
+                nums = [int(x) for x in parts]
+                if any(n < 0 or n > 255 for n in nums):
+                    print("Liczby muszą być w zakresie 0-255.")
+                    continue
+                header_bytes = bytes(nums)
+                break
+            except ValueError:
+                print("Nieprawidłowe liczby. Spróbuj ponownie.")
+
+    # 4) sugeruj numer języka na podstawie nazwy pliku projektu (szukamy nazwy języka z LANG_MAP)
+    name_upper = path_proj.name.upper()
+    # zbuduj mapę nazwa->numer i posortuj po długości nazwy malejąco, żeby preferować dłuższe dopasowania
+    name_to_num = {v[0].upper(): k for k, v in LANG_MAP.items()}
+    candidates = sorted(name_to_num.keys(), key=lambda s: -len(s))
+    inferred = None
+    for lang_name in candidates:
+        if lang_name in name_upper:
+            inferred = name_to_num[lang_name]
+            break
+
+    # pokaż listę języków i zaproponuj sugerowany numer (jeśli znaleziono)
+    print("\nDostępne języki (numer : nazwa):")
+    for k in sorted(LANG_MAP.keys()):
+        print(f"  {k} : {LANG_MAP[k][0]}")
+    if inferred is not None:
+        print(f"\nSugestia na podstawie nazwy pliku: {inferred} ({LANG_MAP[inferred][0]})")
+    while True:
+        raw_lang = input(f"Podaj numer języka do zapisu (np. 5 dla POLISH) [{inferred if inferred is not None else ''}]: ").strip()
+        if raw_lang == '' and inferred is not None:
+            lang_num = inferred
+            break
+        try:
+            lang_num = int(raw_lang)
+            if lang_num not in LANG_MAP:
+                print("Nieznany numer języka. Spróbuj ponownie.")
+                continue
+            break
+        except ValueError:
+            print("Podaj liczbę całkowitą odpowiadającą numerowi języka.")
+
+    lang_name = LANG_MAP[lang_num][0]
+    enc_candidates = LANG_MAP[lang_num][1][:]
+    if 'utf-8' not in enc_candidates:
+        enc_candidates.append('utf-8')
+
+    print(f"Wybrany język: {lang_name} (numer {lang_num}). Sugerowane kodowania (pierwsze domyślne): {', '.join(enc_candidates)}")
+    chosen_enc = enc_candidates[0]
+    use_sug = input(f"Użyć sugerowanego kodowania '{chosen_enc}'? [Y/n]: ").strip().lower()
+    if use_sug != '' and use_sug not in ('y','yes','t','tak'):
+        custom = input("Podaj kodowanie wyjściowe (np. cp1250, cp950, cp932, cp1251) lub naciśnij Enter aby użyć sugerowanego: ").strip()
+        if custom:
+            chosen_enc = custom
+
+    # 5) ustal maksymalny numer do zapisu: zawsze zapisujemy wszystkie teksty od 1 do ostatniego istniejącego numeru
+    existing_nums = sorted(blocks_map.keys())
+    if existing_nums:
+        max_index = max(existing_nums)
+    else:
+        print("Plik projektu nie zawiera żadnych bloków tekstowych. Anulowano.")
+        return
+
+    print(f"Zapiszę wszystkie teksty od 1 do {max_index} (ostatni numer: {max_index}).")
+
+    # 6) przygotuj dane do zapisu: dla i=1..max_index zapisz długość i dane (brak -> długość 0)
+    texts_bytes = []
+    empty_count = 0
+    for i in range(1, max_index + 1):
+        content = blocks_map.get(i, '')
+        if content is None:
+            content = ''
+        content_norm = content.replace('\r\n', '\n').replace('\r', '\n')
+        try:
+            b = content_norm.encode(chosen_enc)
+        except Exception:
+            # fallback: spróbuj kolejne kodowania z listy, potem latin-1, potem utf-8 replace
+            b = None
+            for enc in enc_candidates:
+                try:
+                    b = content_norm.encode(enc)
+                    break
+                except Exception:
+                    continue
+            if b is None:
+                try:
+                    b = content_norm.encode('latin-1', errors='replace')
+                except Exception:
+                    b = content_norm.encode('utf-8', errors='replace')
+        texts_bytes.append(b)
+        if len(b) == 0:
+            empty_count += 1
+
+    # 7) wybierz nazwę pliku wyjściowego (domyślnie s4_texts.dat<langnum>)
+    default_out = path_proj.with_name(f"s4_texts.dat{lang_num}")
+    out_input = input(f"Plik wyjściowy [{default_out}]: ").strip()
+    if out_input == '':
+        out_path = default_out
+    else:
+        out_path = sanitize_path(out_input)
+
+    # 8) sprawdź nadpisanie
+    if out_path.exists():
+        if not confirm(f"Plik {out_path} już istnieje. Nadpisać?", default=False):
+            alt = out_path.with_name(out_path.stem + '_exported' + out_path.suffix)
+            print(f"Zapisz jako: {alt}")
+            if not confirm(f"Zapisz jako {alt}?", default=True):
+                print("Anulowano zapis.")
+                return
+            out_path = alt
+
+    # 9) zapisz binarnie: header_bytes (4), potem dla każdego tekstu: 4 bajty length (little-endian), dane
+    try:
+        with open(out_path, 'wb') as f:
+            f.write(header_bytes)
+            for b in texts_bytes:
+                length = len(b)
+                f.write(length.to_bytes(4, byteorder='little', signed=False))
+                if length > 0:
+                    f.write(b)
+    except Exception as e:
+        print(f"Błąd zapisu pliku .dat: {e}")
+        return
+
+    print(f"\nZapisano plik .dat: {out_path}")
+    print(f"Ostatni zapisany numer tekstu: {max_index}")
+    print(f"Liczba tekstów zapisanych: {len(texts_bytes)}. Pustych (length=0): {empty_count}. Kodowanie: {chosen_enc}")
+    
+
 # --- podgląd tekstów z pliku .dat z interaktywnym testowaniem kodowań i zapisem testu ---
 def option_preview_dat(path_dat: Path):
     inferred = infer_lang_from_filename(path_dat)
@@ -585,190 +770,6 @@ def option_preview_dat(path_dat: Path):
                 print("Test nie został zapisany.")
             print("Powrót do menu.")
             return
-
-
-def option_export_proj_to_dat(path_proj: Path = None):
-    """
-    Eksportuje .s4_translation_project -> s4_texts.dat<langnum>
-    Format: 4 bajty nagłówka, potem powtarzane: 4 bajty długości (little-endian), dane tekstu (bajty).
-    Zapisuje wszystkie teksty od 1 do ostatniego numeru występującego w projekcie.
-    Sugestia numeru języka pochodzi z nazwy pliku projektu (np. 'CHINESE' -> 7).
-    """
-    # 1) ścieżka pliku projektu
-    if path_proj is None:
-        raw = input("Podaj ścieżkę do pliku .s4_translation_project: ").strip()
-        if not raw:
-            print("Brak ścieżki. Anulowano.")
-            return
-        try:
-            path_proj = sanitize_path(raw)
-        except Exception as e:
-            print(f"Nieprawidłowa ścieżka: {e}")
-            return
-    if not path_proj.exists():
-        print(f"Plik nie istnieje: {path_proj}")
-        return
-
-    # 2) wczytaj i sparsuj projekt
-    try:
-        text = read_file(path_proj, encoding='utf-8')
-    except Exception as e:
-        print(f"Błąd odczytu pliku projektu: {e}")
-        return
-
-    header_text, order, blocks_map = parse_blocks_linewise(text)
-
-    # 3) spróbuj wyciągnąć nagłówek 4 bajtów z nagłówka projektu (w formacie @n1 n2 n3 n4@)
-    import re
-    header_bytes = None
-    if header_text:
-        m = re.search(r'@\s*([\d\s]{1,})\s*@', header_text)
-        if m:
-            nums = m.group(1).strip().split()
-            if len(nums) >= 4:
-                try:
-                    hb = [int(x) & 0xFF for x in nums[:4]]
-                    if all(0 <= x <= 255 for x in hb):
-                        header_bytes = bytes(hb)
-                        print(f"Znaleziono nagłówek w pliku projektu: {hb}")
-                except Exception:
-                    header_bytes = None
-
-    # jeśli nie znaleziono, poproś użytkownika o podanie 4 liczb
-    if header_bytes is None:
-        print("Nie znaleziono nagłówka 4 bajtów w pliku projektu.")
-        while True:
-            raw_hdr = input("Podaj 4 liczby (0-255) oddzielone spacjami jako nagłówek (np. '1 2 3 4'): ").strip()
-            parts = raw_hdr.split()
-            if len(parts) != 4:
-                print("Podaj dokładnie 4 liczby.")
-                continue
-            try:
-                nums = [int(x) for x in parts]
-                if any(n < 0 or n > 255 for n in nums):
-                    print("Liczby muszą być w zakresie 0-255.")
-                    continue
-                header_bytes = bytes(nums)
-                break
-            except ValueError:
-                print("Nieprawidłowe liczby. Spróbuj ponownie.")
-
-    # 4) sugeruj numer języka na podstawie nazwy pliku projektu (szukamy nazwy języka z LANG_MAP)
-    name_upper = path_proj.name.upper()
-    # zbuduj mapę nazwa->numer i posortuj po długości nazwy malejąco, żeby preferować dłuższe dopasowania
-    name_to_num = {v[0].upper(): k for k, v in LANG_MAP.items()}
-    candidates = sorted(name_to_num.keys(), key=lambda s: -len(s))
-    inferred = None
-    for lang_name in candidates:
-        if lang_name in name_upper:
-            inferred = name_to_num[lang_name]
-            break
-
-    # pokaż listę języków i zaproponuj sugerowany numer (jeśli znaleziono)
-    print("\nDostępne języki (numer : nazwa):")
-    for k in sorted(LANG_MAP.keys()):
-        print(f"  {k} : {LANG_MAP[k][0]}")
-    if inferred is not None:
-        print(f"\nSugestia na podstawie nazwy pliku: {inferred} ({LANG_MAP[inferred][0]})")
-    while True:
-        raw_lang = input(f"Podaj numer języka do zapisu (np. 5 dla POLISH) [{inferred if inferred is not None else ''}]: ").strip()
-        if raw_lang == '' and inferred is not None:
-            lang_num = inferred
-            break
-        try:
-            lang_num = int(raw_lang)
-            if lang_num not in LANG_MAP:
-                print("Nieznany numer języka. Spróbuj ponownie.")
-                continue
-            break
-        except ValueError:
-            print("Podaj liczbę całkowitą odpowiadającą numerowi języka.")
-
-    lang_name = LANG_MAP[lang_num][0]
-    enc_candidates = LANG_MAP[lang_num][1][:]
-    if 'utf-8' not in enc_candidates:
-        enc_candidates.append('utf-8')
-
-    print(f"Wybrany język: {lang_name} (numer {lang_num}). Sugerowane kodowania (pierwsze domyślne): {', '.join(enc_candidates)}")
-    chosen_enc = enc_candidates[0]
-    use_sug = input(f"Użyć sugerowanego kodowania '{chosen_enc}'? [Y/n]: ").strip().lower()
-    if use_sug != '' and use_sug not in ('y','yes','t','tak'):
-        custom = input("Podaj kodowanie wyjściowe (np. cp1250, cp950, cp932, cp1251) lub naciśnij Enter aby użyć sugerowanego: ").strip()
-        if custom:
-            chosen_enc = custom
-
-    # 5) ustal maksymalny numer do zapisu: zawsze zapisujemy wszystkie teksty od 1 do ostatniego istniejącego numeru
-    existing_nums = sorted(blocks_map.keys())
-    if existing_nums:
-        max_index = max(existing_nums)
-    else:
-        print("Plik projektu nie zawiera żadnych bloków tekstowych. Anulowano.")
-        return
-
-    print(f"Zapiszę wszystkie teksty od 1 do {max_index} (ostatni numer: {max_index}).")
-
-    # 6) przygotuj dane do zapisu: dla i=1..max_index zapisz długość i dane (brak -> długość 0)
-    texts_bytes = []
-    empty_count = 0
-    for i in range(1, max_index + 1):
-        content = blocks_map.get(i, '')
-        if content is None:
-            content = ''
-        content_norm = content.replace('\r\n', '\n').replace('\r', '\n')
-        try:
-            b = content_norm.encode(chosen_enc)
-        except Exception:
-            # fallback: spróbuj kolejne kodowania z listy, potem latin-1, potem utf-8 replace
-            b = None
-            for enc in enc_candidates:
-                try:
-                    b = content_norm.encode(enc)
-                    break
-                except Exception:
-                    continue
-            if b is None:
-                try:
-                    b = content_norm.encode('latin-1', errors='replace')
-                except Exception:
-                    b = content_norm.encode('utf-8', errors='replace')
-        texts_bytes.append(b)
-        if len(b) == 0:
-            empty_count += 1
-
-    # 7) wybierz nazwę pliku wyjściowego (domyślnie s4_texts.dat<langnum>)
-    default_out = path_proj.with_name(f"s4_texts.dat{lang_num}")
-    out_input = input(f"Plik wyjściowy [{default_out}]: ").strip()
-    if out_input == '':
-        out_path = default_out
-    else:
-        out_path = sanitize_path(out_input)
-
-    # 8) sprawdź nadpisanie
-    if out_path.exists():
-        if not confirm(f"Plik {out_path} już istnieje. Nadpisać?", default=False):
-            alt = out_path.with_name(out_path.stem + '_exported' + out_path.suffix)
-            print(f"Zapisz jako: {alt}")
-            if not confirm(f"Zapisz jako {alt}?", default=True):
-                print("Anulowano zapis.")
-                return
-            out_path = alt
-
-    # 9) zapisz binarnie: header_bytes (4), potem dla każdego tekstu: 4 bajty length (little-endian), dane
-    try:
-        with open(out_path, 'wb') as f:
-            f.write(header_bytes)
-            for b in texts_bytes:
-                length = len(b)
-                f.write(length.to_bytes(4, byteorder='little', signed=False))
-                if length > 0:
-                    f.write(b)
-    except Exception as e:
-        print(f"Błąd zapisu pliku .dat: {e}")
-        return
-
-    print(f"\nZapisano plik .dat: {out_path}")
-    print(f"Ostatni zapisany numer tekstu: {max_index}")
-    print(f"Liczba tekstów zapisanych: {len(texts_bytes)}. Pustych (length=0): {empty_count}. Kodowanie: {chosen_enc}")
     
 
 # --- shift ids (przesunięcie numerów) ---
