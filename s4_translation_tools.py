@@ -26,7 +26,7 @@ LANG_MAP = {
     4: ("ITALIAN", ["cp1252", "iso-8859-1", "iso-8859-15", "cp850"]),
     5: ("POLISH", ["cp1250", "iso-8859-2", "latin2", "cp852"]),
     6: ("KOREAN", ["cp949", "euc-kr", "ks_c_5601-1987"]),
-    7: ("CHINESE", ["cp950", "big5", "big5hkscs", "gbk"]),
+    7: ("CHINESE",   ["gbk", "cp950", "big5", "big5hkscs"]),
     8: ("SWEDISH", ["cp1252", "iso-8859-1", "iso-8859-15", "cp850"]),
     9: ("DANISH", ["cp1252", "iso-8859-1", "iso-8859-15", "cp850"]),
     10: ("NORWEGIAN", ["cp1252", "iso-8859-1", "iso-8859-15", "cp850"]),
@@ -407,7 +407,7 @@ def option_import_s4(path_dat: Path, encoding_out='utf-8'):
         print(f"Error saving project file: {e}")
 
 
-# --- option 4: preview .dat texts with interactive encoding test ---
+# --- preview .dat texts with interactive encoding test ---
 def option_preview_dat(path_dat: Path):
     inferred = infer_lang_from_filename(path_dat)
     if inferred is not None:
@@ -723,25 +723,155 @@ def option_shift_ids(path_a, encoding='utf-8'):
         print("Invalid choice. Exiting without saving.")
         return
 
+def option_fix_missing_entries(path_proj: Path = None, encoding='utf-8'):
+    """
+    Adds missing ## Text N ## entries in the project file.
+    Asks whether to overwrite the original file or save as a new file <name>_fixed.<ext>.
+    """
+    # Get path to project file
+    if path_proj is None:
+        raw = input("Enter path to the .s4_translation_project file: ").strip()
+        if not raw:
+            print("No path provided. Cancelled.")
+            return
+        try:
+            path_proj = sanitize_path(raw)
+        except Exception as e:
+            print(f"Invalid path: {e}")
+            return
+
+    if not path_proj.exists():
+        print(f"File does not exist: {path_proj}")
+        return
+
+    # Select range
+    while True:
+        rng = input("Enter range of numbers to fill (e.g. 1-2000) or single number (e.g. 57): ").strip()
+        if not rng:
+            print("No range provided. Cancelled.")
+            return
+
+        if '-' in rng:
+            parts = rng.split('-', 1)
+            try:
+                start = int(parts[0])
+                end = int(parts[1])
+                if start < 1 or end < start:
+                    print("Invalid range. Try again.")
+                    continue
+                break
+            except ValueError:
+                print("Invalid format. Use e.g. 1-2000 or 57.")
+                continue
+        else:
+            try:
+                n = int(rng)
+                if n < 1:
+                    print("Number must be >= 1.")
+                    continue
+                start = end = n
+                break
+            except ValueError:
+                print("Invalid number. Try again.")
+                continue
+
+    # Load and parse the file
+    try:
+        text = read_file(path_proj, encoding=encoding)
+    except Exception as e:
+        print(f"Error reading file: {e}")
+        return
+
+    header, order, blocks_map = parse_blocks_linewise(text)
+
+    # Collect missing numbers
+    missing = []
+    for i in range(start, end + 1):
+        if i not in blocks_map:
+            missing.append(i)
+
+    if not missing:
+        print("No missing entries in the specified range. Nothing to do.")
+        return
+
+    # Build new content
+    existing_nums = sorted(blocks_map.keys())
+    min_num = min(existing_nums) if existing_nums else start
+    max_num = max(existing_nums) if existing_nums else end
+
+    overall_min = min(min_num, start)
+    overall_max = max(max_num, end)
+
+    parts = []
+    if header:
+        parts.append(header if header.endswith('\n') else header + '\n')
+    else:
+        parts.append('')
+
+    added = []
+    for idx in range(overall_min, overall_max + 1):
+        parts.append(f'## Text {idx} ##\n')
+        content = blocks_map.get(idx, '')
+        if content:
+            content_norm = content.replace('\r\n', '\n').replace('\r', '\n').rstrip('\n')
+            parts.append(content_norm + '\n')
+        else:
+            added.append(idx)
+        parts.append('####\n')
+
+    result_text = ''.join(parts)
+
+    # --- report and save logic ---
+    print(f"\nFound {len(added)} missing entries to add.")
+    if added:
+        print("Added numbers:", ', '.join(map(str, added)))
+    else:
+        print("No new numbers added (unexpected situation).")
+
+    print("\nDo you want to overwrite the existing file?")
+    if confirm("Overwrite file?", default=False):
+        try:
+            write_file(path_proj, result_text, encoding=encoding)
+            print(f"File overwritten: {path_proj}")
+        except Exception as e:
+            print(f"Write error: {e}")
+        return
+
+    # If not overwriting → save as new file
+    ext = path_proj.suffix
+    stem = path_proj.stem
+    new_path = path_proj.with_name(f"{stem}_fixed{ext}")
+
+    print(f"Save as new file: {new_path}?")
+    if confirm("Save as new?", default=True):
+        try:
+            write_file(new_path, result_text, encoding=encoding)
+            print(f"New file saved: {new_path}")
+        except Exception as e:
+            print(f"Write error: {e}")
+    else:
+        print("Save cancelled.")
+      
 
 # --- main menu ---
 def main():
     while True:
         print("\n=== Settlers IV translation tool (menu) ===")
-        print("Choose option:")
+        print("Choose an option:")
         print(" 1) Compare A vs B and generate missingtexts.txt (texts from B missing/needing update in A)")
-        print(" 2) Merge files: replace existing and append missing from B to A")
+        print(" 2) Merge files: replace existing entries and append missing ones from B to A")
         print(" 3) Import from s4_texts.dat<nr> → generate <LANG>.s4_translation_project")
         print(" 4) Preview texts from .dat file (interactive encoding testing)")
         print(" 5) Shift text numbers in file A (offset)")
-        print(" 6) Exit")
-        choice = input("Choose 1, 2, 3, 4, 5 or 6 [6]: ").strip() or '6'
+        print(" 6) Fix missing entries in project file")
+        print(" 7) Exit")
+        choice = input("Choose 1, 2, 3, 4, 5, 6 or 7 [7]: ").strip() or '7'
 
-        if choice not in {'1','2','3','4','5','6'}:
+        if choice not in {'1', '2', '3', '4', '5', '6', '7'}:
             print("Invalid choice. Try again.")
             continue
 
-        if choice == '6':
+        if choice == '7':
             print("Exiting.")
             input("\nPress Enter to close...")
             sys.exit(0)
@@ -804,7 +934,7 @@ def main():
                 if out_path is None:
                     print("No missingtexts file saved.")
                 else:
-                    print(f"Missing texts saved to: {out_path}")
+                    print(f"Missing texts file saved: {out_path}")
                     if missing_ids:
                         print(f"Number of missing blocks: {len(missing_ids)}. IDs: {', '.join(map(str, missing_ids))}")
                     else:
@@ -828,6 +958,22 @@ def main():
                 continue
             encoding = input("File encoding (default utf-8): ").strip() or 'utf-8'
             option_shift_ids(path_a, encoding=encoding)
+            continue
+
+        if choice == '6':
+            raw_proj = input("Enter path to .s4_translation_project file: ").strip()
+            if not raw_proj:
+                print("No path provided. Returning to menu.")
+                continue
+            try:
+                path_proj = sanitize_path(raw_proj)
+            except Exception as e:
+                print(f"Invalid path: {e}")
+                continue
+            if not path_proj.exists():
+                print(f"File does not exist: {path_proj}")
+                continue
+            option_fix_missing_entries(path_proj, encoding='utf-8')
             continue
 
 
