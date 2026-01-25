@@ -406,6 +406,200 @@ def option_import_s4(path_dat: Path, encoding_out='utf-8'):
     except Exception as e:
         print(f"Error saving project file: {e}")
 
+def option_export_proj_to_dat(path_proj: Path = None):
+    """
+    Exports .s4_translation_project → s4_texts.dat<langnum>
+    Format: 4-byte header, then repeated: 4-byte length (little-endian), text data (bytes).
+    Exports all texts from 1 to the highest number present in the project.
+    Language number suggestion is derived from the project filename (e.g. 'CHINESE' → 7).
+    """
+    # 1) Get project file path
+    if path_proj is None:
+        raw = input("Enter path to the .s4_translation_project file: ").strip()
+        if not raw:
+            print("No path provided. Cancelled.")
+            return
+        try:
+            path_proj = sanitize_path(raw)
+        except Exception as e:
+            print(f"Invalid path: {e}")
+            return
+
+    if not path_proj.exists():
+        print(f"File does not exist: {path_proj}")
+        return
+
+    # 2) Load and parse project
+    try:
+        text = read_file(path_proj, encoding='utf-8')
+    except Exception as e:
+        print(f"Error reading project file: {e}")
+        return
+
+    header_text, order, blocks_map = parse_blocks_linewise(text)
+
+    # 3) Try to extract 4-byte header from project header (format @n1 n2 n3 n4@)
+    import re
+    header_bytes = None
+    if header_text:
+        m = re.search(r'@\s*([\d\s]{1,})\s*@', header_text)
+        if m:
+            nums = m.group(1).strip().split()
+            if len(nums) >= 4:
+                try:
+                    hb = [int(x) & 0xFF for x in nums[:4]]
+                    if all(0 <= x <= 255 for x in hb):
+                        header_bytes = bytes(hb)
+                        print(f"Found header in project file: {hb}")
+                except Exception:
+                    header_bytes = None
+
+    # If not found, ask user for 4 bytes
+    if header_bytes is None:
+        print("No 4-byte header found in project file.")
+        while True:
+            raw_hdr = input("Enter 4 numbers (0-255) separated by spaces as header (e.g. '1 2 3 4'): ").strip()
+            parts = raw_hdr.split()
+            if len(parts) != 4:
+                print("Enter exactly 4 numbers.")
+                continue
+            try:
+                nums = [int(x) for x in parts]
+                if any(n < 0 or n > 255 for n in nums):
+                    print("Numbers must be in range 0-255.")
+                    continue
+                header_bytes = bytes(nums)
+                break
+            except ValueError:
+                print("Invalid numbers. Try again.")
+
+    # 4) Suggest language number based on project filename
+    name_upper = path_proj.name.upper()
+    # Build name → number map, sorted by name length descending for better matching
+    name_to_num = {v[0].upper(): k for k, v in LANG_MAP.items()}
+    candidates = sorted(name_to_num.keys(), key=lambda s: -len(s))
+    inferred = None
+    for lang_name in candidates:
+        if lang_name in name_upper:
+            inferred = name_to_num[lang_name]
+            break
+
+    # Show list of languages and suggested number (if found)
+    print("\nAvailable languages (number : name):")
+    for k in sorted(LANG_MAP.keys()):
+        print(f" {k} : {LANG_MAP[k][0]}")
+
+    if inferred is not None:
+        print(f"\nSuggestion based on filename: {inferred} ({LANG_MAP[inferred][0]})")
+
+    while True:
+        raw_lang = input(
+            f"Enter language number for export (e.g. 5 for POLISH) "
+            f"[{inferred if inferred is not None else ''}]: "
+        ).strip()
+        if raw_lang == '' and inferred is not None:
+            lang_num = inferred
+            break
+        try:
+            lang_num = int(raw_lang)
+            if lang_num not in LANG_MAP:
+                print("Unknown language number. Try again.")
+                continue
+            break
+        except ValueError:
+            print("Enter an integer corresponding to a language number.")
+
+    lang_name = LANG_MAP[lang_num][0]
+    enc_candidates = LANG_MAP[lang_num][1][:]
+    if 'utf-8' not in enc_candidates:
+        enc_candidates.append('utf-8')
+
+    print(f"Selected language: {lang_name} (number {lang_num}). "
+          f"Suggested encodings (first is default): {', '.join(enc_candidates)}")
+
+    chosen_enc = enc_candidates[0]
+    use_sug = input(f"Use suggested encoding '{chosen_enc}'? [Y/n]: ").strip().lower()
+    if use_sug != '' and use_sug not in ('y', 'yes', 't', 'true'):
+        custom = input(
+            "Enter output encoding (e.g. cp1250, cp950, cp932, cp1251) "
+            "or press Enter to use suggested: "
+        ).strip()
+        if custom:
+            chosen_enc = custom
+
+    # 5) Determine max index to export: always 1 to highest existing number
+    existing_nums = sorted(blocks_map.keys())
+    if existing_nums:
+        max_index = max(existing_nums)
+    else:
+        print("Project file contains no text blocks. Cancelled.")
+        return
+
+    print(f"Will export all texts from 1 to {max_index} (last number: {max_index}).")
+
+    # 6) Prepare data: for i=1..max_index → length + data (missing → length 0)
+    texts_bytes = []
+    empty_count = 0
+    for i in range(1, max_index + 1):
+        content = blocks_map.get(i, '')
+        if content is None:
+            content = ''
+        content_norm = content.replace('\r\n', '\n').replace('\r', '\n')
+        try:
+            b = content_norm.encode(chosen_enc)
+        except Exception:
+            # fallback: try candidates, then latin-1, then utf-8 replace
+            b = None
+            for enc in enc_candidates:
+                try:
+                    b = content_norm.encode(enc)
+                    break
+                except Exception:
+                    continue
+            if b is None:
+                try:
+                    b = content_norm.encode('latin-1', errors='replace')
+                except Exception:
+                    b = content_norm.encode('utf-8', errors='replace')
+
+        texts_bytes.append(b)
+        if len(b) == 0:
+            empty_count += 1
+
+    # 7) Choose output filename (default: s4_texts.dat<langnum>)
+    default_out = path_proj.with_name(f"s4_texts.dat{lang_num}")
+    out_input = input(f"Output file [{default_out}]: ").strip()
+    if out_input == '':
+        out_path = default_out
+    else:
+        out_path = sanitize_path(out_input)
+
+    # 8) Check overwrite
+    if out_path.exists():
+        if not confirm(f"File {out_path} already exists. Overwrite?", default=False):
+            alt = out_path.with_name(out_path.stem + '_exported' + out_path.suffix)
+            print(f"Save as: {alt}")
+            if not confirm(f"Save as {alt}?", default=True):
+                print("Save cancelled.")
+                return
+            out_path = alt
+
+    # 9) Write binary: header (4 bytes), then for each text: 4-byte length + data
+    try:
+        with open(out_path, 'wb') as f:
+            f.write(header_bytes)
+            for b in texts_bytes:
+                length = len(b)
+                f.write(length.to_bytes(4, byteorder='little', signed=False))
+                if length > 0:
+                    f.write(b)
+    except Exception as e:
+        print(f"Error writing .dat file: {e}")
+        return
+
+    print(f"\n.dat file saved: {out_path}")
+    print(f"Last exported text number: {max_index}")
+    print(f"Total texts exported: {len(texts_bytes)}. Empty (length=0): {empty_count}. Encoding: {chosen_enc}")
 
 # --- preview .dat texts with interactive encoding test ---
 def option_preview_dat(path_dat: Path):
@@ -861,17 +1055,18 @@ def main():
         print(" 1) Compare A vs B and generate missingtexts.txt (texts from B missing/needing update in A)")
         print(" 2) Merge files: replace existing entries and append missing ones from B to A")
         print(" 3) Import from s4_texts.dat<nr> → generate <LANG>.s4_translation_project")
-        print(" 4) Preview texts from .dat file (interactive encoding testing)")
-        print(" 5) Shift text numbers in file A (offset)")
-        print(" 6) Fix missing entries in project file")
-        print(" 7) Exit")
-        choice = input("Choose 1, 2, 3, 4, 5, 6 or 7 [7]: ").strip() or '7'
+        print(" 4) Export .s4_translation_project → s4_texts.dat<nr>")
+        print(" 5) Preview texts from .dat file (interactive encoding testing)")
+        print(" 6) Shift text numbers in file A (offset)")
+        print(" 7) Fix missing entries in project file")
+        print(" 8) Exit")
+        choice = input("Choose 1, 2, 3, 4, 5, 6, 7 or 8 [8]: ").strip() or '8'
 
-        if choice not in {'1', '2', '3', '4', '5', '6', '7'}:
+        if choice not in {'1', '2', '3', '4', '5', '6', '7', '8'}:
             print("Invalid choice. Try again.")
             continue
 
-        if choice == '7':
+        if choice == '8':
             print("Exiting.")
             input("\nPress Enter to close...")
             sys.exit(0)
@@ -893,6 +1088,22 @@ def main():
             continue
 
         if choice == '4':
+            raw_proj = input("Enter path to .s4_translation_project file to export: ").strip()
+            if not raw_proj:
+                print("Path to project file required. Returning to menu.")
+                continue
+            try:
+                path_proj = sanitize_path(raw_proj)
+            except Exception as e:
+                print(f"Invalid path: {e}")
+                continue
+            if not path_proj.exists():
+                print(f"Project file does not exist: {path_proj}")
+                continue
+            option_export_proj_to_dat(path_proj)
+            continue
+
+        if choice == '5':
             raw_dat = input("Enter path to s4_texts.dat<nr> file to preview: ").strip()
             if not raw_dat:
                 print("Path to .dat file required. Returning to menu.")
@@ -943,7 +1154,7 @@ def main():
                 option_merge(path_a, path_b, encoding=encoding)
             continue
 
-        if choice == '5':
+        if choice == '6':
             raw_a2 = input("Enter path to file A (original): ").strip()
             if not raw_a2:
                 print("File A required for this option. Returning to menu.")
@@ -960,7 +1171,7 @@ def main():
             option_shift_ids(path_a, encoding=encoding)
             continue
 
-        if choice == '6':
+        if choice == '7':
             raw_proj = input("Enter path to .s4_translation_project file: ").strip()
             if not raw_proj:
                 print("No path provided. Returning to menu.")
