@@ -143,10 +143,15 @@ def build_output_text(header, original_order_ids, a_map, b_map):
 
 # --- I/O helpers ---
 def read_file(path, encoding='utf-8'):
-    return Path(path).read_text(encoding=encoding)
+    data = Path(path).read_bytes()
+    text = data.decode(encoding, errors='replace')
+    return text.replace('\r\n', '\n').replace('\r', '\n')
 
 def write_file(path, text, encoding='utf-8'):
-    Path(path).write_text(text, encoding=encoding)
+    normalized = text.replace('\r\n', '\n').replace('\r', '\n')
+    with open(path, 'wb') as f:
+        f.write(normalized.encode(encoding))
+
 
 # --- option 1: generate missingtexts.txt ---
 def generate_missing_texts(path_a, path_b, encoding='utf-8', out_name='missingtexts.txt'):
@@ -376,7 +381,7 @@ def option_import_s4(path_dat: Path, encoding_out='utf-8'):
             print("Anulowano zapis pliku projektu.")
             return
     try:
-        out_path.write_text(''.join(parts), encoding=encoding_out)
+        write_file(out_path, ''.join(parts), encoding=encoding_out)
         print(f"Zapisano plik projektu: {out_path} (kodowanie wyjściowe: {encoding_out})")
     except Exception as e:
         print(f"Błąd zapisu pliku projektu: {e}")
@@ -498,7 +503,7 @@ def option_preview_dat(path_dat: Path):
                     print("Anulowano zapis testu.")
                     return
             try:
-                out_path.write_text('\n'.join(log_lines), encoding='utf-8')
+                write_file(out_path, '\n'.join(log_lines), encoding='utf-8')
                 print(f"Zapisano test kodowań do: {out_path}")
             except Exception as e:
                 print(f"Błąd zapisu testu: {e}")
@@ -572,7 +577,7 @@ def option_preview_dat(path_dat: Path):
                         print("Anulowano zapis testu.")
                         return
                 try:
-                    out_path.write_text('\n'.join(log_lines), encoding='utf-8')
+                    write_file(out_path, '\n'.join(log_lines), encoding='utf-8')
                     print(f"Zapisano test kodowań do: {out_path}")
                 except Exception as e:
                     print(f"Błąd zapisu testu: {e}")
