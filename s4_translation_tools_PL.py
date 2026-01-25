@@ -770,6 +770,108 @@ def option_export_proj_to_dat(path_proj: Path = None):
     print(f"Ostatni zapisany numer tekstu: {max_index}")
     print(f"Liczba tekstów zapisanych: {len(texts_bytes)}. Pustych (length=0): {empty_count}. Kodowanie: {chosen_enc}")
     
+
+# --- shift ids (przesunięcie numerów) ---
+def option_shift_ids(path_a, encoding='utf-8'):
+    text_a = read_file(path_a, encoding=encoding)
+    header_a, order_a, map_a = parse_blocks_linewise(text_a)
+
+    if not order_a:
+        print("Nie znaleziono żadnych bloków '## Text N ##' w pliku A. Nic do przesunięcia.")
+        return
+
+    first = order_a[0]
+    last = order_a[-1]
+    count = len(order_a)
+    print(f"Znaleziono {count} bloków. Pierwszy numer: {first}, ostatni numer: {last}.")
+
+    while True:
+        raw = input("Podaj offset (liczba całkowita, 0 = anuluj): ").strip()
+        if raw == '':
+            print("Brak wartości. Anulowano.")
+            return
+        try:
+            offset = int(raw)
+        except ValueError:
+            print("Proszę podać liczbę całkowitą (może być ujemna).")
+            continue
+        if offset == 0:
+            print("Offset = 0 — brak działania. Anulowano.")
+            return
+        break
+
+    new_ids = [i + offset for i in order_a]
+    if any(i <= 0 for i in new_ids):
+        print("Błąd: po przesunięciu niektóre numery byłyby mniejsze lub równe 0. Wybierz inny offset.")
+        return
+
+    if len(set(new_ids)) != len(new_ids):
+        print("Błąd: po przesunięciu wystąpiły duplikaty numerów. Anulowano.")
+        return
+
+    parts = []
+    parts.append(header_a if header_a.endswith('\n') or header_a == '' else header_a + '\n')
+    for old_idx in order_a:
+        new_idx = old_idx + offset
+        content = map_a.get(old_idx, '')
+        parts.append(f'## Text {new_idx} ##\n')
+        if content != '':
+            parts.append(f'{content}\n')
+        parts.append('####\n')
+    result_text = ''.join(parts)
+
+    print("\nWybierz sposób zapisu przesuniętego pliku:")
+    print("  1) Nadpisać plik A (zrobiona zostanie kopia zapasowa)")
+    print("  2) Zapisz jako nowy plik (ten sam katalog co A, nazwa + _shifted)")
+    choice = input("Wybierz 1 lub 2 [2]: ").strip() or '2'
+
+    if choice == '1':
+        bak = path_a.with_suffix(path_a.suffix + '.bak')
+        try:
+            shutil.copy2(path_a, bak)
+            print(f"Utworzono kopię zapasową: {bak}")
+        except Exception as e:
+            print(f"Nie udało się utworzyć kopii zapasowej: {e}")
+            if not confirm("Kontynuować bez kopii zapasowej?", default=False):
+                print("Anulowano.")
+                return
+        try:
+            write_file(path_a, result_text, encoding=encoding)
+            print(f"Nadpisano plik A: {path_a}")
+        except Exception as e:
+            print(f"Błąd zapisu: {e}")
+            return
+    elif choice == '2':
+        suggested = path_a.with_name(path_a.stem + '_shifted' + path_a.suffix)
+        out_path_input = input(f"Podaj ścieżkę wyjściową [{suggested}]: ").strip()
+        if out_path_input == '':
+            out_path = suggested
+        else:
+            candidate = sanitize_path(out_path_input)
+            if candidate.exists() and candidate.is_dir():
+                out_path = candidate / suggested.name
+            else:
+                out_path = candidate
+        out_dir = out_path.parent
+        if not out_dir.exists():
+            try:
+                out_dir.mkdir(parents=True, exist_ok=True)
+            except Exception as e:
+                print(f"Nie udało się utworzyć katalogu {out_dir}: {e}")
+                return
+        if out_path.exists():
+            if not confirm(f"Plik {out_path} już istnieje. Nadpisać?", default=False):
+                print("Anulowano.")
+                return
+        try:
+            write_file(out_path, result_text, encoding=encoding)
+            print(f"Zapisano przesunięty plik do: {out_path}")
+        except Exception as e:
+            print(f"Błąd zapisu: {e}")
+            return
+    else:
+        print("Nieprawidłowy wybór. Kończę bez zapisu.")
+        return
         
 def option_fix_missing_entries(path_proj: Path = None, encoding='utf-8'):
     """
