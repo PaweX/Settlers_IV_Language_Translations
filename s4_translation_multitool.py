@@ -48,8 +48,8 @@ TRANSLATIONS = {
         'en': "Invalid choice. Try again."
     },
     'main_menu_title': {
-        'pl': "\n=== Settlers IV translation tool (menu) ===",
-        'en': "\n=== Settlers IV translation tool (menu) ==="
+        'pl': "\n=== Settlers IV Translation Multitool (menu) ===",
+        'en': "\n=== Settlers IV Translation Multitool (menu) ==="
     },
     'main_menu_options': {
         'pl': """Wybierz opcję:
@@ -234,7 +234,7 @@ TRANSLATIONS = {
         'en': "Selected language: {} (number {}), suggested encodings (first default): {}"
     },
     'use_suggested_enc': {
-        'pl': "Użyć sugerowanego kodowania '{}'? [Y/n]: ",
+        'pl': "Użyć sugerowanego kodowania '{}'? [T/n]: ",
         'en': "Use suggested encoding '{}'? [Y/n]: "
     },
     'enc_input_prompt': {
@@ -304,10 +304,6 @@ TRANSLATIONS = {
     'selected_lang_save': {
         'pl': "Wybrany język: {} (numer {}). Sugerowane kodowania (pierwsze domyślne): {}",
         'en': "Selected language: {} (number {}). Suggested encodings (first default): {}"
-    },
-    'use_suggested_enc_out': {
-        'pl': "Użyć sugerowanego kodowania '{}'? [Y/n]: ",
-        'en': "Use suggested encoding '{}'? [Y/n]: "
     },
     'custom_enc_prompt': {
         'pl': "Podaj kodowanie wyjściowe (np. cp1250, cp950, cp932, cp1251) lub naciśnij Enter aby użyć sugerowanego: ",
@@ -402,11 +398,11 @@ TRANSLATIONS = {
         'en': "Enter encoding name (e.g. big5, cp950, utf-8): "
     },
     'test_another_enc': {
-        'pl': "Sprawdzić inne kodowanie dla tego zakresu? [Y/n]: ",
+        'pl': "Sprawdzić inne kodowanie dla tego zakresu? [T/n]: ",
         'en': "Test another encoding for this range? [Y/n]: "
     },
     'save_test_prompt': {
-        'pl': "Czy zapisać wynik testu do pliku {}_encoding_test.txt? [y/N]: ",
+        'pl': "Czy zapisać wynik testu do pliku {}_encoding_test.txt? [T/n]: ",
         'en': "Save test result to file {}_encoding_test.txt? [y/N]: "
     },
     'test_saved': {
@@ -726,6 +722,18 @@ TRANSLATIONS = {
         'pl': "Plik A wymagany dla tej opcji. Powrót do menu.",
         'en': "File A required for this option. Back to menu."
     },
+    'invalid_project_file': {
+        'pl': "Plik nie jest poprawnym plikiem projektu (brak co najmniej jednego wpisu '## Text N ## ... ####'). Podaj poprawny plik.",
+        'en': "File is not a valid project file (missing at least one '## Text N ## ... ####' entry). Enter a valid file."
+    },
+    'invalid_dat_file': {
+        'pl': "Plik nie jest poprawnym plikiem .dat (błąd w strukturze nagłówka lub pierwszego tekstu). Podaj poprawny plik.",
+        'en': "File is not a valid .dat file (error in header or first text structure). Enter a valid file."
+    },
+    'header_bytes_dat': {
+        'pl': "Nagłówek 4 bajtów: {}",
+        'en': "4-byte header: {}"
+    },
 }
 
 # --- pomocnicze ---
@@ -861,6 +869,64 @@ def write_file(path: Path | str, text: str, encoding: str = 'utf-8') -> None:
     path = Path(path)
     with open(path, 'wb') as f:
         f.write(normalized.encode(encoding))
+
+# --- Funkcja walidująca plik projektu ---
+def validate_project_file(path: Path, encoding: str = 'utf-8', lang: str = 'en') -> bool:
+    try:
+        text = read_file(path, encoding=encoding)
+        _, _, blocks_map = parse_blocks_linewise(text)
+        if len(blocks_map) > 0:
+            return True
+        else:
+            print(TRANSLATIONS['invalid_project_file'][lang])
+            return False
+    except Exception as e:
+        print(TRANSLATIONS['project_read_error'][lang].format(e))
+        return False
+
+# --- Funkcja walidująca plik .dat ---
+def validate_dat_file(path: Path, lang: str = 'en') -> bool:
+    try:
+        data = path.read_bytes()
+        if len(data) < 8:
+            print(TRANSLATIONS['file_too_short'][lang])
+            return False
+        header_bytes = data[0:4]
+        print(TRANSLATIONS['header_bytes_dat'][lang].format(' '.join(str(b) for b in header_bytes)))
+        length = int.from_bytes(data[4:8], byteorder='little', signed=False)
+        if length < 0 or 8 + length > len(data):
+            print(TRANSLATIONS['invalid_dat_file'][lang])
+            return False
+        text_bytes = data[8:8 + length]
+        try:
+            text_bytes.decode('ascii')
+            return True
+        except UnicodeDecodeError:
+            print(TRANSLATIONS['invalid_dat_file'][lang])
+            return False
+    except Exception as e:
+        print(TRANSLATIONS['dat_read_error'][lang].format(e))
+        return False
+
+TRANSLATIONS['file_too_short'] = {
+    'pl': "Plik zbyt krótki, brak nagłówka.",
+    'en': "File too short, no header."
+}
+
+TRANSLATIONS['invalid_project_file'] = {
+    'pl': "Plik nie jest poprawnym plikiem projektu (brak co najmniej jednego wpisu '## Text N ## ... ####'). Podaj poprawny plik.",
+    'en': "File is not a valid project file (missing at least one '## Text N ## ... ####' entry). Enter a valid file."
+}
+
+TRANSLATIONS['invalid_dat_file'] = {
+    'pl': "Plik nie jest poprawnym plikiem .dat (błąd w strukturze nagłówka lub pierwszego tekstu). Podaj poprawny plik.",
+    'en': "File is not a valid .dat file (error in header or first text structure). Enter a valid file."
+}
+
+TRANSLATIONS['header_bytes_dat'] = {
+    'pl': "Nagłówek 4 bajtów: {}",
+    'en': "4-byte header: {}"
+}
 
 # --- option 1: generate missingtexts.txt ---
 def generate_missing_texts(path_a: Path, path_b: Path, encoding: str = 'utf-8', out_name: str = 'missingtexts.txt', lang: str = 'en') -> tuple[Path | None, list[int]]:
@@ -1110,18 +1176,25 @@ def option_export_proj_to_dat(path_proj: Path | None = None, lang: str = 'en') -
     """
     # 1) ścieżka pliku projektu
     if path_proj is None:
-        raw = input(TRANSLATIONS['project_path_prompt'][lang]).strip()
-        if not raw:
-            print(TRANSLATIONS['project_path_required'][lang])
+        while True:
+            raw = input(TRANSLATIONS['project_export_prompt'][lang]).strip()
+            if not raw:
+                print(TRANSLATIONS['project_path_required'][lang])
+                return
+            try:
+                path_proj = sanitize_path(raw)
+            except Exception as e:
+                print(TRANSLATIONS['invalid_path'][lang].format(e))
+                continue
+            if not path_proj.exists():
+                print(TRANSLATIONS['file_not_exists'][lang].format('.s4_translation_project', path_proj))
+                continue
+            if not validate_project_file(path_proj, lang=lang):
+                continue
+            break
+    else:
+        if not validate_project_file(path_proj, lang=lang):
             return
-        try:
-            path_proj = sanitize_path(raw)
-        except Exception as e:
-            print(TRANSLATIONS['invalid_path'][lang].format(e))
-            return
-    if not path_proj.exists():
-        print(TRANSLATIONS['file_not_exists'][lang].format('projektu', path_proj))
-        return
 
     # 2) wczytaj i sparsuj projekt
     try:
@@ -1204,7 +1277,7 @@ def option_export_proj_to_dat(path_proj: Path | None = None, lang: str = 'en') -
 
     print(TRANSLATIONS['selected_lang_save'][lang].format(lang_name, lang_num, ', '.join(enc_candidates)))
     chosen_enc = enc_candidates[0]
-    use_sug = input(TRANSLATIONS['use_suggested_enc_out'][lang].format(chosen_enc)).strip().lower()
+    use_sug = input(TRANSLATIONS['use_suggested_enc'][lang].format(chosen_enc)).strip().lower()
     if use_sug != '' and use_sug not in ('y','yes','t','tak'):
         custom = input(TRANSLATIONS['custom_enc_prompt'][lang]).strip()
         if custom:
@@ -1487,6 +1560,23 @@ def option_preview_dat(path_dat: Path, lang: str = 'en') -> None:
 
 # --- shift ids (przesunięcie numerów) ---
 def option_shift_ids(path_a: Path, encoding: str = 'utf-8', lang: str = 'en') -> None:
+    while True:
+        raw_a2 = input(TRANSLATIONS['path_a_shift_prompt'][lang]).strip()
+        if not raw_a2:
+            print(TRANSLATIONS['path_a_required'][lang])
+            return
+        try:
+            path_a = sanitize_path(raw_a2)
+        except Exception as e:
+            print(TRANSLATIONS['invalid_path'][lang].format(e))
+            continue
+        if not path_a.exists():
+            print(TRANSLATIONS['file_not_exists'][lang].format('A', path_a))
+            continue
+        if not validate_project_file(path_a, encoding, lang):
+            continue
+        break
+
     text_a = read_file(path_a, encoding=encoding)
     header_a, order_a, map_a = parse_blocks_linewise(text_a)
 
@@ -1594,18 +1684,25 @@ def option_fix_missing_entries(path_proj: Path | None = None, encoding: str = 'u
     """
     # pobierz ścieżkę pliku projektu
     if path_proj is None:
-        raw = input(TRANSLATIONS['project_path_fix_prompt'][lang]).strip()
-        if not raw:
-            print(TRANSLATIONS['no_path_canceled'][lang])
+        while True:
+            raw = input(TRANSLATIONS['project_path_fix_prompt'][lang]).strip()
+            if not raw:
+                print(TRANSLATIONS['no_path_canceled'][lang])
+                return
+            try:
+                path_proj = sanitize_path(raw)
+            except Exception as e:
+                print(TRANSLATIONS['invalid_path'][lang].format(e))
+                continue
+            if not path_proj.exists():
+                print(TRANSLATIONS['file_not_exists'][lang].format('', path_proj))
+                continue
+            if not validate_project_file(path_proj, encoding, lang):
+                continue
+            break
+    else:
+        if not validate_project_file(path_proj, encoding, lang):
             return
-        try:
-            path_proj = sanitize_path(raw)
-        except Exception as e:
-            print(TRANSLATIONS['invalid_path'][lang].format(e))
-            return
-    if not path_proj.exists():
-        print(TRANSLATIONS['file_not_exists'][lang].format('', path_proj))
-        return
 
     # wybór przedziału
     while True:
@@ -1736,6 +1833,10 @@ def option_align_versions(path_a: Path, path_b: Path, encoding: str = 'utf-8', m
         print(TRANSLATIONS['file_not_exists'][lang].format('B', path_b))
         return
 
+    # walidacja poprawności plików projektu
+    if not validate_project_file(path_a, encoding, lang) or not validate_project_file(path_b, encoding, lang):
+        return
+
     # wczytanie i parsowanie
     text_a = read_file(path_a, encoding=encoding)
     text_b = read_file(path_b, encoding=encoding)
@@ -1824,7 +1925,7 @@ def option_align_versions(path_a: Path, path_b: Path, encoding: str = 'utf-8', m
             candidate_text = get_text(map_a, candidate_n)
             candidate_norm = norm_for_compare(candidate_text)
 
-            # jeśli to nie pierwsza próba i candidate jest placeholderem, pomiń (szukamy znaczącego)
+            # jeśli to nie pierwsza pierwsza próba i candidate jest placeholderem, pomiń (szukamy znaczącego)
             if ia_try_pos != ia_pos and not is_significant_text(candidate_text):
                 ia_try_pos += 1
                 continue
@@ -2121,70 +2222,100 @@ def main(lang: str = 'en') -> None:
             sys.exit(0)
 
         if choice == '3':
-            raw_dat = input(TRANSLATIONS['path_dat_prompt'][lang]).strip()
-            if not raw_dat:
-                print(TRANSLATIONS['path_required'][lang])
-                continue
-            try:
-                path_dat = sanitize_path(raw_dat)
-            except Exception as e:
-                print(TRANSLATIONS['invalid_path'][lang].format(e))
-                continue
-            if not path_dat.exists():
-                print(TRANSLATIONS['file_not_exists'][lang].format('.dat', path_dat))
-                continue
-            option_import_s4(path_dat, encoding_out='utf-8', lang=lang)
+            while True:
+                raw_dat = input(TRANSLATIONS['path_dat_prompt'][lang]).strip()
+                if not raw_dat:
+                    print(TRANSLATIONS['path_required'][lang])
+                    break
+                try:
+                    path_dat = sanitize_path(raw_dat)
+                except Exception as e:
+                    print(TRANSLATIONS['invalid_path'][lang].format(e))
+                    continue
+                if not path_dat.exists():
+                    print(TRANSLATIONS['file_not_exists'][lang].format('.dat', path_dat))
+                    continue
+                if not validate_dat_file(path_dat, lang):
+                    continue
+                option_import_s4(path_dat, encoding_out='utf-8', lang=lang)
+                break
             continue
 
         if choice == '4':
-            raw_proj = input(TRANSLATIONS['project_export_prompt'][lang]).strip()
-            if not raw_proj:
-                print(TRANSLATIONS['project_path_required'][lang])
-                continue
-            try:
-                path_proj = sanitize_path(raw_proj)
-            except Exception as e:
-                print(TRANSLATIONS['invalid_path'][lang].format(e))
-                continue
-            if not path_proj.exists():
-                print(TRANSLATIONS['file_not_exists'][lang].format('projektu', path_proj))
-                continue
-            option_export_proj_to_dat(path_proj, lang=lang)
+            while True:
+                raw_proj = input(TRANSLATIONS['project_export_prompt'][lang]).strip()
+                if not raw_proj:
+                    print(TRANSLATIONS['project_path_required'][lang])
+                    break
+                try:
+                    path_proj = sanitize_path(raw_proj)
+                except Exception as e:
+                    print(TRANSLATIONS['invalid_path'][lang].format(e))
+                    continue
+                if not path_proj.exists():
+                    print(TRANSLATIONS['file_not_exists'][lang].format('.s4_translation_project', path_proj))
+                    continue
+                if not validate_project_file(path_proj, 'utf-8', lang):
+                    continue
+                option_export_proj_to_dat(path_proj, lang=lang)
+                break
             continue
 
         if choice == '5':
-            raw_dat = input(TRANSLATIONS['path_dat_preview_prompt'][lang]).strip()
-            if not raw_dat:
-                print(TRANSLATIONS['path_required'][lang])
-                continue
-            try:
-                path_dat = sanitize_path(raw_dat)
-            except Exception as e:
-                print(TRANSLATIONS['invalid_path'][lang].format(e))
-                continue
-            if not path_dat.exists():
-                print(TRANSLATIONS['file_not_exists'][lang].format('.dat', path_dat))
-                continue
-            option_preview_dat(path_dat, lang=lang)
+            while True:
+                raw_dat = input(TRANSLATIONS['path_dat_preview_prompt'][lang]).strip()
+                if not raw_dat:
+                    print(TRANSLATIONS['path_required'][lang])
+                    break
+                try:
+                    path_dat = sanitize_path(raw_dat)
+                except Exception as e:
+                    print(TRANSLATIONS['invalid_path'][lang].format(e))
+                    continue
+                if not path_dat.exists():
+                    print(TRANSLATIONS['file_not_exists'][lang].format('.dat', path_dat))
+                    continue
+                if not validate_dat_file(path_dat, lang):
+                    continue
+                option_preview_dat(path_dat, lang=lang)
+                break
             continue
 
         if choice in {'1','2','8'}:
-            raw_a = input(TRANSLATIONS['path_a_prompt'][lang]).strip()
-            raw_b = input(TRANSLATIONS['path_b_prompt'][lang]).strip()
+            while True:
+                raw_a = input(TRANSLATIONS['path_a_prompt'][lang]).strip()
+                if not raw_a:
+                    print(TRANSLATIONS['required_paths'][lang])
+                    break
+                try:
+                    path_a = sanitize_path(raw_a)
+                except Exception as e:
+                    print(TRANSLATIONS['invalid_path'][lang].format(e))
+                    continue
+                if not path_a.exists():
+                    print(TRANSLATIONS['file_not_exists'][lang].format('A', path_a))
+                    continue
+                if not validate_project_file(path_a, 'utf-8', lang):
+                    continue
+                break
+
+            while True:
+                raw_b = input(TRANSLATIONS['path_b_prompt'][lang]).strip()
+                if not raw_b:
+                    print(TRANSLATIONS['required_paths'][lang])
+                    break
+                try:
+                    path_b = sanitize_path(raw_b)
+                except Exception as e:
+                    print(TRANSLATIONS['invalid_path'][lang].format(e))
+                    continue
+                if not path_b.exists():
+                    print(TRANSLATIONS['file_not_exists'][lang].format('B', path_b))
+                    continue
+                if not validate_project_file(path_b, 'utf-8', lang):
+                    continue
+                break
             if not raw_a or not raw_b:
-                print(TRANSLATIONS['required_paths'][lang])
-                continue
-            try:
-                path_a = sanitize_path(raw_a)
-                path_b = sanitize_path(raw_b)
-            except Exception as e:
-                print(TRANSLATIONS['invalid_path'][lang].format(e))
-                continue
-            if not path_a.exists():
-                print(TRANSLATIONS['file_not_exists'][lang].format('A', path_a))
-                continue
-            if not path_b.exists():
-                print(TRANSLATIONS['file_not_exists'][lang].format('B', path_b))
                 continue
             encoding = input(TRANSLATIONS['encoding_prompt'][lang]).strip() or 'utf-8'
             if choice == '1':
@@ -2208,38 +2339,48 @@ def main(lang: str = 'en') -> None:
 
 
         if choice == '6':
-            raw_a2 = input(TRANSLATIONS['path_a_shift_prompt'][lang]).strip()
+            while True:
+                raw_a2 = input(TRANSLATIONS['path_a_shift_prompt'][lang]).strip()
+                if not raw_a2:
+                    print(TRANSLATIONS['path_a_required'][lang])
+                    break
+                try:
+                    path_a = sanitize_path(raw_a2)
+                except Exception as e:
+                    print(TRANSLATIONS['invalid_path'][lang].format(e))
+                    continue
+                if not path_a.exists():
+                    print(TRANSLATIONS['file_not_exists'][lang].format('A', path_a))
+                    continue
+                if not validate_project_file(path_a, 'utf-8', lang):
+                    continue
+                break
             if not raw_a2:
-                print(TRANSLATIONS['path_a_required'][lang])
-                continue
-            try:
-                path_a = sanitize_path(raw_a2)
-            except Exception as e:
-                print(TRANSLATIONS['invalid_path'][lang].format(e))
-                continue
-            if not path_a.exists():
-                print(TRANSLATIONS['file_not_exists'][lang].format('A', path_a))
                 continue
             encoding = input(TRANSLATIONS['encoding_prompt'][lang]).strip() or 'utf-8'
             option_shift_ids(path_a, encoding=encoding, lang=lang)
             continue
 
         if choice == '7':
-            raw_proj = input(TRANSLATIONS['project_path_fix_prompt'][lang]).strip()
-            if not raw_proj:
-                print(TRANSLATIONS['no_path_canceled'][lang])
-                continue
-            try:
-                path_proj = sanitize_path(raw_proj)
-            except Exception as e:
-                print(TRANSLATIONS['invalid_path'][lang].format(e))
-                continue
-            if not path_proj.exists():
-                print(TRANSLATIONS['file_not_exists'][lang].format('', path_proj))
-                continue
-            option_fix_missing_entries(path_proj, encoding='utf-8', lang=lang)
+            while True:
+                raw_proj = input(TRANSLATIONS['project_path_fix_prompt'][lang]).strip()
+                if not raw_proj:
+                    print(TRANSLATIONS['no_path_canceled'][lang])
+                    break
+                try:
+                    path_proj = sanitize_path(raw_proj)
+                except Exception as e:
+                    print(TRANSLATIONS['invalid_path'][lang].format(e))
+                    continue
+                if not path_proj.exists():
+                    print(TRANSLATIONS['file_not_exists'][lang].format('', path_proj))
+                    continue
+                if not validate_project_file(path_proj, 'utf-8', lang):
+                    continue
+                option_fix_missing_entries(path_proj, encoding='utf-8', lang=lang)
+                break
             continue
-
+            
 if __name__ == '__main__':
     lang_choice = input(TRANSLATIONS['choose_lang']['en']).strip() or '2'  # Menu wyboru po angielsku domyślnie
     if lang_choice == '1':
