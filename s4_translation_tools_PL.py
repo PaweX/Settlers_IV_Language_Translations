@@ -66,6 +66,27 @@ def confirm(prompt, default=True):
             return False
         print("Proszę odpowiedzieć tak/nie (y/n).")
 
+
+import difflib
+import re
+
+def similarity_percent(a: str, b: str) -> float:
+    """
+    Zwraca procent podobieństwa tekstów a i b w zakresie 0.0..100.0.
+    Normalizuje: usuwa białe znaki (wszystkie), zamienia na małe litery.
+    """
+    if a is None: a = ''
+    if b is None: b = ''
+    # normalizacja: usuń białe znaki i zamień na małe litery
+    na = re.sub(r'\s+', '', a).lower()
+    nb = re.sub(r'\s+', '', b).lower()
+    if not na and not nb:
+        return 100.0
+    matcher = difflib.SequenceMatcher(None, na, nb)
+    return round(matcher.ratio() * 100.0, 2)
+
+
+
 # --- parser liniowy (rozpoznaje puste bloki) ---
 def parse_blocks_linewise(text):
     lines = text.splitlines(keepends=True)
@@ -1001,6 +1022,397 @@ def option_fix_missing_entries(path_proj: Path = None, encoding='utf-8'):
         print("Anulowano zapis.")
 
 
+def option_align_versions(path_a: Path, path_b: Path, encoding='utf-8', max_tries_default=5):
+    """
+    Dopasowuje numery tekstów z pliku A do pliku B:
+    - porównania ignorują białe znaki,
+    - utrzymuje historię offsetów (m - n) i raportuje ich zmiany,
+    - zapisuje w pliku wynikowym TE SAME TREŚCI co w A, ale pod DOCelowymi numerami
+      (numery z B lub na+offset). Plik B jest read-only.
+    """
+    import re
+    from itertools import groupby
+    from operator import itemgetter
+
+    # walidacja plików
+    if not path_a.exists():
+        print(f"Plik A nie istnieje: {path_a}")
+        return
+    if not path_b.exists():
+        print(f"Plik B nie istnieje: {path_b}")
+        return
+
+    # wczytanie i parsowanie
+    text_a = read_file(path_a, encoding=encoding)
+    text_b = read_file(path_b, encoding=encoding)
+    header_a, order_a, map_a = parse_blocks_linewise(text_a)
+    header_b, order_b, map_b = parse_blocks_linewise(text_b)
+
+    total_a = len(order_a)
+    total_b = len(order_b)
+    print(f"Plik A: {path_a}  —  liczba bloków: {total_a}")
+    print(f"Plik B: {path_b}  —  liczba bloków: {total_b}")
+
+    # ile prób przesunięcia w A (domyślnie)
+    try:
+        raw = input(f"Ile prób przesunięcia w A użyć przy szukaniu znaczącego tekstu? [domyślnie {max_tries_default}]: ").strip()
+        max_tries = int(raw) if raw != '' else max_tries_default
+        if max_tries < 1:
+            max_tries = max_tries_default
+    except Exception:
+        max_tries = max_tries_default
+
+    ia_list = sorted(order_a)
+    ib_list = sorted(order_b)
+    ia_len = len(ia_list)
+    ib_len = len(ib_list)
+
+    # normalizacja do porównań: usuń wszystkie białe znaki
+    def norm_for_compare(s: str) -> str:
+        if s is None:
+            return ''
+        return re.sub(r'\s+', '', s)
+
+    def get_text(m, idx):
+        return (m.get(idx, '') or '').replace('\r\n', '\n').replace('\r', '\n')
+
+    def is_significant_text(s: str) -> bool:
+        return not is_placeholder(s)
+
+    # pomoc: znajdź offset dla danego na (najpierw matching_ranges, potem offset_history)
+    def find_offset_for_na(na, matching_ranges_list, offset_history_list):
+        for (a1, a2, b1, b2, off) in matching_ranges_list:
+            if a1 <= na <= a2:
+                return off
+        candidate = None
+        for (off, aidx, bidx) in offset_history_list:
+            if aidx <= na:
+                candidate = off
+            else:
+                break
+        return candidate
+
+    # pomoc: znajdź w B pozycję (index in ib_list) gdzie b_text_norm == target_norm, zaczynając od ib_pos
+    def find_in_b(target_norm, start_ib_pos):
+        pos = start_ib_pos
+        while pos < ib_len:
+            m = ib_list[pos]
+            b_text = get_text(map_b, m)
+            if norm_for_compare(b_text) == target_norm:
+                return pos
+            pos += 1
+        return None
+
+    # struktury raportowe
+    mappings = {}            # na -> mb (finalne mapowania znalezione sekwencyjnie)
+    matched_pairs = []       # lista (na, mb) w kolejności
+    matching_ranges = []     # (a_start, a_end, b_start, b_end, offset_at_range)
+    missing_in_b = []        # list of A indices not found in B (standalone)
+    placeholder_cases = []   # (na, mb) gdzie A placeholder a B significant
+    conflicts = []           # (na, mb, a_text, b_text, similarity)
+    offset_history = []      # list of (offset, a_index, b_index) w kolejności ustawiania
+
+    current_offset = None
+    ia_pos = 0
+    ib_pos = 0
+
+    # główna pętla dopasowań
+    while ia_pos < ia_len and ib_pos < ib_len:
+        n = ia_list[ia_pos]
+        a_text = get_text(map_a, n)
+        a_norm = norm_for_compare(a_text)
+
+        tries = 0
+        ia_try_pos = ia_pos
+        found_alignment = False
+
+        while tries < max_tries and ia_try_pos < ia_len and not found_alignment:
+            candidate_n = ia_list[ia_try_pos]
+            candidate_text = get_text(map_a, candidate_n)
+            candidate_norm = norm_for_compare(candidate_text)
+
+            # jeśli to nie pierwsza próba i candidate jest placeholderem, pomiń (szukamy znaczącego)
+            if ia_try_pos != ia_pos and not is_significant_text(candidate_text):
+                ia_try_pos += 1
+                continue
+
+            # szukaj w B od ib_pos
+            ib_found_pos = find_in_b(candidate_norm, ib_pos)
+            if ib_found_pos is None:
+                tries += 1
+                ia_try_pos += 1
+                continue
+
+            # znaleziono potencjalne dopasowanie candidate_n <-> ib_list[ib_found_pos]
+            m_index = ib_list[ib_found_pos]
+            offset = m_index - candidate_n
+
+            # jeśli offset się zmienił, zapisz historię i wypisz informację
+            if current_offset is None or offset != current_offset:
+                current_offset = offset
+                offset_history.append((current_offset, candidate_n, m_index))
+                print(f"\nNowy offset ustawiony: {current_offset} (A:{candidate_n} -> B:{m_index})")
+
+            # sekwencyjne dopasowanie kolejnych wpisów (ignorując białe znaki)
+            seq_pairs = []
+            seq_i = 0
+            while (ia_pos + seq_i) < ia_len and (ib_found_pos + seq_i) < ib_len:
+                na = ia_list[ia_pos + seq_i]
+                mb = ib_list[ib_found_pos + seq_i]
+                ta = get_text(map_a, na)
+                tb = get_text(map_b, mb)
+                if norm_for_compare(ta) == norm_for_compare(tb):
+                    seq_pairs.append((na, mb))
+                    seq_i += 1
+                else:
+                    break
+
+            if not seq_pairs:
+                tries += 1
+                ia_try_pos += 1
+                continue
+
+            # zapisz sekwencyjne pary
+            for (na, mb) in seq_pairs:
+                mappings[na] = mb
+                matched_pairs.append((na, mb))
+                ta = get_text(map_a, na)
+                tb = get_text(map_b, mb)
+                if (not is_significant_text(ta)) and is_significant_text(tb):
+                    placeholder_cases.append((na, mb))
+
+            # dodaj zakres dopasowania z informacją o offset
+            startA = seq_pairs[0][0]
+            endA = seq_pairs[-1][0]
+            startB = seq_pairs[0][1]
+            endB = seq_pairs[-1][1]
+            matching_ranges.append((startA, endA, startB, endB, current_offset))
+
+            # przesuwamy wskaźniki A i B
+            ia_pos = ia_pos + seq_i
+            ib_pos = ib_found_pos + seq_i
+            found_alignment = True
+            break
+
+        if not found_alignment:
+            # nie znaleziono dopasowania dla bieżącego n w B w ramach max_tries
+            missing_in_b.append(n)
+            ia_pos += 1
+            # nie przesuwamy ib_pos — dalej szukamy dopasowań dla kolejnych A względem tego samego miejsca w B
+
+    # jeśli zostały nieprzetworzone A (po wyjściu pętli), oznacz je jako nieznalezione
+    while ia_pos < ia_len:
+        missing_in_b.append(ia_list[ia_pos])
+        ia_pos += 1
+
+    # Po zbudowaniu mappings: sprawdź dla każdej zmapowanej pary, czy oryginalne treści różnią się.
+    # Jeśli różne, oblicz similarity_percent i dodaj do conflicts.
+    for (na, mb) in matched_pairs:
+        ta = get_text(map_a, na)
+        tb = get_text(map_b, mb)
+        if norm_for_compare(ta) != norm_for_compare(tb):
+            try:
+                sim = similarity_percent(ta, tb)
+            except Exception:
+                sim = None
+            conflicts.append((na, mb, ta, tb, sim))
+
+    # przygotuj dane do raportu podobieństw dla missing_in_b (dla każdego na spróbuj znaleźć mb_guess)
+    matching_ranges_sorted = sorted(matching_ranges, key=lambda r: r[0])
+    offset_history_sorted = sorted(offset_history, key=lambda t: t[1])
+
+    missing_similarity = []  # list of (na, mb_guess_or_None, similarity_or_None, reason)
+    for na in sorted(set(missing_in_b)):
+        off = find_offset_for_na(na, matching_ranges_sorted, offset_history_sorted)
+
+        if off is None:
+            reason = "brak offsetu"
+            missing_similarity.append((na, None, None, reason))
+            continue
+
+        mb_guess = na + off
+
+        if mb_guess not in map_b:
+            reason = "mb_guess nie istnieje w B"
+            missing_similarity.append((na, mb_guess, None, reason))
+            continue
+
+        # jeśli dotarliśmy tutaj — offset jest, mb_guess istnieje
+        ta = get_text(map_a, na)
+        tb = get_text(map_b, mb_guess)
+
+        try:
+            sim = similarity_percent(ta, tb)
+        except Exception:
+            sim = None
+
+        reason = "ok"
+        missing_similarity.append((na, mb_guess, sim, reason))
+
+
+    # skompresuj missing_in_b do przedziałów dla czytelnego raportu
+    def compress_ranges(sorted_indices):
+        ranges = []
+        for k, g in groupby(enumerate(sorted_indices), lambda ix: ix[0] - ix[1]):
+            group = list(map(itemgetter(1), g))
+            if len(group) == 1:
+                ranges.append((group[0], group[0]))
+            else:
+                ranges.append((group[0], group[-1]))
+        return ranges
+
+    missing_ranges = compress_ranges(sorted(missing_in_b)) if missing_in_b else []
+
+    # raport szczegółowy (przed zapisem)
+    print("\n--- Raport dopasowania (przed zapisem) ---")
+    print(f"Liczba dopasowanych par: {len(matched_pairs)}")
+    if matching_ranges:
+        print("Dopasowane przedziały (A_start-A_end => B_start-B_end) z offsetem:")
+        last_offset = None
+        for (a1, a2, b1, b2, off) in matching_ranges:
+            note = ""
+            if off != last_offset:
+                note = f"    // nowy offset {off}"
+                last_offset = off
+            if a1 == a2:
+                print(f"  {a1} => {b1}{note}")
+            else:
+                print(f"  {a1}-{a2} => {b1}-{b2}{note}")
+    else:
+        print("  Brak dopasowanych przedziałów.")
+
+    if missing_ranges:
+        print("\nTeksty z A nie znalezione w B (pojedyncze numery lub przedziały):")
+        for (s, e) in missing_ranges:
+            if s == e:
+                print(f"  {s}")
+            else:
+                print(f"  {s}-{e}")
+    else:
+        print("\nWszystkie teksty A znalezione w B (przynajmniej częściowo).")
+
+    # raport podobieństw dla missing_in_b (szczegóły)
+    if missing_similarity:
+        print("\nSzczegóły dla tekstów A nieznalezionych bezpośrednio w B (próba porównania z domniemanymi tekstami z B):")
+        for na, mb_guess, sim, reason in missing_similarity:
+            if mb_guess is None:
+                print(f"  A:{na} (brak offsetu, nie można wyznaczyć liczby domniemanego tekstu dla B)")
+            elif sim is None:
+                print(f"  A:{na} (domniemany tekst B: {mb_guess} — {reason})")
+            else:
+                print(f"  A:{na} ({sim}% podobieństwa z tekstem B: {mb_guess})")
+
+    if placeholder_cases:
+        print("\nMiejsca gdzie A był pusty/placeholder, a B miał znaczący tekst:")
+        for na, mb in placeholder_cases:
+            print(f"  A:{na}  <-  B:{mb}")
+
+    if conflicts:
+        print("\nMiejsca konfliktów (oba znaczące lub zróżnicowane) — pokazuję procent podobieństwa:")
+        conflicts_sorted = sorted(conflicts, key=lambda x: -(x[4] or 0))
+        for na, mb, ta, tb, sim in conflicts_sorted:
+            sim_str = f"{sim}%" if sim is not None else "n/a"
+            print(f"  A:{na}  !=  B:{mb}   podobieństwo: {sim_str}")
+
+    # raport historii offsetów
+    if offset_history:
+        print("\nHistoria zmian offsetu (offset, A_index, B_index):")
+        for off, aidx, bidx in offset_history:
+            print(f"  offset {off} ustawiony przy A:{aidx} -> B:{bidx}")
+
+    # jeśli brak mapowań i brak offsetów, kończymy
+    if not mappings and not offset_history:
+        print("\nBrak dopasowań do zapisania. Nic nie zmieniono.")
+        return
+
+    # potwierdzenie zapisu
+    total_to_save = len(mappings)
+    print(f"\nZamierzam zapisać {total_to_save} zaktualizowanych wpisów do pliku A.")
+    sample = matched_pairs[:20]
+    if sample:
+        print("Przykładowe mapowania (A -> B):", ', '.join(f"{a}->{b}" for a, b in sample))
+
+    if confirm("Nadpisać plik A bezpośrednio?", default=False):
+        out_path = path_a
+    else:
+        out_path = path_a.with_name(path_a.stem + '_aligned' + path_a.suffix)
+        if out_path.exists():
+            if not confirm(f"Plik {out_path} już istnieje. Nadpisać?", default=False):
+                print("Anulowano zapis.")
+                return
+
+    # przygotowanie mapy docelowej: target_index -> content (treść z A, tylko numer zmieniony)
+    target_map = {}
+    collisions = []
+
+    for na in sorted(map_a.keys()):
+        content_from_a = map_a.get(na, '')
+        if na in mappings:
+            target_idx = mappings[na]
+        else:
+            off = find_offset_for_na(na, matching_ranges_sorted, offset_history_sorted)
+            if off is not None:
+                target_idx = na + off
+            else:
+                target_idx = na
+        if target_idx in target_map:
+            collisions.append((na, target_idx))
+        target_map[target_idx] = content_from_a
+
+    # posortuj docelowe indeksy i zbuduj wynikowy tekst
+    target_indices = sorted(k for k in target_map.keys() if isinstance(k, int))
+    if not target_indices:
+        print("Brak docelowych indeksów do zapisu. Anulowano.")
+        return
+
+    out_parts = []
+    if header_a:
+        out_parts.append(header_a if header_a.endswith('\n') else header_a + '\n')
+    else:
+        out_parts.append('')
+
+    for idx in target_indices:
+        out_parts.append(f'## Text {idx} ##\n')
+        content = target_map.get(idx, '')
+        if content:
+            content_norm = content.replace('\r\n', '\n').replace('\r', '\n').rstrip('\n')
+            out_parts.append(content_norm + '\n')
+        out_parts.append('####\n')
+
+    result_text = ''.join(out_parts)
+
+    try:
+        write_file(out_path, result_text, encoding=encoding)
+    except Exception as e:
+        print(f"Błąd zapisu pliku: {e}")
+        return
+
+    # końcowy raport zapisu
+    print(f"\nZapisano plik: {out_path}")
+    print(f"Liczba zaktualizowanych wpisów (bez przypisań przez offset): {len(mappings)}")
+
+    # policz przypisania przez offset
+    assigned_by_offset = []
+    for na in sorted(map_a.keys()):
+        if na not in mappings:
+            off = find_offset_for_na(na, matching_ranges_sorted, offset_history_sorted)
+            if off is not None:
+                assigned_by_offset.append((na, na + off, off))
+
+    if assigned_by_offset:
+        print(f"Liczba wpisów przypisanych na podstawie offsetu: {len(assigned_by_offset)}")
+        for na, mb_guess, off in assigned_by_offset[:200]:
+            print(f"  A:{na} -> target:{mb_guess} (offset {off})")
+
+    if collisions:
+        print("\nUwaga: wykryto kolizje docelowych indeksów (kilka A trafiło na ten sam target).")
+        for c in collisions[:50]:
+            print(f"  kolizja: A:{c[0]} -> target {c[1]}")
+
+    print(f"Ostatni numer A przetworzony: {max(sorted(map_a.keys())) if map_a else 0}")
+    print("Gotowe.")
+    
+
 # --- main menu ---
 def main():
     while True:
@@ -1013,13 +1425,14 @@ def main():
         print("  5) Podgląd tekstów z pliku .dat (interaktywne testowanie kodowań)")
         print("  6) Przesuń numery tekstów w pliku A (offset)")
         print("  7) Napraw brakujące wpisy w pliku projektu")
-        print("  8) Wyjście")
-        choice = input("Wybierz 1, 2, 3, 4, 5, 6, 7 lub 8 [8]: ").strip() or '8'
+        print("  8) Dopasuj numery tekstów w pliku projektu A do B (align A ← B)")
+        print("  9) Wyjście")
+        choice = input("Wybierz 1, 2, 3, 4, 5, 6, 7, 8 lub 9 [9]: ").strip() or '9'
 
-        if choice not in {'1','2','3','4','5','6','7','8'}:
+        if choice not in {'1','2','3','4','5','6','7','8', '9'}:
             print("Nieprawidłowy wybór. Spróbuj ponownie.")
             continue
-        if choice == '8':
+        if choice == '9':
             print("Koniec.")
             input("\nNaciśnij Enter, aby zakończyć...")
             sys.exit(0)
@@ -1072,9 +1485,9 @@ def main():
             option_preview_dat(path_dat)
             continue
 
-        if choice in {'1','2'}:
-            raw_a = input("Podaj ścieżkę do pliku A (oryginał): ").strip()
-            raw_b = input("Podaj ścieżkę do pliku B (poprawki): ").strip()
+        if choice in {'1','2','8'}:
+            raw_a = input("Podaj ścieżkę do pliku A (bazowy): ").strip()
+            raw_b = input("Podaj ścieżkę do pliku B (referencyjny): ").strip()
             if not raw_a or not raw_b:
                 print("Plik A i B są wymagane dla tej opcji. Powrót do menu.")
                 continue
@@ -1102,9 +1515,14 @@ def main():
                         print(f"Liczba brakujących bloków: {len(missing_ids)}. Numery: {', '.join(map(str, missing_ids))}")
                     else:
                         print("Brak brakujących bloków (nic do dopisania).")
-            else:
+            if choice == '2':
                 option_merge(path_a, path_b, encoding=encoding)
+            else:
+                # zamiast merge uruchamiamy dopasowanie wersji A względem B
+                option_align_versions(path_a, path_b, encoding=encoding)
             continue
+
+
 
         if choice == '6':
             raw_a2 = input("Podaj ścieżkę do pliku A (oryginał): ").strip()
