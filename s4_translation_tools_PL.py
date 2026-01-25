@@ -586,107 +586,190 @@ def option_preview_dat(path_dat: Path):
             print("Powrót do menu.")
             return
 
-# --- option 5: shift ids (przesunięcie numerów) ---
-def option_shift_ids(path_a, encoding='utf-8'):
-    text_a = read_file(path_a, encoding=encoding)
-    header_a, order_a, map_a = parse_blocks_linewise(text_a)
 
-    if not order_a:
-        print("Nie znaleziono żadnych bloków '## Text N ##' w pliku A. Nic do przesunięcia.")
-        return
-
-    first = order_a[0]
-    last = order_a[-1]
-    count = len(order_a)
-    print(f"Znaleziono {count} bloków. Pierwszy numer: {first}, ostatni numer: {last}.")
-
-    while True:
-        raw = input("Podaj offset (liczba całkowita, 0 = anuluj): ").strip()
-        if raw == '':
-            print("Brak wartości. Anulowano.")
+def option_export_proj_to_dat(path_proj: Path = None):
+    """
+    Eksportuje .s4_translation_project -> s4_texts.dat<langnum>
+    Format: 4 bajty nagłówka, potem powtarzane: 4 bajty długości (little-endian), dane tekstu (bajty).
+    Zapisuje wszystkie teksty od 1 do ostatniego numeru występującego w projekcie.
+    Sugestia numeru języka pochodzi z nazwy pliku projektu (np. 'CHINESE' -> 7).
+    """
+    # 1) ścieżka pliku projektu
+    if path_proj is None:
+        raw = input("Podaj ścieżkę do pliku .s4_translation_project: ").strip()
+        if not raw:
+            print("Brak ścieżki. Anulowano.")
             return
         try:
-            offset = int(raw)
-        except ValueError:
-            print("Proszę podać liczbę całkowitą (może być ujemna).")
-            continue
-        if offset == 0:
-            print("Offset = 0 — brak działania. Anulowano.")
-            return
-        break
-
-    new_ids = [i + offset for i in order_a]
-    if any(i <= 0 for i in new_ids):
-        print("Błąd: po przesunięciu niektóre numery byłyby mniejsze lub równe 0. Wybierz inny offset.")
-        return
-
-    if len(set(new_ids)) != len(new_ids):
-        print("Błąd: po przesunięciu wystąpiły duplikaty numerów. Anulowano.")
-        return
-
-    parts = []
-    parts.append(header_a if header_a.endswith('\n') or header_a == '' else header_a + '\n')
-    for old_idx in order_a:
-        new_idx = old_idx + offset
-        content = map_a.get(old_idx, '')
-        parts.append(f'## Text {new_idx} ##\n')
-        if content != '':
-            parts.append(f'{content}\n')
-        parts.append('####\n')
-    result_text = ''.join(parts)
-
-    print("\nWybierz sposób zapisu przesuniętego pliku:")
-    print("  1) Nadpisać plik A (zrobiona zostanie kopia zapasowa)")
-    print("  2) Zapisz jako nowy plik (ten sam katalog co A, nazwa + _shifted)")
-    choice = input("Wybierz 1 lub 2 [2]: ").strip() or '2'
-
-    if choice == '1':
-        bak = path_a.with_suffix(path_a.suffix + '.bak')
-        try:
-            shutil.copy2(path_a, bak)
-            print(f"Utworzono kopię zapasową: {bak}")
+            path_proj = sanitize_path(raw)
         except Exception as e:
-            print(f"Nie udało się utworzyć kopii zapasowej: {e}")
-            if not confirm("Kontynuować bez kopii zapasowej?", default=False):
-                print("Anulowano.")
-                return
-        try:
-            write_file(path_a, result_text, encoding=encoding)
-            print(f"Nadpisano plik A: {path_a}")
-        except Exception as e:
-            print(f"Błąd zapisu: {e}")
+            print(f"Nieprawidłowa ścieżka: {e}")
             return
-    elif choice == '2':
-        suggested = path_a.with_name(path_a.stem + '_shifted' + path_a.suffix)
-        out_path_input = input(f"Podaj ścieżkę wyjściową [{suggested}]: ").strip()
-        if out_path_input == '':
-            out_path = suggested
-        else:
-            candidate = sanitize_path(out_path_input)
-            if candidate.exists() and candidate.is_dir():
-                out_path = candidate / suggested.name
-            else:
-                out_path = candidate
-        out_dir = out_path.parent
-        if not out_dir.exists():
+    if not path_proj.exists():
+        print(f"Plik nie istnieje: {path_proj}")
+        return
+
+    # 2) wczytaj i sparsuj projekt
+    try:
+        text = read_file(path_proj, encoding='utf-8')
+    except Exception as e:
+        print(f"Błąd odczytu pliku projektu: {e}")
+        return
+
+    header_text, order, blocks_map = parse_blocks_linewise(text)
+
+    # 3) spróbuj wyciągnąć nagłówek 4 bajtów z nagłówka projektu (w formacie @n1 n2 n3 n4@)
+    import re
+    header_bytes = None
+    if header_text:
+        m = re.search(r'@\s*([\d\s]{1,})\s*@', header_text)
+        if m:
+            nums = m.group(1).strip().split()
+            if len(nums) >= 4:
+                try:
+                    hb = [int(x) & 0xFF for x in nums[:4]]
+                    if all(0 <= x <= 255 for x in hb):
+                        header_bytes = bytes(hb)
+                        print(f"Znaleziono nagłówek w pliku projektu: {hb}")
+                except Exception:
+                    header_bytes = None
+
+    # jeśli nie znaleziono, poproś użytkownika o podanie 4 liczb
+    if header_bytes is None:
+        print("Nie znaleziono nagłówka 4 bajtów w pliku projektu.")
+        while True:
+            raw_hdr = input("Podaj 4 liczby (0-255) oddzielone spacjami jako nagłówek (np. '1 2 3 4'): ").strip()
+            parts = raw_hdr.split()
+            if len(parts) != 4:
+                print("Podaj dokładnie 4 liczby.")
+                continue
             try:
-                out_dir.mkdir(parents=True, exist_ok=True)
-            except Exception as e:
-                print(f"Nie udało się utworzyć katalogu {out_dir}: {e}")
-                return
-        if out_path.exists():
-            if not confirm(f"Plik {out_path} już istnieje. Nadpisać?", default=False):
-                print("Anulowano.")
-                return
+                nums = [int(x) for x in parts]
+                if any(n < 0 or n > 255 for n in nums):
+                    print("Liczby muszą być w zakresie 0-255.")
+                    continue
+                header_bytes = bytes(nums)
+                break
+            except ValueError:
+                print("Nieprawidłowe liczby. Spróbuj ponownie.")
+
+    # 4) sugeruj numer języka na podstawie nazwy pliku projektu (szukamy nazwy języka z LANG_MAP)
+    name_upper = path_proj.name.upper()
+    # zbuduj mapę nazwa->numer i posortuj po długości nazwy malejąco, żeby preferować dłuższe dopasowania
+    name_to_num = {v[0].upper(): k for k, v in LANG_MAP.items()}
+    candidates = sorted(name_to_num.keys(), key=lambda s: -len(s))
+    inferred = None
+    for lang_name in candidates:
+        if lang_name in name_upper:
+            inferred = name_to_num[lang_name]
+            break
+
+    # pokaż listę języków i zaproponuj sugerowany numer (jeśli znaleziono)
+    print("\nDostępne języki (numer : nazwa):")
+    for k in sorted(LANG_MAP.keys()):
+        print(f"  {k} : {LANG_MAP[k][0]}")
+    if inferred is not None:
+        print(f"\nSugestia na podstawie nazwy pliku: {inferred} ({LANG_MAP[inferred][0]})")
+    while True:
+        raw_lang = input(f"Podaj numer języka do zapisu (np. 5 dla POLISH) [{inferred if inferred is not None else ''}]: ").strip()
+        if raw_lang == '' and inferred is not None:
+            lang_num = inferred
+            break
         try:
-            write_file(out_path, result_text, encoding=encoding)
-            print(f"Zapisano przesunięty plik do: {out_path}")
-        except Exception as e:
-            print(f"Błąd zapisu: {e}")
-            return
+            lang_num = int(raw_lang)
+            if lang_num not in LANG_MAP:
+                print("Nieznany numer języka. Spróbuj ponownie.")
+                continue
+            break
+        except ValueError:
+            print("Podaj liczbę całkowitą odpowiadającą numerowi języka.")
+
+    lang_name = LANG_MAP[lang_num][0]
+    enc_candidates = LANG_MAP[lang_num][1][:]
+    if 'utf-8' not in enc_candidates:
+        enc_candidates.append('utf-8')
+
+    print(f"Wybrany język: {lang_name} (numer {lang_num}). Sugerowane kodowania (pierwsze domyślne): {', '.join(enc_candidates)}")
+    chosen_enc = enc_candidates[0]
+    use_sug = input(f"Użyć sugerowanego kodowania '{chosen_enc}'? [Y/n]: ").strip().lower()
+    if use_sug != '' and use_sug not in ('y','yes','t','tak'):
+        custom = input("Podaj kodowanie wyjściowe (np. cp1250, cp950, cp932, cp1251) lub naciśnij Enter aby użyć sugerowanego: ").strip()
+        if custom:
+            chosen_enc = custom
+
+    # 5) ustal maksymalny numer do zapisu: zawsze zapisujemy wszystkie teksty od 1 do ostatniego istniejącego numeru
+    existing_nums = sorted(blocks_map.keys())
+    if existing_nums:
+        max_index = max(existing_nums)
     else:
-        print("Nieprawidłowy wybór. Kończę bez zapisu.")
+        print("Plik projektu nie zawiera żadnych bloków tekstowych. Anulowano.")
         return
+
+    print(f"Zapiszę wszystkie teksty od 1 do {max_index} (ostatni numer: {max_index}).")
+
+    # 6) przygotuj dane do zapisu: dla i=1..max_index zapisz długość i dane (brak -> długość 0)
+    texts_bytes = []
+    empty_count = 0
+    for i in range(1, max_index + 1):
+        content = blocks_map.get(i, '')
+        if content is None:
+            content = ''
+        content_norm = content.replace('\r\n', '\n').replace('\r', '\n')
+        try:
+            b = content_norm.encode(chosen_enc)
+        except Exception:
+            # fallback: spróbuj kolejne kodowania z listy, potem latin-1, potem utf-8 replace
+            b = None
+            for enc in enc_candidates:
+                try:
+                    b = content_norm.encode(enc)
+                    break
+                except Exception:
+                    continue
+            if b is None:
+                try:
+                    b = content_norm.encode('latin-1', errors='replace')
+                except Exception:
+                    b = content_norm.encode('utf-8', errors='replace')
+        texts_bytes.append(b)
+        if len(b) == 0:
+            empty_count += 1
+
+    # 7) wybierz nazwę pliku wyjściowego (domyślnie s4_texts.dat<langnum>)
+    default_out = path_proj.with_name(f"s4_texts.dat{lang_num}")
+    out_input = input(f"Plik wyjściowy [{default_out}]: ").strip()
+    if out_input == '':
+        out_path = default_out
+    else:
+        out_path = sanitize_path(out_input)
+
+    # 8) sprawdź nadpisanie
+    if out_path.exists():
+        if not confirm(f"Plik {out_path} już istnieje. Nadpisać?", default=False):
+            alt = out_path.with_name(out_path.stem + '_exported' + out_path.suffix)
+            print(f"Zapisz jako: {alt}")
+            if not confirm(f"Zapisz jako {alt}?", default=True):
+                print("Anulowano zapis.")
+                return
+            out_path = alt
+
+    # 9) zapisz binarnie: header_bytes (4), potem dla każdego tekstu: 4 bajty length (little-endian), dane
+    try:
+        with open(out_path, 'wb') as f:
+            f.write(header_bytes)
+            for b in texts_bytes:
+                length = len(b)
+                f.write(length.to_bytes(4, byteorder='little', signed=False))
+                if length > 0:
+                    f.write(b)
+    except Exception as e:
+        print(f"Błąd zapisu pliku .dat: {e}")
+        return
+
+    print(f"\nZapisano plik .dat: {out_path}")
+    print(f"Ostatni zapisany numer tekstu: {max_index}")
+    print(f"Liczba tekstów zapisanych: {len(texts_bytes)}. Pustych (length=0): {empty_count}. Kodowanie: {chosen_enc}")
+    
         
 def option_fix_missing_entries(path_proj: Path = None, encoding='utf-8'):
     """
@@ -823,16 +906,17 @@ def main():
         print("  1) Porównaj A vs B i wygeneruj missingtexts.txt (teksty z B brakujące/wymagające uzupełnienia w A)")
         print("  2) Połącz pliki (merge): podmień istniejące i dopisz brakujące z B do A")
         print("  3) Import z pliku s4_texts.dat<nr> → wygeneruj <LANG>.s4_translation_project")
-        print("  4) Podgląd tekstów z pliku .dat (interaktywne testowanie kodowań)")
-        print("  5) Przesuń numery tekstów w pliku A (offset)")
-        print("  6) Napraw brakujące wpisy w pliku projektu")
-        print("  7) Wyjście")
-        choice = input("Wybierz 1, 2, 3, 4, 5, 6 lub 7 [7]: ").strip() or '7'
+        print("  4) Eksport pliku .s4_translation_project → s4_texts.dat<nr>")
+        print("  5) Podgląd tekstów z pliku .dat (interaktywne testowanie kodowań)")
+        print("  6) Przesuń numery tekstów w pliku A (offset)")
+        print("  7) Napraw brakujące wpisy w pliku projektu")
+        print("  8) Wyjście")
+        choice = input("Wybierz 1, 2, 3, 4, 5, 6, 7 lub 8 [8]: ").strip() or '8'
 
-        if choice not in {'1','2','3','4','5','6','7'}:
+        if choice not in {'1','2','3','4','5','6','7','8'}:
             print("Nieprawidłowy wybór. Spróbuj ponownie.")
             continue
-        if choice == '7':
+        if choice == '8':
             print("Koniec.")
             input("\nNaciśnij Enter, aby zakończyć...")
             sys.exit(0)
@@ -854,6 +938,22 @@ def main():
             continue
 
         if choice == '4':
+            raw_proj = input("Podaj ścieżkę do pliku .s4_translation_project do eksportu: ").strip()
+            if not raw_proj:
+                print("Ścieżka do pliku projektu wymagana. Powrót do menu.")
+                continue
+            try:
+                path_proj = sanitize_path(raw_proj)
+            except Exception as e:
+                print(f"Nieprawidłowa ścieżka: {e}")
+                continue
+            if not path_proj.exists():
+                print(f"Plik projektu nie istnieje: {path_proj}")
+                continue
+            option_export_proj_to_dat(path_proj)
+            continue
+
+        if choice == '5':
             raw_dat = input("Podaj ścieżkę do pliku s4_texts.dat<nr> do podglądu: ").strip()
             if not raw_dat:
                 print("Ścieżka do pliku .dat wymagana. Powrót do menu.")
@@ -903,7 +1003,7 @@ def main():
                 option_merge(path_a, path_b, encoding=encoding)
             continue
 
-        if choice == '5':
+        if choice == '6':
             raw_a2 = input("Podaj ścieżkę do pliku A (oryginał): ").strip()
             if not raw_a2:
                 print("Plik A wymagany dla tej opcji. Powrót do menu.")
@@ -919,8 +1019,8 @@ def main():
             encoding = input("Kodowanie plików (domyślnie utf-8): ").strip() or 'utf-8'
             option_shift_ids(path_a, encoding=encoding)
             continue
-            
-        if choice == '6':
+
+        if choice == '7':
             raw_proj = input("Podaj ścieżkę do pliku .s4_translation_project: ").strip()
             if not raw_proj:
                 print("Brak ścieżki. Powrót do menu.")
