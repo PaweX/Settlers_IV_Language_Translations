@@ -514,86 +514,100 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                    'pl': 'Ostatni zapisany numer tekstu: {}',
                    'ru': 'Последний сохранённый номер текста: {}',
                    'zh': '最后保存的文本编号：{}'},
- 'main_menu_options': {'de': 'Wählen Sie eine Option:\n'
-                             '  1) Projektdateien A vs B vergleichen und missingtexts.txt generieren (Texte aus B, die '
-                             'in A fehlen oder ergänzt werden müssen)\n'
-                             '  2) Projektdateien zusammenführen (merge): vorhandene ersetzen und fehlende aus B zu A '
-                             'hinzufügen\n'
-                             '  3) Aus Datei s4_texts.dat<nr> importieren → <LANG>.s4_translation_project generieren\n'
-                             '  4) .s4_translation_project exportieren → s4_texts.dat<nr>\n'
-                             '  5) Texte aus .dat-Datei anzeigen (interaktives Testen von Kodierungen)\n'
-                             '  6) Textnummern in Projektdatei A verschieben (Offset)\n'
-                             '  7) Fehlende Einträge in Projektdatei reparieren\n'
-                             '  8) Textnummern in Projektdatei A an B anpassen (align A ← B)\n'
-                             '  9) Beenden',
-                       'en': 'Choose an option:\n'
-                             '  1) Compare A vs B project files and generate missingtexts.txt (texts from B '
-                             'missing/requiring completion in A)\n'
-                             '  2) Merge project files: replace existing and append missing from B to A\n'
-                             '  3) Import from s4_texts.dat<nr> → generate <LANG>.s4_translation_project\n'
-                             '  4) Export .s4_translation_project → s4_texts.dat<nr>\n'
-                             '  5) Preview texts from .dat file (interactive encoding testing)\n'
-                             '  6) Shift text numbers in project file A (offset)\n'
-                             '  7) Fix missing entries in project file\n'
-                             '  8) Align text numbers in project file A to B (align A ← B)\n'
-                             '  9) Exit',
-                       'es': 'Elige una opción:\n'
-                             '  1) Comparar archivos de proyecto A vs B y generar missingtexts.txt (textos de B que '
-                             'faltan o necesitan completarse en A)\n'
-                             '  2) Combinar archivos de proyecto (merge): reemplazar existentes y añadir los faltantes '
-                             'de B a A\n'
-                             '  3) Importar desde archivo s4_texts.dat<nr> → generar <LANG>.s4_translation_project\n'
-                             '  4) Exportar archivo .s4_translation_project → s4_texts.dat<nr>\n'
-                             '  5) Vista previa de textos desde archivo .dat (prueba interactiva de codificaciones)\n'
-                             '  6) Desplazar números de texto en el archivo de proyecto A (offset)\n'
-                             '  7) Reparar entradas faltantes en el archivo de proyecto\n'
-                             '  8) Alinear números de texto del archivo de proyecto A con B (alinear A ← B)\n'
-                             '  9) Salir',
-                       'it': "Scegli un'opzione:\n"
-                             '  1) Confronta i file di progetto A vs B e genera missingtexts.txt (testi presenti in B '
-                             'ma mancanti o da completare in A)\n'
-                             '  2) Unisci i file di progetto (merge): sostituisci gli esistenti e aggiungi quelli '
-                             'mancanti da B ad A\n'
-                             '  3) Importa da file s4_texts.dat<nr> → genera <LANG>.s4_translation_project\n'
-                             '  4) Esporta file .s4_translation_project → s4_texts.dat<nr>\n'
-                             '  5) Anteprima dei testi dal file .dat (test interattivo delle codifiche)\n'
-                             '  6) Sposta i numeri dei testi nel file di progetto A (offset)\n'
-                             '  7) Ripara le voci mancanti nel file di progetto\n'
-                             '  8) Allinea i numeri dei testi nel file di progetto A a B (allinea A ← B)\n'
-                             '  9) Esci',
-                       'pl': 'Wybierz opcję:\n'
-                             '  1) Porównaj pliki projektu A vs B i wygeneruj missingtexts.txt (teksty z B '
-                             'brakujące/wymagające uzupełnienia w A)\n'
-                             '  2) Połącz pliki projektu (merge): podmień istniejące i dopisz brakujące z B do A\n'
-                             '  3) Import z pliku s4_texts.dat<nr> → wygeneruj <LANG>.s4_translation_project\n'
-                             '  4) Eksport pliku .s4_translation_project → s4_texts.dat<nr>\n'
-                             '  5) Podgląd tekstów z pliku .dat (interaktywne testowanie kodowań)\n'
-                             '  6) Przesuń numery tekstów w pliku projektu A (offset)\n'
-                             '  7) Napraw brakujące wpisy w pliku projektu\n'
-                             '  8) Dopasuj numery tekstów w pliku projektu A do B (align A ← B)\n'
-                             '  9) Wyjście',
-                       'ru': 'Выберите опцию:\n'
-                             '  1) Сравнить файлы проектов A vs B и сгенерировать missingtexts.txt (тексты из B, '
-                             'отсутствующие или требующие дополнения в A)\n'
-                             '  2) Объединить файлы проектов (merge): заменить существующие и добавить недостающие из '
-                             'B в A\n'
-                             '  3) Импорт из файла s4_texts.dat<nr> → сгенерировать <LANG>.s4_translation_project\n'
-                             '  4) Экспорт файла .s4_translation_project → s4_texts.dat<nr>\n'
-                             '  5) Предпросмотр текстов из файла .dat (интерактивное тестирование кодировок)\n'
-                             '  6) Сдвинуть номера текстов в файле проекта A (offset)\n'
-                             '  7) Исправить отсутствующие записи в файле проекта\n'
-                             '  8) Выровнять номера текстов в файле проекта A по файлу B (align A ← B)\n'
-                             '  9) Выход',
-                       'zh': '选择一个选项：\n'
-                             '  1) 比较项目文件 A 与 B 并生成 missingtexts.txt（B 中缺失或需要在 A 中补充的文本）\n'
-                             '  2) 合并项目文件（merge）：替换现有内容并从 B 追加缺失内容到 A\n'
-                             '  3) 从 s4_texts.dat<nr> 导入 → 生成 <LANG>.s4_translation_project\n'
-                             '  4) 导出 .s4_translation_project → s4_texts.dat<nr>\n'
-                             '  5) 预览 .dat 文件中的文本（交互式编码测试）\n'
-                             '  6) 在项目文件 A 中偏移文本编号\n'
-                             '  7) 修复项目文件中缺失的条目\n'
-                             '  8) 将项目文件 A 的文本编号对齐到 B（对齐 A ← B）\n'
-                             '  9) 退出'},
+'main_menu_options': {
+    'de': 'Wählen Sie eine Option:\n'
+          '  1) Projektdateien A vs B vergleichen und missingtexts.txt generieren (Texte aus B, die '
+          'in A fehlen oder ergänzt werden müssen)\n'
+          '  2) Projektdateien zusammenführen (merge): vorhandene ersetzen und fehlende aus B zu A '
+          'hinzufügen\n'
+          '  3) Aus Datei s4_texts.dat<nr> importieren → <LANG>.s4_translation_project generieren\n'
+          '  4) .s4_translation_project exportieren → s4_texts.dat<nr>\n'
+          '  5) Texte aus .dat-Datei anzeigen (interaktives Testen von Kodierungen)\n'
+          '  6) Textnummern in Projektdatei A verschieben (Offset)\n'
+          '  7) Fehlende Einträge in Projektdatei reparieren\n'
+          '  8) Textnummern in Projektdatei A an B anpassen (align A ← B)\n'
+          '  9) Verschiebungsmappe auf Projektdatei A anwenden (Mapping aus .txt-Datei)\n'
+          '  0) Beenden',
+
+    'en': 'Choose an option:\n'
+          '  1) Compare A vs B project files and generate missingtexts.txt (texts from B '
+          'missing/requiring completion in A)\n'
+          '  2) Merge project files: replace existing and append missing from B to A\n'
+          '  3) Import from s4_texts.dat<nr> → generate <LANG>.s4_translation_project\n'
+          '  4) Export .s4_translation_project → s4_texts.dat<nr>\n'
+          '  5) Preview texts from .dat file (interactive encoding testing)\n'
+          '  6) Shift text numbers in project file A (offset)\n'
+          '  7) Fix missing entries in project file\n'
+          '  8) Align text numbers in project file A to B (align A ← B)\n'
+          '  9) Apply shift-map to project file A (mapping from .txt file)\n'
+          '  0) Exit',
+
+    'es': 'Elige una opción:\n'
+          '  1) Comparar archivos de proyecto A vs B y generar missingtexts.txt (textos de B que '
+          'faltan o necesitan completarse en A)\n'
+          '  2) Combinar archivos de proyecto (merge): reemplazar existentes y añadir los faltantes '
+          'de B a A\n'
+          '  3) Importar desde archivo s4_texts.dat<nr> → generar <LANG>.s4_translation_project\n'
+          '  4) Exportar archivo .s4_translation_project → s4_texts.dat<nr>\n'
+          '  5) Vista previa de textos desde archivo .dat (prueba interactiva de codificaciones)\n'
+          '  6) Desplazar números de texto en el archivo de proyecto A (offset)\n'
+          '  7) Reparar entradas faltantes en el archivo de proyecto\n'
+          '  8) Alinear números de texto del archivo de proyecto A con B (alinear A ← B)\n'
+          '  9) Aplicar mapa de desplazamientos al archivo de proyecto A (mapa desde archivo .txt)\n'
+          '  0) Salir',
+
+    'it': "Scegli un'opzione:\n"
+          '  1) Confronta i file di progetto A vs B e genera missingtexts.txt (testi presenti in B '
+          'ma mancanti o da completare in A)\n'
+          '  2) Unisci i file di progetto (merge): sostituisci gli esistenti e aggiungi quelli '
+          'm mancanti da B ad A\n'
+          '  3) Importa da file s4_texts.dat<nr> → genera <LANG>.s4_translation_project\n'
+          '  4) Esporta file .s4_translation_project → s4_texts.dat<nr>\n'
+          '  5) Anteprima dei testi dal file .dat (test interattivo delle codifiche)\n'
+          '  6) Sposta i numeri dei testi nel file di progetto A (offset)\n'
+          '  7) Ripara le voci mancanti nel file di progetto\n'
+          '  8) Allinea i numeri dei testi nel file di progetto A a B (allinea A ← B)\n'
+          '  9) Applica una mappa di offset al file di progetto A (mappa da file .txt)\n'
+          '  0) Esci',
+
+    'pl': 'Wybierz opcję:\n'
+          '  1) Porównaj pliki projektu A vs B i wygeneruj missingtexts.txt (teksty z B '
+          'brakujące/wymagające uzupełnienia w A)\n'
+          '  2) Połącz pliki projektu (merge): podmień istniejące i dopisz brakujące z B do A\n'
+          '  3) Import z pliku s4_texts.dat<nr> → wygeneruj <LANG>.s4_translation_project\n'
+          '  4) Eksport pliku .s4_translation_project → s4_texts.dat<nr>\n'
+          '  5) Podgląd tekstów z pliku .dat (interaktywne testowanie kodowań)\n'
+          '  6) Przesuń numery tekstów w pliku projektu A (offset)\n'
+          '  7) Napraw brakujące wpisy w pliku projektu\n'
+          '  8) Dopasuj numery tekstów w pliku projektu A do B (align A ← B)\n'
+          '  9) Zastosuj mapę przesunięć numerów do pliku projektu A (mapa w pliku .txt)\n'
+          '  0) Wyjście',
+
+    'ru': 'Выберите опцию:\n'
+          '  1) Сравнить файлы проектов A и B и создать missingtexts.txt (тексты из B, '
+          'отсутствующие или требующие дополнения в A)\n'
+          '  2) Объединить файлы проектов (merge): заменить существующие и добавить недостающие из B в A\n'
+          '  3) Импорт из файла s4_texts.dat<nr> → создать <LANG>.s4_translation_project\n'
+          '  4) Экспорт файла .s4_translation_project → s4_texts.dat<nr>\n'
+          '  5) Просмотр текстов из файла .dat (интерактивная проверка кодировок)\n'
+          '  6) Сдвиг номеров текстов в файле проекта A (offset)\n'
+          '  7) Исправить отсутствующие записи в файле проекта\n'
+          '  8) Выровнять номера текстов в файле проекта A по файлу B (align A ← B)\n'
+          '  9) Применить карту смещений к файлу проекта A (карта из .txt файла)\n'
+          '  0) Выход',
+
+    'zh': '选择一个选项：\n'
+          '  1) 比较项目文件 A 与 B 并生成 missingtexts.txt（B 中缺失或需要在 A 中补充的文本）\n'
+          '  2) 合并项目文件（merge）：替换现有内容并从 B 追加缺失内容到 A\n'
+          '  3) 从 s4_texts.dat<nr> 导入 → 生成 <LANG>.s4_translation_project\n'
+          '  4) 导出 .s4_translation_project → s4_texts.dat<nr>\n'
+          '  5) 预览 .dat 文件中的文本（交互式编码测试）\n'
+          '  6) 在项目文件 A 中偏移文本编号\n'
+          '  7) 修复项目文件中缺失的条目\n'
+          '  8) 将项目文件 A 的文本编号对齐到 B（对齐 A ← B）\n'
+          '  9) 将偏移映射应用到项目文件 A（来自 .txt 文件的映射）\n'
+          '  0) 退出'
+},
  'main_menu_prompt': {'de': 'Wählen Sie 1, 2, 3, 4, 5, 6, 7, 8 oder 9 [9]: ',
                       'en': 'Choose 1, 2, 3, 4, 5, 6, 7, 8 or 9 [9]: ',
                       'es': 'Elige 1, 2, 3, 4, 5, 6, 7, 8 o 9 [9]: ',
@@ -1309,7 +1323,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                    'pl': 'Proszę odpowiedzieć tak/nie (y/n).',
                    'ru': 'Пожалуйста, ответьте да/нет (y/n).',
                    'zh': '请回答是/否 (y/n)。'},
-"yes_no_suffix_yes_default": {
+'yes_no_suffix_yes_default': {
                     "en": "[Y/n]",
                     "pl": "[T/n]",
                     "de": "[J/n]",
@@ -1318,15 +1332,220 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                     "ru": "[Д/н]",
                     "zh": "[Y/n]"},
 
-"yes_no_suffix_no_default": {
+'yes_no_suffix_no_default': {
                     "en": "[y/N]",
                     "pl": "[t/N]",
                     "de": "[j/N]",
                     "es": "[s/N]",
                     "it": "[s/N]",
                     "ru": "[д/Н]",
-                    "zh": "[y/N]"}
-}
+                    "zh": "[y/N]"},
+'shift_map_preview_title': {
+    'pl': 'Mapa przesunięć (podgląd):',
+    'en': 'Shift map (preview):',
+    'de': 'Verschiebungskarte (Vorschau):',
+    'it': 'Mappa degli spostamenti (anteprima):',
+    'es': 'Mapa de desplazamientos (vista previa):',
+    'zh': '偏移映射（预览）：',
+    'ru': 'Карта смещений (предпросмотр):',
+    'ja': 'シフトマップ（プレビュー）：'
+},
+
+'save_shift_map_prompt': {
+    'pl': 'Zapisać mapę przesunięć do pliku?',
+    'en': 'Save the shift map to a file?',
+    'de': 'Verschiebungskarte in eine Datei speichern?',
+    'it': 'Salvare la mappa degli spostamenti su file?',
+    'es': '¿Guardar el mapa de desplazamientos en un archivo?',
+    'zh': '将偏移映射保存到文件？',
+    'ru': 'Сохранить карту смещений в файл?',
+    'ja': 'シフトマップをファイルに保存しますか？'
+},
+
+'shift_map_filename_prompt': {
+    'pl': 'Nazwa pliku mapy (domyślnie text_shift_map.txt): ',
+    'en': 'Shift map filename (default: text_shift_map.txt): ',
+    'de': 'Dateiname der Verschiebungskarte (Standard: text_shift_map.txt): ',
+    'it': 'Nome del file della mappa (predefinito: text_shift_map.txt): ',
+    'es': 'Nombre del archivo del mapa (predeterminado: text_shift_map.txt): ',
+    'zh': '映射文件名（默认：text_shift_map.txt）：',
+    'ru': 'Имя файла карты смещений (по умолчанию: text_shift_map.txt): ',
+    'ja': 'マップファイル名（デフォルト：text_shift_map.txt）：'
+},
+
+'shift_map_saved': {
+    'pl': 'Mapa przesunięć zapisana do: {0}',
+    'en': 'Shift map saved to: {0}',
+    'de': 'Verschiebungskarte gespeichert unter: {0}',
+    'it': 'Mappa degli spostamenti salvata in: {0}',
+    'es': 'Mapa de desplazamientos guardado en: {0}',
+    'zh': '偏移映射已保存到：{0}',
+    'ru': 'Карта смещений сохранена в: {0}',
+    'ja': 'シフトマップを保存しました：{0}'
+},
+
+'shift_map_save_error': {
+    'pl': 'Błąd zapisu mapy przesunięć: {0}',
+    'en': 'Error saving shift map: {0}',
+    'de': 'Fehler beim Speichern der Verschiebungskarte: {0}',
+    'it': 'Errore durante il salvataggio della mappa degli spostamenti: {0}',
+    'es': 'Error al guardar el mapa de desplazamientos: {0}',
+    'zh': '保存偏移映射时出错：{0}',
+    'ru': 'Ошибка сохранения карты смещений: {0}',
+    'ja': 'シフトマップの保存中にエラーが発生しました：{0}'
+ },
+ 
+    'map_read_error': {
+        'en': 'Error reading map file: {0}',
+        'pl': 'Błąd podczas odczytu pliku mapy: {0}',
+        'de': 'Fehler beim Lesen der Mapping-Datei: {0}',
+        'es': 'Error al leer el archivo de mapa: {0}',
+        'it': 'Errore durante la lettura del file di mappa: {0}',
+        'ru': 'Ошибка при чтении файла карты: {0}',
+        'zh': '读取映射文件时出错: {0}'
+    },
+
+    'paste_map_instructions': {
+        'en': 'Paste the shift map line by line. Finish with an empty line.',
+        'pl': 'Wklej mapę przesunięć linia po linii. Zakończ pustą linią.',
+        'de': 'Fügen Sie die Verschiebungsmappe zeilenweise ein. Mit leerer Zeile beenden.',
+        'es': 'Pegue el mapa de desplazamientos línea por línea. Finalice con una línea vacía.',
+        'it': 'Incolla la mappa degli offset riga per riga. Termina con una riga vuota.',
+        'ru': 'Вставьте карту смещений построчно. Завершите пустой строкой.',
+        'zh': '逐行粘贴偏移映射。以空行结束。'
+    },
+
+    'map_empty': {
+        'en': 'The map file is empty or contains no valid entries.',
+        'pl': 'Plik mapy jest pusty lub nie zawiera żadnych wpisów.',
+        'de': 'Die Mapping-Datei ist leer oder enthält keine gültigen Einträge.',
+        'es': 'El archivo de mapa está vacío o no contiene entradas válidas.',
+        'it': 'Il file di mappa è vuoto o non contiene voci valide.',
+        'ru': 'Файл карты пуст или не содержит допустимых записей.',
+        'zh': '映射文件为空或不包含有效条目。'
+    },
+
+    'map_file_invalid_lines': {
+        'en': 'The map file contains invalid lines:',
+        'pl': 'Plik mapy zawiera nieprawidłowe linie:',
+        'de': 'Die Mapping-Datei enthält ungültige Zeilen:',
+        'es': 'El archivo de mapa contiene líneas no válidas:',
+        'it': 'Il file di mappa contiene righe non valide:',
+        'ru': 'Файл карты содержит недопустимые строки:',
+        'zh': '映射文件包含无效行:'
+    },
+
+    'map_file_fix_and_retry': {
+        'en': 'Fix the map file format and try again.',
+        'pl': 'Popraw format pliku mapy i spróbuj ponownie.',
+        'de': 'Korrigieren Sie das Format der Mapping-Datei und versuchen Sie es erneut.',
+        'es': 'Corrija el formato del archivo de mapa y vuelva a intentarlo.',
+        'it': 'Correggi il formato del file di mappa e riprova.',
+        'ru': 'Исправьте формат файла карты и попробуйте снова.',
+        'zh': '请修复映射文件格式后重试。'
+    },
+
+    'map_line_unparsed': {
+        'en': 'Cannot interpret map line: {0}',
+        'pl': 'Nie można zinterpretować linii mapy: {0}',
+        'de': 'Kann die Mapping-Zeile nicht interpretieren: {0}',
+        'es': 'No se puede interpretar la línea del mapa: {0}',
+        'it': 'Impossibile interpretare la riga della mappa: {0}',
+        'ru': 'Не удалось интерпретировать строку карты: {0}',
+        'zh': '无法解析映射行: {0}'
+    },
+
+    'map_no_valid_entries': {
+        'en': 'No valid entries found in the shift map.',
+        'pl': 'Brak poprawnych wpisów w mapie przesunięć.',
+        'de': 'Keine gültigen Einträge in der Verschiebungsmappe gefunden.',
+        'es': 'No se encontraron entradas válidas en el mapa de desplazamientos.',
+        'it': 'Nessuna voce valida trovata nella mappa degli offset.',
+        'ru': 'В карте смещений не найдено допустимых записей.',
+        'zh': '偏移映射中未找到有效条目。'
+    },
+
+    'negative_or_zero_targets': {
+        'en': '{0} invalid target indices generated (<= 0). Operation aborted.',
+        'pl': 'Wygenerowano {0} nieprawidłowych numerów docelowych (<= 0). Operacja przerwana.',
+        'de': '{0} ungültige Zielindizes erzeugt (<= 0). Vorgang abgebrochen.',
+        'es': '{0} índices de destino no válidos generados (<= 0). Operación cancelada.',
+        'it': '{0} indici di destinazione non validi generati (<= 0). Operazione interrotta.',
+        'ru': 'Создано {0} недопустимых целевых индексов (<= 0). Операция прервана.',
+        'zh': '生成了 {0} 个无效目标索引 (<= 0)。操作已中止。'
+    },
+
+    'map_apply_preview': {
+        'en': '--- Preview of changes from the shift map ---',
+        'pl': '--- Podgląd zmian wynikających z mapy przesunięć ---',
+        'de': '--- Vorschau der Änderungen aus der Verschiebungsmappe ---',
+        'es': '--- Vista previa de los cambios del mapa de desplazamientos ---',
+        'it': '--- Anteprima delle modifiche dalla mappa degli offset ---',
+        'ru': '--- Предварительный просмотр изменений по карте смещений ---',
+        'zh': '--- 偏移映射更改预览 ---'
+    },
+
+    'map_apply_changes_count': {
+        'en': 'Number of generated entries: {0}',
+        'pl': 'Liczba wygenerowanych wpisów: {0}',
+        'de': 'Anzahl der erzeugten Einträge: {0}',
+        'es': 'Número de entradas generadas: {0}',
+        'it': 'Numero di voci generate: {0}',
+        'ru': 'Количество созданных записей: {0}',
+        'zh': '生成的条目数量: {0}'
+    },
+
+    'map_apply_changes_list': {
+        'en': 'Applied shifts (A:<number> offset <value>):',
+        'pl': 'Zastosowane przesunięcia (A:<numer> offset <wartość>):',
+        'de': 'Angewendete Verschiebungen (A:<Nummer> Offset <Wert>):',
+        'es': 'Desplazamientos aplicados (A:<número> offset <valor>):',
+        'it': 'Offset applicati (A:<numero> offset <valore>):',
+        'ru': 'Применённые смещения (A:<номер> offset <значение>):',
+        'zh': '应用的偏移 (A:<编号> offset <值>):'
+    },
+
+    'map_apply_collisions': {
+        'en': '{0} target index collisions detected:',
+        'pl': 'Wykryto {0} kolizji numerów docelowych:',
+        'de': '{0} Zielindex-Kollisionen erkannt:',
+        'es': 'Detectadas {0} colisiones de índices de destino:',
+        'it': 'Rilevate {0} collisioni di indici di destinazione:',
+        'ru': 'Обнаружено {0} конфликтов целевых индексов:',
+        'zh': '检测到 {0} 个目标索引冲突:'
+    },
+
+    'map_apply_done': {
+        'en': 'Shift map applied.',
+        'pl': 'Zastosowano mapę przesunięć.',
+        'de': 'Verschiebungsmappe angewendet.',
+        'es': 'Mapa de desplazamientos aplicada.',
+        'it': 'Mappa degli offset applicata.',
+        'ru': 'Карта смещений применена.',
+        'zh': '偏移映射已应用。'
+    },
+
+    'map_apply_error': {
+        'en': 'Error applying map: {0}',
+        'pl': 'Błąd podczas stosowania mapy: {0}',
+        'de': 'Fehler beim Anwenden der Mapping-Datei: {0}',
+        'es': 'Error al aplicar el mapa: {0}',
+        'it': 'Errore durante l’applicazione della mappa: {0}',
+        'ru': 'Ошибка при применении карты: {0}',
+        'zh': '应用映射时出错: {0}'
+    },
+
+    'map_file_prompt': {
+        'en': 'Enter path to map file (Enter = paste manually): ',
+        'pl': 'Podaj ścieżkę do pliku mapy (Enter = wklej mapę ręcznie): ',
+        'de': 'Pfad zur Mapping-Datei eingeben (Enter = manuell einfügen): ',
+        'es': 'Introduzca la ruta del archivo de mapa (Enter = pegar manualmente): ',
+        'it': 'Inserisci il percorso del file di mappa (Invio = incolla manualmente): ',
+        'ru': 'Укажите путь к файлу карты (Enter = вставить вручную): ',
+        'zh': '输入映射文件路径（回车 = 手动粘贴）: '
+    }
+ }
+
 
 
 # --- pomocnicze ---
@@ -2695,6 +2914,56 @@ def option_align_versions(path_a: Path, path_b: Path, encoding: str = 'utf-8', m
         print(TL('offset_history', lang))
         for off, aidx, bidx in offset_history:
             print(TL('offset_set_at', lang).format(off, aidx, bidx))
+            
+        # --- opcjonalne wygenerowanie i zapis mapy przesunięć (offsetów) ---
+        # Zbuduj listę prostych wpisów z offset_history: "A:<aidx> offset <off>"
+        shift_lines = []
+        # offset_history jest listą (offset, a_index, b_index) w kolejności ustawiania
+        for off, aidx, bidx in offset_history:
+            shift_lines.append(f"A:{aidx} offset {off}")
+
+        # domyślnie pokażemy mapę w konsoli
+        print()
+        print(TL('shift_map_preview_title', lang))
+        for line in shift_lines:
+            print("  " + line)
+
+        # zapytaj użytkownika, czy chce zapisać mapę do pliku
+        if confirm(TL('save_shift_map_prompt', lang), default=False, lang=lang):
+            default_name = 'text_shift_map.txt'
+            name = input(TL('shift_map_filename_prompt', lang)).strip() or default_name
+
+            try:
+                # Jeśli użytkownik podał ścieżkę absolutną lub względną — próbujemy ją znormalizować
+                try:
+                    out_map_path = sanitize_path(name)
+                except Exception:
+                    # Jeśli sanitize_path nie działa (np. sama nazwa pliku),
+                    # to zapisujemy w katalogu pliku A
+                    out_map_path = path_a.parent / name
+
+                # Jeśli użytkownik podał samą nazwę pliku (bez ścieżki),
+                # sanitize_path zwróci nazwę w bieżącym katalogu — poprawiamy to:
+                if not out_map_path.is_absolute():
+                    out_map_path = path_a.parent / out_map_path
+
+                # Jeśli wskazano katalog — dodaj domyślną nazwę
+                if out_map_path.is_dir():
+                    out_map_path = out_map_path / default_name
+
+                # Zapis pliku
+                map_text = '\n'.join(shift_lines) + '\n'
+                write_file(out_map_path, map_text, encoding=encoding)
+                print(TL('shift_map_saved', lang).format(out_map_path))
+
+            except Exception as e:
+                print(TL('shift_map_save_error', lang).format(e))
+    # jeśli brak mapowań i brak offsetów, kończymy
+    elif not mappings:
+        print(TL('no_matches', lang))
+        return
+
+
 
     # jeśli brak mapowań i brak offsetów, kończymy
     if not mappings and not offset_history:
@@ -2788,22 +3057,282 @@ def option_align_versions(path_a: Path, path_b: Path, encoding: str = 'utf-8', m
     print(TL('last_a_num', lang).format(max(sorted(map_a.keys())) if map_a else 0))
     print(TL('done', lang))
     
+    
+def option_apply_map(path_a: Path, path_map: Path | None = None, encoding: str = 'utf-8', lang: str = 'en') -> None:
+    """
+    Zastosuj mapę przesunięć do pliku projektu A.
+    - Jeśli path_map wskazuje plik .txt: wykonujemy rygorystyczną walidację formatu.
+    - Jeśli path_map jest None: użytkownik może wkleić mapę (luźniejsze parsowanie).
+    Format akceptowanych linii (przykłady):
+      A:1 offset 663
+      1 663
+      1,663
+      1->664   (interpretowane jako new - old -> offset)
+    Komentarze: linie zaczynające się od '#' są ignorowane.
+    """
 
+    from operator import itemgetter
+
+    # WALIDACJE WEJŚCIA
+    if not path_a or not isinstance(path_a, Path):
+        print(TL('invalid_path', lang))
+        return
+    if not path_a.exists():
+        print(TL('file_not_exists', lang).format('A', path_a))
+        return
+    if not validate_project_file(path_a, encoding, lang):
+        return
+
+    # Wczytaj projekt A
+    try:
+        text_a = read_file(path_a, encoding=encoding)
+    except Exception as e:
+        print(TL('read_error', lang).format(e))
+        return
+    header_a, order_a, map_a = parse_blocks_linewise(text_a)
+    if not order_a:
+        print(TL('no_blocks_found', lang))
+        return
+
+    # Wczytaj mapę: z pliku jeśli podano, inaczej poproś o wklejenie
+    raw_lines = []
+    map_from_file = False
+    if path_map:
+        map_from_file = True
+        if not path_map.exists():
+            print(TL('file_not_exists', lang).format('map', path_map))
+            return
+        try:
+            raw_map_text = read_file(path_map, encoding=encoding)
+        except Exception as e:
+            print(TL('map_read_error', lang).format(e))
+            return
+        raw_lines = [ln.rstrip('\n') for ln in raw_map_text.splitlines()]
+    else:
+        # tryb wklejania
+        print(TL('paste_map_instructions', lang))
+        pasted = []
+        while True:
+            try:
+                line = input().rstrip('\n')
+            except EOFError:
+                break
+            if line == '':
+                break
+            pasted.append(line)
+        raw_lines = pasted
+
+    # Normalizacja: usuń puste i komentarze
+    raw_lines = [ln.strip() for ln in raw_lines if ln.strip() and not ln.strip().startswith('#')]
+    if not raw_lines:
+        print(TL('map_empty', lang))
+        return
+
+    # RYGORYSTYCZNA WALIDACJA (tylko gdy mapa pochodzi z pliku .txt)
+    # Dozwolone wzorce:
+    # 1) A:<num> ... offset <num>
+    # 2) <num> <num>   (oddzielone spacją)
+    # 3) <num>,<num>
+    # 4) <num>-><num>
+    int_re = re.compile(r'-?\d+')
+    allowed_line_re = re.compile(
+        r'^\s*(?:A\s*:\s*\d+\s*(?:.*offset\s*-?\d+)?|\d+\s+[-]?\d+|\d+\s*,\s*-?\d+|\d+\s*[-=]>\s*\d+)\s*$', re.IGNORECASE
+    )
+
+    if map_from_file:
+        bad_lines = []
+        for ln in raw_lines:
+            if not allowed_line_re.match(ln):
+                bad_lines.append(ln)
+        if bad_lines:
+            print(TL('map_file_invalid_lines', lang))
+            for bl in bad_lines[:50]:
+                print("  " + bl)
+            print(TL('map_file_fix_and_retry', lang))
+            return
+
+    # Parsowanie linii mapy (elastyczne)
+    map_entries = []
+    for ln in raw_lines:
+        # prefer pattern A:<num> ... offset <num>
+        m = re.search(r'A\s*[:]\s*(\d+)', ln, flags=re.IGNORECASE)
+        if m:
+            aidx = int(m.group(1))
+            m_off = re.search(r'offset\s*[:=]?\s*(-?\d+)', ln, flags=re.IGNORECASE)
+            if m_off:
+                off = int(m_off.group(1))
+                map_entries.append((aidx, off))
+                continue
+        # dwie liczby w linii
+        nums = int_re.findall(ln)
+        if len(nums) >= 2:
+            aidx = int(nums[0])
+            off = int(nums[1])
+            map_entries.append((aidx, off))
+            continue
+        # format arrow: 1->664 (interpretujemy jako newnum)
+        m_arrow = re.search(r'(\d+)\s*[-=]>\s*(\d+)', ln)
+        if m_arrow:
+            aidx = int(m_arrow.group(1))
+            newnum = int(m_arrow.group(2))
+            off = newnum - aidx
+            map_entries.append((aidx, off))
+            continue
+        # jeśli nie sparsowano (w trybie paste tylko) — zgłoś i pomiń
+        print(TL('map_line_unparsed', lang).format(ln))
+
+    if not map_entries:
+        print(TL('map_no_valid_entries', lang))
+        return
+
+    # Sortuj i deduplikuj (pierwszy występ ma priorytet)
+    map_entries_sorted = sorted(map_entries, key=itemgetter(0))
+    deduped = []
+    seen = set()
+    for aidx, off in map_entries_sorted:
+        if aidx in seen:
+            continue
+        seen.add(aidx)
+        deduped.append((aidx, off))
+    map_entries_sorted = deduped
+
+    # Stosowanie offsetów sekwencyjnie
+    map_ptr = 0
+    current_offset = 0
+    next_map_aidx, next_map_off = map_entries_sorted[map_ptr] if map_ptr < len(map_entries_sorted) else (None, None)
+
+    target_map = {}
+    collisions = []
+    applied_changes = []  # (na, target_idx, offset)
+
+    for na in sorted(order_a):
+        # jeśli osiągamy punkt startu kolejnego wpisu mapy -> ustaw nowy offset
+        while next_map_aidx is not None and na >= next_map_aidx:
+            current_offset = next_map_off
+            map_ptr += 1
+            if map_ptr < len(map_entries_sorted):
+                next_map_aidx, next_map_off = map_entries_sorted[map_ptr]
+            else:
+                next_map_aidx, next_map_off = (None, None)
+        target_idx = na + current_offset
+        if target_idx in target_map:
+            collisions.append((na, target_idx))
+        target_map[target_idx] = map_a.get(na, '')
+        applied_changes.append((na, target_idx, current_offset))
+
+    # Walidacja wyników
+    bad_targets = [t for t in target_map.keys() if not isinstance(t, int) or t <= 0]
+    if bad_targets:
+        print(TL('negative_or_zero_targets', lang).format(len(bad_targets)))
+        return
+
+    # Zbuduj wynikowy tekst
+    target_indices = sorted(k for k in target_map.keys() if isinstance(k, int))
+    parts = []
+    parts.append(header_a if header_a.endswith('\n') or header_a == '' else header_a + '\n')
+    for idx in target_indices:
+        parts.append(f'## Text {idx} ##\n')
+        content = target_map.get(idx, '')
+        if content != '':
+            parts.append(f'{content}\n')
+        parts.append('####\n')
+    result_text = ''.join(parts)
+
+    # Raport przed zapisem
+    print(TL('map_apply_preview', lang))
+    print(TL('map_apply_changes_count', lang).format(len(target_indices)))
+    if map_entries_sorted:
+        print(TL('map_apply_changes_list', lang))
+        for aidx, off in map_entries_sorted:
+            print(f"  A:{aidx} offset {off}")
+    if collisions:
+        print(TL('map_apply_collisions', lang).format(len(collisions)))
+        for c in collisions[:50]:
+            print(TL('collision_example', lang).format(c[0], c[1]))
+
+    # Zapis (backup lub nowy plik) — ta część jest taka sama jak w option_shift_ids
+    print(TL('save_shift_method', lang))
+    print(TL('overwrite_a_backup', lang))
+    print(TL('save_new_shift', lang))
+    choice = input(TL('choose_1_or_2_shift', lang)).strip() or '2'
+
+    if choice == '1':
+        bak = path_a.with_suffix(path_a.suffix + '.bak')
+        try:
+            shutil.copy2(path_a, bak)
+            print(TL('backup_created', lang).format(bak))
+        except Exception as e:
+            print(TL('backup_failed', lang).format(e))
+            if not confirm(TL('continue_without_backup', lang), default=False, lang=lang):
+                print(TL('canceled', lang))
+                return
+        try:
+            write_file(path_a, result_text, encoding=encoding)
+            print(TL('overwritten_a', lang).format(path_a))
+        except Exception as e:
+            print(TL('write_error', lang).format(e))
+            return
+    elif choice == '2':
+        suggested = path_a.with_name(path_a.stem + '_shifted' + path_a.suffix)
+        out_path_input = input(TL('out_path_prompt', lang).format(suggested)).strip()
+        if out_path_input == '':
+            out_path = suggested
+        else:
+            try:
+                candidate = sanitize_path(out_path_input)
+            except Exception:
+                candidate = Path(out_path_input)
+            if candidate.exists() and candidate.is_dir():
+                out_path = candidate / suggested.name
+            else:
+                out_path = candidate
+        out_dir = out_path.parent
+        if not out_dir.exists():
+            try:
+                out_dir.mkdir(parents=True, exist_ok=True)
+            except Exception as e:
+                print(TL('dir_create_failed', lang).format(out_dir, e))
+                return
+        if out_path.exists():
+            if not confirm(TL('file_exists_overwrite', lang).format(out_path), default=False, lang=lang):
+                print(TL('canceled', lang))
+                return
+        try:
+            write_file(out_path, result_text, encoding=encoding)
+            print(TL('shifted_saved', lang).format(out_path))
+        except Exception as e:
+            print(TL('write_error', lang).format(e))
+            return
+    else:
+        print(TL('invalid_save_choice', lang))
+        return
+
+    # Końcowy raport
+    print(TL('map_apply_done', lang))
+    for aidx, off in map_entries_sorted:
+        print(f"  A:{aidx} offset {off}")
+    
+    
+# --------------------------------------------------------------------------------------------------------
 # --- main menu ---
 def main(lang: str = 'en') -> None:
     while True:
         print(TL('main_menu_title', lang))
         print(TL('main_menu_options', lang))
-        choice = input(TL('main_menu_prompt', lang)).strip() or '9'
+        choice = input(TL('main_menu_prompt', lang)).strip() or '0'
 
-        if choice not in {'1','2','3','4','5','6','7','8', '9'}:
+        # dopuszczalne opcje: 0..9
+        if choice not in {'0','1','2','3','4','5','6','7','8','9'}:
             print(TL('invalid_choice', lang))
             continue
-        if choice == '9':
+
+        # wyjście (teraz 0)
+        if choice == '0':
             print(TL('exit_message', lang))
             input(TL('press_enter_to_exit', lang))
             sys.exit(0)
 
+        # Import z .dat
         if choice == '3':
             while True:
                 raw_dat = input(TL('path_dat_prompt', lang)).strip()
@@ -2824,6 +3353,7 @@ def main(lang: str = 'en') -> None:
                 break
             continue
 
+        # Eksport do .dat
         if choice == '4':
             while True:
                 raw_proj = input(TL('project_export_prompt', lang)).strip()
@@ -2844,6 +3374,7 @@ def main(lang: str = 'en') -> None:
                 break
             continue
 
+        # Podgląd .dat
         if choice == '5':
             while True:
                 raw_dat = input(TL('path_dat_preview_prompt', lang)).strip()
@@ -2864,6 +3395,7 @@ def main(lang: str = 'en') -> None:
                 break
             continue
 
+        # Opcje wymagające dwóch projektów A i B (1,2,8)
         if choice in {'1','2','8'}:
             while True:
                 raw_a = input(TL('path_a_prompt', lang)).strip()
@@ -2898,9 +3430,12 @@ def main(lang: str = 'en') -> None:
                 if not validate_project_file(path_b, 'utf-8', lang):
                     continue
                 break
+
             if not raw_a or not raw_b:
                 continue
+
             encoding = input(TL('encoding_prompt', lang)).strip() or 'utf-8'
+
             if choice == '1':
                 out_name = input(TL('out_name_prompt', lang)).strip() or 'missingtexts.txt'
                 out_path, missing_ids = generate_missing_texts(path_a, path_b, encoding=encoding, out_name=out_name, lang=lang)
@@ -2919,8 +3454,7 @@ def main(lang: str = 'en') -> None:
                 option_align_versions(path_a, path_b, encoding=encoding, lang=lang)
             continue
 
-
-
+        # Przesuń numery (offset)
         if choice == '6':
             while True:
                 raw_a2 = input(TL('path_a_prompt', lang)).strip()
@@ -2944,6 +3478,7 @@ def main(lang: str = 'en') -> None:
             option_shift_ids(path_a, encoding=encoding, lang=lang)
             continue
 
+        # Napraw brakujące wpisy w projekcie
         if choice == '7':
             while True:
                 raw_proj = input(TL('project_path_prompt', lang)).strip()
@@ -2963,7 +3498,62 @@ def main(lang: str = 'en') -> None:
                 option_fix_missing_entries(path_proj, encoding='utf-8', lang=lang)
                 break
             continue
-            
+
+        # OPCJA 9: Zastosuj mapę numerów do pliku projektu A
+        if choice == '9':
+            # wybór pliku projektu A
+            path_a_map: Path | None = None
+            while True:
+                raw_a_map = input(TL('path_a_prompt', lang)).strip()
+                if not raw_a_map:
+                    print(TL('path_a_required', lang))
+                    break
+                try:
+                    candidate_a = sanitize_path(raw_a_map)
+                except Exception as e:
+                    print(TL('invalid_path', lang).format(e))
+                    continue
+                if not candidate_a.exists():
+                    print(TL('file_not_exists', lang).format('A', candidate_a))
+                    continue
+                if not validate_project_file(candidate_a, 'utf-8', lang):
+                    continue
+                path_a_map = candidate_a
+                break
+
+            if path_a_map is None:
+                # użytkownik przerwał lub nie podał poprawnej ścieżki
+                continue
+
+            # wybór pliku mapy (opcjonalnie — jeśli nie poda, będzie tryb wklejania)
+            path_map: Path | None = None
+            while True:
+                raw_map = input(TL('map_file_prompt', lang)).strip()
+                if not raw_map:
+                    # brak pliku mapy -> przejdziemy w tryb wklejania w option_apply_map
+                    break
+                try:
+                    candidate_map = sanitize_path(raw_map)
+                except Exception as e:
+                    print(TL('invalid_path', lang).format(e))
+                    continue
+                if not candidate_map.exists():
+                    print(TL('file_not_exists', lang).format('map', candidate_map))
+                    continue
+                path_map = candidate_map
+                break
+
+            try:
+                option_apply_map(path_a_map, path_map, encoding='utf-8', lang=lang)
+            except Exception as e:
+                print(TL('map_apply_error', lang).format(e))
+            continue
+
+
+
+
+
+ 
 if __name__ == '__main__':
     print(
         "Choose program language / Wählen Sie die Sprache /  Wybierz język / "
