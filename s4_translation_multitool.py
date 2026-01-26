@@ -37,706 +37,1304 @@ LANG_MAP = {
 }
 
 # --- Słownik tłumaczeń dla komunikatów (dodano do obsługi wielojęzyczności) ---
-# Klucze: unikalne identyfikatory komunikatów. Wartości: dict z 'pl' i 'en'.
-TRANSLATIONS = {
-    'choose_lang': {
-        'pl': "Wybierz język programu: 1) Polski, 2) English [2]: ",
-        'en': "Choose program language: 1) Polish, 2) English [2]: "
-    },
-    'invalid_choice': {
-        'pl': "Nieprawidłowy wybór. Spróbuj ponownie.",
-        'en': "Invalid choice. Try again."
-    },
-    'main_menu_title': {
-        'pl': "\n=== Settlers IV Translation Multitool (menu) ===",
-        'en': "\n=== Settlers IV Translation Multitool (menu) ==="
-    },
-    'main_menu_options': {
-        'pl': """Wybierz opcję:
-  1) Porównaj pliki projektu A vs B i wygeneruj missingtexts.txt (teksty z B brakujące/wymagające uzupełnienia w A)
-  2) Połącz pliki projektu (merge): podmień istniejące i dopisz brakujące z B do A
-  3) Import z pliku s4_texts.dat<nr> → wygeneruj <LANG>.s4_translation_project
-  4) Eksport pliku .s4_translation_project → s4_texts.dat<nr>
-  5) Podgląd tekstów z pliku .dat (interaktywne testowanie kodowań)
-  6) Przesuń numery tekstów w pliku projektu A (offset)
-  7) Napraw brakujące wpisy w pliku projektu
-  8) Dopasuj numery tekstów w pliku projektu A do B (align A ← B)
-  9) Wyjście""",
-        'en': """Choose an option:
-  1) Compare A vs B project files and generate missingtexts.txt (texts from B missing/requiring completion in A)
-  2) Merge project files: replace existing and append missing from B to A
-  3) Import from s4_texts.dat<nr> → generate <LANG>.s4_translation_project
-  4) Export .s4_translation_project → s4_texts.dat<nr>
-  5) Preview texts from .dat file (interactive encoding testing)
-  6) Shift text numbers in project file A (offset)
-  7) Fix missing entries in project file
-  8) Align text numbers in project file A to B (align A ← B)
-  9) Exit"""
-    },
-    'main_menu_prompt': {
-        'pl': "Wybierz 1, 2, 3, 4, 5, 6, 7, 8 lub 9 [9]: ",
-        'en': "Choose 1, 2, 3, 4, 5, 6, 7, 8 or 9 [9]: "
-    },
-    'exit_message': {
-        'pl': "Koniec.",
-        'en': "Exit."
-    },
-    'press_enter_to_exit': {
-        'pl': "\nNaciśnij Enter, aby zakończyć...",
-        'en': "\nPress Enter to exit..."
-    },
-    'path_a_prompt': {
-        'pl': "Podaj ścieżkę do pliku A (bazowy): ",
-        'en': "Enter path to file A (base): "
-    },
-    'path_b_prompt': {
-        'pl': "Podaj ścieżkę do pliku B (referencyjny): ",
-        'en': "Enter path to file B (reference): "
-    },
-    'required_paths': {
-        'pl': "Plik A i B są wymagane dla tej opcji. Powrót do menu.",
-        'en': "Files A and B are required for this option. Back to menu."
-    },
-    'invalid_path': {
-        'pl': "Nieprawidłowa ścieżka: {}",
-        'en': "Invalid path: {}"
-    },
-    'file_not_exists': {
-        'pl': "Plik {} nie istnieje: {}",
-        'en': "File {} does not exist: {}"
-    },
-    'encoding_prompt': {
-        'pl': "Kodowanie plików (domyślnie utf-8): ",
-        'en': "File encoding (default utf-8): "
-    },
-    'out_name_prompt': {
-        'pl': "Nazwa pliku wynikowego [missingtexts.txt]: ",
-        'en': "Output file name [missingtexts.txt]: "
-    },
-    'missingtexts_saved': {
-        'pl': "Zapisano plik z brakującymi tekstami: {}",
-        'en': "Saved missing texts file: {}"
-    },
-    'missing_blocks_count': {
-        'pl': "Liczba brakujących bloków: {}. Numery: {}",
-        'en': "Number of missing blocks: {}. Numbers: {}"
-    },
-    'no_missing_blocks': {
-        'pl': "Brak brakujących bloków (nic do dopisania).",
-        'en': "No missing blocks (nothing to add)."
-    },
-    'no_missingtexts_saved': {
-        'pl': "Brak zapisanego pliku missingtexts.",
-        'en': "No missingtexts file saved."
-    },
-    'summary_changes': {
-        'pl': "\nPodsumowanie zmian:",
-        'en': "\nSummary of changes:"
-    },
-    'replaced_numbers': {
-        'pl': "  Podmienione numery (z pliku B): {}",
-        'en': "  Replaced numbers (from file B): {}"
-    },
-    'no_replacements': {
-        'pl': "  Brak podmian (żaden numer z B nie występował w A).",
-        'en': "  No replacements (no number from B occurred in A)."
-    },
-    'added_numbers': {
-        'pl': "  Dodane numery (dopisane na końcu): {}",
-        'en': "  Added numbers (appended at the end): {}"
-    },
-    'no_added': {
-        'pl': "  Brak nowych numerów do dodania.",
-        'en': "  No new numbers to add."
-    },
-    'save_method': {
-        'pl': "\nWybierz sposób zapisu:",
-        'en': "\nChoose save method:"
-    },
-    'overwrite_a': {
-        'pl': "  1) Nadpisać plik A (zrobiona zostanie kopia zapasowa)",
-        'en': "  1) Overwrite file A (backup will be created)"
-    },
-    'save_new': {
-        'pl': "  2) Zapisz jako nowy plik (ten sam katalog co A, nazwa + _updated)",
-        'en': "  2) Save as new file (same directory as A, name + _updated)"
-    },
-    'choose_1_or_2': {
-        'pl': "Wybierz 1 lub 2 [1]: ",
-        'en': "Choose 1 or 2 [1]: "
-    },
-    'backup_created': {
-        'pl': "Utworzono kopię zapasową: {}",
-        'en': "Backup created: {}"
-    },
-    'backup_failed': {
-        'pl': "Nie udało się utworzyć kopii zapasowej: {}",
-        'en': "Failed to create backup: {}"
-    },
-    'continue_without_backup': {
-        'pl': "Kontynuować bez kopii zapasowej?",
-        'en': "Continue without backup?"
-    },
-    'canceled': {
-        'pl': "Anulowano.",
-        'en': "Canceled."
-    },
-    'overwritten_a': {
-        'pl': "Nadpisano plik A: {}",
-        'en': "Overwritten file A: {}"
-    },
-    'write_error': {
-        'pl': "Błąd zapisu: {}",
-        'en': "Write error: {}"
-    },
-    'out_path_prompt': {
-        'pl': "Podaj ścieżkę wyjściową [{}]: ",
-        'en': "Enter output path [{}]: "
-    },
-    'dir_create_failed': {
-        'pl': "Nie udało się utworzyć katalogu {}: {}",
-        'en': "Failed to create directory {}: {}"
-    },
-    'file_exists_overwrite': {
-        'pl': "Plik {} już istnieje. Nadpisać?",
-        'en': "File {} already exists. Overwrite?"
-    },
-    'saved_to': {
-        'pl': "Zapisano wynik do: {}",
-        'en': "Saved result to: {}"
-    },
-    'invalid_save_choice': {
-        'pl': "Nieprawidłowy wybór. Kończę bez zapisu.",
-        'en': "Invalid choice. Ending without saving."
-    },
-    'path_dat_prompt': {
-        'pl': "Podaj ścieżkę do pliku s4_texts.dat<nr>: ",
-        'en': "Enter path to s4_texts.dat<nr>: "
-    },
-    'path_required': {
-        'pl': "Ścieżka do pliku .dat wymagana. Powrót do menu.",
-        'en': "Path to .dat file required. Back to menu."
-    },
-    'lang_num_from_name': {
-        'pl': "Znaleziono numer języka w nazwie pliku: {} (sugestia).",
-        'en': "Found language number in file name: {} (suggestion)."
-    },
-    'lang_num_prompt': {
-        'pl': "Podaj numer języka (np. 5 dla POLISH). Sugestia: {}: ",
-        'en': "Enter language number (e.g. 5 for POLISH). Suggestion: {}: "
-    },
-    'invalid_number': {
-        'pl': "Nieprawidłowy numer. Podaj liczbę całkowitą (np. 5).",
-        'en': "Invalid number. Enter an integer (e.g. 5)."
-    },
-    'selected_lang': {
-        'pl': "Wybrany język: {} (numer {}), sugerowane kodowania (pierwsze domyślne): {}",
-        'en': "Selected language: {} (number {}), suggested encodings (first default): {}"
-    },
-    'use_suggested_enc': {
-        'pl': "Użyć sugerowanego kodowania '{}'? [T/n]: ",
-        'en': "Use suggested encoding '{}'? [Y/n]: "
-    },
-    'enc_input_prompt': {
-        'pl': "Podaj kodowanie wejściowe (np. big5, cp950, utf-8, cp1251): ",
-        'en': "Enter input encoding (e.g. big5, cp950, utf-8, cp1251): "
-    },
-    'dat_read_error': {
-        'pl': "Błąd odczytu pliku .dat: {}",
-        'en': "Error reading .dat file: {}"
-    },
-    'project_saved': {
-        'pl': "Zapisano plik projektu: {} (kodowanie wyjściowe: {})",
-        'en': "Saved project file: {} (output encoding: {})"
-    },
-    'project_write_error': {
-        'pl': "Błąd zapisu pliku projektu: {}",
-        'en': "Error writing project file: {}"
-    },
-    'project_path_prompt': {
-        'pl': "Podaj ścieżkę do pliku .s4_translation_project: ",
-        'en': "Enter path to .s4_translation_project file: "
-    },
-    'project_path_required': {
-        'pl': "Ścieżka do pliku projektu wymagana. Powrót do menu.",
-        'en': "Path to project file required. Back to menu."
-    },
-    'project_read_error': {
-        'pl': "Błąd odczytu pliku projektu: {}",
-        'en': "Error reading project file: {}"
-    },
-    'header_not_found': {
-        'pl': "Nie znaleziono nagłówka 4 bajtów w pliku projektu.",
-        'en': "Header 4 bytes not found in project file."
-    },
-    'header_prompt': {
-        'pl': "Podaj 4 liczby (0-255) oddzielone spacjami jako nagłówek (np. '1 2 3 4'): ",
-        'en': "Enter 4 numbers (0-255) separated by spaces as header (e.g. '1 2 3 4'): "
-    },
-    'exactly_4_numbers': {
-        'pl': "Podaj dokładnie 4 liczby.",
-        'en': "Enter exactly 4 numbers."
-    },
-    'numbers_0_255': {
-        'pl': "Liczby muszą być w zakresie 0-255.",
-        'en': "Numbers must be in range 0-255."
-    },
-    'invalid_numbers': {
-        'pl': "Nieprawidłowe liczby. Spróbuj ponownie.",
-        'en': "Invalid numbers. Try again."
-    },
-    'available_langs': {
-        'pl': "\nDostępne języki (numer : nazwa):",
-        'en': "\nAvailable languages (number : name):"
-    },
-    'lang_suggestion': {
-        'pl': "\nSugestia na podstawie nazwy pliku: {} ({})",
-        'en': "\nSuggestion based on file name: {} ({})"
-    },
-    'lang_num_save_prompt': {
-        'pl': "Podaj numer języka do zapisu (np. 5 dla POLISH) [{}]: ",
-        'en': "Enter language number for save (e.g. 5 for POLISH) [{}]: "
-    },
-    'unknown_lang_num': {
-        'pl': "Nieznany numer języka. Spróbuj ponownie.",
-        'en': "Unknown language number. Try again."
-    },
-    'selected_lang_save': {
-        'pl': "Wybrany język: {} (numer {}). Sugerowane kodowania (pierwsze domyślne): {}",
-        'en': "Selected language: {} (number {}). Suggested encodings (first default): {}"
-    },
-    'custom_enc_prompt': {
-        'pl': "Podaj kodowanie wyjściowe (np. cp1250, cp950, cp932, cp1251) lub naciśnij Enter aby użyć sugerowanego: ",
-        'en': "Enter output encoding (e.g. cp1250, cp950, cp932, cp1251) or press Enter to use suggested: "
-    },
-    'no_blocks': {
-        'pl': "Plik projektu nie zawiera żadnych bloków tekstowych. Anulowano.",
-        'en': "Project file contains no text blocks. Canceled."
-    },
-    'save_texts_from_to': {
-        'pl': "Zapiszę wszystkie teksty od 1 do {} (ostatni numer: {}).",
-        'en': "Will save all texts from 1 to {} (last number: {})."
-    },
-    'out_file_prompt': {
-        'pl': "Plik wyjściowy [{}]: ",
-        'en': "Output file [{}]: "
-    },
-    'save_as_alt': {
-        'pl': "Zapisz jako: {}",
-        'en': "Save as: {}"
-    },
-    'confirm_save_as': {
-        'pl': "Zapisz jako {}?",
-        'en': "Save as {}?"
-    },
-    'dat_saved': {
-        'pl': "\nZapisano plik .dat: {}",
-        'en': "\nSaved .dat file: {}"
-    },
-    'last_text_num': {
-        'pl': "Ostatni zapisany numer tekstu: {}",
-        'en': "Last saved text number: {}"
-    },
-    'texts_count': {
-        'pl': "Liczba tekstów zapisanych: {}. Pustych (length=0): {}. Kodowanie: {}",
-        'en': "Number of texts saved: {}. Empty (length=0): {}. Encoding: {}"
-    },
-    'dat_write_error': {
-        'pl': "Błąd zapisu pliku .dat: {}",
-        'en': "Error writing .dat file: {}"
-    },
-    'path_dat_preview_prompt': {
-        'pl': "Podaj ścieżkę do pliku s4_texts.dat<nr> do podglądu: ",
-        'en': "Enter path to s4_texts.dat<nr> for preview: "
-    },
-    'texts_count_dat': {
-        'pl': "Plik zawiera {} tekstów.",
-        'en': "File contains {} texts."
-    },
-    'range_prompt': {
-        'pl': "Podaj numer tekstu (np. 57), przedział (np. 60-200), 'all' aby wypisać wszystko, lub 'single' aby podać pojedynczy numer do testu wszystkich kodowań: ",
-        'en': "Enter text number (e.g. 57), range (e.g. 60-200), 'all' to print everything, or 'single' to enter single number for all encodings test: "
-    },
-    'single_text_prompt': {
-        'pl': "Podaj numer pojedynczego tekstu do testu wszystkich kodowań: ",
-        'en': "Enter single text number for all encodings test: "
-    },
-    'out_of_range': {
-        'pl': "Numer poza zakresem. Spróbuj ponownie.",
-        'en': "Number out of range. Try again."
-    },
-    'invalid_range': {
-        'pl': "Nieprawidłowy przedział. Spróbuj ponownie.",
-        'en': "Invalid range. Try again."
-    },
-    'invalid_format': {
-        'pl': "Nieprawidłowy format. Użyj np. 60-200.",
-        'en': "Invalid format. Use e.g. 60-200."
-    },
-    'suggested_encs': {
-        'pl': "\nSugerowane kodowania (pierwsze domyślne):",
-        'en': "\nSuggested encodings (first default):"
-    },
-    'custom_enc': {
-        'pl': "  a) wpisz własne kodowanie (np. big5, cp950, utf-8)",
-        'en': "  a) enter custom encoding (e.g. big5, cp950, utf-8)"
-    },
-    'back_to_menu': {
-        'pl': "  m) wróć do menu",
-        'en': "  m) back to menu"
-    },
-    'choose_enc_prompt': {
-        'pl': "Wybierz kodowanie do testu (domyślne '{}'): ",
-        'en': "Choose encoding to test (default '{}'): "
-    },
-    'invalid_enc_choice': {
-        'pl': "Nieprawidłowy wybór numeru kodowania.",
-        'en': "Invalid encoding number choice."
-    },
-    'custom_enc_prompt_preview': {
-        'pl': "Podaj nazwę kodowania (np. big5, cp950, utf-8): ",
-        'en': "Enter encoding name (e.g. big5, cp950, utf-8): "
-    },
-    'test_another_enc': {
-        'pl': "Sprawdzić inne kodowanie dla tego zakresu? [T/n]: ",
-        'en': "Test another encoding for this range? [Y/n]: "
-    },
-    'save_test_prompt': {
-        'pl': "Czy zapisać wynik testu do pliku {}_encoding_test.txt? [T/n]: ",
-        'en': "Save test result to file {}_encoding_test.txt? [y/N]: "
-    },
-    'test_saved': {
-        'pl': "Zapisano test kodowań do: {}",
-        'en': "Saved encoding test to: {}"
-    },
-    'test_save_error': {
-        'pl': "Błąd zapisu testu: {}",
-        'en': "Error saving test: {}"
-    },
-    'test_not_saved': {
-        'pl': "Test nie został zapisany.",
-        'en': "Test not saved."
-    },
-    'back_to_menu_msg': {
-        'pl': "Powrót do menu.",
-        'en': "Back to menu."
-    },
-    'end_all_enc_test': {
-        'pl': "\nKoniec testu wszystkich kodowań. Powrót do menu.",
-        'en': "\nEnd of all encodings test. Back to menu."
-    },
-    'path_a_shift_prompt': {
-        'pl': "Podaj ścieżkę do pliku A (oryginał): ",
-        'en': "Enter path to file A (original): "
-    },
-    'no_blocks_found': {
-        'pl': "Nie znaleziono żadnych bloków '## Text N ##' w pliku A. Nic do przesunięcia.",
-        'en': "No '## Text N ##' blocks found in file A. Nothing to shift."
-    },
-    'blocks_found': {
-        'pl': "Znaleziono {} bloków. Pierwszy numer: {}, ostatni numer: {}.",
-        'en': "Found {} blocks. First number: {}, last number: {}."
-    },
-    'offset_prompt': {
-        'pl': "Podaj offset (liczba całkowita, 0 = anuluj): ",
-        'en': "Enter offset (integer, 0 = cancel): "
-    },
-    'no_value_canceled': {
-        'pl': "Brak wartości. Anulowano.",
-        'en': "No value. Canceled."
-    },
-    'invalid_integer': {
-        'pl': "Proszę podać liczbę całkowitą (może być ujemna).",
-        'en': "Please enter an integer (can be negative)."
-    },
-    'offset_zero': {
-        'pl': "Offset = 0 — brak działania. Anulowano.",
-        'en': "Offset = 0 — no action. Canceled."
-    },
-    'negative_ids_error': {
-        'pl': "Błąd: po przesunięciu niektóre numery byłyby mniejsze lub równe 0. Wybierz inny offset.",
-        'en': "Error: after shift, some numbers would be <= 0. Choose another offset."
-    },
-    'duplicates_error': {
-        'pl': "Błąd: po przesunięciu wystąpiły duplikaty numerów. Anulowano.",
-        'en': "Error: after shift, duplicate numbers occurred. Canceled."
-    },
-    'save_shift_method': {
-        'pl': "\nWybierz sposób zapisu przesuniętego pliku:",
-        'en': "\nChoose save method for shifted file:"
-    },
-    'overwrite_a_shift': {
-        'pl': "  1) Nadpisać plik A (zrobiona zostanie kopia zapasowa)",
-        'en': "  1) Overwrite file A (backup will be created)"
-    },
-    'save_new_shift': {
-        'pl': "  2) Zapisz jako nowy plik (ten sam katalog co A, nazwa + _shifted)",
-        'en': "  2) Save as new file (same directory as A, name + _shifted)"
-    },
-    'choose_1_or_2_shift': {
-        'pl': "Wybierz 1 lub 2 [2]: ",
-        'en': "Choose 1 or 2 [2]: "
-    },
-    'shifted_saved': {
-        'pl': "Zapisano przesunięty plik do: {}",
-        'en': "Saved shifted file to: {}"
-    },
-    'project_path_fix_prompt': {
-        'pl': "Podaj ścieżkę do pliku .s4_translation_project: ",
-        'en': "Enter path to .s4_translation_project file: "
-    },
-    'no_path_canceled': {
-        'pl': "Brak ścieżki. Powrót do menu.",
-        'en': "No path. Back to menu."
-    },
-    'range_fix_prompt': {
-        'pl': "Podaj przedział numerów do uzupełnienia (np. 1-2000) lub pojedynczy numer (np. 57): ",
-        'en': "Enter range of numbers to fix (e.g. 1-2000) or single number (e.g. 57): "
-    },
-    'no_range_canceled': {
-        'pl': "Brak przedziału. Anulowano.",
-        'en': "No range. Canceled."
-    },
-    'invalid_range_fix': {
-        'pl': "Nieprawidłowy przedział. Spróbuj ponownie.",
-        'en': "Invalid range. Try again."
-    },
-    'num_ge_1': {
-        'pl': "Numer musi być >= 1.",
-        'en': "Number must be >= 1."
-    },
-    'no_missing_entries': {
-        'pl': "Brak brakujących wpisów w podanym przedziale. Nic do zrobienia.",
-        'en': "No missing entries in given range. Nothing to do."
-    },
-    'missing_found': {
-        'pl': "\nZnaleziono {} brakujących wpisów do dodania.",
-        'en': "\nFound {} missing entries to add."
-    },
-    'added_numbers_fix': {
-        'pl': "Dodane numery: {}",
-        'en': "Added numbers: {}"
-    },
-    'no_added_unexpected': {
-        'pl': "Brak nowych dodanych numerów (coś poszło nieoczekiwanie).",
-        'en': "No new added numbers (something unexpected)."
-    },
-    'overwrite_prompt': {
-        'pl': "\nCzy chcesz nadpisać istniejący plik?",
-        'en': "\nDo you want to overwrite existing file?"
-    },
-    'overwritten': {
-        'pl': "Nadpisano plik: {}",
-        'en': "Overwritten file: {}"
-    },
-    'save_as_new_prompt': {
-        'pl': "Zapisać jako nowy plik: {}?",
-        'en': "Save as new file: {}?"
-    },
-    'new_saved': {
-        'pl': "Zapisano nowy plik: {}",
-        'en': "Saved new file: {}"
-    },
-    'save_canceled': {
-        'pl': "Anulowano zapis.",
-        'en': "Save canceled."
-    },
-    'files_count': {
-        'pl': "Plik A: {}  —  liczba bloków: {}\nPlik B: {}  —  liczba bloków: {}",
-        'en': "File A: {}  —  number of blocks: {}\nFile B: {}  —  number of blocks: {}"
-    },
-    'max_tries_prompt': {
-        'pl': "Ile prób przesunięcia w A użyć przy szukaniu znaczącego tekstu? [domyślnie {}]: ",
-        'en': "How many shift attempts in A to use when searching for significant text? [default {}]: "
-    },
-    'new_offset_set': {
-        'pl': "\nNowy offset ustawiony: {} (A:{} -> B:{})",
-        'en': "\nNew offset set: {} (A:{} -> B:{})"
-    },
-    'alignment_report': {
-        'pl': "\n--- Raport dopasowania (przed zapisem) ---",
-        'en': "\n--- Alignment report (before save) ---"
-    },
-    'matched_pairs_count': {
-        'pl': "Liczba dopasowanych par: {}",
-        'en': "Number of matched pairs: {}"
-    },
-    'matched_ranges': {
-        'pl': "Dopasowane przedziały (A_start-A_end => B_start-B_end) z offsetem:",
-        'en': "Matched ranges (A_start-A_end => B_start-B_end) with offset:"
-    },
-    'no_matched_ranges': {
-        'pl': "  Brak dopasowanych przedziałów.",
-        'en': "  No matched ranges."
-    },
-    'missing_in_b': {
-        'pl': "\nTeksty z A nie znalezione w B (pojedyncze numery lub przedziały):",
-        'en': "\nTexts from A not found in B (single numbers or ranges):"
-    },
-    'all_found': {
-        'pl': "\nWszystkie teksty A znalezione w B (przynajmniej częściowo).",
-        'en': "\nAll A texts found in B (at least partially)."
-    },
-    'missing_details': {
-        'pl': "\nSzczegóły dla tekstów A nieznalezionych bezpośrednio w B (próba porównania z domniemanymi tekstami z B):",
-        'en': "\nDetails for A texts not directly found in B (attempt to compare with guessed B texts):"
-    },
-    'no_offset': {
-        'pl': "  A:{} (brak offsetu, nie można wyznaczyć liczby domniemanego tekstu dla B)",
-        'en': "  A:{} (no offset, cannot determine guessed text number for B)"
-    },
-    'no_sim': {
-        'pl': "  A:{} (domniemany tekst B: {} — {})",
-        'en': "  A:{} (guessed B text: {} — {})"
-    },
-    'with_sim': {
-        'pl': "  A:{} ({}% podobieństwa z tekstem B: {})",
-        'en': "  A:{} ({}% similarity with B text: {})"
-    },
-    'placeholder_cases': {
-        'pl': "\nMiejsca gdzie A był pusty/placeholder, a B miał znaczący tekst:",
-        'en': "\nPlaces where A was empty/placeholder, but B had significant text:"
-    },
-    'conflicts': {
-        'pl': "\nMiejsca konfliktów (oba znaczące lub zróżnicowane) — pokazuję procent podobieństwa:",
-        'en': "\nConflict places (both significant or differentiated) — showing similarity percentage:"
-    },
-    'offset_history': {
-        'pl': "\nHistoria zmian offsetu (offset, A_index, B_index):",
-        'en': "\nOffset change history (offset, A_index, B_index):"
-    },
-    'no_matches': {
-        'pl': "\nBrak dopasowań do zapisania. Nic nie zmieniono.",
-        'en': "\nNo matches to save. Nothing changed."
-    },
-    'save_intent': {
-        'pl': "\nZamierzam zapisać {} zaktualizowanych wpisów do pliku A.",
-        'en': "\nIntending to save {} updated entries to file A."
-    },
-    'sample_mappings': {
-        'pl': "Przykładowe mapowania (A -> B): {}",
-        'en': "Sample mappings (A -> B): {}"
-    },
-    'overwrite_direct': {
-        'pl': "Nadpisać plik A bezpośrednio?",
-        'en': "Overwrite file A directly?"
-    },
-    'assigned_by_offset': {
-        'pl': "Liczba wpisów przypisanych na podstawie offsetu: {}",
-        'en': "Number of entries assigned based on offset: {}"
-    },
-    'collisions_warning': {
-        'pl': "\nUwaga: wykryto kolizje docelowych indeksów (kilka A trafiło na ten sam target).",
-        'en': "\nWarning: detected target index collisions (multiple A hit the same target)."
-    },
-    'last_a_num': {
-        'pl': "Ostatni numer A przetworzony: {}",
-        'en': "Last A number processed: {}"
-    },
-    'done': {
-        'pl': "Gotowe.",
-        'en': "Done."
-    },
-    # Dodaj brakujące tłumaczenia, jeśli jakieś pominąłem - kod jest elastyczny.
-    'yes_no_prompt': {
-        'pl': "Proszę odpowiedzieć tak/nie (y/n).",
-        'en': "Please answer yes/no (y/n)."
-    },
-    'canceled_missingtexts': {
-        'pl': "Anulowano zapis missingtexts.",
-        'en': "Canceled missingtexts save."
-    },
-    'no_suggestion': {
-        'pl': 'brak',
-        'en': 'none'
-    },
-    'canceled_project_save': {
-        'pl': "Anulowano zapis pliku projektu.",
-        'en': "Canceled project file save."
-    },
-    'header_found': {
-        'pl': "Znaleziono nagłówek w pliku projektu: {}",
-        'en': "Found header in project file: {}"
-    },
-    'testing_single_text': {
-        'pl': "Testing single text #{} across encodings\n",
-        'en': "Testing single text #{} across encodings\n"
-    },
-    'canceled_test_save': {
-        'pl': "Anulowano zapis testu.",
-        'en': "Canceled test save."
-    },
-    'out_of_range_start': {
-        'pl': "Początkowy numer poza zakresem. Spróbuj ponownie.",
-        'en': "Starting number out of range. Try again."
-    },
-    'overwrite_file': {
-        'pl': "Nadpisać plik?",
-        'en': "Overwrite file?"
-    },
-    'save_as_new': {
-        'pl': "Zapisz jako nowy?",
-        'en': "Save as new?"
-    },
-    'new_offset_note': {
-        'pl': "    // nowy offset {}",
-        'en': "    // new offset {}"
-    },
-    'similarity': {
-        'pl': "podobieństwo",
-        'en': "similarity"
-    },
-    'offset_set_at': {
-        'pl': "  offset {} ustawiony przy A:{} -> B:{}",
-        'en': "  offset {} set at A:{} -> B:{}"
-    },
-    'no_targets': {
-        'pl': "Brak docelowych indeksów do zapisu. Anulowano.",
-        'en': "No target indices to save. Canceled."
-    },
-    'updated_entries': {
-        'pl': "Liczba zaktualizowanych wpisów (bez przypisań przez offset): {}",
-        'en': "Number of updated entries (without offset assignments): {}"
-    },
-    'assigned_example': {
-        'pl': "  A:{} -> target:{} (offset {})",
-        'en': "  A:{} -> target:{} (offset {})"
-    },
-    'collision_example': {
-        'pl': "  kolizja: A:{} -> target {}",
-        'en': "  collision: A:{} -> target {}"
-    },
-    'no_offset_reason': {
-        'pl': "brak offsetu",
-        'en': "no offset"
-    },
-    'mb_guess_not_exist': {
-        'pl': "mb_guess nie istnieje w B",
-        'en': "mb_guess does not exist in B"
-    },
-    'project_export_prompt': {
-        'pl': "Podaj ścieżkę do pliku .s4_translation_project do eksportu: ",
-        'en': "Enter path to .s4_translation_project for export: "
-    },
-    'path_a_required': {
-        'pl': "Plik A wymagany dla tej opcji. Powrót do menu.",
-        'en': "File A required for this option. Back to menu."
-    },
-    'invalid_project_file': {
-        'pl': "Plik nie jest poprawnym plikiem projektu (brak co najmniej jednego wpisu '## Text N ## ... ####'). Podaj poprawny plik.",
-        'en': "File is not a valid project file (missing at least one '## Text N ## ... ####' entry). Enter a valid file."
-    },
-    'invalid_dat_file': {
-        'pl': "Plik nie jest poprawnym plikiem .dat (błąd w strukturze nagłówka lub pierwszego tekstu). Podaj poprawny plik.",
-        'en': "File is not a valid .dat file (error in header or first text structure). Enter a valid file."
-    },
-    'header_bytes_dat': {
-        'pl': "Nagłówek 4 bajtów: {}",
-        'en': "4-byte header: {}"
-    },
+# Klucze: unikalne identyfikatory komunikatów. Wartości: dict z 'pl', 'en', 'de' itd.
+
+TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angehängt): {}',
+                   'en': '  Added numbers (appended at the end): {}',
+                   'es': '  Números añadidos (agregados al final): {}',
+                   'it': '  Numeri aggiunti (appesi alla fine): {}',
+                   'pl': '  Dodane numery (dopisane na końcu): {}',
+                   'ru': '  Добавленные номера (добавлены в конец): {}',
+                   'zh': '  已添加的编号（追加到末尾）：{}'},
+ 'added_numbers_fix': {'de': 'Hinzugefügte Nummern: {}',
+                       'en': 'Added numbers: {}',
+                       'es': 'Números añadidos: {}',
+                       'it': 'Numeri aggiunti: {}',
+                       'pl': 'Dodane numery: {}',
+                       'ru': 'Добавленные номера: {}',
+                       'zh': '已添加的编号：{}'},
+ 'alignment_report': {'de': '\n--- Ausrichtungsbericht (vor dem Speichern) ---',
+                      'en': '\n--- Alignment report (before save) ---',
+                      'es': '\n--- Reporte de alineación (antes de guardar) ---',
+                      'it': '\n--- Report di allineamento (prima del salvataggio) ---',
+                      'pl': '\n--- Raport dopasowania (przed zapisem) ---',
+                      'ru': '\n--- Отчёт по выравниванию (перед сохранением) ---',
+                      'zh': '\n--- 对齐报告（保存前） ---'},
+ 'all_found': {'de': '\nAlle Texte aus A in B gefunden (zumindest teilweise).',
+               'en': '\nAll A texts found in B (at least partially).',
+               'es': '\nTodos los textos de A encontrados en B (al menos parcialmente).',
+               'it': '\nTutti i testi di A trovati in B (almeno parzialmente).',
+               'pl': '\nWszystkie teksty A znalezione w B (przynajmniej częściowo).',
+               'ru': '\nВсе тексты A найдены в B (хотя бы частично).',
+               'zh': '\nA 的所有文本均在 B 中找到（至少部分）。'},
+ 'assigned_by_offset': {'de': 'Anzahl der Einträge, die basierend auf Offset zugewiesen wurden: {}',
+                        'en': 'Number of entries assigned based on offset: {}',
+                        'es': 'Número de entradas asignadas por offset: {}',
+                        'it': "Numero di voci assegnate in base all'offset: {}",
+                        'pl': 'Liczba wpisów przypisanych na podstawie offsetu: {}',
+                        'ru': 'Количество записей, назначенных по оффсету: {}',
+                        'zh': '基于偏移分配的条目数量：{}'},
+ 'assigned_example': {'de': '  A:{} -> Ziel:{} (Offset {})',
+                      'en': '  A:{} -> target:{} (offset {})',
+                      'es': '  A:{} → target:{} (offset {})',
+                      'it': '  A:{} -> target:{} (offset {})',
+                      'pl': '  A:{} -> target:{} (offset {})',
+                      'ru': '  A:{} → target:{} (offset {})',
+                      'zh': '  A:{} → target:{} (偏移 {})'},
+ 'available_langs': {'de': '\nVerfügbare Sprachen (Nummer : Name):',
+                     'en': '\nAvailable languages (number : name):',
+                     'es': '\nIdiomas disponibles (número : nombre):',
+                     'it': '\nLingue disponibili (numero : nome):',
+                     'pl': '\nDostępne języki (numer : nazwa):',
+                     'ru': '\nДоступные языки (номер : название):',
+                     'zh': '\n可用语言（编号 : 名称）：'},
+ 'back_to_menu': {'de': '  m) zurück zum Menü',
+                  'en': '  m) back to menu',
+                  'es': '  m) volver al menú',
+                  'it': '  m) torna al menu',
+                  'pl': '  m) wróć do menu',
+                  'ru': '  m) вернуться в меню',
+                  'zh': '  m) 返回菜单'},
+ 'back_to_menu_msg': {'de': 'Zurück zum Menü.',
+                      'en': 'Back to menu.',
+                      'es': 'Volviendo al menú.',
+                      'it': 'Ritorno al menu.',
+                      'pl': 'Powrót do menu.',
+                      'ru': 'Возврат в меню.',
+                      'zh': '返回菜单。'},
+ 'backup_created': {'de': 'Sicherung erstellt: {}',
+                    'en': 'Backup created: {}',
+                    'es': 'Copia de seguridad creada: {}',
+                    'it': 'Creata copia di backup: {}',
+                    'pl': 'Utworzono kopię zapasową: {}',
+                    'ru': 'Создана резервная копия: {}',
+                    'zh': '已创建备份：{}'},
+ 'backup_failed': {'de': 'Erstellen der Sicherung fehlgeschlagen: {}',
+                   'en': 'Failed to create backup: {}',
+                   'es': 'No se pudo crear la copia de seguridad: {}',
+                   'it': 'Impossibile creare la copia di backup: {}',
+                   'pl': 'Nie udało się utworzyć kopii zapasowej: {}',
+                   'ru': 'Не удалось создать резервную копию: {}',
+                   'zh': '无法创建备份：{}'},
+ 'blocks_found': {'de': '{} Blöcke gefunden. Erste Nummer: {}, letzte Nummer: {}.',
+                  'en': 'Found {} blocks. First number: {}, last number: {}.',
+                  'es': 'Encontrados {} bloques. Primer número: {}, último número: {}.',
+                  'it': 'Trovati {} blocchi. Primo numero: {}, ultimo numero: {}.',
+                  'pl': 'Znaleziono {} bloków. Pierwszy numer: {}, ostatni numer: {}.',
+                  'ru': 'Найдено {} блоков. Первый номер: {}, последний номер: {}.',
+                  'zh': '找到 {} 个块。第一个编号：{}，最后一个编号：{}。'},
+ 'canceled': {'de': 'Abgebrochen.',
+              'en': 'Canceled.',
+              'es': 'Cancelado.',
+              'it': 'Annullato.',
+              'pl': 'Anulowano.',
+              'ru': 'Отменено.',
+              'zh': '已取消。'},
+ 'canceled_missingtexts': {'de': 'Speichern von missingtexts abgebrochen.',
+                           'en': 'Canceled missingtexts save.',
+                           'es': 'Guardado de missingtexts cancelado.',
+                           'it': 'Salvataggio di missingtexts annullato.',
+                           'pl': 'Anulowano zapis missingtexts.',
+                           'ru': 'Сохранение missingtexts отменено.',
+                           'zh': '已取消 missingtexts 保存。'},
+ 'canceled_project_save': {'de': 'Speichern der Projektdatei abgebrochen.',
+                           'en': 'Canceled project file save.',
+                           'es': 'Guardado del archivo de proyecto cancelado.',
+                           'it': 'Salvataggio del file di progetto annullato.',
+                           'pl': 'Anulowano zapis pliku projektu.',
+                           'ru': 'Сохранение файла проекта отменено.',
+                           'zh': '已取消项目文件保存。'},
+ 'canceled_test_save': {'de': 'Speichern des Tests abgebrochen.',
+                        'en': 'Canceled test save.',
+                        'es': 'Guardado de la prueba cancelado.',
+                        'it': 'Salvataggio del test annullato.',
+                        'pl': 'Anulowano zapis testu.',
+                        'ru': 'Сохранение теста отменено.',
+                        'zh': '已取消测试保存。'},
+ 'choose_1_or_2': {'de': 'Wählen Sie 1 oder 2 [1]: ',
+                   'en': 'Choose 1 or 2 [1]: ',
+                   'es': 'Elige 1 o 2 [1]: ',
+                   'it': 'Scegli 1 o 2 [1]: ',
+                   'pl': 'Wybierz 1 lub 2 [1]: ',
+                   'ru': 'Выберите 1 или 2 [1]: ',
+                   'zh': '选择 1 或 2 [1]：'},
+ 'choose_1_or_2_shift': {'de': 'Wählen Sie 1 oder 2 [2]: ',
+                         'en': 'Choose 1 or 2 [2]: ',
+                         'es': 'Elige 1 o 2 [2]: ',
+                         'it': 'Scegli 1 o 2 [2]: ',
+                         'pl': 'Wybierz 1 lub 2 [2]: ',
+                         'ru': 'Выберите 1 или 2 [2]: ',
+                         'zh': '选择 1 或 2 [2]：'},
+ 'choose_enc_prompt': {'de': "Wählen Sie Kodierung zum Testen (Standard '{}'): ",
+                       'en': "Choose encoding to test (default '{}'): ",
+                       'es': "Elige la codificación a probar (por defecto '{}'): ",
+                       'it': "Scegli la codifica da testare (predefinita '{}'): ",
+                       'pl': "Wybierz kodowanie do testu (domyślne '{}'): ",
+                       'ru': "Выберите кодировку для теста (по умолчанию '{}'): ",
+                       'zh': "选择要测试的编码（默认 '{}'）："},
+ 'collision_example': {'de': '  Kollision: A:{} -> Ziel {}',
+                       'en': '  collision: A:{} -> target {}',
+                       'es': '  colisión: A:{} → target {}',
+                       'it': '  collisione: A:{} -> target {}',
+                       'pl': '  kolizja: A:{} -> target {}',
+                       'ru': '  коллизия: A:{} → target {}',
+                       'zh': '  冲突：A:{} → target {}'},
+ 'collisions_warning': {'de': '\nWarnung: Kollisionen bei Zielindizes erkannt (mehrere A trafen dasselbe Ziel).',
+                        'en': '\nWarning: detected target index collisions (multiple A hit the same target).',
+                        'es': '\n'
+                              'Atención: se detectaron colisiones en índices destino (varios A apuntan al mismo '
+                              'target).',
+                        'it': '\n'
+                              'Attenzione: rilevate collisioni negli indici di destinazione (più elementi A puntano '
+                              'allo stesso target).',
+                        'pl': '\nUwaga: wykryto kolizje docelowych indeksów (kilka A trafiło na ten sam target).',
+                        'ru': '\n'
+                              'Внимание: обнаружены коллизии целевых индексов (несколько A попали на один и тот же '
+                              'target).',
+                        'zh': '\n注意：检测到目标索引冲突（多个 A 指向同一目标）。'},
+ 'confirm_save_as': {'de': 'Speichern unter {}?',
+                     'en': 'Save as {}?',
+                     'es': '¿Guardar como {}?',
+                     'it': 'Salvare come {}?',
+                     'pl': 'Zapisz jako {}?',
+                     'ru': 'Сохранить как {}?',
+                     'zh': '是否保存为 {}？'},
+ 'conflicts': {'de': '\nKonfliktstellen (beide signifikant oder unterschiedlich) — zeige Ähnlichkeitsprozentsatz:',
+               'en': '\nConflict places (both significant or differentiated) — showing similarity percentage:',
+               'es': '\n'
+                     'Lugares de conflicto (ambos significativos o diferenciados) — mostrando porcentaje de similitud:',
+               'it': '\n'
+                     'Posizioni di conflitto (entrambi significativi o differenti) — mostro la percentuale di '
+                     'similarità:',
+               'pl': '\nMiejsca konfliktów (oba znaczące lub zróżnicowane) — pokazuję procent podobieństwa:',
+               'ru': '\nМеста конфликтов (оба значимые или различающиеся) — показываю процент схожести:',
+               'zh': '\n冲突位置（两者都有意义或差异明显）— 显示相似度百分比：'},
+ 'continue_without_backup': {'de': 'Ohne Sicherung fortfahren?',
+                             'en': 'Continue without backup?',
+                             'es': '¿Continuar sin copia de seguridad?',
+                             'it': 'Continuare senza backup?',
+                             'pl': 'Kontynuować bez kopii zapasowej?',
+                             'ru': 'Продолжить без резервной копии?',
+                             'zh': '是否不创建备份继续？'},
+ 'custom_enc': {'de': '  a) eigene Kodierung eingeben (z. B. big5, cp950, utf-8)',
+                'en': '  a) enter custom encoding (e.g. big5, cp950, utf-8)',
+                'es': '  a) escribe una codificación personalizada (ej. big5, cp950, utf-8)',
+                'it': '  a) inserisci una codifica personalizzata (es. big5, cp950, utf-8)',
+                'pl': '  a) wpisz własne kodowanie (np. big5, cp950, utf-8)',
+                'ru': '  a) ввести свою кодировку (например big5, cp950, utf-8)',
+                'zh': '  a) 输入自定义编码（例如 big5, cp950, utf-8）'},
+ 'custom_enc_prompt': {'de': 'Geben Sie die Ausgabekodierung ein (z. B. cp1250, cp950, cp932, cp1251) oder drücken Sie '
+                             'Enter, um den Vorschlag zu verwenden: ',
+                       'en': 'Enter output encoding (e.g. cp1250, cp950, cp932, cp1251) or press Enter to use '
+                             'suggested: ',
+                       'es': 'Ingresa la codificación de salida (ej. cp1250, cp950, cp932, cp1251) o presiona Enter '
+                             'para usar la sugerida: ',
+                       'it': 'Inserisci la codifica di output (es. cp1250, cp950, cp932, cp1251) o premi Invio per '
+                             'usare quella suggerita: ',
+                       'pl': 'Podaj kodowanie wyjściowe (np. cp1250, cp950, cp932, cp1251) lub naciśnij Enter aby użyć '
+                             'sugerowanego: ',
+                       'ru': 'Введите выходную кодировку (например cp1250, cp950, cp932, cp1251) или нажмите Enter для '
+                             'использования предложенной: ',
+                       'zh': '请输入输出编码（例如 cp1250, cp950, cp932, cp1251）或按 Enter 使用建议的编码：'},
+ 'custom_enc_prompt_preview': {'de': 'Geben Sie den Kodierungsnamen ein (z. B. big5, cp950, utf-8): ',
+                               'en': 'Enter encoding name (e.g. big5, cp950, utf-8): ',
+                               'es': 'Ingresa el nombre de la codificación (ej. big5, cp950, utf-8): ',
+                               'it': 'Inserisci il nome della codifica (es. big5, cp950, utf-8): ',
+                               'pl': 'Podaj nazwę kodowania (np. big5, cp950, utf-8): ',
+                               'ru': 'Введите название кодировки (например big5, cp950, utf-8): ',
+                               'zh': '请输入编码名称（例如 big5, cp950, utf-8）：'},
+ 'dat_read_error': {'de': 'Fehler beim Lesen der .dat-Datei: {}',
+                    'en': 'Error reading .dat file: {}',
+                    'es': 'Error al leer el archivo .dat: {}',
+                    'it': 'Errore di lettura del file .dat: {}',
+                    'pl': 'Błąd odczytu pliku .dat: {}',
+                    'ru': 'Ошибка чтения файла .dat: {}',
+                    'zh': '读取 .dat 文件出错：{}'},
+ 'dat_saved': {'de': '\n.dat-Datei gespeichert: {}',
+               'en': '\nSaved .dat file: {}',
+               'es': '\nArchivo .dat guardado: {}',
+               'it': '\nFile .dat salvato: {}',
+               'pl': '\nZapisano plik .dat: {}',
+               'ru': '\nФайл .dat сохранён: {}',
+               'zh': '\n已保存 .dat 文件：{}'},
+ 'dat_write_error': {'de': 'Fehler beim Schreiben der .dat-Datei: {}',
+                     'en': 'Error writing .dat file: {}',
+                     'es': 'Error al escribir el archivo .dat: {}',
+                     'it': 'Errore di scrittura del file .dat: {}',
+                     'pl': 'Błąd zapisu pliku .dat: {}',
+                     'ru': 'Ошибка записи файла .dat: {}',
+                     'zh': '写入 .dat 文件出错：{}'},
+ 'dir_create_failed': {'de': 'Verzeichnis {} konnte nicht erstellt werden: {}',
+                       'en': 'Failed to create directory {}: {}',
+                       'es': 'No se pudo crear la carpeta {}: {}',
+                       'it': 'Impossibile creare la cartella {}: {}',
+                       'pl': 'Nie udało się utworzyć katalogu {}: {}',
+                       'ru': 'Не удалось создать папку {}: {}',
+                       'zh': '无法创建目录 {}：{}'},
+ 'done': {'de': 'Fertig.',
+          'en': 'Done.',
+          'es': 'Listo.',
+          'it': 'Completato.',
+          'pl': 'Gotowe.',
+          'ru': 'Готово.',
+          'zh': '完成。'},
+ 'duplicates_error': {'de': 'Fehler: Nach Verschiebung traten Duplikate auf. Abgebrochen.',
+                      'en': 'Error: after shift, duplicate numbers occurred. Canceled.',
+                      'es': 'Error: tras el desplazamiento aparecieron números duplicados. Cancelado.',
+                      'it': 'Errore: dopo lo spostamento sono stati trovati numeri duplicati. Annullato.',
+                      'pl': 'Błąd: po przesunięciu wystąpiły duplikaty numerów. Anulowano.',
+                      'ru': 'Ошибка: после сдвига появились дубликаты номеров. Отменено.',
+                      'zh': '错误：偏移后出现编号重复。已取消。'},
+ 'enc_input_prompt': {'de': 'Geben Sie die Eingabekodierung ein (z. B. big5, cp950, utf-8, cp1251): ',
+                      'en': 'Enter input encoding (e.g. big5, cp950, utf-8, cp1251): ',
+                      'es': 'Ingresa la codificación de entrada (ej. big5, cp950, utf-8, cp1251): ',
+                      'it': 'Inserisci la codifica di input (es. big5, cp950, utf-8, cp1251): ',
+                      'pl': 'Podaj kodowanie wejściowe (np. big5, cp950, utf-8, cp1251): ',
+                      'ru': 'Введите входную кодировку (например big5, cp950, utf-8, cp1251): ',
+                      'zh': '请输入输入编码（例如 big5, cp950, utf-8, cp1251）：'},
+ 'encoding_prompt': {'de': 'Dateikodierung (Standard utf-8): ',
+                     'en': 'File encoding (default utf-8): ',
+                     'es': 'Codificación de los archivos (predeterminada utf-8): ',
+                     'it': 'Codifica dei file (predefinita utf-8): ',
+                     'pl': 'Kodowanie plików (domyślnie utf-8): ',
+                     'ru': 'Кодировка файлов (по умолчанию utf-8): ',
+                     'zh': '文件编码（默认 utf-8）：'},
+ 'end_all_enc_test': {'de': '\nEnde des Tests aller Kodierungen. Zurück zum Menü.',
+                      'en': '\nEnd of all encodings test. Back to menu.',
+                      'es': '\nFin de la prueba de todas las codificaciones. Volver al menú.',
+                      'it': '\nFine del test di tutte le codifiche. Ritorno al menu.',
+                      'pl': '\nKoniec testu wszystkich kodowań. Powrót do menu.',
+                      'ru': '\nКонец теста всех кодировок. Возврат в меню.',
+                      'zh': '\n所有编码测试结束。返回菜单。'},
+ 'exactly_4_numbers': {'de': 'Geben Sie genau 4 Zahlen ein.',
+                       'en': 'Enter exactly 4 numbers.',
+                       'es': 'Ingresa exactamente 4 números.',
+                       'it': 'Inserisci esattamente 4 numeri.',
+                       'pl': 'Podaj dokładnie 4 liczby.',
+                       'ru': 'Введите ровно 4 числа.',
+                       'zh': '请输入正好 4 个数字。'},
+ 'exit_message': {'de': 'Beenden.',
+                  'en': 'Exit.',
+                  'es': 'Fin.',
+                  'it': 'Fine.',
+                  'pl': 'Koniec.',
+                  'ru': 'Конец.',
+                  'zh': '结束。'},
+ 'file_exists_overwrite': {'de': 'Datei {} existiert bereits. Überschreiben?',
+                           'en': 'File {} already exists. Overwrite?',
+                           'es': 'El archivo {} ya existe. ¿Sobrescribir?',
+                           'it': 'Il file {} esiste già. Sovrascrivere?',
+                           'pl': 'Plik {} już istnieje. Nadpisać?',
+                           'ru': 'Файл {} уже существует. Перезаписать?',
+                           'zh': '文件 {} 已存在。是否覆盖？'},
+ 'file_not_exists': {'de': 'Datei {} existiert nicht: {}',
+                     'en': 'File {} does not exist: {}',
+                     'es': 'El archivo {} no existe: {}',
+                     'it': 'Il file {} non esiste: {}',
+                     'pl': 'Plik {} nie istnieje: {}',
+                     'ru': 'Файл {} не существует: {}',
+                     'zh': '文件 {} 不存在：{}'},
+ 'file_too_short': {'de': 'Datei zu kurz, kein Header.',
+                    'en': 'File too short, no header.',
+                    'es': 'Archivo demasiado corto, falta cabecera.',
+                    'it': "File troppo corto, manca l'intestazione.",
+                    'pl': 'Plik zbyt krótki, brak nagłówka.',
+                    'ru': 'Файл слишком короткий, отсутствует заголовок.',
+                    'zh': '文件过短，缺少头部。'},
+ 'files_count': {'de': 'Datei A: {}  —  Anzahl Blöcke: {}\nDatei B: {}  —  Anzahl Blöcke: {}',
+                 'en': 'File A: {}  —  number of blocks: {}\nFile B: {}  —  number of blocks: {}',
+                 'es': 'Archivo A: {}  —  número de bloques: {}\nArchivo B: {}  —  número de bloques: {}',
+                 'it': 'File A: {}  —  numero di blocchi: {}\nFile B: {}  —  numero di blocchi: {}',
+                 'pl': 'Plik A: {}  —  liczba bloków: {}\nPlik B: {}  —  liczba bloków: {}',
+                 'ru': 'Файл A: {}  —  количество блоков: {}\nФайл B: {}  —  количество блоков: {}',
+                 'zh': '文件 A：{}  —  块数量：{}\n文件 B：{}  —  块数量：{}'},
+ 'header_bytes_dat': {'de': '4-Byte-Header: {}',
+                      'en': '4-byte header: {}',
+                      'es': 'Cabecera de 4 bytes: {}',
+                      'it': 'Intestazione di 4 byte: {}',
+                      'pl': 'Nagłówek 4 bajtów: {}',
+                      'ru': 'Заголовок 4 байта: {}',
+                      'zh': '4 字节头部：{}'},
+ 'header_found': {'de': 'Header in Projektdatei gefunden: {}',
+                  'en': 'Found header in project file: {}',
+                  'es': 'Cabecera encontrada en el archivo de proyecto: {}',
+                  'it': 'Intestazione trovata nel file di progetto: {}',
+                  'pl': 'Znaleziono nagłówek w pliku projektu: {}',
+                  'ru': 'Найден заголовок в файле проекта: {}',
+                  'zh': '在项目文件中找到头部：{}'},
+ 'header_not_found': {'de': '4-Byte-Header in Projektdatei nicht gefunden.',
+                      'en': 'Header 4 bytes not found in project file.',
+                      'es': 'No se encontró cabecera de 4 bytes en el archivo de proyecto.',
+                      'it': 'Intestazione di 4 byte non trovata nel file di progetto.',
+                      'pl': 'Nie znaleziono nagłówka 4 bajtów w pliku projektu.',
+                      'ru': 'В файле проекта не найден заголовок из 4 байт.',
+                      'zh': '项目文件中未找到 4 字节头部。'},
+ 'header_prompt': {'de': "Geben Sie 4 Zahlen (0-255) durch Leerzeichen getrennt als Header ein (z. B. '1 2 3 4'): ",
+                   'en': "Enter 4 numbers (0-255) separated by spaces as header (e.g. '1 2 3 4'): ",
+                   'es': "Ingresa 4 números (0-255) separados por espacios como cabecera (ej. '1 2 3 4'): ",
+                   'it': "Inserisci 4 numeri (0-255) separati da spazi come intestazione (es. '1 2 3 4'): ",
+                   'pl': "Podaj 4 liczby (0-255) oddzielone spacjami jako nagłówek (np. '1 2 3 4'): ",
+                   'ru': "Введите 4 числа (0-255) через пробел как заголовок (например '1 2 3 4'): ",
+                   'zh': "请输入 4 个数字（0-255），用空格分隔作为头部（例如 '1 2 3 4'）："},
+ 'invalid_choice': {'de': 'Ungültige Auswahl. Versuchen Sie es erneut.',
+                    'en': 'Invalid choice. Try again.',
+                    'es': 'Elección no válida. Intenta de nuevo.',
+                    'it': 'Scelta non valida. Riprova.',
+                    'pl': 'Nieprawidłowy wybór. Spróbuj ponownie.',
+                    'ru': 'Неверный выбор. Попробуйте снова.',
+                    'zh': '无效选择。请重试。'},
+ 'invalid_dat_file': {'de': 'Datei ist keine gültige .dat-Datei (Fehler in Header- oder erster Textstruktur). Geben '
+                            'Sie eine gültige Datei ein.',
+                      'en': 'File is not a valid .dat file (error in header or first text structure). Enter a valid '
+                            'file.',
+                      'es': 'El archivo no es un archivo .dat válido (error en estructura de cabecera o primer texto). '
+                            'Ingresa un archivo correcto.',
+                      'it': "Il file non è un file .dat valido (errore nella struttura dell'intestazione o del primo "
+                            'testo). Inserisci un file valido.',
+                      'pl': 'Plik nie jest poprawnym plikiem .dat (błąd w strukturze nagłówka lub pierwszego tekstu). '
+                            'Podaj poprawny plik.',
+                      'ru': 'Файл не является корректным файлом .dat (ошибка в структуре заголовка или первого '
+                            'текста). Введите корректный файл.',
+                      'zh': '文件不是有效的 .dat 文件（头部或第一个文本结构错误）。请输入正确文件。'},
+ 'invalid_enc_choice': {'de': 'Ungültige Auswahl der Kodierungsnummer.',
+                        'en': 'Invalid encoding number choice.',
+                        'es': 'Elección de número de codificación no válida.',
+                        'it': 'Scelta del numero di codifica non valida.',
+                        'pl': 'Nieprawidłowy wybór numeru kodowania.',
+                        'ru': 'Неверный выбор номера кодировки.',
+                        'zh': '编码编号选择无效。'},
+ 'invalid_format': {'de': 'Ungültiges Format. Verwenden Sie z. B. 60-200.',
+                    'en': 'Invalid format. Use e.g. 60-200.',
+                    'es': 'Formato no válido. Usa por ejemplo 60-200.',
+                    'it': 'Formato non valido. Usa ad es. 60-200.',
+                    'pl': 'Nieprawidłowy format. Użyj np. 60-200.',
+                    'ru': 'Неверный формат. Используйте например 60-200.',
+                    'zh': '格式无效。请使用例如 60-200。'},
+ 'invalid_integer': {'de': 'Bitte geben Sie eine Ganzzahl ein (kann negativ sein).',
+                     'en': 'Please enter an integer (can be negative).',
+                     'es': 'Por favor ingresa un número entero (puede ser negativo).',
+                     'it': 'Inserisci un numero intero (può essere negativo).',
+                     'pl': 'Proszę podać liczbę całkowitą (może być ujemna).',
+                     'ru': 'Введите целое число (может быть отрицательным).',
+                     'zh': '请输入整数（可为负数）。'},
+ 'invalid_number': {'de': 'Ungültige Nummer. Geben Sie eine Ganzzahl ein (z. B. 5).',
+                    'en': 'Invalid number. Enter an integer (e.g. 5).',
+                    'es': 'Número no válido. Ingresa un número entero (ej. 5).',
+                    'it': 'Numero non valido. Inserisci un numero intero (es. 5).',
+                    'pl': 'Nieprawidłowy numer. Podaj liczbę całkowitą (np. 5).',
+                    'ru': 'Неверный номер. Введите целое число (например 5).',
+                    'zh': '无效编号。请输入整数（例如 5）。'},
+ 'invalid_numbers': {'de': 'Ungültige Zahlen. Versuchen Sie es erneut.',
+                     'en': 'Invalid numbers. Try again.',
+                     'es': 'Números no válidos. Intenta de nuevo.',
+                     'it': 'Numeri non validi. Riprova.',
+                     'pl': 'Nieprawidłowe liczby. Spróbuj ponownie.',
+                     'ru': 'Неверные числа. Попробуйте снова.',
+                     'zh': '无效数字。请重试。'},
+ 'invalid_path': {'de': 'Ungültiger Pfad: {}',
+                  'en': 'Invalid path: {}',
+                  'es': 'Ruta no válida: {}',
+                  'it': 'Percorso non valido: {}',
+                  'pl': 'Nieprawidłowa ścieżka: {}',
+                  'ru': 'Неверный путь: {}',
+                  'zh': '无效路径：{}'},
+ 'invalid_project_file': {'de': "Datei ist keine gültige Projektdatei (mindestens ein Eintrag '## Text N ## ... ####' "
+                                'fehlt). Geben Sie eine gültige Datei ein.',
+                          'en': "File is not a valid project file (missing at least one '## Text N ## ... ####' "
+                                'entry). Enter a valid file.',
+                          'es': "El archivo no es un archivo de proyecto válido (falta al menos una entrada '## Text N "
+                                "## ... ####'). Ingresa un archivo correcto.",
+                          'it': "Il file non è un file di progetto valido (manca almeno una voce '## Text N ## ... "
+                                "####'). Inserisci un file valido.",
+                          'pl': "Plik nie jest poprawnym plikiem projektu (brak co najmniej jednego wpisu '## Text N "
+                                "## ... ####'). Podaj poprawny plik.",
+                          'ru': "Файл не является корректным файлом проекта (отсутствует хотя бы одна запись '## Text "
+                                "N ## ... ####'). Введите корректный файл.",
+                          'zh': "文件不是有效的项目文件（至少缺少一个 '## Text N ## ... ####' 条目）。请输入正确文件。"},
+ 'invalid_range': {'de': 'Ungültiger Bereich. Versuchen Sie es erneut.',
+                   'en': 'Invalid range. Try again.',
+                   'es': 'Rango no válido. Intenta de nuevo.',
+                   'it': 'Intervallo non valido. Riprova.',
+                   'pl': 'Nieprawidłowy przedział. Spróbuj ponownie.',
+                   'ru': 'Неверный диапазон. Попробуйте снова.',
+                   'zh': '无效范围。请重试。'},
+ 'invalid_range_fix': {'de': 'Ungültiger Bereich. Versuchen Sie es erneut.',
+                       'en': 'Invalid range. Try again.',
+                       'es': 'Rango no válido. Intenta de nuevo.',
+                       'it': 'Intervallo non valido. Riprova.',
+                       'pl': 'Nieprawidłowy przedział. Spróbuj ponownie.',
+                       'ru': 'Неверный диапазон. Попробуйте снова.',
+                       'zh': '无效范围。请重试。'},
+ 'invalid_save_choice': {'de': 'Ungültige Auswahl. Beende ohne Speichern.',
+                         'en': 'Invalid choice. Ending without saving.',
+                         'es': 'Elección no válida. Terminando sin guardar.',
+                         'it': 'Scelta non valida. Termino senza salvare.',
+                         'pl': 'Nieprawidłowy wybór. Kończę bez zapisu.',
+                         'ru': 'Неверный выбор. Завершение без сохранения.',
+                         'zh': '无效选择。结束操作，未保存。'},
+ 'lang_num_from_name': {'de': 'Sprachnummer in Dateinamen gefunden: {} (Vorschlag).',
+                        'en': 'Found language number in file name: {} (suggestion).',
+                        'es': 'Se encontró número de idioma en el nombre del archivo: {} (sugerencia).',
+                        'it': 'Trovato numero lingua nel nome del file: {} (suggerimento).',
+                        'pl': 'Znaleziono numer języka w nazwie pliku: {} (sugestia).',
+                        'ru': 'В имени файла найден номер языка: {} (предложение).',
+                        'zh': '在文件名中找到语言编号：{}（建议）。'},
+ 'lang_num_prompt': {'de': 'Geben Sie die Sprachnummer ein (z. B. 5 für POLISH). Vorschlag: {}: ',
+                     'en': 'Enter language number (e.g. 5 for POLISH). Suggestion: {}: ',
+                     'es': 'Ingresa el número de idioma (ej. 5 para POLISH). Sugerencia: {}: ',
+                     'it': 'Inserisci il numero della lingua (es. 5 per POLISH). Suggerimento: {}: ',
+                     'pl': 'Podaj numer języka (np. 5 dla POLISH). Sugestia: {}: ',
+                     'ru': 'Введите номер языка (например 5 для POLISH). Предложение: {}: ',
+                     'zh': '请输入语言编号（例如 5 表示 POLISH）。建议：{}：'},
+ 'lang_num_save_prompt': {'de': 'Geben Sie die Sprachnummer zum Speichern ein (z. B. 5 für POLISH) [{}]: ',
+                          'en': 'Enter language number for save (e.g. 5 for POLISH) [{}]: ',
+                          'es': 'Ingresa el número de idioma para guardar (ej. 5 para POLISH) [{}]: ',
+                          'it': 'Inserisci il numero della lingua per il salvataggio (es. 5 per POLISH) [{}]: ',
+                          'pl': 'Podaj numer języka do zapisu (np. 5 dla POLISH) [{}]: ',
+                          'ru': 'Введите номер языка для сохранения (например 5 для POLISH) [{}]: ',
+                          'zh': '请输入要保存的语言编号（例如 5 表示 POLISH）[{}]：'},
+ 'lang_suggestion': {'de': '\nVorschlag basierend auf Dateinamen: {} ({})',
+                     'en': '\nSuggestion based on file name: {} ({})',
+                     'es': '\nSugerencia basada en el nombre del archivo: {} ({})',
+                     'it': '\nSuggerimento basato sul nome del file: {} ({})',
+                     'pl': '\nSugestia na podstawie nazwy pliku: {} ({})',
+                     'ru': '\nПредложение на основе имени файла: {} ({})',
+                     'zh': '\n基于文件名的建议：{} ({})'},
+ 'last_a_num': {'de': 'Letzte verarbeitete A-Nummer: {}',
+                'en': 'Last A number processed: {}',
+                'es': 'Último número A procesado: {}',
+                'it': 'Ultimo numero A elaborato: {}',
+                'pl': 'Ostatni numer A przetworzony: {}',
+                'ru': 'Последний обработанный номер A: {}',
+                'zh': '最后处理的 A 编号：{}'},
+ 'last_text_num': {'de': 'Letzte gespeicherte Textnummer: {}',
+                   'en': 'Last saved text number: {}',
+                   'es': 'Último número de texto guardado: {}',
+                   'it': 'Ultimo numero di testo salvato: {}',
+                   'pl': 'Ostatni zapisany numer tekstu: {}',
+                   'ru': 'Последний сохранённый номер текста: {}',
+                   'zh': '最后保存的文本编号：{}'},
+ 'main_menu_options': {'de': 'Wählen Sie eine Option:\n'
+                             '  1) Projektdateien A vs B vergleichen und missingtexts.txt generieren (Texte aus B, die '
+                             'in A fehlen oder ergänzt werden müssen)\n'
+                             '  2) Projektdateien zusammenführen (merge): vorhandene ersetzen und fehlende aus B zu A '
+                             'hinzufügen\n'
+                             '  3) Aus Datei s4_texts.dat<nr> importieren → <LANG>.s4_translation_project generieren\n'
+                             '  4) .s4_translation_project exportieren → s4_texts.dat<nr>\n'
+                             '  5) Texte aus .dat-Datei anzeigen (interaktives Testen von Kodierungen)\n'
+                             '  6) Textnummern in Projektdatei A verschieben (Offset)\n'
+                             '  7) Fehlende Einträge in Projektdatei reparieren\n'
+                             '  8) Textnummern in Projektdatei A an B anpassen (align A ← B)\n'
+                             '  9) Beenden',
+                       'en': 'Choose an option:\n'
+                             '  1) Compare A vs B project files and generate missingtexts.txt (texts from B '
+                             'missing/requiring completion in A)\n'
+                             '  2) Merge project files: replace existing and append missing from B to A\n'
+                             '  3) Import from s4_texts.dat<nr> → generate <LANG>.s4_translation_project\n'
+                             '  4) Export .s4_translation_project → s4_texts.dat<nr>\n'
+                             '  5) Preview texts from .dat file (interactive encoding testing)\n'
+                             '  6) Shift text numbers in project file A (offset)\n'
+                             '  7) Fix missing entries in project file\n'
+                             '  8) Align text numbers in project file A to B (align A ← B)\n'
+                             '  9) Exit',
+                       'es': 'Elige una opción:\n'
+                             '  1) Comparar archivos de proyecto A vs B y generar missingtexts.txt (textos de B que '
+                             'faltan o necesitan completarse en A)\n'
+                             '  2) Combinar archivos de proyecto (merge): reemplazar existentes y añadir los faltantes '
+                             'de B a A\n'
+                             '  3) Importar desde archivo s4_texts.dat<nr> → generar <LANG>.s4_translation_project\n'
+                             '  4) Exportar archivo .s4_translation_project → s4_texts.dat<nr>\n'
+                             '  5) Vista previa de textos desde archivo .dat (prueba interactiva de codificaciones)\n'
+                             '  6) Desplazar números de texto en el archivo de proyecto A (offset)\n'
+                             '  7) Reparar entradas faltantes en el archivo de proyecto\n'
+                             '  8) Alinear números de texto del archivo de proyecto A con B (alinear A ← B)\n'
+                             '  9) Salir',
+                       'it': "Scegli un'opzione:\n"
+                             '  1) Confronta i file di progetto A vs B e genera missingtexts.txt (testi presenti in B '
+                             'ma mancanti o da completare in A)\n'
+                             '  2) Unisci i file di progetto (merge): sostituisci gli esistenti e aggiungi quelli '
+                             'mancanti da B ad A\n'
+                             '  3) Importa da file s4_texts.dat<nr> → genera <LANG>.s4_translation_project\n'
+                             '  4) Esporta file .s4_translation_project → s4_texts.dat<nr>\n'
+                             '  5) Anteprima dei testi dal file .dat (test interattivo delle codifiche)\n'
+                             '  6) Sposta i numeri dei testi nel file di progetto A (offset)\n'
+                             '  7) Ripara le voci mancanti nel file di progetto\n'
+                             '  8) Allinea i numeri dei testi nel file di progetto A a B (allinea A ← B)\n'
+                             '  9) Esci',
+                       'pl': 'Wybierz opcję:\n'
+                             '  1) Porównaj pliki projektu A vs B i wygeneruj missingtexts.txt (teksty z B '
+                             'brakujące/wymagające uzupełnienia w A)\n'
+                             '  2) Połącz pliki projektu (merge): podmień istniejące i dopisz brakujące z B do A\n'
+                             '  3) Import z pliku s4_texts.dat<nr> → wygeneruj <LANG>.s4_translation_project\n'
+                             '  4) Eksport pliku .s4_translation_project → s4_texts.dat<nr>\n'
+                             '  5) Podgląd tekstów z pliku .dat (interaktywne testowanie kodowań)\n'
+                             '  6) Przesuń numery tekstów w pliku projektu A (offset)\n'
+                             '  7) Napraw brakujące wpisy w pliku projektu\n'
+                             '  8) Dopasuj numery tekstów w pliku projektu A do B (align A ← B)\n'
+                             '  9) Wyjście',
+                       'ru': 'Выберите опцию:\n'
+                             '  1) Сравнить файлы проектов A vs B и сгенерировать missingtexts.txt (тексты из B, '
+                             'отсутствующие или требующие дополнения в A)\n'
+                             '  2) Объединить файлы проектов (merge): заменить существующие и добавить недостающие из '
+                             'B в A\n'
+                             '  3) Импорт из файла s4_texts.dat<nr> → сгенерировать <LANG>.s4_translation_project\n'
+                             '  4) Экспорт файла .s4_translation_project → s4_texts.dat<nr>\n'
+                             '  5) Предпросмотр текстов из файла .dat (интерактивное тестирование кодировок)\n'
+                             '  6) Сдвинуть номера текстов в файле проекта A (offset)\n'
+                             '  7) Исправить отсутствующие записи в файле проекта\n'
+                             '  8) Выровнять номера текстов в файле проекта A по файлу B (align A ← B)\n'
+                             '  9) Выход',
+                       'zh': '选择一个选项：\n'
+                             '  1) 比较项目文件 A 与 B 并生成 missingtexts.txt（B 中缺失或需要在 A 中补充的文本）\n'
+                             '  2) 合并项目文件（merge）：替换现有内容并从 B 追加缺失内容到 A\n'
+                             '  3) 从 s4_texts.dat<nr> 导入 → 生成 <LANG>.s4_translation_project\n'
+                             '  4) 导出 .s4_translation_project → s4_texts.dat<nr>\n'
+                             '  5) 预览 .dat 文件中的文本（交互式编码测试）\n'
+                             '  6) 在项目文件 A 中偏移文本编号\n'
+                             '  7) 修复项目文件中缺失的条目\n'
+                             '  8) 将项目文件 A 的文本编号对齐到 B（对齐 A ← B）\n'
+                             '  9) 退出'},
+ 'main_menu_prompt': {'de': 'Wählen Sie 1, 2, 3, 4, 5, 6, 7, 8 oder 9 [9]: ',
+                      'en': 'Choose 1, 2, 3, 4, 5, 6, 7, 8 or 9 [9]: ',
+                      'es': 'Elige 1, 2, 3, 4, 5, 6, 7, 8 o 9 [9]: ',
+                      'it': 'Scegli 1, 2, 3, 4, 5, 6, 7, 8 o 9 [9]: ',
+                      'pl': 'Wybierz 1, 2, 3, 4, 5, 6, 7, 8 lub 9 [9]: ',
+                      'ru': 'Выберите 1, 2, 3, 4, 5, 6, 7, 8 или 9 [9]: ',
+                      'zh': '选择 1、2、3、4、5、6、7、8 或 9 [9]：'},
+ 'main_menu_title': {'de': '\n=== Settlers IV Übersetzungs-Multitool (Menü) ===',
+                     'en': '\n=== Settlers IV Translation Multitool (menu) ===',
+                     'es': '\n=== Settlers IV Translation Multitool (menú) ===',
+                     'it': '\n=== Settlers IV Translation Multitool (menu) ===',
+                     'pl': '\n=== Settlers IV Translation Multitool (menu) ===',
+                     'ru': '\n=== Settlers IV Translation Multitool (меню) ===',
+                     'zh': '\n=== Settlers IV 翻译多功能工具 (菜单) ==='},
+ 'matched_pairs_count': {'de': 'Anzahl übereinstimmender Paare: {}',
+                         'en': 'Number of matched pairs: {}',
+                         'es': 'Número de pares coincidentes: {}',
+                         'it': 'Numero di coppie corrispondenti: {}',
+                         'pl': 'Liczba dopasowanych par: {}',
+                         'ru': 'Количество совпавших пар: {}',
+                         'zh': '匹配对数量：{}'},
+ 'matched_ranges': {'de': 'Übereinstimmende Bereiche (A_Start-A_Ende => B_Start-B_Ende) mit Offset:',
+                    'en': 'Matched ranges (A_start-A_end => B_start-B_end) with offset:',
+                    'es': 'Rangos coincidentes (A_inicio-A_fin => B_inicio-B_fin) con offset:',
+                    'it': 'Intervalli corrispondenti (A_inizio-A_fine => B_inizio-B_fine) con offset:',
+                    'pl': 'Dopasowane przedziały (A_start-A_end => B_start-B_end) z offsetem:',
+                    'ru': 'Совпавшие диапазоны (A_начало-A_конец => B_начало-B_конец) с оффсетом:',
+                    'zh': '匹配范围（A_开始-A_结束 => B_开始-B_结束）带偏移：'},
+ 'max_tries_prompt': {'de': 'Wie viele Verschiebungsversuche in A beim Suchen nach signifikantem Text verwenden? '
+                            '[Standard {}]: ',
+                      'en': 'How many shift attempts in A to use when searching for significant text? [default {}]: ',
+                      'es': '¿Cuántos intentos de desplazamiento en A usar al buscar texto significativo? [por defecto '
+                            '{}]: ',
+                      'it': 'Quanti tentativi di spostamento in A usare nella ricerca di testo significativo? '
+                            '[predefinito {}]: ',
+                      'pl': 'Ile prób przesunięcia w A użyć przy szukaniu znaczącego tekstu? [domyślnie {}]: ',
+                      'ru': 'Сколько попыток сдвига в A использовать при поиске значимого текста? [по умолчанию {}]: ',
+                      'zh': '在搜索有意义文本时，在 A 中使用多少次偏移尝试？[默认 {}]：'},
+ 'mb_guess_not_exist': {'de': 'mb_guess existiert nicht in B',
+                        'en': 'mb_guess does not exist in B',
+                        'es': 'mb_guess no existe en B',
+                        'it': 'mb_guess non esiste in B',
+                        'pl': 'mb_guess nie istnieje w B',
+                        'ru': 'mb_guess не существует в B',
+                        'zh': 'mb_guess 在 B 中不存在'},
+ 'missing_blocks_count': {'de': 'Anzahl fehlender Blöcke: {}. Nummern: {}',
+                          'en': 'Number of missing blocks: {}. Numbers: {}',
+                          'es': 'Número de bloques faltantes: {}. Números: {}',
+                          'it': 'Numero di blocchi mancanti: {}. Numeri: {}',
+                          'pl': 'Liczba brakujących bloków: {}. Numery: {}',
+                          'ru': 'Количество отсутствующих блоков: {}. Номера: {}',
+                          'zh': '缺失块数量：{}。编号：{}'},
+ 'missing_details': {'de': '\n'
+                           'Details zu A-Texten, die nicht direkt in B gefunden wurden (Vergleich mit vermuteten '
+                           'B-Texten):',
+                     'en': '\nDetails for A texts not directly found in B (attempt to compare with guessed B texts):',
+                     'es': '\n'
+                           'Detalles de textos de A no encontrados directamente en B (intento de comparación con '
+                           'textos supuestos de B):',
+                     'it': '\n'
+                           'Dettagli per i testi di A non trovati direttamente in B (tentativo di confronto con testi '
+                           'presunti di B):',
+                     'pl': '\n'
+                           'Szczegóły dla tekstów A nieznalezionych bezpośrednio w B (próba porównania z domniemanymi '
+                           'tekstami z B):',
+                     'ru': '\n'
+                           'Детали текстов A, не найденных напрямую в B (попытка сравнения с предполагаемыми текстами '
+                           'B):',
+                     'zh': '\nA 中直接未在 B 中找到的文本详情（尝试与推测的 B 文本比较）：'},
+ 'missing_found': {'de': '\n{} fehlende Einträge zum Hinzufügen gefunden.',
+                   'en': '\nFound {} missing entries to add.',
+                   'es': '\nEncontradas {} entradas faltantes para añadir.',
+                   'it': '\nTrovate {} voci mancanti da aggiungere.',
+                   'pl': '\nZnaleziono {} brakujących wpisów do dodania.',
+                   'ru': '\nНайдено {} отсутствующих записей для добавления.',
+                   'zh': '\n找到 {} 个缺失条目需要添加。'},
+ 'missing_in_b': {'de': '\nTexte aus A nicht in B gefunden (einzelne Nummern oder Bereiche):',
+                  'en': '\nTexts from A not found in B (single numbers or ranges):',
+                  'es': '\nTextos de A no encontrados en B (números individuales o rangos):',
+                  'it': '\nTesti da A non trovati in B (numeri singoli o intervalli):',
+                  'pl': '\nTeksty z A nie znalezione w B (pojedyncze numery lub przedziały):',
+                  'ru': '\nТексты из A, не найденные в B (одиночные номера или диапазоны):',
+                  'zh': '\nA 中的文本未在 B 中找到（单个编号或范围）：'},
+ 'missing_texts_generated': {'de': 'Fehlende Texte aus B im Vergleich zu A generiert',
+                             'en': 'Missing texts generated from B vs A',
+                             'es': 'Textos faltantes generados desde B vs A',
+                             'it': 'Testi mancanti generati da B rispetto ad A',
+                             'pl': 'Brakujące teksty wygenerowane z B vs A',
+                             'ru': 'Отсутствующие тексты сгенерированы из B vs A',
+                             'zh': '已从 B vs A 生成缺失文本'},
+ 'missingtexts_saved': {'de': 'Datei mit fehlenden Texten gespeichert: {}',
+                        'en': 'Saved missing texts file: {}',
+                        'es': 'Archivo con textos faltantes guardado: {}',
+                        'it': 'File con testi mancanti salvato: {}',
+                        'pl': 'Zapisano plik z brakującymi tekstami: {}',
+                        'ru': 'Файл с отсутствующими текстами сохранён: {}',
+                        'zh': '已保存缺失文本文件：{}'},
+ 'negative_ids_error': {'de': 'Fehler: Nach Verschiebung wären einige Nummern <= 0. Wählen Sie einen anderen Offset.',
+                        'en': 'Error: after shift, some numbers would be <= 0. Choose another offset.',
+                        'es': 'Error: tras el desplazamiento algunos números serían ≤ 0. Elige otro offset.',
+                        'it': 'Errore: dopo lo spostamento alcuni numeri sarebbero ≤ 0. Scegli un altro offset.',
+                        'pl': 'Błąd: po przesunięciu niektóre numery byłyby mniejsze lub równe 0. Wybierz inny offset.',
+                        'ru': 'Ошибка: после сдвига некоторые номера стали бы ≤ 0. Выберите другое смещение.',
+                        'zh': '错误：偏移后部分编号将 ≤ 0。请选择其他偏移量。'},
+ 'new_offset_note': {'de': '    // neuer Offset {}',
+                     'en': '    // new offset {}',
+                     'es': '    // nuevo offset {}',
+                     'it': '    // nuovo offset {}',
+                     'pl': '    // nowy offset {}',
+                     'ru': '    // новый offset {}',
+                     'zh': '    // 新偏移 {}'},
+ 'new_offset_set': {'de': '\nNeuer Offset gesetzt: {} (A:{} -> B:{})',
+                    'en': '\nNew offset set: {} (A:{} -> B:{})',
+                    'es': '\nNuevo offset establecido: {} (A:{} -> B:{})',
+                    'it': '\nNuovo offset impostato: {} (A:{} -> B:{})',
+                    'pl': '\nNowy offset ustawiony: {} (A:{} -> B:{})',
+                    'ru': '\nНовое смещение установлено: {} (A:{} → B:{})',
+                    'zh': '\n新偏移已设置：{} (A:{} → B:{})'},
+ 'new_saved': {'de': 'Neue Datei gespeichert: {}',
+               'en': 'Saved new file: {}',
+               'es': 'Nuevo archivo guardado: {}',
+               'it': 'Nuovo file salvato: {}',
+               'pl': 'Zapisano nowy plik: {}',
+               'ru': 'Новый файл сохранён: {}',
+               'zh': '新文件已保存：{}'},
+ 'no_added': {'de': '  Keine neuen Nummern hinzuzufügen.',
+              'en': '  No new numbers to add.',
+              'es': '  No hay nuevos números para añadir.',
+              'it': '  Nessun nuovo numero da aggiungere.',
+              'pl': '  Brak nowych numerów do dodania.',
+              'ru': '  Новых номеров для добавления нет.',
+              'zh': '  没有新编号需要添加。'},
+ 'no_added_unexpected': {'de': 'Keine neuen hinzugefügten Nummern (etwas Unerwartetes).',
+                         'en': 'No new added numbers (something unexpected).',
+                         'es': 'No se añadieron nuevos números (algo inesperado ocurrió).',
+                         'it': 'Nessun nuovo numero aggiunto (qualcosa di inaspettato).',
+                         'pl': 'Brak nowych dodanych numerów (coś poszło nieoczekiwanie).',
+                         'ru': 'Новые номера не добавлены (произошло что-то неожиданное).',
+                         'zh': '未添加新编号（出现意外情况）。'},
+ 'no_blocks': {'de': 'Projektdatei enthält keine Textblöcke. Abgebrochen.',
+               'en': 'Project file contains no text blocks. Canceled.',
+               'es': 'El archivo de proyecto no contiene bloques de texto. Cancelado.',
+               'it': 'Il file di progetto non contiene blocchi di testo. Annullato.',
+               'pl': 'Plik projektu nie zawiera żadnych bloków tekstowych. Anulowano.',
+               'ru': 'В файле проекта нет текстовых блоков. Операция отменена.',
+               'zh': '项目文件不包含任何文本块。已取消。'},
+ 'no_blocks_found': {'de': "Keine '## Text N ##'-Blöcke in Datei A gefunden. Nichts zu verschieben.",
+                     'en': "No '## Text N ##' blocks found in file A. Nothing to shift.",
+                     'es': "No se encontraron bloques '## Text N ##' en el archivo A. Nada que desplazar.",
+                     'it': "Nessun blocco '## Text N ##' trovato nel file A. Niente da spostare.",
+                     'pl': "Nie znaleziono żadnych bloków '## Text N ##' w pliku A. Nic do przesunięcia.",
+                     'ru': "В файле A не найдено блоков '## Text N ##'. Нечего сдвигать.",
+                     'zh': "在文件 A 中未找到任何 '## Text N ##' 块。无需偏移。"},
+ 'no_matched_ranges': {'de': '  Keine übereinstimmenden Bereiche.',
+                       'en': '  No matched ranges.',
+                       'es': '  No hay rangos coincidentes.',
+                       'it': '  Nessun intervallo corrispondente.',
+                       'pl': '  Brak dopasowanych przedziałów.',
+                       'ru': '  Совпавших диапазонов нет.',
+                       'zh': '  无匹配范围。'},
+ 'no_matches': {'de': '\nKeine Übereinstimmungen zum Speichern. Nichts geändert.',
+                'en': '\nNo matches to save. Nothing changed.',
+                'es': '\nNo hay coincidencias para guardar. Nada cambiado.',
+                'it': '\nNessuna corrispondenza da salvare. Nessuna modifica.',
+                'pl': '\nBrak dopasowań do zapisania. Nic nie zmieniono.',
+                'ru': '\nНет совпадений для сохранения. Ничего не изменено.',
+                'zh': '\n无匹配项可保存。未做任何更改。'},
+ 'no_missing_blocks': {'de': 'Keine fehlenden Blöcke (nichts hinzuzufügen).',
+                       'en': 'No missing blocks (nothing to add).',
+                       'es': 'No hay bloques faltantes (nada que añadir).',
+                       'it': 'Nessun blocco mancante (niente da aggiungere).',
+                       'pl': 'Brak brakujących bloków (nic do dopisania).',
+                       'ru': 'Отсутствующих блоков нет (добавлять нечего).',
+                       'zh': '没有缺失块（无需添加）。'},
+ 'no_missing_entries': {'de': 'Keine fehlenden Einträge im angegebenen Bereich. Nichts zu tun.',
+                        'en': 'No missing entries in given range. Nothing to do.',
+                        'es': 'No hay entradas faltantes en el rango indicado. Nada que hacer.',
+                        'it': "Nessuna voce mancante nell'intervallo specificato. Niente da fare.",
+                        'pl': 'Brak brakujących wpisów w podanym przedziale. Nic do zrobienia.',
+                        'ru': 'В указанном диапазоне нет отсутствующих записей. Нечего делать.',
+                        'zh': '指定范围内无缺失条目。无需操作。'},
+ 'no_missingtexts_saved': {'de': 'Keine missingtexts-Datei gespeichert.',
+                           'en': 'No missingtexts file saved.',
+                           'es': 'No se guardó ningún archivo missingtexts.',
+                           'it': 'Nessun file missingtexts salvato.',
+                           'pl': 'Brak zapisanego pliku missingtexts.',
+                           'ru': 'Файл missingtexts не сохранён.',
+                           'zh': '未保存 missingtexts 文件。'},
+ 'no_offset': {'de': '  A:{} (kein Offset, vermutete Textnummer für B kann nicht bestimmt werden)',
+               'en': '  A:{} (no offset, cannot determine guessed text number for B)',
+               'es': '  A:{} (sin offset, imposible determinar número supuesto de texto para B)',
+               'it': '  A:{} (nessun offset, impossibile determinare il numero di testo presunto per B)',
+               'pl': '  A:{} (brak offsetu, nie można wyznaczyć liczby domniemanego tekstu dla B)',
+               'ru': '  A:{} (нет оффсета, невозможно определить предполагаемый номер текста в B)',
+               'zh': '  A:{}（无偏移，无法确定 B 的推测文本编号）'},
+ 'no_offset_reason': {'de': 'kein Offset',
+                      'en': 'no offset',
+                      'es': 'sin offset',
+                      'it': 'nessun offset',
+                      'pl': 'brak offsetu',
+                      'ru': 'нет offset',
+                      'zh': '无偏移'},
+ 'no_path_canceled': {'de': 'Kein Pfad. Zurück zum Menü.',
+                      'en': 'No path. Back to menu.',
+                      'es': 'Sin ruta. Volver al menú.',
+                      'it': 'Nessun percorso. Ritorno al menu.',
+                      'pl': 'Brak ścieżki. Powrót do menu.',
+                      'ru': 'Путь не указан. Возврат в меню.',
+                      'zh': '无路径。返回菜单。'},
+ 'no_range_canceled': {'de': 'Kein Bereich. Abgebrochen.',
+                       'en': 'No range. Canceled.',
+                       'es': 'Sin rango. Cancelado.',
+                       'it': 'Nessun intervallo. Annullato.',
+                       'pl': 'Brak przedziału. Anulowano.',
+                       'ru': 'Диапазон не указан. Отменено.',
+                       'zh': '无范围。已取消。'},
+ 'no_replacements': {'de': '  Keine Ersetzungen (keine Nummer aus B war in A vorhanden).',
+                     'en': '  No replacements (no number from B occurred in A).',
+                     'es': '  No hubo reemplazos (ningún número de B estaba presente en A).',
+                     'it': '  Nessuna sostituzione (nessun numero da B era presente in A).',
+                     'pl': '  Brak podmian (żaden numer z B nie występował w A).',
+                     'ru': '  Замен не было (ни один номер из B не встречался в A).',
+                     'zh': '  无替换（B 中的任何编号均未出现在 A 中）。'},
+ 'no_sim': {'de': '  A:{} (vermuteter B-Text: {} — {})',
+            'en': '  A:{} (guessed B text: {} — {})',
+            'es': '  A:{} (texto supuesto B: {} — {})',
+            'it': '  A:{} (testo presunto B: {} — {})',
+            'pl': '  A:{} (domniemany tekst B: {} — {})',
+            'ru': '  A:{} (предполагаемый текст B: {} — {})',
+            'zh': '  A:{}（推测 B 文本：{} — {}）'},
+ 'no_suggestion': {'de': 'keine', 'en': 'none', 'es': 'ninguna', 'it': 'nessuno', 'pl': 'brak', 'ru': 'нет', 'zh': '无'},
+ 'no_targets': {'de': 'Keine Zielindizes zum Speichern. Abgebrochen.',
+                'en': 'No target indices to save. Canceled.',
+                'es': 'No hay índices destino para guardar. Cancelado.',
+                'it': 'Nessun indice di destinazione da salvare. Annullato.',
+                'pl': 'Brak docelowych indeksów do zapisu. Anulowano.',
+                'ru': 'Нет целевых индексов для сохранения. Отменено.',
+                'zh': '无目标索引可保存。已取消。'},
+ 'no_value_canceled': {'de': 'Kein Wert. Abgebrochen.',
+                       'en': 'No value. Canceled.',
+                       'es': 'Sin valor. Cancelado.',
+                       'it': 'Nessun valore. Annullato.',
+                       'pl': 'Brak wartości. Anulowano.',
+                       'ru': 'Значение не введено. Отменено.',
+                       'zh': '无值。已取消。'},
+ 'num_ge_1': {'de': 'Nummer muss >= 1 sein.',
+              'en': 'Number must be >= 1.',
+              'es': 'El número debe ser ≥ 1.',
+              'it': 'Il numero deve essere ≥ 1.',
+              'pl': 'Numer musi być >= 1.',
+              'ru': 'Номер должен быть ≥ 1.',
+              'zh': '编号必须 ≥ 1。'},
+ 'numbers_0_255': {'de': 'Zahlen müssen im Bereich 0-255 liegen.',
+                   'en': 'Numbers must be in range 0-255.',
+                   'es': 'Los números deben estar en el rango 0-255.',
+                   'it': 'I numeri devono essere nel range 0-255.',
+                   'pl': 'Liczby muszą być w zakresie 0-255.',
+                   'ru': 'Числа должны быть в диапазоне 0-255.',
+                   'zh': '数字必须在 0-255 范围内。'},
+ 'offset_history': {'de': '\nVerlauf der Offset-Änderungen (Offset, A_Index, B_Index):',
+                    'en': '\nOffset change history (offset, A_index, B_index):',
+                    'es': '\nHistorial de cambios de offset (offset, A_index, B_index):',
+                    'it': "\nCronologia delle modifiche dell'offset (offset, A_index, B_index):",
+                    'pl': '\nHistoria zmian offsetu (offset, A_index, B_index):',
+                    'ru': '\nИстория изменений оффсета (offset, A_index, B_index):',
+                    'zh': '\n偏移变更历史（偏移, A_index, B_index）：'},
+ 'offset_prompt': {'de': 'Geben Sie den Offset ein (Ganzzahl, 0 = abbrechen): ',
+                   'en': 'Enter offset (integer, 0 = cancel): ',
+                   'es': 'Ingresa el offset (número entero, 0 = cancelar): ',
+                   'it': "Inserisci l'offset (numero intero, 0 = annulla): ",
+                   'pl': 'Podaj offset (liczba całkowita, 0 = anuluj): ',
+                   'ru': 'Введите смещение (целое число, 0 = отмена): ',
+                   'zh': '请输入偏移量（整数，0 = 取消）：'},
+ 'offset_set_at': {'de': '  Offset {} gesetzt bei A:{} -> B:{}',
+                   'en': '  offset {} set at A:{} -> B:{}',
+                   'es': '  offset {} establecido en A:{} → B:{}',
+                   'it': '  offset {} impostato presso A:{} -> B:{}',
+                   'pl': '  offset {} ustawiony przy A:{} -> B:{}',
+                   'ru': '  offset {} установлен при A:{} → B:{}',
+                   'zh': '  偏移 {} 设置于 A:{} → B:{}'},
+ 'offset_zero': {'de': 'Offset = 0 — keine Aktion. Abgebrochen.',
+                 'en': 'Offset = 0 — no action. Canceled.',
+                 'es': 'Offset = 0 — sin acción. Cancelado.',
+                 'it': 'Offset = 0 — nessuna azione. Annullato.',
+                 'pl': 'Offset = 0 — brak działania. Anulowano.',
+                 'ru': 'Смещение = 0 — действие не выполнено. Отменено.',
+                 'zh': '偏移量 = 0 — 无操作。已取消。'},
+ 'out_file_prompt': {'de': 'Ausgabedatei [{}]: ',
+                     'en': 'Output file [{}]: ',
+                     'es': 'Archivo de salida [{}]: ',
+                     'it': 'File di output [{}]: ',
+                     'pl': 'Plik wyjściowy [{}]: ',
+                     'ru': 'Выходной файл [{}]: ',
+                     'zh': '输出文件 [{}]：'},
+ 'out_name_prompt': {'de': 'Name der Ausgabedatei [missingtexts.txt]: ',
+                     'en': 'Output file name [missingtexts.txt]: ',
+                     'es': 'Nombre del archivo de salida [missingtexts.txt]: ',
+                     'it': 'Nome del file di output [missingtexts.txt]: ',
+                     'pl': 'Nazwa pliku wynikowego [missingtexts.txt]: ',
+                     'ru': 'Имя выходного файла [missingtexts.txt]: ',
+                     'zh': '输出文件名 [missingtexts.txt]：'},
+ 'out_of_range': {'de': 'Nummer außerhalb des Bereichs. Versuchen Sie es erneut.',
+                  'en': 'Number out of range. Try again.',
+                  'es': 'Número fuera de rango. Intenta de nuevo.',
+                  'it': 'Numero fuori intervallo. Riprova.',
+                  'pl': 'Numer poza zakresem. Spróbuj ponownie.',
+                  'ru': 'Номер вне диапазона. Попробуйте снова.',
+                  'zh': '编号超出范围。请重试。'},
+ 'out_of_range_start': {'de': 'Startnummer außerhalb des Bereichs. Versuchen Sie es erneut.',
+                        'en': 'Starting number out of range. Try again.',
+                        'es': 'Número inicial fuera de rango. Intenta de nuevo.',
+                        'it': 'Numero iniziale fuori intervallo. Riprova.',
+                        'pl': 'Początkowy numer poza zakresem. Spróbuj ponownie.',
+                        'ru': 'Начальный номер вне диапазона. Попробуйте снова.',
+                        'zh': '起始编号超出范围。请重试。'},
+ 'out_path_prompt': {'de': 'Geben Sie den Ausgabepfad ein [{}]: ',
+                     'en': 'Enter output path [{}]: ',
+                     'es': 'Ingresa la ruta de salida [{}]: ',
+                     'it': 'Inserisci il percorso di output [{}]: ',
+                     'pl': 'Podaj ścieżkę wyjściową [{}]: ',
+                     'ru': 'Введите путь для сохранения [{}]: ',
+                     'zh': '请输入输出路径 [{}]：'},
+ 'overwrite_a_backup': {'de': '  1) Datei A überschreiben (eine Sicherung wird erstellt)',
+                 'en': '  1) Overwrite file A (backup will be created)',
+                 'es': '  1) Sobrescribir el archivo A (se creará una copia de seguridad)',
+                 'it': '  1) Sovrascrivi il file A (verrà creata una copia di backup)',
+                 'pl': '  1) Nadpisać plik A (zrobiona zostanie kopia zapasowa)',
+                 'ru': '  1) Перезаписать файл A (будет создана резервная копия)',
+                 'zh': '  1) 覆盖文件 A（将创建备份）'},
+ 'overwrite_direct': {'de': 'Datei A direkt überschreiben?',
+                      'en': 'Overwrite file A directly?',
+                      'es': '¿Sobrescribir directamente el archivo A?',
+                      'it': 'Sovrascrivere direttamente il file A?',
+                      'pl': 'Nadpisać plik A bezpośrednio?',
+                      'ru': 'Перезаписать файл A напрямую?',
+                      'zh': '是否直接覆盖文件 A？'},
+ 'overwrite_file': {'de': 'Datei überschreiben?',
+                    'en': 'Overwrite file?',
+                    'es': '¿Sobrescribir el archivo?',
+                    'it': 'Sovrascrivere il file?',
+                    'pl': 'Nadpisać plik?',
+                    'ru': 'Перезаписать файл?',
+                    'zh': '是否覆盖文件？'},
+ 'overwrite_prompt': {'de': '\nMöchten Sie die vorhandene Datei überschreiben?',
+                      'en': '\nDo you want to overwrite existing file?',
+                      'es': '\n¿Quieres sobrescribir el archivo existente?',
+                      'it': '\nVuoi sovrascrivere il file esistente?',
+                      'pl': '\nCzy chcesz nadpisać istniejący plik?',
+                      'ru': '\nХотите перезаписать существующий файл?',
+                      'zh': '\n是否覆盖现有文件？'},
+ 'overwritten': {'de': 'Datei überschrieben: {}',
+                 'en': 'Overwritten file: {}',
+                 'es': 'Archivo sobrescrito: {}',
+                 'it': 'File sovrascritto: {}',
+                 'pl': 'Nadpisano plik: {}',
+                 'ru': 'Файл перезаписан: {}',
+                 'zh': '已覆盖文件：{}'},
+ 'overwritten_a': {'de': 'Datei A überschrieben: {}',
+                   'en': 'Overwritten file A: {}',
+                   'es': 'Archivo A sobrescrito: {}',
+                   'it': 'File A sovrascritto: {}',
+                   'pl': 'Nadpisano plik A: {}',
+                   'ru': 'Файл A перезаписан: {}',
+                   'zh': '已覆盖文件 A：{}'},
+ 'path_a_prompt': {'de': 'Geben Sie den Pfad zur Datei A ein (Basis): ',
+                   'en': 'Enter path to file A (base): ',
+                   'es': 'Ingresa la ruta al archivo A (base): ',
+                   'it': 'Inserisci il percorso del file A (base): ',
+                   'pl': 'Podaj ścieżkę do pliku A (bazowy): ',
+                   'ru': 'Введите путь к файлу A (базовый): ',
+                   'zh': '请输入文件 A 的路径（基础文件）：'},
+ 'path_a_required': {'de': 'Datei A für diese Option erforderlich. Zurück zum Menü.',
+                     'en': 'File A required for this option. Back to menu.',
+                     'es': 'Se requiere el archivo A para esta opción. Volver al menú.',
+                     'it': 'File A richiesto per questa opzione. Ritorno al menu.',
+                     'pl': 'Plik A wymagany dla tej opcji. Powrót do menu.',
+                     'ru': 'Для этой опции требуется файл A. Возврат в меню.',
+                     'zh': '此选项需要文件 A。返回菜单。'},
+ 'path_b_prompt': {'de': 'Geben Sie den Pfad zur Datei B ein (Referenz): ',
+                   'en': 'Enter path to file B (reference): ',
+                   'es': 'Ingresa la ruta al archivo B (de referencia): ',
+                   'it': 'Inserisci il percorso del file B (di riferimento): ',
+                   'pl': 'Podaj ścieżkę do pliku B (referencyjny): ',
+                   'ru': 'Введите путь к файлу B (эталонный): ',
+                   'zh': '请输入文件 B 的路径（参考文件）：'},
+ 'path_dat_preview_prompt': {'de': 'Geben Sie den Pfad zur s4_texts.dat<nr>-Datei für die Vorschau ein: ',
+                             'en': 'Enter path to s4_texts.dat<nr> for preview: ',
+                             'es': 'Ingresa la ruta al archivo s4_texts.dat<nr> para vista previa: ',
+                             'it': "Inserisci il percorso del file s4_texts.dat<nr> per l'anteprima: ",
+                             'pl': 'Podaj ścieżkę do pliku s4_texts.dat<nr> do podglądu: ',
+                             'ru': 'Введите путь к файлу s4_texts.dat<nr> для предпросмотра: ',
+                             'zh': '请输入要预览的 s4_texts.dat<nr> 文件路径：'},
+ 'path_dat_prompt': {'de': 'Geben Sie den Pfad zur Datei s4_texts.dat<nr> ein: ',
+                     'en': 'Enter path to s4_texts.dat<nr>: ',
+                     'es': 'Ingresa la ruta al archivo s4_texts.dat<nr>: ',
+                     'it': 'Inserisci il percorso del file s4_texts.dat<nr>: ',
+                     'pl': 'Podaj ścieżkę do pliku s4_texts.dat<nr>: ',
+                     'ru': 'Введите путь к файлу s4_texts.dat<nr>: ',
+                     'zh': '请输入 s4_texts.dat<nr> 文件的路径：'},
+ 'path_required': {'de': 'Pfad zur .dat-Datei erforderlich. Zurück zum Menü.',
+                   'en': 'Path to .dat file required. Back to menu.',
+                   'es': 'Se requiere la ruta al archivo .dat. Volver al menú.',
+                   'it': 'Percorso del file .dat richiesto. Ritorno al menu.',
+                   'pl': 'Ścieżka do pliku .dat wymagana. Powrót do menu.',
+                   'ru': 'Требуется путь к файлу .dat. Возврат в меню.',
+                   'zh': '需要 .dat 文件路径。返回菜单。'},
+ 'placeholder_cases': {'de': '\nStellen, an denen A leer/Platzhalter war, B aber signifikanten Text hatte:',
+                       'en': '\nPlaces where A was empty/placeholder, but B had significant text:',
+                       'es': '\nLugares donde A estaba vacío/placeholder pero B tenía texto significativo:',
+                       'it': '\nPosizioni in cui A era vuoto/placeholder ma B aveva testo significativo:',
+                       'pl': '\nMiejsca gdzie A był pusty/placeholder, a B miał znaczący tekst:',
+                       'ru': '\nМеста, где A был пустым/заглушкой, а B содержал значимый текст:',
+                       'zh': '\nA 为空/占位符但 B 有意义文本的位置：'},
+ 'press_enter_to_exit': {'de': '\nDrücken Sie Enter, um zu beenden...',
+                         'en': '\nPress Enter to exit...',
+                         'es': '\nPresiona Enter para terminar...',
+                         'it': '\nPremi Invio per terminare...',
+                         'pl': '\nNaciśnij Enter, aby zakończyć...',
+                         'ru': '\nНажмите Enter для завершения...',
+                         'zh': '\n按 Enter 键退出...'},
+ 'project_export_prompt': {'de': 'Geben Sie den Pfad zur .s4_translation_project-Datei für den Export ein: ',
+                           'en': 'Enter path to .s4_translation_project for export: ',
+                           'es': 'Ingresa la ruta al archivo .s4_translation_project para exportar: ',
+                           'it': 'Inserisci il percorso del file .s4_translation_project da esportare: ',
+                           'pl': 'Podaj ścieżkę do pliku .s4_translation_project do eksportu: ',
+                           'ru': 'Введите путь к файлу .s4_translation_project для экспорта: ',
+                           'zh': '请输入要导出的 .s4_translation_project 文件路径：'},
+ 'project_path_prompt': {'de': 'Geben Sie den Pfad zur .s4_translation_project-Datei ein: ',
+                             'en': 'Enter path to .s4_translation_project file: ',
+                             'es': 'Ingresa la ruta al archivo .s4_translation_project: ',
+                             'it': 'Inserisci il percorso del file .s4_translation_project: ',
+                             'pl': 'Podaj ścieżkę do pliku .s4_translation_project: ',
+                             'ru': 'Введите путь к файлу .s4_translation_project: ',
+                             'zh': '请输入 .s4_translation_project 文件的路径：'},
+ 'project_path_required': {'de': 'Pfad zur Projektdatei erforderlich. Zurück zum Menü.',
+                           'en': 'Path to project file required. Back to menu.',
+                           'es': 'Se requiere la ruta al archivo de proyecto. Volver al menú.',
+                           'it': 'Percorso del file di progetto richiesto. Ritorno al menu.',
+                           'pl': 'Ścieżka do pliku projektu wymagana. Powrót do menu.',
+                           'ru': 'Требуется путь к файлу проекта. Возврат в меню.',
+                           'zh': '需要项目文件路径。返回菜单。'},
+ 'project_read_error': {'de': 'Fehler beim Lesen der Projektdatei: {}',
+                        'en': 'Error reading project file: {}',
+                        'es': 'Error al leer el archivo de proyecto: {}',
+                        'it': 'Errore di lettura del file di progetto: {}',
+                        'pl': 'Błąd odczytu pliku projektu: {}',
+                        'ru': 'Ошибка чтения файла проекта: {}',
+                        'zh': '读取项目文件出错：{}'},
+ 'project_saved': {'de': 'Projektdatei gespeichert: {} (Ausgabekodierung: {})',
+                   'en': 'Saved project file: {} (output encoding: {})',
+                   'es': 'Archivo de proyecto guardado: {} (codificación de salida: {})',
+                   'it': 'File di progetto salvato: {} (codifica di output: {})',
+                   'pl': 'Zapisano plik projektu: {} (kodowanie wyjściowe: {})',
+                   'ru': 'Файл проекта сохранён: {} (выходная кодировка: {})',
+                   'zh': '已保存项目文件：{}（输出编码：{}）'},
+ 'project_write_error': {'de': 'Fehler beim Schreiben der Projektdatei: {}',
+                         'en': 'Error writing project file: {}',
+                         'es': 'Error al escribir el archivo de proyecto: {}',
+                         'it': 'Errore di scrittura del file di progetto: {}',
+                         'pl': 'Błąd zapisu pliku projektu: {}',
+                         'ru': 'Ошибка записи файла проекта: {}',
+                         'zh': '写入项目文件出错：{}'},
+ 'range_fix_prompt': {'de': 'Geben Sie den zu ergänzenden Nummernbereich ein (z. B. 1-2000) oder einzelne Nummer (z. '
+                            'B. 57): ',
+                      'en': 'Enter range of numbers to fix (e.g. 1-2000) or single number (e.g. 57): ',
+                      'es': 'Ingresa el rango de números a completar (ej. 1-2000) o un número individual (ej. 57): ',
+                      'it': "Inserisci l'intervallo di numeri da completare (es. 1-2000) o un singolo numero (es. "
+                            '57): ',
+                      'pl': 'Podaj przedział numerów do uzupełnienia (np. 1-2000) lub pojedynczy numer (np. 57): ',
+                      'ru': 'Введите диапазон номеров для заполнения (например 1-2000) или один номер (например 57): ',
+                      'zh': '请输入要补全的编号范围（例如 1-2000）或单个编号（例如 57）：'},
+ 'range_prompt': {'de': "Geben Sie Textnummer ein (z. B. 57), Bereich (z. B. 60-200), 'all' für alles anzeigen oder "
+                        "'single' für einzelne Nummer zum Testen aller Kodierungen: ",
+                  'en': "Enter text number (e.g. 57), range (e.g. 60-200), 'all' to print everything, or 'single' to "
+                        'enter single number for all encodings test: ',
+                  'es': "Ingresa número de texto (ej. 57), rango (ej. 60-200), 'all' para mostrar todo, o 'single' "
+                        'para ingresar un solo número y probar todas las codificaciones: ',
+                  'it': "Inserisci il numero del testo (es. 57), un intervallo (es. 60-200), 'all' per mostrare tutto, "
+                        "o 'single' per inserire un singolo numero da testare con tutte le codifiche: ",
+                  'pl': "Podaj numer tekstu (np. 57), przedział (np. 60-200), 'all' aby wypisać wszystko, lub 'single' "
+                        'aby podać pojedynczy numer do testu wszystkich kodowań: ',
+                  'ru': "Введите номер текста (например 57), диапазон (например 60-200), 'all' для вывода всего или "
+                        "'single' для ввода одного номера и теста всех кодировок: ",
+                  'zh': "请输入文本编号（例如 57），范围（例如 60-200），'all' 显示全部，或 'single' 输入单个编号测试所有编码："},
+ 'replaced_numbers': {'de': '  Ersetzte Nummern (aus Datei B): {}',
+                      'en': '  Replaced numbers (from file B): {}',
+                      'es': '  Números reemplazados (desde el archivo B): {}',
+                      'it': '  Numeri sostituiti (dal file B): {}',
+                      'pl': '  Podmienione numery (z pliku B): {}',
+                      'ru': '  Заменённые номера (из файла B): {}',
+                      'zh': '  已替换的编号（来自文件 B）：{}'},
+ 'required_paths': {'de': 'Dateien A und B sind für diese Option erforderlich. Zurück zum Menü.',
+                    'en': 'Files A and B are required for this option. Back to menu.',
+                    'es': 'Se requieren los archivos A y B para esta opción. Volver al menú.',
+                    'it': 'I file A e B sono richiesti per questa opzione. Ritorno al menu.',
+                    'pl': 'Plik A i B są wymagane dla tej opcji. Powrót do menu.',
+                    'ru': 'Для этой опции требуются файлы A и B. Возврат в меню.',
+                    'zh': '此选项需要文件 A 和 B。返回菜单。'},
+ 'sample_mappings': {'de': 'Beispielzuordnungen (A -> B): {}',
+                     'en': 'Sample mappings (A -> B): {}',
+                     'es': 'Mapeos de ejemplo (A → B): {}',
+                     'it': 'Mappature di esempio (A -> B): {}',
+                     'pl': 'Przykładowe mapowania (A -> B): {}',
+                     'ru': 'Примеры сопоставлений (A → B): {}',
+                     'zh': '示例映射（A → B）：{}'},
+ 'save_as_alt': {'de': 'Speichern unter: {}',
+                 'en': 'Save as: {}',
+                 'es': 'Guardar como: {}',
+                 'it': 'Salva come: {}',
+                 'pl': 'Zapisz jako: {}',
+                 'ru': 'Сохранить как: {}',
+                 'zh': '另存为：{}'},
+ 'save_as_new': {'de': 'Als neue Datei speichern: {}?',
+                        'en': 'Save as new file: {}?',
+                        'es': '¿Guardar como nuevo archivo: {}?',
+                        'it': 'Salvare come nuovo file: {}?',
+                        'pl': 'Zapisać jako nowy plik: {}?',
+                        'ru': 'Сохранить как новый файл: {}?',
+                        'zh': '是否保存为新文件：{}？'},
+ 'save_canceled': {'de': 'Speichern abgebrochen.',
+                   'en': 'Save canceled.',
+                   'es': 'Guardado cancelado.',
+                   'it': 'Salvataggio annullato.',
+                   'pl': 'Anulowano zapis.',
+                   'ru': 'Сохранение отменено.',
+                   'zh': '保存已取消。'},
+ 'save_intent': {'de': '\nBeabsichtige, {} aktualisierte Einträge in Datei A zu speichern.',
+                 'en': '\nIntending to save {} updated entries to file A.',
+                 'es': '\nVoy a guardar {} entradas actualizadas en el archivo A.',
+                 'it': '\nIntendo salvare {} voci aggiornate nel file A.',
+                 'pl': '\nZamierzam zapisać {} zaktualizowanych wpisów do pliku A.',
+                 'ru': '\nПланирую сохранить {} обновлённых записей в файл A.',
+                 'zh': '\n准备将 {} 个更新条目保存到文件 A。'},
+ 'save_method': {'de': '\nWählen Sie die Speichermethode:',
+                 'en': '\nChoose save method:',
+                 'es': '\nElige el método de guardado:',
+                 'it': '\nScegli il metodo di salvataggio:',
+                 'pl': '\nWybierz sposób zapisu:',
+                 'ru': '\nВыберите способ сохранения:',
+                 'zh': '\n选择保存方式：'},
+ 'save_new': {'de': '  2) Als neue Datei speichern (gleiches Verzeichnis wie A, Name + _updated)',
+              'en': '  2) Save as new file (same directory as A, name + _updated)',
+              'es': '  2) Guardar como nuevo archivo (misma carpeta que A, nombre + _updated)',
+              'it': '  2) Salva come nuovo file (stessa cartella di A, nome + _updated)',
+              'pl': '  2) Zapisz jako nowy plik (ten sam katalog co A, nazwa + _updated)',
+              'ru': '  2) Сохранить как новый файл (в той же папке, что и A, имя + _updated)',
+              'zh': '  2) 保存为新文件（与 A 同目录，文件名 + _updated）'},
+ 'save_new_shift': {'de': '  2) Als neue Datei speichern (gleiches Verzeichnis wie A, Name + _shifted)',
+                    'en': '  2) Save as new file (same directory as A, name + _shifted)',
+                    'es': '  2) Guardar como nuevo archivo (misma carpeta que A, nombre + _shifted)',
+                    'it': '  2) Salva come nuovo file (stessa cartella di A, nome + _shifted)',
+                    'pl': '  2) Zapisz jako nowy plik (ten sam katalog co A, nazwa + _shifted)',
+                    'ru': '  2) Сохранить как новый файл (в той же папке, имя + _shifted)',
+                    'zh': '  2) 保存为新文件（与 A 同目录，文件名 + _shifted）'},
+ 'save_shift_method': {'de': '\nWählen Sie die Speichermethode für die verschobene Datei:',
+                       'en': '\nChoose save method for shifted file:',
+                       'es': '\nElige el método de guardado del archivo desplazado:',
+                       'it': '\nScegli il metodo di salvataggio del file spostato:',
+                       'pl': '\nWybierz sposób zapisu przesuniętego pliku:',
+                       'ru': '\nВыберите способ сохранения сдвинутого файла:',
+                       'zh': '\n选择偏移后文件的保存方式：'},
+ 'save_test_prompt': {'de': 'Testergebnis in Datei {}_encoding_test.txt speichern? [J/n]: ',
+                      'en': 'Save test result to file {}_encoding_test.txt? [y/N]: ',
+                      'es': '¿Guardar el resultado de la prueba en el archivo {}_encoding_test.txt? [S/n]: ',
+                      'it': 'Salvare il risultato del test nel file {}_encoding_test.txt? [S/n]: ',
+                      'pl': 'Czy zapisać wynik testu do pliku {}_encoding_test.txt? [T/n]: ',
+                      'ru': 'Сохранить результат теста в файл {}_encoding_test.txt? [Д/н]: ',
+                      'zh': '是否将测试结果保存到 {}_encoding_test.txt？[Y/n]：'},
+ 'save_texts_from_to': {'de': 'Speichere alle Texte von 1 bis {} (letzte Nummer: {}).',
+                        'en': 'Will save all texts from 1 to {} (last number: {}).',
+                        'es': 'Guardaré todos los textos desde 1 hasta {} (último número: {}).',
+                        'it': 'Salverò tutti i testi da 1 a {} (ultimo numero: {}).',
+                        'pl': 'Zapiszę wszystkie teksty od 1 do {} (ostatni numer: {}).',
+                        'ru': 'Будут сохранены все тексты с 1 по {} (последний номер: {}).',
+                        'zh': '将保存所有文本，从 1 到 {}（最后一个编号：{}）。'},
+ 'saved_to': {'de': 'Ergebnis gespeichert unter: {}',
+              'en': 'Saved result to: {}',
+              'es': 'Resultado guardado en: {}',
+              'it': 'Risultato salvato in: {}',
+              'pl': 'Zapisano wynik do: {}',
+              'ru': 'Результат сохранён в: {}',
+              'zh': '结果已保存至：{}'},
+ 'selected_lang': {'de': 'Ausgewählte Sprache: {} (Nummer {}), vorgeschlagene Kodierungen (erstes Standard): {}',
+                   'en': 'Selected language: {} (number {}), suggested encodings (first default): {}',
+                   'es': 'Idioma seleccionado: {} (número {}), codificaciones sugeridas (primera por defecto): {}',
+                   'it': 'Lingua selezionata: {} (numero {}), codifiche suggerite (prima predefinita): {}',
+                   'pl': 'Wybrany język: {} (numer {}), sugerowane kodowania (pierwsze domyślne): {}',
+                   'ru': 'Выбран язык: {} (номер {}), предложенные кодировки (первая по умолчанию): {}',
+                   'zh': '已选择语言：{}（编号 {}），建议编码（第一个为默认）：{}'},
+ 'shifted_saved': {'de': 'Verschobene Datei gespeichert unter: {}',
+                   'en': 'Saved shifted file to: {}',
+                   'es': 'Archivo desplazado guardado en: {}',
+                   'it': 'File spostato salvato in: {}',
+                   'pl': 'Zapisano przesunięty plik do: {}',
+                   'ru': 'Сдвинутый файл сохранён в: {}',
+                   'zh': '偏移后的文件已保存至：{}'},
+ 'similarity': {'de': 'Ähnlichkeit',
+                'en': 'similarity',
+                'es': 'similitud',
+                'it': 'similarità',
+                'pl': 'podobieństwo',
+                'ru': 'схожесть',
+                'zh': '相似度'},
+ 'single_text_prompt': {'de': 'Geben Sie die Nummer eines einzelnen Textes zum Testen aller Kodierungen ein: ',
+                        'en': 'Enter single text number for all encodings test: ',
+                        'es': 'Ingresa el número de un solo texto para probar todas las codificaciones: ',
+                        'it': 'Inserisci il numero di un singolo testo per il test di tutte le codifiche: ',
+                        'pl': 'Podaj numer pojedynczego tekstu do testu wszystkich kodowań: ',
+                        'ru': 'Введите номер одного текста для теста всех кодировок: ',
+                        'zh': '请输入单个文本编号以测试所有编码：'},
+ 'suggested_encs': {'de': '\nVorgeschlagene Kodierungen (erstes Standard):',
+                    'en': '\nSuggested encodings (first default):',
+                    'es': '\nCodificaciones sugeridas (primera por defecto):',
+                    'it': '\nCodifiche suggerite (prima predefinita):',
+                    'pl': '\nSugerowane kodowania (pierwsze domyślne):',
+                    'ru': '\nПредложенные кодировки (первая по умолчанию):',
+                    'zh': '\n建议编码（第一个为默认）：'},
+ 'summary_changes': {'de': '\nZusammenfassung der Änderungen:',
+                     'en': '\nSummary of changes:',
+                     'es': '\nResumen de cambios:',
+                     'it': '\nRiepilogo delle modifiche:',
+                     'pl': '\nPodsumowanie zmian:',
+                     'ru': '\nИтог изменений:',
+                     'zh': '\n更改摘要：'},
+ 'test_another_enc': {'de': 'Andere Kodierung für diesen Bereich testen? [J/n]: ',
+                      'en': 'Test another encoding for this range? [Y/n]: ',
+                      'es': '¿Probar otra codificación para este rango? [S/n]: ',
+                      'it': "Testare un'altra codifica per questo intervallo? [S/n]: ",
+                      'pl': 'Sprawdzić inne kodowanie dla tego zakresu? [T/n]: ',
+                      'ru': 'Проверить другую кодировку для этого диапазона? [Д/н]: ',
+                      'zh': '是否为该范围测试其他编码？[Y/n]：'},
+ 'test_not_saved': {'de': 'Test nicht gespeichert.',
+                    'en': 'Test not saved.',
+                    'es': 'La prueba no fue guardada.',
+                    'it': 'Il test non è stato salvato.',
+                    'pl': 'Test nie został zapisany.',
+                    'ru': 'Тест не сохранён.',
+                    'zh': '测试未保存。'},
+ 'test_save_error': {'de': 'Fehler beim Speichern des Tests: {}',
+                     'en': 'Error saving test: {}',
+                     'es': 'Error al guardar la prueba: {}',
+                     'it': 'Errore durante il salvataggio del test: {}',
+                     'pl': 'Błąd zapisu testu: {}',
+                     'ru': 'Ошибка сохранения теста: {}',
+                     'zh': '保存测试出错：{}'},
+ 'test_saved': {'de': 'Kodierungstest gespeichert unter: {}',
+                'en': 'Saved encoding test to: {}',
+                'es': 'Prueba de codificaciones guardada en: {}',
+                'it': 'Test delle codifiche salvato in: {}',
+                'pl': 'Zapisano test kodowań do: {}',
+                'ru': 'Тест кодировок сохранён в: {}',
+                'zh': '编码测试已保存至：{}'},
+ 'testing_single_text': {'de': 'Teste einzelnen Text #{} mit verschiedenen Kodierungen\n',
+                         'en': 'Testing single text #{} across encodings\n',
+                         'es': 'Probando texto individual #{} con diferentes codificaciones\n',
+                         'it': 'Test di un singolo testo #{} con diverse codifiche\n',
+                         'pl': 'Testing single text #{} across encodings\n',
+                         'ru': 'Тестирование одного текста #{} на разных кодировках\n',
+                         'zh': '正在测试单个文本 #{} 的多种编码\n'},
+ 'texts_count': {'de': 'Anzahl gespeicherter Texte: {}. Leer (Länge=0): {}. Kodierung: {}',
+                 'en': 'Number of texts saved: {}. Empty (length=0): {}. Encoding: {}',
+                 'es': 'Número de textos guardados: {}. Vacíos (longitud=0): {}. Codificación: {}',
+                 'it': 'Numero di testi salvati: {}. Vuoti (lunghezza=0): {}. Codifica: {}',
+                 'pl': 'Liczba tekstów zapisanych: {}. Pustych (length=0): {}. Kodowanie: {}',
+                 'ru': 'Количество сохранённых текстов: {}. Пустых (длина=0): {}. Кодировка: {}',
+                 'zh': '保存的文本数量：{}。空文本（长度=0）：{}。编码：{}'},
+ 'texts_count_dat': {'de': 'Datei enthält {} Texte.',
+                     'en': 'File contains {} texts.',
+                     'es': 'El archivo contiene {} textos.',
+                     'it': 'Il file contiene {} testi.',
+                     'pl': 'Plik zawiera {} tekstów.',
+                     'ru': 'Файл содержит {} текстов.',
+                     'zh': '文件包含 {} 个文本。'},
+ 'unknown_lang_num': {'de': 'Unbekannte Sprachnummer. Versuchen Sie es erneut.',
+                      'en': 'Unknown language number. Try again.',
+                      'es': 'Número de idioma desconocido. Intenta de nuevo.',
+                      'it': 'Numero lingua sconosciuto. Riprova.',
+                      'pl': 'Nieznany numer języka. Spróbuj ponownie.',
+                      'ru': 'Неизвестный номер языка. Попробуйте снова.',
+                      'zh': '未知语言编号。请重试。'},
+ 'updated_entries': {'de': 'Anzahl aktualisierter Einträge (ohne Offset-Zuweisungen): {}',
+                     'en': 'Number of updated entries (without offset assignments): {}',
+                     'es': 'Número de entradas actualizadas (sin asignaciones por offset): {}',
+                     'it': 'Numero di voci aggiornate (escluse assegnazioni per offset): {}',
+                     'pl': 'Liczba zaktualizowanych wpisów (bez przypisań przez offset): {}',
+                     'ru': 'Количество обновлённых записей (без назначений по offset): {}',
+                     'zh': '已更新条目数量（不含偏移分配）：{}'},
+ 'use_suggested_enc': {'de': "Vorgeschlagene Kodierung '{}' verwenden? [J/n]: ",
+                       'en': "Use suggested encoding '{}'? [Y/n]: ",
+                       'es': "¿Usar la codificación sugerida '{}' ? [S/n]: ",
+                       'it': "Usare la codifica suggerita '{}' ? [S/n]: ",
+                       'pl': "Użyć sugerowanego kodowania '{}'? [T/n]: ",
+                       'ru': "Использовать предложенную кодировку '{}' ? [Д/н]: ",
+                       'zh': "是否使用建议的编码 '{}'？[Y/n]："},
+ 'with_sim': {'de': '  A:{} ({}% Ähnlichkeit mit B-Text: {})',
+              'en': '  A:{} ({}% similarity with B text: {})',
+              'es': '  A:{} ({}% de similitud con texto B: {})',
+              'it': '  A:{} ({}% di similarità con il testo B: {})',
+              'pl': '  A:{} ({}% podobieństwa z tekstem B: {})',
+              'ru': '  A:{} ({}% схожести с текстом B: {})',
+              'zh': '  A:{}（与 B 文本 {} 的相似度：{}%）'},
+ 'write_error': {'de': 'Schreibfehler: {}',
+                 'en': 'Write error: {}',
+                 'es': 'Error al escribir: {}',
+                 'it': 'Errore di scrittura: {}',
+                 'pl': 'Błąd zapisu: {}',
+                 'ru': 'Ошибка записи: {}',
+                 'zh': '写入错误：{}'},
+ 'yes_no_prompt': {'de': 'Bitte mit ja/nein antworten (j/n).',
+                   'en': 'Please answer yes/no (y/n).',
+                   'es': 'Por favor responde sí/no (s/n).',
+                   'it': 'Rispondi sì/no (s/n).',
+                   'pl': 'Proszę odpowiedzieć tak/nie (y/n).',
+                   'ru': 'Пожалуйста, ответьте да/нет (y/n).',
+                   'zh': '请回答是/否 (y/n)。'},
+"yes_no_suffix_yes_default": {
+                    "en": "[Y/n]",
+                    "pl": "[T/n]",
+                    "de": "[J/n]",
+                    "es": "[S/n]",
+                    "it": "[S/n]",
+                    "ru": "[Д/н]",
+                    "zh": "[Y/n]"},
+
+"yes_no_suffix_no_default": {
+                    "en": "[y/N]",
+                    "pl": "[t/N]",
+                    "de": "[j/N]",
+                    "es": "[s/N]",
+                    "it": "[s/N]",
+                    "ru": "[д/Н]",
+                    "zh": "[y/N]"}
 }
 
+
 # --- pomocnicze ---
+def TL(key: str, lang: str) -> str:
+    """Zwraca tłumaczenie z fallbackiem do angielskiego."""
+    entry = TRANSLATIONS.get(key, {})
+    return entry.get(lang) or entry.get("en") or key
+
 def sanitize_path(s: str) -> Path:
     s = s.strip()
     if (s.startswith('"') and s.endswith('"')) or (s.startswith("'") and s.endswith("'")):
@@ -748,23 +1346,30 @@ def sanitize_path(s: str) -> Path:
     return p
 
 def confirm(prompt: str, default: bool = True, lang: str = 'en') -> bool:
-    yes = {'y','yes','t','tak'}
-    no = {'n','no','nie'}
-    if default:
-        prompt = f"{prompt} [Y/n]: "
-    else:
-        prompt = f"{prompt} [y/N]: "
+    yes = {'y','yes','t','tak','j','ja','s','si','sí','да','д'}
+    no = {'n','no','nie','nein','нет','н'}
+
+    base = TL(prompt, lang)
+
+    # wybór sufiksu zależnie od domyślnej odpowiedzi
+    suffix_key = 'yes_no_suffix_yes_default' if default else 'yes_no_suffix_no_default'
+    suffix = TL(suffix_key, lang)
+
+    full_prompt = f"{base} {suffix}: "
+
     while True:
-        ans = input(prompt).strip().lower()
-        if ans == '' and default:
-            return True
-        if ans == '' and not default:
-            return False
+        ans = input(full_prompt).strip().lower()
+
+        if ans == '':
+            return default
+
         if ans in yes:
             return True
+
         if ans in no:
             return False
-        print(TRANSLATIONS['yes_no_prompt'][lang])
+
+        print(TL('yes_no_prompt', lang))
 
 def similarity_percent(a: str, b: str) -> float:
     """
@@ -878,10 +1483,10 @@ def validate_project_file(path: Path, encoding: str = 'utf-8', lang: str = 'en')
         if len(blocks_map) > 0:
             return True
         else:
-            print(TRANSLATIONS['invalid_project_file'][lang])
+            print(TL('invalid_project_file', lang))
             return False
     except Exception as e:
-        print(TRANSLATIONS['project_read_error'][lang].format(e))
+        print(TL('project_read_error', lang).format(e))
         return False
 
 # --- Funkcja walidująca plik .dat ---
@@ -889,44 +1494,25 @@ def validate_dat_file(path: Path, lang: str = 'en') -> bool:
     try:
         data = path.read_bytes()
         if len(data) < 8:
-            print(TRANSLATIONS['file_too_short'][lang])
+            print(TL('file_too_short', lang))
             return False
         header_bytes = data[0:4]
-        print(TRANSLATIONS['header_bytes_dat'][lang].format(' '.join(str(b) for b in header_bytes)))
+        print(TL('header_bytes_dat', lang).format(' '.join(str(b) for b in header_bytes)))
         length = int.from_bytes(data[4:8], byteorder='little', signed=False)
         if length < 0 or 8 + length > len(data):
-            print(TRANSLATIONS['invalid_dat_file'][lang])
+            print(TL('invalid_dat_file', lang))
             return False
         text_bytes = data[8:8 + length]
         try:
             text_bytes.decode('ascii')
             return True
         except UnicodeDecodeError:
-            print(TRANSLATIONS['invalid_dat_file'][lang])
+            print(TL('invalid_dat_file', lang))
             return False
     except Exception as e:
-        print(TRANSLATIONS['dat_read_error'][lang].format(e))
+        print(TL('dat_read_error', lang).format(e))
         return False
 
-TRANSLATIONS['file_too_short'] = {
-    'pl': "Plik zbyt krótki, brak nagłówka.",
-    'en': "File too short, no header."
-}
-
-TRANSLATIONS['invalid_project_file'] = {
-    'pl': "Plik nie jest poprawnym plikiem projektu (brak co najmniej jednego wpisu '## Text N ## ... ####'). Podaj poprawny plik.",
-    'en': "File is not a valid project file (missing at least one '## Text N ## ... ####' entry). Enter a valid file."
-}
-
-TRANSLATIONS['invalid_dat_file'] = {
-    'pl': "Plik nie jest poprawnym plikiem .dat (błąd w strukturze nagłówka lub pierwszego tekstu). Podaj poprawny plik.",
-    'en': "File is not a valid .dat file (error in header or first text structure). Enter a valid file."
-}
-
-TRANSLATIONS['header_bytes_dat'] = {
-    'pl': "Nagłówek 4 bajtów: {}",
-    'en': "4-byte header: {}"
-}
 
 # --- option 1: generate missingtexts.txt ---
 def generate_missing_texts(path_a: Path, path_b: Path, encoding: str = 'utf-8', out_name: str = 'missingtexts.txt', lang: str = 'en') -> tuple[Path | None, list[int]]:
@@ -937,7 +1523,7 @@ def generate_missing_texts(path_a: Path, path_b: Path, encoding: str = 'utf-8', 
 
     missing_ids = []
     parts = []
-    parts.append(f'# {TRANSLATIONS["missing_texts_generated"][lang]}\n# A: {path_a}\n# B: {path_b}\n\n')
+    parts.append(f'# {TL('missing_texts_generated', lang)}\n# A: {path_a}\n# B: {path_b}\n\n')
     for idx in order_b:
         b_content = map_b.get(idx, '')
         a_has = idx in map_a
@@ -955,16 +1541,13 @@ def generate_missing_texts(path_a: Path, path_b: Path, encoding: str = 'utf-8', 
 
     out_path = path_a.parent / out_name
     if out_path.exists():
-        if not confirm(TRANSLATIONS['file_exists_overwrite'][lang].format(out_path), default=False, lang=lang):
-            print(TRANSLATIONS['canceled_missingtexts'][lang])
+        if not confirm(TL('file_exists_overwrite', lang).format(out_path), default=False, lang=lang):
+            print(TL('canceled_missingtexts', lang))
             return None, missing_ids
     write_file(out_path, ''.join(parts), encoding=encoding)
     return out_path, missing_ids
 
-TRANSLATIONS['missing_texts_generated'] = {
-    'pl': "Missing texts generated from B vs A",
-    'en': "Missing texts generated from B vs A"
-}
+
 
 # --- option 2: merge ---
 def option_merge(path_a: Path, path_b: Path, encoding: str = 'utf-8', lang: str = 'en') -> None:
@@ -975,40 +1558,40 @@ def option_merge(path_a: Path, path_b: Path, encoding: str = 'utf-8', lang: str 
 
     result_text, replaced, added = build_output_text(header_a, order_a, map_a, map_b)
 
-    print(TRANSLATIONS['summary_changes'][lang])
+    print(TL('summary_changes', lang))
     if replaced:
-        print(TRANSLATIONS['replaced_numbers'][lang].format(', '.join(map(str, replaced))))
+        print(TL('replaced_numbers', lang).format(', '.join(map(str, replaced))))
     else:
-        print(TRANSLATIONS['no_replacements'][lang])
+        print(TL('no_replacements', lang))
     if added:
-        print(TRANSLATIONS['added_numbers'][lang].format(', '.join(map(str, added))))
+        print(TL('added_numbers', lang).format(', '.join(map(str, added))))
     else:
-        print(TRANSLATIONS['no_added'][lang])
+        print(TL('no_added', lang))
 
-    print(TRANSLATIONS['save_method'][lang])
-    print(TRANSLATIONS['overwrite_a'][lang])
-    print(TRANSLATIONS['save_new'][lang])
-    choice = input(TRANSLATIONS['choose_1_or_2'][lang]).strip() or '1'
+    print(TL('save_method', lang))
+    print(TL('overwrite_a_backup', lang))
+    print(TL('save_new', lang))
+    choice = input(TL('choose_1_or_2', lang)).strip() or '1'
 
     if choice == '1':
         bak = path_a.with_suffix(path_a.suffix + '.bak')
         try:
             shutil.copy2(path_a, bak)
-            print(TRANSLATIONS['backup_created'][lang].format(bak))
+            print(TL('backup_created', lang).format(bak))
         except Exception as e:
-            print(TRANSLATIONS['backup_failed'][lang].format(e))
-            if not confirm(TRANSLATIONS['continue_without_backup'][lang], default=False, lang=lang):
-                print(TRANSLATIONS['canceled'][lang])
+            print(TL('backup_failed', lang).format(e))
+            if not confirm(TL('continue_without_backup', lang), default=False, lang=lang):
+                print(TL('canceled', lang))
                 return
         try:
             write_file(path_a, result_text, encoding=encoding)
-            print(TRANSLATIONS['overwritten_a'][lang].format(path_a))
+            print(TL('overwritten_a', lang).format(path_a))
         except Exception as e:
-            print(TRANSLATIONS['write_error'][lang].format(e))
+            print(TL('write_error', lang).format(e))
             return
     elif choice == '2':
         suggested = path_a.with_name(path_a.stem + '_updated' + path_a.suffix)
-        out_path_input = input(TRANSLATIONS['out_path_prompt'][lang].format(suggested)).strip()
+        out_path_input = input(TL('out_path_prompt', lang).format(suggested)).strip()
         if out_path_input == '':
             out_path = suggested
         else:
@@ -1022,20 +1605,20 @@ def option_merge(path_a: Path, path_b: Path, encoding: str = 'utf-8', lang: str 
             try:
                 out_dir.mkdir(parents=True, exist_ok=True)
             except Exception as e:
-                print(TRANSLATIONS['dir_create_failed'][lang].format(out_dir, e))
+                print(TL('dir_create_failed', lang).format(out_dir, e))
                 return
         if out_path.exists():
-            if not confirm(TRANSLATIONS['file_exists_overwrite'][lang].format(out_path), default=False, lang=lang):
-                print(TRANSLATIONS['canceled'][lang])
+            if not confirm(TL('file_exists_overwrite', lang).format(out_path), default=False, lang=lang):
+                print(TL('canceled', lang))
                 return
         try:
             write_file(out_path, result_text, encoding=encoding)
-            print(TRANSLATIONS['saved_to'][lang].format(out_path))
+            print(TL('saved_to', lang).format(out_path))
         except Exception as e:
-            print(TRANSLATIONS['write_error'][lang].format(e))
+            print(TL('write_error', lang).format(e))
             return
     else:
-        print(TRANSLATIONS['invalid_save_choice'][lang])
+        print(TL('invalid_save_choice', lang))
         return
 
 # --- s4_texts.dat import helpers ---
@@ -1100,9 +1683,9 @@ def decode_text_bytes(b: bytes, lang_num: int) -> str:
 def option_import_s4(path_dat: Path, encoding_out: str = 'utf-8', lang: str = 'en') -> None:
     inferred = infer_lang_from_filename(path_dat)
     if inferred is not None:
-        print(TRANSLATIONS['lang_num_from_name'][lang].format(inferred))
+        print(TL('lang_num_from_name', lang).format(inferred))
     while True:
-        raw = input(TRANSLATIONS['lang_num_prompt'][lang].format(inferred if inferred is not None else TRANSLATIONS['no_suggestion'][lang])).strip()
+        raw = input(TL('lang_num_prompt', lang).format(inferred if inferred is not None else TL('no_suggestion', lang))).strip()
         if raw == '' and inferred is not None:
             lang_num = inferred
             break
@@ -1110,27 +1693,27 @@ def option_import_s4(path_dat: Path, encoding_out: str = 'utf-8', lang: str = 'e
             lang_num = int(raw)
             break
         except ValueError:
-            print(TRANSLATIONS['invalid_number'][lang])
+            print(TL('invalid_number', lang))
 
     lang_name = LANG_MAP.get(lang_num, (f"LANG_{lang_num}", ['latin-1']))[0]
     suggested_list = LANG_MAP.get(lang_num, (None, ['latin-1']))[1]
     suggested_encoding = suggested_list[0] if suggested_list else 'latin-1'
-    print(TRANSLATIONS['selected_lang'][lang].format(lang_name, lang_num, ', '.join(suggested_list)))
+    print(TL('selected_lang', lang).format(lang_name, lang_num, ', '.join(suggested_list)))
 
     enc_choice = suggested_encoding or ''
     if enc_choice:
-        use_sug = input(TRANSLATIONS['use_suggested_enc'][lang].format(enc_choice)).strip().lower()
+        use_sug = input(TL('use_suggested_enc', lang).format(enc_choice)).strip().lower()
         if use_sug == '' or use_sug in ('y','yes','t','tak'):
             chosen_enc = enc_choice
         else:
-            chosen_enc = input(TRANSLATIONS['enc_input_prompt'][lang]).strip() or enc_choice
+            chosen_enc = input(TL('enc_input_prompt', lang)).strip() or enc_choice
     else:
-        chosen_enc = input(TRANSLATIONS['enc_input_prompt'][lang]).strip() or 'latin-1'
+        chosen_enc = input(TL('enc_input_prompt', lang)).strip() or 'latin-1'
 
     try:
         header_bytes, texts_bytes = read_s4_dat(path_dat)
     except Exception as e:
-        print(TRANSLATIONS['dat_read_error'][lang].format(e))
+        print(TL('dat_read_error', lang).format(e))
         return
 
     texts_decoded = []
@@ -1157,14 +1740,14 @@ def option_import_s4(path_dat: Path, encoding_out: str = 'utf-8', lang: str = 'e
     out_name = f"{lang_name}.s4_translation_project"
     out_path = path_dat.parent / out_name
     if out_path.exists():
-        if not confirm(TRANSLATIONS['file_exists_overwrite'][lang].format(out_path), default=False, lang=lang):
-            print(TRANSLATIONS['canceled_project_save'][lang])
+        if not confirm(TL('file_exists_overwrite', lang).format(out_path), default=False, lang=lang):
+            print(TL('canceled_project_save', lang))
             return
     try:
         write_file(out_path, ''.join(parts), encoding=encoding_out)
-        print(TRANSLATIONS['project_saved'][lang].format(out_path, encoding_out))
+        print(TL('project_saved', lang).format(out_path, encoding_out))
     except Exception as e:
-        print(TRANSLATIONS['project_write_error'][lang].format(e))
+        print(TL('project_write_error', lang).format(e))
 
 
 def option_export_proj_to_dat(path_proj: Path | None = None, lang: str = 'en') -> None:
@@ -1177,17 +1760,17 @@ def option_export_proj_to_dat(path_proj: Path | None = None, lang: str = 'en') -
     # 1) ścieżka pliku projektu
     if path_proj is None:
         while True:
-            raw = input(TRANSLATIONS['project_export_prompt'][lang]).strip()
+            raw = input(TL('project_export_prompt', lang)).strip()
             if not raw:
-                print(TRANSLATIONS['project_path_required'][lang])
+                print(TL('project_path_required', lang))
                 return
             try:
                 path_proj = sanitize_path(raw)
             except Exception as e:
-                print(TRANSLATIONS['invalid_path'][lang].format(e))
+                print(TL('invalid_path', lang).format(e))
                 continue
             if not path_proj.exists():
-                print(TRANSLATIONS['file_not_exists'][lang].format('.s4_translation_project', path_proj))
+                print(TL('file_not_exists', lang).format('.s4_translation_project', path_proj))
                 continue
             if not validate_project_file(path_proj, lang=lang):
                 continue
@@ -1200,7 +1783,7 @@ def option_export_proj_to_dat(path_proj: Path | None = None, lang: str = 'en') -
     try:
         text = read_file(path_proj, encoding='utf-8')
     except Exception as e:
-        print(TRANSLATIONS['project_read_error'][lang].format(e))
+        print(TL('project_read_error', lang).format(e))
         return
 
     header_text, order, blocks_map = parse_blocks_linewise(text)
@@ -1216,28 +1799,28 @@ def option_export_proj_to_dat(path_proj: Path | None = None, lang: str = 'en') -
                     hb = [int(x) & 0xFF for x in nums[:4]]
                     if all(0 <= x <= 255 for x in hb):
                         header_bytes = bytes(hb)
-                        print(TRANSLATIONS['header_found'][lang].format(hb))
+                        print(TL('header_found', lang).format(hb))
                 except Exception:
                     header_bytes = None
 
     # jeśli nie znaleziono, poproś użytkownika o podanie 4 liczb
     if header_bytes is None:
-        print(TRANSLATIONS['header_not_found'][lang])
+        print(TL('header_not_found', lang))
         while True:
-            raw_hdr = input(TRANSLATIONS['header_prompt'][lang]).strip()
+            raw_hdr = input(TL('header_prompt', lang)).strip()
             parts = raw_hdr.split()
             if len(parts) != 4:
-                print(TRANSLATIONS['exactly_4_numbers'][lang])
+                print(TL('exactly_4_numbers', lang))
                 continue
             try:
                 nums = [int(x) for x in parts]
                 if any(n < 0 or n > 255 for n in nums):
-                    print(TRANSLATIONS['numbers_0_255'][lang])
+                    print(TL('numbers_0_255', lang))
                     continue
                 header_bytes = bytes(nums)
                 break
             except ValueError:
-                print(TRANSLATIONS['invalid_numbers'][lang])
+                print(TL('invalid_numbers', lang))
 
     # 4) sugeruj numer języka na podstawie nazwy pliku projektu (szukamy nazwy języka z LANG_MAP)
     name_upper = path_proj.name.upper()
@@ -1251,35 +1834,35 @@ def option_export_proj_to_dat(path_proj: Path | None = None, lang: str = 'en') -
             break
 
     # pokaż listę języków i zaproponuj sugerowany numer (jeśli znaleziono)
-    print(TRANSLATIONS['available_langs'][lang])
+    print(TL('available_langs', lang))
     for k in sorted(LANG_MAP.keys()):
         print(f"  {k} : {LANG_MAP[k][0]}")
     if inferred is not None:
-        print(TRANSLATIONS['lang_suggestion'][lang].format(inferred, LANG_MAP[inferred][0]))
+        print(TL('lang_suggestion', lang).format(inferred, LANG_MAP[inferred][0]))
     while True:
-        raw_lang = input(TRANSLATIONS['lang_num_save_prompt'][lang].format(inferred if inferred is not None else '')).strip()
+        raw_lang = input(TL('lang_num_save_prompt', lang).format(inferred if inferred is not None else '')).strip()
         if raw_lang == '' and inferred is not None:
             lang_num = inferred
             break
         try:
             lang_num = int(raw_lang)
             if lang_num not in LANG_MAP:
-                print(TRANSLATIONS['unknown_lang_num'][lang])
+                print(TL('unknown_lang_num', lang))
                 continue
             break
         except ValueError:
-            print(TRANSLATIONS['invalid_number'][lang])
+            print(TL('invalid_number', lang))
 
     lang_name = LANG_MAP[lang_num][0]
     enc_candidates = LANG_MAP[lang_num][1][:]
     if 'utf-8' not in enc_candidates:
         enc_candidates.append('utf-8')
 
-    print(TRANSLATIONS['selected_lang_save'][lang].format(lang_name, lang_num, ', '.join(enc_candidates)))
+    print(TL('selected_lang', lang).format(lang_name, lang_num, ', '.join(enc_candidates)))
     chosen_enc = enc_candidates[0]
-    use_sug = input(TRANSLATIONS['use_suggested_enc'][lang].format(chosen_enc)).strip().lower()
+    use_sug = input(TL('use_suggested_enc', lang).format(chosen_enc)).strip().lower()
     if use_sug != '' and use_sug not in ('y','yes','t','tak'):
-        custom = input(TRANSLATIONS['custom_enc_prompt'][lang]).strip()
+        custom = input(TL('custom_enc_prompt', lang)).strip()
         if custom:
             chosen_enc = custom
 
@@ -1288,10 +1871,10 @@ def option_export_proj_to_dat(path_proj: Path | None = None, lang: str = 'en') -
     if existing_nums:
         max_index = max(existing_nums)
     else:
-        print(TRANSLATIONS['no_blocks'][lang])
+        print(TL('no_blocks', lang))
         return
 
-    print(TRANSLATIONS['save_texts_from_to'][lang].format(max_index, max_index))
+    print(TL('save_texts_from_to', lang).format(max_index, max_index))
 
     # 6) przygotuj dane do zapisu: dla i=1..max_index zapisz długość i dane (brak -> długość 0)
     texts_bytes = []
@@ -1323,7 +1906,7 @@ def option_export_proj_to_dat(path_proj: Path | None = None, lang: str = 'en') -
 
     # 7) wybierz nazwę pliku wyjściowego (domyślnie s4_texts.dat<langnum>)
     default_out = path_proj.with_name(f"s4_texts.dat{lang_num}")
-    out_input = input(TRANSLATIONS['out_file_prompt'][lang].format(default_out)).strip()
+    out_input = input(TL('out_file_prompt', lang).format(default_out)).strip()
     if out_input == '':
         out_path = default_out
     else:
@@ -1331,11 +1914,11 @@ def option_export_proj_to_dat(path_proj: Path | None = None, lang: str = 'en') -
 
     # 8) sprawdź nadpisanie
     if out_path.exists():
-        if not confirm(TRANSLATIONS['file_exists_overwrite'][lang].format(out_path), default=False, lang=lang):
+        if not confirm(TL('file_exists_overwrite', lang).format(out_path), default=False, lang=lang):
             alt = out_path.with_name(out_path.stem + '_exported' + out_path.suffix)
-            print(TRANSLATIONS['save_as_alt'][lang].format(alt))
-            if not confirm(TRANSLATIONS['confirm_save_as'][lang].format(alt), default=True, lang=lang):
-                print(TRANSLATIONS['save_canceled'][lang])
+            print(TL('save_as_alt', lang).format(alt))
+            if not confirm(TL('confirm_save_as', lang).format(alt), default=True, lang=lang):
+                print(TL('save_canceled', lang))
                 return
             out_path = alt
 
@@ -1349,21 +1932,21 @@ def option_export_proj_to_dat(path_proj: Path | None = None, lang: str = 'en') -
                 if length > 0:
                     f.write(b)
     except Exception as e:
-        print(TRANSLATIONS['dat_write_error'][lang].format(e))
+        print(TL('dat_write_error', lang).format(e))
         return
 
-    print(TRANSLATIONS['dat_saved'][lang].format(out_path))
-    print(TRANSLATIONS['last_text_num'][lang].format(max_index))
-    print(TRANSLATIONS['texts_count'][lang].format(len(texts_bytes), empty_count, chosen_enc))
+    print(TL('dat_saved', lang).format(out_path))
+    print(TL('last_text_num', lang).format(max_index))
+    print(TL('texts_count', lang).format(len(texts_bytes), empty_count, chosen_enc))
     
 
 # --- podgląd tekstów z pliku .dat z interaktywnym testowaniem kodowań i zapisu testu ---
 def option_preview_dat(path_dat: Path, lang: str = 'en') -> None:
     inferred = infer_lang_from_filename(path_dat)
     if inferred is not None:
-        print(TRANSLATIONS['lang_num_from_name'][lang].format(inferred))
+        print(TL('lang_num_from_name', lang).format(inferred))
     while True:
-        raw = input(TRANSLATIONS['lang_num_prompt'][lang].format(inferred if inferred is not None else TRANSLATIONS['no_suggestion'][lang])).strip()
+        raw = input(TL('lang_num_prompt', lang).format(inferred if inferred is not None else TL('no_suggestion', lang))).strip()
         if raw == '' and inferred is not None:
             lang_num = inferred
             break
@@ -1371,41 +1954,41 @@ def option_preview_dat(path_dat: Path, lang: str = 'en') -> None:
             lang_num = int(raw)
             break
         except ValueError:
-            print(TRANSLATIONS['invalid_number'][lang])
+            print(TL('invalid_number', lang))
 
     lang_name = LANG_MAP.get(lang_num, (f"LANG_{lang_num}", ['latin-1']))[0]
     suggested_list = LANG_MAP.get(lang_num, (None, ['latin-1']))[1]
-    print(TRANSLATIONS['selected_lang'][lang].format(lang_name, lang_num, ', '.join(suggested_list)))
+    print(TL('selected_lang', lang).format(lang_name, lang_num, ', '.join(suggested_list)))
 
     try:
         header_bytes, texts_bytes = read_s4_dat(path_dat)
     except Exception as e:
-        print(TRANSLATIONS['dat_read_error'][lang].format(e))
+        print(TL('dat_read_error', lang).format(e))
         return
 
     total = len(texts_bytes)
-    print(TRANSLATIONS['texts_count_dat'][lang].format(total))
+    print(TL('texts_count_dat', lang).format(total))
 
     # wybór zakresu lub pojedynczego numeru; jeśli użytkownik wybierze "single" -> można testować wszystkie kodowania
     while True:
-        sel = input(TRANSLATIONS['range_prompt'][lang]).strip()
+        sel = input(TL('range_prompt', lang)).strip()
         if sel.lower() == 'all':
             start_idx, end_idx = 1, total
             single_for_all_enc = False
             break
         if sel.lower() == 'single':
             while True:
-                s2 = input(TRANSLATIONS['single_text_prompt'][lang]).strip()
+                s2 = input(TL('single_text_prompt', lang)).strip()
                 try:
                     idx = int(s2)
                     if idx < 1 or idx > total:
-                        print(TRANSLATIONS['out_of_range'][lang])
+                        print(TL('out_of_range', lang))
                         continue
                     start_idx = end_idx = idx
                     single_for_all_enc = True
                     break
                 except ValueError:
-                    print(TRANSLATIONS['invalid_number'][lang])
+                    print(TL('invalid_number', lang))
             break
         if '-' in sel:
             parts = sel.split('-', 1)
@@ -1413,29 +1996,29 @@ def option_preview_dat(path_dat: Path, lang: str = 'en') -> None:
                 start_idx = int(parts[0])
                 end_idx = int(parts[1])
                 if start_idx < 1 or end_idx < start_idx:
-                    print(TRANSLATIONS['invalid_range'][lang])
+                    print(TL('invalid_range', lang))
                     continue
                 if start_idx > total:
-                    print(TRANSLATIONS['out_of_range_start'][lang])
+                    print(TL('out_of_range_start', lang))
                     continue
                 if end_idx > total:
                     end_idx = total
                 single_for_all_enc = False
                 break
             except ValueError:
-                print(TRANSLATIONS['invalid_format'][lang])
+                print(TL('invalid_format', lang))
                 continue
         else:
             try:
                 idx = int(sel)
                 if idx < 1 or idx > total:
-                    print(TRANSLATIONS['out_of_range'][lang])
+                    print(TL('out_of_range', lang))
                     continue
                 start_idx = end_idx = idx
                 single_for_all_enc = False
                 break
             except ValueError:
-                print(TRANSLATIONS['invalid_number'][lang])
+                print(TL('invalid_number', lang))
                 continue
 
     # przygotuj listę kandydatów kodowań
@@ -1452,7 +2035,7 @@ def option_preview_dat(path_dat: Path, lang: str = 'en') -> None:
     if single_for_all_enc:
         idx = start_idx
         b = texts_bytes[idx-1]
-        log_lines.append(TRANSLATIONS['testing_single_text'][lang].format(idx))
+        log_lines.append(TL('testing_single_text', lang).format(idx))
         for enc in candidates:
             try:
                 txt = b.decode(enc)
@@ -1466,21 +2049,21 @@ def option_preview_dat(path_dat: Path, lang: str = 'en') -> None:
             log_lines.append(txt if txt != '' else "(empty)")
             log_lines.append("\n####\n")
         # zapytaj o zapis
-        save = input(TRANSLATIONS['save_test_prompt'][lang].format(lang_name)).strip().lower()
+        save = input(TL('save_test_prompt', lang).format(lang_name)).strip().lower()
         if save in ('y','yes','t','tak'):
             out_path = path_dat.parent / f"{lang_name}_encoding_test.txt"
             if out_path.exists():
-                if not confirm(TRANSLATIONS['file_exists_overwrite'][lang].format(out_path), default=False, lang=lang):
-                    print(TRANSLATIONS['canceled_test_save'][lang])
+                if not confirm(TL('file_exists_overwrite', lang).format(out_path), default=False, lang=lang):
+                    print(TL('canceled_test_save', lang))
                     return
             try:
                 write_file(out_path, '\n'.join(log_lines), encoding='utf-8')
-                print(TRANSLATIONS['test_saved'][lang].format(out_path))
+                print(TL('test_saved', lang).format(out_path))
             except Exception as e:
-                print(TRANSLATIONS['test_save_error'][lang].format(e))
+                print(TL('test_save_error', lang).format(e))
         else:
-            print(TRANSLATIONS['test_not_saved'][lang])
-        print(TRANSLATIONS['end_all_enc_test'][lang])
+            print(TL('test_not_saved', lang))
+        print(TL('end_all_enc_test', lang))
         return
 
     # interaktywne testowanie pojedynczych kodowań lub sekwencji
@@ -1488,20 +2071,20 @@ def option_preview_dat(path_dat: Path, lang: str = 'en') -> None:
     chosen_enc = default_enc
 
     while True:
-        print(TRANSLATIONS['suggested_encs'][lang])
+        print(TL('suggested_encs', lang))
         for i, c in enumerate(candidates, start=1):
             print(f"  {i}) {c}")
-        print(TRANSLATIONS['custom_enc'][lang])
-        print(TRANSLATIONS['back_to_menu'][lang])
+        print(TL('custom_enc', lang))
+        print(TL('back_to_menu', lang))
 
-        sel_enc = input(TRANSLATIONS['choose_enc_prompt'][lang].format(default_enc)).strip()
+        sel_enc = input(TL('choose_enc_prompt', lang).format(default_enc)).strip()
         if sel_enc == '':
             chosen_enc = default_enc
         elif sel_enc.lower() in ('m','menu'):
-            print(TRANSLATIONS['back_to_menu_msg'][lang])
+            print(TL('back_to_menu_msg', lang))
             return
         elif sel_enc.lower() == 'a':
-            chosen_enc = input(TRANSLATIONS['custom_enc_prompt_preview'][lang]).strip()
+            chosen_enc = input(TL('custom_enc_prompt_preview', lang)).strip()
             if chosen_enc == '':
                 chosen_enc = default_enc
         else:
@@ -1510,7 +2093,7 @@ def option_preview_dat(path_dat: Path, lang: str = 'en') -> None:
                 if 1 <= idx_choice <= len(candidates):
                     chosen_enc = candidates[idx_choice-1]
                 else:
-                    print(TRANSLATIONS['invalid_enc_choice'][lang])
+                    print(TL('invalid_enc_choice', lang))
                     continue
             except ValueError:
                 chosen_enc = sel_enc
@@ -1535,43 +2118,43 @@ def option_preview_dat(path_dat: Path, lang: str = 'en') -> None:
             log_lines.append('####\n')
 
         # po teście zapytaj czy testować kolejne kodowanie czy wrócić
-        again = input(TRANSLATIONS['test_another_enc'][lang]).strip().lower()
+        again = input(TL('test_another_enc', lang)).strip().lower()
         if again == '' or again in ('y','yes','t','tak'):
             continue
         else:
             # zapytaj czy zapisać log testu
-            save = input(TRANSLATIONS['save_test_prompt'][lang].format(lang_name)).strip().lower()
+            save = input(TL('save_test_prompt', lang).format(lang_name)).strip().lower()
             if save in ('y','yes','t','tak'):
                 out_path = path_dat.parent / f"{lang_name}_encoding_test.txt"
                 if out_path.exists():
-                    if not confirm(TRANSLATIONS['file_exists_overwrite'][lang].format(out_path), default=False, lang=lang):
-                        print(TRANSLATIONS['canceled_test_save'][lang])
+                    if not confirm(TL('file_exists_overwrite', lang).format(out_path), default=False, lang=lang):
+                        print(TL('canceled_test_save', lang))
                         return
                 try:
                     write_file(out_path, '\n'.join(log_lines), encoding='utf-8')
-                    print(TRANSLATIONS['test_saved'][lang].format(out_path))
+                    print(TL('test_saved', lang).format(out_path))
                 except Exception as e:
-                    print(TRANSLATIONS['test_save_error'][lang].format(e))
+                    print(TL('test_save_error', lang).format(e))
             else:
-                print(TRANSLATIONS['test_not_saved'][lang])
-            print(TRANSLATIONS['back_to_menu_msg'][lang])
+                print(TL('test_not_saved', lang))
+            print(TL('back_to_menu_msg', lang))
             return
     
 
 # --- shift ids (przesunięcie numerów) ---
 def option_shift_ids(path_a: Path, encoding: str = 'utf-8', lang: str = 'en') -> None:
     while True:
-        raw_a2 = input(TRANSLATIONS['path_a_shift_prompt'][lang]).strip()
+        raw_a2 = input(TL('path_a_prompt', lang)).strip()
         if not raw_a2:
-            print(TRANSLATIONS['path_a_required'][lang])
+            print(TL('path_a_required', lang))
             return
         try:
             path_a = sanitize_path(raw_a2)
         except Exception as e:
-            print(TRANSLATIONS['invalid_path'][lang].format(e))
+            print(TL('invalid_path', lang).format(e))
             continue
         if not path_a.exists():
-            print(TRANSLATIONS['file_not_exists'][lang].format('A', path_a))
+            print(TL('file_not_exists', lang).format('A', path_a))
             continue
         if not validate_project_file(path_a, encoding, lang):
             continue
@@ -1581,36 +2164,36 @@ def option_shift_ids(path_a: Path, encoding: str = 'utf-8', lang: str = 'en') ->
     header_a, order_a, map_a = parse_blocks_linewise(text_a)
 
     if not order_a:
-        print(TRANSLATIONS['no_blocks_found'][lang])
+        print(TL('no_blocks_found', lang))
         return
 
     first = order_a[0]
     last = order_a[-1]
     count = len(order_a)
-    print(TRANSLATIONS['blocks_found'][lang].format(count, first, last))
+    print(TL('blocks_found', lang).format(count, first, last))
 
     while True:
-        raw = input(TRANSLATIONS['offset_prompt'][lang]).strip()
+        raw = input(TL('offset_prompt', lang)).strip()
         if raw == '':
-            print(TRANSLATIONS['no_value_canceled'][lang])
+            print(TL('no_value_canceled', lang))
             return
         try:
             offset = int(raw)
         except ValueError:
-            print(TRANSLATIONS['invalid_integer'][lang])
+            print(TL('invalid_integer', lang))
             continue
         if offset == 0:
-            print(TRANSLATIONS['offset_zero'][lang])
+            print(TL('offset_zero', lang))
             return
         break
 
     new_ids = [i + offset for i in order_a]
     if any(i <= 0 for i in new_ids):
-        print(TRANSLATIONS['negative_ids_error'][lang])
+        print(TL('negative_ids_error', lang))
         return
 
     if len(set(new_ids)) != len(new_ids):
-        print(TRANSLATIONS['duplicates_error'][lang])
+        print(TL('duplicates_error', lang))
         return
 
     parts = []
@@ -1624,30 +2207,30 @@ def option_shift_ids(path_a: Path, encoding: str = 'utf-8', lang: str = 'en') ->
         parts.append('####\n')
     result_text = ''.join(parts)
 
-    print(TRANSLATIONS['save_shift_method'][lang])
-    print(TRANSLATIONS['overwrite_a_shift'][lang])
-    print(TRANSLATIONS['save_new_shift'][lang])
-    choice = input(TRANSLATIONS['choose_1_or_2_shift'][lang]).strip() or '2'
+    print(TL('save_shift_method', lang))
+    print(TL('overwrite_a_backup', lang))
+    print(TL('save_new_shift', lang))
+    choice = input(TL('choose_1_or_2_shift', lang)).strip() or '2'
 
     if choice == '1':
         bak = path_a.with_suffix(path_a.suffix + '.bak')
         try:
             shutil.copy2(path_a, bak)
-            print(TRANSLATIONS['backup_created'][lang].format(bak))
+            print(TL('backup_created', lang).format(bak))
         except Exception as e:
-            print(TRANSLATIONS['backup_failed'][lang].format(e))
-            if not confirm(TRANSLATIONS['continue_without_backup'][lang], default=False, lang=lang):
-                print(TRANSLATIONS['canceled'][lang])
+            print(TL('backup_failed', lang).format(e))
+            if not confirm(TL('continue_without_backup', lang), default=False, lang=lang):
+                print(TL('canceled', lang))
                 return
         try:
             write_file(path_a, result_text, encoding=encoding)
-            print(TRANSLATIONS['overwritten_a'][lang].format(path_a))
+            print(TL('overwritten_a', lang).format(path_a))
         except Exception as e:
-            print(TRANSLATIONS['write_error'][lang].format(e))
+            print(TL('write_error', lang).format(e))
             return
     elif choice == '2':
         suggested = path_a.with_name(path_a.stem + '_shifted' + path_a.suffix)
-        out_path_input = input(TRANSLATIONS['out_path_prompt'][lang].format(suggested)).strip()
+        out_path_input = input(TL('out_path_prompt', lang).format(suggested)).strip()
         if out_path_input == '':
             out_path = suggested
         else:
@@ -1661,20 +2244,20 @@ def option_shift_ids(path_a: Path, encoding: str = 'utf-8', lang: str = 'en') ->
             try:
                 out_dir.mkdir(parents=True, exist_ok=True)
             except Exception as e:
-                print(TRANSLATIONS['dir_create_failed'][lang].format(out_dir, e))
+                print(TL('dir_create_failed', lang).format(out_dir, e))
                 return
         if out_path.exists():
-            if not confirm(TRANSLATIONS['file_exists_overwrite'][lang].format(out_path), default=False, lang=lang):
-                print(TRANSLATIONS['canceled'][lang])
+            if not confirm(TL('file_exists_overwrite', lang).format(out_path), default=False, lang=lang):
+                print(TL('canceled', lang))
                 return
         try:
             write_file(out_path, result_text, encoding=encoding)
-            print(TRANSLATIONS['shifted_saved'][lang].format(out_path))
+            print(TL('shifted_saved', lang).format(out_path))
         except Exception as e:
-            print(TRANSLATIONS['write_error'][lang].format(e))
+            print(TL('write_error', lang).format(e))
             return
     else:
-        print(TRANSLATIONS['invalid_save_choice'][lang])
+        print(TL('invalid_save_choice', lang))
         return
         
 def option_fix_missing_entries(path_proj: Path | None = None, encoding: str = 'utf-8', lang: str = 'en') -> None:
@@ -1685,17 +2268,17 @@ def option_fix_missing_entries(path_proj: Path | None = None, encoding: str = 'u
     # pobierz ścieżkę pliku projektu
     if path_proj is None:
         while True:
-            raw = input(TRANSLATIONS['project_path_fix_prompt'][lang]).strip()
+            raw = input(TL('project_path_prompt', lang)).strip()
             if not raw:
-                print(TRANSLATIONS['no_path_canceled'][lang])
+                print(TL('no_path_canceled', lang))
                 return
             try:
                 path_proj = sanitize_path(raw)
             except Exception as e:
-                print(TRANSLATIONS['invalid_path'][lang].format(e))
+                print(TL('invalid_path', lang).format(e))
                 continue
             if not path_proj.exists():
-                print(TRANSLATIONS['file_not_exists'][lang].format('', path_proj))
+                print(TL('file_not_exists', lang).format('', path_proj))
                 continue
             if not validate_project_file(path_proj, encoding, lang):
                 continue
@@ -1706,9 +2289,9 @@ def option_fix_missing_entries(path_proj: Path | None = None, encoding: str = 'u
 
     # wybór przedziału
     while True:
-        rng = input(TRANSLATIONS['range_fix_prompt'][lang]).strip()
+        rng = input(TL('range_fix_prompt', lang)).strip()
         if not rng:
-            print(TRANSLATIONS['no_range_canceled'][lang])
+            print(TL('no_range_canceled', lang))
             return
         if '-' in rng:
             parts = rng.split('-', 1)
@@ -1716,29 +2299,29 @@ def option_fix_missing_entries(path_proj: Path | None = None, encoding: str = 'u
                 start = int(parts[0])
                 end = int(parts[1])
                 if start < 1 or end < start:
-                    print(TRANSLATIONS['invalid_range_fix'][lang])
+                    print(TL('invalid_range_fix', lang))
                     continue
                 break
             except ValueError:
-                print(TRANSLATIONS['invalid_format'][lang])
+                print(TL('invalid_format', lang))
                 continue
         else:
             try:
                 n = int(rng)
                 if n < 1:
-                    print(TRANSLATIONS['num_ge_1'][lang])
+                    print(TL('num_ge_1', lang))
                     continue
                 start = end = n
                 break
             except ValueError:
-                print(TRANSLATIONS['invalid_number'][lang])
+                print(TL('invalid_number', lang))
                 continue
 
     # wczytaj plik i sparsuj bloki
     try:
         text = read_file(path_proj, encoding=encoding)
     except Exception as e:
-        print(TRANSLATIONS['project_read_error'][lang].format(e))
+        print(TL('project_read_error', lang).format(e))
         return
 
     header, order, blocks_map = parse_blocks_linewise(text)
@@ -1750,7 +2333,7 @@ def option_fix_missing_entries(path_proj: Path | None = None, encoding: str = 'u
             missing.append(i)
 
     if not missing:
-        print(TRANSLATIONS['no_missing_entries'][lang])
+        print(TL('no_missing_entries', lang))
         return
 
     # budowanie nowej zawartości
@@ -1784,19 +2367,19 @@ def option_fix_missing_entries(path_proj: Path | None = None, encoding: str = 'u
     result_text = ''.join(parts)
 
     # --- raport i logika zapisu ---
-    print(TRANSLATIONS['missing_found'][lang].format(len(added)))
+    print(TL('missing_found', lang).format(len(added)))
     if added:
-        print(TRANSLATIONS['added_numbers_fix'][lang].format(', '.join(map(str, added))))
+        print(TL('added_numbers_fix', lang).format(', '.join(map(str, added))))
     else:
-        print(TRANSLATIONS['no_added_unexpected'][lang])
+        print(TL('no_added_unexpected', lang))
 
-    print(TRANSLATIONS['overwrite_prompt'][lang])
-    if confirm(TRANSLATIONS['overwrite_file'][lang], default=False, lang=lang):
+    print(TL('overwrite_prompt', lang))
+    if confirm(TL('overwrite_file', lang), default=False, lang=lang):
         try:
             write_file(path_proj, result_text, encoding=encoding)
-            print(TRANSLATIONS['overwritten'][lang].format(path_proj))
+            print(TL('overwritten', lang).format(path_proj))
         except Exception as e:
-            print(TRANSLATIONS['write_error'][lang].format(e))
+            print(TL('write_error', lang).format(e))
         return
 
     # jeśli NIE nadpisujemy → zapisz jako nowy
@@ -1804,15 +2387,15 @@ def option_fix_missing_entries(path_proj: Path | None = None, encoding: str = 'u
     stem = path_proj.stem
     new_path = path_proj.with_name(f"{stem}_fixed{ext}")
 
-    print(TRANSLATIONS['save_as_new_prompt'][lang].format(new_path))
-    if confirm(TRANSLATIONS['save_as_new'][lang], default=True, lang=lang):
+    print(TL('save_as_new', lang).format(new_path))
+    if confirm(TL('save_as_new', lang), default=True, lang=lang):
         try:
             write_file(new_path, result_text, encoding=encoding)
-            print(TRANSLATIONS['new_saved'][lang].format(new_path))
+            print(TL('new_saved', lang).format(new_path))
         except Exception as e:
-            print(TRANSLATIONS['write_error'][lang].format(e))
+            print(TL('write_error', lang).format(e))
     else:
-        print(TRANSLATIONS['save_canceled'][lang])
+        print(TL('save_canceled', lang))
 
 def option_align_versions(path_a: Path, path_b: Path, encoding: str = 'utf-8', max_tries_default: int = 5, lang: str = 'en') -> None:
     """
@@ -1827,10 +2410,10 @@ def option_align_versions(path_a: Path, path_b: Path, encoding: str = 'utf-8', m
 
     # walidacja plików
     if not path_a.exists():
-        print(TRANSLATIONS['file_not_exists'][lang].format('A', path_a))
+        print(TL('file_not_exists', lang).format('A', path_a))
         return
     if not path_b.exists():
-        print(TRANSLATIONS['file_not_exists'][lang].format('B', path_b))
+        print(TL('file_not_exists', lang).format('B', path_b))
         return
 
     # walidacja poprawności plików projektu
@@ -1845,11 +2428,11 @@ def option_align_versions(path_a: Path, path_b: Path, encoding: str = 'utf-8', m
 
     total_a = len(order_a)
     total_b = len(order_b)
-    print(TRANSLATIONS['files_count'][lang].format(path_a, total_a, path_b, total_b))
+    print(TL('files_count', lang).format(path_a, total_a, path_b, total_b))
 
     # ile prób przesunięcia w A (domyślnie)
     try:
-        raw = input(TRANSLATIONS['max_tries_prompt'][lang].format(max_tries_default)).strip()
+        raw = input(TL('max_tries_prompt', lang).format(max_tries_default)).strip()
         max_tries = int(raw) if raw != '' else max_tries_default
         if max_tries < 1:
             max_tries = max_tries_default
@@ -1945,7 +2528,7 @@ def option_align_versions(path_a: Path, path_b: Path, encoding: str = 'utf-8', m
             if current_offset is None or offset != current_offset:
                 current_offset = offset
                 offset_history.append((current_offset, candidate_n, m_index))
-                print(TRANSLATIONS['new_offset_set'][lang].format(current_offset, candidate_n, m_index))
+                print(TL('new_offset_set', lang).format(current_offset, candidate_n, m_index))
 
             # sekwencyjne dopasowanie kolejnych wpisów (ignorując białe znaki)
             seq_pairs: list[tuple[int, int]] = []
@@ -2020,14 +2603,14 @@ def option_align_versions(path_a: Path, path_b: Path, encoding: str = 'utf-8', m
         off = find_offset_for_na(na, matching_ranges_sorted, offset_history_sorted)
 
         if off is None:
-            reason = TRANSLATIONS['no_offset_reason'][lang]
+            reason = TL('no_offset_reason', lang)
             missing_similarity.append((na, None, None, reason))
             continue
 
         mb_guess = na + off
 
         if mb_guess not in map_b:
-            reason = TRANSLATIONS['mb_guess_not_exist'][lang]
+            reason = TL('mb_guess_not_exist', lang)
             missing_similarity.append((na, mb_guess, None, reason))
             continue
 
@@ -2057,81 +2640,81 @@ def option_align_versions(path_a: Path, path_b: Path, encoding: str = 'utf-8', m
     missing_ranges = compress_ranges(sorted(missing_in_b)) if missing_in_b else []
 
     # raport szczegółowy (przed zapisem)
-    print(TRANSLATIONS['alignment_report'][lang])
-    print(TRANSLATIONS['matched_pairs_count'][lang].format(len(matched_pairs)))
+    print(TL('alignment_report', lang))
+    print(TL('matched_pairs_count', lang).format(len(matched_pairs)))
     if matching_ranges:
-        print(TRANSLATIONS['matched_ranges'][lang])
+        print(TL('matched_ranges', lang))
         last_offset = None
         for (a1, a2, b1, b2, off) in matching_ranges:
             note = ""
             if off != last_offset:
-                note = TRANSLATIONS['new_offset_note'][lang].format(off)
+                note = TL('new_offset_note', lang).format(off)
                 last_offset = off
             if a1 == a2:
                 print(f"  {a1} => {b1}{note}")
             else:
                 print(f"  {a1}-{a2} => {b1}-{b2}{note}")
     else:
-        print(TRANSLATIONS['no_matched_ranges'][lang])
+        print(TL('no_matched_ranges', lang))
 
     if missing_ranges:
-        print(TRANSLATIONS['missing_in_b'][lang])
+        print(TL('missing_in_b', lang))
         for (s, e) in missing_ranges:
             if s == e:
                 print(f"  {s}")
             else:
                 print(f"  {s}-{e}")
     else:
-        print(TRANSLATIONS['all_found'][lang])
+        print(TL('all_found', lang))
 
     # raport podobieństw dla missing_in_b (szczegóły)
     if missing_similarity:
-        print(TRANSLATIONS['missing_details'][lang])
+        print(TL('missing_details', lang))
         for na, mb_guess, sim, reason in missing_similarity:
             if mb_guess is None:
-                print(TRANSLATIONS['no_offset'][lang].format(na))
+                print(TL('no_offset', lang).format(na))
             elif sim is None:
-                print(TRANSLATIONS['no_sim'][lang].format(na, mb_guess, reason))
+                print(TL('no_sim', lang).format(na, mb_guess, reason))
             else:
-                print(TRANSLATIONS['with_sim'][lang].format(na, sim, mb_guess))
+                print(TL('with_sim', lang).format(na, sim, mb_guess))
 
     if placeholder_cases:
-        print(TRANSLATIONS['placeholder_cases'][lang])
+        print(TL('placeholder_cases', lang))
         for na, mb in placeholder_cases:
             print(f"  A:{na}  <-  B:{mb}")
 
     if conflicts:
-        print(TRANSLATIONS['conflicts'][lang])
+        print(TL('conflicts', lang))
         conflicts_sorted = sorted(conflicts, key=lambda x: -(x[4] or 0))
         for na, mb, ta, tb, sim in conflicts_sorted:
             sim_str = f"{sim}%" if sim is not None else "n/a"
-            print(f"  A:{na}  !=  B:{mb}   {TRANSLATIONS['similarity'][lang]}: {sim_str}")
+            print(f"  A:{na}  !=  B:{mb}   {TL('similarity', lang)}: {sim_str}")
 
     # raport historii offsetów
     if offset_history:
-        print(TRANSLATIONS['offset_history'][lang])
+        print(TL('offset_history', lang))
         for off, aidx, bidx in offset_history:
-            print(TRANSLATIONS['offset_set_at'][lang].format(off, aidx, bidx))
+            print(TL('offset_set_at', lang).format(off, aidx, bidx))
 
     # jeśli brak mapowań i brak offsetów, kończymy
     if not mappings and not offset_history:
-        print(TRANSLATIONS['no_matches'][lang])
+        print(TL('no_matches', lang))
         return
 
     # potwierdzenie zapisu
     total_to_save = len(mappings)
-    print(TRANSLATIONS['save_intent'][lang].format(total_to_save))
+    print(TL('save_intent', lang).format(total_to_save))
     sample = matched_pairs[:20]
     if sample:
-        print(TRANSLATIONS['sample_mappings'][lang].format(', '.join(f"{a}->{b}" for a, b in sample)))
+        print(TL('sample_mappings', lang).format(', '.join(f"{a}->{b}" for a, b in sample)))
 
-    if confirm(TRANSLATIONS['overwrite_direct'][lang], default=False, lang=lang):
+    if confirm(TL('overwrite_direct', lang), default=False, lang=lang):
         out_path = path_a
     else:
         out_path = path_a.with_name(path_a.stem + '_aligned' + path_a.suffix)
         if out_path.exists():
-            if not confirm(TRANSLATIONS['file_exists_overwrite'][lang].format(out_path), default=False, lang=lang):
-                print(TRANSLATIONS['save_canceled'][lang])
+            if not confirm(TL('file_exists_overwrite', lang).format(out_path), default=False, lang=lang):
+                print(TL('save_canceled', lang))
                 return
 
     # przygotowanie mapy docelowej: target_index -> content (treść z A, tylko numer zmieniony)
@@ -2155,7 +2738,7 @@ def option_align_versions(path_a: Path, path_b: Path, encoding: str = 'utf-8', m
     # posortuj docelowe indeksy i zbuduj wynikowy tekst
     target_indices = sorted(k for k in target_map.keys() if isinstance(k, int))
     if not target_indices:
-        print(TRANSLATIONS['no_targets'][lang])
+        print(TL('no_targets', lang))
         return
 
     out_parts = []
@@ -2177,12 +2760,12 @@ def option_align_versions(path_a: Path, path_b: Path, encoding: str = 'utf-8', m
     try:
         write_file(out_path, result_text, encoding=encoding)
     except Exception as e:
-        print(TRANSLATIONS['write_error'][lang].format(e))
+        print(TL('write_error', lang).format(e))
         return
 
     # końcowy raport zapisu
-    print(TRANSLATIONS['saved_to'][lang].format(out_path))
-    print(TRANSLATIONS['updated_entries'][lang].format(len(mappings)))
+    print(TL('saved_to', lang).format(out_path))
+    print(TL('updated_entries', lang).format(len(mappings)))
 
     # policz przypisania przez offset
     assigned_by_offset: list[tuple[int, int, int]] = []
@@ -2193,47 +2776,47 @@ def option_align_versions(path_a: Path, path_b: Path, encoding: str = 'utf-8', m
                 assigned_by_offset.append((na, na + off, off))
 
     if assigned_by_offset:
-        print(TRANSLATIONS['assigned_by_offset'][lang].format(len(assigned_by_offset)))
+        print(TL('assigned_by_offset', lang).format(len(assigned_by_offset)))
         for na, mb_guess, off in assigned_by_offset[:200]:
-            print(TRANSLATIONS['assigned_example'][lang].format(na, mb_guess, off))
+            print(TL('assigned_example', lang).format(na, mb_guess, off))
 
     if collisions:
-        print(TRANSLATIONS['collisions_warning'][lang])
+        print(TL('collisions_warning', lang))
         for c in collisions[:50]:
-            print(TRANSLATIONS['collision_example'][lang].format(c[0], c[1]))
+            print(TL('collision_example', lang).format(c[0], c[1]))
 
-    print(TRANSLATIONS['last_a_num'][lang].format(max(sorted(map_a.keys())) if map_a else 0))
-    print(TRANSLATIONS['done'][lang])
+    print(TL('last_a_num', lang).format(max(sorted(map_a.keys())) if map_a else 0))
+    print(TL('done', lang))
     
 
 # --- main menu ---
 def main(lang: str = 'en') -> None:
     while True:
-        print(TRANSLATIONS['main_menu_title'][lang])
-        print(TRANSLATIONS['main_menu_options'][lang])
-        choice = input(TRANSLATIONS['main_menu_prompt'][lang]).strip() or '9'
+        print(TL('main_menu_title', lang))
+        print(TL('main_menu_options', lang))
+        choice = input(TL('main_menu_prompt', lang)).strip() or '9'
 
         if choice not in {'1','2','3','4','5','6','7','8', '9'}:
-            print(TRANSLATIONS['invalid_choice'][lang])
+            print(TL('invalid_choice', lang))
             continue
         if choice == '9':
-            print(TRANSLATIONS['exit_message'][lang])
-            input(TRANSLATIONS['press_enter_to_exit'][lang])
+            print(TL('exit_message', lang))
+            input(TL('press_enter_to_exit', lang))
             sys.exit(0)
 
         if choice == '3':
             while True:
-                raw_dat = input(TRANSLATIONS['path_dat_prompt'][lang]).strip()
+                raw_dat = input(TL('path_dat_prompt', lang)).strip()
                 if not raw_dat:
-                    print(TRANSLATIONS['path_required'][lang])
+                    print(TL('path_required', lang))
                     break
                 try:
                     path_dat = sanitize_path(raw_dat)
                 except Exception as e:
-                    print(TRANSLATIONS['invalid_path'][lang].format(e))
+                    print(TL('invalid_path', lang).format(e))
                     continue
                 if not path_dat.exists():
-                    print(TRANSLATIONS['file_not_exists'][lang].format('.dat', path_dat))
+                    print(TL('file_not_exists', lang).format('.dat', path_dat))
                     continue
                 if not validate_dat_file(path_dat, lang):
                     continue
@@ -2243,17 +2826,17 @@ def main(lang: str = 'en') -> None:
 
         if choice == '4':
             while True:
-                raw_proj = input(TRANSLATIONS['project_export_prompt'][lang]).strip()
+                raw_proj = input(TL('project_export_prompt', lang)).strip()
                 if not raw_proj:
-                    print(TRANSLATIONS['project_path_required'][lang])
+                    print(TL('project_path_required', lang))
                     break
                 try:
                     path_proj = sanitize_path(raw_proj)
                 except Exception as e:
-                    print(TRANSLATIONS['invalid_path'][lang].format(e))
+                    print(TL('invalid_path', lang).format(e))
                     continue
                 if not path_proj.exists():
-                    print(TRANSLATIONS['file_not_exists'][lang].format('.s4_translation_project', path_proj))
+                    print(TL('file_not_exists', lang).format('.s4_translation_project', path_proj))
                     continue
                 if not validate_project_file(path_proj, 'utf-8', lang):
                     continue
@@ -2263,17 +2846,17 @@ def main(lang: str = 'en') -> None:
 
         if choice == '5':
             while True:
-                raw_dat = input(TRANSLATIONS['path_dat_preview_prompt'][lang]).strip()
+                raw_dat = input(TL('path_dat_preview_prompt', lang)).strip()
                 if not raw_dat:
-                    print(TRANSLATIONS['path_required'][lang])
+                    print(TL('path_required', lang))
                     break
                 try:
                     path_dat = sanitize_path(raw_dat)
                 except Exception as e:
-                    print(TRANSLATIONS['invalid_path'][lang].format(e))
+                    print(TL('invalid_path', lang).format(e))
                     continue
                 if not path_dat.exists():
-                    print(TRANSLATIONS['file_not_exists'][lang].format('.dat', path_dat))
+                    print(TL('file_not_exists', lang).format('.dat', path_dat))
                     continue
                 if not validate_dat_file(path_dat, lang):
                     continue
@@ -2283,52 +2866,52 @@ def main(lang: str = 'en') -> None:
 
         if choice in {'1','2','8'}:
             while True:
-                raw_a = input(TRANSLATIONS['path_a_prompt'][lang]).strip()
+                raw_a = input(TL('path_a_prompt', lang)).strip()
                 if not raw_a:
-                    print(TRANSLATIONS['required_paths'][lang])
+                    print(TL('required_paths', lang))
                     break
                 try:
                     path_a = sanitize_path(raw_a)
                 except Exception as e:
-                    print(TRANSLATIONS['invalid_path'][lang].format(e))
+                    print(TL('invalid_path', lang).format(e))
                     continue
                 if not path_a.exists():
-                    print(TRANSLATIONS['file_not_exists'][lang].format('A', path_a))
+                    print(TL('file_not_exists', lang).format('A', path_a))
                     continue
                 if not validate_project_file(path_a, 'utf-8', lang):
                     continue
                 break
 
             while True:
-                raw_b = input(TRANSLATIONS['path_b_prompt'][lang]).strip()
+                raw_b = input(TL('path_b_prompt', lang)).strip()
                 if not raw_b:
-                    print(TRANSLATIONS['required_paths'][lang])
+                    print(TL('required_paths', lang))
                     break
                 try:
                     path_b = sanitize_path(raw_b)
                 except Exception as e:
-                    print(TRANSLATIONS['invalid_path'][lang].format(e))
+                    print(TL('invalid_path', lang).format(e))
                     continue
                 if not path_b.exists():
-                    print(TRANSLATIONS['file_not_exists'][lang].format('B', path_b))
+                    print(TL('file_not_exists', lang).format('B', path_b))
                     continue
                 if not validate_project_file(path_b, 'utf-8', lang):
                     continue
                 break
             if not raw_a or not raw_b:
                 continue
-            encoding = input(TRANSLATIONS['encoding_prompt'][lang]).strip() or 'utf-8'
+            encoding = input(TL('encoding_prompt', lang)).strip() or 'utf-8'
             if choice == '1':
-                out_name = input(TRANSLATIONS['out_name_prompt'][lang]).strip() or 'missingtexts.txt'
+                out_name = input(TL('out_name_prompt', lang)).strip() or 'missingtexts.txt'
                 out_path, missing_ids = generate_missing_texts(path_a, path_b, encoding=encoding, out_name=out_name, lang=lang)
                 if out_path is None:
-                    print(TRANSLATIONS['no_missingtexts_saved'][lang])
+                    print(TL('no_missingtexts_saved', lang))
                 else:
-                    print(TRANSLATIONS['missingtexts_saved'][lang].format(out_path))
+                    print(TL('missingtexts_saved', lang).format(out_path))
                     if missing_ids:
-                        print(TRANSLATIONS['missing_blocks_count'][lang].format(len(missing_ids), ', '.join(map(str, missing_ids))))
+                        print(TL('missing_blocks_count', lang).format(len(missing_ids), ', '.join(map(str, missing_ids))))
                     else:
-                        print(TRANSLATIONS['no_missing_blocks'][lang])
+                        print(TL('no_missing_blocks', lang))
             elif choice == '2':
                 option_merge(path_a, path_b, encoding=encoding, lang=lang)
             else:
@@ -2340,40 +2923,40 @@ def main(lang: str = 'en') -> None:
 
         if choice == '6':
             while True:
-                raw_a2 = input(TRANSLATIONS['path_a_shift_prompt'][lang]).strip()
+                raw_a2 = input(TL('path_a_prompt', lang)).strip()
                 if not raw_a2:
-                    print(TRANSLATIONS['path_a_required'][lang])
+                    print(TL('path_a_required', lang))
                     break
                 try:
                     path_a = sanitize_path(raw_a2)
                 except Exception as e:
-                    print(TRANSLATIONS['invalid_path'][lang].format(e))
+                    print(TL('invalid_path', lang).format(e))
                     continue
                 if not path_a.exists():
-                    print(TRANSLATIONS['file_not_exists'][lang].format('A', path_a))
+                    print(TL('file_not_exists', lang).format('A', path_a))
                     continue
                 if not validate_project_file(path_a, 'utf-8', lang):
                     continue
                 break
             if not raw_a2:
                 continue
-            encoding = input(TRANSLATIONS['encoding_prompt'][lang]).strip() or 'utf-8'
+            encoding = input(TL('encoding_prompt', lang)).strip() or 'utf-8'
             option_shift_ids(path_a, encoding=encoding, lang=lang)
             continue
 
         if choice == '7':
             while True:
-                raw_proj = input(TRANSLATIONS['project_path_fix_prompt'][lang]).strip()
+                raw_proj = input(TL('project_path_prompt', lang)).strip()
                 if not raw_proj:
-                    print(TRANSLATIONS['no_path_canceled'][lang])
+                    print(TL('no_path_canceled', lang))
                     break
                 try:
                     path_proj = sanitize_path(raw_proj)
                 except Exception as e:
-                    print(TRANSLATIONS['invalid_path'][lang].format(e))
+                    print(TL('invalid_path', lang).format(e))
                     continue
                 if not path_proj.exists():
-                    print(TRANSLATIONS['file_not_exists'][lang].format('', path_proj))
+                    print(TL('file_not_exists', lang).format('', path_proj))
                     continue
                 if not validate_project_file(path_proj, 'utf-8', lang):
                     continue
@@ -2382,12 +2965,33 @@ def main(lang: str = 'en') -> None:
             continue
             
 if __name__ == '__main__':
-    lang_choice = input(TRANSLATIONS['choose_lang']['en']).strip() or '2'  # Menu wyboru po angielsku domyślnie
-    if lang_choice == '1':
-        lang = 'pl'
-    elif lang_choice == '2':
-        lang = 'en'
-    else:
-        print(TRANSLATIONS['invalid_choice']['en'])
-        sys.exit(1)
+    print(
+        "Choose program language / Wählen Sie die Sprache /  Wybierz język / "
+        "Scegli la lingua / Elige el idioma / 选择语言 / Выберите язык / 言語を選択:\n"
+        "0) English\n"
+        "1) Deutsch\n"
+        "2) Polski\n"
+        "3) Italiano\n"
+        "4) Español\n"
+        "5) 简体中文\n"
+        "6) Русский\n"
+        "7) 日本語\n"
+        "[0]: ",
+        end=""
+    )
+
+    lang_choice = input().strip() or '0'
+
+    lang_map = {
+        '0': 'en',
+        '1': 'de',
+        '2': 'pl',
+        '3': 'it',
+        '4': 'es',
+        '5': 'zh',
+        '6': 'ru',
+        '7': 'ja'
+    }
+
+    lang = lang_map.get(lang_choice, 'en')
     main(lang=lang)
