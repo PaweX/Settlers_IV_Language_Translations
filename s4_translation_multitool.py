@@ -590,7 +590,8 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                              '  6) Textnummern in Projektdatei A verschieben (Offset)\n'
                              '  7) Fehlende Einträge in Projektdatei reparieren\n'
                              '  8) Textnummern in Projektdatei A an B anpassen (align A ← B)\n'
-                             '  9) Beenden',
+                             '  9) Verschiebungsmappe auf Projektdatei A anwenden (Mapping aus .txt-Datei)\n'
+                             '  0) Beenden',
                        'en': 'Choose an option:\n'
                              '  1) Compare A vs B project files and generate missingtexts.txt (texts from B '
                              'missing/requiring completion in A)\n'
@@ -601,7 +602,8 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                              '  6) Shift text numbers in project file A (offset)\n'
                              '  7) Fix missing entries in project file\n'
                              '  8) Align text numbers in project file A to B (align A ← B)\n'
-                             '  9) Exit',
+                             '  9) Apply shift-map to project file A (mapping from .txt file)\n'
+                             '  0) Exit',
                        'es': 'Elige una opción:\n'
                              '  1) Comparar archivos de proyecto A vs B y generar missingtexts.txt (textos de B que '
                              'faltan o necesitan completarse en A)\n'
@@ -613,11 +615,12 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                              '  6) Desplazar números de texto en el archivo de proyecto A (offset)\n'
                              '  7) Reparar entradas faltantes en el archivo de proyecto\n'
                              '  8) Alinear números de texto del archivo de proyecto A con B (alinear A ← B)\n'
-                             '  9) Salir',
+                             '  9) Aplicar mapa de desplazamientos al archivo de proyecto A (mapa desde archivo .txt)\n'
+                             '  0) Salir',
                        'it': "Scegli un'opzione:\n"
                              '  1) Confronta i file di progetto A vs B e genera missingtexts.txt (testi presenti in B '
                              'ma mancanti o da completare in A)\n'
-                             '  2) Unisci i file di progetto (merge): sostituisci gli esistenti e aggiungi quelli '
+                             '  2) Unisci i file di progetto (merge): sostituisci gli esistenti e aggiungi quelli m '
                              'mancanti da B ad A\n'
                              '  3) Importa da file s4_texts.dat<nr> → genera <LANG>.s4_translation_project\n'
                              '  4) Esporta file .s4_translation_project → s4_texts.dat<nr>\n'
@@ -625,7 +628,8 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                              '  6) Sposta i numeri dei testi nel file di progetto A (offset)\n'
                              '  7) Ripara le voci mancanti nel file di progetto\n'
                              '  8) Allinea i numeri dei testi nel file di progetto A a B (allinea A ← B)\n'
-                             '  9) Esci',
+                             '  9) Applica una mappa di offset al file di progetto A (mappa da file .txt)\n'
+                             '  0) Esci',
                        'ja': 'オプションを選択:\n'
                              '  1) プロジェクトファイル A vs B を比較し missingtexts.txt を生成 (B に欠落/補完が必要なテキスト)\n'
                              '  2) プロジェクトファイルをマージ: 既存を置換し B から欠落分を A に追加\n'
@@ -635,7 +639,8 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                              '  6) プロジェクトファイル A のテキスト番号をオフセット移動\n'
                              '  7) プロジェクトファイルの欠落エントリを修復\n'
                              '  8) プロジェクトファイル A のテキスト番号を B に合わせる (align A ← B)\n'
-                             '  9) 終了',
+                             '  9) 番号シフトマップをプロジェクトファイル A に適用 (.txt ファイルのマップ)\n'
+                             '  0) 終了',
                        'pl': 'Wybierz opcję:\n'
                              '  1) Porównaj pliki projektu A vs B i wygeneruj missingtexts.txt (teksty z B '
                              'brakujące/wymagające uzupełnienia w A)\n'
@@ -646,19 +651,21 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                              '  6) Przesuń numery tekstów w pliku projektu A (offset)\n'
                              '  7) Napraw brakujące wpisy w pliku projektu\n'
                              '  8) Dopasuj numery tekstów w pliku projektu A do B (align A ← B)\n'
-                             '  9) Wyjście',
+                             '  9) Zastosuj mapę przesunięć numerów do pliku projektu A (mapa w pliku .txt)\n'
+                             '  0) Wyjście',
                        'ru': 'Выберите опцию:\n'
-                             '  1) Сравнить файлы проектов A vs B и сгенерировать missingtexts.txt (тексты из B, '
+                             '  1) Сравнить файлы проектов A и B и создать missingtexts.txt (тексты из B, '
                              'отсутствующие или требующие дополнения в A)\n'
                              '  2) Объединить файлы проектов (merge): заменить существующие и добавить недостающие из '
                              'B в A\n'
-                             '  3) Импорт из файла s4_texts.dat<nr> → сгенерировать <LANG>.s4_translation_project\n'
+                             '  3) Импорт из файла s4_texts.dat<nr> → создать <LANG>.s4_translation_project\n'
                              '  4) Экспорт файла .s4_translation_project → s4_texts.dat<nr>\n'
-                             '  5) Предпросмотр текстов из файла .dat (интерактивное тестирование кодировок)\n'
-                             '  6) Сдвинуть номера текстов в файле проекта A (offset)\n'
+                             '  5) Просмотр текстов из файла .dat (интерактивная проверка кодировок)\n'
+                             '  6) Сдвиг номеров текстов в файле проекта A (offset)\n'
                              '  7) Исправить отсутствующие записи в файле проекта\n'
                              '  8) Выровнять номера текстов в файле проекта A по файлу B (align A ← B)\n'
-                             '  9) Выход',
+                             '  9) Применить карту смещений к файлу проекта A (карта из .txt файла)\n'
+                             '  0) Выход',
                        'zh': '选择一个选项：\n'
                              '  1) 比较项目文件 A 与 B 并生成 missingtexts.txt（B 中缺失或需要在 A 中补充的文本）\n'
                              '  2) 合并项目文件（merge）：替换现有内容并从 B 追加缺失内容到 A\n'
@@ -668,7 +675,8 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                              '  6) 在项目文件 A 中偏移文本编号\n'
                              '  7) 修复项目文件中缺失的条目\n'
                              '  8) 将项目文件 A 的文本编号对齐到 B（对齐 A ← B）\n'
-                             '  9) 退出'},
+                             '  9) 将偏移映射应用到项目文件 A（来自 .txt 文件的映射）\n'
+                             '  0) 退出'},
  'main_menu_prompt': {'de': 'Wählen Sie 1, 2, 3, 4, 5, 6, 7, 8 oder 9 [9]: ',
                       'en': 'Choose 1, 2, 3, 4, 5, 6, 7, 8 or 9 [9]: ',
                       'es': 'Elige 1, 2, 3, 4, 5, 6, 7, 8 o 9 [9]: ',
@@ -685,6 +693,110 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                      'pl': '\n=== Settlers IV Translation Multitool (menu) ===',
                      'ru': '\n=== Settlers IV Translation Multitool (меню) ===',
                      'zh': '\n=== Settlers IV 翻译多功能工具 (菜单) ==='},
+ 'map_apply_changes_count': {'de': 'Anzahl der erzeugten Einträge: {0}',
+                             'en': 'Number of generated entries: {0}',
+                             'es': 'Número de entradas generadas: {0}',
+                             'it': 'Numero di voci generate: {0}',
+                             'ja': '生成されたエントリの数: {0}',
+                             'pl': 'Liczba wygenerowanych wpisów: {0}',
+                             'ru': 'Количество созданных записей: {0}',
+                             'zh': '生成的条目数量: {0}'},
+ 'map_apply_changes_list': {'de': 'Angewendete Verschiebungen (A:<Nummer> Offset <Wert>):',
+                            'en': 'Applied shifts (A:<number> offset <value>):',
+                            'es': 'Desplazamientos aplicados (A:<número> offset <valor>):',
+                            'it': 'Offset applicati (A:<numero> offset <valore>):',
+                            'ja': '適用されたシフト (A:<番号> offset <値>):',
+                            'pl': 'Zastosowane przesunięcia (A:<numer> offset <wartość>):',
+                            'ru': 'Применённые смещения (A:<номер> offset <значение>):',
+                            'zh': '应用的偏移 (A:<编号> offset <值>):'},
+ 'map_apply_collisions': {'de': '{0} Zielindex-Kollisionen erkannt:',
+                          'en': '{0} target index collisions detected:',
+                          'es': 'Detectadas {0} colisiones de índices de destino:',
+                          'it': 'Rilevate {0} collisioni di indici di destinazione:',
+                          'ja': '{0} 個のターゲット番号の衝突を検出:',
+                          'pl': 'Wykryto {0} kolizji numerów docelowych:',
+                          'ru': 'Обнаружено {0} конфликтов целевых индексов:',
+                          'zh': '检测到 {0} 个目标索引冲突:'},
+ 'map_apply_done': {'de': 'Verschiebungsmappe angewendet.',
+                    'en': 'Shift map applied.',
+                    'es': 'Mapa de desplazamientos aplicada.',
+                    'it': 'Mappa degli offset applicata.',
+                    'ja': 'シフトマップを適用しました。',
+                    'pl': 'Zastosowano mapę przesunięć.',
+                    'ru': 'Карта смещений применена.',
+                    'zh': '偏移映射已应用。'},
+ 'map_apply_error': {'de': 'Fehler beim Anwenden der Mapping-Datei: {0}',
+                     'en': 'Error applying map: {0}',
+                     'es': 'Error al aplicar el mapa: {0}',
+                     'it': 'Errore durante l’applicazione della mappa: {0}',
+                     'ja': 'マップ適用中のエラー: {0}',
+                     'pl': 'Błąd podczas stosowania mapy: {0}',
+                     'ru': 'Ошибка при применении карты: {0}',
+                     'zh': '应用映射时出错: {0}'},
+ 'map_apply_preview': {'de': '--- Vorschau der Änderungen aus der Verschiebungsmappe ---',
+                       'en': '--- Preview of changes from the shift map ---',
+                       'es': '--- Vista previa de los cambios del mapa de desplazamientos ---',
+                       'it': '--- Anteprima delle modifiche dalla mappa degli offset ---',
+                       'ja': '--- シフトマップによる変更のプレビュー ---',
+                       'pl': '--- Podgląd zmian wynikających z mapy przesunięć ---',
+                       'ru': '--- Предварительный просмотр изменений по карте смещений ---',
+                       'zh': '--- 偏移映射更改预览 ---'},
+ 'map_empty': {'de': 'Die Mapping-Datei ist leer oder enthält keine gültigen Einträge.',
+               'en': 'The map file is empty or contains no valid entries.',
+               'es': 'El archivo de mapa está vacío o no contiene entradas válidas.',
+               'it': 'Il file di mappa è vuoto o non contiene voci valide.',
+               'ja': 'マップファイルが空か、エントリがありません。',
+               'pl': 'Plik mapy jest pusty lub nie zawiera żadnych wpisów.',
+               'ru': 'Файл карты пуст или не содержит допустимых записей.',
+               'zh': '映射文件为空或不包含有效条目。'},
+ 'map_file_fix_and_retry': {'de': 'Korrigieren Sie das Format der Mapping-Datei und versuchen Sie es erneut.',
+                            'en': 'Fix the map file format and try again.',
+                            'es': 'Corrija el formato del archivo de mapa y vuelva a intentarlo.',
+                            'it': 'Correggi il formato del file di mappa e riprova.',
+                            'ja': 'マップファイルの形式を修正して再試行してください。',
+                            'pl': 'Popraw format pliku mapy i spróbuj ponownie.',
+                            'ru': 'Исправьте формат файла карты и попробуйте снова.',
+                            'zh': '请修复映射文件格式后重试。'},
+ 'map_file_invalid_lines': {'de': 'Die Mapping-Datei enthält ungültige Zeilen:',
+                            'en': 'The map file contains invalid lines:',
+                            'es': 'El archivo de mapa contiene líneas no válidas:',
+                            'it': 'Il file di mappa contiene righe non valide:',
+                            'ja': 'マップファイルに無効な行があります:',
+                            'pl': 'Plik mapy zawiera nieprawidłowe linie:',
+                            'ru': 'Файл карты содержит недопустимые строки:',
+                            'zh': '映射文件包含无效行:'},
+ 'map_file_prompt': {'de': 'Pfad zur Mapping-Datei eingeben (Enter = manuell einfügen): ',
+                     'en': 'Enter path to map file (Enter = paste manually): ',
+                     'es': 'Introduzca la ruta del archivo de mapa (Enter = pegar manualmente): ',
+                     'it': 'Inserisci il percorso del file di mappa (Invio = incolla manualmente): ',
+                     'ja': 'マップファイルのパスを入力 (Enter = 手動でマップを貼り付け): ',
+                     'pl': 'Podaj ścieżkę do pliku mapy (Enter = wklej mapę ręcznie): ',
+                     'ru': 'Укажите путь к файлу карты (Enter = вставить вручную): ',
+                     'zh': '输入映射文件路径（回车 = 手动粘贴）: '},
+ 'map_line_unparsed': {'de': 'Kann die Mapping-Zeile nicht interpretieren: {0}',
+                       'en': 'Cannot interpret map line: {0}',
+                       'es': 'No se puede interpretar la línea del mapa: {0}',
+                       'it': 'Impossibile interpretare la riga della mappa: {0}',
+                       'ja': 'マップ行の解釈に失敗: {0}',
+                       'pl': 'Nie można zinterpretować linii mapy: {0}',
+                       'ru': 'Не удалось интерпретировать строку карты: {0}',
+                       'zh': '无法解析映射行: {0}'},
+ 'map_no_valid_entries': {'de': 'Keine gültigen Einträge in der Verschiebungsmappe gefunden.',
+                          'en': 'No valid entries found in the shift map.',
+                          'es': 'No se encontraron entradas válidas en el mapa de desplazamientos.',
+                          'it': 'Nessuna voce valida trovata nella mappa degli offset.',
+                          'ja': 'シフトマップに有効なエントリがありません。',
+                          'pl': 'Brak poprawnych wpisów w mapie przesunięć.',
+                          'ru': 'В карте смещений не найдено допустимых записей.',
+                          'zh': '偏移映射中未找到有效条目。'},
+ 'map_read_error': {'de': 'Fehler beim Lesen der Mapping-Datei: {0}',
+                    'en': 'Error reading map file: {0}',
+                    'es': 'Error al leer el archivo de mapa: {0}',
+                    'it': 'Errore durante la lettura del file di mappa: {0}',
+                    'ja': 'マップファイルの読み込みエラー: {0}',
+                    'pl': 'Błąd podczas odczytu pliku mapy: {0}',
+                    'ru': 'Ошибка при чтении файла карты: {0}',
+                    'zh': '读取映射文件时出错: {0}'},
  'matched_pairs_count': {'de': 'Anzahl übereinstimmender Paare: {}',
                          'en': 'Number of matched pairs: {}',
                          'es': 'Número de pares coincidentes: {}',
@@ -786,6 +898,14 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                         'pl': 'Błąd: po przesunięciu niektóre numery byłyby mniejsze lub równe 0. Wybierz inny offset.',
                         'ru': 'Ошибка: после сдвига некоторые номера стали бы ≤ 0. Выберите другое смещение.',
                         'zh': '错误：偏移后部分编号将 ≤ 0。请选择其他偏移量。'},
+ 'negative_or_zero_targets': {'de': '{0} ungültige Zielindizes erzeugt (<= 0). Vorgang abgebrochen.',
+                              'en': '{0} invalid target indices generated (<= 0). Operation aborted.',
+                              'es': '{0} índices de destino no válidos generados (<= 0). Operación cancelada.',
+                              'it': '{0} indici di destinazione non validi generati (<= 0). Operazione interrotta.',
+                              'ja': '{0} 個の無効なターゲット番号 (<= 0) が生成されました。操作を中断。',
+                              'pl': 'Wygenerowano {0} nieprawidłowych numerów docelowych (<= 0). Operacja przerwana.',
+                              'ru': 'Создано {0} недопустимых целевых индексов (<= 0). Операция прервана.',
+                              'zh': '生成了 {0} 个无效目标索引 (<= 0)。操作已中止。'},
  'new_offset_note': {'de': '    // neuer Offset {}',
                      'en': '    // new offset {}',
                      'es': '    // nuevo offset {}',
@@ -1090,6 +1210,14 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                    'pl': 'Nadpisano plik A: {}',
                    'ru': 'Файл A перезаписан: {}',
                    'zh': '已覆盖文件 A：{}'},
+ 'paste_map_instructions': {'de': 'Fügen Sie die Verschiebungsmappe zeilenweise ein. Mit leerer Zeile beenden.',
+                            'en': 'Paste the shift map line by line. Finish with an empty line.',
+                            'es': 'Pegue el mapa de desplazamientos línea por línea. Finalice con una línea vacía.',
+                            'it': 'Incolla la mappa degli offset riga per riga. Termina con una riga vuota.',
+                            'ja': 'シフトマップを一行ずつ貼り付け。空行で終了。',
+                            'pl': 'Wklej mapę przesunięć linia po linii. Zakończ pustą linią.',
+                            'ru': 'Вставьте карту смещений построчно. Завершите пустой строкой.',
+                            'zh': '逐行粘贴偏移映射。以空行结束。'},
  'path_a_prompt': {'de': 'Geben Sie den Pfad zur Datei A ein (Basis): ',
                    'en': 'Enter path to file A (base): ',
                    'es': 'Ingresa la ruta al archivo A (base): ',
@@ -1306,6 +1434,14 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                     'pl': '  2) Zapisz jako nowy plik (ten sam katalog co A, nazwa + _shifted)',
                     'ru': '  2) Сохранить как новый файл (в той же папке, имя + _shifted)',
                     'zh': '  2) 保存为新文件（与 A 同目录，文件名 + _shifted）'},
+ 'save_shift_map_prompt': {'de': 'Verschiebungskarte in eine Datei speichern?',
+                           'en': 'Save the shift map to a file?',
+                           'es': '¿Guardar el mapa de desplazamientos en un archivo?',
+                           'it': 'Salvare la mappa degli spostamenti su file?',
+                           'ja': 'シフトマップをファイルに保存しますか？',
+                           'pl': 'Zapisać mapę przesunięć do pliku?',
+                           'ru': 'Сохранить карту смещений в файл?',
+                           'zh': '将偏移映射保存到文件？'},
  'save_shift_method': {'de': '\nWählen Sie die Speichermethode für die verschobene Datei:',
                        'en': '\nChoose save method for shifted file:',
                        'es': '\nElige el método de guardado del archivo desplazado:',
@@ -1346,6 +1482,38 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                    'pl': 'Wybrany język: {} (numer {}), sugerowane kodowania (pierwsze domyślne): {}',
                    'ru': 'Выбран язык: {} (номер {}), предложенные кодировки (первая по умолчанию): {}',
                    'zh': '已选择语言：{}（编号 {}），建议编码（第一个为默认）：{}'},
+ 'shift_map_filename_prompt': {'de': 'Dateiname der Verschiebungskarte (Standard: text_shift_map.txt): ',
+                               'en': 'Shift map filename (default: text_shift_map.txt): ',
+                               'es': 'Nombre del archivo del mapa (predeterminado: text_shift_map.txt): ',
+                               'it': 'Nome del file della mappa (predefinito: text_shift_map.txt): ',
+                               'ja': 'マップファイルの名前 (デフォルト text_shift_map.txt): ',
+                               'pl': 'Nazwa pliku mapy (domyślnie text_shift_map.txt): ',
+                               'ru': 'Имя файла карты смещений (по умолчанию: text_shift_map.txt): ',
+                               'zh': '映射文件名（默认：text_shift_map.txt）：'},
+ 'shift_map_preview_title': {'de': 'Verschiebungskarte (Vorschau):',
+                             'en': 'Shift map (preview):',
+                             'es': 'Mapa de desplazamientos (vista previa):',
+                             'it': 'Mappa degli spostamenti (anteprima):',
+                             'ja': 'シフトマップ (プレビュー):',
+                             'pl': 'Mapa przesunięć (podgląd):',
+                             'ru': 'Карта смещений (предпросмотр):',
+                             'zh': '偏移映射（预览）：'},
+ 'shift_map_save_error': {'de': 'Fehler beim Speichern der Verschiebungskarte: {0}',
+                          'en': 'Error saving shift map: {0}',
+                          'es': 'Error al guardar el mapa de desplazamientos: {0}',
+                          'it': 'Errore durante il salvataggio della mappa degli spostamenti: {0}',
+                          'ja': 'シフトマップの保存エラー: {0}',
+                          'pl': 'Błąd zapisu mapy przesunięć: {0}',
+                          'ru': 'Ошибка сохранения карты смещений: {0}',
+                          'zh': '保存偏移映射时出错：{0}'},
+ 'shift_map_saved': {'de': 'Verschiebungskarte gespeichert unter: {0}',
+                     'en': 'Shift map saved to: {0}',
+                     'es': 'Mapa de desplazamientos guardado en: {0}',
+                     'it': 'Mappa degli spostamenti salvata in: {0}',
+                     'ja': 'シフトマップを保存しました: {0}',
+                     'pl': 'Mapa przesunięć zapisana do: {0}',
+                     'ru': 'Карта смещений сохранена в: {0}',
+                     'zh': '偏移映射已保存到：{0}'},
  'shifted_saved': {'de': 'Verschobene Datei gespeichert unter: {}',
                    'en': 'Saved shifted file to: {}',
                    'es': 'Archivo desplazado guardado en: {}',
