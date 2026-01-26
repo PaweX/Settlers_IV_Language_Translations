@@ -81,6 +81,52 @@ In the **Gold Edition**, the *GameSettings.cfg* file is located in the **Config*
 Keep in mind that the **History Edition** is officially translated only to German, English and French. If you change the game language to any other of these three, you will have partial translation of the game - without the New World and the Great Crusades - unless somebody will translate them (check the above table).
 It may happen that after some Ubisoft update, you will have to repeat all of these above steps. In the History Edition, the menu texts: *"New World"* and *"Great Crusades"* are only visible in English, German or French, because someone hardcoded them that way in the game code. So for them, the game ignores the translation file of your language, and loads hardcoded signatures. This only happens in the History Edition.
 
+## About the Settlers IV Translation Multitool
+
+This Python script (*s4_translation_multitool.py*) is a command-line multitool for managing translations in Settlers IV game files. It handles project files (`.s4_translation_project`) and binary `.dat` files (e.g., `s4_texts.dat<nr>`), supporting operations like comparison, merging, import/export, previewing, shifting numbers, fixing entries, aligning versions, and applying shift maps. It includes language mappings with encodings and multilingual UI support.
+
+### Key Options and Their Purposes
+
+The tool presents a menu with the following options:
+
+1. **Compare A vs B Project Files**: Analyzes two project files (A as base, B as reference) and generates `missingtexts.txt` containing texts from B that are missing or require completion in A (e.g., placeholders or absent entries).
+
+2. **Merge Project Files**: Combines two project files by replacing matching entries in A with those from B and appending missing ones from B to A, creating a unified sorted output.
+
+3. **Import from .dat File**: Reads a binary `s4_texts.dat<nr>` file, decodes texts using language-specific encodings, and generates a `<LANG>.s4_translation_project` text file for editing.
+
+4. **Export to .dat File**: Converts a `.s4_translation_project` file back to a binary `s4_texts.dat<nr>` file, encoding texts and including a 4-byte header.
+
+5. **Preview Texts from .dat**: Displays texts from a `.dat` file with interactive encoding testing; supports single texts, ranges, or all, with options to test multiple encodings and save results.
+
+6. **Shift Text Numbers (Offset)**: Applies an offset to all text numbers in a project file A, validating for duplicates or negative values, and saves with backup or as a new file.
+
+7. **Fix Missing Entries**: Scans a project file for gaps in text numbers within a specified range or single number, inserts empty placeholders for missing entries, and saves with options for overwrite or new file.
+
+8. **Align Text Numbers (A to B)**: Matches text numbers from project A to B by comparing normalized content, tracks offsets, reports conflicts/mismatches, and saves aligned A (content from A, numbers adjusted to B).
+
+9. **Apply Shift Map to A**: Loads a shift map from a `.txt` file or pasted input (format: e.g., "A:1 offset 663" or "1 663"), applies offsets sequentially to A's numbers, checks for collisions/negatives, and saves with backup or as new.
+
+0. **Exit**: Quits the program.
+
+All operations prompt for file paths, encodings (default UTF-8), and confirmations for overwrites/backups. Errors are handled with multilingual messages.
+
+### Program Interface Available in Languages:
+
+The tool's user interface (menu, prompts, messages, reports) is fully translated and available in the following languages:
+
+- English (en) – default
+- Deutsch / German (de)
+- Polski / Polish (pl)
+- Italiano / Italian (it)
+- Español / Spanish (es)
+- 简体中文 / Simplified Chinese (zh)
+- Русский / Russian (ru)
+- 日本語 / Japanese (ja)
+
+At startup, you can choose your preferred language by entering the corresponding number (0–7).  
+All in-game text handling (import/export .dat files) uses the appropriate language-specific encodings regardless of the selected UI language.
+
 ## Credits:
 - **All authors of the original translations**
 - *@PaweX (Pawel C. - PaweX3)* - Polish translation of the New World, Great Crusades, extra texts for History Edition and improvement of some original texts.
