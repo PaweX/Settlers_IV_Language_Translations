@@ -43,6 +43,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                    'en': '  Added numbers (appended at the end): {}',
                    'es': '  Números añadidos (agregados al final): {}',
                    'it': '  Numeri aggiunti (appesi alla fine): {}',
+                   'ja': '  追加された番号 (末尾に追加): {}',
                    'pl': '  Dodane numery (dopisane na końcu): {}',
                    'ru': '  Добавленные номера (добавлены в конец): {}',
                    'zh': '  已添加的编号（追加到末尾）：{}'},
@@ -50,6 +51,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                        'en': 'Added numbers: {}',
                        'es': 'Números añadidos: {}',
                        'it': 'Numeri aggiunti: {}',
+                       'ja': '追加された番号: {}',
                        'pl': 'Dodane numery: {}',
                        'ru': 'Добавленные номера: {}',
                        'zh': '已添加的编号：{}'},
@@ -57,6 +59,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                       'en': '\n--- Alignment report (before save) ---',
                       'es': '\n--- Reporte de alineación (antes de guardar) ---',
                       'it': '\n--- Report di allineamento (prima del salvataggio) ---',
+                      'ja': '\n--- 調整レポート (保存前) ---',
                       'pl': '\n--- Raport dopasowania (przed zapisem) ---',
                       'ru': '\n--- Отчёт по выравниванию (перед сохранением) ---',
                       'zh': '\n--- 对齐报告（保存前） ---'},
@@ -64,6 +67,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                'en': '\nAll A texts found in B (at least partially).',
                'es': '\nTodos los textos de A encontrados en B (al menos parcialmente).',
                'it': '\nTutti i testi di A trovati in B (almeno parzialmente).',
+               'ja': '\nすべての A テキストが B で見つかりました (少なくとも部分的に)。',
                'pl': '\nWszystkie teksty A znalezione w B (przynajmniej częściowo).',
                'ru': '\nВсе тексты A найдены в B (хотя бы частично).',
                'zh': '\nA 的所有文本均在 B 中找到（至少部分）。'},
@@ -71,6 +75,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                         'en': 'Number of entries assigned based on offset: {}',
                         'es': 'Número de entradas asignadas por offset: {}',
                         'it': "Numero di voci assegnate in base all'offset: {}",
+                        'ja': 'オフセットに基づいて割り当てられたエントリの数: {}',
                         'pl': 'Liczba wpisów przypisanych na podstawie offsetu: {}',
                         'ru': 'Количество записей, назначенных по оффсету: {}',
                         'zh': '基于偏移分配的条目数量：{}'},
@@ -78,6 +83,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                       'en': '  A:{} -> target:{} (offset {})',
                       'es': '  A:{} → target:{} (offset {})',
                       'it': '  A:{} -> target:{} (offset {})',
+                      'ja': '  A:{} -> target:{} (offset {})',
                       'pl': '  A:{} -> target:{} (offset {})',
                       'ru': '  A:{} → target:{} (offset {})',
                       'zh': '  A:{} → target:{} (偏移 {})'},
@@ -85,6 +91,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                      'en': '\nAvailable languages (number : name):',
                      'es': '\nIdiomas disponibles (número : nombre):',
                      'it': '\nLingue disponibili (numero : nome):',
+                     'ja': '\n利用可能な言語 (番号 : 名前):',
                      'pl': '\nDostępne języki (numer : nazwa):',
                      'ru': '\nДоступные языки (номер : название):',
                      'zh': '\n可用语言（编号 : 名称）：'},
@@ -92,6 +99,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                   'en': '  m) back to menu',
                   'es': '  m) volver al menú',
                   'it': '  m) torna al menu',
+                  'ja': '  m) メニューに戻る',
                   'pl': '  m) wróć do menu',
                   'ru': '  m) вернуться в меню',
                   'zh': '  m) 返回菜单'},
@@ -99,6 +107,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                       'en': 'Back to menu.',
                       'es': 'Volviendo al menú.',
                       'it': 'Ritorno al menu.',
+                      'ja': 'メニューに戻る。',
                       'pl': 'Powrót do menu.',
                       'ru': 'Возврат в меню.',
                       'zh': '返回菜单。'},
@@ -106,6 +115,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                     'en': 'Backup created: {}',
                     'es': 'Copia de seguridad creada: {}',
                     'it': 'Creata copia di backup: {}',
+                    'ja': 'バックアップを作成しました: {}',
                     'pl': 'Utworzono kopię zapasową: {}',
                     'ru': 'Создана резервная копия: {}',
                     'zh': '已创建备份：{}'},
@@ -113,6 +123,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                    'en': 'Failed to create backup: {}',
                    'es': 'No se pudo crear la copia de seguridad: {}',
                    'it': 'Impossibile creare la copia di backup: {}',
+                   'ja': 'バックアップの作成に失敗しました: {}',
                    'pl': 'Nie udało się utworzyć kopii zapasowej: {}',
                    'ru': 'Не удалось создать резервную копию: {}',
                    'zh': '无法创建备份：{}'},
@@ -120,6 +131,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                   'en': 'Found {} blocks. First number: {}, last number: {}.',
                   'es': 'Encontrados {} bloques. Primer número: {}, último número: {}.',
                   'it': 'Trovati {} blocchi. Primo numero: {}, ultimo numero: {}.',
+                  'ja': '{} ブロックが見つかりました。最初の番号: {}, 最後の番号: {}。',
                   'pl': 'Znaleziono {} bloków. Pierwszy numer: {}, ostatni numer: {}.',
                   'ru': 'Найдено {} блоков. Первый номер: {}, последний номер: {}.',
                   'zh': '找到 {} 个块。第一个编号：{}，最后一个编号：{}。'},
@@ -127,6 +139,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
               'en': 'Canceled.',
               'es': 'Cancelado.',
               'it': 'Annullato.',
+              'ja': 'キャンセルしました。',
               'pl': 'Anulowano.',
               'ru': 'Отменено.',
               'zh': '已取消。'},
@@ -134,6 +147,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                            'en': 'Canceled missingtexts save.',
                            'es': 'Guardado de missingtexts cancelado.',
                            'it': 'Salvataggio di missingtexts annullato.',
+                           'ja': 'missingtexts の保存をキャンセルしました。',
                            'pl': 'Anulowano zapis missingtexts.',
                            'ru': 'Сохранение missingtexts отменено.',
                            'zh': '已取消 missingtexts 保存。'},
@@ -141,6 +155,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                            'en': 'Canceled project file save.',
                            'es': 'Guardado del archivo de proyecto cancelado.',
                            'it': 'Salvataggio del file di progetto annullato.',
+                           'ja': 'プロジェクトファイルの保存をキャンセルしました。',
                            'pl': 'Anulowano zapis pliku projektu.',
                            'ru': 'Сохранение файла проекта отменено.',
                            'zh': '已取消项目文件保存。'},
@@ -148,6 +163,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                         'en': 'Canceled test save.',
                         'es': 'Guardado de la prueba cancelado.',
                         'it': 'Salvataggio del test annullato.',
+                        'ja': 'テストの保存をキャンセルしました。',
                         'pl': 'Anulowano zapis testu.',
                         'ru': 'Сохранение теста отменено.',
                         'zh': '已取消测试保存。'},
@@ -155,6 +171,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                    'en': 'Choose 1 or 2 [1]: ',
                    'es': 'Elige 1 o 2 [1]: ',
                    'it': 'Scegli 1 o 2 [1]: ',
+                   'ja': '1 または 2 を選択 [1]: ',
                    'pl': 'Wybierz 1 lub 2 [1]: ',
                    'ru': 'Выберите 1 или 2 [1]: ',
                    'zh': '选择 1 或 2 [1]：'},
@@ -162,6 +179,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                          'en': 'Choose 1 or 2 [2]: ',
                          'es': 'Elige 1 o 2 [2]: ',
                          'it': 'Scegli 1 o 2 [2]: ',
+                         'ja': '1 または 2 を選択 [2]: ',
                          'pl': 'Wybierz 1 lub 2 [2]: ',
                          'ru': 'Выберите 1 или 2 [2]: ',
                          'zh': '选择 1 或 2 [2]：'},
@@ -169,6 +187,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                        'en': "Choose encoding to test (default '{}'): ",
                        'es': "Elige la codificación a probar (por defecto '{}'): ",
                        'it': "Scegli la codifica da testare (predefinita '{}'): ",
+                       'ja': "テストするエンコーディングを選択 (デフォルト '{}'): ",
                        'pl': "Wybierz kodowanie do testu (domyślne '{}'): ",
                        'ru': "Выберите кодировку для теста (по умолчанию '{}'): ",
                        'zh': "选择要测试的编码（默认 '{}'）："},
@@ -176,6 +195,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                        'en': '  collision: A:{} -> target {}',
                        'es': '  colisión: A:{} → target {}',
                        'it': '  collisione: A:{} -> target {}',
+                       'ja': '  衝突: A:{} -> target {}',
                        'pl': '  kolizja: A:{} -> target {}',
                        'ru': '  коллизия: A:{} → target {}',
                        'zh': '  冲突：A:{} → target {}'},
@@ -187,6 +207,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                         'it': '\n'
                               'Attenzione: rilevate collisioni negli indici di destinazione (più elementi A puntano '
                               'allo stesso target).',
+                        'ja': '\n注意: ターゲットインデックスの衝突を検出しました (複数の A が同じターゲットにヒット)。',
                         'pl': '\nUwaga: wykryto kolizje docelowych indeksów (kilka A trafiło na ten sam target).',
                         'ru': '\n'
                               'Внимание: обнаружены коллизии целевых индексов (несколько A попали на один и тот же '
@@ -196,6 +217,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                      'en': 'Save as {}?',
                      'es': '¿Guardar como {}?',
                      'it': 'Salvare come {}?',
+                     'ja': '{} として保存しますか？',
                      'pl': 'Zapisz jako {}?',
                      'ru': 'Сохранить как {}?',
                      'zh': '是否保存为 {}？'},
@@ -206,6 +228,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                'it': '\n'
                      'Posizioni di conflitto (entrambi significativi o differenti) — mostro la percentuale di '
                      'similarità:',
+               'ja': '\n競合箇所 (両方が有意または差異がある) — 類似度の割合を表示:',
                'pl': '\nMiejsca konfliktów (oba znaczące lub zróżnicowane) — pokazuję procent podobieństwa:',
                'ru': '\nМеста конфликтов (оба значимые или различающиеся) — показываю процент схожести:',
                'zh': '\n冲突位置（两者都有意义或差异明显）— 显示相似度百分比：'},
@@ -213,6 +236,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                              'en': 'Continue without backup?',
                              'es': '¿Continuar sin copia de seguridad?',
                              'it': 'Continuare senza backup?',
+                             'ja': 'バックアップなしで続行しますか？',
                              'pl': 'Kontynuować bez kopii zapasowej?',
                              'ru': 'Продолжить без резервной копии?',
                              'zh': '是否不创建备份继续？'},
@@ -220,6 +244,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                 'en': '  a) enter custom encoding (e.g. big5, cp950, utf-8)',
                 'es': '  a) escribe una codificación personalizada (ej. big5, cp950, utf-8)',
                 'it': '  a) inserisci una codifica personalizzata (es. big5, cp950, utf-8)',
+                'ja': '  a) カスタムエンコーディングを入力 (例: big5, cp950, utf-8)',
                 'pl': '  a) wpisz własne kodowanie (np. big5, cp950, utf-8)',
                 'ru': '  a) ввести свою кодировку (например big5, cp950, utf-8)',
                 'zh': '  a) 输入自定义编码（例如 big5, cp950, utf-8）'},
@@ -231,6 +256,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                              'para usar la sugerida: ',
                        'it': 'Inserisci la codifica di output (es. cp1250, cp950, cp932, cp1251) o premi Invio per '
                              'usare quella suggerita: ',
+                       'ja': '出力エンコーディングを入力 (例: cp1250, cp950, cp932, cp1251) または Enter で提案されたものを利用: ',
                        'pl': 'Podaj kodowanie wyjściowe (np. cp1250, cp950, cp932, cp1251) lub naciśnij Enter aby użyć '
                              'sugerowanego: ',
                        'ru': 'Введите выходную кодировку (например cp1250, cp950, cp932, cp1251) или нажмите Enter для '
@@ -240,6 +266,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                                'en': 'Enter encoding name (e.g. big5, cp950, utf-8): ',
                                'es': 'Ingresa el nombre de la codificación (ej. big5, cp950, utf-8): ',
                                'it': 'Inserisci il nome della codifica (es. big5, cp950, utf-8): ',
+                               'ja': 'エンコーディング名を入力 (例: big5, cp950, utf-8): ',
                                'pl': 'Podaj nazwę kodowania (np. big5, cp950, utf-8): ',
                                'ru': 'Введите название кодировки (например big5, cp950, utf-8): ',
                                'zh': '请输入编码名称（例如 big5, cp950, utf-8）：'},
@@ -247,6 +274,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                     'en': 'Error reading .dat file: {}',
                     'es': 'Error al leer el archivo .dat: {}',
                     'it': 'Errore di lettura del file .dat: {}',
+                    'ja': '.dat ファイルの読み込みエラー: {}',
                     'pl': 'Błąd odczytu pliku .dat: {}',
                     'ru': 'Ошибка чтения файла .dat: {}',
                     'zh': '读取 .dat 文件出错：{}'},
@@ -254,6 +282,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                'en': '\nSaved .dat file: {}',
                'es': '\nArchivo .dat guardado: {}',
                'it': '\nFile .dat salvato: {}',
+               'ja': '\n.dat ファイルを保存しました: {}',
                'pl': '\nZapisano plik .dat: {}',
                'ru': '\nФайл .dat сохранён: {}',
                'zh': '\n已保存 .dat 文件：{}'},
@@ -261,6 +290,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                      'en': 'Error writing .dat file: {}',
                      'es': 'Error al escribir el archivo .dat: {}',
                      'it': 'Errore di scrittura del file .dat: {}',
+                     'ja': '.dat ファイルの書き込みエラー: {}',
                      'pl': 'Błąd zapisu pliku .dat: {}',
                      'ru': 'Ошибка записи файла .dat: {}',
                      'zh': '写入 .dat 文件出错：{}'},
@@ -268,6 +298,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                        'en': 'Failed to create directory {}: {}',
                        'es': 'No se pudo crear la carpeta {}: {}',
                        'it': 'Impossibile creare la cartella {}: {}',
+                       'ja': 'ディレクトリ {} の作成に失敗しました: {}',
                        'pl': 'Nie udało się utworzyć katalogu {}: {}',
                        'ru': 'Не удалось создать папку {}: {}',
                        'zh': '无法创建目录 {}：{}'},
@@ -275,6 +306,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
           'en': 'Done.',
           'es': 'Listo.',
           'it': 'Completato.',
+          'ja': '完了。',
           'pl': 'Gotowe.',
           'ru': 'Готово.',
           'zh': '完成。'},
@@ -282,6 +314,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                       'en': 'Error: after shift, duplicate numbers occurred. Canceled.',
                       'es': 'Error: tras el desplazamiento aparecieron números duplicados. Cancelado.',
                       'it': 'Errore: dopo lo spostamento sono stati trovati numeri duplicati. Annullato.',
+                      'ja': 'エラー: シフト後に番号の重複が発生しました。キャンセルしました。',
                       'pl': 'Błąd: po przesunięciu wystąpiły duplikaty numerów. Anulowano.',
                       'ru': 'Ошибка: после сдвига появились дубликаты номеров. Отменено.',
                       'zh': '错误：偏移后出现编号重复。已取消。'},
@@ -289,6 +322,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                       'en': 'Enter input encoding (e.g. big5, cp950, utf-8, cp1251): ',
                       'es': 'Ingresa la codificación de entrada (ej. big5, cp950, utf-8, cp1251): ',
                       'it': 'Inserisci la codifica di input (es. big5, cp950, utf-8, cp1251): ',
+                      'ja': '入力エンコーディングを入力 (例: big5, cp950, utf-8, cp1251): ',
                       'pl': 'Podaj kodowanie wejściowe (np. big5, cp950, utf-8, cp1251): ',
                       'ru': 'Введите входную кодировку (например big5, cp950, utf-8, cp1251): ',
                       'zh': '请输入输入编码（例如 big5, cp950, utf-8, cp1251）：'},
@@ -296,6 +330,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                      'en': 'File encoding (default utf-8): ',
                      'es': 'Codificación de los archivos (predeterminada utf-8): ',
                      'it': 'Codifica dei file (predefinita utf-8): ',
+                     'ja': 'ファイルエンコーディング (デフォルト utf-8): ',
                      'pl': 'Kodowanie plików (domyślnie utf-8): ',
                      'ru': 'Кодировка файлов (по умолчанию utf-8): ',
                      'zh': '文件编码（默认 utf-8）：'},
@@ -303,6 +338,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                       'en': '\nEnd of all encodings test. Back to menu.',
                       'es': '\nFin de la prueba de todas las codificaciones. Volver al menú.',
                       'it': '\nFine del test di tutte le codifiche. Ritorno al menu.',
+                      'ja': '\nすべてのエンコーディングテストの終了。メニューに戻る。',
                       'pl': '\nKoniec testu wszystkich kodowań. Powrót do menu.',
                       'ru': '\nКонец теста всех кодировок. Возврат в меню.',
                       'zh': '\n所有编码测试结束。返回菜单。'},
@@ -310,6 +346,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                        'en': 'Enter exactly 4 numbers.',
                        'es': 'Ingresa exactamente 4 números.',
                        'it': 'Inserisci esattamente 4 numeri.',
+                       'ja': '正確に 4 つの数字を入力してください。',
                        'pl': 'Podaj dokładnie 4 liczby.',
                        'ru': 'Введите ровно 4 числа.',
                        'zh': '请输入正好 4 个数字。'},
@@ -317,6 +354,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                   'en': 'Exit.',
                   'es': 'Fin.',
                   'it': 'Fine.',
+                  'ja': '終了。',
                   'pl': 'Koniec.',
                   'ru': 'Конец.',
                   'zh': '结束。'},
@@ -324,6 +362,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                            'en': 'File {} already exists. Overwrite?',
                            'es': 'El archivo {} ya existe. ¿Sobrescribir?',
                            'it': 'Il file {} esiste già. Sovrascrivere?',
+                           'ja': 'ファイル {} は既に存在します。上書きしますか？',
                            'pl': 'Plik {} już istnieje. Nadpisać?',
                            'ru': 'Файл {} уже существует. Перезаписать?',
                            'zh': '文件 {} 已存在。是否覆盖？'},
@@ -331,6 +370,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                      'en': 'File {} does not exist: {}',
                      'es': 'El archivo {} no existe: {}',
                      'it': 'Il file {} non esiste: {}',
+                     'ja': 'ファイル {} は存在しません: {}',
                      'pl': 'Plik {} nie istnieje: {}',
                      'ru': 'Файл {} не существует: {}',
                      'zh': '文件 {} 不存在：{}'},
@@ -338,6 +378,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                     'en': 'File too short, no header.',
                     'es': 'Archivo demasiado corto, falta cabecera.',
                     'it': "File troppo corto, manca l'intestazione.",
+                    'ja': 'ファイルが短すぎます、ヘッダーがありません。',
                     'pl': 'Plik zbyt krótki, brak nagłówka.',
                     'ru': 'Файл слишком короткий, отсутствует заголовок.',
                     'zh': '文件过短，缺少头部。'},
@@ -345,6 +386,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                  'en': 'File A: {}  —  number of blocks: {}\nFile B: {}  —  number of blocks: {}',
                  'es': 'Archivo A: {}  —  número de bloques: {}\nArchivo B: {}  —  número de bloques: {}',
                  'it': 'File A: {}  —  numero di blocchi: {}\nFile B: {}  —  numero di blocchi: {}',
+                 'ja': 'ファイル A: {}  —  ブロック数: {}\nファイル B: {}  —  ブロック数: {}',
                  'pl': 'Plik A: {}  —  liczba bloków: {}\nPlik B: {}  —  liczba bloków: {}',
                  'ru': 'Файл A: {}  —  количество блоков: {}\nФайл B: {}  —  количество блоков: {}',
                  'zh': '文件 A：{}  —  块数量：{}\n文件 B：{}  —  块数量：{}'},
@@ -352,6 +394,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                       'en': '4-byte header: {}',
                       'es': 'Cabecera de 4 bytes: {}',
                       'it': 'Intestazione di 4 byte: {}',
+                      'ja': '4 バイトヘッダー: {}',
                       'pl': 'Nagłówek 4 bajtów: {}',
                       'ru': 'Заголовок 4 байта: {}',
                       'zh': '4 字节头部：{}'},
@@ -359,6 +402,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                   'en': 'Found header in project file: {}',
                   'es': 'Cabecera encontrada en el archivo de proyecto: {}',
                   'it': 'Intestazione trovata nel file di progetto: {}',
+                  'ja': 'プロジェクトファイルでヘッダーを見つけました: {}',
                   'pl': 'Znaleziono nagłówek w pliku projektu: {}',
                   'ru': 'Найден заголовок в файле проекта: {}',
                   'zh': '在项目文件中找到头部：{}'},
@@ -366,6 +410,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                       'en': 'Header 4 bytes not found in project file.',
                       'es': 'No se encontró cabecera de 4 bytes en el archivo de proyecto.',
                       'it': 'Intestazione di 4 byte non trovata nel file di progetto.',
+                      'ja': 'プロジェクトファイルで 4 バイトヘッダーが見つかりませんでした。',
                       'pl': 'Nie znaleziono nagłówka 4 bajtów w pliku projektu.',
                       'ru': 'В файле проекта не найден заголовок из 4 байт.',
                       'zh': '项目文件中未找到 4 字节头部。'},
@@ -373,6 +418,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                    'en': "Enter 4 numbers (0-255) separated by spaces as header (e.g. '1 2 3 4'): ",
                    'es': "Ingresa 4 números (0-255) separados por espacios como cabecera (ej. '1 2 3 4'): ",
                    'it': "Inserisci 4 numeri (0-255) separati da spazi come intestazione (es. '1 2 3 4'): ",
+                   'ja': "ヘッダーとしてスペースで区切られた 4 つの数字 (0-255) を入力 (例: '1 2 3 4'): ",
                    'pl': "Podaj 4 liczby (0-255) oddzielone spacjami jako nagłówek (np. '1 2 3 4'): ",
                    'ru': "Введите 4 числа (0-255) через пробел как заголовок (например '1 2 3 4'): ",
                    'zh': "请输入 4 个数字（0-255），用空格分隔作为头部（例如 '1 2 3 4'）："},
@@ -380,6 +426,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                     'en': 'Invalid choice. Try again.',
                     'es': 'Elección no válida. Intenta de nuevo.',
                     'it': 'Scelta non valida. Riprova.',
+                    'ja': '無効な選択。再試行してください。',
                     'pl': 'Nieprawidłowy wybór. Spróbuj ponownie.',
                     'ru': 'Неверный выбор. Попробуйте снова.',
                     'zh': '无效选择。请重试。'},
@@ -391,6 +438,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                             'Ingresa un archivo correcto.',
                       'it': "Il file non è un file .dat valido (errore nella struttura dell'intestazione o del primo "
                             'testo). Inserisci un file valido.',
+                      'ja': 'ファイルは有効な .dat ファイルではありません (ヘッダーまたは最初のテキスト構造のエラー)。正しいファイルを入力してください。',
                       'pl': 'Plik nie jest poprawnym plikiem .dat (błąd w strukturze nagłówka lub pierwszego tekstu). '
                             'Podaj poprawny plik.',
                       'ru': 'Файл не является корректным файлом .dat (ошибка в структуре заголовка или первого '
@@ -400,6 +448,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                         'en': 'Invalid encoding number choice.',
                         'es': 'Elección de número de codificación no válida.',
                         'it': 'Scelta del numero di codifica non valida.',
+                        'ja': 'エンコーディング番号の選択が無効です。',
                         'pl': 'Nieprawidłowy wybór numeru kodowania.',
                         'ru': 'Неверный выбор номера кодировки.',
                         'zh': '编码编号选择无效。'},
@@ -407,6 +456,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                     'en': 'Invalid format. Use e.g. 60-200.',
                     'es': 'Formato no válido. Usa por ejemplo 60-200.',
                     'it': 'Formato non valido. Usa ad es. 60-200.',
+                    'ja': '無効な形式。例: 60-200 を使用してください。',
                     'pl': 'Nieprawidłowy format. Użyj np. 60-200.',
                     'ru': 'Неверный формат. Используйте например 60-200.',
                     'zh': '格式无效。请使用例如 60-200。'},
@@ -414,6 +464,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                      'en': 'Please enter an integer (can be negative).',
                      'es': 'Por favor ingresa un número entero (puede ser negativo).',
                      'it': 'Inserisci un numero intero (può essere negativo).',
+                     'ja': '整数を入力してください (負数可)。',
                      'pl': 'Proszę podać liczbę całkowitą (może być ujemna).',
                      'ru': 'Введите целое число (может быть отрицательным).',
                      'zh': '请输入整数（可为负数）。'},
@@ -421,6 +472,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                     'en': 'Invalid number. Enter an integer (e.g. 5).',
                     'es': 'Número no válido. Ingresa un número entero (ej. 5).',
                     'it': 'Numero non valido. Inserisci un numero intero (es. 5).',
+                    'ja': '無効な番号。整数を入力してください (例: 5)。',
                     'pl': 'Nieprawidłowy numer. Podaj liczbę całkowitą (np. 5).',
                     'ru': 'Неверный номер. Введите целое число (например 5).',
                     'zh': '无效编号。请输入整数（例如 5）。'},
@@ -428,6 +480,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                      'en': 'Invalid numbers. Try again.',
                      'es': 'Números no válidos. Intenta de nuevo.',
                      'it': 'Numeri non validi. Riprova.',
+                     'ja': '無効な数字。再試行してください。',
                      'pl': 'Nieprawidłowe liczby. Spróbuj ponownie.',
                      'ru': 'Неверные числа. Попробуйте снова.',
                      'zh': '无效数字。请重试。'},
@@ -435,6 +488,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                   'en': 'Invalid path: {}',
                   'es': 'Ruta no válida: {}',
                   'it': 'Percorso non valido: {}',
+                  'ja': '無効なパス: {}',
                   'pl': 'Nieprawidłowa ścieżka: {}',
                   'ru': 'Неверный путь: {}',
                   'zh': '无效路径：{}'},
@@ -446,6 +500,8 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                                 "## ... ####'). Ingresa un archivo correcto.",
                           'it': "Il file non è un file di progetto valido (manca almeno una voce '## Text N ## ... "
                                 "####'). Inserisci un file valido.",
+                          'ja': "ファイルは有効なプロジェクトファイルではありません (少なくとも 1 つの '## Text N ## ... ####' "
+                                'エントリが欠落)。正しいファイルを入力してください。',
                           'pl': "Plik nie jest poprawnym plikiem projektu (brak co najmniej jednego wpisu '## Text N "
                                 "## ... ####'). Podaj poprawny plik.",
                           'ru': "Файл не является корректным файлом проекта (отсутствует хотя бы одна запись '## Text "
@@ -455,6 +511,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                    'en': 'Invalid range. Try again.',
                    'es': 'Rango no válido. Intenta de nuevo.',
                    'it': 'Intervallo non valido. Riprova.',
+                   'ja': '無効な範囲。再試行してください。',
                    'pl': 'Nieprawidłowy przedział. Spróbuj ponownie.',
                    'ru': 'Неверный диапазон. Попробуйте снова.',
                    'zh': '无效范围。请重试。'},
@@ -462,6 +519,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                        'en': 'Invalid range. Try again.',
                        'es': 'Rango no válido. Intenta de nuevo.',
                        'it': 'Intervallo non valido. Riprova.',
+                       'ja': '無効な範囲。再試行してください。',
                        'pl': 'Nieprawidłowy przedział. Spróbuj ponownie.',
                        'ru': 'Неверный диапазон. Попробуйте снова.',
                        'zh': '无效范围。请重试。'},
@@ -469,6 +527,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                          'en': 'Invalid choice. Ending without saving.',
                          'es': 'Elección no válida. Terminando sin guardar.',
                          'it': 'Scelta non valida. Termino senza salvare.',
+                         'ja': '無効な選択。保存せずに終了します。',
                          'pl': 'Nieprawidłowy wybór. Kończę bez zapisu.',
                          'ru': 'Неверный выбор. Завершение без сохранения.',
                          'zh': '无效选择。结束操作，未保存。'},
@@ -476,6 +535,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                         'en': 'Found language number in file name: {} (suggestion).',
                         'es': 'Se encontró número de idioma en el nombre del archivo: {} (sugerencia).',
                         'it': 'Trovato numero lingua nel nome del file: {} (suggerimento).',
+                        'ja': 'ファイル名で言語番号が見つかりました: {} (提案)。',
                         'pl': 'Znaleziono numer języka w nazwie pliku: {} (sugestia).',
                         'ru': 'В имени файла найден номер языка: {} (предложение).',
                         'zh': '在文件名中找到语言编号：{}（建议）。'},
@@ -483,6 +543,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                      'en': 'Enter language number (e.g. 5 for POLISH). Suggestion: {}: ',
                      'es': 'Ingresa el número de idioma (ej. 5 para POLISH). Sugerencia: {}: ',
                      'it': 'Inserisci il numero della lingua (es. 5 per POLISH). Suggerimento: {}: ',
+                     'ja': '言語番号を入力 (例: 5 で POLISH)。提案: {}: ',
                      'pl': 'Podaj numer języka (np. 5 dla POLISH). Sugestia: {}: ',
                      'ru': 'Введите номер языка (например 5 для POLISH). Предложение: {}: ',
                      'zh': '请输入语言编号（例如 5 表示 POLISH）。建议：{}：'},
@@ -490,6 +551,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                           'en': 'Enter language number for save (e.g. 5 for POLISH) [{}]: ',
                           'es': 'Ingresa el número de idioma para guardar (ej. 5 para POLISH) [{}]: ',
                           'it': 'Inserisci il numero della lingua per il salvataggio (es. 5 per POLISH) [{}]: ',
+                          'ja': '保存用の言語番号を入力 (例: 5 で POLISH) [{}]: ',
                           'pl': 'Podaj numer języka do zapisu (np. 5 dla POLISH) [{}]: ',
                           'ru': 'Введите номер языка для сохранения (например 5 для POLISH) [{}]: ',
                           'zh': '请输入要保存的语言编号（例如 5 表示 POLISH）[{}]：'},
@@ -497,6 +559,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                      'en': '\nSuggestion based on file name: {} ({})',
                      'es': '\nSugerencia basada en el nombre del archivo: {} ({})',
                      'it': '\nSuggerimento basato sul nome del file: {} ({})',
+                     'ja': '\nファイル名に基づく提案: {} ({})',
                      'pl': '\nSugestia na podstawie nazwy pliku: {} ({})',
                      'ru': '\nПредложение на основе имени файла: {} ({})',
                      'zh': '\n基于文件名的建议：{} ({})'},
@@ -504,6 +567,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                 'en': 'Last A number processed: {}',
                 'es': 'Último número A procesado: {}',
                 'it': 'Ultimo numero A elaborato: {}',
+                'ja': '処理された最後の A 番号: {}',
                 'pl': 'Ostatni numer A przetworzony: {}',
                 'ru': 'Последний обработанный номер A: {}',
                 'zh': '最后处理的 A 编号：{}'},
@@ -511,107 +575,105 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                    'en': 'Last saved text number: {}',
                    'es': 'Último número de texto guardado: {}',
                    'it': 'Ultimo numero di testo salvato: {}',
+                   'ja': '最後に保存されたテキスト番号: {}',
                    'pl': 'Ostatni zapisany numer tekstu: {}',
                    'ru': 'Последний сохранённый номер текста: {}',
                    'zh': '最后保存的文本编号：{}'},
-'main_menu_options': {
-    'de': 'Wählen Sie eine Option:\n'
-          '  1) Projektdateien A vs B vergleichen und missingtexts.txt generieren (Texte aus B, die '
-          'in A fehlen oder ergänzt werden müssen)\n'
-          '  2) Projektdateien zusammenführen (merge): vorhandene ersetzen und fehlende aus B zu A '
-          'hinzufügen\n'
-          '  3) Aus Datei s4_texts.dat<nr> importieren → <LANG>.s4_translation_project generieren\n'
-          '  4) .s4_translation_project exportieren → s4_texts.dat<nr>\n'
-          '  5) Texte aus .dat-Datei anzeigen (interaktives Testen von Kodierungen)\n'
-          '  6) Textnummern in Projektdatei A verschieben (Offset)\n'
-          '  7) Fehlende Einträge in Projektdatei reparieren\n'
-          '  8) Textnummern in Projektdatei A an B anpassen (align A ← B)\n'
-          '  9) Verschiebungsmappe auf Projektdatei A anwenden (Mapping aus .txt-Datei)\n'
-          '  0) Beenden',
-
-    'en': 'Choose an option:\n'
-          '  1) Compare A vs B project files and generate missingtexts.txt (texts from B '
-          'missing/requiring completion in A)\n'
-          '  2) Merge project files: replace existing and append missing from B to A\n'
-          '  3) Import from s4_texts.dat<nr> → generate <LANG>.s4_translation_project\n'
-          '  4) Export .s4_translation_project → s4_texts.dat<nr>\n'
-          '  5) Preview texts from .dat file (interactive encoding testing)\n'
-          '  6) Shift text numbers in project file A (offset)\n'
-          '  7) Fix missing entries in project file\n'
-          '  8) Align text numbers in project file A to B (align A ← B)\n'
-          '  9) Apply shift-map to project file A (mapping from .txt file)\n'
-          '  0) Exit',
-
-    'es': 'Elige una opción:\n'
-          '  1) Comparar archivos de proyecto A vs B y generar missingtexts.txt (textos de B que '
-          'faltan o necesitan completarse en A)\n'
-          '  2) Combinar archivos de proyecto (merge): reemplazar existentes y añadir los faltantes '
-          'de B a A\n'
-          '  3) Importar desde archivo s4_texts.dat<nr> → generar <LANG>.s4_translation_project\n'
-          '  4) Exportar archivo .s4_translation_project → s4_texts.dat<nr>\n'
-          '  5) Vista previa de textos desde archivo .dat (prueba interactiva de codificaciones)\n'
-          '  6) Desplazar números de texto en el archivo de proyecto A (offset)\n'
-          '  7) Reparar entradas faltantes en el archivo de proyecto\n'
-          '  8) Alinear números de texto del archivo de proyecto A con B (alinear A ← B)\n'
-          '  9) Aplicar mapa de desplazamientos al archivo de proyecto A (mapa desde archivo .txt)\n'
-          '  0) Salir',
-
-    'it': "Scegli un'opzione:\n"
-          '  1) Confronta i file di progetto A vs B e genera missingtexts.txt (testi presenti in B '
-          'ma mancanti o da completare in A)\n'
-          '  2) Unisci i file di progetto (merge): sostituisci gli esistenti e aggiungi quelli '
-          'm mancanti da B ad A\n'
-          '  3) Importa da file s4_texts.dat<nr> → genera <LANG>.s4_translation_project\n'
-          '  4) Esporta file .s4_translation_project → s4_texts.dat<nr>\n'
-          '  5) Anteprima dei testi dal file .dat (test interattivo delle codifiche)\n'
-          '  6) Sposta i numeri dei testi nel file di progetto A (offset)\n'
-          '  7) Ripara le voci mancanti nel file di progetto\n'
-          '  8) Allinea i numeri dei testi nel file di progetto A a B (allinea A ← B)\n'
-          '  9) Applica una mappa di offset al file di progetto A (mappa da file .txt)\n'
-          '  0) Esci',
-
-    'pl': 'Wybierz opcję:\n'
-          '  1) Porównaj pliki projektu A vs B i wygeneruj missingtexts.txt (teksty z B '
-          'brakujące/wymagające uzupełnienia w A)\n'
-          '  2) Połącz pliki projektu (merge): podmień istniejące i dopisz brakujące z B do A\n'
-          '  3) Import z pliku s4_texts.dat<nr> → wygeneruj <LANG>.s4_translation_project\n'
-          '  4) Eksport pliku .s4_translation_project → s4_texts.dat<nr>\n'
-          '  5) Podgląd tekstów z pliku .dat (interaktywne testowanie kodowań)\n'
-          '  6) Przesuń numery tekstów w pliku projektu A (offset)\n'
-          '  7) Napraw brakujące wpisy w pliku projektu\n'
-          '  8) Dopasuj numery tekstów w pliku projektu A do B (align A ← B)\n'
-          '  9) Zastosuj mapę przesunięć numerów do pliku projektu A (mapa w pliku .txt)\n'
-          '  0) Wyjście',
-
-    'ru': 'Выберите опцию:\n'
-          '  1) Сравнить файлы проектов A и B и создать missingtexts.txt (тексты из B, '
-          'отсутствующие или требующие дополнения в A)\n'
-          '  2) Объединить файлы проектов (merge): заменить существующие и добавить недостающие из B в A\n'
-          '  3) Импорт из файла s4_texts.dat<nr> → создать <LANG>.s4_translation_project\n'
-          '  4) Экспорт файла .s4_translation_project → s4_texts.dat<nr>\n'
-          '  5) Просмотр текстов из файла .dat (интерактивная проверка кодировок)\n'
-          '  6) Сдвиг номеров текстов в файле проекта A (offset)\n'
-          '  7) Исправить отсутствующие записи в файле проекта\n'
-          '  8) Выровнять номера текстов в файле проекта A по файлу B (align A ← B)\n'
-          '  9) Применить карту смещений к файлу проекта A (карта из .txt файла)\n'
-          '  0) Выход',
-
-    'zh': '选择一个选项：\n'
-          '  1) 比较项目文件 A 与 B 并生成 missingtexts.txt（B 中缺失或需要在 A 中补充的文本）\n'
-          '  2) 合并项目文件（merge）：替换现有内容并从 B 追加缺失内容到 A\n'
-          '  3) 从 s4_texts.dat<nr> 导入 → 生成 <LANG>.s4_translation_project\n'
-          '  4) 导出 .s4_translation_project → s4_texts.dat<nr>\n'
-          '  5) 预览 .dat 文件中的文本（交互式编码测试）\n'
-          '  6) 在项目文件 A 中偏移文本编号\n'
-          '  7) 修复项目文件中缺失的条目\n'
-          '  8) 将项目文件 A 的文本编号对齐到 B（对齐 A ← B）\n'
-          '  9) 将偏移映射应用到项目文件 A（来自 .txt 文件的映射）\n'
-          '  0) 退出'
-},
+ 'main_menu_options': {'de': 'Wählen Sie eine Option:\n'
+                             '  1) Projektdateien A vs B vergleichen und missingtexts.txt generieren (Texte aus B, die '
+                             'in A fehlen oder ergänzt werden müssen)\n'
+                             '  2) Projektdateien zusammenführen (merge): vorhandene ersetzen und fehlende aus B zu A '
+                             'hinzufügen\n'
+                             '  3) Aus Datei s4_texts.dat<nr> importieren → <LANG>.s4_translation_project generieren\n'
+                             '  4) .s4_translation_project exportieren → s4_texts.dat<nr>\n'
+                             '  5) Texte aus .dat-Datei anzeigen (interaktives Testen von Kodierungen)\n'
+                             '  6) Textnummern in Projektdatei A verschieben (Offset)\n'
+                             '  7) Fehlende Einträge in Projektdatei reparieren\n'
+                             '  8) Textnummern in Projektdatei A an B anpassen (align A ← B)\n'
+                             '  9) Beenden',
+                       'en': 'Choose an option:\n'
+                             '  1) Compare A vs B project files and generate missingtexts.txt (texts from B '
+                             'missing/requiring completion in A)\n'
+                             '  2) Merge project files: replace existing and append missing from B to A\n'
+                             '  3) Import from s4_texts.dat<nr> → generate <LANG>.s4_translation_project\n'
+                             '  4) Export .s4_translation_project → s4_texts.dat<nr>\n'
+                             '  5) Preview texts from .dat file (interactive encoding testing)\n'
+                             '  6) Shift text numbers in project file A (offset)\n'
+                             '  7) Fix missing entries in project file\n'
+                             '  8) Align text numbers in project file A to B (align A ← B)\n'
+                             '  9) Exit',
+                       'es': 'Elige una opción:\n'
+                             '  1) Comparar archivos de proyecto A vs B y generar missingtexts.txt (textos de B que '
+                             'faltan o necesitan completarse en A)\n'
+                             '  2) Combinar archivos de proyecto (merge): reemplazar existentes y añadir los faltantes '
+                             'de B a A\n'
+                             '  3) Importar desde archivo s4_texts.dat<nr> → generar <LANG>.s4_translation_project\n'
+                             '  4) Exportar archivo .s4_translation_project → s4_texts.dat<nr>\n'
+                             '  5) Vista previa de textos desde archivo .dat (prueba interactiva de codificaciones)\n'
+                             '  6) Desplazar números de texto en el archivo de proyecto A (offset)\n'
+                             '  7) Reparar entradas faltantes en el archivo de proyecto\n'
+                             '  8) Alinear números de texto del archivo de proyecto A con B (alinear A ← B)\n'
+                             '  9) Salir',
+                       'it': "Scegli un'opzione:\n"
+                             '  1) Confronta i file di progetto A vs B e genera missingtexts.txt (testi presenti in B '
+                             'ma mancanti o da completare in A)\n'
+                             '  2) Unisci i file di progetto (merge): sostituisci gli esistenti e aggiungi quelli '
+                             'mancanti da B ad A\n'
+                             '  3) Importa da file s4_texts.dat<nr> → genera <LANG>.s4_translation_project\n'
+                             '  4) Esporta file .s4_translation_project → s4_texts.dat<nr>\n'
+                             '  5) Anteprima dei testi dal file .dat (test interattivo delle codifiche)\n'
+                             '  6) Sposta i numeri dei testi nel file di progetto A (offset)\n'
+                             '  7) Ripara le voci mancanti nel file di progetto\n'
+                             '  8) Allinea i numeri dei testi nel file di progetto A a B (allinea A ← B)\n'
+                             '  9) Esci',
+                       'ja': 'オプションを選択:\n'
+                             '  1) プロジェクトファイル A vs B を比較し missingtexts.txt を生成 (B に欠落/補完が必要なテキスト)\n'
+                             '  2) プロジェクトファイルをマージ: 既存を置換し B から欠落分を A に追加\n'
+                             '  3) s4_texts.dat<nr> からインポート → <LANG>.s4_translation_project を生成\n'
+                             '  4) .s4_translation_project をエクスポート → s4_texts.dat<nr>\n'
+                             '  5) .dat ファイルのテキストをプレビュー (エンコーディングのインタラクティブテスト)\n'
+                             '  6) プロジェクトファイル A のテキスト番号をオフセット移動\n'
+                             '  7) プロジェクトファイルの欠落エントリを修復\n'
+                             '  8) プロジェクトファイル A のテキスト番号を B に合わせる (align A ← B)\n'
+                             '  9) 終了',
+                       'pl': 'Wybierz opcję:\n'
+                             '  1) Porównaj pliki projektu A vs B i wygeneruj missingtexts.txt (teksty z B '
+                             'brakujące/wymagające uzupełnienia w A)\n'
+                             '  2) Połącz pliki projektu (merge): podmień istniejące i dopisz brakujące z B do A\n'
+                             '  3) Import z pliku s4_texts.dat<nr> → wygeneruj <LANG>.s4_translation_project\n'
+                             '  4) Eksport pliku .s4_translation_project → s4_texts.dat<nr>\n'
+                             '  5) Podgląd tekstów z pliku .dat (interaktywne testowanie kodowań)\n'
+                             '  6) Przesuń numery tekstów w pliku projektu A (offset)\n'
+                             '  7) Napraw brakujące wpisy w pliku projektu\n'
+                             '  8) Dopasuj numery tekstów w pliku projektu A do B (align A ← B)\n'
+                             '  9) Wyjście',
+                       'ru': 'Выберите опцию:\n'
+                             '  1) Сравнить файлы проектов A vs B и сгенерировать missingtexts.txt (тексты из B, '
+                             'отсутствующие или требующие дополнения в A)\n'
+                             '  2) Объединить файлы проектов (merge): заменить существующие и добавить недостающие из '
+                             'B в A\n'
+                             '  3) Импорт из файла s4_texts.dat<nr> → сгенерировать <LANG>.s4_translation_project\n'
+                             '  4) Экспорт файла .s4_translation_project → s4_texts.dat<nr>\n'
+                             '  5) Предпросмотр текстов из файла .dat (интерактивное тестирование кодировок)\n'
+                             '  6) Сдвинуть номера текстов в файле проекта A (offset)\n'
+                             '  7) Исправить отсутствующие записи в файле проекта\n'
+                             '  8) Выровнять номера текстов в файле проекта A по файлу B (align A ← B)\n'
+                             '  9) Выход',
+                       'zh': '选择一个选项：\n'
+                             '  1) 比较项目文件 A 与 B 并生成 missingtexts.txt（B 中缺失或需要在 A 中补充的文本）\n'
+                             '  2) 合并项目文件（merge）：替换现有内容并从 B 追加缺失内容到 A\n'
+                             '  3) 从 s4_texts.dat<nr> 导入 → 生成 <LANG>.s4_translation_project\n'
+                             '  4) 导出 .s4_translation_project → s4_texts.dat<nr>\n'
+                             '  5) 预览 .dat 文件中的文本（交互式编码测试）\n'
+                             '  6) 在项目文件 A 中偏移文本编号\n'
+                             '  7) 修复项目文件中缺失的条目\n'
+                             '  8) 将项目文件 A 的文本编号对齐到 B（对齐 A ← B）\n'
+                             '  9) 退出'},
  'main_menu_prompt': {'de': 'Wählen Sie 1, 2, 3, 4, 5, 6, 7, 8 oder 9 [9]: ',
                       'en': 'Choose 1, 2, 3, 4, 5, 6, 7, 8 or 9 [9]: ',
                       'es': 'Elige 1, 2, 3, 4, 5, 6, 7, 8 o 9 [9]: ',
                       'it': 'Scegli 1, 2, 3, 4, 5, 6, 7, 8 o 9 [9]: ',
+                      'ja': '1, 2, 3, 4, 5, 6, 7, 8 または 9 を選択 [9]: ',
                       'pl': 'Wybierz 1, 2, 3, 4, 5, 6, 7, 8 lub 9 [9]: ',
                       'ru': 'Выберите 1, 2, 3, 4, 5, 6, 7, 8 или 9 [9]: ',
                       'zh': '选择 1、2、3、4、5、6、7、8 或 9 [9]：'},
@@ -619,6 +681,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                      'en': '\n=== Settlers IV Translation Multitool (menu) ===',
                      'es': '\n=== Settlers IV Translation Multitool (menú) ===',
                      'it': '\n=== Settlers IV Translation Multitool (menu) ===',
+                     'ja': '\n=== Settlers IV 翻訳マルチツール (メニュー) ===',
                      'pl': '\n=== Settlers IV Translation Multitool (menu) ===',
                      'ru': '\n=== Settlers IV Translation Multitool (меню) ===',
                      'zh': '\n=== Settlers IV 翻译多功能工具 (菜单) ==='},
@@ -626,6 +689,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                          'en': 'Number of matched pairs: {}',
                          'es': 'Número de pares coincidentes: {}',
                          'it': 'Numero di coppie corrispondenti: {}',
+                         'ja': '一致したペアの数: {}',
                          'pl': 'Liczba dopasowanych par: {}',
                          'ru': 'Количество совпавших пар: {}',
                          'zh': '匹配对数量：{}'},
@@ -633,6 +697,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                     'en': 'Matched ranges (A_start-A_end => B_start-B_end) with offset:',
                     'es': 'Rangos coincidentes (A_inicio-A_fin => B_inicio-B_fin) con offset:',
                     'it': 'Intervalli corrispondenti (A_inizio-A_fine => B_inizio-B_fine) con offset:',
+                    'ja': 'オフセット付きの一致した範囲 (A_start-A_end => B_start-B_end):',
                     'pl': 'Dopasowane przedziały (A_start-A_end => B_start-B_end) z offsetem:',
                     'ru': 'Совпавшие диапазоны (A_начало-A_конец => B_начало-B_конец) с оффсетом:',
                     'zh': '匹配范围（A_开始-A_结束 => B_开始-B_结束）带偏移：'},
@@ -643,6 +708,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                             '{}]: ',
                       'it': 'Quanti tentativi di spostamento in A usare nella ricerca di testo significativo? '
                             '[predefinito {}]: ',
+                      'ja': '有意なテキスト検索時に A で使用するシフト試行回数？ [デフォルト {}]: ',
                       'pl': 'Ile prób przesunięcia w A użyć przy szukaniu znaczącego tekstu? [domyślnie {}]: ',
                       'ru': 'Сколько попыток сдвига в A использовать при поиске значимого текста? [по умолчанию {}]: ',
                       'zh': '在搜索有意义文本时，在 A 中使用多少次偏移尝试？[默认 {}]：'},
@@ -650,6 +716,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                         'en': 'mb_guess does not exist in B',
                         'es': 'mb_guess no existe en B',
                         'it': 'mb_guess non esiste in B',
+                        'ja': 'mb_guess は B に存在しません',
                         'pl': 'mb_guess nie istnieje w B',
                         'ru': 'mb_guess не существует в B',
                         'zh': 'mb_guess 在 B 中不存在'},
@@ -657,6 +724,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                           'en': 'Number of missing blocks: {}. Numbers: {}',
                           'es': 'Número de bloques faltantes: {}. Números: {}',
                           'it': 'Numero di blocchi mancanti: {}. Numeri: {}',
+                          'ja': '欠落ブロックの数: {}. 番号: {}',
                           'pl': 'Liczba brakujących bloków: {}. Numery: {}',
                           'ru': 'Количество отсутствующих блоков: {}. Номера: {}',
                           'zh': '缺失块数量：{}。编号：{}'},
@@ -670,6 +738,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                      'it': '\n'
                            'Dettagli per i testi di A non trovati direttamente in B (tentativo di confronto con testi '
                            'presunti di B):',
+                     'ja': '\nB で直接見つからなかった A テキストの詳細 (B の推測テキストとの比較試行):',
                      'pl': '\n'
                            'Szczegóły dla tekstów A nieznalezionych bezpośrednio w B (próba porównania z domniemanymi '
                            'tekstami z B):',
@@ -681,6 +750,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                    'en': '\nFound {} missing entries to add.',
                    'es': '\nEncontradas {} entradas faltantes para añadir.',
                    'it': '\nTrovate {} voci mancanti da aggiungere.',
+                   'ja': '\n追加する {} 個の欠落エントリが見つかりました。',
                    'pl': '\nZnaleziono {} brakujących wpisów do dodania.',
                    'ru': '\nНайдено {} отсутствующих записей для добавления.',
                    'zh': '\n找到 {} 个缺失条目需要添加。'},
@@ -688,6 +758,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                   'en': '\nTexts from A not found in B (single numbers or ranges):',
                   'es': '\nTextos de A no encontrados en B (números individuales o rangos):',
                   'it': '\nTesti da A non trovati in B (numeri singoli o intervalli):',
+                  'ja': '\nA のテキストが B で見つかりませんでした (単一番号または範囲):',
                   'pl': '\nTeksty z A nie znalezione w B (pojedyncze numery lub przedziały):',
                   'ru': '\nТексты из A, не найденные в B (одиночные номера или диапазоны):',
                   'zh': '\nA 中的文本未在 B 中找到（单个编号或范围）：'},
@@ -695,6 +766,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                              'en': 'Missing texts generated from B vs A',
                              'es': 'Textos faltantes generados desde B vs A',
                              'it': 'Testi mancanti generati da B rispetto ad A',
+                             'ja': 'B vs A から欠落テキストを生成',
                              'pl': 'Brakujące teksty wygenerowane z B vs A',
                              'ru': 'Отсутствующие тексты сгенерированы из B vs A',
                              'zh': '已从 B vs A 生成缺失文本'},
@@ -702,6 +774,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                         'en': 'Saved missing texts file: {}',
                         'es': 'Archivo con textos faltantes guardado: {}',
                         'it': 'File con testi mancanti salvato: {}',
+                        'ja': '欠落テキストファイルを保存しました: {}',
                         'pl': 'Zapisano plik z brakującymi tekstami: {}',
                         'ru': 'Файл с отсутствующими текстами сохранён: {}',
                         'zh': '已保存缺失文本文件：{}'},
@@ -709,6 +782,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                         'en': 'Error: after shift, some numbers would be <= 0. Choose another offset.',
                         'es': 'Error: tras el desplazamiento algunos números serían ≤ 0. Elige otro offset.',
                         'it': 'Errore: dopo lo spostamento alcuni numeri sarebbero ≤ 0. Scegli un altro offset.',
+                        'ja': 'エラー: シフト後に一部の番号が 0 以下になります。他のオフセットを選択してください。',
                         'pl': 'Błąd: po przesunięciu niektóre numery byłyby mniejsze lub równe 0. Wybierz inny offset.',
                         'ru': 'Ошибка: после сдвига некоторые номера стали бы ≤ 0. Выберите другое смещение.',
                         'zh': '错误：偏移后部分编号将 ≤ 0。请选择其他偏移量。'},
@@ -716,6 +790,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                      'en': '    // new offset {}',
                      'es': '    // nuevo offset {}',
                      'it': '    // nuovo offset {}',
+                     'ja': '    // 新しいオフセット {}',
                      'pl': '    // nowy offset {}',
                      'ru': '    // новый offset {}',
                      'zh': '    // 新偏移 {}'},
@@ -723,6 +798,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                     'en': '\nNew offset set: {} (A:{} -> B:{})',
                     'es': '\nNuevo offset establecido: {} (A:{} -> B:{})',
                     'it': '\nNuovo offset impostato: {} (A:{} -> B:{})',
+                    'ja': '\n新しいオフセットを設定: {} (A:{} -> B:{})',
                     'pl': '\nNowy offset ustawiony: {} (A:{} -> B:{})',
                     'ru': '\nНовое смещение установлено: {} (A:{} → B:{})',
                     'zh': '\n新偏移已设置：{} (A:{} → B:{})'},
@@ -730,6 +806,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                'en': 'Saved new file: {}',
                'es': 'Nuevo archivo guardado: {}',
                'it': 'Nuovo file salvato: {}',
+               'ja': '新しいファイルを保存しました: {}',
                'pl': 'Zapisano nowy plik: {}',
                'ru': 'Новый файл сохранён: {}',
                'zh': '新文件已保存：{}'},
@@ -737,6 +814,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
               'en': '  No new numbers to add.',
               'es': '  No hay nuevos números para añadir.',
               'it': '  Nessun nuovo numero da aggiungere.',
+              'ja': '  追加する新しい番号はありません。',
               'pl': '  Brak nowych numerów do dodania.',
               'ru': '  Новых номеров для добавления нет.',
               'zh': '  没有新编号需要添加。'},
@@ -744,6 +822,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                          'en': 'No new added numbers (something unexpected).',
                          'es': 'No se añadieron nuevos números (algo inesperado ocurrió).',
                          'it': 'Nessun nuovo numero aggiunto (qualcosa di inaspettato).',
+                         'ja': '新しい追加番号なし (予期せぬことが発生)。',
                          'pl': 'Brak nowych dodanych numerów (coś poszło nieoczekiwanie).',
                          'ru': 'Новые номера не добавлены (произошло что-то неожиданное).',
                          'zh': '未添加新编号（出现意外情况）。'},
@@ -751,6 +830,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                'en': 'Project file contains no text blocks. Canceled.',
                'es': 'El archivo de proyecto no contiene bloques de texto. Cancelado.',
                'it': 'Il file di progetto non contiene blocchi di testo. Annullato.',
+               'ja': 'プロジェクトファイルにテキストブロックがありません。キャンセルしました。',
                'pl': 'Plik projektu nie zawiera żadnych bloków tekstowych. Anulowano.',
                'ru': 'В файле проекта нет текстовых блоков. Операция отменена.',
                'zh': '项目文件不包含任何文本块。已取消。'},
@@ -758,6 +838,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                      'en': "No '## Text N ##' blocks found in file A. Nothing to shift.",
                      'es': "No se encontraron bloques '## Text N ##' en el archivo A. Nada que desplazar.",
                      'it': "Nessun blocco '## Text N ##' trovato nel file A. Niente da spostare.",
+                     'ja': "ファイル A で '## Text N ##' ブロックが見つかりませんでした。シフトするものがありません。",
                      'pl': "Nie znaleziono żadnych bloków '## Text N ##' w pliku A. Nic do przesunięcia.",
                      'ru': "В файле A не найдено блоков '## Text N ##'. Нечего сдвигать.",
                      'zh': "在文件 A 中未找到任何 '## Text N ##' 块。无需偏移。"},
@@ -765,6 +846,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                        'en': '  No matched ranges.',
                        'es': '  No hay rangos coincidentes.',
                        'it': '  Nessun intervallo corrispondente.',
+                       'ja': '  一致した範囲はありません。',
                        'pl': '  Brak dopasowanych przedziałów.',
                        'ru': '  Совпавших диапазонов нет.',
                        'zh': '  无匹配范围。'},
@@ -772,6 +854,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                 'en': '\nNo matches to save. Nothing changed.',
                 'es': '\nNo hay coincidencias para guardar. Nada cambiado.',
                 'it': '\nNessuna corrispondenza da salvare. Nessuna modifica.',
+                'ja': '\n保存する一致なし。何も変更されませんでした。',
                 'pl': '\nBrak dopasowań do zapisania. Nic nie zmieniono.',
                 'ru': '\nНет совпадений для сохранения. Ничего не изменено.',
                 'zh': '\n无匹配项可保存。未做任何更改。'},
@@ -779,6 +862,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                        'en': 'No missing blocks (nothing to add).',
                        'es': 'No hay bloques faltantes (nada que añadir).',
                        'it': 'Nessun blocco mancante (niente da aggiungere).',
+                       'ja': '欠落ブロックなし (追加するものがありません)。',
                        'pl': 'Brak brakujących bloków (nic do dopisania).',
                        'ru': 'Отсутствующих блоков нет (добавлять нечего).',
                        'zh': '没有缺失块（无需添加）。'},
@@ -786,6 +870,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                         'en': 'No missing entries in given range. Nothing to do.',
                         'es': 'No hay entradas faltantes en el rango indicado. Nada que hacer.',
                         'it': "Nessuna voce mancante nell'intervallo specificato. Niente da fare.",
+                        'ja': '指定範囲に欠落エントリなし。何も行いません。',
                         'pl': 'Brak brakujących wpisów w podanym przedziale. Nic do zrobienia.',
                         'ru': 'В указанном диапазоне нет отсутствующих записей. Нечего делать.',
                         'zh': '指定范围内无缺失条目。无需操作。'},
@@ -793,6 +878,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                            'en': 'No missingtexts file saved.',
                            'es': 'No se guardó ningún archivo missingtexts.',
                            'it': 'Nessun file missingtexts salvato.',
+                           'ja': 'missingtexts ファイルが保存されませんでした。',
                            'pl': 'Brak zapisanego pliku missingtexts.',
                            'ru': 'Файл missingtexts не сохранён.',
                            'zh': '未保存 missingtexts 文件。'},
@@ -800,6 +886,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                'en': '  A:{} (no offset, cannot determine guessed text number for B)',
                'es': '  A:{} (sin offset, imposible determinar número supuesto de texto para B)',
                'it': '  A:{} (nessun offset, impossibile determinare il numero di testo presunto per B)',
+               'ja': '  A:{} (オフセットなし、B の推測テキスト番号を決定できません)',
                'pl': '  A:{} (brak offsetu, nie można wyznaczyć liczby domniemanego tekstu dla B)',
                'ru': '  A:{} (нет оффсета, невозможно определить предполагаемый номер текста в B)',
                'zh': '  A:{}（无偏移，无法确定 B 的推测文本编号）'},
@@ -807,6 +894,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                       'en': 'no offset',
                       'es': 'sin offset',
                       'it': 'nessun offset',
+                      'ja': 'オフセットなし',
                       'pl': 'brak offsetu',
                       'ru': 'нет offset',
                       'zh': '无偏移'},
@@ -814,6 +902,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                       'en': 'No path. Back to menu.',
                       'es': 'Sin ruta. Volver al menú.',
                       'it': 'Nessun percorso. Ritorno al menu.',
+                      'ja': 'パスなし。メニューに戻る。',
                       'pl': 'Brak ścieżki. Powrót do menu.',
                       'ru': 'Путь не указан. Возврат в меню.',
                       'zh': '无路径。返回菜单。'},
@@ -821,6 +910,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                        'en': 'No range. Canceled.',
                        'es': 'Sin rango. Cancelado.',
                        'it': 'Nessun intervallo. Annullato.',
+                       'ja': '範囲なし。キャンセルしました。',
                        'pl': 'Brak przedziału. Anulowano.',
                        'ru': 'Диапазон не указан. Отменено.',
                        'zh': '无范围。已取消。'},
@@ -828,6 +918,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                      'en': '  No replacements (no number from B occurred in A).',
                      'es': '  No hubo reemplazos (ningún número de B estaba presente en A).',
                      'it': '  Nessuna sostituzione (nessun numero da B era presente in A).',
+                     'ja': '  置換なし (B の番号は A に存在しませんでした)。',
                      'pl': '  Brak podmian (żaden numer z B nie występował w A).',
                      'ru': '  Замен не было (ни один номер из B не встречался в A).',
                      'zh': '  无替换（B 中的任何编号均未出现在 A 中）。'},
@@ -835,14 +926,23 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
             'en': '  A:{} (guessed B text: {} — {})',
             'es': '  A:{} (texto supuesto B: {} — {})',
             'it': '  A:{} (testo presunto B: {} — {})',
+            'ja': '  A:{} (推測 B テキスト: {} — {})',
             'pl': '  A:{} (domniemany tekst B: {} — {})',
             'ru': '  A:{} (предполагаемый текст B: {} — {})',
             'zh': '  A:{}（推测 B 文本：{} — {}）'},
- 'no_suggestion': {'de': 'keine', 'en': 'none', 'es': 'ninguna', 'it': 'nessuno', 'pl': 'brak', 'ru': 'нет', 'zh': '无'},
+ 'no_suggestion': {'de': 'keine',
+                   'en': 'none',
+                   'es': 'ninguna',
+                   'it': 'nessuno',
+                   'ja': 'なし',
+                   'pl': 'brak',
+                   'ru': 'нет',
+                   'zh': '无'},
  'no_targets': {'de': 'Keine Zielindizes zum Speichern. Abgebrochen.',
                 'en': 'No target indices to save. Canceled.',
                 'es': 'No hay índices destino para guardar. Cancelado.',
                 'it': 'Nessun indice di destinazione da salvare. Annullato.',
+                'ja': '保存するターゲットインデックスなし。キャンセルしました。',
                 'pl': 'Brak docelowych indeksów do zapisu. Anulowano.',
                 'ru': 'Нет целевых индексов для сохранения. Отменено.',
                 'zh': '无目标索引可保存。已取消。'},
@@ -850,6 +950,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                        'en': 'No value. Canceled.',
                        'es': 'Sin valor. Cancelado.',
                        'it': 'Nessun valore. Annullato.',
+                       'ja': '値なし。キャンセルしました。',
                        'pl': 'Brak wartości. Anulowano.',
                        'ru': 'Значение не введено. Отменено.',
                        'zh': '无值。已取消。'},
@@ -857,6 +958,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
               'en': 'Number must be >= 1.',
               'es': 'El número debe ser ≥ 1.',
               'it': 'Il numero deve essere ≥ 1.',
+              'ja': '番号は >= 1 でなければなりません。',
               'pl': 'Numer musi być >= 1.',
               'ru': 'Номер должен быть ≥ 1.',
               'zh': '编号必须 ≥ 1。'},
@@ -864,6 +966,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                    'en': 'Numbers must be in range 0-255.',
                    'es': 'Los números deben estar en el rango 0-255.',
                    'it': 'I numeri devono essere nel range 0-255.',
+                   'ja': '数字は 0-255 の範囲でなければなりません。',
                    'pl': 'Liczby muszą być w zakresie 0-255.',
                    'ru': 'Числа должны быть в диапазоне 0-255.',
                    'zh': '数字必须在 0-255 范围内。'},
@@ -871,6 +974,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                     'en': '\nOffset change history (offset, A_index, B_index):',
                     'es': '\nHistorial de cambios de offset (offset, A_index, B_index):',
                     'it': "\nCronologia delle modifiche dell'offset (offset, A_index, B_index):",
+                    'ja': '\nオフセット変更履歴 (offset, A_index, B_index):',
                     'pl': '\nHistoria zmian offsetu (offset, A_index, B_index):',
                     'ru': '\nИстория изменений оффсета (offset, A_index, B_index):',
                     'zh': '\n偏移变更历史（偏移, A_index, B_index）：'},
@@ -878,6 +982,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                    'en': 'Enter offset (integer, 0 = cancel): ',
                    'es': 'Ingresa el offset (número entero, 0 = cancelar): ',
                    'it': "Inserisci l'offset (numero intero, 0 = annulla): ",
+                   'ja': 'オフセットを入力 (整数、0 = キャンセル): ',
                    'pl': 'Podaj offset (liczba całkowita, 0 = anuluj): ',
                    'ru': 'Введите смещение (целое число, 0 = отмена): ',
                    'zh': '请输入偏移量（整数，0 = 取消）：'},
@@ -885,6 +990,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                    'en': '  offset {} set at A:{} -> B:{}',
                    'es': '  offset {} establecido en A:{} → B:{}',
                    'it': '  offset {} impostato presso A:{} -> B:{}',
+                   'ja': '  オフセット {} を A:{} -> B:{} で設定',
                    'pl': '  offset {} ustawiony przy A:{} -> B:{}',
                    'ru': '  offset {} установлен при A:{} → B:{}',
                    'zh': '  偏移 {} 设置于 A:{} → B:{}'},
@@ -892,6 +998,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                  'en': 'Offset = 0 — no action. Canceled.',
                  'es': 'Offset = 0 — sin acción. Cancelado.',
                  'it': 'Offset = 0 — nessuna azione. Annullato.',
+                 'ja': 'オフセット = 0 — 動作なし。キャンセルしました。',
                  'pl': 'Offset = 0 — brak działania. Anulowano.',
                  'ru': 'Смещение = 0 — действие не выполнено. Отменено.',
                  'zh': '偏移量 = 0 — 无操作。已取消。'},
@@ -899,6 +1006,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                      'en': 'Output file [{}]: ',
                      'es': 'Archivo de salida [{}]: ',
                      'it': 'File di output [{}]: ',
+                     'ja': '出力ファイル [{}]: ',
                      'pl': 'Plik wyjściowy [{}]: ',
                      'ru': 'Выходной файл [{}]: ',
                      'zh': '输出文件 [{}]：'},
@@ -906,6 +1014,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                      'en': 'Output file name [missingtexts.txt]: ',
                      'es': 'Nombre del archivo de salida [missingtexts.txt]: ',
                      'it': 'Nome del file di output [missingtexts.txt]: ',
+                     'ja': '出力ファイル名 [missingtexts.txt]: ',
                      'pl': 'Nazwa pliku wynikowego [missingtexts.txt]: ',
                      'ru': 'Имя выходного файла [missingtexts.txt]: ',
                      'zh': '输出文件名 [missingtexts.txt]：'},
@@ -913,6 +1022,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                   'en': 'Number out of range. Try again.',
                   'es': 'Número fuera de rango. Intenta de nuevo.',
                   'it': 'Numero fuori intervallo. Riprova.',
+                  'ja': '番号が範囲外です。再試行してください。',
                   'pl': 'Numer poza zakresem. Spróbuj ponownie.',
                   'ru': 'Номер вне диапазона. Попробуйте снова.',
                   'zh': '编号超出范围。请重试。'},
@@ -920,6 +1030,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                         'en': 'Starting number out of range. Try again.',
                         'es': 'Número inicial fuera de rango. Intenta de nuevo.',
                         'it': 'Numero iniziale fuori intervallo. Riprova.',
+                        'ja': '開始番号が範囲外です。再試行してください。',
                         'pl': 'Początkowy numer poza zakresem. Spróbuj ponownie.',
                         'ru': 'Начальный номер вне диапазона. Попробуйте снова.',
                         'zh': '起始编号超出范围。请重试。'},
@@ -927,20 +1038,23 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                      'en': 'Enter output path [{}]: ',
                      'es': 'Ingresa la ruta de salida [{}]: ',
                      'it': 'Inserisci il percorso di output [{}]: ',
+                     'ja': '出力パスを入力 [{}]: ',
                      'pl': 'Podaj ścieżkę wyjściową [{}]: ',
                      'ru': 'Введите путь для сохранения [{}]: ',
                      'zh': '请输入输出路径 [{}]：'},
  'overwrite_a_backup': {'de': '  1) Datei A überschreiben (eine Sicherung wird erstellt)',
-                 'en': '  1) Overwrite file A (backup will be created)',
-                 'es': '  1) Sobrescribir el archivo A (se creará una copia de seguridad)',
-                 'it': '  1) Sovrascrivi il file A (verrà creata una copia di backup)',
-                 'pl': '  1) Nadpisać plik A (zrobiona zostanie kopia zapasowa)',
-                 'ru': '  1) Перезаписать файл A (будет создана резервная копия)',
-                 'zh': '  1) 覆盖文件 A（将创建备份）'},
+                        'en': '  1) Overwrite file A (backup will be created)',
+                        'es': '  1) Sobrescribir el archivo A (se creará una copia de seguridad)',
+                        'it': '  1) Sovrascrivi il file A (verrà creata una copia di backup)',
+                        'ja': '  1) ファイル A を上書き (バックアップを作成)',
+                        'pl': '  1) Nadpisać plik A (zrobiona zostanie kopia zapasowa)',
+                        'ru': '  1) Перезаписать файл A (будет создана резервная копия)',
+                        'zh': '  1) 覆盖文件 A（将创建备份）'},
  'overwrite_direct': {'de': 'Datei A direkt überschreiben?',
                       'en': 'Overwrite file A directly?',
                       'es': '¿Sobrescribir directamente el archivo A?',
                       'it': 'Sovrascrivere direttamente il file A?',
+                      'ja': 'ファイル A を直接上書きしますか？',
                       'pl': 'Nadpisać plik A bezpośrednio?',
                       'ru': 'Перезаписать файл A напрямую?',
                       'zh': '是否直接覆盖文件 A？'},
@@ -948,6 +1062,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                     'en': 'Overwrite file?',
                     'es': '¿Sobrescribir el archivo?',
                     'it': 'Sovrascrivere il file?',
+                    'ja': 'ファイルを上書きしますか？',
                     'pl': 'Nadpisać plik?',
                     'ru': 'Перезаписать файл?',
                     'zh': '是否覆盖文件？'},
@@ -955,6 +1070,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                       'en': '\nDo you want to overwrite existing file?',
                       'es': '\n¿Quieres sobrescribir el archivo existente?',
                       'it': '\nVuoi sovrascrivere il file esistente?',
+                      'ja': '\n既存ファイルを上書きしますか？',
                       'pl': '\nCzy chcesz nadpisać istniejący plik?',
                       'ru': '\nХотите перезаписать существующий файл?',
                       'zh': '\n是否覆盖现有文件？'},
@@ -962,6 +1078,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                  'en': 'Overwritten file: {}',
                  'es': 'Archivo sobrescrito: {}',
                  'it': 'File sovrascritto: {}',
+                 'ja': 'ファイルを上書きしました: {}',
                  'pl': 'Nadpisano plik: {}',
                  'ru': 'Файл перезаписан: {}',
                  'zh': '已覆盖文件：{}'},
@@ -969,6 +1086,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                    'en': 'Overwritten file A: {}',
                    'es': 'Archivo A sobrescrito: {}',
                    'it': 'File A sovrascritto: {}',
+                   'ja': 'ファイル A を上書きしました: {}',
                    'pl': 'Nadpisano plik A: {}',
                    'ru': 'Файл A перезаписан: {}',
                    'zh': '已覆盖文件 A：{}'},
@@ -976,6 +1094,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                    'en': 'Enter path to file A (base): ',
                    'es': 'Ingresa la ruta al archivo A (base): ',
                    'it': 'Inserisci il percorso del file A (base): ',
+                   'ja': 'ファイル A (ベース) のパスを入力: ',
                    'pl': 'Podaj ścieżkę do pliku A (bazowy): ',
                    'ru': 'Введите путь к файлу A (базовый): ',
                    'zh': '请输入文件 A 的路径（基础文件）：'},
@@ -983,6 +1102,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                      'en': 'File A required for this option. Back to menu.',
                      'es': 'Se requiere el archivo A para esta opción. Volver al menú.',
                      'it': 'File A richiesto per questa opzione. Ritorno al menu.',
+                     'ja': 'このオプションにはファイル A が必要です。メニューに戻る。',
                      'pl': 'Plik A wymagany dla tej opcji. Powrót do menu.',
                      'ru': 'Для этой опции требуется файл A. Возврат в меню.',
                      'zh': '此选项需要文件 A。返回菜单。'},
@@ -990,6 +1110,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                    'en': 'Enter path to file B (reference): ',
                    'es': 'Ingresa la ruta al archivo B (de referencia): ',
                    'it': 'Inserisci il percorso del file B (di riferimento): ',
+                   'ja': 'ファイル B (参照) のパスを入力: ',
                    'pl': 'Podaj ścieżkę do pliku B (referencyjny): ',
                    'ru': 'Введите путь к файлу B (эталонный): ',
                    'zh': '请输入文件 B 的路径（参考文件）：'},
@@ -997,6 +1118,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                              'en': 'Enter path to s4_texts.dat<nr> for preview: ',
                              'es': 'Ingresa la ruta al archivo s4_texts.dat<nr> para vista previa: ',
                              'it': "Inserisci il percorso del file s4_texts.dat<nr> per l'anteprima: ",
+                             'ja': 'プレビュー用の s4_texts.dat<nr> ファイルのパスを入力: ',
                              'pl': 'Podaj ścieżkę do pliku s4_texts.dat<nr> do podglądu: ',
                              'ru': 'Введите путь к файлу s4_texts.dat<nr> для предпросмотра: ',
                              'zh': '请输入要预览的 s4_texts.dat<nr> 文件路径：'},
@@ -1004,6 +1126,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                      'en': 'Enter path to s4_texts.dat<nr>: ',
                      'es': 'Ingresa la ruta al archivo s4_texts.dat<nr>: ',
                      'it': 'Inserisci il percorso del file s4_texts.dat<nr>: ',
+                     'ja': 's4_texts.dat<nr> ファイルのパスを入力: ',
                      'pl': 'Podaj ścieżkę do pliku s4_texts.dat<nr>: ',
                      'ru': 'Введите путь к файлу s4_texts.dat<nr>: ',
                      'zh': '请输入 s4_texts.dat<nr> 文件的路径：'},
@@ -1011,6 +1134,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                    'en': 'Path to .dat file required. Back to menu.',
                    'es': 'Se requiere la ruta al archivo .dat. Volver al menú.',
                    'it': 'Percorso del file .dat richiesto. Ritorno al menu.',
+                   'ja': '.dat ファイルのパスが必要です。メニューに戻る。',
                    'pl': 'Ścieżka do pliku .dat wymagana. Powrót do menu.',
                    'ru': 'Требуется путь к файлу .dat. Возврат в меню.',
                    'zh': '需要 .dat 文件路径。返回菜单。'},
@@ -1018,6 +1142,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                        'en': '\nPlaces where A was empty/placeholder, but B had significant text:',
                        'es': '\nLugares donde A estaba vacío/placeholder pero B tenía texto significativo:',
                        'it': '\nPosizioni in cui A era vuoto/placeholder ma B aveva testo significativo:',
+                       'ja': '\nA が空/プレースホルダーだったが B が有意なテキストを持つ箇所:',
                        'pl': '\nMiejsca gdzie A był pusty/placeholder, a B miał znaczący tekst:',
                        'ru': '\nМеста, где A был пустым/заглушкой, а B содержал значимый текст:',
                        'zh': '\nA 为空/占位符但 B 有意义文本的位置：'},
@@ -1025,6 +1150,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                          'en': '\nPress Enter to exit...',
                          'es': '\nPresiona Enter para terminar...',
                          'it': '\nPremi Invio per terminare...',
+                         'ja': '\nEnter を押して終了...',
                          'pl': '\nNaciśnij Enter, aby zakończyć...',
                          'ru': '\nНажмите Enter для завершения...',
                          'zh': '\n按 Enter 键退出...'},
@@ -1032,20 +1158,23 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                            'en': 'Enter path to .s4_translation_project for export: ',
                            'es': 'Ingresa la ruta al archivo .s4_translation_project para exportar: ',
                            'it': 'Inserisci il percorso del file .s4_translation_project da esportare: ',
+                           'ja': 'エクスポートする .s4_translation_project ファイルのパスを入力: ',
                            'pl': 'Podaj ścieżkę do pliku .s4_translation_project do eksportu: ',
                            'ru': 'Введите путь к файлу .s4_translation_project для экспорта: ',
                            'zh': '请输入要导出的 .s4_translation_project 文件路径：'},
  'project_path_prompt': {'de': 'Geben Sie den Pfad zur .s4_translation_project-Datei ein: ',
-                             'en': 'Enter path to .s4_translation_project file: ',
-                             'es': 'Ingresa la ruta al archivo .s4_translation_project: ',
-                             'it': 'Inserisci il percorso del file .s4_translation_project: ',
-                             'pl': 'Podaj ścieżkę do pliku .s4_translation_project: ',
-                             'ru': 'Введите путь к файлу .s4_translation_project: ',
-                             'zh': '请输入 .s4_translation_project 文件的路径：'},
+                         'en': 'Enter path to .s4_translation_project file: ',
+                         'es': 'Ingresa la ruta al archivo .s4_translation_project: ',
+                         'it': 'Inserisci il percorso del file .s4_translation_project: ',
+                         'ja': '.s4_translation_project ファイルのパスを入力: ',
+                         'pl': 'Podaj ścieżkę do pliku .s4_translation_project: ',
+                         'ru': 'Введите путь к файлу .s4_translation_project: ',
+                         'zh': '请输入 .s4_translation_project 文件的路径：'},
  'project_path_required': {'de': 'Pfad zur Projektdatei erforderlich. Zurück zum Menü.',
                            'en': 'Path to project file required. Back to menu.',
                            'es': 'Se requiere la ruta al archivo de proyecto. Volver al menú.',
                            'it': 'Percorso del file di progetto richiesto. Ritorno al menu.',
+                           'ja': 'プロジェクトファイルのパスが必要です。メニューに戻る。',
                            'pl': 'Ścieżka do pliku projektu wymagana. Powrót do menu.',
                            'ru': 'Требуется путь к файлу проекта. Возврат в меню.',
                            'zh': '需要项目文件路径。返回菜单。'},
@@ -1053,6 +1182,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                         'en': 'Error reading project file: {}',
                         'es': 'Error al leer el archivo de proyecto: {}',
                         'it': 'Errore di lettura del file di progetto: {}',
+                        'ja': 'プロジェクトファイルの読み込みエラー: {}',
                         'pl': 'Błąd odczytu pliku projektu: {}',
                         'ru': 'Ошибка чтения файла проекта: {}',
                         'zh': '读取项目文件出错：{}'},
@@ -1060,6 +1190,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                    'en': 'Saved project file: {} (output encoding: {})',
                    'es': 'Archivo de proyecto guardado: {} (codificación de salida: {})',
                    'it': 'File di progetto salvato: {} (codifica di output: {})',
+                   'ja': 'プロジェクトファイルを保存しました: {} (出力エンコーディング: {})',
                    'pl': 'Zapisano plik projektu: {} (kodowanie wyjściowe: {})',
                    'ru': 'Файл проекта сохранён: {} (выходная кодировка: {})',
                    'zh': '已保存项目文件：{}（输出编码：{}）'},
@@ -1067,6 +1198,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                          'en': 'Error writing project file: {}',
                          'es': 'Error al escribir el archivo de proyecto: {}',
                          'it': 'Errore di scrittura del file di progetto: {}',
+                         'ja': 'プロジェクトファイルの書き込みエラー: {}',
                          'pl': 'Błąd zapisu pliku projektu: {}',
                          'ru': 'Ошибка записи файла проекта: {}',
                          'zh': '写入项目文件出错：{}'},
@@ -1076,6 +1208,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                       'es': 'Ingresa el rango de números a completar (ej. 1-2000) o un número individual (ej. 57): ',
                       'it': "Inserisci l'intervallo di numeri da completare (es. 1-2000) o un singolo numero (es. "
                             '57): ',
+                      'ja': '補完する番号範囲を入力 (例: 1-2000) または単一番号 (例: 57): ',
                       'pl': 'Podaj przedział numerów do uzupełnienia (np. 1-2000) lub pojedynczy numer (np. 57): ',
                       'ru': 'Введите диапазон номеров для заполнения (например 1-2000) или один номер (например 57): ',
                       'zh': '请输入要补全的编号范围（例如 1-2000）或单个编号（例如 57）：'},
@@ -1087,6 +1220,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                         'para ingresar un solo número y probar todas las codificaciones: ',
                   'it': "Inserisci il numero del testo (es. 57), un intervallo (es. 60-200), 'all' per mostrare tutto, "
                         "o 'single' per inserire un singolo numero da testare con tutte le codifiche: ",
+                  'ja': "テキスト番号を入力 (例: 57)、範囲 (例: 60-200)、'all' で全て出力、または 'single' で単一番号を入力して全てのエンコーディングをテスト: ",
                   'pl': "Podaj numer tekstu (np. 57), przedział (np. 60-200), 'all' aby wypisać wszystko, lub 'single' "
                         'aby podać pojedynczy numer do testu wszystkich kodowań: ',
                   'ru': "Введите номер текста (например 57), диапазон (например 60-200), 'all' для вывода всего или "
@@ -1096,6 +1230,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                       'en': '  Replaced numbers (from file B): {}',
                       'es': '  Números reemplazados (desde el archivo B): {}',
                       'it': '  Numeri sostituiti (dal file B): {}',
+                      'ja': '  置換された番号 (ファイル B から): {}',
                       'pl': '  Podmienione numery (z pliku B): {}',
                       'ru': '  Заменённые номера (из файла B): {}',
                       'zh': '  已替换的编号（来自文件 B）：{}'},
@@ -1103,6 +1238,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                     'en': 'Files A and B are required for this option. Back to menu.',
                     'es': 'Se requieren los archivos A y B para esta opción. Volver al menú.',
                     'it': 'I file A e B sono richiesti per questa opzione. Ritorno al menu.',
+                    'ja': 'このオプションにはファイル A と B が必要です。メニューに戻る。',
                     'pl': 'Plik A i B są wymagane dla tej opcji. Powrót do menu.',
                     'ru': 'Для этой опции требуются файлы A и B. Возврат в меню.',
                     'zh': '此选项需要文件 A 和 B。返回菜单。'},
@@ -1110,6 +1246,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                      'en': 'Sample mappings (A -> B): {}',
                      'es': 'Mapeos de ejemplo (A → B): {}',
                      'it': 'Mappature di esempio (A -> B): {}',
+                     'ja': 'サンプルマッピング (A -> B): {}',
                      'pl': 'Przykładowe mapowania (A -> B): {}',
                      'ru': 'Примеры сопоставлений (A → B): {}',
                      'zh': '示例映射（A → B）：{}'},
@@ -1117,20 +1254,23 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                  'en': 'Save as: {}',
                  'es': 'Guardar como: {}',
                  'it': 'Salva come: {}',
+                 'ja': 'として保存: {}',
                  'pl': 'Zapisz jako: {}',
                  'ru': 'Сохранить как: {}',
                  'zh': '另存为：{}'},
  'save_as_new': {'de': 'Als neue Datei speichern: {}?',
-                        'en': 'Save as new file: {}?',
-                        'es': '¿Guardar como nuevo archivo: {}?',
-                        'it': 'Salvare come nuovo file: {}?',
-                        'pl': 'Zapisać jako nowy plik: {}?',
-                        'ru': 'Сохранить как новый файл: {}?',
-                        'zh': '是否保存为新文件：{}？'},
+                 'en': 'Save as new file: {}?',
+                 'es': '¿Guardar como nuevo archivo: {}?',
+                 'it': 'Salvare come nuovo file: {}?',
+                 'ja': '新しいファイルとして保存: {}?',
+                 'pl': 'Zapisać jako nowy plik: {}?',
+                 'ru': 'Сохранить как новый файл: {}?',
+                 'zh': '是否保存为新文件：{}？'},
  'save_canceled': {'de': 'Speichern abgebrochen.',
                    'en': 'Save canceled.',
                    'es': 'Guardado cancelado.',
                    'it': 'Salvataggio annullato.',
+                   'ja': '保存をキャンセルしました。',
                    'pl': 'Anulowano zapis.',
                    'ru': 'Сохранение отменено.',
                    'zh': '保存已取消。'},
@@ -1138,6 +1278,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                  'en': '\nIntending to save {} updated entries to file A.',
                  'es': '\nVoy a guardar {} entradas actualizadas en el archivo A.',
                  'it': '\nIntendo salvare {} voci aggiornate nel file A.',
+                 'ja': '\n{} 個の更新されたエントリをファイル A に保存します。',
                  'pl': '\nZamierzam zapisać {} zaktualizowanych wpisów do pliku A.',
                  'ru': '\nПланирую сохранить {} обновлённых записей в файл A.',
                  'zh': '\n准备将 {} 个更新条目保存到文件 A。'},
@@ -1145,6 +1286,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                  'en': '\nChoose save method:',
                  'es': '\nElige el método de guardado:',
                  'it': '\nScegli il metodo di salvataggio:',
+                 'ja': '\n保存方法を選択:',
                  'pl': '\nWybierz sposób zapisu:',
                  'ru': '\nВыберите способ сохранения:',
                  'zh': '\n选择保存方式：'},
@@ -1152,6 +1294,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
               'en': '  2) Save as new file (same directory as A, name + _updated)',
               'es': '  2) Guardar como nuevo archivo (misma carpeta que A, nombre + _updated)',
               'it': '  2) Salva come nuovo file (stessa cartella di A, nome + _updated)',
+              'ja': '  2) 新しいファイルとして保存 (A と同じディレクトリ、名前 + _updated)',
               'pl': '  2) Zapisz jako nowy plik (ten sam katalog co A, nazwa + _updated)',
               'ru': '  2) Сохранить как новый файл (в той же папке, что и A, имя + _updated)',
               'zh': '  2) 保存为新文件（与 A 同目录，文件名 + _updated）'},
@@ -1159,6 +1302,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                     'en': '  2) Save as new file (same directory as A, name + _shifted)',
                     'es': '  2) Guardar como nuevo archivo (misma carpeta que A, nombre + _shifted)',
                     'it': '  2) Salva come nuovo file (stessa cartella di A, nome + _shifted)',
+                    'ja': '  2) 新しいファイルとして保存 (A と同じディレクトリ、名前 + _shifted)',
                     'pl': '  2) Zapisz jako nowy plik (ten sam katalog co A, nazwa + _shifted)',
                     'ru': '  2) Сохранить как новый файл (в той же папке, имя + _shifted)',
                     'zh': '  2) 保存为新文件（与 A 同目录，文件名 + _shifted）'},
@@ -1166,6 +1310,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                        'en': '\nChoose save method for shifted file:',
                        'es': '\nElige el método de guardado del archivo desplazado:',
                        'it': '\nScegli il metodo di salvataggio del file spostato:',
+                       'ja': '\nシフト後ファイルの保存方法を選択:',
                        'pl': '\nWybierz sposób zapisu przesuniętego pliku:',
                        'ru': '\nВыберите способ сохранения сдвинутого файла:',
                        'zh': '\n选择偏移后文件的保存方式：'},
@@ -1173,6 +1318,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                       'en': 'Save test result to file {}_encoding_test.txt? [y/N]: ',
                       'es': '¿Guardar el resultado de la prueba en el archivo {}_encoding_test.txt? [S/n]: ',
                       'it': 'Salvare il risultato del test nel file {}_encoding_test.txt? [S/n]: ',
+                      'ja': '{}_encoding_test.txt ファイルにテスト結果を保存しますか？ [Y/n]: ',
                       'pl': 'Czy zapisać wynik testu do pliku {}_encoding_test.txt? [T/n]: ',
                       'ru': 'Сохранить результат теста в файл {}_encoding_test.txt? [Д/н]: ',
                       'zh': '是否将测试结果保存到 {}_encoding_test.txt？[Y/n]：'},
@@ -1180,6 +1326,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                         'en': 'Will save all texts from 1 to {} (last number: {}).',
                         'es': 'Guardaré todos los textos desde 1 hasta {} (último número: {}).',
                         'it': 'Salverò tutti i testi da 1 a {} (ultimo numero: {}).',
+                        'ja': '全てのテキストを 1 から {} まで保存します (最後の番号: {})。',
                         'pl': 'Zapiszę wszystkie teksty od 1 do {} (ostatni numer: {}).',
                         'ru': 'Будут сохранены все тексты с 1 по {} (последний номер: {}).',
                         'zh': '将保存所有文本，从 1 到 {}（最后一个编号：{}）。'},
@@ -1187,6 +1334,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
               'en': 'Saved result to: {}',
               'es': 'Resultado guardado en: {}',
               'it': 'Risultato salvato in: {}',
+              'ja': '結果を保存しました: {}',
               'pl': 'Zapisano wynik do: {}',
               'ru': 'Результат сохранён в: {}',
               'zh': '结果已保存至：{}'},
@@ -1194,6 +1342,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                    'en': 'Selected language: {} (number {}), suggested encodings (first default): {}',
                    'es': 'Idioma seleccionado: {} (número {}), codificaciones sugeridas (primera por defecto): {}',
                    'it': 'Lingua selezionata: {} (numero {}), codifiche suggerite (prima predefinita): {}',
+                   'ja': '選択された言語: {} (番号 {})、提案エンコーディング (最初のデフォルト): {}',
                    'pl': 'Wybrany język: {} (numer {}), sugerowane kodowania (pierwsze domyślne): {}',
                    'ru': 'Выбран язык: {} (номер {}), предложенные кодировки (первая по умолчанию): {}',
                    'zh': '已选择语言：{}（编号 {}），建议编码（第一个为默认）：{}'},
@@ -1201,6 +1350,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                    'en': 'Saved shifted file to: {}',
                    'es': 'Archivo desplazado guardado en: {}',
                    'it': 'File spostato salvato in: {}',
+                   'ja': 'シフトされたファイルを保存しました: {}',
                    'pl': 'Zapisano przesunięty plik do: {}',
                    'ru': 'Сдвинутый файл сохранён в: {}',
                    'zh': '偏移后的文件已保存至：{}'},
@@ -1208,6 +1358,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                 'en': 'similarity',
                 'es': 'similitud',
                 'it': 'similarità',
+                'ja': '類似度',
                 'pl': 'podobieństwo',
                 'ru': 'схожесть',
                 'zh': '相似度'},
@@ -1215,6 +1366,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                         'en': 'Enter single text number for all encodings test: ',
                         'es': 'Ingresa el número de un solo texto para probar todas las codificaciones: ',
                         'it': 'Inserisci il numero di un singolo testo per il test di tutte le codifiche: ',
+                        'ja': '全てのエンコーディングテスト用の単一テキスト番号を入力: ',
                         'pl': 'Podaj numer pojedynczego tekstu do testu wszystkich kodowań: ',
                         'ru': 'Введите номер одного текста для теста всех кодировок: ',
                         'zh': '请输入单个文本编号以测试所有编码：'},
@@ -1222,6 +1374,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                     'en': '\nSuggested encodings (first default):',
                     'es': '\nCodificaciones sugeridas (primera por defecto):',
                     'it': '\nCodifiche suggerite (prima predefinita):',
+                    'ja': '\n提案エンコーディング (最初のデフォルト):',
                     'pl': '\nSugerowane kodowania (pierwsze domyślne):',
                     'ru': '\nПредложенные кодировки (первая по умолчанию):',
                     'zh': '\n建议编码（第一个为默认）：'},
@@ -1229,6 +1382,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                      'en': '\nSummary of changes:',
                      'es': '\nResumen de cambios:',
                      'it': '\nRiepilogo delle modifiche:',
+                     'ja': '\n変更の概要:',
                      'pl': '\nPodsumowanie zmian:',
                      'ru': '\nИтог изменений:',
                      'zh': '\n更改摘要：'},
@@ -1236,6 +1390,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                       'en': 'Test another encoding for this range? [Y/n]: ',
                       'es': '¿Probar otra codificación para este rango? [S/n]: ',
                       'it': "Testare un'altra codifica per questo intervallo? [S/n]: ",
+                      'ja': 'この範囲で他のエンコーディングをチェックしますか？ [Y/n]: ',
                       'pl': 'Sprawdzić inne kodowanie dla tego zakresu? [T/n]: ',
                       'ru': 'Проверить другую кодировку для этого диапазона? [Д/н]: ',
                       'zh': '是否为该范围测试其他编码？[Y/n]：'},
@@ -1243,6 +1398,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                     'en': 'Test not saved.',
                     'es': 'La prueba no fue guardada.',
                     'it': 'Il test non è stato salvato.',
+                    'ja': 'テストは保存されませんでした。',
                     'pl': 'Test nie został zapisany.',
                     'ru': 'Тест не сохранён.',
                     'zh': '测试未保存。'},
@@ -1250,6 +1406,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                      'en': 'Error saving test: {}',
                      'es': 'Error al guardar la prueba: {}',
                      'it': 'Errore durante il salvataggio del test: {}',
+                     'ja': 'テストの保存エラー: {}',
                      'pl': 'Błąd zapisu testu: {}',
                      'ru': 'Ошибка сохранения теста: {}',
                      'zh': '保存测试出错：{}'},
@@ -1257,6 +1414,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                 'en': 'Saved encoding test to: {}',
                 'es': 'Prueba de codificaciones guardada en: {}',
                 'it': 'Test delle codifiche salvato in: {}',
+                'ja': 'エンコーディングテストを保存しました: {}',
                 'pl': 'Zapisano test kodowań do: {}',
                 'ru': 'Тест кодировок сохранён в: {}',
                 'zh': '编码测试已保存至：{}'},
@@ -1264,6 +1422,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                          'en': 'Testing single text #{} across encodings\n',
                          'es': 'Probando texto individual #{} con diferentes codificaciones\n',
                          'it': 'Test di un singolo testo #{} con diverse codifiche\n',
+                         'ja': '単一テキスト #{} をエンコーディングでテスト中\n',
                          'pl': 'Testing single text #{} across encodings\n',
                          'ru': 'Тестирование одного текста #{} на разных кодировках\n',
                          'zh': '正在测试单个文本 #{} 的多种编码\n'},
@@ -1271,6 +1430,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                  'en': 'Number of texts saved: {}. Empty (length=0): {}. Encoding: {}',
                  'es': 'Número de textos guardados: {}. Vacíos (longitud=0): {}. Codificación: {}',
                  'it': 'Numero di testi salvati: {}. Vuoti (lunghezza=0): {}. Codifica: {}',
+                 'ja': '保存されたテキスト数: {}. 空 (length=0): {}. エンコーディング: {}',
                  'pl': 'Liczba tekstów zapisanych: {}. Pustych (length=0): {}. Kodowanie: {}',
                  'ru': 'Количество сохранённых текстов: {}. Пустых (длина=0): {}. Кодировка: {}',
                  'zh': '保存的文本数量：{}。空文本（长度=0）：{}。编码：{}'},
@@ -1278,6 +1438,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                      'en': 'File contains {} texts.',
                      'es': 'El archivo contiene {} textos.',
                      'it': 'Il file contiene {} testi.',
+                     'ja': 'ファイルには {} テキストが含まれます。',
                      'pl': 'Plik zawiera {} tekstów.',
                      'ru': 'Файл содержит {} текстов.',
                      'zh': '文件包含 {} 个文本。'},
@@ -1285,6 +1446,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                       'en': 'Unknown language number. Try again.',
                       'es': 'Número de idioma desconocido. Intenta de nuevo.',
                       'it': 'Numero lingua sconosciuto. Riprova.',
+                      'ja': '不明な言語番号。再試行してください。',
                       'pl': 'Nieznany numer języka. Spróbuj ponownie.',
                       'ru': 'Неизвестный номер языка. Попробуйте снова.',
                       'zh': '未知语言编号。请重试。'},
@@ -1292,6 +1454,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                      'en': 'Number of updated entries (without offset assignments): {}',
                      'es': 'Número de entradas actualizadas (sin asignaciones por offset): {}',
                      'it': 'Numero di voci aggiornate (escluse assegnazioni per offset): {}',
+                     'ja': 'オフセット割り当てなしの更新されたエントリ数: {}',
                      'pl': 'Liczba zaktualizowanych wpisów (bez przypisań przez offset): {}',
                      'ru': 'Количество обновлённых записей (без назначений по offset): {}',
                      'zh': '已更新条目数量（不含偏移分配）：{}'},
@@ -1299,6 +1462,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                        'en': "Use suggested encoding '{}'? [Y/n]: ",
                        'es': "¿Usar la codificación sugerida '{}' ? [S/n]: ",
                        'it': "Usare la codifica suggerita '{}' ? [S/n]: ",
+                       'ja': "提案されたエンコーディング '{}' を使用しますか？ [Y/n]: ",
                        'pl': "Użyć sugerowanego kodowania '{}'? [T/n]: ",
                        'ru': "Использовать предложенную кодировку '{}' ? [Д/н]: ",
                        'zh': "是否使用建议的编码 '{}'？[Y/n]："},
@@ -1306,6 +1470,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
               'en': '  A:{} ({}% similarity with B text: {})',
               'es': '  A:{} ({}% de similitud con texto B: {})',
               'it': '  A:{} ({}% di similarità con il testo B: {})',
+              'ja': '  A:{} (B テキスト {} との類似度 {}%)',
               'pl': '  A:{} ({}% podobieństwa z tekstem B: {})',
               'ru': '  A:{} ({}% схожести с текстом B: {})',
               'zh': '  A:{}（与 B 文本 {} 的相似度：{}%）'},
@@ -1313,6 +1478,7 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                  'en': 'Write error: {}',
                  'es': 'Error al escribir: {}',
                  'it': 'Errore di scrittura: {}',
+                 'ja': '書き込みエラー: {}',
                  'pl': 'Błąd zapisu: {}',
                  'ru': 'Ошибка записи: {}',
                  'zh': '写入错误：{}'},
@@ -1320,232 +1486,26 @@ TRANSLATIONS = {'added_numbers': {'de': '  Hinzugefügte Nummern (am Ende angeh�
                    'en': 'Please answer yes/no (y/n).',
                    'es': 'Por favor responde sí/no (s/n).',
                    'it': 'Rispondi sì/no (s/n).',
+                   'ja': 'はい/いいえ で答えてください (y/n)。',
                    'pl': 'Proszę odpowiedzieć tak/nie (y/n).',
                    'ru': 'Пожалуйста, ответьте да/нет (y/n).',
                    'zh': '请回答是/否 (y/n)。'},
-'yes_no_suffix_yes_default': {
-                    "en": "[Y/n]",
-                    "pl": "[T/n]",
-                    "de": "[J/n]",
-                    "es": "[S/n]",
-                    "it": "[S/n]",
-                    "ru": "[Д/н]",
-                    "zh": "[Y/n]"},
-
-'yes_no_suffix_no_default': {
-                    "en": "[y/N]",
-                    "pl": "[t/N]",
-                    "de": "[j/N]",
-                    "es": "[s/N]",
-                    "it": "[s/N]",
-                    "ru": "[д/Н]",
-                    "zh": "[y/N]"},
-'shift_map_preview_title': {
-    'pl': 'Mapa przesunięć (podgląd):',
-    'en': 'Shift map (preview):',
-    'de': 'Verschiebungskarte (Vorschau):',
-    'it': 'Mappa degli spostamenti (anteprima):',
-    'es': 'Mapa de desplazamientos (vista previa):',
-    'zh': '偏移映射（预览）：',
-    'ru': 'Карта смещений (предпросмотр):',
-    'ja': 'シフトマップ（プレビュー）：'
-},
-
-'save_shift_map_prompt': {
-    'pl': 'Zapisać mapę przesunięć do pliku?',
-    'en': 'Save the shift map to a file?',
-    'de': 'Verschiebungskarte in eine Datei speichern?',
-    'it': 'Salvare la mappa degli spostamenti su file?',
-    'es': '¿Guardar el mapa de desplazamientos en un archivo?',
-    'zh': '将偏移映射保存到文件？',
-    'ru': 'Сохранить карту смещений в файл?',
-    'ja': 'シフトマップをファイルに保存しますか？'
-},
-
-'shift_map_filename_prompt': {
-    'pl': 'Nazwa pliku mapy (domyślnie text_shift_map.txt): ',
-    'en': 'Shift map filename (default: text_shift_map.txt): ',
-    'de': 'Dateiname der Verschiebungskarte (Standard: text_shift_map.txt): ',
-    'it': 'Nome del file della mappa (predefinito: text_shift_map.txt): ',
-    'es': 'Nombre del archivo del mapa (predeterminado: text_shift_map.txt): ',
-    'zh': '映射文件名（默认：text_shift_map.txt）：',
-    'ru': 'Имя файла карты смещений (по умолчанию: text_shift_map.txt): ',
-    'ja': 'マップファイル名（デフォルト：text_shift_map.txt）：'
-},
-
-'shift_map_saved': {
-    'pl': 'Mapa przesunięć zapisana do: {0}',
-    'en': 'Shift map saved to: {0}',
-    'de': 'Verschiebungskarte gespeichert unter: {0}',
-    'it': 'Mappa degli spostamenti salvata in: {0}',
-    'es': 'Mapa de desplazamientos guardado en: {0}',
-    'zh': '偏移映射已保存到：{0}',
-    'ru': 'Карта смещений сохранена в: {0}',
-    'ja': 'シフトマップを保存しました：{0}'
-},
-
-'shift_map_save_error': {
-    'pl': 'Błąd zapisu mapy przesunięć: {0}',
-    'en': 'Error saving shift map: {0}',
-    'de': 'Fehler beim Speichern der Verschiebungskarte: {0}',
-    'it': 'Errore durante il salvataggio della mappa degli spostamenti: {0}',
-    'es': 'Error al guardar el mapa de desplazamientos: {0}',
-    'zh': '保存偏移映射时出错：{0}',
-    'ru': 'Ошибка сохранения карты смещений: {0}',
-    'ja': 'シフトマップの保存中にエラーが発生しました：{0}'
- },
- 
-    'map_read_error': {
-        'en': 'Error reading map file: {0}',
-        'pl': 'Błąd podczas odczytu pliku mapy: {0}',
-        'de': 'Fehler beim Lesen der Mapping-Datei: {0}',
-        'es': 'Error al leer el archivo de mapa: {0}',
-        'it': 'Errore durante la lettura del file di mappa: {0}',
-        'ru': 'Ошибка при чтении файла карты: {0}',
-        'zh': '读取映射文件时出错: {0}'
-    },
-
-    'paste_map_instructions': {
-        'en': 'Paste the shift map line by line. Finish with an empty line.',
-        'pl': 'Wklej mapę przesunięć linia po linii. Zakończ pustą linią.',
-        'de': 'Fügen Sie die Verschiebungsmappe zeilenweise ein. Mit leerer Zeile beenden.',
-        'es': 'Pegue el mapa de desplazamientos línea por línea. Finalice con una línea vacía.',
-        'it': 'Incolla la mappa degli offset riga per riga. Termina con una riga vuota.',
-        'ru': 'Вставьте карту смещений построчно. Завершите пустой строкой.',
-        'zh': '逐行粘贴偏移映射。以空行结束。'
-    },
-
-    'map_empty': {
-        'en': 'The map file is empty or contains no valid entries.',
-        'pl': 'Plik mapy jest pusty lub nie zawiera żadnych wpisów.',
-        'de': 'Die Mapping-Datei ist leer oder enthält keine gültigen Einträge.',
-        'es': 'El archivo de mapa está vacío o no contiene entradas válidas.',
-        'it': 'Il file di mappa è vuoto o non contiene voci valide.',
-        'ru': 'Файл карты пуст или не содержит допустимых записей.',
-        'zh': '映射文件为空或不包含有效条目。'
-    },
-
-    'map_file_invalid_lines': {
-        'en': 'The map file contains invalid lines:',
-        'pl': 'Plik mapy zawiera nieprawidłowe linie:',
-        'de': 'Die Mapping-Datei enthält ungültige Zeilen:',
-        'es': 'El archivo de mapa contiene líneas no válidas:',
-        'it': 'Il file di mappa contiene righe non valide:',
-        'ru': 'Файл карты содержит недопустимые строки:',
-        'zh': '映射文件包含无效行:'
-    },
-
-    'map_file_fix_and_retry': {
-        'en': 'Fix the map file format and try again.',
-        'pl': 'Popraw format pliku mapy i spróbuj ponownie.',
-        'de': 'Korrigieren Sie das Format der Mapping-Datei und versuchen Sie es erneut.',
-        'es': 'Corrija el formato del archivo de mapa y vuelva a intentarlo.',
-        'it': 'Correggi il formato del file di mappa e riprova.',
-        'ru': 'Исправьте формат файла карты и попробуйте снова.',
-        'zh': '请修复映射文件格式后重试。'
-    },
-
-    'map_line_unparsed': {
-        'en': 'Cannot interpret map line: {0}',
-        'pl': 'Nie można zinterpretować linii mapy: {0}',
-        'de': 'Kann die Mapping-Zeile nicht interpretieren: {0}',
-        'es': 'No se puede interpretar la línea del mapa: {0}',
-        'it': 'Impossibile interpretare la riga della mappa: {0}',
-        'ru': 'Не удалось интерпретировать строку карты: {0}',
-        'zh': '无法解析映射行: {0}'
-    },
-
-    'map_no_valid_entries': {
-        'en': 'No valid entries found in the shift map.',
-        'pl': 'Brak poprawnych wpisów w mapie przesunięć.',
-        'de': 'Keine gültigen Einträge in der Verschiebungsmappe gefunden.',
-        'es': 'No se encontraron entradas válidas en el mapa de desplazamientos.',
-        'it': 'Nessuna voce valida trovata nella mappa degli offset.',
-        'ru': 'В карте смещений не найдено допустимых записей.',
-        'zh': '偏移映射中未找到有效条目。'
-    },
-
-    'negative_or_zero_targets': {
-        'en': '{0} invalid target indices generated (<= 0). Operation aborted.',
-        'pl': 'Wygenerowano {0} nieprawidłowych numerów docelowych (<= 0). Operacja przerwana.',
-        'de': '{0} ungültige Zielindizes erzeugt (<= 0). Vorgang abgebrochen.',
-        'es': '{0} índices de destino no válidos generados (<= 0). Operación cancelada.',
-        'it': '{0} indici di destinazione non validi generati (<= 0). Operazione interrotta.',
-        'ru': 'Создано {0} недопустимых целевых индексов (<= 0). Операция прервана.',
-        'zh': '生成了 {0} 个无效目标索引 (<= 0)。操作已中止。'
-    },
-
-    'map_apply_preview': {
-        'en': '--- Preview of changes from the shift map ---',
-        'pl': '--- Podgląd zmian wynikających z mapy przesunięć ---',
-        'de': '--- Vorschau der Änderungen aus der Verschiebungsmappe ---',
-        'es': '--- Vista previa de los cambios del mapa de desplazamientos ---',
-        'it': '--- Anteprima delle modifiche dalla mappa degli offset ---',
-        'ru': '--- Предварительный просмотр изменений по карте смещений ---',
-        'zh': '--- 偏移映射更改预览 ---'
-    },
-
-    'map_apply_changes_count': {
-        'en': 'Number of generated entries: {0}',
-        'pl': 'Liczba wygenerowanych wpisów: {0}',
-        'de': 'Anzahl der erzeugten Einträge: {0}',
-        'es': 'Número de entradas generadas: {0}',
-        'it': 'Numero di voci generate: {0}',
-        'ru': 'Количество созданных записей: {0}',
-        'zh': '生成的条目数量: {0}'
-    },
-
-    'map_apply_changes_list': {
-        'en': 'Applied shifts (A:<number> offset <value>):',
-        'pl': 'Zastosowane przesunięcia (A:<numer> offset <wartość>):',
-        'de': 'Angewendete Verschiebungen (A:<Nummer> Offset <Wert>):',
-        'es': 'Desplazamientos aplicados (A:<número> offset <valor>):',
-        'it': 'Offset applicati (A:<numero> offset <valore>):',
-        'ru': 'Применённые смещения (A:<номер> offset <значение>):',
-        'zh': '应用的偏移 (A:<编号> offset <值>):'
-    },
-
-    'map_apply_collisions': {
-        'en': '{0} target index collisions detected:',
-        'pl': 'Wykryto {0} kolizji numerów docelowych:',
-        'de': '{0} Zielindex-Kollisionen erkannt:',
-        'es': 'Detectadas {0} colisiones de índices de destino:',
-        'it': 'Rilevate {0} collisioni di indici di destinazione:',
-        'ru': 'Обнаружено {0} конфликтов целевых индексов:',
-        'zh': '检测到 {0} 个目标索引冲突:'
-    },
-
-    'map_apply_done': {
-        'en': 'Shift map applied.',
-        'pl': 'Zastosowano mapę przesunięć.',
-        'de': 'Verschiebungsmappe angewendet.',
-        'es': 'Mapa de desplazamientos aplicada.',
-        'it': 'Mappa degli offset applicata.',
-        'ru': 'Карта смещений применена.',
-        'zh': '偏移映射已应用。'
-    },
-
-    'map_apply_error': {
-        'en': 'Error applying map: {0}',
-        'pl': 'Błąd podczas stosowania mapy: {0}',
-        'de': 'Fehler beim Anwenden der Mapping-Datei: {0}',
-        'es': 'Error al aplicar el mapa: {0}',
-        'it': 'Errore durante l’applicazione della mappa: {0}',
-        'ru': 'Ошибка при применении карты: {0}',
-        'zh': '应用映射时出错: {0}'
-    },
-
-    'map_file_prompt': {
-        'en': 'Enter path to map file (Enter = paste manually): ',
-        'pl': 'Podaj ścieżkę do pliku mapy (Enter = wklej mapę ręcznie): ',
-        'de': 'Pfad zur Mapping-Datei eingeben (Enter = manuell einfügen): ',
-        'es': 'Introduzca la ruta del archivo de mapa (Enter = pegar manualmente): ',
-        'it': 'Inserisci il percorso del file di mappa (Invio = incolla manualmente): ',
-        'ru': 'Укажите путь к файлу карты (Enter = вставить вручную): ',
-        'zh': '输入映射文件路径（回车 = 手动粘贴）: '
-    }
- }
-
+ 'yes_no_suffix_no_default': {'de': '[j/N]',
+                              'en': '[y/N]',
+                              'es': '[s/N]',
+                              'it': '[s/N]',
+                              'ja': '[y/N]',
+                              'pl': '[t/N]',
+                              'ru': '[д/Н]',
+                              'zh': '[y/N]'},
+ 'yes_no_suffix_yes_default': {'de': '[J/n]',
+                               'en': '[Y/n]',
+                               'es': '[S/n]',
+                               'it': '[S/n]',
+                               'ja': '[Y/n]',
+                               'pl': '[T/n]',
+                               'ru': '[Д/н]',
+                               'zh': '[Y/n]'}}
 
 
 # --- pomocnicze ---
