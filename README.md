@@ -22,7 +22,7 @@ https://discord.gg/qsetQRb
         4 ITALIAN                          (O-Bas)
         5 POLISH                           (O-GE + U-All_HE)
         6 KOREAN                           (O-Bas)
-        7 CHINESE                          (O-?)
+        7 CHINESE                          (O-Bas)
         8 SWEDISH                          (O-Bas)
         9 DANISH                           (O-Bas)
         10 NORWEGIAN                       (O-Bas)
@@ -41,7 +41,6 @@ https://discord.gg/qsetQRb
 - *No* - Nothing, no translation
 - *All_HE* - Full translation with extra texts from the History Edition
 - *All* - Full translation (old version, not History Edition)
-- *?* - Unknown: probably *GE* or *Bas*
 - *GE* - Gold Edition translation
 - - *Bas* - the basis of the game
 - - *MP1* - Mission CD 1
